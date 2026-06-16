@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d946ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a21caf;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="shine" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.15);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5f1e5f" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bg)" />
+  <circle cx="100" cy="100" r="100" fill="url(#shine)" />
+  <circle cx="100" cy="100" r="93" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <text x="100" y="100" text-anchor="middle" dominant-baseline="central" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="600" fill="white" filter="url(#shadow)" letter-spacing="-2">S</text>
+</svg>

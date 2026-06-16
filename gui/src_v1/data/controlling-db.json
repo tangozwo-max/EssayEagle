@@ -1,0 +1,846 @@
+{
+  "businessUnit": {
+    "id": "essay-fabrik",
+    "name": "Essay Fabrik",
+    "projekte": [
+      {
+        "id": "m3pb",
+        "name": "Modul 3 Part B – IBD-Depression Report",
+        "status": "active",
+        "auftraege": [
+          {
+            "id": "setup-wissens-dbs",
+            "name": "Setup Wissens-Datenbanken",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Curriculum Summary W1-W3 (Crash)",
+                "tokens": 32,
+                "cacheReadTokens": 0,
+                "costEur": 0.0,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Curriculum Summary W1-W3 (Retry)",
+                "tokens": 85362,
+                "cacheReadTokens": 2100000,
+                "costEur": 0.68,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Curriculum Summary W4-W6",
+                "tokens": 272132,
+                "cacheReadTokens": 5400000,
+                "costEur": 2.18,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Source Database erstellen",
+                "tokens": 75495,
+                "cacheReadTokens": 1800000,
+                "costEur": 0.6,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Stilprofil erstellen",
+                "tokens": 31689,
+                "cacheReadTokens": 600000,
+                "costEur": 0.25,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "fqa-draft-3",
+            "name": "FQA Draft 3",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "Draft 3 Compliance-Analyse",
+                "tokens": 17365,
+                "cacheReadTokens": 400000,
+                "costEur": 0.14,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Draft 3 Curriculum-Check",
+                "tokens": 83047,
+                "cacheReadTokens": 2000000,
+                "costEur": 0.66,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Draft 3 Narrativ-Check",
+                "tokens": 12740,
+                "cacheReadTokens": 300000,
+                "costEur": 0.1,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Draft 3 Stil-Check",
+                "tokens": 20705,
+                "cacheReadTokens": 500000,
+                "costEur": 0.17,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "draft-4-erstellung",
+            "name": "Draft 4 Erstellung",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "pascal",
+                "model": "opus",
+                "description": "Draft 4 Revision & Erstellung",
+                "tokens": 57195,
+                "cacheReadTokens": 8000000,
+                "costEur": 0.46,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "fqa-draft-4",
+            "name": "FQA Draft 4",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "Draft 4 Compliance-Check",
+                "tokens": 14806,
+                "cacheReadTokens": 400000,
+                "costEur": 0.12,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Draft 4 Curriculum-Check",
+                "tokens": 23363,
+                "cacheReadTokens": 600000,
+                "costEur": 0.19,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Draft 4 Quellenverifikation",
+                "tokens": 58945,
+                "cacheReadTokens": 1500000,
+                "costEur": 0.47,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Draft 4 Narrativ-Check",
+                "tokens": 28582,
+                "cacheReadTokens": 700000,
+                "costEur": 0.23,
+                "session": "S1",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Draft 4 Authentizitaet",
+                "tokens": 16707,
+                "cacheReadTokens": 400000,
+                "costEur": 0.13,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "draft-5-finalisierung",
+            "name": "Draft 5 Finalisierung",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "pascal",
+                "model": "opus",
+                "description": "Wort-Kuerzung & Feinschliff",
+                "tokens": 11468,
+                "cacheReadTokens": 2000000,
+                "costEur": 0.09,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "draft-6-erstellung",
+            "name": "Draft 6 Erstellung (Critique + Stigma)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "DOI-Verifikation Stigma-Quellen",
+                "tokens": 16462,
+                "cacheReadTokens": 200000,
+                "costEur": 0.13,
+                "session": "S2",
+                "date": "2026-04-02"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Critique Analysis > Draft 6",
+                "tokens": 120000,
+                "cacheReadTokens": 5000000,
+                "costEur": 0.96,
+                "session": "S2",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "overhead-s1",
+            "name": "Orchestrierung & Overhead Session 1",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Hauptkontext Session 1",
+                "tokens": 300000,
+                "cacheReadTokens": 62000000,
+                "costEur": 2.4,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "overhead-s2",
+            "name": "Orchestrierung & Overhead Session 2",
+            "status": "open",
+            "buchungen": [
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Hauptkontext Session 2",
+                "tokens": 55000,
+                "cacheReadTokens": 7600000,
+                "costEur": 0.44,
+                "session": "S2",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "fqa-draft-6",
+            "name": "FQA Draft 6",
+            "status": "open",
+            "buchungen": []
+          }
+        ]
+      },
+      {
+        "id": "gui",
+        "name": "GUI – Essay Fabrik Dashboard",
+        "status": "active",
+        "auftraege": [
+          {
+            "id": "gui-v01",
+            "name": "V0.1 – Grundstruktur (Sidebar, Team, Workflows)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Initiale GUI-Architektur",
+                "tokens": 80000,
+                "cacheReadTokens": 3000000,
+                "costEur": 0.64,
+                "session": "S1",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "gui-controlling",
+            "name": "Controlling-Modul + Modelle + Praktikant",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Datenmodell, ControllingPage, Integration",
+                "tokens": 85000,
+                "cacheReadTokens": 5000000,
+                "costEur": 0.68,
+                "session": "S2",
+                "date": "2026-04-02"
+              }
+            ]
+          },
+          {
+            "id": "gui-dynamic-json",
+            "name": "Dynamische JSON-Datenbank + Cache-Tracking",
+            "status": "open",
+            "buchungen": [
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "JSON-DB, Cache-Metriken, Header-Fix",
+                "tokens": 40000,
+                "cacheReadTokens": 3000000,
+                "costEur": 0.32,
+                "session": "S2",
+                "date": "2026-04-02"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "module4parta",
+        "name": "Module 4 Part A – Case Tommy Presentation",
+        "status": "active",
+        "auftraege": [
+          {
+            "id": "m4pa-fqa-loop-v002",
+            "name": "FQA Loop 1 (v001→v002, v0.11)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "v0.11 rubric scoring K&U/A&E/C&R (85/83 passed)",
+                "tokens": 12000,
+                "cacheReadTokens": 300000,
+                "costEur": 0.09,
+                "session": "S9",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Reference audit: 9 refs resolved, 4 year mismatches found",
+                "tokens": 15000,
+                "cacheReadTokens": 360000,
+                "costEur": 0.12,
+                "session": "S9",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Curriculum/theory check: no curriculum-internal refs, all concepts mapped",
+                "tokens": 8000,
+                "cacheReadTokens": 190000,
+                "costEur": 0.06,
+                "session": "S9",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Narrative/argumentation: C-E-C-C structure, synthesis S5 strong",
+                "tokens": 10000,
+                "cacheReadTokens": 240000,
+                "costEur": 0.08,
+                "session": "S9",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Authenticity check: professional academic register throughout",
+                "tokens": 4000,
+                "cacheReadTokens": 95000,
+                "costEur": 0.03,
+                "session": "S9",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Gate decision: 85>=83 accepted; 4xP2 open before recording",
+                "tokens": 8000,
+                "cacheReadTokens": 190000,
+                "costEur": 0.06,
+                "session": "S9",
+                "date": "2026-06-04"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mp4b",
+        "name": "Module 4 Part B – Anxiety: A Systemic Disorder",
+        "status": "active",
+        "auftraege": [
+          {
+            "id": "m4pb-fqa-loop-v002",
+            "name": "FQA Loop 1 (v001 to v002)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "v001 rubric scoring (K&U/A&E/C&R)",
+                "tokens": 16000,
+                "cacheReadTokens": 400000,
+                "costEur": 0.14,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Reference audit: found 2 ghost refs (Ahmed, Loades)",
+                "tokens": 12000,
+                "cacheReadTokens": 300000,
+                "costEur": 0.12,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Integrate citations + criticality check",
+                "tokens": 10000,
+                "cacheReadTokens": 250000,
+                "costEur": 0.1,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Theory-evidence fit of added citations",
+                "tokens": 7000,
+                "cacheReadTokens": 180000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Human-voice check of new sentences",
+                "tokens": 5000,
+                "cacheReadTokens": 120000,
+                "costEur": 0.06,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Synthesis + gate decision (84<85, continue)",
+                "tokens": 4000,
+                "cacheReadTokens": 100000,
+                "costEur": 0.05,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-fqa-loop-v003",
+            "name": "FQA Loop 2 (v002 to v003)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "v002 rescoring",
+                "tokens": 12000,
+                "cacheReadTokens": 300000,
+                "costEur": 0.11,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "A&E reasoned-judgment rewrite of §3.3",
+                "tokens": 14000,
+                "cacheReadTokens": 320000,
+                "costEur": 0.13,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Curriculum/theory consistency of §3.3 judgment",
+                "tokens": 6000,
+                "cacheReadTokens": 150000,
+                "costEur": 0.07,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Confirm no new ghost refs after edit",
+                "tokens": 7000,
+                "cacheReadTokens": 160000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Human-voice check §3.3",
+                "tokens": 4000,
+                "cacheReadTokens": 100000,
+                "costEur": 0.06,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Gate decision 86>=85 -> accept",
+                "tokens": 3500,
+                "cacheReadTokens": 90000,
+                "costEur": 0.05,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-research-elicit-ingest",
+            "name": "Research: ingest Elicit report (3 CSV, 12 papers)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Ingest 3 Elicit CSVs -> elicit-findings.md + references_wiki",
+                "tokens": 14000,
+                "cacheReadTokens": 260000,
+                "costEur": 0.13,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Map Elicit findings to chapter-gaps; appraise relevance",
+                "tokens": 6000,
+                "cacheReadTokens": 140000,
+                "costEur": 0.07,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Tier/quality appraisal of Elicit sources",
+                "tokens": 5000,
+                "cacheReadTokens": 110000,
+                "costEur": 0.06,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-research-elicit-thesis-ingest",
+            "name": "Research: ingest thesis-level Elicit search (18 papers)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Ingest 18-paper thesis search -> elicit-findings + references_wiki",
+                "tokens": 16000,
+                "cacheReadTokens": 300000,
+                "costEur": 0.15,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Map 18 findings to sections; rank high-value adds",
+                "tokens": 7000,
+                "cacheReadTokens": 150000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Tier appraisal of meta/RCT sources",
+                "tokens": 5000,
+                "cacheReadTokens": 110000,
+                "costEur": 0.06,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-research-elicit-synthesis",
+            "name": "Research: ingest Elicit systematic-review synthesis",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Read SR synthesis; confirm no new sources",
+                "tokens": 9000,
+                "cacheReadTokens": 200000,
+                "costEur": 0.09,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Extract 3 A&E refinements (family>digital; equivalence not superiority; how>how much)",
+                "tokens": 8000,
+                "cacheReadTokens": 170000,
+                "costEur": 0.09,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-fqa-loop-v004",
+            "name": "FQA Loop 3 (Option A: Elicit evidence + reframings)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "hank",
+                "model": "opus",
+                "description": "Integrate 9 sources across 6 sections; recalibrate thesis/intro/conclusion",
+                "tokens": 28000,
+                "cacheReadTokens": 520000,
+                "costEur": 0.27,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Two A&E reframings (family>digital; equivalence-not-superiority)",
+                "tokens": 16000,
+                "cacheReadTokens": 340000,
+                "costEur": 0.16,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Reference list: add 9 sources, verify no ghosts, fix invented co-authors",
+                "tokens": 14000,
+                "cacheReadTokens": 300000,
+                "costEur": 0.13,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "peter",
+                "model": "opus",
+                "description": "Theory/curriculum consistency of new evidence",
+                "tokens": 7000,
+                "cacheReadTokens": 160000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "Rescore vs rubric; flag word-count breach (~3,643 vs 2,000)",
+                "tokens": 12000,
+                "cacheReadTokens": 260000,
+                "costEur": 0.13,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Gate: 82<85, not accepted; escalate condensation",
+                "tokens": 5000,
+                "cacheReadTokens": 120000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-fqa-loop-v005",
+            "name": "FQA Loop 4 (condensation to within word limit)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "hank",
+                "model": "opus",
+                "description": "Condense all 20 body paragraphs ~40%; fold note-box into body",
+                "tokens": 30000,
+                "cacheReadTokens": 560000,
+                "costEur": 0.3,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "steven",
+                "model": "opus",
+                "description": "Preserve argument + reframings while tightening",
+                "tokens": 12000,
+                "cacheReadTokens": 260000,
+                "costEur": 0.13,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "Rescore; correct word-count measurement bug (true 1,669)",
+                "tokens": 10000,
+                "cacheReadTokens": 220000,
+                "costEur": 0.11,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Gate 87>=85 accept; copy to 08 Final",
+                "tokens": 5000,
+                "cacheReadTokens": 120000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          },
+          {
+            "id": "m4pb-fqa-loop-v006",
+            "name": "FQA Loop 5 (style-conformance rewrite to author voice)",
+            "status": "closed",
+            "buchungen": [
+              {
+                "roleId": "hank",
+                "model": "opus",
+                "description": "Rewrite all sections: author-prominent->info-prominent, remove figures",
+                "tokens": 26000,
+                "cacheReadTokens": 500000,
+                "costEur": 0.25,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "alex",
+                "model": "opus",
+                "description": "Apply student-style-profile: hedging, connectors, British spelling",
+                "tokens": 15000,
+                "cacheReadTokens": 320000,
+                "costEur": 0.15,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "jackie",
+                "model": "opus",
+                "description": "Verify citations retained + relocated; reference-check",
+                "tokens": 9000,
+                "cacheReadTokens": 200000,
+                "costEur": 0.09,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "christoph",
+                "model": "opus",
+                "description": "Rescore; style-fit 40->88; C&R +band",
+                "tokens": 9000,
+                "cacheReadTokens": 200000,
+                "costEur": 0.1,
+                "session": "S8",
+                "date": "2026-06-04"
+              },
+              {
+                "roleId": "egbert",
+                "model": "opus",
+                "description": "Deliberation + gate 88>=85 accept",
+                "tokens": 6000,
+                "cacheReadTokens": 140000,
+                "costEur": 0.08,
+                "session": "S8",
+                "date": "2026-06-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "lastUpdated": "2026-04-02T21:30:00Z",
+    "sessions": {
+      "S1": {
+        "date": "2026-04-02",
+        "totalTokens": 77076988,
+        "cacheReadTokens": 75301311,
+        "outputTokens": 127849,
+        "apiCalls": 331
+      },
+      "S2": {
+        "date": "2026-04-02",
+        "totalTokens": 13750577,
+        "cacheReadTokens": 13445797,
+        "outputTokens": 56721,
+        "apiCalls": 160
+      }
+    },
+    "weeklyUsage": {
+      "percentUsed": 14,
+      "estimatedWeeklyLimit": 650000000,
+      "plan": "Max 5x"
+    }
+  }
+}

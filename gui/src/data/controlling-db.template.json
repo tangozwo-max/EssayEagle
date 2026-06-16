@@ -1,0 +1,30 @@
+{
+  "businessUnit": {
+    "id": "mein-projekt",
+    "name": "Mein Projekt",
+    "projekte": [
+      {
+        "id": "projekt-1",
+        "name": "Erstes Projekt",
+        "status": "active",
+        "auftraege": [
+          {
+            "id": "setup",
+            "name": "Setup & Initialisierung",
+            "status": "open",
+            "buchungen": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "lastUpdated": "",
+    "sessions": {},
+    "weeklyUsage": {
+      "percentUsed": 0,
+      "estimatedWeeklyLimit": 650000000,
+      "plan": "Max 5x"
+    }
+  }
+}

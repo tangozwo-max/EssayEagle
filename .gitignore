@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Build output
+.next/
+out/
+build/
+dist/
+coverage/
+
+# Env & secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS / editor / OneDrive cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Claude local settings (machine-specific)
+.claude/settings.local.json
+
+# ── Curated repo: track ONLY the gui app + research reference notes ──
+# Everything below is kept local-only (not pushed to GitHub):
+/01 projects/
+/Team_folder/
+/tools/
+/projects/
+/_upgrade/
+/framework/
+/.claude/
+/controlling.json
+/ahmed_check.txt
+/bqa_extract.txt
+/researchgate-requests.html
+/CLAUDE.md
+# (the references_wiki folders under /01 projects/ are force-added despite the rule above)

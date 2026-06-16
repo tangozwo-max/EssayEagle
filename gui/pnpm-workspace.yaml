@@ -1,0 +1,5 @@
+# pnpm settings (pnpm 10+ reads build-script approvals from here, not package.json).
+# sharp & unrs-resolver ship native binaries and need their install scripts to run.
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
