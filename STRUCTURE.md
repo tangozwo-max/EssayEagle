@@ -119,6 +119,27 @@ That's it. The project now shows up and has its full phase skeleton.
 
 ---
 
+## Workspace menu — the app's 4 phases
+
+The live app workspace (`/projects/[id]`) groups its menu items into **4 phases**, defined
+centrally in [`gui/src/config/menu.json`](gui/src/config/menu.json). Edit that file to rename
+phases or move menu items between them — **no code changes** needed for reassigning existing
+items. Only adding a brand-new item needs a renderer entry in `gui/src/lib/menu.tsx`. It's
+plain config bundled at build, so it works online with **no database**.
+
+```
+01 Startup      → Startup
+02 Brainstorming → Brainstorming & Outline · Curriculum
+03 Creation     → Bibliography
+04 Finalization → Finalisation
+```
+
+(Note: this is the **app's navigation**. The document/handover pipeline in
+`structure/workflow-map.json` — folders `01 Setup … 08 Final`, `result.md`, `_handover/` — is
+a separate, file-level concern used for driving project content and the read-only dashboard.)
+
+---
+
 ## Online use
 
 Two ways to work online:

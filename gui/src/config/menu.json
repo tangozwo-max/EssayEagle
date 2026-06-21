@@ -1,0 +1,39 @@
+{
+  "_comment": "CENTRAL menu/phase config for the project workspace. Edit this file to reorganize phases and which menu items appear under each — no code changes needed for reassigning existing items. Adding a brand-new item also needs a renderer in src/lib/menu.tsx. Item ids must match a renderer there. This is global app config (same for every project), bundled at build, so it works online with no database.",
+  "version": "1.0.0",
+  "phases": [
+    {
+      "id": "startup",
+      "number": "01",
+      "name": "Startup",
+      "items": [
+        { "id": "startup", "label": "Startup" }
+      ]
+    },
+    {
+      "id": "brainstorming",
+      "number": "02",
+      "name": "Brainstorming",
+      "items": [
+        { "id": "brainstorming", "label": "Brainstorming & Outline" },
+        { "id": "curriculum", "label": "Curriculum" }
+      ]
+    },
+    {
+      "id": "creation",
+      "number": "03",
+      "name": "Creation",
+      "items": [
+        { "id": "bibliography", "label": "Bibliography" }
+      ]
+    },
+    {
+      "id": "finalisation",
+      "number": "04",
+      "name": "Finalization",
+      "items": [
+        { "id": "finalisation", "label": "Finalisation" }
+      ]
+    }
+  ]
+}
