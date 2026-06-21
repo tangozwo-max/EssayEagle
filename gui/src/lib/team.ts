@@ -84,8 +84,8 @@ export const projectPhases: ProjectPhase[] = [
     id: "finalisation",
     nameKey: "finalisation",
     workflows: [
-      { id: "fqa", nameKey: "qualityAssessment", leads: ["christoph", "jackie", "peter", "steven", "alex"], description: "Full quality review with scores from each specialist." },
-      { id: "final", nameKey: "finalisation", leads: ["egbert"], description: "Implement changes, final checks, prepare submission." },
+      { id: "quality-assessment", nameKey: "qualityAssessment", leads: ["christoph", "jackie", "peter", "steven", "alex"], description: "Full quality review with scores from each specialist." },
+      { id: "finalisation", nameKey: "finalisation", leads: ["egbert"], description: "Implement changes, final checks, prepare submission." },
     ],
   },
 ];

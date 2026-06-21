@@ -1,0 +1,665 @@
+{
+  "generatedAt": "2026-06-21T10:47:21.787Z",
+  "projects": {
+    "module4": {
+      "state": {
+        "project": {
+          "id": "module4",
+          "name": "Module 4",
+          "module": "4",
+          "part": "",
+          "subtitle": "",
+          "status": "in-progress",
+          "createdAt": "2026-06-21",
+          "currentPhase": "creation",
+          "currentWorkflow": "research"
+        },
+        "budget": {
+          "capEur": 15,
+          "warnAtEur": 12,
+          "spentEur": 0
+        },
+        "documents": [],
+        "workflows": {
+          "setup": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "brainstorming": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "curriculum": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "research": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "outline": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "drafting": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "illustration": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "quality-assessment": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "finalisation": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          }
+        },
+        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+      },
+      "files": {
+        "PROJECT.md": "# Module 4 — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Creation\n- **Current workflow:** Research\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+      }
+    },
+    "module4parta": {
+      "state": {
+        "project": {
+          "id": "module4parta",
+          "name": "Module 4 — Part A",
+          "module": "4",
+          "part": "A",
+          "subtitle": "",
+          "status": "in-progress",
+          "createdAt": "2026-06-21",
+          "currentPhase": "creation",
+          "currentWorkflow": "research"
+        },
+        "budget": {
+          "capEur": 15,
+          "warnAtEur": 12,
+          "spentEur": 0
+        },
+        "documents": [],
+        "workflows": {
+          "setup": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "brainstorming": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "curriculum": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "research": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "outline": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "drafting": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "illustration": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "quality-assessment": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "finalisation": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          }
+        },
+        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+      },
+      "files": {
+        "PROJECT.md": "# Module 4 — Part A — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Creation\n- **Current workflow:** Research\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+      }
+    },
+    "module5parta": {
+      "state": {
+        "project": {
+          "id": "module5parta",
+          "name": "Module 5 — Part A",
+          "module": "5",
+          "part": "A",
+          "subtitle": "",
+          "status": "in-progress",
+          "createdAt": "2026-06-21",
+          "currentPhase": "preparation",
+          "currentWorkflow": "setup"
+        },
+        "budget": {
+          "capEur": 15,
+          "warnAtEur": 12,
+          "spentEur": 0
+        },
+        "documents": [],
+        "workflows": {
+          "setup": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "brainstorming": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "curriculum": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "research": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "outline": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "drafting": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "illustration": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "quality-assessment": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "finalisation": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          }
+        },
+        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+      },
+      "files": {
+        "PROJECT.md": "# Module 5 — Part A — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Preparation\n- **Current workflow:** Setup\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+      }
+    },
+    "module5partb": {
+      "state": {
+        "project": {
+          "id": "module5partb",
+          "name": "Module 5 — Part B",
+          "module": "5",
+          "part": "B",
+          "subtitle": "",
+          "status": "in-progress",
+          "createdAt": "2026-06-21",
+          "currentPhase": "preparation",
+          "currentWorkflow": "setup"
+        },
+        "budget": {
+          "capEur": 15,
+          "warnAtEur": 12,
+          "spentEur": 0
+        },
+        "documents": [],
+        "workflows": {
+          "setup": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "brainstorming": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "curriculum": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "research": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "outline": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "drafting": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "illustration": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "quality-assessment": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "finalisation": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          }
+        },
+        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+      },
+      "files": {
+        "PROJECT.md": "# Module 5 — Part B — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Preparation\n- **Current workflow:** Setup\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+      }
+    }
+  }
+}
