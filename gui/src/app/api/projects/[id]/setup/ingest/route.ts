@@ -9,6 +9,7 @@
 // deployed (read-only) app cannot use this route.
 import { NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import mammoth from "mammoth";
 import path from "path";
 import fs from "fs/promises";
 
@@ -22,7 +23,7 @@ const KIND = {
 } as const;
 type ConvertKind = keyof typeof KIND;
 
-const DOC_EXTS = [".pdf", ".md", ".txt"]; // .docx deferred until the converter is installed
+const DOC_EXTS = [".pdf", ".docx", ".md", ".txt"];
 
 const BRIEF_PROMPT = `You are Christoph, the strict compliance lead at Essay Fabrik.
 You are given a university ASSESSMENT BRIEF. Produce a structured Markdown summary that an
@@ -78,15 +79,21 @@ function convertPrompt(kind: ConvertKind): string {
   return REF_PROMPT;
 }
 
-/** A Claude user content block from an uploaded file buffer. */
-function contentBlocks(buffer: Buffer, ext: string, instruction: string): Anthropic.ContentBlockParam[] {
+async function docxToText(buffer: Buffer): Promise<string> {
+  const result = await mammoth.extractRawText({ buffer });
+  return result.value;
+}
+
+/** A Claude user content block from an uploaded file buffer (PDF native; docx/text inlined). */
+async function buildBlocks(buffer: Buffer, ext: string, instruction: string): Promise<Anthropic.ContentBlockParam[]> {
   if (ext === ".pdf") {
     return [
       { type: "document", source: { type: "base64", media_type: "application/pdf", data: buffer.toString("base64") } },
       { type: "text", text: instruction },
     ];
   }
-  return [{ type: "text", text: `${instruction}\n\n${buffer.toString("utf-8")}` }];
+  const text = ext === ".docx" ? await docxToText(buffer) : buffer.toString("utf-8");
+  return [{ type: "text", text: `${instruction}\n\n${text}` }];
 }
 
 async function runClaude(
@@ -141,7 +148,7 @@ export async function POST(
       if (!file) return NextResponse.json({ error: "No file provided" }, { status: 400 });
       const ext = path.extname(file.name).toLowerCase();
       if (!DOC_EXTS.includes(ext)) {
-        return NextResponse.json({ error: `Unsupported "${ext}". Use PDF/.md/.txt — .docx support is coming.` }, { status: 415 });
+        return NextResponse.json({ error: `Unsupported "${ext}". Use PDF, .docx, .md, or .txt.` }, { status: 415 });
       }
       await fs.mkdir(inputDir, { recursive: true });
       const buffer = Buffer.from(await file.arrayBuffer());
@@ -149,7 +156,7 @@ export async function POST(
       const rawPath = path.join(inputDir, `${KIND[ck].raw}${ext}`);
       await fs.writeFile(rawPath, buffer);
 
-      const md = await runClaude(client!, convertPrompt(ck), contentBlocks(buffer, ext, "Process the attached document per your instructions."));
+      const md = await runClaude(client!, convertPrompt(ck), await buildBlocks(buffer, ext, "Process the attached document per your instructions."));
       const mdWithSource = `<!-- generated from ${file.name} on ingest -->\n\n\`\`\`\n${rawPath}\n\`\`\`\n\n${md}\n`;
       await fs.writeFile(path.join(inputDir, KIND[ck].md), mdWithSource, "utf-8");
 
@@ -186,12 +193,16 @@ export async function POST(
         if (ext === ".md" || ext === ".txt") {
           await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), buffer.toString("utf-8"), "utf-8");
           results.push({ name: file.name, extracted: true });
+        } else if (ext === ".docx") {
+          const text = await docxToText(buffer);
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), `<!-- verbatim extraction of ${file.name} -->\n\n${text}\n`, "utf-8");
+          results.push({ name: file.name, extracted: true });
         } else if (ext === ".pdf") {
-          const md = await runClaude(client!, TRANSCRIBE_PROMPT, contentBlocks(buffer, ext, "Transcribe the attached document."), 8192);
+          const md = await runClaude(client!, TRANSCRIBE_PROMPT, await buildBlocks(buffer, ext, "Transcribe the attached document."), 8192);
           await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), `<!-- verbatim extraction of ${file.name} -->\n\n${md}\n`, "utf-8");
           results.push({ name: file.name, extracted: true });
         } else {
-          results.push({ name: file.name, extracted: false, note: `${ext} kept local; text extraction pending docx support` });
+          results.push({ name: file.name, extracted: false, note: `${ext} kept local; no text extractor` });
         }
       }
 

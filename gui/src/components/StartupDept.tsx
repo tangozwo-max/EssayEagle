@@ -298,7 +298,7 @@ export default function StartupDept({
   const readyCount = [briefLevel, rubricLevel, refLevel, prevLevel, curriculumLevel]
     .filter(l => l === "ok").length;
 
-  const docAccept = ".pdf,.md,.txt";
+  const docAccept = ".pdf,.docx,.md,.txt";
   const assignmentType = data?.assignmentType ?? null;
 
   return (
@@ -407,7 +407,7 @@ export default function StartupDept({
           actions={
             <UploadButton
               label={prevCount > 0 ? "Add files" : "Pick files"}
-              accept=".pdf,.md,.txt"
+              accept=".pdf,.docx,.md,.txt"
               multiple
               busy={uploadingKind === "previous"}
               onFiles={handlePrevious}
@@ -442,8 +442,8 @@ export default function StartupDept({
 
       <p className="text-[11px] text-neutral-400">
         Ingestion writes to your local project folder and calls Claude — run the app locally
-        (<code>npm run dev</code>). PDFs convert natively; <code>.docx</code> support is pending a
-        dependency install. Curriculum pickers grab a whole folder (current + wiki).
+        (<code>pnpm dev</code>). PDF and <code>.docx</code> both convert. Curriculum pickers grab a
+        whole folder (current + wiki).
       </p>
     </div>
   );
