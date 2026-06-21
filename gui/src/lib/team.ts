@@ -66,8 +66,8 @@ export const projectPhases: ProjectPhase[] = [
     nameKey: "preparation",
     workflows: [
       { id: "setup", nameKey: "setup", leads: ["christoph", "egbert"], description: "Upload assignment brief, rubric, and reference materials." },
-      { id: "brainstorming", nameKey: "brainstorming", leads: ["steven", "jackie"], description: "Explore topics, check literature availability, choose your angle." },
-      { id: "curriculum", nameKey: "curriculumMapping", leads: ["peter"], description: "Map module concepts to your essay and identify theory placements." },
+      { id: "curriculum", nameKey: "curriculumMapping", leads: ["peter"], description: "Map module concepts and identify theory placements before choosing a topic." },
+      { id: "brainstorming", nameKey: "brainstorming", leads: ["steven", "jackie"], description: "Explore topics within the mapped curriculum, check literature, choose your angle." },
     ],
   },
   {
@@ -77,6 +77,7 @@ export const projectPhases: ProjectPhase[] = [
       { id: "research", nameKey: "research", leads: ["jackie"], description: "Search for studies, critically appraise them, build the source database." },
       { id: "outline", nameKey: "outline", leads: ["hank", "steven"], description: "Build the essay structure with section purposes and evidence plan." },
       { id: "drafting", nameKey: "drafting", leads: ["hank", "alex"], description: "Write and iterate on the draft. Live word count and style checking." },
+      { id: "revision", nameKey: "revision", leads: ["steven", "peter", "alex"], description: "Iterate argumentation, flow, and authenticity; snapshot each version." },
       { id: "illustration", nameKey: "illustration", leads: ["vanessa"], description: "Create scientific diagrams and visualisations." },
     ],
   },
@@ -84,8 +85,10 @@ export const projectPhases: ProjectPhase[] = [
     id: "finalisation",
     nameKey: "finalisation",
     workflows: [
-      { id: "quality-assessment", nameKey: "qualityAssessment", leads: ["christoph", "jackie", "peter", "steven", "alex"], description: "Full quality review with scores from each specialist." },
-      { id: "finalisation", nameKey: "finalisation", leads: ["egbert"], description: "Implement changes, final checks, prepare submission." },
+      { id: "quality-assessment", nameKey: "qualityAssessment", leads: ["christoph", "jackie", "peter", "steven", "alex"], description: "Full quality review with scores from each specialist (the FQA loop)." },
+      { id: "finalisation", nameKey: "finalisation", leads: ["egbert"], description: "Implement FQA changes and final corrections." },
+      { id: "submission-prep", nameKey: "submissionPrep", leads: ["praktikant", "christoph"], description: "Cover sheet, authenticity statement, file naming, final compliance check." },
+      { id: "retrospective", nameKey: "retrospective", leads: ["baerbel", "egbert"], description: "Cost analysis, lessons learned, and process improvements." },
     ],
   },
 ];

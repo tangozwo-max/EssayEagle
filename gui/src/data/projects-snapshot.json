@@ -1,42 +1,34 @@
 {
-  "generatedAt": "2026-06-21T10:47:21.787Z",
+  "generatedAt": "2026-06-21T16:07:15.912Z",
   "projects": {
     "module4": {
       "state": {
         "project": {
-          "id": "module4",
-          "name": "Module 4",
-          "module": "4",
-          "part": "",
-          "subtitle": "",
-          "status": "in-progress",
-          "createdAt": "2026-06-21",
-          "currentPhase": "creation",
-          "currentWorkflow": "research"
-        },
-        "budget": {
-          "capEur": 15,
-          "warnAtEur": 12,
-          "spentEur": 0
+          "id": "mpModule 4b",
+          "name": "mp4b",
+          "module": "Module 4",
+          "part": "B",
+          "status": "finalisation",
+          "createdAt": "2026-04-08T18:52:27.235Z",
+          "currentWorkflow": "finalisation",
+          "passThreshold": 85,
+          "targetGrade": "A",
+          "maxLoops": 5,
+          "currentVersion": "v014",
+          "acceptedVersion": "v014",
+          "openP1": "SUBMISSION-READY (v014). Moderate flow-preserving polish over v013 (an LLM review applied selectively - NO restructure, reversal spine + access-gap adjudication kept). Added explicit evaluation after every intervention (CBT value-depends-on-reach; parent-led 'for whom'; guided digital limit = adherence/implementation not efficacy; SSRI when/why-indicated); split dense sentences; hedged two assertions with explicit evidence; sharpened conclusion. 2,065 body words (top of range, matches student habit). 46 refs, 0 ghosts/orphans, 46/46 reconciled to Zotero; reports carried forward (no new factual claims -> paraphrase audit 44/46 verbatim unchanged). Only open item: Woodward 2001 abstract-level (paywalled, acceptable). v013 retained as fallback. [PRIOR v013: full storyline rebuild gated on Elicit Run 6 - reversed evidence-led thesis (therapies kept pace, system/prevention did not). Full storyline rebuild (gated on Elicit Run 6), reconciled + reported. Reversed evidence-led thesis: the therapies HAVE kept pace (routine CBT ~ trial CBT, Wergeland 2021); the failure is the delivery system (access gap: Ball/Abel/Radez/Ghafari) + absent upstream prevention vs rising incidence (prevention paradox: Skinner/Patton). Five-section compounding arc; funnels to parent-led + guided/digital CBT + indicated prevention. DONE: 46/46 refs reconciled to Zotero (fixed Broeren->2012, Radez->2022, Wergeland->2021), 0 ghosts/orphans; full report suite (fqa-report + BQA reference-check + paraphrase-audit); 08 Final synced to v013; 1,917 body words. OPTIONAL POLISH: grow ~150-200 words toward student's habitual ~2,100 (Alex amber); full text for 4 abstract-only sources (Ball/Ginsburg/Ghafari/Bang); add Casey/Sisk DOIs to Zotero; Grummitt in-press pages. [v012: evidence-integrity fix - corrected Goldfield (2026) usage (undergraduate sample was mislabelled 'rare adolescent trial'); Goldfield PDF now full-text, metadata finalised (J Affect Disord 403, 121331), Zotero import + wiki card added. Still open: add 2 DOIs to Zotero for the developmental-brain sources so the library matches the essay: 10.1016/j.neuron.2015.05.020 (Casey 2015) and 10.1093/oso/9780195314373.003.0007 (Sisk & Romeo 2019). Plus the nicety: 1 in-press ref remaining (Grummitt) gets final page numbers when issued (Goldfield + Karawekpanyawong now resolved). [v011: applied v010 FQA tone/format fixes (plain cover, un-numbered headings, child-specific presentations, Figure 1); FQA 92. v010: added Section 2 'Anxiety and the Developing Brain' (Casey/Sisk), renumbered, dropped 2 sentences; FQA 91. DONE v009: intervention-centred rebuild (brief realigned ~70/30); clean submission (boxes stripped); FULL-TEXT Jackie cross-check + BQA complete (34 full-text + 3 image-only = 37/37 on file); Ewart overstatement corrected; systematic essay-vs-Zotero diff applied -> essay reference list now matches the authoritative Zotero/Crossref library with 0 mismatches (fixed Lebowitz->2020 59(3):362-372, Sigurvinsdottir->2020 74(3):168-180, Park->2025 vol13, Sebastian->5(10):1266-1268, +earlier Zhou/Grist/Teesson/Csirmaz/Kaajalaakso/Baschab). BQA PASS, 0 ghosts/orphans. Zotero file is authoritative + final. v008 retained as fallback.]",
+          "budget": {
+            "currency": "EUR",
+            "cap": 15,
+            "warnAt": 0.8,
+            "spent": 9.2,
+            "lastReconciled": null
+          },
+          "currentPhase": "finalisation"
         },
         "documents": [],
         "workflows": {
           "setup": {
-            "status": "completed",
-            "input": {
-              "documents": [],
-              "notes": ""
-            },
-            "workingArea": {
-              "messages": []
-            },
-            "output": {
-              "content": "",
-              "documents": [],
-              "summary": ""
-            }
-          },
-          "brainstorming": {
             "status": "completed",
             "input": {
               "documents": [],
@@ -66,8 +58,23 @@
               "summary": ""
             }
           },
+          "brainstorming": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
           "research": {
-            "status": "in-progress",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -82,7 +89,7 @@
             }
           },
           "outline": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -97,7 +104,22 @@
             }
           },
           "drafting": {
-            "status": "locked",
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "revision": {
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -112,7 +134,7 @@
             }
           },
           "illustration": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -127,7 +149,7 @@
             }
           },
           "quality-assessment": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -142,6 +164,36 @@
             }
           },
           "finalisation": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "submission-prep": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "retrospective": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -156,52 +208,53 @@
               "summary": ""
             }
           }
-        },
-        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+        }
       },
       "files": {
-        "PROJECT.md": "# Module 4 — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Creation\n- **Current workflow:** Research\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
-        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+        "01 Setup/result.md": "# Result — Phase 1: Scoping\n\n## Assignment\n- **Type:** Essay (Part B) — 70% of module grade\n- **Word count:** 2,000 words (+/- 10%)\n- **Topic chosen:** Anxiety in children and young people\n- **Scope:** Evidence-based approaches and interventions — from preventive/early through to established and emerging treatments\n\n## Grading Rubric (Warwick Standard)\nThree criteria:\n1. **Knowledge & Understanding** — breadth of reading, integration, key issues identified\n2. **Critical Analysis & Synthesis** — evaluation of literature, originality, logical argument\n3. **Communication & Referencing** — structure, Harvard referencing, word count adherence\n\n## Referencing\nHarvard (WMS style) — guide available in `01 Input/`\n\n## Files\nAll source documents moved to `01_scoping/01 Input/`:\n- NPMH Module 4 Assessment Brief.pdf\n- Grading Rubric.pdf\n- harvard-wms-referencing-guide.pdf\n- module 4 partA.pdf\n",
+        "02 Brainstorming/brainstorming_result.md": "# Brainstorming — Module 4 Essay: Anxiety in Children & Adolescents\n\n## Options evaluated\n\n| Option | Angle | Relevance | Substance | Evidence controversy |\n|---|---|---|---|---|\n| A | The Access Paradox (CBT gap, stepped care) | ★★★★★ | ★★★★★ | ★★★★☆ |\n| B | School as Frontline (EBSA, whole-school) | ★★★★★ | ★★★☆☆ | ★★★★☆ |\n| C | Beyond the Child (family systems) | ★★★★☆ | ★★★★☆ | ★★★★★ |\n\n## Selected: Option C — \"Beyond the Child\"\n\n**Core angle:** Anxiety develops and is maintained within relational/family systems. Treating the child in isolation is insufficient. Family accommodation sustains anxiety; parental anxiety transmits via social referencing. Essay evaluates family-based interventions as critical complement — or alternative — to individual CBT.\n\n**Key tensions to exploit:**\n- Individual therapy (CBT) vs. family systems approaches\n- Parental anxiety transmission (social referencing, intergenerational patterns)\n- Family accommodation as maintaining mechanism\n- Evidence: systemic family therapy comparable to individual therapy; but when is family involvement counterproductive (adolescent autonomy)?\n\n**Curriculum hooks:**\n- wiki/social-referencing.md — parental anxiety modelling threat-focused worldview\n- wiki/intergenerational-trauma.md — transmission mechanisms\n- M4 W4 P59 — systemic family therapy evidence\n- M4 W4 P56 — CBT parental involvement by age group\n",
+        "02 Brainstorming/result.md": "# Result — Phase 3: Brainstorming\n\n## Options evaluated\n| Option | Angle | Relevance | Substance | Controversy |\n|---|---|---|---|---|\n| A | Access Paradox (CBT gap, stepped care) | ★★★★★ | ★★★★★ | ★★★★☆ |\n| B | School as Frontline (EBSA, whole-school) | ★★★★★ | ★★★☆☆ | ★★★★☆ |\n| C | Beyond the Child (ecosystem approach) | ★★★★★ | ★★★★★ | ★★★★★ |\n\n## Decision: Option C — Ecosystem approach\nRationale: broadest scope, strongest critical analysis potential, directly responds to brief's invitation for \"breadth of approaches\". Allows comprehensive coverage while demonstrating curriculum knowledge.\n\n## Essay angle\nAnxiety in children and adolescents is sustained by an interconnected ecosystem — not an individual disorder. Essay focuses on two core systems:\n- **Family system** (well-covered by curriculum)\n- **Societal/digital system** including social media (requires external research)\n\nSES and post-COVID context woven in as structural backdrop.\n\n## Full brainstorming record\nSee `brainstorming_result.md` in this folder.\n",
+        "03 Curriculum/result.md": "# Result — Phase 2: Curriculum Review\n\n## Key M4 Content for Anxiety Essay\n\n### Directly usable in essay (curriculum-anchored)\n| Topic | Source | Section relevance |\n|---|---|---|\n| Anxiety most common CAMH disorder; undertreatment gap | W4 P49, P51 | Intro |\n| EBSA — emotionally based school avoidance, post-COVID | W4 P51 | Intro + External factors |\n| vmPFC development → social anxiety vulnerability in adolescence | W1 P06 | Social media section |\n| Peer rejection as risk factor | W2 P20 | External factors |\n| Family accommodation / parental anxiety transmission via social referencing | W1 P01–05 | Family section |\n| CBT gold standard; age-adapted (under 7 / 7–11 / adolescents) | W4 P56 | Family + treatment |\n| Systemic family therapy — medium-large effect sizes | W4 P59 | Family section |\n| Continuum of need + stepped care | W3 P35, W4 P55 | Integration section |\n| Early intervention effectiveness | W3 P41 | Integration |\n| Digital interventions (treatment tool) | W3 P42 | External factors / treatment |\n| SES and poverty as structural risk factor | W2 P23 | External factors |\n\n### Gaps requiring external research (Phase 6)\n- Social media as anxiety driver in adolescents\n- Specific social media intervention studies\n- Contemporary prevalence data (post-COVID anxiety rates)\n\n## Full curriculum review\nSee `curriculum_review_anxiety.md` in this folder.\n",
+        "04 Research/result.md": "# Result — Phase 06: Research\n\n## Status: pending\n\n",
+        "05 Outline/rough-design-result.md": "# Result — Phase 5: Rough Design\n\n## Essay Structure & Word Budget\n\n| Section | Content | Words |\n|---|---|---|\n| 1. Introduction | Anxiety as systemic problem; undertreatment gap (W4 P51); thesis + roadmap | ~200 |\n| 2. Family System | Parental transmission via social referencing (W1); family accommodation; family-inclusive CBT (W4 P56) + systemic family therapy (W4 P59); critique: adolescent autonomy | ~550 |\n| 3. Digital & Societal | Neurobiological vulnerability in adolescence (W1 P06); social media as amplifier (external); post-COVID EBSA (W4 P51); interventions: digital literacy, therapeutic guidance, digital CBT (W3 P42) | ~550 |\n| 4. Integration | Systems interaction; continuum of need (W3 P35); stepped care; evidence gaps | ~300 |\n| 5. Conclusion | Thesis reaffirmed; call for systemic practice | ~200 |\n| **Total** | | **~1,800w** (within +/-10%) |\n\n## Argumentation Chain\n1. Anxiety is systemic, not individual → individual-only treatment insufficient\n2. Family dynamics sustain anxiety → family-inclusive interventions needed\n3. Digital environment amplifies anxiety in neurobiologically vulnerable adolescents → societal-level response needed\n4. Both systems interact → stepped, coordinated care across levels is the evidence-based answer\n\n## Research Needs (Phase 6)\n- Social media & adolescent anxiety: causal/correlational evidence\n- Family accommodation studies (Lebowitz et al.)\n- Post-COVID anxiety prevalence data\n- Digital literacy / social media intervention studies\n",
+        "05 Outline/thesis-result.md": "# Result — Phase 4: Thesis\n\n## Thesis Statement\n\n\"Anxiety in children and adolescents is not an individual disorder but a systemic one: sustained by family dynamics that accommodate and transmit anxiety, and amplified by a digital and societal environment that exploits adolescent neurobiological vulnerability. Effective, evidence-based intervention must therefore move beyond the individual child — engaging family systems through inclusive CBT and systemic approaches, while addressing the external forces that generate and maintain anxiety in young people's everyday lives.\"\n\n## Curriculum Keywords Covered\n\n| Keyword | Source |\n|---|---|\n| Neurobiological vulnerability in adolescence | W1 P06 (vmPFC, limbic system) |\n| Family accommodation / parental transmission | W1 P01–05 (social referencing, attachment) |\n| Family-inclusive CBT | W4 P56 |\n| Systemic family therapy | W4 P59 |\n| Continuum of need | W3 P35 |\n| Undertreatment gap | W4 P51 |\n| EBSA / social pressures | W4 P51 |\n| Digital interventions | W3 P42 |\n\n## Gaps for Phase 6 (Research)\n- Social media as anxiety driver (external literature)\n- Post-COVID prevalence data\n- Specific social media intervention studies\n",
+        "06 Drafting/result.md": "# Result — Phase 07: Writing\n\n## Status: pending\n\n",
+        "07 QA/result.md": "# Result — Phase 08: Fqa\n\n## Status: pending\n\n",
+        "PROJECT.md": "# Module 4 — Project Dashboard\r\n\r\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\r\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\r\n>\r\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\r\n\r\n## Where we are\r\n- **Current phase:** Creation\r\n- **Current workflow:** Research\r\n- **Project status:** active\r\n\r\n## Progress\r\n\r\n| Phase | Workflow | Output | Status |\r\n|---|---|---|---|\r\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\r\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\r\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\r\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\r\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\r\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\r\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\r\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\r\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\r\n\r\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\r\n\r\n## Phase handovers\r\n- Preparation → Creation: `_handover/1-preparation.md`\r\n- Creation → Finalisation: `_handover/2-creation.md`\r\n- Finalisation → submission: `_handover/3-finalisation.md`\r\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · curriculum · brainstorming)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. Decisions & discussion\n<!-- Selected topic, thesis statement, scope, and WHY (the angle chosen over the alternatives). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| setup | `01 Setup/result.md` — assessment summary | — |\n| curriculum | `03 Curriculum/result.md` — theory map | — |\n| brainstorming | `02 Brainstorming/result.md` — topic & thesis | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · revision · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. Decisions & discussion\n<!-- Final structure, what made it into the draft, what was cut and why (trade-offs). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| research | `04 Research/result.md` + `references_wiki/` | evidenceCoverage __ |\n| outline | `05 Outline/result.md` | skeletonReadiness __ |\n| drafting | `06 Drafting/result.md` | argumentationScore __ |\n| revision | `06 Drafting/revision/result.md` | — |\n| illustration | `06 Drafting/illustrations/` | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation · submission-prep · retrospective)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. Decisions & discussion\n<!-- Final fixes applied, FQA sign-off, the grade rationale. -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| quality-assessment | `07 QA/result.md` — FQA report | fqaScore __ |\n| finalisation | `08 Final/result.md` — final document | — |\n| submission-prep | `08 Final/submission/result.md` — submission package | — |\n| retrospective | `08 Final/retrospective/result.md` — cost & lessons | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n| Submission package | `08 Final/submission/result.md` | cover sheet, authenticity, filename |\n| Retrospective | `08 Final/retrospective/result.md` | cost analysis + process improvements |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n"
       }
     },
     "module4parta": {
       "state": {
         "project": {
           "id": "module4parta",
-          "name": "Module 4 — Part A",
-          "module": "4",
+          "name": "Module4PartA",
+          "module": "Module 4",
           "part": "A",
-          "subtitle": "",
-          "status": "in-progress",
-          "createdAt": "2026-06-21",
-          "currentPhase": "creation",
-          "currentWorkflow": "research"
-        },
-        "budget": {
-          "capEur": 15,
-          "warnAtEur": 12,
-          "spentEur": 0
+          "status": "finalisation",
+          "createdAt": "2026-05-08T00:00:00.000Z",
+          "currentWorkflow": "finalisation",
+          "passThreshold": 83,
+          "targetGrade": "A-",
+          "maxLoops": 5,
+          "currentVersion": "v008",
+          "acceptedVersion": "v008",
+          "openP2": null,
+          "openP3": null,
+          "budget": {
+            "currency": "EUR",
+            "cap": 15,
+            "warnAt": 0.8,
+            "spent": 2.1,
+            "lastReconciled": null
+          },
+          "currentPhase": "finalisation"
         },
         "documents": [],
         "workflows": {
           "setup": {
-            "status": "completed",
-            "input": {
-              "documents": [],
-              "notes": ""
-            },
-            "workingArea": {
-              "messages": []
-            },
-            "output": {
-              "content": "",
-              "documents": [],
-              "summary": ""
-            }
-          },
-          "brainstorming": {
             "status": "completed",
             "input": {
               "documents": [],
@@ -231,8 +284,23 @@
               "summary": ""
             }
           },
+          "brainstorming": {
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
           "research": {
-            "status": "in-progress",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -247,7 +315,7 @@
             }
           },
           "outline": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -262,7 +330,22 @@
             }
           },
           "drafting": {
-            "status": "locked",
+            "status": "completed",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "revision": {
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -277,7 +360,7 @@
             }
           },
           "illustration": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -292,7 +375,7 @@
             }
           },
           "quality-assessment": {
-            "status": "locked",
+            "status": "completed",
             "input": {
               "documents": [],
               "notes": ""
@@ -307,6 +390,36 @@
             }
           },
           "finalisation": {
+            "status": "in-progress",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "submission-prep": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "retrospective": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -321,33 +434,41 @@
               "summary": ""
             }
           }
-        },
-        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+        }
       },
       "files": {
-        "PROJECT.md": "# Module 4 — Part A — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Creation\n- **Current workflow:** Research\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
-        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+        "02 Brainstorming/brainstorming_result.md": "# Brainstorming — Module 4 Part A Presentation: Tommy & ACEs\n\n## Narrative angle options\n\n| Option | Central thread | Strength | Risk |\n|---|---|---|---|\n| A | Cumulative adversity — ACEs compound; dose matters | Directly maps to Felitti ACE score concept | Can feel like a list rather than analysis |\n| B | Developmental timing — prenatal/early period most consequential; critical windows disrupted | Strong neuroscience content | Heavy on biology, harder to link protective factors |\n| C | Relational disruption → relational repair — all ACEs act through disrupted attachment; protective factors work by restoring relational safety | Elegant arc, maps to taught content, strongest for Analysis/Evaluation criterion | Needs tight discipline to not sprawl |\n\n## Decision: Option C — Relational disruption → relational repair\n\n**Through-line:** Every ACE in Tommy's life disrupted the relational environment he needed for safe development. Every protective factor worked by partially restoring it.\n\nRationale: Rubric gives 50% to Analysis/Evaluation. This thread lets every ACE link to a mechanism AND an outcome AND a reversal — exactly what A+ demands. Prevents the presentation being a catalogue of facts.\n\n---\n\n## Slide-by-slide content map\n\n### Slide 1 — Tommy's ACEs: Three Levels\n- Frame with Bronfenbrenner's ecological model (individual/family/community)\n- Community: deprivation, unemployment, substance use, crime\n- Family: domestic violence, Mary's substance misuse, mental health, intergenerational trauma (Mary's 15 foster placements), poverty, housing instability\n- Individual/prenatal: prenatal stress, substance exposure, prematurity, low birth weight\n- Tommy has 6+ ACE categories from Felitti et al. (1998) + community-level ACEs from extended models\n- Anchor stat: ACE score ≥4 → 4–12x increased risk of mental health, substance use, chronic disease (Felitti et al., 1998)\n\n### Slide 2 — Biological and Neurological Impact\n- Prenatal: glucocorticoid programming, HPA axis sensitisation; FASD risk spectrum; preterm brain (white matter vulnerability)\n- Toxic stress model (Shonkoff/Harvard CoDC): absence of buffering adult is the key variable\n- Brain: amygdala hyperactivation (hypervigilance), hippocampal volume reduction (memory/learning), PFC underdevelopment (executive function, impulse control)\n- Epigenetics: glucocorticoid receptor methylation (Meaney & Szyf) — trauma alters gene expression\n- Tommy's evidence: premature birth + NICU + later attention/focus/impulsivity all consistent with this pathway\n\n### Slide 3 — Cognitive, Social, Emotional & Mental Health\n- Attachment: Mary's inconsistency → disorganised attachment (Main & Hesse, 1990) — no coherent strategy; hyperactivated threat response\n- Emotional dysregulation: amygdala hijack, shame responses, \"over the top\" reactions\n- Cognitive: impulsivity, focus difficulties = PFC underdevelopment; hostile attribution bias (Crick & Dodge)\n- Mental health risk: elevated cortisol → depression/anxiety vulnerability; shame accumulation\n- Tommy's neuroplasticity already visible: responds to stable teacher relationships\n\n### Slide 4 — Protective Factors & Resilience\n- Mary's attuned moments: Peek-A-Boo = serve-and-return (Harvard CoDC) — builds neural connections even within chaos\n- Tight-knit community: social capital as partial buffer\n- School: LSA = emotion coaching (Gottman) + safe attachment figure\n- Stable predictable teachers = corrective relational experience; felt safety (Siegel)\n- Free school meals/vitamins: physical stability\n- Masten (2001): resilience = \"ordinary magic\" — access to ordinary developmental supports, not extraordinary strength\n- Key point: protective factors don't erase ACEs; they build capacity to manage effects\n\n### Slide 5 — ACE–Outcome Relationships: Synthesis\n- ACE pyramid (Felitti/Anda): adversity → disrupted neurodevelopment → social/emotional/cognitive impairment → risk behaviours → disease\n- Tommy sits mid-pyramid: disrupted neurodevelopment evident, but not at the bottom yet\n- Dose-response is real but not deterministic: neuroplasticity + sensitive adults + early intervention can alter trajectory\n- Individual/family/community all contributed to ACEs AND protective factors — policy needs all three levels\n- Close: Tommy's story is not finished. What happens next in the relational environment determines outcome\n\n---\n\n## Key theoretical anchors\n\n| Framework/Author | Concept | Slide |\n|---|---|---|\n| Felitti et al. (1998) | Original ACE study, dose-response | 1, 5 |\n| Bronfenbrenner (1979) | Ecological systems model | 1 |\n| Shonkoff / Harvard CoDC | Toxic stress, serve-and-return | 2, 4 |\n| Meaney & Szyf (2005) | Epigenetic programming | 2 |\n| Main & Hesse (1990) | Disorganised attachment | 3 |\n| Crick & Dodge (1994) | Social information processing | 3 |\n| Masten (2001) | Resilience as ordinary magic | 4 |\n| Siegel (2012) | Felt safety, interpersonal neurobiology | 4 |\n| Perry (2006) | Neurosequential model | 2, 3 |\n\n---\n\n## Deliberate omissions (10 mins is tight)\n- FASD diagnosis specifics — mention risk, don't dwell\n- Polyvagal theory — implied but too much to explain quickly\n- Tommy as future community ACE risk — not yet evidenced in vignette\n- Part B content (keep presentations strictly on vignette)\n",
+        "02 Brainstorming/result.md": "# Brainstorming — Module 4 Part A Presentation\n\n---\n\n## 1. Assignment Summary\n\n**Module:** Module 4 — Mental Health in Children and Adolescents\n**Part:** A — Presentation (30% of module grade)\n**Institution:** iheed / University of Warwick\n\n### What is required\n\nA 10-minute recorded video presentation analysing a child's development through the lens of Adverse Childhood Experiences (ACEs). The camera must remain on throughout. Submission format is a video file (MP4 or MOV) — not a PowerPoint file.\n\n### Slide constraints\n\n- 4 to 5 content slides (strict maximum)\n- Title/coversheet slide: required, does not count toward limit\n- Reference slide: required, does not count toward limit\n\n### Deadline\n\nMonday 15 June 2026 at 10:00 am (Ireland/UK time). Allow up to 2 hours for upload.\n\n### What the presentation must cover\n\n1. Tommy's development, behaviour, health, and wellbeing in the context of ACEs\n2. Actual or potential effects on development: biological, social, cognitive, mental health, neurological, and brain development\n3. Key ACEs and protective factors\n4. Relationships between ACEs and outcomes — with reference to individual, family, and community circumstances\n5. All claims grounded in academic literature; references displayed on reference slide\n\n### Rubric — what earns an A+\n\n| Criterion | Weight | A+ Requirement |\n|---|---|---|\n| Knowledge | 30% (60 pts) | Demonstrates **excellent** understanding; defines **all** terms clearly and precisely |\n| Analysis / Evaluation | 50% (100 pts) | Actions described and linked **effectively** to relevant sections; **clear** analysis of evidence; **relevant** conclusions |\n| Communication | 20% (40 pts) | Very competent, formal language; **excellent** presentation skills; slides **echo** what is being said; slide count within limit |\n\n**Critical insight:** Analysis/Evaluation carries 50% of marks. An A+ demands that every claim links to a mechanism AND an outcome AND a conclusion — not a catalogue of facts.\n\n---\n\n## 2. Source Material: Tommy Vignette\n\n### Community level (macrosystem)\n\n- **Economic collapse:** Major employer relocated → widespread unemployment, financial instability, uncertain incomes\n- **Stress transmission:** Living on limited/uncertain income is a chronic community-level stressor\n- **Substance use:** Highly prevalent in adults and teenagers; normalised from school age\n- **Crime:** Area known for high crime rates\n- **Tight-knit community:** Partial protective buffer; social capital present despite adversity\n\n### Family level (mesosystem / microsystem)\n\n**Prenatal period:**\n- Domestic violence: Mary's partner volatile, verbally and physically abusive, worse when drunk\n- Frequent house moves → inconsistent antenatal care across different health districts\n- Mary's coping: alcohol and drug use during pregnancy; poor diet\n- Maternal mood: persistently low during pregnancy\n- Mary's own history: 15 foster placements; some carers neglectful or abusive; parents both young with traumatic childhoods → intergenerational trauma pattern\n\n**Postnatal / early years:**\n- Tommy born prematurely → NICU stay (low birth weight, breathing difficulties)\n- Limited daily support for Mary post-discharge\n- Mary felt judged at healthcare appointments → stopped attending health visitor and medical appointments for Tommy\n- Mary's continued substance use and low mood → emotional unavailability; care needs not consistently met\n- No qualifications → precarious, variable employment → Tommy regularly left with different, unfamiliar adults\n\n**Mary's warm moments (present but inconsistent):**\n- Peek-A-Boo and responding to babbling as if Tommy were speaking\n- Outdoor play when safe to do so\n- Expressing pride in Tommy; moments of feeling very loved\n\n**Mary's overwhelmed moments:**\n- Shouting \"horrible things\" at Tommy; sometimes hitting him\n- Tommy left feeling scared, unsure, and increasingly ashamed\n\n### Individual / child level (microsystem)\n\n**Early development:**\n- Premature birth; low birth weight; NICU; breathing difficulties\n- Risk of FASD spectrum (alcohol exposure in utero)\n- No consistent attachment figure in earliest months\n\n**School age:**\n- Attention and focus difficulties\n- Impulsive behaviour\n- \"Over the top\" emotional reactions\n- Initial aggression: hitting other children when overwhelmed or feeling disrespected\n- Responded quickly to emotion-naming sessions with LSA\n- Received free school meals and vitamins\n\n**Trajectory shift:**\n- Learning Support Assistant: emotion coaching, naming feelings, verbal expression of experience\n- Developed positive relationships with calm, predictable teachers\n- Growing self-awareness and improved capacity for self-regulation over time\n\n### Protective factors summary\n\n| Factor | Level | Mechanism |\n|---|---|---|\n| Mary's attuned moments (Peek-A-Boo) | Family | Serve-and-return; neural connection building |\n| Tight-knit community | Community | Social capital, partial economic buffer |\n| Free school meals and vitamins | Individual | Physical stability, nutrition |\n| LSA emotion coaching | Individual | Emotion recognition, verbal regulation |\n| Calm, predictable teachers | School | Corrective relational experience; felt safety |\n| Tommy's neuroplasticity | Individual | Responsiveness to safe adult relationships |\n\n### ACE count (Felitti et al. 1998 categories)\n\nTommy's case maps onto 6+ ACE categories: domestic violence, substance abuse in household, mental illness in household, emotional abuse, physical abuse, and neglect — plus extended models that include community-level adversity and housing instability.\n\n---\n\n## 3. Five Brainstorming Options\n\n---\n\n### Option 1 — Relational Disruption → Relational Repair\n\n**Central thread:** Every ACE in Tommy's life disrupted the relational environment he needed for safe development. Every protective factor worked by partially restoring relational safety.\n\n**Through-line logic:**\nEvery slide connects to the same question: *how did this disrupt (or restore) the relational environment?*\n\n- Prenatal domestic violence disrupted Mary's capacity to be a safe relational base before birth\n- NICU separation interrupted the earliest attachment window\n- Mary's inconsistency → disorganised attachment: Tommy has no coherent relational strategy\n- School: LSA and teachers = corrective relational experiences → partial restoration\n- Conclusion: Tommy's trajectory depends entirely on what happens in the relational environment next\n\n**Theoretical anchors:**\nBowlby (1969), Main & Hesse (1990) — disorganised attachment; Shonkoff / Harvard CoDC — toxic stress and absence of buffering adult; Siegel (2012) — felt safety, interpersonal neurobiology; Masten (2001) — resilience as access to ordinary relational supports; Bronfenbrenner (1979) — ecological frame\n\n**Slide architecture:**\n1. Tommy's ACEs at three ecological levels\n2. Biological and neurological impact (HPA, amygdala, PFC, epigenetics)\n3. Cognitive, social, emotional, and mental health effects\n4. Protective factors and relational repair\n5. ACE-outcome synthesis — dose-response, neuroplasticity, what comes next\n\n**Why this earns A+:**\n- Generates an ACE → mechanism → outcome → reversal chain for every claim (Analysis/Evaluation criterion)\n- Prevents the presentation becoming a catalogue of facts\n- All theoretical frameworks map elegantly onto one through-line\n- The thread is explicit, memorable, and assessor-friendly\n- Allows clear, relevant conclusions on every slide\n\n**Risks:**\n- Needs disciplined delivery to avoid sprawl\n- Must not reduce to \"relationships fix everything\" — requires mechanistic precision\n\n**Grade prediction: A+**\n\n---\n\n### Option 2 — Toxic Stress as the Unifying Mechanism\n\n**Central thread:** Shonkoff's toxic stress model is the single biological mechanism that links all of Tommy's ACEs to his developmental outcomes. The key variable is the absence of a consistent buffering adult.\n\n**Through-line logic:**\nAll ACEs produce the same upstream event: sustained cortisol elevation without a regulatory co-regulator. This triggers: HPA axis sensitisation → amygdala hyperactivation → PFC suppression → downstream cognitive, emotional, social, and health effects.\n\n**Theoretical anchors:**\nShonkoff et al. (2012) — toxic stress framework; McEwen (2007) — allostatic load; Perry (2006) — neurosequential model; Meaney & Szyf (2005) — epigenetic programming; Selye (1956) — stress response origins\n\n**Slide architecture:**\n1. Tommy's ACEs as chronic stress activators\n2. The toxic stress mechanism (HPA → brain → epigenetics)\n3. Downstream outcomes (cognitive, emotional, social, mental health)\n4. When buffering is present: serve-and-return, protective factors\n5. Intervention window: neuroplasticity and stress-buffering relationships\n\n**Why this earns A:**\n- Single mechanistic frame gives strong coherence\n- Excellent fit for biological/neurological content\n- Less elegant fit for community-level ACEs and social outcomes\n- Risks becoming overly biological; harder to address social/cognitive domains with equal depth\n\n**Risks:**\n- Social and community dimensions feel like add-ons rather than integral\n- May appear to reduce everything to neurobiology\n- Harder to address the full scope of the brief (\"biological, social, cognitive, mental health\")\n\n**Grade prediction: A**\n\n---\n\n### Option 3 — Developmental Timing and Critical Windows\n\n**Central thread:** The prenatal period and early childhood are the most sensitive developmental windows. Tommy's ACEs were front-loaded into precisely these critical periods, creating disproportionate and lasting biological and psychological effects.\n\n**Through-line logic:**\nTiming matters as much as dose. Prenatal HPA programming, NICU separation at the earliest attachment window, and maternal emotional unavailability in months 0–12 represent disruptions to the periods of maximum neurological plasticity and sensitivity. Later ACEs operate on an already-sensitised system.\n\n**Theoretical anchors:**\nKnudsen (2004) — critical and sensitive periods in neuroscience; Barker (1990) — developmental origins of health and disease; Meaney & Szyf (2005) — epigenetic programming; Shonkoff — prenatal toxic stress; Main & Hesse — attachment window\n\n**Why this earns A/B:**\n- Scientifically sophisticated; excellent for demonstrating knowledge (30% criterion)\n- Strong fit for biological/neurological slides\n- Difficult to integrate protective factors naturally (they came later; how do they connect to a \"timing\" frame?)\n- Risks being heavy on biology; Communication criterion may suffer if slides read like a lecture\n\n**Grade prediction: A/B**\n\n---\n\n### Option 4 — ACE Dose-Response: Adversity, Trajectory, and the Limits of Determinism\n\n**Central thread:** Felitti et al.'s (1998) dose-response relationship shows that Tommy's 6+ ACE categories place him at 4–12× elevated risk for poor outcomes. But dose is real without being deterministic: neuroplasticity and protective factors can alter trajectory.\n\n**Through-line logic:**\nUse the ACE pyramid (Felitti/Anda) as the organising spine. Show Tommy moving down through the pyramid: adversity → disrupted neurodevelopment → social/emotional impairment → early risk behaviours (aggression). Then show how the pyramid can be interrupted at each level.\n\n**Theoretical anchors:**\nFelitti et al. (1998) — original ACE study; Anda et al. (2006) — dose-response evidence; Bronfenbrenner — ecological risk accumulation; Masten — resilience\n\n**Why this earns B/A:**\n- Directly uses the core ACE literature (strong Knowledge criterion)\n- Good for showing breadth of risk knowledge\n- Weaker as an Analysis/Evaluation vehicle — dose-response is correlational, not mechanistic; lacks the ACE → mechanism → conclusion chain the rubric rewards\n- Can slide toward being a list of ACEs with risk statistics\n\n**Grade prediction: B/A**\n\n---\n\n### Option 5 — Intergenerational Transmission of Adversity\n\n**Central thread:** Tommy's ACEs did not begin with Tommy. They began with Mary's own ACE-saturated childhood (15 foster placements, abuse, neglect, traumatised parents) — and transmitted through biological, psychological, and social pathways to affect Tommy before he was born.\n\n**Through-line logic:**\nMary's unresolved trauma → disorganised attachment in her own childhood → limited mentalisation capacity → inconsistent, sometimes frightening caregiving → Tommy's disorganised attachment and ACEs. Community deprivation as the context that intensified transmission at every level.\n\n**Theoretical anchors:**\nFonagy et al. — mentalisation and intergenerational transmission; Main & Hesse — disorganised attachment and unresolved loss; Fraiberg (1975) — \"ghosts in the nursery\"; Meaney & Szyf — epigenetic transmission\n\n**Why this earns A/B:**\n- Sophisticated and analytically distinctive\n- Shows understanding beyond the vignette surface\n- Risks going beyond evidence in the vignette (we don't have Mary's biological outcomes; we cannot verify epigenetic transmission from the case data)\n- Harder to cover Tommy's full developmental picture (biological, cognitive, social) in 5 slides\n- Risk of spending too much time on Mary rather than Tommy\n\n**Grade prediction: A/B**\n\n---\n\n## 4. Grading Analysis Matrix\n\n| Option | Through-line | Analysis/Evaluation fit | Knowledge fit | Communication fit | Grade |\n|---|---|---|---|---|---|\n| 1 — Relational disruption/repair | Every ACE + every protective factor maps onto one question | Strongest — generates mechanism + outcome + conclusion chain | Strong — all key frameworks present | Strong — memorable, clear arc | **A+** |\n| 2 — Toxic stress mechanism | All ACEs → cortisol → HPA → outcomes | Strong for biological domain; weaker for social/community | Strong on neuroscience; partial on social | Good — but risks biological density | **A** |\n| 3 — Developmental timing | Prenatal + early periods = most sensitive windows | Strong for biology; hard to integrate protective factors | Very strong on neuroscience | Risk of lecture-heavy slides | **A/B** |\n| 4 — ACE dose-response | Dose is real but not deterministic | Correlational not mechanistic — weaker for A+/E criterion | Good — uses core Felitti literature | Accessible but risks catalogue | **B/A** |\n| 5 — Intergenerational transmission | Tommy's ACEs began with Mary | Sophisticated but goes beyond vignette evidence | Strong on attachment and epigenetics | Risk of over-focus on Mary | **A/B** |\n\n---\n\n## 5. Recommendation\n\n**Choose Option 1: Relational Disruption → Relational Repair.**\n\nThe through-line \"every ACE disrupted the relational environment Tommy needed; every protective factor partially restored it\" is the only option that satisfies all three rubric criteria simultaneously:\n\n- **Analysis/Evaluation (50%):** Generates an ACE → mechanism → outcome → reversal chain for every claim. Every slide earns marks on the highest criterion.\n- **Knowledge (30%):** All canonical theoretical frameworks (Bronfenbrenner, Shonkoff, Main & Hesse, Siegel, Masten, Felitti) map onto a relational narrative without strain.\n- **Communication (20%):** A single unifying question makes the presentation coherent, memorable, and easy to follow — exactly what \"slides echo what is being said\" requires.\n\nThe other options are solid, but they either front-load biology at the expense of social/cognitive breadth (Options 2, 3), lack mechanistic depth (Option 4), or risk going beyond the evidence available in the vignette (Option 5).\n\nOption 1 also leaves room for a genuinely analytical closing slide: Tommy's story is not finished. What happens in the relational environment next — at individual, family, and community level — will determine whether neuroplasticity enables recovery or whether risk compounds.\n\n**Proceed to Curriculum Mapping with this through-line confirmed.**\n",
+        "03 Curriculum/result.md": "# Curriculum Mapping — Module 4 Part A: Tommy Presentation\n\n**Project:** module4parta  \n**Workflow:** 03 Curriculum  \n**Input:** `02 Brainstorming/slide outline.txt` + M4 curriculum (Weeks 1–6 markdown pages)  \n**Purpose:** Verify the slide outline covers all required taught content; flag gaps, losses, and additions.\n\n---\n\n## 1. Module 4 Curriculum Overview\n\n| Week | Topic | Core concepts relevant to Tommy |\n|---|---|---|\n| W1 | Attachment & Brain Development | Bowlby/IWM, stages of attachment, secure vs. insecure attachment, disorganised attachment, mentalizing (Fonagy), synaptic pruning, neuroplasticity, sensitive periods, serve-and-return, developmental milestones (cognitive/emotional/social/language/physical) |\n| W2 | Child & Adolescent Risk Factors | Lifecycle approach (distal/proximal), ecological model (Bronfenbrenner), maternal depression, domestic abuse, SES as risk factors, protective factors & resilience (Ungar), FASD, NDCs + ACEs, trauma (complex, intergenerational), latent vulnerability, HPA axis, memory/threat/reward brain systems |\n| W3 | Early Detection & Intervention | Continuum of Need (Universal / Selective+Indicated / Specialist), mental health promotion/prevention, screening, Sure Start, early intervention |\n| W4 | Common MH Disorders & Treatments | Formulation-based approach, depression, anxiety, behavioural disorders (ODD, conduct disorder), CBT, psychodynamic therapy, systemic family therapy, DBT |\n| W5 | School & Community Interventions | School as ecosystem (Bronfenbrenner applied), types of school interventions, community-based approaches |\n| W6 | Ethics & Safeguarding | Risk assessment, safeguarding (not core to this presentation) |\n\n---\n\n## 2. Slide-by-Slide Curriculum Coverage Audit\n\n### Slide 1 — Foundations of Adversity\n\n| Curriculum concept | Source | Status in outline |\n|---|---|---|\n| Bronfenbrenner ecological model | M4 W2 / W5 | ✅ Central structure |\n| Distal / proximal risk factors (lifecycle model) | M4 W2 P19 | ⚠️ Implied but not named — assessor expects this vocabulary |\n| Domestic abuse as risk factor | M4 W2 P22 | ✅ Covered |\n| Socioeconomic status as risk factor | M4 W2 P23 | ✅ Covered |\n| **Maternal depression as risk factor** | **M4 W2 P21** | **❌ Missing — Mary's low mood / depression is in vignette AND curriculum but unnamed in outline** |\n| Intergenerational trauma | M4 W2 P31 | ✅ Present (Mary's 15 placements) |\n| Felitti ACE categories | M4 W2 P28 | ✅ Referenced |\n\n**Verdict:** Structurally strong. One gap: maternal depression must be named explicitly as a curriculum risk factor category.\n\n---\n\n### Slide 2 — Biological Bedrock\n\n| Curriculum concept | Source | Status in outline |\n|---|---|---|\n| HPA axis / cortisol programming | M4 W2 P32 | ✅ Core of slide |\n| Toxic stress (Shonkoff / Harvard CoDC) | M4 W2 / W1 | ✅ Named |\n| FASD risk (prenatal alcohol exposure) | M4 W2 P29 | ✅ Mentioned |\n| Sensitive periods of brain development | M4 W2 P32 | ⚠️ Implied in \"critical window\" language but not named as a curriculum concept |\n| **Latent vulnerability** | **M4 W2 P32** | **❌ Missing — key curriculum term for how early adversity creates future MH risk. Should appear in Slide 2 or 3** |\n| Amygdala (threat system), hippocampus (memory), PFC | M4 W2 P32 | ✅ Present |\n| Barker (1990) | Not in M4 curriculum | ⚠️ Extra-curricular addition — solid academically but assessor won't recognise it as taught content |\n| Epigenetics / Meaney & Szyf | Planned in brainstorming | ❌ Dropped from outline — was a planned differentiator for Knowledge marks |\n\n**Verdict:** Core biology well covered. Two fixes needed: add \"sensitive periods\" and \"latent vulnerability\" using curriculum vocabulary. Consider restoring one epigenetics sentence.\n\n---\n\n### Slide 3 — Disrupted Attachment to School-Age Impairment\n\n| Curriculum concept | Source | Status in outline |\n|---|---|---|\n| Bowlby / IWM | M4 W1 P02 | ✅ Centrepiece of slide |\n| Disorganised attachment | M4 W1 P02 | ✅ Present |\n| Emotional dysregulation / shame | M4 W1 P13 | ✅ Present |\n| Amygdala hyperactivation → externalising behaviour | M4 W2 P32 | ✅ Present |\n| PFC suppression → cognitive impairment | M4 W1 P06 / W2 P32 | ✅ Present |\n| **Mentalizing (Fonagy)** | **M4 W1 P02** | **❌ Missing — explicitly taught in curriculum. Tommy's inability to read social cues and regulate interpersonal responses is a mentalizing failure. High-value omission.** |\n| Social development domain | M4 W1 P14 | ⚠️ Slide title references \"school-age impairment\" but social development is thin — peer relationships barely described |\n| Language development | M4 W1 P11 | ⚠️ Not addressed — if Tommy has communication delays, this is a curriculum domain |\n| **ODD / behavioural disorder framing** | **M4 W4 P53** | **⚠️ Tommy's aggression pattern matches ODD criteria in the curriculum. Not naming this risks the assessor thinking the link to W4 content was missed** |\n| Complex trauma | M4 W2 P31 | ⚠️ Present implicitly but \"complex trauma\" vocabulary not used |\n\n**Verdict:** Strongest slide overall but two meaningful additions needed: mentalizing (Fonagy) and at least a one-line reference to behavioural disorder risk in the curriculum sense.\n\n---\n\n### Slide 4 — Corrective Experiences: Relational Repair\n\n| Curriculum concept | Source | Status in outline |\n|---|---|---|\n| Continuum of Need (Universal/Selective/Indicated) | M4 W3 P35 | ✅ Excellent — correctly applied, directly curriculum language |\n| Universal interventions (free meals, stable school) | M4 W3 P35 | ✅ Correct level |\n| Selective interventions (Mary's warm moments) | M4 W3 P35 | ✅ Correct level |\n| Indicated interventions (LSA, emotion naming) | M4 W3 P35 | ✅ Correct level |\n| Serve-and-return (Shonkoff) | M4 W1 P07 | ✅ Present |\n| Siegel — felt safety / interpersonal neurobiology | M4 curriculum | ✅ Present |\n| **Resilience framing (Ungar / \"improving environment\")** | **M4 W2 P24** | **⚠️ Outline uses Masten (2001) \"ordinary magic\" — valid, but the curriculum explicitly frames resilience as NOT innate and focuses on improving the environment. Both framings should appear.** |\n| **Sure Start** | **M4 W3 P40** | **⚠️ Taught as a curriculum case study of universal intervention. Not referenced in outline — a missed opportunity to demonstrate W3 knowledge** |\n| Screening / early detection | M4 W3 P37 | ❌ Not addressed |\n\n**Verdict:** Best-aligned slide to curriculum. Add Sure Start as the named example of universal provision. Add Ungar's resilience framing alongside Masten.\n\n---\n\n### Slide 5 — Trajectory Shift\n\n| Curriculum concept | Source | Status in outline |\n|---|---|---|\n| Neuroplasticity | M4 W1 P06 / W3 | ✅ Central argument |\n| ACE–outcome dose-response synthesis (Felitti/Anda pyramid) | M4 W2 | ❌ **Dropped from outline vs. brainstorming plan. The ACE pyramid was planned as the synthesis anchor and is directly taught curriculum content** |\n| **Specific MH disorder risks** (depression, anxiety, ODD) | **M4 W4** | **❌ Absent. The W4 curriculum teaches specific disorders — a W4-unanchored closing slide leaves a whole module week unaccounted for** |\n| Evidence-based recommendations (CBT, family therapy) | M4 W4 P55 | ⚠️ Outlined but generic — not named as specific curriculum-taught treatments |\n| Sure Start / multimodal family support | M4 W3 P40 | ⚠️ Mentioned in outline text but not anchored to curriculum |\n| Policy / individual-family-community levels | M4 W2 / W5 | ❌ Dropped from outline vs. brainstorming plan |\n\n**Verdict:** Weakest slide against curriculum. Needs ACE pyramid synthesis and at least one named MH disorder risk (e.g. ODD, depression risk). Also the anchor slide for W4 content — currently W4 is the least-represented week in the whole presentation.\n\n---\n\n## 3. Summary Gap Table\n\n| # | Missing concept | Curriculum source | Priority | Recommended slide |\n|---|---|---|---|---|\n| 1 | **Latent vulnerability** | M4 W2 P32 | 🔴 Critical | Slide 2 or 3 |\n| 2 | **Mentalizing** (Fonagy) | M4 W1 P02 | 🔴 Critical | Slide 3 |\n| 3 | **Specific MH disorder risks** (ODD, depression risk) | M4 W4 P49–53 | 🔴 Critical | Slide 5 |\n| 4 | **ACE pyramid / dose-response synthesis** | M4 W2 / brainstorming plan | 🔴 Critical | Slide 5 |\n| 5 | **Maternal depression as risk factor** | M4 W2 P21 | 🟠 Important | Slide 1 |\n| 6 | **Sensitive periods** (vocabulary) | M4 W2 P32 | 🟠 Important | Slide 2 |\n| 7 | **Sure Start** (universal provision case study) | M4 W3 P40 | 🟠 Important | Slide 4 |\n| 8 | **Resilience as environment-improvement** (Ungar) | M4 W2 P24 | 🟠 Important | Slide 4 |\n| 9 | Behavioural disorder framing (ODD vocabulary) | M4 W4 P53 | 🟡 Moderate | Slide 3 or 5 |\n| 10 | Distal/proximal risk terminology | M4 W2 P19 | 🟡 Moderate | Slide 1 |\n| 11 | Epigenetics / Meaney & Szyf | Brainstorming plan | 🟡 Moderate | Slide 2 |\n| 12 | Complex trauma (vocabulary) | M4 W2 P31 | 🟡 Moderate | Slide 1 or 3 |\n\n---\n\n## 4. Curriculum Coverage by Week\n\n| Week | Coverage in outline | Assessment risk |\n|---|---|---|\n| W1 — Attachment & Brain Dev. | Good — IWM, attachment, brain biology covered | Mentalizing gap reduces W1 depth |\n| W2 — Risk Factors | Good — ecological framing, HPA, trauma | Latent vulnerability and maternal depression missing |\n| W3 — Early Detection | Excellent — Continuum of Need well applied | Sure Start missing |\n| W4 — MH Disorders & Treatments | **Weak** — no named disorders, no named treatments | Highest risk — W4 is barely represented |\n| W5 — School Interventions | Partial — LSA/school mentioned but not framed as W5 | Low risk |\n| W6 — Ethics/Safeguarding | N/A — not relevant to this presentation | — |\n\n---\n\n## 5. Additions in Outline (vs. Brainstorming Plan) — Evaluate for Keeping\n\n| Addition | Value | Keep? |\n|---|---|---|\n| IHEED Continuum of Need framework as table structure | Strong — directly curriculum language, organises Slide 4 clearly | ✅ Keep |\n| Barker (1990) DOHaD | Academically solid but not M4 curriculum | ⚠️ Keep if space, not essential |\n| Intergenerational trauma narrative in Slide 1 | Strong extension of curriculum | ✅ Keep |\n| IWM quote as narrative centrepiece | High impact, keep as visual anchor | ✅ Keep |\n\n---\n\n## 6. Decision & Handoff\n\n**Overall verdict:** The slide outline is 70–75% curriculum-aligned. The through-line is excellent and Slides 2–4 are close to A+ quality. The two structural fixes needed before moving to Outline are:\n\n1. **Slide 5 must be rebuilt** — replace generic recommendations with: (a) ACE pyramid synthesis, (b) named MH disorder risks from W4, (c) neuroplasticity close. Recommendations reduce to one bullet, not three.\n\n2. **Four insertions across other slides** — latent vulnerability (Slide 2), mentalizing (Slide 3), maternal depression (Slide 1), Sure Start (Slide 4).\n\n**Next workflow:** `05 Outline` — produce the definitive slide-by-slide speaker note structure incorporating the above fixes.\n",
+        "05 Outline/result.md": "# Slide Outline — Tommy Presentation: Relational Disruption → Relational Repair\n\n**Assignment:** Module 4 Part A — 10-min recorded presentation  \n**Through-line:** Every ACE in Tommy's life disrupted the relational environment he needed. Every protective factor worked by partially restoring it.  \n**Slide structure:** Title + 5 content slides + Reference slide  \n**Timing:** ~2 min per content slide\n\n---\n\n## Opening Hook (spoken over title slide — 15 sec)\n\n> \"Tommy is seven years old. He hits other children, struggles to focus, and reacts to small frustrations with explosive intensity. A different assessor might label him difficult. This presentation argues he is predictable — and that everything we see in Tommy was set in motion before he was born.\"\n\nThis frames the through-line immediately and signals analytical intent.\n\n---\n\n## Slide 1 — An Ecological Inheritance of Risk\n\n**Slide title:** *An Ecological Inheritance of Risk*\n\n**Central argument:** Tommy's relational disruption did not begin with Tommy. It began a generation earlier and filtered through every level of his ecology before he was born.\n\n### Visual\nThree-tier ecological table (Bronfenbrenner, 1979):\n\n| Level | Tommy's context | Relational impact |\n|---|---|---|\n| Macrosystem / Exosystem | Employer relocation → unemployment; high community crime and substance use | Chronic financial stress; normalised high-risk coping; reduced social capital |\n| Mesosystem / Microsystem | DV; Mary's substance use; 6+ address changes; volatile partner | Home defined by unpredictability and threat — the anti-conditions for secure attachment |\n| Individual / Intergenerational | Mary's 15 foster placements → no secure attachment model; no qualifications | Mary cannot provide what she never received — intergenerational transmission of relational fragility |\n\n**Key analytical move:** The third row is the critical one. Mary's ACE history is not background — it is the mechanism by which community-level stress becomes Tommy's relational reality. 6+ ACE categories (Felitti et al., 1998) are present before Tommy is school-age.\n\n**Spoken close:** \"Tommy's ACE score tells us how many categories of risk are present. What Bronfenbrenner shows us is that those risks do not exist in isolation — they cascade inward, from community to family to the first relationship Tommy will ever have.\"\n\n**References this slide:** Bronfenbrenner (1979); Felitti et al. (1998)\n\n---\n\n## Slide 2 — Biology Under Siege\n\n**Slide title:** *Biology Under Siege*\n\n**Central argument:** The relational disruption translated into biological change before Tommy drew his first breath. His stress-response system was shaped by an environment of threat — not by choice, but by biology.\n\n### Visual\nLinear chain diagram: **Prenatal → Birth → Infancy → School-age biology**\n\n**Spoken content, beat by beat:**\n\n1. **Prenatal environment:** Mary's chronic cortisol — produced by DV, low mood, substance use — crossed the placenta. Alcohol exposure created FASD risk across cognitive, behavioural, and emotional domains. Tommy's HPA axis was being calibrated to expect danger before he had a name.\n\n2. **Birth:** Preterm, low birth weight, NICU. The NICU represents a biologically critical period without a buffering adult (Shonkoff). Without a consistent co-regulator during sensitive periods of brain development, the infant's stress system has no external reference point to regulate against — it remains at high activation.\n\n3. **Toxic stress model (Shonkoff):** Distinguish tolerable stress (buffered by a caring adult) from toxic stress (sustained, unbuffered activation). Tommy experienced the latter. The result is a *latent vulnerability* — biological changes to the brain's memory, threat, and reward systems that do not necessarily produce disorder immediately, but sensitise the brain to future adversity.\n\n4. **Brain consequences:** Amygdala hyperactivation (threat over-detection), hippocampal effects (memory and emotional regulation), PFC underdevelopment (executive function, impulse control). These are not character traits — they are neurological adaptations to an environment of chronic unpredictability.\n\n**Spoken close:** \"Tommy arrived home with a stress-sensitised brain primed to perceive threat. What he needed next was a relationship consistent enough to begin recalibrating that system. What he got was more unpredictability.\"\n\n**References this slide:** Shonkoff / Harvard Centre on the Developing Child (toxic stress model); [M4 W2 P32 — latent vulnerability, sensitive periods, HPA axis]; Felitti et al. (1998) — FASD risk\n\n---\n\n## Slide 3 — The Predictable Child\n\n**Slide title:** *The Predictable Child*\n\n**Central argument:** Tommy's school-age behaviours are not failures of character. They are exactly what a stress-sensitised brain, learning from a disorganised attachment figure, looks like — and they follow a clear theoretical logic.\n\n### Visual\n**Centrepiece:** Tommy's Internal Working Model — displayed as a quote block:\n\n> *\"Adults are unpredictable. Safety is fragile. When I feel overwhelmed, I must react with immediate intensity — because I cannot rely on anyone else to regulate for me.\"*\n> — Tommy's operational model of the world (Bowlby, 1969)\n\n**Spoken content, beat by beat:**\n\n1. **Attachment:** Mary's caregiving was inconsistent — sometimes responsive, often overwhelmed, at times frightening. Research on disorganised attachment (Main & Hesse, 1990) identifies this pattern — the caregiver as simultaneously the source of fear and the source of comfort — as producing the most disrupted attachment strategy. There is no coherent approach Tommy can take; hyperactivation is his only option.\n\n2. **Internal working model:** Bowlby's concept of the IWM as a relational script that generalises from the primary caregiver to all relationships. Tommy's script: adults cannot be trusted to regulate; self-protection through aggression is necessary. He applies this script to teachers, peers, and the classroom.\n\n3. **Mentalizing (Fonagy):** Caregivers teach children to understand minds — their own and others'. Mary's inconsistency deprived Tommy of this. He cannot reliably interpret why others do what they do, or predict how his behaviour will affect them. A neutral glance reads as hostility. A peer bumping him in the corridor registers as a deliberate attack. His explosive reactions are not disproportionate given what his nervous system believes is happening.\n\n4. **At school:** Amygdala hijack overrides PFC function — survival processing dominates rational processing. Focus difficulties, impulsivity, \"over the top\" emotional reactions are the output of a system doing exactly what it was trained to do: prioritise threat detection over reflection.\n\n**Spoken close:** \"Tommy is not choosing aggression. He is deploying the only relational strategy his experience has taught him. The question is not why he behaves this way — the theory tells us precisely why. The question is what can change it.\"\n\n**References this slide:** Bowlby (1969); Main & Hesse (1990); Fonagy (mentalizing); [M4 W2 P32 — amygdala/PFC]; [M4 W1 P02 — IWM and insecure attachment]\n\n---\n\n## Slide 4 — Repair Begins in Relationship\n\n**Slide title:** *Repair Begins in Relationship*\n\n**Central argument:** Every protective factor in Tommy's life works through the same mechanism that disrupted him: relationship. The school system, almost without designing it this way, began to give Tommy what his early ecology could not.\n\n### Visual\nContinuum of Need table (IHEED, M4 W3):\n\n| Level | Tommy's intervention | Mechanism of repair |\n|---|---|---|\n| Universal | Free school meals + vitamins; calm, predictable school environment | Addresses physiological stability; creates a safe baseline — the precondition for any relational repair |\n| Selective | Mary's warm moments (Peek-A-Boo, babbling) | Serve-and-return interactions (Shonkoff) — each exchange builds a neural connection; partial repair within an inconsistent relationship |\n| Indicated | LSA emotion-naming sessions | Co-regulation: the LSA names Tommy's internal state, activating PFC language pathways; over time, shifts from amygdala-dominant to PFC-mediated processing |\n\n**Key analytical move:** The mechanism of all three levels is the same — a consistent, calm adult presence that offers what Tommy's early ecology denied: *felt safety* (Siegel, 2012). When the LSA remains regulated while Tommy is dysregulated, she is functioning as the external co-regulator his HPA axis was never given.\n\n**Critical point:** Protective factors do not erase ACEs. They do not rewrite Tommy's biological history. What they do is create windows — repeated, predictable moments of safety — that allow neuroplasticity to begin reversing the sensitisation. The ordinary magic (Masten, 2001) is not Tommy's resilience — it is the relational consistency of the adults around him.\n\n**Spoken close:** \"The shift from physical aggression to verbal communication that we see in Tommy is not incidental. It is evidence of neuroplasticity in action. The question is whether the relational conditions that enabled it can be sustained.\"\n\n**References this slide:** IHEED Continuum of Need (M4 W3); Siegel (2012); Shonkoff / Harvard CoDC (serve-and-return); Masten (2001)\n\n---\n\n## Slide 5 — Not Determined\n\n**Slide title:** *Not Determined*\n\n**Central argument:** Tommy's trajectory has shifted — but it is not fixed. ACEs leave a biological mark; they do not write the ending. The relational environment still determines outcome.\n\n### Visual\n**ACE pyramid** (Felitti & Anda): adversity → disrupted neurodevelopment → social/emotional/cognitive impairment → risk behaviours → disease/early death.\n\n**Mark Tommy's current position:** mid-pyramid. Disrupted neurodevelopment is evident. Social and emotional impairment is present. He has not yet reached the base.\n\n**Spoken content, beat by beat:**\n\n1. **What the pyramid predicts without intervention:** Elevated risk of internalising disorders (depression, anxiety) and externalising disorders consistent with ODD criteria — children with 4+ ACEs face dramatically elevated lifetime risk. This is not a diagnosis of Tommy; it is what the dose-response evidence says about children with his profile.\n\n2. **But dose-response is not destiny:** The same research that identifies ACE-outcome relationships demonstrates that the mediating variable — the one that determines whether adversity translates into disorder — is the presence or absence of a consistent, buffering relational environment. Tommy already has evidence of this working: verbal communication has replaced hitting.\n\n3. **What neuroplasticity requires:** Continuity. The rewiring of the HPA axis is not an event — it is a process, dependent on repeated experiences of predictability replacing unpredictability. Removing the LSA, changing schools, returning to home chaos, reverses it.\n\n4. **The three-level implication:** Individual (continued indicated support), family (sustained support for Mary's own mental health and substance use — her capacity for warm moments is the selective intervention), community (stable housing, economic support — the macro-level conditions that determine whether Mary can be a buffer at all).\n\n**Spoken close:** \"Tommy's early years were not his fault. The biological disruption is real and it is documented. But the evidence — in the neuroscience, in the attachment literature, and in Tommy's own behaviour — shows that the story is still being written. And it is written, as it always was, in relationships.\"\n\n**References this slide:** Felitti & Anda (ACE pyramid); neuroplasticity literature; [M4 W4 — internalising/externalising disorder risk]; [M4 W2 P32 — latent vulnerability as ongoing risk]\n\n---\n\n## Timing Guide\n\n| Slide | Content | Target time |\n|---|---|---|\n| Title | Opening hook | 0:15 |\n| Slide 1 | Ecological inheritance | 1:45 |\n| Slide 2 | Biology under siege | 2:00 |\n| Slide 3 | The predictable child | 2:15 |\n| Slide 4 | Repair begins in relationship | 2:15 |\n| Slide 5 | Not determined | 1:30 |\n| **Total** | | **10:00** |\n\n*Note: Slides 3 and 4 are the analytical heart — they can run slightly long if needed. Slide 5 should feel conclusive, not rushed; keep the final close unhurried.*\n\n---\n\n## Reference List (for Reference Slide)\n\n- Bowlby, J. (1969). *Attachment and Loss, Vol. 1: Attachment.* Basic Books.\n- Bronfenbrenner, U. (1979). *The Ecology of Human Development.* Harvard University Press.\n- Felitti, V.J. et al. (1998). Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults. *American Journal of Preventive Medicine, 14*(4), 245–258.\n- Fonagy, P. et al. (2002). *Affect Regulation, Mentalization and the Development of the Self.* Other Press.\n- Main, M. & Hesse, E. (1990). Parents' unresolved traumatic experiences are related to infant disorganized attachment status. In M.T. Greenberg et al. (Eds.), *Attachment in the Preschool Years.* University of Chicago Press.\n- Masten, A.S. (2001). Ordinary magic: Resilience processes in development. *American Psychologist, 56*(3), 227–238.\n- Shonkoff, J.P. & Garner, A.S. (2012). The lifelong effects of early childhood adversity and toxic stress. *Pediatrics, 129*(1), e232–e246.\n- Siegel, D.J. (2012). *The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are* (2nd ed.). Guilford Press.\n- [M4 W2 — Anna Freud National Centre: Latent vulnerability and trauma]\n- [M4 W2 P29 — SIGN guidance on FASD]\n\n---\n\n## Handoff to Drafting\n\nThe outline is complete and story-locked. The next step (`06 Drafting`) is to write the full speaker script for each slide — exact words, not bullet prompts. Each slide should be scripted to ~2 minutes of natural speech (~280–320 words spoken aloud at a measured academic pace).\n\n**Discipline reminders for drafting:**\n- Every sentence should serve the through-line or be cut\n- Slide visuals echo what is being said — no bullet points that front-run the spoken word\n- The IWM quote on Slide 3 should be displayed before it is spoken, not after\n- Slide 5 close should be the last sentence of the presentation — do not trail off into housekeeping\n",
+        "PROJECT.md": "# Module 4 — Part A — Project Dashboard\r\n\r\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\r\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\r\n>\r\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\r\n\r\n## Where we are\r\n- **Current phase:** Creation\r\n- **Current workflow:** Research\r\n- **Project status:** active\r\n\r\n## Progress\r\n\r\n| Phase | Workflow | Output | Status |\r\n|---|---|---|---|\r\n| **Preparation** | Setup | `01 Setup/result.md` | ✅ completed |\r\n|  | Brainstorming | `02 Brainstorming/result.md` | ✅ completed |\r\n|  | Curriculum | `03 Curriculum/result.md` | ✅ completed |\r\n| **Creation** | Research | `04 Research/result.md` | ⬜ in-progress |\r\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\r\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\r\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\r\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\r\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\r\n\r\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\r\n\r\n## Phase handovers\r\n- Preparation → Creation: `_handover/1-preparation.md`\r\n- Creation → Finalisation: `_handover/2-creation.md`\r\n- Finalisation → submission: `_handover/3-finalisation.md`\r\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · curriculum · brainstorming)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. Decisions & discussion\n<!-- Selected topic, thesis statement, scope, and WHY (the angle chosen over the alternatives). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| setup | `01 Setup/result.md` — assessment summary | — |\n| curriculum | `03 Curriculum/result.md` — theory map | — |\n| brainstorming | `02 Brainstorming/result.md` — topic & thesis | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · revision · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. Decisions & discussion\n<!-- Final structure, what made it into the draft, what was cut and why (trade-offs). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| research | `04 Research/result.md` + `references_wiki/` | evidenceCoverage __ |\n| outline | `05 Outline/result.md` | skeletonReadiness __ |\n| drafting | `06 Drafting/result.md` | argumentationScore __ |\n| revision | `06 Drafting/revision/result.md` | — |\n| illustration | `06 Drafting/illustrations/` | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation · submission-prep · retrospective)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. Decisions & discussion\n<!-- Final fixes applied, FQA sign-off, the grade rationale. -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| quality-assessment | `07 QA/result.md` — FQA report | fqaScore __ |\n| finalisation | `08 Final/result.md` — final document | — |\n| submission-prep | `08 Final/submission/result.md` — submission package | — |\n| retrospective | `08 Final/retrospective/result.md` — cost & lessons | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n| Submission package | `08 Final/submission/result.md` | cover sheet, authenticity, filename |\n| Retrospective | `08 Final/retrospective/result.md` | cost analysis + process improvements |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n"
       }
     },
     "module5parta": {
       "state": {
         "project": {
           "id": "module5parta",
-          "name": "Module 5 — Part A",
-          "module": "5",
+          "name": "Module5PartA",
+          "module": "Module 5 – Addiction",
           "part": "A",
-          "subtitle": "",
-          "status": "in-progress",
-          "createdAt": "2026-06-21",
-          "currentPhase": "preparation",
-          "currentWorkflow": "setup"
-        },
-        "budget": {
-          "capEur": 15,
-          "warnAtEur": 12,
-          "spentEur": 0
+          "status": "setup",
+          "createdAt": "2026-06-15T12:35:33.000Z",
+          "currentWorkflow": "setup",
+          "passThreshold": 83,
+          "targetGrade": "A-",
+          "maxLoops": 5,
+          "currentVersion": null,
+          "budget": {
+            "currency": "EUR",
+            "cap": 15,
+            "warnAt": 0.8,
+            "spent": 0,
+            "lastReconciled": null
+          },
+          "currentPhase": "preparation"
         },
         "documents": [],
         "workflows": {
@@ -366,7 +487,7 @@
               "summary": ""
             }
           },
-          "brainstorming": {
+          "curriculum": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -381,7 +502,7 @@
               "summary": ""
             }
           },
-          "curriculum": {
+          "brainstorming": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -441,6 +562,21 @@
               "summary": ""
             }
           },
+          "revision": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
           "illustration": {
             "status": "locked",
             "input": {
@@ -485,34 +621,68 @@
               "documents": [],
               "summary": ""
             }
+          },
+          "submission-prep": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "retrospective": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
           }
-        },
-        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+        }
       },
       "files": {
-        "PROJECT.md": "# Module 5 — Part A — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Preparation\n- **Current workflow:** Setup\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
-        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+        "PROJECT.md": "# Module 5 — Part A — Project Dashboard\r\n\r\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\r\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\r\n>\r\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\r\n\r\n## Where we are\r\n- **Current phase:** Preparation\r\n- **Current workflow:** Setup\r\n- **Project status:** active\r\n\r\n## Progress\r\n\r\n| Phase | Workflow | Output | Status |\r\n|---|---|---|---|\r\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\r\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\r\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\r\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\r\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\r\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\r\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\r\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\r\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\r\n\r\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\r\n\r\n## Phase handovers\r\n- Preparation → Creation: `_handover/1-preparation.md`\r\n- Creation → Finalisation: `_handover/2-creation.md`\r\n- Finalisation → submission: `_handover/3-finalisation.md`\r\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · curriculum · brainstorming)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. Decisions & discussion\n<!-- Selected topic, thesis statement, scope, and WHY (the angle chosen over the alternatives). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| setup | `01 Setup/result.md` — assessment summary | — |\n| curriculum | `03 Curriculum/result.md` — theory map | — |\n| brainstorming | `02 Brainstorming/result.md` — topic & thesis | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · revision · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. Decisions & discussion\n<!-- Final structure, what made it into the draft, what was cut and why (trade-offs). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| research | `04 Research/result.md` + `references_wiki/` | evidenceCoverage __ |\n| outline | `05 Outline/result.md` | skeletonReadiness __ |\n| drafting | `06 Drafting/result.md` | argumentationScore __ |\n| revision | `06 Drafting/revision/result.md` | — |\n| illustration | `06 Drafting/illustrations/` | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation · submission-prep · retrospective)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. Decisions & discussion\n<!-- Final fixes applied, FQA sign-off, the grade rationale. -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| quality-assessment | `07 QA/result.md` — FQA report | fqaScore __ |\n| finalisation | `08 Final/result.md` — final document | — |\n| submission-prep | `08 Final/submission/result.md` — submission package | — |\n| retrospective | `08 Final/retrospective/result.md` — cost & lessons | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n| Submission package | `08 Final/submission/result.md` | cover sheet, authenticity, filename |\n| Retrospective | `08 Final/retrospective/result.md` | cost analysis + process improvements |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n"
       }
     },
     "module5partb": {
       "state": {
         "project": {
           "id": "module5partb",
-          "name": "Module 5 — Part B",
-          "module": "5",
+          "name": "Module5PartB",
+          "module": "Module 5 – Addiction",
           "part": "B",
-          "subtitle": "",
-          "status": "in-progress",
-          "createdAt": "2026-06-21",
-          "currentPhase": "preparation",
-          "currentWorkflow": "setup"
-        },
-        "budget": {
-          "capEur": 15,
-          "warnAtEur": 12,
-          "spentEur": 0
+          "status": "setup",
+          "createdAt": "2026-06-15T12:37:25.000Z",
+          "currentWorkflow": "setup",
+          "passThreshold": 85,
+          "targetGrade": "A",
+          "maxLoops": 5,
+          "currentVersion": null,
+          "budget": {
+            "currency": "EUR",
+            "cap": 15,
+            "warnAt": 0.8,
+            "spent": 0,
+            "lastReconciled": null
+          },
+          "currentPhase": "preparation"
         },
         "documents": [],
         "workflows": {
@@ -531,7 +701,7 @@
               "summary": ""
             }
           },
-          "brainstorming": {
+          "curriculum": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -546,7 +716,7 @@
               "summary": ""
             }
           },
-          "curriculum": {
+          "brainstorming": {
             "status": "locked",
             "input": {
               "documents": [],
@@ -606,6 +776,21 @@
               "summary": ""
             }
           },
+          "revision": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
           "illustration": {
             "status": "locked",
             "input": {
@@ -650,15 +835,44 @@
               "documents": [],
               "summary": ""
             }
+          },
+          "submission-prep": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
+          },
+          "retrospective": {
+            "status": "locked",
+            "input": {
+              "documents": [],
+              "notes": ""
+            },
+            "workingArea": {
+              "messages": []
+            },
+            "output": {
+              "content": "",
+              "documents": [],
+              "summary": ""
+            }
           }
-        },
-        "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+        }
       },
       "files": {
-        "PROJECT.md": "# Module 5 — Part B — Project Dashboard\n\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\n>\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\n\n## Where we are\n- **Current phase:** Preparation\n- **Current workflow:** Setup\n- **Project status:** active\n\n## Progress\n\n| Phase | Workflow | Output | Status |\n|---|---|---|---|\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\n\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\n\n## Phase handovers\n- Preparation → Creation: `_handover/1-preparation.md`\n- Creation → Finalisation: `_handover/2-creation.md`\n- Finalisation → submission: `_handover/3-finalisation.md`\n",
-        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · brainstorming · curriculum)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. What was decided\n<!-- Selected topic, thesis statement, scope. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. What was decided\n<!-- Final structure, what made it into the draft, what was cut. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n",
-        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. What was decided\n<!-- Final fixes applied, sign-off. -->\n-\n\n## 2. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n\n## 3. Open questions / risks\n-\n\n## 4. Do NOT redo\n-\n\n## 5. Revisions\n-\n"
+        "PROJECT.md": "# Module 5 — Part B — Project Dashboard\r\n\r\n> ⚠️ **PROVISIONAL** — status was inferred from on-disk content. Verify `currentPhase` /\r\n> `currentWorkflow` here and in `project-state.json` and correct as needed.\r\n>\r\n> Human-readable mirror of `project-state.json`. Rules: [`/STRUCTURE.md`](../../STRUCTURE.md).\r\n\r\n## Where we are\r\n- **Current phase:** Preparation\r\n- **Current workflow:** Setup\r\n- **Project status:** active\r\n\r\n## Progress\r\n\r\n| Phase | Workflow | Output | Status |\r\n|---|---|---|---|\r\n| **Preparation** | Setup | `01 Setup/result.md` | ⬜ in-progress |\r\n|  | Brainstorming | `02 Brainstorming/result.md` | 🔒 locked |\r\n|  | Curriculum | `03 Curriculum/result.md` | 🔒 locked |\r\n| **Creation** | Research | `04 Research/result.md` | 🔒 locked |\r\n|  | Outline | `05 Outline/result.md` | 🔒 locked |\r\n|  | Drafting | `06 Drafting/result.md` | 🔒 locked |\r\n|  | Illustration *(opt.)* | `06 Drafting/illustrations/result.md` | 🔒 locked |\r\n| **Finalisation** | Quality Assessment | `07 QA/result.md` | 🔒 locked |\r\n|  | Finalisation | `08 Final/result.md` | 🔒 locked |\r\n\r\nLegend: ⬜ ready/in-progress · ✅ completed · 🔒 locked\r\n\r\n## Phase handovers\r\n- Preparation → Creation: `_handover/1-preparation.md`\r\n- Creation → Finalisation: `_handover/2-creation.md`\r\n- Finalisation → submission: `_handover/3-finalisation.md`\r\n",
+        "_handover/1-preparation.md": "<!-- Fill this in when Preparation is done. Template: /structure/handover-template.md -->\n\n# Handover — Preparation → Creation\n\n- **From:** Preparation (setup · curriculum · brainstorming)\n- **To:** Creation (research)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}}\n- **Status after this handover:** currentPhase = `creation`, currentWorkflow = `research`\n\n## 1. Decisions & discussion\n<!-- Selected topic, thesis statement, scope, and WHY (the angle chosen over the alternatives). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| setup | `01 Setup/result.md` — assessment summary | — |\n| curriculum | `03 Curriculum/result.md` — theory map | — |\n| brainstorming | `02 Brainstorming/result.md` — topic & thesis | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Assessment Summary | `01 Setup/result.md` | constraints & rubric for the whole essay |\n| Theory Map | `03 Curriculum/result.md` | which concepts to evidence |\n| Topic & Thesis | `02 Brainstorming/result.md` | what research must support |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/2-creation.md": "<!-- Fill this in when Creation is done. Template: /structure/handover-template.md -->\n\n# Handover — Creation → Finalisation\n\n- **From:** Creation (research · outline · drafting · revision · illustration)\n- **To:** Finalisation (quality-assessment)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** currentPhase = `finalisation`, currentWorkflow = `quality-assessment`\n\n## 1. Decisions & discussion\n<!-- Final structure, what made it into the draft, what was cut and why (trade-offs). -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| research | `04 Research/result.md` + `references_wiki/` | evidenceCoverage __ |\n| outline | `05 Outline/result.md` | skeletonReadiness __ |\n| drafting | `06 Drafting/result.md` | argumentationScore __ |\n| revision | `06 Drafting/revision/result.md` | — |\n| illustration | `06 Drafting/illustrations/` | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| Source database | `04 Research/result.md` + `04 Research/references_wiki/` | citations to verify in QA |\n| Detailed outline | `05 Outline/result.md` | structure to assess against |\n| Draft | `06 Drafting/result.md` | the text under review |\n| Illustrations | `06 Drafting/illustrations/` | figures to check |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n",
+        "_handover/3-finalisation.md": "<!-- Fill this in when Finalisation is done. Template: /structure/handover-template.md -->\n\n# Handover — Finalisation → Submission\n\n- **From:** Finalisation (quality-assessment · finalisation · submission-prep · retrospective)\n- **To:** Submission (done)\n- **Project:** {{module / part}}\n- **Date:** {{YYYY-MM-DD}} · **Version:** {{vNNN}}\n- **Status after this handover:** project.status = `submitted`\n\n## 1. Decisions & discussion\n<!-- Final fixes applied, FQA sign-off, the grade rationale. -->\n-\n\n## 2. What this phase produced\n| Workflow | Output | Gate / score |\n|---|---|---|\n| quality-assessment | `07 QA/result.md` — FQA report | fqaScore __ |\n| finalisation | `08 Final/result.md` — final document | — |\n| submission-prep | `08 Final/submission/result.md` — submission package | — |\n| retrospective | `08 Final/retrospective/result.md` — cost & lessons | — |\n\n## 3. Document set passed forward\n| Document | Path | Why it matters next |\n|---|---|---|\n| FQA report | `07 QA/result.md` | record of issues + actions |\n| Submission-ready document | `08 Final/result.md` | what gets submitted |\n| Submission package | `08 Final/submission/result.md` | cover sheet, authenticity, filename |\n| Retrospective | `08 Final/retrospective/result.md` | cost analysis + process improvements |\n\n## 4. Open questions / risks\n-\n\n## 5. Do NOT redo\n-\n\n## 6. Revisions\n-\n"
       }
     }
   }

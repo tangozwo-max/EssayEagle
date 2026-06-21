@@ -10,21 +10,26 @@ the handovers, and "where we left off" are all defined here and in one machine-r
 
 ## The big idea
 
-Your university assignment moves through **3 phases**. Each phase contains **workflows**.
-Each workflow produces an **output document** that becomes the **input** of the next workflow.
-At the **end of each phase**, a **handover document** bundles the documents passed to the next
-phase, and the project's **status advances** to that next phase. You can always **go back a
-phase and redo** it.
+Your university assignment moves through **3 phases** grouping **12 workflows**. Each workflow
+produces an **output document** that becomes the **input** of the next workflow. At the **end of
+each phase**, a **handover document** bundles the documents passed to the next phase, and the
+project's **status advances** to that next phase. You can always **go back a phase and redo** it.
 
 ```
-PREPARATION            CREATION                     FINALISATION
-1 setup            →   4 research               →   7 quality-assessment
-2 brainstorming    →   5 outline                →   8 finalisation
-3 curriculum       →   6 drafting
-                       (+ illustration, optional)
+PREPARATION           CREATION                    FINALISATION
+1 setup           →   4 research        ⇄     →   9  quality-assessment  ⇄
+2 curriculum      →   5 outline         ⇄     →   10 finalisation
+3 brainstorming   →   6 drafting        ⇄     →   11 submission-prep
+                      7 revision        ⇄         12 retrospective
+                      8 illustration (opt)
    │ handover            │ handover                    │ handover
    └─→ _handover/1-preparation.md ─→ _handover/2-creation.md ─→ _handover/3-finalisation.md
 ```
+
+Numbers are **pipeline order**, not folder numbers. **Preparation runs setup → curriculum →
+brainstorming** (map the module first, then brainstorm a topic within it), so the folders
+`02 Brainstorming` / `03 Curriculum` are visited in reverse. `⇄` marks the quality-gated loops
+(research, outline, drafting, and the quality-assessment ↔ revision FQA loop).
 
 The **single source of truth** for this pipeline is
 [`structure/workflow-map.json`](structure/workflow-map.json). The app GUI and any AI chat
@@ -56,18 +61,23 @@ EssayEagle/
 ├── PROJECT.md            ← human dashboard: where we are, what's next
 ├── project-state.json    ← machine status + resume pointer (currentPhase / currentWorkflow)
 ├── 00 Input/             ← assignment_brief, grading_rubric, referencing style, curriculum, previous_assignments
-├── 01 Setup/             → result.md   (Assessment Summary)
-├── 02 Brainstorming/     → result.md   (topic + thesis)
-├── 03 Curriculum/        → result.md   (theory map)
+├── 01 Setup/             → result.md   (Assessment Summary)        [prep 1]
+├── 03 Curriculum/        → result.md   (theory map)                [prep 2]
+├── 02 Brainstorming/     → result.md   (topic + thesis)            [prep 3]
 ├── 04 Research/          → result.md   (source database + references_wiki/)
 ├── 05 Outline/           → result.md   (detailed outline)
-├── 06 Drafting/          → result.md   (draft)  + illustrations/
+├── 06 Drafting/          → result.md   (draft)
+│   ├── revision/         → result.md   (revised draft; snapshots → runs/vNNN)
+│   └── illustrations/    → result.md   (figures, optional)
 ├── 07 QA/                → result.md   (FQA report)
-├── 08 Final/             → result.md   (submission-ready)
+├── 08 Final/             → result.md   (final document)
+│   ├── submission/       → result.md   (cover sheet, authenticity, filename)
+│   └── retrospective/    → result.md   (cost analysis + lessons)
+├── runs/                 ← immutable vNNN snapshots of each FQA-loop iteration
 └── _handover/
-    ├── 1-preparation.md
-    ├── 2-creation.md
-    └── 3-finalisation.md
+    ├── 1-preparation.md   (setup · curriculum · brainstorming)
+    ├── 2-creation.md      (research · outline · drafting · revision · illustration)
+    └── 3-finalisation.md  (quality-assessment · finalisation · submission-prep · retrospective)
 ```
 
 **Convention:** every workflow writes its deliverable to `<folder>/result.md`. That file is the
@@ -155,10 +165,15 @@ Two ways to work online:
 ## Status of this work
 
 - ✅ Structure layer: this guide, the canonical map, templates, project scaffold.
+- ✅ **12 workflows grouped into 3 phases** (preparation / creation / finalisation), with the
+  full local pipeline (`revision`, `submission-prep`, `retrospective`) folded back in.
 - ✅ App aligned to the single source of truth (`gui/src/lib/workflow-map.ts`); the old
-  conflicting ids (`curriculum-mapping`, `fqa`, `final`) now resolve via `aliases`.
-- ✅ All modules have a `project-state.json` (statuses are **provisional** — verify them).
+  conflicting ids (`curriculum-mapping`, `fqa`, `final`) resolve via `aliases`.
+- ✅ Every `project-state.json` migrated to the canonical 12-workflow schema with all progress
+  preserved (`currentVersion`, `openP1`, budget, …); per-workflow statuses derived from
+  `currentWorkflow` position (**provisional — verify per project**).
 - ✅ Read-only online dashboard via the snapshot fallback.
 
-Remaining clean-ups (optional): remove the stale `gui/src_v1/` duplicate; unify the two
-mirrored maps (`structure/workflow-map.json` ↔ `gui/src/lib/workflow-map.ts`) via a generator.
+Remaining clean-ups (optional): unify the two mirrored maps
+(`structure/workflow-map.json` ↔ `gui/src/lib/workflow-map.ts`) via a generator; fill in the
+per-project `_handover/` docs from real phase content.

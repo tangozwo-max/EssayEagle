@@ -1,38 +1,30 @@
 {
   "project": {
-    "id": "module4",
-    "name": "Module 4",
-    "module": "4",
-    "part": "",
-    "subtitle": "",
-    "status": "in-progress",
-    "createdAt": "2026-06-21",
-    "currentPhase": "creation",
-    "currentWorkflow": "research"
-  },
-  "budget": {
-    "capEur": 15,
-    "warnAtEur": 12,
-    "spentEur": 0
+    "id": "mpModule 4b",
+    "name": "mp4b",
+    "module": "Module 4",
+    "part": "B",
+    "status": "finalisation",
+    "createdAt": "2026-04-08T18:52:27.235Z",
+    "currentWorkflow": "finalisation",
+    "passThreshold": 85,
+    "targetGrade": "A",
+    "maxLoops": 5,
+    "currentVersion": "v014",
+    "acceptedVersion": "v014",
+    "openP1": "SUBMISSION-READY (v014). Moderate flow-preserving polish over v013 (an LLM review applied selectively - NO restructure, reversal spine + access-gap adjudication kept). Added explicit evaluation after every intervention (CBT value-depends-on-reach; parent-led 'for whom'; guided digital limit = adherence/implementation not efficacy; SSRI when/why-indicated); split dense sentences; hedged two assertions with explicit evidence; sharpened conclusion. 2,065 body words (top of range, matches student habit). 46 refs, 0 ghosts/orphans, 46/46 reconciled to Zotero; reports carried forward (no new factual claims -> paraphrase audit 44/46 verbatim unchanged). Only open item: Woodward 2001 abstract-level (paywalled, acceptable). v013 retained as fallback. [PRIOR v013: full storyline rebuild gated on Elicit Run 6 - reversed evidence-led thesis (therapies kept pace, system/prevention did not). Full storyline rebuild (gated on Elicit Run 6), reconciled + reported. Reversed evidence-led thesis: the therapies HAVE kept pace (routine CBT ~ trial CBT, Wergeland 2021); the failure is the delivery system (access gap: Ball/Abel/Radez/Ghafari) + absent upstream prevention vs rising incidence (prevention paradox: Skinner/Patton). Five-section compounding arc; funnels to parent-led + guided/digital CBT + indicated prevention. DONE: 46/46 refs reconciled to Zotero (fixed Broeren->2012, Radez->2022, Wergeland->2021), 0 ghosts/orphans; full report suite (fqa-report + BQA reference-check + paraphrase-audit); 08 Final synced to v013; 1,917 body words. OPTIONAL POLISH: grow ~150-200 words toward student's habitual ~2,100 (Alex amber); full text for 4 abstract-only sources (Ball/Ginsburg/Ghafari/Bang); add Casey/Sisk DOIs to Zotero; Grummitt in-press pages. [v012: evidence-integrity fix - corrected Goldfield (2026) usage (undergraduate sample was mislabelled 'rare adolescent trial'); Goldfield PDF now full-text, metadata finalised (J Affect Disord 403, 121331), Zotero import + wiki card added. Still open: add 2 DOIs to Zotero for the developmental-brain sources so the library matches the essay: 10.1016/j.neuron.2015.05.020 (Casey 2015) and 10.1093/oso/9780195314373.003.0007 (Sisk & Romeo 2019). Plus the nicety: 1 in-press ref remaining (Grummitt) gets final page numbers when issued (Goldfield + Karawekpanyawong now resolved). [v011: applied v010 FQA tone/format fixes (plain cover, un-numbered headings, child-specific presentations, Figure 1); FQA 92. v010: added Section 2 'Anxiety and the Developing Brain' (Casey/Sisk), renumbered, dropped 2 sentences; FQA 91. DONE v009: intervention-centred rebuild (brief realigned ~70/30); clean submission (boxes stripped); FULL-TEXT Jackie cross-check + BQA complete (34 full-text + 3 image-only = 37/37 on file); Ewart overstatement corrected; systematic essay-vs-Zotero diff applied -> essay reference list now matches the authoritative Zotero/Crossref library with 0 mismatches (fixed Lebowitz->2020 59(3):362-372, Sigurvinsdottir->2020 74(3):168-180, Park->2025 vol13, Sebastian->5(10):1266-1268, +earlier Zhou/Grist/Teesson/Csirmaz/Kaajalaakso/Baschab). BQA PASS, 0 ghosts/orphans. Zotero file is authoritative + final. v008 retained as fallback.]",
+    "budget": {
+      "currency": "EUR",
+      "cap": 15,
+      "warnAt": 0.8,
+      "spent": 9.2,
+      "lastReconciled": null
+    },
+    "currentPhase": "finalisation"
   },
   "documents": [],
   "workflows": {
     "setup": {
-      "status": "completed",
-      "input": {
-        "documents": [],
-        "notes": ""
-      },
-      "workingArea": {
-        "messages": []
-      },
-      "output": {
-        "content": "",
-        "documents": [],
-        "summary": ""
-      }
-    },
-    "brainstorming": {
       "status": "completed",
       "input": {
         "documents": [],
@@ -62,8 +54,23 @@
         "summary": ""
       }
     },
+    "brainstorming": {
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
     "research": {
-      "status": "in-progress",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -78,7 +85,7 @@
       }
     },
     "outline": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -93,7 +100,22 @@
       }
     },
     "drafting": {
-      "status": "locked",
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "revision": {
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -108,7 +130,7 @@
       }
     },
     "illustration": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -123,7 +145,7 @@
       }
     },
     "quality-assessment": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -138,6 +160,36 @@
       }
     },
     "finalisation": {
+      "status": "in-progress",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "submission-prep": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "retrospective": {
       "status": "locked",
       "input": {
         "documents": [],
@@ -152,6 +204,5 @@
         "summary": ""
       }
     }
-  },
-  "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+  }
 }

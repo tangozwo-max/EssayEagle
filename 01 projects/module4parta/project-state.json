@@ -1,38 +1,31 @@
 {
   "project": {
     "id": "module4parta",
-    "name": "Module 4 \u2014 Part A",
-    "module": "4",
+    "name": "Module4PartA",
+    "module": "Module 4",
     "part": "A",
-    "subtitle": "",
-    "status": "in-progress",
-    "createdAt": "2026-06-21",
-    "currentPhase": "creation",
-    "currentWorkflow": "research"
-  },
-  "budget": {
-    "capEur": 15,
-    "warnAtEur": 12,
-    "spentEur": 0
+    "status": "finalisation",
+    "createdAt": "2026-05-08T00:00:00.000Z",
+    "currentWorkflow": "finalisation",
+    "passThreshold": 83,
+    "targetGrade": "A-",
+    "maxLoops": 5,
+    "currentVersion": "v008",
+    "acceptedVersion": "v008",
+    "openP2": null,
+    "openP3": null,
+    "budget": {
+      "currency": "EUR",
+      "cap": 15,
+      "warnAt": 0.8,
+      "spent": 2.1,
+      "lastReconciled": null
+    },
+    "currentPhase": "finalisation"
   },
   "documents": [],
   "workflows": {
     "setup": {
-      "status": "completed",
-      "input": {
-        "documents": [],
-        "notes": ""
-      },
-      "workingArea": {
-        "messages": []
-      },
-      "output": {
-        "content": "",
-        "documents": [],
-        "summary": ""
-      }
-    },
-    "brainstorming": {
       "status": "completed",
       "input": {
         "documents": [],
@@ -62,8 +55,23 @@
         "summary": ""
       }
     },
+    "brainstorming": {
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
     "research": {
-      "status": "in-progress",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -78,7 +86,7 @@
       }
     },
     "outline": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -93,7 +101,22 @@
       }
     },
     "drafting": {
-      "status": "locked",
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "revision": {
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -108,7 +131,7 @@
       }
     },
     "illustration": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -123,7 +146,7 @@
       }
     },
     "quality-assessment": {
-      "status": "locked",
+      "status": "completed",
       "input": {
         "documents": [],
         "notes": ""
@@ -138,6 +161,36 @@
       }
     },
     "finalisation": {
+      "status": "in-progress",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "submission-prep": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "retrospective": {
       "status": "locked",
       "input": {
         "documents": [],
@@ -152,6 +205,5 @@
         "summary": ""
       }
     }
-  },
-  "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+  }
 }

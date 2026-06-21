@@ -1,19 +1,24 @@
 {
   "project": {
     "id": "module5partb",
-    "name": "Module 5 \u2014 Part B",
-    "module": "5",
+    "name": "Module5PartB",
+    "module": "Module 5 – Addiction",
     "part": "B",
-    "subtitle": "",
-    "status": "in-progress",
-    "createdAt": "2026-06-21",
-    "currentPhase": "preparation",
-    "currentWorkflow": "setup"
-  },
-  "budget": {
-    "capEur": 15,
-    "warnAtEur": 12,
-    "spentEur": 0
+    "status": "setup",
+    "createdAt": "2026-06-15T12:37:25.000Z",
+    "currentWorkflow": "setup",
+    "passThreshold": 85,
+    "targetGrade": "A",
+    "maxLoops": 5,
+    "currentVersion": null,
+    "budget": {
+      "currency": "EUR",
+      "cap": 15,
+      "warnAt": 0.8,
+      "spent": 0,
+      "lastReconciled": null
+    },
+    "currentPhase": "preparation"
   },
   "documents": [],
   "workflows": {
@@ -32,7 +37,7 @@
         "summary": ""
       }
     },
-    "brainstorming": {
+    "curriculum": {
       "status": "locked",
       "input": {
         "documents": [],
@@ -47,7 +52,7 @@
         "summary": ""
       }
     },
-    "curriculum": {
+    "brainstorming": {
       "status": "locked",
       "input": {
         "documents": [],
@@ -107,6 +112,21 @@
         "summary": ""
       }
     },
+    "revision": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
     "illustration": {
       "status": "locked",
       "input": {
@@ -151,7 +171,36 @@
         "documents": [],
         "summary": ""
       }
+    },
+    "submission-prep": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "retrospective": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
     }
-  },
-  "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
+  }
 }
