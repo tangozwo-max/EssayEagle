@@ -1,0 +1,43 @@
+{
+  "project": {
+    "id": "moduleX",
+    "name": "Module X — Part A",
+    "module": "X",
+    "part": "A",
+    "subtitle": "",
+    "status": "active",
+    "createdAt": "2026-06-21",
+    "currentPhase": "preparation",
+    "currentWorkflow": "setup"
+  },
+  "budget": { "capEur": 15, "warnAtEur": 12, "spentEur": 0 },
+  "phases": {
+    "preparation": {
+      "status": "in-progress",
+      "handover": "_handover/1-preparation.md",
+      "workflows": {
+        "setup": { "status": "in-progress", "result": "01 Setup/result.md" },
+        "brainstorming": { "status": "locked", "result": "02 Brainstorming/result.md" },
+        "curriculum": { "status": "locked", "result": "03 Curriculum/result.md" }
+      }
+    },
+    "creation": {
+      "status": "not-started",
+      "handover": "_handover/2-creation.md",
+      "workflows": {
+        "research": { "status": "locked", "result": "04 Research/result.md" },
+        "outline": { "status": "locked", "result": "05 Outline/result.md" },
+        "drafting": { "status": "locked", "result": "06 Drafting/result.md" },
+        "illustration": { "status": "locked", "result": "06 Drafting/illustrations/result.md" }
+      }
+    },
+    "finalisation": {
+      "status": "not-started",
+      "handover": "_handover/3-finalisation.md",
+      "workflows": {
+        "quality-assessment": { "status": "locked", "result": "07 QA/result.md" },
+        "finalisation": { "status": "locked", "result": "08 Final/result.md" }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-21",
+  "description": "SINGLE SOURCE OF TRUTH for the EssayEagle production pipeline. Phases contain workflows. Each workflow produces an output (result.md) that becomes the next workflow's input. At the end of each phase, a phase handover document bundles the document set passed to the next phase and the project status advances. Phases can be re-entered ('go back and redo'). AI assistants and the GUI should treat this file as authoritative. Where the codebase uses a different id, see the 'aliases' field on each workflow.",
+
+  "statusModel": {
+    "project": {
+      "values": ["setup", "active", "submitted", "archived"],
+      "field": "project.status in project-state.json"
+    },
+    "phase": {
+      "values": ["not-started", "in-progress", "completed"],
+      "note": "The project's currentPhase points at the phase in progress."
+    },
+    "workflow": {
+      "values": ["locked", "ready", "in-progress", "completed"],
+      "note": "locked = upstream workflow not done yet; ready = inputs available; matches WorkflowState.status in gui/src/lib/types.ts"
+    }
+  },
+
+  "resume": {
+    "pointerFile": "project-state.json",
+    "pointerFields": ["project.currentPhase", "project.currentWorkflow"],
+    "humanDashboard": "PROJECT.md",
+    "rule": "To resume a project: read project-state.json -> currentPhase + currentWorkflow, then read that workflow's input (the previous workflow's result.md) and the latest _handover/ file. PROJECT.md is the human-readable mirror of this."
+  },
+
+  "goBack": {
+    "rule": "A phase may be re-entered. To redo phase N: set currentPhase to phase N, set its workflows back to 'ready'/'in-progress', set later phases' workflows to 'locked'. Keep prior outputs; supersede them by writing new result.md files. Record the reason in the phase _handover file under 'Revisions'."
+  },
+
+  "perProjectLayout": {
+    "00 Input": "Intake bucket. assessment_brief.md, grading_rubric.md, referencing_style_guide.md, curriculum/, previous_assignments/. Not a workflow.",
+    "01 Setup": "Workflow: setup",
+    "02 Brainstorming": "Workflow: brainstorming",
+    "03 Curriculum": "Workflow: curriculum",
+    "04 Research": "Workflow: research",
+    "05 Outline": "Workflow: outline",
+    "06 Drafting": "Workflow: drafting (illustration outputs go in 06 Drafting/illustrations/)",
+    "07 QA": "Workflow: quality-assessment",
+    "08 Final": "Workflow: finalisation",
+    "_handover/": "Phase exit packages: 1-preparation.md, 2-creation.md, 3-finalisation.md",
+    "project-state.json": "Machine-readable status + resume pointer",
+    "PROJECT.md": "Human-readable dashboard / where-we-left-off"
+  },
+
+  "workflowOutputConvention": "Each workflow writes its deliverable to '<folder>/result.md'. That file is the handover into the next workflow (its input).",
+
+  "phases": [
+    {
+      "id": "preparation",
+      "order": 1,
+      "name": "Preparation",
+      "goal": "Understand the assignment and decide what the essay will be about.",
+      "entry": ["00 Input/*"],
+      "exitHandover": "_handover/1-preparation.md",
+      "workflows": [
+        {
+          "id": "setup",
+          "aliases": [],
+          "order": 1,
+          "folder": "01 Setup",
+          "leads": ["christoph", "egbert"],
+          "input": "Assignment Brief, Grading Rubric, referencing style, constraints (from 00 Input).",
+          "output": "Assessment Summary: parsed requirements, rubric criteria, formal constraints, key expectations.",
+          "result": "01 Setup/result.md"
+        },
+        {
+          "id": "brainstorming",
+          "aliases": [],
+          "order": 2,
+          "folder": "02 Brainstorming",
+          "leads": ["steven", "jackie"],
+          "input": "Assessment Summary (01 Setup/result.md).",
+          "output": "3 topic options with pros/cons, selected topic, preliminary thesis statement.",
+          "result": "02 Brainstorming/result.md"
+        },
+        {
+          "id": "curriculum",
+          "aliases": ["curriculum-mapping"],
+          "order": 3,
+          "folder": "03 Curriculum",
+          "leads": ["peter"],
+          "input": "Selected topic + Assessment Summary.",
+          "output": "Theory map: curriculum concepts with placement suggestions and module alignment.",
+          "result": "03 Curriculum/result.md"
+        }
+      ]
+    },
+    {
+      "id": "creation",
+      "order": 2,
+      "name": "Creation",
+      "goal": "Gather evidence and write the draft.",
+      "entry": ["_handover/1-preparation.md"],
+      "exitHandover": "_handover/2-creation.md",
+      "workflows": [
+        {
+          "id": "research",
+          "aliases": [],
+          "order": 1,
+          "folder": "04 Research",
+          "leads": ["jackie"],
+          "input": "Topic, thesis, theory map.",
+          "output": "Source database: citations, key findings, paraphrases, source-quality assessment (references_wiki/).",
+          "result": "04 Research/result.md"
+        },
+        {
+          "id": "outline",
+          "aliases": [],
+          "order": 2,
+          "folder": "05 Outline",
+          "leads": ["hank", "steven"],
+          "input": "Assessment Summary, topic, theory map, source database.",
+          "output": "Detailed outline: section structure, purposes, word budget, evidence placement.",
+          "result": "05 Outline/result.md"
+        },
+        {
+          "id": "drafting",
+          "aliases": [],
+          "order": 3,
+          "folder": "06 Drafting",
+          "leads": ["hank", "alex"],
+          "input": "Detailed outline, paraphrases, theory map, style profile.",
+          "output": "Complete draft text ready for quality assessment.",
+          "result": "06 Drafting/result.md"
+        },
+        {
+          "id": "illustration",
+          "aliases": [],
+          "order": 4,
+          "optional": true,
+          "folder": "06 Drafting/illustrations",
+          "leads": ["vanessa"],
+          "input": "Draft + theory map.",
+          "output": "Scientific diagrams and visualisations.",
+          "result": "06 Drafting/illustrations/result.md"
+        }
+      ]
+    },
+    {
+      "id": "finalisation",
+      "order": 3,
+      "name": "Finalisation",
+      "goal": "Review, fix, and prepare for submission.",
+      "entry": ["_handover/2-creation.md"],
+      "exitHandover": "_handover/3-finalisation.md",
+      "workflows": [
+        {
+          "id": "quality-assessment",
+          "aliases": ["fqa", "qa"],
+          "order": 1,
+          "folder": "07 QA",
+          "leads": ["christoph", "jackie", "peter", "steven", "alex"],
+          "input": "Near-final draft.",
+          "output": "FQA report: scored assessment with prioritised improvement actions.",
+          "result": "07 QA/result.md"
+        },
+        {
+          "id": "finalisation",
+          "aliases": ["final"],
+          "order": 2,
+          "folder": "08 Final",
+          "leads": ["egbert"],
+          "input": "FQA report + reviewed draft.",
+          "output": "Submission-ready document with all fixes applied.",
+          "result": "08 Final/result.md"
+        }
+      ]
+    }
+  ]
+}
