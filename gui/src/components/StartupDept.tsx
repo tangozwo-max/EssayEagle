@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   CheckCircle, XCircle, AlertCircle,
   FileText, BookOpen, Scale, Users,
-  ChevronDown, ChevronUp, Loader2, Save,
+  ChevronDown, ChevronUp, Loader2, Save, Upload,
 } from "lucide-react";
 
 interface ResourceInfo {
@@ -14,6 +14,7 @@ interface ResourceInfo {
 }
 
 interface StartupData {
+  assignmentType: string | null;
   brief: ResourceInfo;
   rubric: ResourceInfo;
   referencing: ResourceInfo;
@@ -29,13 +30,22 @@ function StatusIcon({ level }: { level: StatusLevel }) {
   return <XCircle size={14} className="text-red-400 flex-shrink-0" />;
 }
 
+interface UploadProp {
+  kind: string;
+  uploading: boolean;
+  accept: string;
+  onPick: (file: File) => void;
+}
+
 function ResourceCard({
-  icon, title, level, sourcePath, content, defaultExpanded,
+  icon, title, level, sourcePath, content, defaultExpanded, upload,
 }: {
   icon: React.ReactNode; title: string; level: StatusLevel;
   sourcePath?: string | null; content?: string | null; defaultExpanded?: boolean;
+  upload?: UploadProp;
 }) {
   const [open, setOpen] = useState(defaultExpanded ?? false);
+  const fileRef = useRef<HTMLInputElement>(null);
   const hasDetails = !!(content || sourcePath);
 
   const borderColor =
@@ -50,22 +60,50 @@ function ResourceCard({
 
   return (
     <div className={`border rounded-xl overflow-hidden ${borderColor} ${bgColor}`}>
-      <button
-        onClick={() => hasDetails && setOpen(o => !o)}
-        className={`w-full flex items-center justify-between px-4 py-3 text-left ${hasDetails ? "cursor-pointer" : "cursor-default"}`}
-      >
-        <div className="flex items-center gap-2.5">
+      <div className="w-full flex items-center justify-between px-4 py-3">
+        <button
+          onClick={() => hasDetails && setOpen(o => !o)}
+          className={`flex items-center gap-2.5 text-left ${hasDetails ? "cursor-pointer" : "cursor-default"}`}
+        >
           <span className={iconColor}>{icon}</span>
           <span className="font-medium text-sm text-neutral-800">{title}</span>
-        </div>
-        <div className="flex items-center gap-1.5">
+        </button>
+        <div className="flex items-center gap-2">
+          {upload && (
+            <>
+              <input
+                ref={fileRef}
+                type="file"
+                accept={upload.accept}
+                className="hidden"
+                onChange={e => {
+                  const f = e.target.files?.[0];
+                  if (f) upload.onPick(f);
+                  e.target.value = "";
+                }}
+              />
+              <button
+                onClick={() => fileRef.current?.click()}
+                disabled={upload.uploading}
+                className="flex items-center gap-1 px-2 py-1 text-[11px] rounded-md border border-neutral-200 bg-white text-neutral-600 hover:border-blue-400 hover:text-blue-600 transition-colors disabled:opacity-50"
+              >
+                {upload.uploading
+                  ? <Loader2 size={11} className="animate-spin" />
+                  : <Upload size={11} />}
+                {upload.uploading ? "Converting…" : (level === "missing" ? "Pick file" : "Replace")}
+              </button>
+            </>
+          )}
           <StatusIcon level={level} />
-          {hasDetails && (open
-            ? <ChevronUp size={13} className="text-neutral-400" />
-            : <ChevronDown size={13} className="text-neutral-400" />
+          {hasDetails && (
+            <button onClick={() => setOpen(o => !o)} className="cursor-pointer">
+              {open
+                ? <ChevronUp size={13} className="text-neutral-400" />
+                : <ChevronDown size={13} className="text-neutral-400" />}
+            </button>
           )}
         </div>
-      </button>
+      </div>
 
       {open && hasDetails && (
         <div className="px-4 pb-4 border-t border-white/60 pt-3 space-y-2">
@@ -99,16 +137,43 @@ export default function StartupDept({
   const [subtitleDraft, setSubtitleDraft] = useState(subtitle ?? "");
   const [saving, setSaving] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
+  const [uploadingKind, setUploadingKind] = useState<string | null>(null);
+  const [notice, setNotice] = useState<{ ok: boolean; msg: string } | null>(null);
 
-  useEffect(() => {
-    fetch(`/api/projects/${projectId}/startup`)
+  const loadStartup = useCallback(() => {
+    return fetch(`/api/projects/${projectId}/startup`)
       .then(r => r.json())
       .then(d => { setData(d); setLoading(false); });
   }, [projectId]);
 
+  useEffect(() => { loadStartup(); }, [loadStartup]);
+
   useEffect(() => {
     setSubtitleDraft(subtitle ?? "");
   }, [subtitle]);
+
+  const handleUpload = async (kind: string, file: File) => {
+    setUploadingKind(kind);
+    setNotice(null);
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      fd.append("kind", kind);
+      const res = await fetch(`/api/projects/${projectId}/setup/ingest`, { method: "POST", body: fd });
+      const json = await res.json();
+      if (!res.ok) {
+        setNotice({ ok: false, msg: json.error ?? "Upload failed" });
+      } else {
+        const typeMsg = json.assignmentType ? ` — detected ${json.assignmentType}` : "";
+        setNotice({ ok: true, msg: `${file.name} ingested${typeMsg}.` });
+        await loadStartup();
+      }
+    } catch (e) {
+      setNotice({ ok: false, msg: String(e) });
+    } finally {
+      setUploadingKind(null);
+    }
+  };
 
   const saveSubtitle = async () => {
     setSaving(true);
@@ -151,20 +216,38 @@ export default function StartupDept({
   const readyCount = [briefLevel, rubricLevel, refLevel, prevLevel, curriculumLevel]
     .filter(l => l === "ok").length;
 
+  const docAccept = ".pdf,.md,.txt";
+  const assignmentType = data?.assignmentType ?? null;
+
   return (
     <div className="space-y-7 max-w-2xl">
-      {/* Readiness badge */}
+      {/* Setup header — readiness + detected assignment type */}
       <div className="flex items-center gap-3">
         <div className={`text-2xl font-bold ${readyCount >= 4 ? "text-emerald-600" : readyCount >= 2 ? "text-amber-600" : "text-red-500"}`}>
           {readyCount}/5
         </div>
-        <div>
+        <div className="flex-1">
           <p className="text-sm font-semibold text-neutral-800">
-            {readyCount === 5 ? "All resources ready" : readyCount >= 3 ? "Most resources ready" : "Resources missing"}
+            Setup — {readyCount === 5 ? "all inputs ready" : readyCount >= 3 ? "most inputs ready" : "inputs missing"}
           </p>
-          <p className="text-xs text-neutral-400">Startup check — verify inputs before launching the pipeline.</p>
+          <p className="text-xs text-neutral-400">Pick each input below; the assignment brief is converted and its type detected.</p>
         </div>
+        {assignmentType && (
+          <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-50 text-blue-600 border border-blue-200 capitalize">
+            {assignmentType}
+          </span>
+        )}
       </div>
+
+      {/* Upload notice */}
+      {notice && (
+        <div className={`flex items-center gap-2 text-xs rounded-lg px-3 py-2 border ${
+          notice.ok ? "bg-emerald-50 text-emerald-700 border-emerald-200" : "bg-red-50 text-red-600 border-red-200"
+        }`}>
+          {notice.ok ? <CheckCircle size={13} /> : <XCircle size={13} />}
+          <span className="break-all">{notice.msg}</span>
+        </div>
+      )}
 
       {/* Assignment subtitle */}
       <div className="bg-white border border-neutral-200 rounded-xl p-5 space-y-3">
@@ -174,7 +257,7 @@ export default function StartupDept({
             Assignment subtitle
           </h3>
           <p className="text-xs text-neutral-400">
-            Shown in all phase headers. Describe the specific question or task (e.g. "Critical essay — addiction as a public health challenge").
+            Shown in all phase headers. Describe the specific question or task (e.g. &quot;Critical essay — addiction as a public health challenge&quot;).
           </p>
         </div>
         <div className="flex gap-2">
@@ -212,6 +295,7 @@ export default function StartupDept({
           sourcePath={data?.brief.sourcePath}
           content={data?.brief.content}
           defaultExpanded
+          upload={{ kind: "brief", uploading: uploadingKind === "brief", accept: docAccept, onPick: f => handleUpload("brief", f) }}
         />
 
         <ResourceCard
@@ -220,6 +304,7 @@ export default function StartupDept({
           level={rubricLevel}
           sourcePath={data?.rubric.sourcePath}
           content={data?.rubric.content}
+          upload={{ kind: "rubric", uploading: uploadingKind === "rubric", accept: docAccept, onPick: f => handleUpload("rubric", f) }}
         />
 
         <ResourceCard
@@ -227,7 +312,8 @@ export default function StartupDept({
           title="Warwick Referencing Guide"
           level={refLevel}
           sourcePath={data?.referencing.sourcePath}
-          content={null}
+          content={data?.referencing.content}
+          upload={{ kind: "referencing", uploading: uploadingKind === "referencing", accept: docAccept, onPick: f => handleUpload("referencing", f) }}
         />
 
         <ResourceCard
@@ -246,6 +332,11 @@ export default function StartupDept({
           content={data?.curriculum.content}
         />
       </div>
+
+      <p className="text-[11px] text-neutral-400">
+        Previous Assignments and Curriculum pickers come next. Ingestion writes to your local
+        project folder and calls Claude — run the app locally (<code>npm run dev</code>).
+      </p>
     </div>
   );
 }

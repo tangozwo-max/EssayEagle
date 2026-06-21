@@ -41,7 +41,20 @@ export async function GET(
 
   const prevIndexContent = readInputFile(projectPath, "previous_assignments/index.md");
 
+  // Detected assignment type (set by the brief ingestion), read from project-state.
+  let assignmentType: string | null = null;
+  try {
+    const statePath = path.join(projectPath, "project-state.json");
+    if (fs.existsSync(statePath)) {
+      const state = JSON.parse(fs.readFileSync(statePath, "utf-8"));
+      assignmentType = state.project?.assignmentType ?? null;
+    }
+  } catch {
+    /* ignore */
+  }
+
   return NextResponse.json({
+    assignmentType,
     brief: {
       available: briefContent !== null,
       content: briefContent,
