@@ -3,7 +3,10 @@
 // you add a brand-new menu item — it binds each item id to its React component + icon.
 // Reassigning existing items between phases is a pure menu.json edit.
 import type { ReactNode } from "react";
-import { Rocket, BookOpen, GraduationCap, Lightbulb, Flag } from "lucide-react";
+import {
+  Rocket, BookOpen, GraduationCap, Lightbulb, Flag,
+  List, FileText, RefreshCw, PieChart, ClipboardCheck, Send, BarChart3,
+} from "lucide-react";
 import menu from "@/config/menu.json";
 
 import StartupDept from "@/components/StartupDept";
@@ -38,22 +41,31 @@ export interface MenuCtx {
   setSubtitle: (s: string) => void;
 }
 
-/** id -> renders the component for that menu item. Add an entry to introduce a new menu. */
+// id -> renders the component for that menu item. Keys are canonical workflow ids
+// (structure/workflow-map.json). Workflows without an entry here render the graceful
+// "not built yet" placeholder in page.tsx — that is intentional for the empty tabs.
 export const MENU_RENDERERS: Record<string, (ctx: MenuCtx) => ReactNode> = {
-  startup: (c) => (
+  setup: (c) => (
     <StartupDept projectId={c.projectId} subtitle={c.subtitle} onSubtitleSaved={c.setSubtitle} />
   ),
-  bibliography: (c) => <BibliographyDept projectId={c.projectId} />,
   curriculum: (c) => <CurriculumDept projectId={c.projectId} />,
   brainstorming: (c) => <BrainstormingDept projectId={c.projectId} />,
+  research: (c) => <BibliographyDept projectId={c.projectId} />,
   finalisation: (c) => <FinalisationDept projectId={c.projectId} />,
 };
 
-/** id -> nav icon. */
+/** id -> nav icon (one per workflow; empty tabs still get an icon). */
 export const MENU_ICONS: Record<string, ReactNode> = {
-  startup: <Rocket size={15} />,
-  bibliography: <BookOpen size={15} />,
+  setup: <Rocket size={15} />,
   curriculum: <GraduationCap size={15} />,
   brainstorming: <Lightbulb size={15} />,
+  research: <BookOpen size={15} />,
+  outline: <List size={15} />,
+  drafting: <FileText size={15} />,
+  revision: <RefreshCw size={15} />,
+  illustration: <PieChart size={15} />,
+  "quality-assessment": <ClipboardCheck size={15} />,
   finalisation: <Flag size={15} />,
+  "submission-prep": <Send size={15} />,
+  retrospective: <BarChart3 size={15} />,
 };

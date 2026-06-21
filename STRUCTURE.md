@@ -129,24 +129,26 @@ That's it. The project now shows up and has its full phase skeleton.
 
 ---
 
-## Workspace menu — the app's 4 phases
+## Workspace menu — the app's 3 phases / 12 workflows
 
-The live app workspace (`/projects/[id]`) groups its menu items into **4 phases**, defined
-centrally in [`gui/src/config/menu.json`](gui/src/config/menu.json). Edit that file to rename
-phases or move menu items between them — **no code changes** needed for reassigning existing
-items. Only adding a brand-new item needs a renderer entry in `gui/src/lib/menu.tsx`. It's
-plain config bundled at build, so it works online with **no database**.
+The live app workspace (`/projects/[id]`) groups its menu into the **same 3 phases / 12
+workflows** as the pipeline, defined centrally in
+[`gui/src/config/menu.json`](gui/src/config/menu.json) (mirrors `structure/workflow-map.json`).
+Edit that file to rename phases or move workflows between them — **no code changes** needed for
+reassigning existing items. A workflow with no renderer in `gui/src/lib/menu.tsx` shows a
+graceful *"not built yet"* placeholder, so every workflow is visible as a tab even before its
+view exists. It's plain config bundled at build, so it works online with **no database**.
 
 ```
-01 Startup      → Startup
-02 Brainstorming → Brainstorming & Outline · Curriculum
-03 Creation     → Bibliography
-04 Finalization → Finalisation
+01 Preparation  → Setup · Curriculum · Brainstorming
+02 Creation     → Research · Outline · Drafting · Revision · Illustration
+03 Finalisation → Quality Assessment · Finalisation · Submission Prep · Retrospective
 ```
 
-(Note: this is the **app's navigation**. The document/handover pipeline in
-`structure/workflow-map.json` — folders `01 Setup … 08 Final`, `result.md`, `_handover/` — is
-a separate, file-level concern used for driving project content and the read-only dashboard.)
+Built views today: Setup, Curriculum, Brainstorming, Research; the rest are empty placeholder
+tabs. The menu, the sidebar (`gui/src/lib/workflow-map.ts`), and the document/handover pipeline
+(`structure/workflow-map.json` — folders `01 Setup … 08 Final`, `result.md`, `_handover/`) now
+all follow the one canonical structure.
 
 ---
 

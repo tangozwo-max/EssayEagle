@@ -1,38 +1,38 @@
 {
-  "_comment": "CENTRAL menu/phase config for the project workspace. Edit this file to reorganize phases and which menu items appear under each — no code changes needed for reassigning existing items. Adding a brand-new item also needs a renderer in src/lib/menu.tsx. Item ids must match a renderer there. This is global app config (same for every project), bundled at build, so it works online with no database.",
-  "version": "1.0.0",
+  "_comment": "CENTRAL menu/phase config for the project workspace. Mirrors the canonical pipeline in structure/workflow-map.json (3 phases, 12 workflows). Edit this file to reorganize phases or which workflows appear under each — no code changes needed for reassigning existing items. Item ids match canonical workflow ids; a renderer in src/lib/menu.tsx binds an id to its view. Items without a renderer show a graceful 'not built yet' placeholder. This is global app config (same for every project), bundled at build, so it works online with no database.",
+  "version": "2.0.0",
   "phases": [
     {
-      "id": "startup",
+      "id": "preparation",
       "number": "01",
-      "name": "Startup",
+      "name": "Preparation",
       "items": [
-        { "id": "startup", "label": "Startup" }
-      ]
-    },
-    {
-      "id": "brainstorming",
-      "number": "02",
-      "name": "Brainstorming",
-      "items": [
-        { "id": "brainstorming", "label": "Brainstorming & Outline" },
-        { "id": "curriculum", "label": "Curriculum" }
+        { "id": "setup", "label": "Setup" },
+        { "id": "curriculum", "label": "Curriculum" },
+        { "id": "brainstorming", "label": "Brainstorming" }
       ]
     },
     {
       "id": "creation",
-      "number": "03",
+      "number": "02",
       "name": "Creation",
       "items": [
-        { "id": "bibliography", "label": "Bibliography" }
+        { "id": "research", "label": "Research" },
+        { "id": "outline", "label": "Outline" },
+        { "id": "drafting", "label": "Drafting" },
+        { "id": "revision", "label": "Revision" },
+        { "id": "illustration", "label": "Illustration" }
       ]
     },
     {
       "id": "finalisation",
-      "number": "04",
-      "name": "Finalization",
+      "number": "03",
+      "name": "Finalisation",
       "items": [
-        { "id": "finalisation", "label": "Finalisation" }
+        { "id": "quality-assessment", "label": "Quality Assessment" },
+        { "id": "finalisation", "label": "Finalisation" },
+        { "id": "submission-prep", "label": "Submission Prep" },
+        { "id": "retrospective", "label": "Retrospective" }
       ]
     }
   ]
