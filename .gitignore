@@ -36,7 +36,6 @@ next-env.d.ts
 
 # ── Curated repo: track ONLY the gui app + research reference notes ──
 # Everything below is kept local-only (not pushed to GitHub):
-/01 projects/
 /Team_folder/
 /tools/
 /projects/
@@ -48,4 +47,15 @@ next-env.d.ts
 /bqa_extract.txt
 /researchgate-requests.html
 /CLAUDE.md
-# (the references_wiki folders under /01 projects/ are force-added despite the rule above)
+
+# ── Projects ARE published, but only their text/markdown ──
+# Track handover docs, dashboards, state, and the research wiki (all .md/.json).
+# Keep heavy source material (PDFs etc.) local-only — referenced by path, not committed.
+/01 projects/**/*.pdf
+/01 projects/**/*.docx
+/01 projects/**/*.doc
+/01 projects/**/*.pptx
+/01 projects/**/*.png
+/01 projects/**/*.jpg
+/01 projects/**/*.jpeg
+/01 projects/**/*.zip
