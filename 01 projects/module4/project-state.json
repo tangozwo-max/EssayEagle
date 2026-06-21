@@ -5,7 +5,7 @@
     "module": "4",
     "part": "",
     "subtitle": "",
-    "status": "active",
+    "status": "in-progress",
     "createdAt": "2026-06-21",
     "currentPhase": "creation",
     "currentWorkflow": "research"
@@ -15,61 +15,143 @@
     "warnAtEur": 12,
     "spentEur": 0
   },
-  "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify and correct currentPhase/currentWorkflow and per-workflow statuses.",
-  "phases": {
-    "preparation": {
+  "documents": [],
+  "workflows": {
+    "setup": {
       "status": "completed",
-      "handover": "_handover/1-preparation.md",
-      "workflows": {
-        "setup": {
-          "status": "completed",
-          "result": "01 Setup/result.md"
-        },
-        "brainstorming": {
-          "status": "completed",
-          "result": "02 Brainstorming/result.md"
-        },
-        "curriculum": {
-          "status": "completed",
-          "result": "03 Curriculum/result.md"
-        }
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     },
-    "creation": {
+    "brainstorming": {
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "curriculum": {
+      "status": "completed",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "research": {
       "status": "in-progress",
-      "handover": "_handover/2-creation.md",
-      "workflows": {
-        "research": {
-          "status": "in-progress",
-          "result": "04 Research/result.md"
-        },
-        "outline": {
-          "status": "locked",
-          "result": "05 Outline/result.md"
-        },
-        "drafting": {
-          "status": "locked",
-          "result": "06 Drafting/result.md"
-        },
-        "illustration": {
-          "status": "locked",
-          "result": "06 Drafting/illustrations/result.md"
-        }
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "outline": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "drafting": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "illustration": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "quality-assessment": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     },
     "finalisation": {
-      "status": "not-started",
-      "handover": "_handover/3-finalisation.md",
-      "workflows": {
-        "quality-assessment": {
-          "status": "locked",
-          "result": "07 QA/result.md"
-        },
-        "finalisation": {
-          "status": "locked",
-          "result": "08 Final/result.md"
-        }
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     }
-  }
+  },
+  "_note": "PROVISIONAL status inferred from on-disk content (research wiki presence). Verify currentPhase/currentWorkflow and per-workflow statuses."
 }

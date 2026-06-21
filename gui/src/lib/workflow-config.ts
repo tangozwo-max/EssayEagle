@@ -32,8 +32,8 @@ export const workflowConfigs: Record<string, WorkflowConfig> = {
     previousWorkflow: "setup",
     leads: ["steven", "jackie"],
   },
-  "curriculum-mapping": {
-    id: "curriculum-mapping",
+  curriculum: {
+    id: "curriculum",
     inputLabel: "Topic & Requirements",
     workingLabel: "Concept Mapping",
     outputLabel: "Theory Map",
@@ -49,7 +49,7 @@ export const workflowConfigs: Record<string, WorkflowConfig> = {
     outputLabel: "Source Database",
     inputDescription: "Topic, thesis, and theory map from previous steps.",
     outputDescription: "Citations, key findings, paraphrases, and source quality assessment.",
-    previousWorkflow: "curriculum-mapping",
+    previousWorkflow: "curriculum",
     leads: ["jackie"],
   },
   outline: {
@@ -71,6 +71,16 @@ export const workflowConfigs: Record<string, WorkflowConfig> = {
     outputDescription: "Complete draft text ready for quality assessment.",
     previousWorkflow: "outline",
     leads: ["hank", "alex"],
+  },
+  illustration: {
+    id: "illustration",
+    inputLabel: "Draft & Theory Map",
+    workingLabel: "Diagramming",
+    outputLabel: "Illustrations",
+    inputDescription: "Draft text and theory map.",
+    outputDescription: "Scientific diagrams and visualisations for the essay.",
+    previousWorkflow: "drafting",
+    leads: ["vanessa"],
   },
   "quality-assessment": {
     id: "quality-assessment",

@@ -8,6 +8,7 @@ export interface Project {
   subtitle?: string;
   status: "setup" | "in-progress" | "submitted" | "archived";
   createdAt: string;
+  currentPhase?: string;
   currentWorkflow: string;
 }
 
@@ -85,16 +86,7 @@ export function emptyWorkflowState(
   };
 }
 
-// All workflow IDs in pipeline order
-export const WORKFLOW_IDS = [
-  "setup",
-  "brainstorming",
-  "curriculum-mapping",
-  "research",
-  "outline",
-  "drafting",
-  "quality-assessment",
-  "finalisation",
-] as const;
-
-export type WorkflowId = (typeof WORKFLOW_IDS)[number];
+// Workflow ids in pipeline order — re-exported from the single source of truth
+// (lib/workflow-map.ts, which mirrors /structure/workflow-map.json).
+export { WORKFLOW_IDS } from "./workflow-map";
+export type { WorkflowId } from "./workflow-map";

@@ -2,6 +2,7 @@
 
 import { useProject } from "./ProjectContext";
 import { workflowConfigs } from "@/lib/workflow-config";
+import { canonicalId } from "@/lib/workflow-map";
 import { emptyWorkflowState } from "@/lib/types";
 import WorkflowInput from "./WorkflowInput";
 import WorkflowWorkingArea from "./WorkflowWorkingArea";
@@ -14,7 +15,8 @@ interface Props {
 
 export default function WorkflowPage({ workflowId, phaseId }: Props) {
   const { projectState } = useProject();
-  const config = workflowConfigs[workflowId];
+  const wfId = canonicalId(workflowId);
+  const config = workflowConfigs[wfId];
 
   if (!config || !projectState) {
     return (
@@ -24,7 +26,7 @@ export default function WorkflowPage({ workflowId, phaseId }: Props) {
     );
   }
 
-  const workflowState = projectState.workflows[workflowId] ?? emptyWorkflowState();
+  const workflowState = projectState.workflows?.[wfId] ?? emptyWorkflowState();
 
   return (
     <div className="h-[calc(100vh-3.5rem)]">
@@ -32,7 +34,7 @@ export default function WorkflowPage({ workflowId, phaseId }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr_320px] h-full">
         {/* INPUT Panel (left) */}
         <div className="border-b lg:border-b-0 lg:border-r border-neutral-200 dark:border-neutral-700 bg-neutral-50/50 dark:bg-neutral-900/50 overflow-hidden">
-          <WorkflowInput config={config} workflowState={workflowState} workflowId={workflowId} />
+          <WorkflowInput config={config} workflowState={workflowState} workflowId={wfId} />
         </div>
 
         {/* WORKING AREA (center) */}
@@ -40,7 +42,7 @@ export default function WorkflowPage({ workflowId, phaseId }: Props) {
           <WorkflowWorkingArea
             config={config}
             workflowState={workflowState}
-            workflowId={workflowId}
+            workflowId={wfId}
           />
         </div>
 
@@ -49,7 +51,7 @@ export default function WorkflowPage({ workflowId, phaseId }: Props) {
           <WorkflowOutput
             config={config}
             workflowState={workflowState}
-            workflowId={workflowId}
+            workflowId={wfId}
           />
         </div>
       </div>

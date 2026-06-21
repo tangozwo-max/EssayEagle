@@ -1,42 +1,155 @@
 {
   "project": {
-    "id": "moduleX",
-    "name": "Module X — Part A",
+    "id": "_template",
+    "name": "Module X \u2014 Part A",
     "module": "X",
     "part": "A",
     "subtitle": "",
-    "status": "active",
+    "status": "in-progress",
     "createdAt": "2026-06-21",
     "currentPhase": "preparation",
     "currentWorkflow": "setup"
   },
-  "budget": { "capEur": 15, "warnAtEur": 12, "spentEur": 0 },
-  "phases": {
-    "preparation": {
-      "status": "in-progress",
-      "handover": "_handover/1-preparation.md",
-      "workflows": {
-        "setup": { "status": "in-progress", "result": "01 Setup/result.md" },
-        "brainstorming": { "status": "locked", "result": "02 Brainstorming/result.md" },
-        "curriculum": { "status": "locked", "result": "03 Curriculum/result.md" }
+  "budget": {
+    "capEur": 15,
+    "warnAtEur": 12,
+    "spentEur": 0
+  },
+  "documents": [],
+  "workflows": {
+    "setup": {
+      "status": "ready",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     },
-    "creation": {
-      "status": "not-started",
-      "handover": "_handover/2-creation.md",
-      "workflows": {
-        "research": { "status": "locked", "result": "04 Research/result.md" },
-        "outline": { "status": "locked", "result": "05 Outline/result.md" },
-        "drafting": { "status": "locked", "result": "06 Drafting/result.md" },
-        "illustration": { "status": "locked", "result": "06 Drafting/illustrations/result.md" }
+    "brainstorming": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "curriculum": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "research": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "outline": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "drafting": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "illustration": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
+      }
+    },
+    "quality-assessment": {
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     },
     "finalisation": {
-      "status": "not-started",
-      "handover": "_handover/3-finalisation.md",
-      "workflows": {
-        "quality-assessment": { "status": "locked", "result": "07 QA/result.md" },
-        "finalisation": { "status": "locked", "result": "08 Final/result.md" }
+      "status": "locked",
+      "input": {
+        "documents": [],
+        "notes": ""
+      },
+      "workingArea": {
+        "messages": []
+      },
+      "output": {
+        "content": "",
+        "documents": [],
+        "summary": ""
       }
     }
   }

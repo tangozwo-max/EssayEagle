@@ -5,7 +5,7 @@ import { t } from "@/lib/i18n";
 import { ChevronDown, ChevronRight, Circle, FolderOpen, ArrowLeftRight } from "lucide-react";
 import { useState } from "react";
 import { useProject } from "./ProjectContext";
-import { WORKFLOW_IDS } from "@/lib/types";
+import { canonicalId } from "@/lib/workflow-map";
 import { theme } from "@/lib/theme";
 
 export type View =
@@ -18,18 +18,6 @@ const STATUS_DOT: Record<string, string> = {
   ready: "bg-amber-400",
   "in-progress": "bg-blue-500",
   completed: "bg-emerald-500",
-};
-
-// Map workflow sidebar IDs to project-state workflow IDs
-const SIDEBAR_TO_STATE: Record<string, string> = {
-  setup: "setup",
-  brainstorming: "brainstorming",
-  "curriculum-mapping": "curriculum-mapping",
-  research: "research",
-  outline: "outline",
-  drafting: "drafting",
-  "quality-assessment": "quality-assessment",
-  finalisation: "finalisation",
 };
 
 export default function Sidebar({
@@ -57,9 +45,7 @@ export default function Sidebar({
 
   const getWorkflowStatus = (wfId: string) => {
     if (!projectState) return null;
-    const stateId = SIDEBAR_TO_STATE[wfId];
-    if (!stateId) return null;
-    return projectState.workflows[stateId]?.status ?? null;
+    return projectState.workflows?.[canonicalId(wfId)]?.status ?? null;
   };
 
   return (
