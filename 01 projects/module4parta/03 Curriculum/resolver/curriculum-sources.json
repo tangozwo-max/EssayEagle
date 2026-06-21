@@ -1,0 +1,46 @@
+{
+  "project": "module4parta",
+  "deliverable": "Module 4 Part A — Presentation: Tommy (ACEs) — 'Relational Disruption to Relational Repair'",
+  "generatedAt": "2026-06-08",
+  "note": "These entries resolve curriculum-internal pointers to proper academic sources for ideas being considered for the deck. They are NOT yet cited on any slide (status: resolved-pending-use). Do NOT cite the curriculum pointer (e.g. 'M4 W5 P64') on the reference slide — cite the resolved academic source.",
+  "entries": [
+    {
+      "key": "M4 W5 P64",
+      "concept": "Over-medicalisation / 'therapeutic ethos' critique — caution against pathologising ordinary distress and multiplying disorder labels; risk that a therapeutic focus diminishes resilience/autonomy.",
+      "intendedUse": "Slide 3 (school-age behaviours: aggression + inattention) OR the complexity/diagnostic-overshadowing slide — one evaluative sentence cautioning against mislabelling Tommy's adaptations to toxic stress as ADHD/ODD/conduct disorder.",
+      "source": "Ecclestone, K. and Hayes, D. (2019) The Dangerous Rise of Therapeutic Education. 2nd edn. London: Routledge. (1st edn 2009). doi:10.4324/9780429401039",
+      "secondarySupport": "Montessori's reframing that 'many issues traditionally seen as medical were educational' (P64).",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "resolved-pending-use"
+    },
+    {
+      "key": "M4 W5 P64",
+      "concept": "'Reparation' — treating at-risk children not as the problem but as individuals who faced hardship; repair the environment (stability, belonging, routine). Historical ancestor of trauma-informed / attachment-aware practice and the deck's 'Relational Repair' spine.",
+      "intendedUse": "Slide 4-5 (Corrective Experiences / Path Forward) — already the backbone of the deck; Aichhorn gives it a named historical anchor.",
+      "source": "Aichhorn, A. (1935) Wayward Youth. New York: Viking Press. (orig. Verwahrloste Jugend, 1925).",
+      "secondarySupport": "Curriculum secondary source: Winship, G. (history of mental health in schools).",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "resolved-pending-use"
+    },
+    {
+      "key": "M4 W4 P46",
+      "concept": "Formulation over diagnosis — '5Ps' model; the predisposing-factor question is literally 'What has happened to the young person in the past?' (i.e. 'what happened to you', not 'what's wrong with you').",
+      "intendedUse": "Supports the over-medicalisation counter-move on Slide 3 and the repair framing on Slide 4.",
+      "source": "Macneil, C.A. et al. (2012) 'Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice', BMC Medicine, 10, 111. doi:10.1186/1741-7015-10-111; plus Anna Freud Centre (case formulation) and Kempen (formulation-as-roadmap).",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "resolved-pending-use"
+    },
+    {
+      "key": "M4 W2 P32",
+      "concept": "Trauma & neurobiological development — latent vulnerability (threat/reward/memory systems); recovery is possible with the right support. Directly underpins Tommy's amygdala-hyperactivation / PFC-suppression mechanism and the 'not deterministic' message.",
+      "intendedUse": "Slides 2-3 (biological bedrock / behaviours) and the 'probabilistic not deterministic' caveat on the ACE slide.",
+      "source": "McCrory, E.J. and Viding, E. (2015) 'The theory of latent vulnerability: Reconceptualizing the link between childhood maltreatment and psychiatric disorder', Development and Psychopathology, 27(2), pp. 493-505. doi:10.1017/S0954579415000115; plus Anna Freud Centre and Cross et al.",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "resolved-pending-use"
+    }
+  ]
+}

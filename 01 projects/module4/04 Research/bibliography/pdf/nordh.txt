@@ -1,0 +1,104 @@
+Research
+
+JAMA Psychiatry | Original Investigation
+Therapist-Guided Internet-Delivered Cognitive Behavioral Therapy vs Internet-Delivered Supportive Therapy for Children and Adolescents With Social Anxiety Disorder A Randomized Clinical Trial
+
+Martina Nordh, PhD; Tove Wahlund, PhD; Maral Jolstedt, PhD; Hanna Sahlin, PhD; Johan Bjureberg, PhD; Johan Ahlen, PhD; Maria Lalouni, PhD; Sigrid Salomonsson, PhD; Sarah Vigerland, PhD; Malin Lavner, MSc; Lars-Göran Öst, PhD; Fabian Lenhard, PhD; Hugo Hesser, PhD; David Mataix-Cols, PhD; Jens Högström, PhD; Eva Serlachius, MD, PhD
+
+IMPORTANCE Social anxiety disorder (SAD) is a prevalent childhood-onset disorder associated with lifelong adversity and high costs for the individual and society at large. Cognitive behavioral therapy (CBT) is an established evidence-based treatment for SAD, but its availability is limited.
+OBJECTIVE To assess the efficacy and cost-effectiveness of therapist-guided internet-delivered cognitive behavioral therapy (ICBT) for SAD in youths vs an active comparator, internet-delivered supportive therapy (ISUPPORT).
+DESIGN, SETTING, AND PARTICIPANTS This single-masked, superiority randomized clinical trial enrolled participants at a clinical research unit integrated within the child and adolescent mental health services in Stockholm, Sweden, from September 1, 2017, to October 31, 2018. The final participant reached the 3-month follow-up (primary end point) in May 2019. Children and adolescents 10 to 17 years of age with a principal diagnosis of SAD and their parents were included in the study.
+INTERVENTIONS ICBT and ISUPPORT, both including 10 online modules, 5 separate parental modules, and 3 video call sessions with a therapist.
+MAIN OUTCOMES AND MEASURES The Clinician Severity Rating (CSR), derived from the Anxiety Disorder Interview Schedule, rated by masked assessors 3 months after the end of treatment. The CSR ranges from 0 to 8, with scores of 4 or higher indicating caseness. Secondary outcomes included masked assessor­rated diagnostic status of SAD and global functioning, child- and parent-reported social anxiety and depressive symptoms, and health-related costs.
+RESULTS Of the 307 youths assessed for eligibility, 103 were randomized to 10 weeks of therapist-guided ICBT (n = 51) or therapist-guided ISUPPORT (n = 52) for SAD. The sample consisted of 103 youths (mean [SD] age, 14.1 [2.1] years; 79 [77%] female). Internet-delivered cognitive behavioral therapy was significantly more efficacious than ISUPPORT in reducing the severity of SAD symptoms. Mean (SD) CSR scores for ICBT at baseline and at the 3-month follow-up were 5.06 (0.95) and 3.96 (1.46), respectively, compared with 4.94 (0.94) and 4.48 (1.30) for ISUPPORT. There was a significant between-group effect size of d = 0.67 (95% CI, 0.21-1.12) at the 3-month follow-up. Similarly, all of the secondary outcome measures demonstrated significant differences with small to large effect sizes, except for child-rated quality of life (nonsignificant). The cost-effectiveness analyses indicated cost savings associated with ICBT compared with ISUPPORT, with the main drivers of the savings being lower medication costs (z = 2.38, P = .02) and increased school productivity (z = 1.99, P = .047) in the ICBT group. There was 1 suicide attempt in the ISUPPORT group; no other serious adverse events occurred in either group.
+CONCLUSIONS AND RELEVANCE In this randomized clinical trial, internet-delivered cognitive behavioral therapy was an efficacious and cost-effective intervention for children and adolescents with SAD. Implementation in clinical practice could markedly increase the availability of effective interventions for SAD.
+TRIAL REGISTRATION ClinicalTrials.gov Identifier: NCT03247075
+JAMA Psychiatry. 2021;78(7):705-713. doi:10.1001/jamapsychiatry.2021.0469 Published online May 12, 2021.
+
+Visual Abstract Multimedia Supplemental content CME Quiz at jamacmelookup.com and CME Questions page 800
+Author Affiliations: Author affiliations are listed at the end of this article. Corresponding Author: Martina Nordh, PhD, Centre for Psychiatry Research, Department of Clinical Neuroscience, Karolinska Institutet and Stockholm Health Care Services, Region Stockholm, CAP Research Centre, Gävlegatan 22, SE-113 30, Stockholm, Sweden (martina.nord@ ki.se).
+
+(Reprinted) 705
+
+Downloaded from jamanetwork.com by Alessandro Cancemi on 06/08/2026
+
+Research Original Investigation
+
+Behavioral Therapy vs Supportive Therapy for Youths With Social Anxiety Disorder
+
+S ocial anxiety disorder (SAD) is a prevalent childhoodonset disorder associated with lifelong impairment and high societal costs.1,2 Cognitive behavioral therapy (CBT) is effective for children and adolescents with SAD3 and is considered the first-line treatment in clinical guidelines.4 However, only approximately 10% of individuals with SAD have reportedly ever been in contact with a health care professional about their social fears, and few have received an effective treatment.5,6 Barriers to treatment access include low availability of trained therapists, high treatment costs, long distances to clinics, and the nature of the social anxiety symptoms themselves, which makes it difficult for the individual to seek help.7
+The digital revolution has brought great opportunities to increase access to evidence-based treatments for mental disorders.8 There is increasing support for the efficacy of technology-delivered CBT for anxiety disorders in youths, with effect sizes in the moderate to large range compared with waitlist controls.9,10 The efficacy of internet-delivered CBT (ICBT) for adults with SAD has been well established,11 but only 1 large randomized clinical trial of ICBT for youths specifically targeting SAD has been conducted, comparing a generic ICBT program suitable for all childhood anxiety disorders and a SAD-specific ICBT program with a waitlist control. Both active treatments were significantly more effective than the waitlist control, but no significant difference was observed between the 2 active treatments.12 To our knowledge, no study evaluating ICBT for SAD has yet used an active comparator, which is essential to distill the true effect of a behavioral intervention beyond the effects of practitioner attention and frequent monitoring and reporting of symptoms.13 Furthermore, no formal health economic evaluations of ICBT for SAD in youths have previously been conducted. Costeffectiveness analyses are important when evaluating new interventions to guide policy makers on how to best allocate resources.8 This trial aimed to evaluate the efficacy and costeffectiveness of therapist-guided ICBT for youths with SAD compared with an active comparator. We hypothesized that ICBT would be more efficacious and cost-effective than the active comparator.
+Methods
+Study Design This single-masked randomized clinical trial (RCT) compared therapist-guided ICBT with therapist-guided internetdelivered supportive therapy (ISUPPORT) for children and adolescents (10-17 years of age) with a principal diagnosis of SAD. The trial was conducted at a clinical research unit integrated within the Child and Adolescent Mental Health Services in Stockholm, Sweden. Recruitment took place from September 1, 2017, to October 31, 2018. Participants (N = 103) were randomized to 10 weeks of ICBT (n = 51) or ISUPPORT (n = 52). The primary end point was set to 3 months after the treatment period (May 2019) because of a previously observed tendency for participants in ICBT trials to report continued improvement beyond treatment termination.14,15
+
+Key Points
+Question Is internet-delivered cognitive behavioral therapy (ICBT) an efficacious and cost-effective treatment for youths with social anxiety disorder (SAD)?
+Findings In this randomized clinical trial of 103 children and adolescents with a principal diagnosis of SAD and their parents, a 10-week course of ICBT was efficacious and cost-effective compared with an active comparator.
+Meaning Internet-delivered cognitive behavioral therapy has the potential to overcome common treatment barriers and increase the availability of evidence-based psychological treatments for young people with SAD; policy makers could consider ICBT with minimal therapist support a promising, low-intensity treatment for children and adolescents with SAD.
+Participants randomized to ISUPPORT were offered ICBT after the 3-month follow-up. The trial was approved by the Stockholm Regional Ethical Review Board and publicly registered. Following the Swedish law, younger participants (10-14 years of age) provided verbal assent, whereas older participants (15-17 years of age) and their parents provided written consent. The trial protocol can be found in Supplement 1. Moderation and mediation analyses described in the trial protocol, as well as results from the genetic part of the study, will be reported separately. This study followed the Consolidated Standards of Reporting Trials (CONSORT) reporting guideline.
+Participants Referrals from health care professionals and self-referrals from families living anywhere in Sweden were accepted. The trial was advertised at the Child and Adolescent Mental Health Services clinics in Stockholm, Sweden, in newspapers, and on social media. Inclusion criteria were as follows: a principal diagnosis of SAD according to the DSM-516 criteria; age of 10 to 17 years; ability to read and write Swedish; access to the internet; a parent able to coparticipate in the treatment; and if taking psychotropic medication, having been taking a stable dose for 6 weeks or more before enrollment. Exclusion criteria were as follows: diagnosed autism spectrum disorder, psychosis, bipolar disorder, or severe eating disorder; high risk of suicide; ongoing alcohol or substance abuse; and having received CBT for any anxiety disorder within the last 6 months (defined as 5 sessions of CBT including in vivo exposure). Table 1 gives the baseline demographic and clinical characteristics of the participants.
+Procedures The inclusion procedure consisted of 2 steps: an initial telephone screening and a face-to-face assessment at the clinic. Figure 1 is the CONSORT flowchart. During the face-to-face assessment, a trained psychologist (M.N., T.W., M.J., M.L., and J.H.) administered the Anxiety Disorders Interview Schedule, Child Version (ADIS-C)17 jointly with young persons and their parents to ascertain the presence of a diagnosis of SAD or any comorbid disorders according to the DSM-5.16 Verbal and written information was provided to the youths and the parents.
+
+706 JAMA Psychiatry July 2021 Volume 78, Number 7 (Reprinted)
+
+jamapsychiatry.com
+
+Downloaded from jamanetwork.com by Alessandro Cancemi on 06/08/2026
+
+Behavioral Therapy vs Supportive Therapy for Youths With Social Anxiety Disorder
+
+Original Investigation Research
+
+Table 1. Baseline Sociodemographic and Clinical Characteristics of the Study Participants Assigned to ICBT or ISUPPORT
+
+Characteristic Female, No. (%) Male, No. (%) Age, mean (SD), y Duration of SAD, mean (SD), y Previous treatmenta
+SAD Another disorder No. of comorbid diagnoses 0 1 2 3 Comorbid diagnoses Specific phobia Generalized anxiety disorder Major depressive disorder ADHD/ADD Dyslexia Selective mutism Panic disorder and/or agoraphobia Separation anxiety disorder OCD and related disorders (eg, BDD and tics) Medication None SSRI Otherb Parental level of educationc <12 y 12 y Undergraduate studies/university studies Graduate degree Postgraduate degree Parental occupational statusc Employed or self-employed Otherd Parental HADS score, mean (SD)c Anxiety Depression
+
+ICBT (n = 51) 41 (80) 10 (20) 13.6 (2.0) 6.2 (3.8)
+12 (24) 27 (53)
+19 (37) 21 (41) 7 (14) 4 (8)
+9 (17) 9 (17) 7 (14) 4 (8) 3 (6) 4 (8) 1 (2) 2 (4) 2 (4)
+47 (92) 2 (4) 3 (6)
+3 (6) 4 (8) 10 (20)
+31 (61) 3 (6)
+46 (90) 5 (10)
+7.24 (4.47) 4.06 (3.17)
+
+ISUPPORT (n = 52) 38 (73) 14 (27) 14.5 (2.1) 5.5 (3.3)
+17 (33) 29 (56)
+31 (60) 13 (25) 5 (10) 3 (6)
+8 (16) 6 (12) 4 (8) 4 (8) 2 (4) 1 (2) 2 (4) 0 1 (2)
+
+Total (N = 103) 79 (77) 24 (23) 14.1 (2.1) 5.9 (3.6)
+29 (28) 56 (54)
+50 (49) 34 (33) 12 (12) 7 (7)
+17 (17) 15 (15) 11 (11) 8 (8) 5 (5) 5 (5) 3 (3) 2 (2) 3 (3)
+
+47 (90) 1 (2) 4 (8)
+4 (8) 3 (6) 17 (33) 23 (44) 5 (10)
+49 (94) 3 (6)
+5.37 (3.52) 3.15 (2.94)
+
+94 (91) 3 (3) 7 (7)
+7 (7) 7 (7) 27 (26) 54 (52) 8 (8)
+95 (92) 8 (8)
+6.29 (4.10) 3.60 (3.08)
+
+Abbreviations: ADHD/ADD, attention-deficit/ hyperactivity disorder; BDD, body dysmorphic disorder; HADS, Hospital Anxiety and Depression Scale; ICBT, internet-delivered cognitive behavioral therapy; ISUPPORT, internet-delivered supportive therapy; OCD, obsessive-compulsive disorder; SAD, social anxiety disorder; SSRI, selective serotonin reuptake inhibitor.
+a Psychological treatment.
+b Psychostimulants, hypnotics, or antihistamine.
+c The parent mainly responsible for study participation.
+d Student, unemployed, retired, or on sick leave.
+
+The ADIS-C diagnostic interview and child- and parentreport measures were administered before treatment, after treatment (10 weeks), and at 3-month follow-up (22 weeks). Trained psychologists masked to treatment allocation conducted the posttreatment and 3-month follow-up assessments.
+The random allocation sequence was generated by an independent clinical trials unit, the Karolinska Trial Alliance, in blocks of 4 or 6 and placed in opaque and sealed envelopes. The envelopes were managed by an independent administrator not otherwise involved in the study. An external observer from the Karolinska Trial Alliance also monitored the trial regularly (eMethods in Supplement 2).
+
+Outcomes The primary outcome measure was the masked Clinician Severity Rating (CSR) score derived from the ADIS-C interview. The CSR ranges from 0 to 8, with scores of 4 or higher indicating caseness. Secondary outcomes included masked assessor­rated clinical improvement, presence of a SAD diagnosis, global function and treatment adherence, and a range of childand parent-reported measures of social anxiety, psychopathology, global function, quality of life, treatment credibility, and costs (eMethods in Supplement 2). All child- and parentreport measures were administered via a secure online platform (accessible via personal login, password, and a singleuse code) at all time points. The complete lists of measures and
+
+jamapsychiatry.com
+
+(Reprinted) JAMA Psychiatry July 2021 Volume 78, Number 7 707
+
+Downloaded from jamanetwork.com by Alessandro Cancemi on 06/08/2026
+
+

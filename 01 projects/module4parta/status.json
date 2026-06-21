@@ -1,0 +1,17 @@
+{
+  "phase": "fqa",
+  "loop": "v006",
+  "iteration": 6,
+  "maxLoops": 6,
+  "metric": "fqaScore",
+  "score": 88,
+  "threshold": 85,
+  "prevScore": 87,
+  "state": "passed",
+  "lastAction": "FQA v006 complete — gate passed (88 ≥ 85); acceptedVersion set to v006; all P2 cleared",
+  "nextAction": "Fix P3 cover date (2026-04-15 → 2026-06-15 on S1), then finalisation/recording",
+  "acceptedVersion": "v006",
+  "draftFile": "runs/v006/Student 5779906 – Module 4 Part Av0.13.pptx",
+  "changeTasksFile": "runs/v006/change-tasks.html",
+  "updatedAt": "2026-06-04T00:00:00.000Z"
+}

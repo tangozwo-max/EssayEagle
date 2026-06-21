@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Change Tasks V6 — v0.11 → final — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.55; padding: 32px 20px 80px; font-size: 14px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); color: white; border-radius: 10px; padding: 28px 34px; margin-bottom: 22px; }
+  .header h1 { font-size: 1.5rem; font-weight: 800; }
+  .header .sub { opacity: 0.9; font-size: 0.95rem; margin-top: 4px; }
+  .header .meta { font-size: 0.8rem; opacity: 0.85; margin-top: 10px; display:flex; gap:16px; flex-wrap:wrap;}
+  .gate-banner { background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%); border-radius: 10px; padding: 18px 24px; margin-bottom: 22px; color: white; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .gate-score { font-size: 2.4rem; font-weight: 900; }
+  .gate-label { font-size: 0.85rem; opacity: 0.9; }
+  .gate-detail { font-size: 0.95rem; }
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 22px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #1b5e20; color: #fff; }
+  .resolved { background: #e8f5e9; border: 1.5px solid #a5d6a7; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; }
+  .resolved h3 { color: #1b5e20; margin-bottom: 8px; font-size: 0.95rem; }
+  .resolved ul { list-style: none; }
+  .resolved li { padding: 3px 0; font-size: 0.86rem; display:flex; gap:8px; align-items:flex-start;}
+  .resolved li::before { content: "✅"; flex-shrink:0; }
+  .order { background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:8px;padding:14px 18px;margin-bottom:22px;font-size:0.88rem;}
+  .order h3 { color:#1b5e20; margin-bottom:6px; }
+  ol.steps { margin-left:20px; } ol.steps li { margin:3px 0; }
+  .chapter { background: white; border-radius: 10px; margin-bottom: 24px; border: 1px solid #dde3ee; overflow: hidden; }
+  .chapter-head { padding: 16px 22px; color: white; }
+  .ch-p2 { background: linear-gradient(135deg, #e65100 0%, #f57c00 100%); }
+  .ch-p3 { background: linear-gradient(135deg, #f9a825 0%, #fbc02d 100%); color: #1a1f2e !important; }
+  .ch-opt { background: linear-gradient(135deg, #455a64 0%, #607d8b 100%); }
+  .chapter-head h2 { font-size: 1.15rem; font-weight: 800; }
+  .chapter-head .pts { font-size: 0.82rem; opacity: 0.95; margin-top: 4px; }
+  .chapter-body { padding: 18px 22px; }
+  .summary-block { background: #f0f3f9; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; }
+  .pts-pill { display:inline-block; background:#fff3e0; color:#bf360c; border:1.5px solid #ffb74d; border-radius:14px; padding:3px 12px; font-weight:800; font-size:0.78rem; margin-left:8px;}
+  .task { border: 1px solid #e0e4ee; border-radius: 8px; margin: 14px 0; overflow: hidden; }
+  .task-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fafbfd; border-bottom: 1px solid #eef1f7; flex-wrap: wrap; }
+  .task-id { font-family: 'Courier New', monospace; font-weight: 800; color: #0d2240; font-size: 0.84rem; }
+  .prio { padding: 2px 9px; border-radius: 10px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .pr2 { background:#ffe0b2; color:#bf360c;} .pr3 { background:#fff8e1; color:#ef6c00;} .pr4 { background:#e8f5e9; color:#2e7d32;}
+  .task-title { font-weight: 700; font-size: 0.9rem; }
+  .est { margin-left:auto; font-size:0.74rem; color:#888; font-weight:700;}
+  .task-body { padding: 12px 14px; font-size: 0.87rem; }
+  .diff { margin: 10px 0; }
+  .diff .lab { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+  .before { background: #fff5f5; border-left: 3px solid #e53935; padding: 8px 12px; border-radius: 0 5px 5px 0; margin-bottom: 8px; }
+  .before .lab { color: #b71c1c; }
+  .after { background: #f1f8f1; border-left: 3px solid #43a047; padding: 8px 12px; border-radius: 0 5px 5px 0; }
+  .after .lab { color: #1b5e20; }
+  .mono { font-family: 'Courier New', monospace; font-size: 0.85em; }
+  .note { background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:9px 13px;font-size:0.83rem;margin:8px 0;}
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .footer { text-align:center; font-size:0.78rem; color:#888; margin-top:30px; padding-top:14px; border-top:1px solid #dde3ee;}
+  table { width:100%; border-collapse:collapse; font-size:0.85rem; margin:10px 0; }
+  th { background:#ede7f6; color:#4a148c; padding:7px 10px; text-align:left; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em; }
+  td { padding:7px 10px; border-bottom:1px solid #f0f3f9; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Detailed Change Tasks — V6</h1>
+    <div class="sub">v0.11 → final · Case "Tommy" · Module 4 Part A</div>
+    <div class="meta"><span>Student 5779906</span><span>4 June 2026</span><span>4 × P2 · 2 × P3 · 3 × optional</span><span>Total effort ≈ 15 min</span></div>
+  </div>
+
+  <div class="gate-banner">
+    <div>
+      <div class="gate-label">FQA SCORE v002</div>
+      <div class="gate-score">85</div>
+      <div class="gate-label">/ 100 — gate 83</div>
+    </div>
+    <div>
+      <div class="gate-detail"><strong>✅ GATE PASSED</strong> — 85 ≥ 83 · loop 2/5</div>
+      <div class="gate-detail" style="margin-top:6px;">Est. Warwick: 169 / 200 pts · K&U 52/60 (A+) · A&E 87/100 (A+) · C&R 30/40 (A)</div>
+      <div class="gate-detail" style="margin-top:6px;opacity:0.85;">Fix the 4 × P2 mismatches before recording — they cost real C&R marks.</div>
+    </div>
+  </div>
+
+  <div class="resolved">
+    <h3>Resolved in v0.11 — the 9 missing grey-lit references (V5 P1 → closed)</h3>
+    <ul>
+      <li>Achenbach &amp; Rescorla (2001) — now in bibliography (S1 fn1)</li>
+      <li>Bongers et al. (2004) — now in bibliography (S1 fn4)</li>
+      <li>Bronfenbrenner (2009) — now in bibliography (S2 fn2)</li>
+      <li>Bowlby (1997) — now in bibliography (S3 fn11)</li>
+      <li>Main &amp; Hesse (1990) pp.161–182 — now in bibliography (S3 fn10)</li>
+      <li>Shonkoff &amp; NRC (2001) — now in bibliography (S2 fn4)</li>
+      <li>SIGN (2019) with URL — now in bibliography (S3 fn7)</li>
+      <li>van der Kolk (2015) — now in bibliography (S1 fn5)</li>
+      <li>Center on Developing Child replaced by Garner &amp; Yogman (2021) for serve &amp; return — cleaner peer-reviewed source (already on S3 fn1)</li>
+    </ul>
+  </div>
+
+  <div class="order">
+    <h3>Recommended order before recording</h3>
+    <ol class="steps">
+      <li><strong>V6-Year-T1</strong> — fix 4 × in-text year mismatches (~8 min, ~8 slide edits)</li>
+      <li><strong>V6-Cover-T1</strong> — update cover date (~30 sec)</li>
+      <li><strong>V6-S4-T1</strong> — fix "advercity" typo (~30 sec)</li>
+      <li>Then record. The 3 optional items are upside only.</li>
+    </ol>
+  </div>
+
+  <div class="nav">
+    <a href="#years">Year mismatches (P2)</a>
+    <a href="#cover">Cover date (P3)</a>
+    <a href="#typo">Typo (P3)</a>
+    <a href="#optional">Optional</a>
+  </div>
+
+  <!-- YEAR MISMATCHES -->
+  <div id="years" class="chapter">
+    <div class="chapter-head ch-p2">
+      <h2>Chapter 1 — 4 × In-text year mismatches <span class="pts-pill">C&amp;R marks at risk</span></h2>
+      <div class="pts">Bibliografie zeigt die Zotero-importierte Edition (= was tatsächlich gelesen wurde). In-text muss dazu passen.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="summary-block">
+        Harvard-WMS: in-text citation year <strong>must match</strong> bibliography year exactly. These 4 mismatches each risk losing marks in C&amp;R. Fix: change the <em>in-text</em> superscript/year to match the bibliography entry — since the bib reflects what was actually imported/read.
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Year-T1a</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Bronfenbrenner: 1979 → 2009</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">In-text (current)</div>S2 fn2: <span class="mono">(Bronfenbrenner, 1979)</span></div>
+            <div class="after"><div class="lab">After</div>S2 fn2: <span class="mono">(Bronfenbrenner, 2009)</span> — matches bibliography: <em>The Ecology of Human Development.</em> Cambridge, MA: Harvard University Press. (2009 reprint)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Year-T1b</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Bowlby: 1969 → 1997</span>
+          <span class="est">~1 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">In-text (current)</div>S3 fn11: <span class="mono">(Bowlby, 1969)</span></div>
+            <div class="after"><div class="lab">After</div>S3 fn11: <span class="mono">(Bowlby, 1997)</span> — matches bibliography: <em>Attachment and Loss: Attachment.</em> Pimlico. (1997 edition)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Year-T1c</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">van der Kolk: 2014 → 2015</span>
+          <span class="est">~1 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">In-text (current)</div>S1 fn5: <span class="mono">(van der Kolk, 2014)</span></div>
+            <div class="after"><div class="lab">After</div>S1 fn5: <span class="mono">(van der Kolk, 2015)</span> — matches bibliography: <em>The Body Keeps the Score.</em> New York: Penguin Books. (2015 Penguin edition)</div>
+          </div>
+          <div class="note">Note: bibliography lists as "Van der Kolk" (capital V). In-text should remain lowercase "van der Kolk" per Harvard — this is correct Dutch naming convention.</div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Year-T1d</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Weerasekera: 1996 → 1993 (2 occurrences)</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">In-text (current)</div>S1 fn7: <span class="mono">(Weerasekera, 1996)</span> · S4 fn1: <span class="mono">(Weerasekera, 1996)</span></div>
+            <div class="after"><div class="lab">After</div>Both → <span class="mono">(Weerasekera, 1993)</span> — matches bibliography: <em>Formulation: A Multiperspective Model.</em> Can J Psychiatry 38(5):351–358. PMID 8348476.</div>
+          </div>
+          <div class="note">Carried from V5. The 1993 journal article is the correct PubMed-verifiable source. The 1996 date has no matching bibliography entry.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COVER DATE -->
+  <div id="cover" class="chapter">
+    <div class="chapter-head ch-p3" style="background:linear-gradient(135deg,#f9a825 0%,#fbc02d 100%);color:#1a1f2e;">
+      <h2>Chapter 2 — Cover date <span class="pts-pill">P3 Compliance</span></h2>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Cover-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Update "Date Submitted" on cover slide</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div><span class="mono">Date Submitted: 2026-04-13</span></div>
+            <div class="after"><div class="lab">After</div><span class="mono">Date Submitted: 2026-06-15</span> — to match the signature line date. Deadline: 15 June 2026, 10:00.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TYPO -->
+  <div id="typo" class="chapter">
+    <div class="chapter-head ch-p3" style="background:linear-gradient(135deg,#f9a825 0%,#fbc02d 100%);color:#1a1f2e;">
+      <h2>Chapter 3 — S4 typo <span class="pts-pill">P3 Communication</span></h2>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-S4-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Fix "advercity" → "adversity"</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>"Ongoing <strong>advercity</strong> perpetuates cycle"</div>
+            <div class="after"><div class="lab">After</div>"Ongoing <strong>adversity</strong> perpetuates cycle"</div>
+          </div>
+          <div class="note">Carried from V5 and V4. Fix before recording.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTIONAL -->
+  <div id="optional" class="chapter">
+    <div class="chapter-head ch-opt">
+      <h2>Chapter 4 — Optional surplus cleanup <span class="pts-pill">Tidy only</span></h2>
+      <div class="pts">Three bibliography entries are never cited on any slide.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Opt-T1</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Delete Donaldson et al. (2025) from bibliography</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <p>Appears on Refs slide 2. Never cited on S1–S5. <strong>Delete.</strong></p>
+        </div>
+      </div>
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Opt-T2</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Delete Reiss, F. (2013) from bibliography</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <p>The cited version is Reiss <em>et al.</em> (2019). The 2013 single-author entry is uncited. <strong>Delete.</strong> Both entries are currently on Refs slide 3.</p>
+        </div>
+      </div>
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V6-Opt-T3</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Ungar &amp; Theron (2020) — cite or delete</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <p>Strong resilience source (resilience as multisystemic/environmental, M4 W2). Currently on Refs slide 4 but not cited. <strong>Recommended: add to S5</strong> next to Masten (2001) on the "ordinary magic / resilience is not a trait" point. Alternatively: delete.</p>
+          <div class="note">Adding it reinforces the "resilience is contextual, not individual" argument — directly earns A&amp;E marks.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Essay Fabrik — Detailed Change Tasks V6 — v0.11 → final — Module 4 Part A — 4 June 2026 · Egbert · fqaScore 85/83 PASSED
+  </div>
+
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-04 14:50 &middot; Essay Fabrik</div></body>
+</html>

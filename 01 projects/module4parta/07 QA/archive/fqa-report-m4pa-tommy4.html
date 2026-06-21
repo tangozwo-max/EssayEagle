@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FQA Report — tommy4.pdf — Module 4 Part A</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f5f6f8; color: #1a1f2e;
+      line-height: 1.65; padding: 40px 24px 80px;
+    }
+    .page { max-width: 860px; margin: 0 auto; }
+
+    .report-header {
+      background: #111d35; color: #fff;
+      border-radius: 8px; padding: 32px 40px 28px; margin-bottom: 28px;
+    }
+    .report-eyebrow { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #f39c12; margin-bottom: 10px; }
+    .report-header h1 { font-size: 28px; font-weight: 700; line-height: 1.2; margin-bottom: 8px; }
+    .report-header h1 .accent { color: #f39c12; }
+    .report-meta { font-size: 12px; color: rgba(255,255,255,0.38); margin-top: 12px; }
+    .report-meta span { margin-right: 20px; }
+
+    .dashboard { background: #fff; border-radius: 8px; border: 1px solid #e2e6ef; overflow: hidden; margin-bottom: 28px; }
+    .dashboard-title { background: #111d35; color: #fff; padding: 12px 24px; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .dash-table { width: 100%; border-collapse: collapse; }
+    .dash-table th { background: #f0f3f9; padding: 10px 16px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #6b7a99; text-align: left; border-bottom: 1px solid #e2e6ef; }
+    .dash-table td { padding: 12px 16px; border-bottom: 1px solid #f0f3f9; font-size: 13px; }
+    .dash-table tr:last-child td { border-bottom: none; background: #f8f9fc; font-weight: 700; }
+    .score-pill { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+    .score-a  { background: #dbeeff; color: #1a5fa8; }
+    .score-b  { background: #fff3cd; color: #8a6000; }
+    .score-c  { background: #fde8e8; color: #8a0000; }
+    .verdict-line { background: #111d35; color: #fff; padding: 14px 24px; font-size: 13px; line-height: 1.5; }
+    .verdict-line strong { color: #f39c12; }
+
+    .section { background: #fff; border-radius: 8px; border: 1px solid #e2e6ef; margin-bottom: 20px; overflow: hidden; }
+    .section-header { display: flex; align-items: center; gap: 12px; padding: 14px 24px; border-bottom: 1px solid #e8ecf5; background: #f8f9fc; }
+    .role-badge { padding: 3px 11px; border-radius: 3px; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; }
+    .badge-christoph { background: #2e86de; color: #fff; }
+    .badge-jackie    { background: #6c5ce7; color: #fff; }
+    .badge-peter     { background: #00b894; color: #fff; }
+    .badge-steven    { background: #e17055; color: #fff; }
+    .badge-egbert    { background: #111d35; color: #f39c12; }
+    .section-header h2 { font-size: 16px; font-weight: 700; flex: 1; }
+    .section-score { font-size: 22px; font-weight: 700; color: #e17055; }
+    .section-body { padding: 24px; }
+
+    h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #6b7a99; margin: 22px 0 10px; }
+    h3:first-child { margin-top: 0; }
+    p { font-size: 14px; margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { font-size: 14px; margin-bottom: 4px; }
+
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+    th { background: #f0f3f9; padding: 9px 12px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #6b7a99; border-bottom: 2px solid #e2e6ef; }
+    td { padding: 9px 12px; border-bottom: 1px solid #f0f3f9; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .rubric-total td { background: #f0f3f9; font-weight: 700; }
+
+    .callout { padding: 12px 16px; border-radius: 5px; margin: 12px 0; font-size: 13.5px; line-height: 1.6; }
+    .callout-blue  { background: #dbeeff; border-left: 3px solid #2e86de; }
+    .callout-amber { background: #fff8e6; border-left: 3px solid #f39c12; }
+    .callout-green { background: #d4f5e2; border-left: 3px solid #27ae60; }
+    .callout-red   { background: #fde8e8; border-left: 3px solid #e74c3c; }
+    .callout-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #888; display: block; margin-bottom: 4px; }
+
+    .ok   { color: #27ae60; font-weight: 700; }
+    .warn { color: #f39c12; font-weight: 700; }
+    .fail { color: #e74c3c; font-weight: 700; }
+    .pnum { font-weight: 700; color: #2e86de; font-size: 15px; }
+    .hi { color: #1a7a45; font-weight: 700; }
+    .med { color: #8a6000; font-weight: 600; }
+
+    .report-footer { text-align: center; font-size: 11px; color: #b0b8cc; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e6ef; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="report-header">
+    <div class="report-eyebrow">Essay Fabrik · Final Quality Assessment · Slide content only · Input: tommy4.pdf</div>
+    <h1>FQA — <span class="accent">tommy4.pdf</span></h1>
+    <p style="color:rgba(255,255,255,0.55);font-size:14px;margin-top:8px;">Case Tommy: A Developmental Formulation · Module 4 Part A</p>
+    <div class="report-meta">
+      <span>Student 5779906</span>
+      <span>FQA date: 2026-05-29</span>
+      <span>Mode: PRESENTATION (slide content only)</span>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="dashboard">
+    <div class="dashboard-title">Dashboard</div>
+    <table class="dash-table">
+      <thead><tr><th>Role</th><th>Score</th><th>Key Finding</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Christoph</strong> — Compliance &amp; Grading</td>
+          <td><span class="score-pill score-b">79%</span></td>
+          <td>Format ✓ · Reference pages are images (unverifiable) · W4 curriculum gaps in Knowledge</td>
+        </tr>
+        <tr>
+          <td><strong>Jackie</strong> — Evidence &amp; References</td>
+          <td><span class="score-pill score-c">64%</span></td>
+          <td>References unreadable (image-based) · Bowlby no year · 3 uncited slide claims · S4 citations ambiguous</td>
+        </tr>
+        <tr>
+          <td><strong>Peter</strong> — Curriculum Coverage</td>
+          <td><span class="score-pill score-b">72%</span></td>
+          <td>Strong W1/W2 · Above-curriculum sources · Fonagy, 5Ps, ODD, depression, Continuum of Need absent</td>
+        </tr>
+        <tr>
+          <td><strong>Steven</strong> — Narrative &amp; Argumentation</td>
+          <td><span class="score-pill score-c">63%</span></td>
+          <td>No central thesis · Slide 3 is a mechanism inventory · No through-line · Closing left open</td>
+        </tr>
+        <tr>
+          <td><strong>Overall</strong></td>
+          <td><span class="score-pill score-b">70%</span></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="verdict-line">
+      <strong>Estimated grade (slide content):</strong> B+ / A — ~150–165 / 200 &nbsp;·&nbsp;
+      <strong>Target with priority changes:</strong> A / A+ — ~175–188 / 200
+    </div>
+  </div>
+
+  <!-- CHRISTOPH -->
+  <div class="section">
+    <div class="section-header">
+      <span class="role-badge badge-christoph">Christoph</span>
+      <h2>Compliance &amp; Grading</h2>
+      <span class="section-score">79%</span>
+    </div>
+    <div class="section-body">
+
+      <h3>Format Compliance</h3>
+      <table>
+        <tr><td>Cover sheet with declaration of authenticity</td><td class="ok">✓ Page 1</td></tr>
+        <tr><td>Student number only, no name</td><td class="ok">✓ 5779906 throughout</td></tr>
+        <tr><td>5 content slides (max)</td><td class="ok">✓ Exactly 5</td></tr>
+        <tr><td>Title slide with module reference</td><td class="ok">✓ Module 4, Student 5779906</td></tr>
+        <tr><td>Reference slides present</td><td class="warn">⚠ 3 pages present but image-based — unverifiable as text</td></tr>
+        <tr><td>Submission order</td><td class="ok">✓ Cover → title → slides → refs → appendix (clean)</td></tr>
+      </table>
+
+      <h3>Rubric Assessment</h3>
+      <table>
+        <thead><tr><th>Criterion</th><th>Estimate</th><th>Band</th><th>Key gaps</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Knowledge &amp; Understanding (60 pts)</td>
+            <td>47–52 / 60</td>
+            <td>A-</td>
+            <td>Fonagy absent; 5Ps formulation not applied; ODD not named; depression not named; Continuum of Need absent</td>
+          </tr>
+          <tr>
+            <td>Analysis &amp; Evaluation (100 pts)</td>
+            <td>68–76 / 100</td>
+            <td>B+ to A</td>
+            <td>No central thesis; Slide 3 is a taxonomy not an argument; claims not hedged; no authorial voice</td>
+          </tr>
+          <tr>
+            <td>Communication &amp; Referencing (40 pts)</td>
+            <td>28–32 / 40</td>
+            <td>B+</td>
+            <td>Reference pages are images; Bowlby missing year; S5 broken citation; S4 ambiguous citations</td>
+          </tr>
+          <tr class="rubric-total">
+            <td>Total</td>
+            <td>143–160 / 200</td>
+            <td>B+ / A</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>What earns points now</h3>
+      <ul>
+        <li>ACE framework (Felitti 1998) — cited, dose-response stated ✓</li>
+        <li>Ecological model (Bronfenbrenner) — used as S2 visual structure ✓</li>
+        <li>Latent vulnerability dual-cited: Shonkoff &amp; Garner (2012) + McCrory &amp; Viding (2015) ✓</li>
+        <li>HPA axis / toxic stress ✓</li>
+        <li>Disorganised attachment (Main &amp; Hesse 1990), IWM (Bowlby) ✓</li>
+        <li>Hostile Attribution Bias (Dodge 2006) — above-average sourcing ✓</li>
+        <li>Bongers et al. (2004) long-term psychiatric risk ✓</li>
+        <li>Van der Kolk (2014) survival strategies framing ✓</li>
+        <li>Teicher et al. (2003) neurobiological consequences ✓</li>
+        <li>Felt safety (Siegel 2012), Masten (2001), neuroplasticity ✓</li>
+        <li>Internalising/externalising taxonomy (Achenbach &amp; Rescorla 2000) ✓</li>
+        <li>Precipitating/perpetuating cycle (S4) — integrative analytical thinking ✓</li>
+        <li>Cover sheet + declaration ✓</li>
+      </ul>
+
+      <div class="callout callout-amber">
+        <span class="callout-label">Red flag — Achenbach (1966)</span>
+        Slide 3 cites <strong>Achenbach (1966)</strong> for "emotional regulation shame → aggression." Slide 1 correctly uses <strong>Achenbach &amp; Rescorla (2000)</strong> for the internalising/externalising taxonomy. Two Achenbach citations for two different purposes is fine — but 1966 should be verified against the actual paper before submission.
+      </div>
+
+      <div class="callout callout-red">
+        <span class="callout-label">Red flag — Reference pages</span>
+        All three reference pages (pp. 9–11) are image-based and cannot be read as text. This blocks format verification and risks undetected errors in Harvard-WMS compliance. Rebuild as typed text before submission.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JACKIE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="role-badge badge-jackie">Jackie</span>
+      <h2>Evidence &amp; Reference Audit</h2>
+      <span class="section-score">64%</span>
+    </div>
+    <div class="section-body">
+
+      <h3>Slide claim audit</h3>
+      <table>
+        <thead><tr><th>Slide</th><th>Claim</th><th>Citation</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>S1</td><td>Internalising/externalising co-occurrence</td><td>Achenbach &amp; Rescorla (2000)</td><td class="ok">✓</td></tr>
+          <tr><td>S1</td><td>High-risk predictor for long-term psychiatric vulnerability</td><td>Bongers et al. (2004)</td><td class="ok">✓</td></tr>
+          <tr><td>S1</td><td>Behaviours as survival strategies not misconduct</td><td>Van der Kolk (2014)</td><td class="ok">✓</td></tr>
+          <tr><td>S2</td><td>4+ ACEs → significantly higher risk</td><td>Felitti et al. (1998)</td><td class="ok">✓</td></tr>
+          <tr><td>S2</td><td>ACE categories listed, "interact and compound"</td><td>Felitti et al. (1998)</td><td class="ok">✓</td></tr>
+          <tr><td>S3</td><td>Latent vulnerability</td><td>Shonkoff &amp; Garner (2012) + McCrory &amp; Viding (2015)</td><td class="ok">✓ Dual citation — strong</td></tr>
+          <tr><td>S3</td><td>Neurobiological consequences (amygdala/PFC)</td><td>Teicher et al. (2003) + van der Kolk (2014)</td><td class="ok">✓</td></tr>
+          <tr><td>S3</td><td>Hostile Attribution Bias</td><td>Dodge (2006)</td><td class="ok">✓</td></tr>
+          <tr><td>S3</td><td>Disorganised attachment</td><td>Main &amp; Hesse (1990)</td><td class="ok">✓</td></tr>
+          <tr><td>S3</td><td>IWM: adults unpredictable, safety fragile</td><td>Bowlby <strong>(no year)</strong></td><td class="warn">⚠ Add: Bowlby (1969)</td></tr>
+          <tr><td>S3</td><td>Emotional regulation → shame → aggression</td><td>Achenbach (1966)</td><td class="warn">⚠ Verify year</td></tr>
+          <tr><td>S3</td><td>FASD risk</td><td>No citation</td><td class="fail">✗ Add SIGN guidance (M4 W2 P29)</td></tr>
+          <tr><td>S4</td><td>7-step precipitating/perpetuating cycle</td><td>Achenbach 2000, Bongers 2004, van der Kolk 2014 — shared for all 7 steps</td><td class="warn">⚠ Ambiguous which citation applies where</td></tr>
+          <tr><td>S5</td><td>Felt safety</td><td>Siegel (2012)</td><td class="ok">✓</td></tr>
+          <tr><td>S5</td><td>Ordinary magic / resilience</td><td>Masten (2001)</td><td class="ok">✓</td></tr>
+          <tr><td>S5</td><td>Neuroplasticity means trajectory can shift</td><td>None</td><td class="fail">✗ Missing — add Shonkoff or similar</td></tr>
+          <tr><td>S5</td><td>Summary statement on Tommy's trajectory</td><td>"1) …" (broken)</td><td class="fail">✗ Broken reference</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-red">
+        <span class="callout-label">Blocker</span>
+        Reference pages 9–11 are image-based. Harvard-WMS compliance, ghost entries, and missing entries cannot be verified from this file. <strong>Rebuild reference slides as typed text.</strong>
+      </div>
+
+      <h3>Summary of issues</h3>
+      <ul>
+        <li><strong>3 uncited claims</strong> on slides: FASD risk (S3), neuroplasticity (S5), S5 closing statement</li>
+        <li><strong>Bowlby missing year</strong> — should be (1969)</li>
+        <li><strong>S4 citations ambiguous</strong> — 3 shared citations for a 7-step cycle; unclear which step is supported by which source</li>
+        <li><strong>References unverifiable</strong> — entire bibliography is an image</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- PETER -->
+  <div class="section">
+    <div class="section-header">
+      <span class="role-badge badge-peter">Peter</span>
+      <h2>Curriculum Coverage</h2>
+      <span class="section-score">72%</span>
+    </div>
+    <div class="section-body">
+
+      <h3>Concept audit</h3>
+      <table>
+        <thead><tr><th>Concept</th><th>Week</th><th>Status</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>ACE framework / dose-response (Felitti)</td><td>W2</td><td class="ok">✓ Strong</td><td></td></tr>
+          <tr><td>Bronfenbrenner ecological systems</td><td>W1/W2</td><td class="ok">✓</td><td>Slide 2 structure</td></tr>
+          <tr><td>Latent vulnerability</td><td>W2 P32</td><td class="ok">✓ Strong</td><td>Dual-cited: Shonkoff + McCrory &amp; Viding</td></tr>
+          <tr><td>HPA axis / toxic stress</td><td>W2 P32</td><td class="ok">✓</td><td></td></tr>
+          <tr><td>Sensitive periods / neuroplasticity</td><td>W2 P32</td><td class="ok">✓</td><td>"Critical windows of neuroplasticity" (S2)</td></tr>
+          <tr><td>Disorganised attachment / IWM (Bowlby)</td><td>W1 P02</td><td class="ok">✓</td><td>Both present in S3</td></tr>
+          <tr><td>Internalising / externalising (Achenbach)</td><td>W4</td><td class="ok">✓</td><td>S1 central visual</td></tr>
+          <tr><td>Felt safety / co-regulation / serve-and-return</td><td>W1/W3</td><td class="ok">✓</td><td>S5 protective factors</td></tr>
+          <tr><td>Resilience = environmental (Masten)</td><td>W2 P24</td><td class="ok">✓</td><td>S5 Opportunity column</td></tr>
+          <tr><td>Intergenerational transmission</td><td>W2</td><td class="ok">✓</td><td>Mary's 15 placements + parents' history (S2)</td></tr>
+          <tr><td>FASD risk</td><td>W2 P29</td><td class="warn">⚠ Partial</td><td>Named in S3 but no elaboration or citation</td></tr>
+          <tr><td>ODD / behavioural disorders</td><td>W4 P53</td><td class="warn">⚠ Partial</td><td>S4 pt.7: "overshadowing of neurodevelopmental/neurodivergent base" — concept present, ODD not named</td></tr>
+          <tr><td>Depression risk</td><td>W4 P50</td><td class="warn">⚠ Partial</td><td>"ACEs → mental health risk" (S3) but depression not named; internalising track visible in S1</td></tr>
+          <tr><td><strong>Fonagy / mentalizing</strong></td><td>W1 P02</td><td class="fail">✗ Absent</td><td>HAB (Dodge) covers the observable behaviour; Fonagy provides the theoretical mechanism — not named</td></tr>
+          <tr><td><strong>5Ps formulation (M4 W4 P46)</strong></td><td>W4 P46</td><td class="fail">✗ Not applied</td><td>Title says "Formulation" but the 5Ps model is not used; slide structure maps naturally to Predisposing/Precipitating/Perpetuating/Protective</td></tr>
+          <tr><td><strong>Continuum of Need (W3 P35)</strong></td><td>W3 P35</td><td class="fail">✗ Absent</td><td>S5 protective factors (school meals = universal; LSA = indicated) map to it but framework not named</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-blue">
+        <span class="callout-label">Above-curriculum sources — Knowledge credit</span>
+        <strong>McCrory &amp; Viding (2015)</strong> for latent vulnerability, <strong>Dodge (2006)</strong> for Hostile Attribution Bias, and <strong>Bongers et al. (2004)</strong> for long-term psychiatric risk are all beyond the standard reading list and will earn Knowledge &amp; Understanding credit. This is a genuine strength of the deck.
+      </div>
+
+      <h3>W4 coverage gap</h3>
+      <p>Week 4 is the module's mental health disorders week. The slides cover internalising/externalising (Achenbach) but miss three specific W4 concepts that directly apply to Tommy and earn Knowledge marks:</p>
+      <ul>
+        <li><strong>5Ps formulation (P46)</strong> — the slide structure is already a formulation; naming the framework costs nothing and earns credit</li>
+        <li><strong>ODD (P53)</strong> — Slide 4 point 7 is about overshadowing; the curriculum is explicit that ODD should not be diagnosed without multidisciplinary assessment in this population</li>
+        <li><strong>Depression (P50)</strong> — Tommy's internalising track (shame, withdrawal, S1) maps directly to elevated depression risk; the connection is not made</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- STEVEN -->
+  <div class="section">
+    <div class="section-header">
+      <span class="role-badge badge-steven">Steven</span>
+      <h2>Narrative &amp; Argumentation</h2>
+      <span class="section-score">63%</span>
+    </div>
+    <div class="section-body">
+
+      <h3>Slide-by-slide assessment</h3>
+      <table>
+        <thead><tr><th>Slide</th><th>Analytical contribution</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>S1 — Presenting issues</strong></td>
+            <td>Internalising/externalising visual is strong. "Survival strategies not misconduct" (van der Kolk) is an argument — the best analytical move in the deck.</td>
+            <td class="ok">✓ Strongest slide</td>
+          </tr>
+          <tr>
+            <td><strong>S2 — ACE profile</strong></td>
+            <td>Ecological model well-used. "ACE interact and compound" is analytical. Intergenerational transmission through Mary's history is good. Mostly descriptive but has analytical framing.</td>
+            <td class="warn">⚠ Functional</td>
+          </tr>
+          <tr>
+            <td><strong>S3 — Mechanisms</strong></td>
+            <td>Six-box grid covering HPA, cognitive, trust/IWM, MH, neurodevelopmental, overall health. Content-dense and sourced. But the boxes sit side by side without an integrating argument — it reads as a taxonomy of pathways, not a synthesised account.</td>
+            <td class="warn">⚠ Weakest slide — list not argument</td>
+          </tr>
+          <tr>
+            <td><strong>S4 — Risk of complexity</strong></td>
+            <td>7-step cycle is the most integrative analytical move in the deck. Steps 1–3 explicitly show domain interaction (biology → cognition → social). Point 7 (overshadowing) is strong critical thinking. The "Psychological" label in the centre of the diagram is unclear.</td>
+            <td class="ok">✓ Good — cycle logic is analytical</td>
+          </tr>
+          <tr>
+            <td><strong>S5 — Protective factors</strong></td>
+            <td>Two-column layout (protective factors + opportunity) is good framing. "Resilience = environmental, not individual" is exactly the right analytical reframe. Closes with a question ("Can these conditions be sustained?") rather than a conclusion.</td>
+            <td class="warn">⚠ Good content; open ending</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-amber">
+        <span class="callout-label">Core problem — no central thesis</span>
+        The subtitle "Developmental risk under cumulative adversity" describes the topic; it does not make a claim. Each slide addresses a different aspect of Tommy's situation without a single thread connecting them. The marker cannot identify what the student argues beyond "ACEs had effects."
+        <br><br>
+        The raw material for a thesis is already in the deck: Slide 1's "survival strategies not misconduct" (van der Kolk), Slide 4's overshadowing point, and Slide 5's environmental resilience framing are all arguing the same thing — that Tommy's behaviour is predictable and understandable, not pathological. That is the through-line. It needs to be stated once, clearly, and then everything else serves it.
+      </div>
+
+      <h3>Claims without hedging (Analysis/Evaluation risk)</h3>
+      <p>Several statements on Slide 3 are written as fact rather than evidence-based hypothesis:</p>
+      <ul>
+        <li>"HPA axis calibrated to hypervigilance" — should be "associated with hypervigilant stress responses"</li>
+        <li>"Increased amygdala reduces PFC function" — should be "associated with amygdala hyperreactivity that can override PFC function"</li>
+        <li>"IWM: adults = unpredictable; safety = fragile" — this is Tommy's likely IWM, not a verified fact</li>
+      </ul>
+      <p>Adding hedging language ("consistent with," "associated with," "the evidence suggests") demonstrates the methodological awareness the A+ descriptor requires.</p>
+
+    </div>
+  </div>
+
+  <!-- EGBERT -->
+  <div class="section">
+    <div class="section-header">
+      <span class="role-badge badge-egbert">Egbert</span>
+      <h2>CEO Synthesis &amp; Prioritised Recommendations</h2>
+      <span class="section-score">—</span>
+    </div>
+    <div class="section-body">
+
+      <h3>Prioritised recommendations</h3>
+      <table>
+        <thead><tr><th>#</th><th>Change</th><th>Impact</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="pnum">1</td>
+            <td><strong>Add a central thesis to Slide 1</strong> — one sentence that names the argument, not just the topic. "Tommy's behaviours are predictable, not pathological — the cumulative product of interacting developmental adversities that a formulation-based reading can explain and begin to address." This runs as the spine of the whole deck.</td>
+            <td class="hi">+6–9 A pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">2</td>
+            <td><strong>Rebuild reference slides as typed text</strong> — not image screenshots. Once readable, run a proper citation cross-check. Fix Bowlby year (add 1969), FASD citation, neuroplasticity citation, broken S5 reference.</td>
+            <td class="hi">+4–6 C pts</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td class="pnum">3</td>
+            <td><strong>Apply 5Ps formulation framework (M4 W4 P46)</strong> — add to Slide 1 or title. The student's own structure (predisposing → mechanisms → perpetuating → protective) maps directly. Name it, cite Kempen's "road map" quote. Zero content change needed — just naming the framework.</td>
+            <td class="hi">+4–5 K pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">4</td>
+            <td><strong>Add Fonagy / mentalizing to Slide 3</strong> — Hostile Attribution Bias (Dodge) is already in the trust/rapport box. Add one bullet: "Impaired mentalizing (Fonagy) — difficulty reading others' mental states → hostile misattribution." This names the theoretical mechanism behind the HAB observation already made.</td>
+            <td class="med">+3–4 K pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">5</td>
+            <td><strong>Name ODD and depression on Slide 4 or Slide 3</strong> — Slide 4 point 7 (overshadowing) is the right place for ODD. Slide 3 MH box already says "ACEs → mental health risk" — add "including depression (W4 P50)" and link ODD (W4 P53) to the overshadowing point.</td>
+            <td class="med">+3–4 K pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">6</td>
+            <td><strong>Name Continuum of Need (W3 P35) on Slide 5</strong> — add a label or bullet mapping the protective factors to Universal / Selective / Indicated levels. The examples are already there; the framework name is missing.</td>
+            <td class="med">+2–3 K pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">7</td>
+            <td><strong>Add integrating sentence to Slide 3</strong> — the six boxes are parallel pathways. Add a bottom line: "These are not independent — stress biology disrupts cognitive regulation; impaired regulation disrupts social-emotional learning; disrupted attachment increases stress reactivity." This converts a taxonomy into a synthesis.</td>
+            <td class="med">+3–5 A pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">8</td>
+            <td><strong>Close Slide 5 with a statement, not a question</strong> — "Can these conditions be sustained?" is a good question. Answer it: "Tommy's trajectory remains open to change — wherever consistent, attuned relationships continue, the evidence shows neuroplasticity can revise it."</td>
+            <td class="med">+2–3 A pts</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="pnum">9</td>
+            <td><strong>Add hedging language to Slide 3 claims</strong> — "calibrated to hypervigilance" → "associated with hypervigilant responses"; "reduces PFC function" → "can suppress PFC function." Demonstrates methodological precision for A+ band.</td>
+            <td class="med">+2–3 A pts</td>
+            <td>Low</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Final statement</h3>
+      <div class="callout callout-amber">
+        <span class="callout-label">Current grade estimate</span>
+        <strong>B+ / A — approximately 150–165 / 200.</strong> The knowledge base is strong and the sourcing is above average for this level (McCrory &amp; Viding, Dodge, Bongers are all beyond the reading list). The ceiling is set by the absence of a central thesis and the W4 curriculum gaps.
+      </div>
+      <div class="callout callout-green">
+        <span class="callout-label">Realistic target</span>
+        <strong>A / A+ — approximately 175–188 / 200</strong> after Priorities 1–5. All five changes are low-effort additions to existing slide content. None require structural rebuild.<br><br>
+        <strong>Critical path:</strong> P1 (thesis sentence on S1) → P3 (5Ps name on S1) → P4 (Fonagy bullet on S3) → P5 (ODD + depression on S3/S4) → P2 (rebuild references as text). Priorities 6–9 add incremental marks on top.
+      </div>
+    </div>
+  </div>
+
+  <div class="report-footer">
+    Essay Fabrik · FQA Presentation Mode (slide content) · tommy4.pdf · Module 4 Part A · 2026-05-29
+  </div>
+
+</div>
+</body>
+</html>

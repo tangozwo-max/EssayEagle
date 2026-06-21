@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Change Tasks V4 — tommy9 → tommy10 — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.55; padding: 32px 20px 80px; font-size: 14px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); color: white; border-radius: 10px; padding: 28px 34px; margin-bottom: 22px; }
+  .header h1 { font-size: 1.5rem; font-weight: 800; }
+  .header .sub { opacity: 0.9; font-size: 0.95rem; margin-top: 4px; }
+  .header .meta { font-size: 0.8rem; opacity: 0.85; margin-top: 10px; display:flex; gap:16px; flex-wrap:wrap;}
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 22px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #1b5e20; color: #fff; }
+
+  .chapter { background: white; border-radius: 10px; margin-bottom: 24px; border: 1px solid #dde3ee; overflow: hidden; }
+  .chapter-head { padding: 16px 22px; color: white; }
+  .ch-refs   { background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%); }
+  .ch-cover  { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
+  .ch-slide  { background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); }
+  .ch-notes  { background: linear-gradient(135deg, #006064 0%, #00838f 100%); }
+  .ch-end    { background: linear-gradient(135deg, #ef6c00 0%, #fb8c00 100%); }
+  .chapter-head h2 { font-size: 1.15rem; font-weight: 800; }
+  .chapter-head .pts { font-size: 0.82rem; opacity: 0.95; margin-top: 4px; }
+  .chapter-body { padding: 18px 22px; }
+  .summary-block { background: #f0f3f9; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; }
+  .pts-pill { display:inline-block; background:#fff3e0; color:#bf360c; border:1.5px solid #ffb74d; border-radius:14px; padding:3px 12px; font-weight:800; font-size:0.78rem; margin-left:8px;}
+
+  .task { border: 1px solid #e0e4ee; border-radius: 8px; margin: 14px 0; overflow: hidden; }
+  .task-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fafbfd; border-bottom: 1px solid #eef1f7; flex-wrap: wrap; }
+  .task-id { font-family: 'Courier New', monospace; font-weight: 800; color: #0d2240; font-size: 0.84rem; }
+  .prio { padding: 2px 9px; border-radius: 10px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .pr1 { background:#ffcdd2; color:#b71c1c;} .pr2 { background:#ffe0b2; color:#bf360c;} .pr3 { background:#fff8e1; color:#ef6c00;} .pr4 { background:#e8f5e9; color:#2e7d32;}
+  .task-title { font-weight: 700; font-size: 0.9rem; }
+  .est { margin-left:auto; font-size:0.74rem; color:#888; font-weight:700;}
+  .task-body { padding: 12px 14px; font-size: 0.87rem; }
+  .diff { margin: 10px 0; }
+  .diff .lab { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+  .before { background: #fff5f5; border-left: 3px solid #e53935; padding: 8px 12px; border-radius: 0 5px 5px 0; margin-bottom: 8px; }
+  .before .lab { color: #b71c1c; }
+  .after { background: #f1f8f1; border-left: 3px solid #43a047; padding: 8px 12px; border-radius: 0 5px 5px 0; }
+  .after .lab { color: #1b5e20; }
+  .mono { font-family: 'Courier New', monospace; font-size: 0.85em; }
+  .note { background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:9px 13px;font-size:0.83rem;margin:8px 0;}
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .order { background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:8px;padding:14px 18px;margin-bottom:22px;font-size:0.88rem;}
+  .order h3 { color:#1b5e20; margin-bottom:6px; }
+  ol.steps { margin-left:20px; } ol.steps li { margin:3px 0; }
+  .footer { text-align:center; font-size:0.78rem; color:#888; margin-top:30px; padding-top:14px; border-top:1px solid #dde3ee;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Detailed Change Tasks — V4</h1>
+    <div class="sub">tommy9 → tommy10 · Case "Tommy" · Module 4 Part A</div>
+    <div class="meta"><span>Student 5779906</span><span>3 June 2026</span><span>1 × P1 · 3 × P2 · 4 × P3 · 2 × optional</span><span>Total effort ≈ 45 min</span></div>
+  </div>
+
+  <div class="order">
+    <h3>Recommended order before recording</h3>
+    <ol class="steps">
+      <li><strong>V4-R-T1</strong> — rebuild the three reference slides (the only P1; ~25–35 min). This absorbs V4-R-T2 and V4-R-T3.</li>
+      <li><strong>V4-Cover-T1</strong> — fix the cover-sheet submitted date (~1 min).</li>
+      <li><strong>V4-Font-T1</strong> — confirm "ti/tt" render correctly in PowerPoint (~5 min).</li>
+      <li><strong>V4-S4-T1 · V4-End-T1 · V4-Notes-T1</strong> — quick polish (~5 min total).</li>
+      <li>Then record. V4-S3-T1 / V4-Notes-T2 are optional upside.</li>
+    </ol>
+  </div>
+
+  <div class="nav">
+    <a href="#refs">Refs (P1)</a>
+    <a href="#cover">Cover</a>
+    <a href="#s4">Slide 4</a>
+    <a href="#end">End slide</a>
+    <a href="#font">Fonts</a>
+    <a href="#notes">Notes</a>
+    <a href="#optional">Optional</a>
+  </div>
+
+  <!-- REFERENCES -->
+  <div id="refs" class="chapter">
+    <div class="chapter-head ch-refs">
+      <h2>Chapter 1 — Reference slides (PDF p.8–10) <span class="pts-pill">Possible points gained: +12–18 / 200</span></h2>
+      <div class="pts">The single highest-impact fix. The bibliography must match the in-text citations.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="summary-block">
+        The reference slides are populated but were generated from the wrong library set. <strong>16 cited sources are missing</strong> (incl. Achenbach, Bronfenbrenner, Bowlby), <strong>~20 uncited sources pad the list</strong>, there are <strong>2 year/author mismatches</strong> and <strong>3 duplicates</strong>. Full evidence in <code>reference_check_tommy9.html</code>.
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-R-T1</span><span class="prio pr1">P1 Critical</span>
+          <span class="task-title">Rebuild all three reference slides from the 35 actually-cited sources</span>
+          <span class="est">~25–35 min</span>
+        </div>
+        <div class="task-body">
+          <p>Replace the current ~40-entry list with the reconciled 35-source list. Every needed entry is already verified — no new research.</p>
+          <div class="diff">
+            <div class="before"><div class="lab">Before — missing (cited but not listed)</div>
+              Achenbach &amp; Rescorla (2001) ★ · Bronfenbrenner (1979) ★ · Bowlby (1969) ★ · Bongers (2004) · van der Kolk (2014) · Shonkoff &amp; Phillips (2000) · Tadanki (2025) · Lee &amp; Hoaken (2007) · SIGN (2019) · Prado &amp; Dewey (2014) · Main &amp; Hesse (1990) · Center on the Developing Child (2007) · Chasnoff (2015) · Corrigan (2011) · Lieberman (2011)</div>
+            <div class="before"><div class="lab">Before — padding (listed but never cited)</div>
+              Baker 2025 · Bøe 2014 · Cross 2017 · Crouch 2019 · Granqvist 2017 · Hostinar 2012 · Kieling 2011 · Lund 2020 · Poulain 2020 · Roos 2020 · Shakiba 2023 · Tottenham &amp; Galván 2016 · Valrie 2025 · (Siegel 2012, Ungar &amp; Theron 2020 — keep only if you add an in-text cite)</div>
+            <div class="after"><div class="lab">After — the complete, reconciled list</div>
+              Use the <strong>"Paste-ready rebuild — the 35 sources actually cited"</strong> block in <code>reference_check_tommy9.html</code>. It is alphabetised and flags every ADD/de-dup/resolve item inline.</div>
+          </div>
+          <div class="note">Optional but recommended: keep <strong>Siegel (2012)</strong> (felt safety) and <strong>Ungar &amp; Theron (2020)</strong> (resilience-as-environmental) <em>and</em> add a matching superscript on S5 — both are strong curriculum sources. Otherwise drop them so nothing is left uncited.</div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-R-T2</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Resolve the two year/author mismatches</span>
+          <span class="est">~3 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>Slides cite <span class="mono">Weerasekera (1996)</span> · bib lists <span class="mono">Weerasekera, P. (1993)</span></div>
+            <div class="after"><div class="lab">After</div>Change the S1 ⁷ and S4 ¹ superscripts to <strong>Weerasekera (1993)</strong> (the verifiable Can J Psychiatry article already in the bib). <em>Or</em> keep 1996 and add the 1996 book entry — but don't show both years.</div>
+          </div>
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>Slide S2 ⁸ cites <span class="mono">Reiss et al. (2019)</span> · bib lists <span class="mono">Reiss, F. (2013)</span></div>
+            <div class="after"><div class="lab">After</div>Change S2 ⁸ to <strong>Reiss (2013)</strong> (single author, the SES→child-MH review) unless a specific 2019 paper was intended.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-R-T3</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Delete duplicate entries</span>
+          <span class="est">~1 min (folds into T1)</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>Donaldson (2025) listed twice · Berg (2018a + 2018b) identical · Dinkler (2017a + 2017b) identical</div>
+            <div class="after"><div class="lab">After</div>One Donaldson (only if cited — it isn't, so drop entirely) · one Berg (2018) · Dinkler not cited → drop both.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COVER -->
+  <div id="cover" class="chapter">
+    <div class="chapter-head ch-cover">
+      <h2>Chapter 2 — Cover sheet (PDF p.1) <span class="pts-pill">Compliance</span></h2>
+      <div class="pts">Internal date inconsistency a marker will notice on the very first frame.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-Cover-T1</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Correct "Date Submitted"</span>
+          <span class="est">~1 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div><span class="mono">Date Submitted: 2026-04-13</span> &nbsp;…&nbsp; <span class="mono">Signed: 5779906 &nbsp; Date: 2026-06-15</span></div>
+            <div class="after"><div class="lab">After</div>Set "Date Submitted" to the actual recording/submission date (e.g. <span class="mono">2026-06-15</span>) so it matches the signature line. Deadline is 15 June 2026, 10:00.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div id="s4" class="chapter">
+    <div class="chapter-head ch-slide">
+      <h2>Chapter 3 — Slide 4 "Driving factors and complexity" (PDF p.6) <span class="pts-pill">Communication</span></h2>
+      <div class="pts">One spelling error on a visible slide.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-S4-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Fix "advercity" typo</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>"Ongoing <strong>advercity</strong> perpetuates cycle"</div>
+            <div class="after"><div class="lab">After</div>"Ongoing <strong>adversity</strong> perpetuates cycle"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END -->
+  <div id="end" class="chapter">
+    <div class="chapter-head ch-end">
+      <h2>Chapter 4 — End slide (PDF p.11) <span class="pts-pill">Consistency</span></h2>
+      <div class="pts">Third, conflicting descriptor for the same presentation.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-End-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Align end-slide subtitle with the title slide</span>
+          <span class="est">~1 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>End: "A Biopsychosocial Analysis of the Case 'Tommy'" · Title: "A Developmental Formulation" / "Developmental risk under cumulative adversity"</div>
+            <div class="after"><div class="lab">After</div>Use one consistent subtitle, e.g. "Developmental risk under cumulative adversity" (matches the title slide).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONTS -->
+  <div id="font" class="chapter">
+    <div class="chapter-head ch-slide">
+      <h2>Chapter 5 — Font / ligature rendering (S3, S5, others) <span class="pts-pill">Communication</span></h2>
+      <div class="pts">PDF text layer shows mangled "ti/tt" glyphs.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-Font-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Confirm "ti"/"tt" render correctly; re-export if needed</span>
+          <span class="est">~5 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before — as seen in the PDF text layer</div>"hi&#x1ab;ng" (hitting) · "reac&#x19f;ve" (reactive) · "a&#x1a9;en&#x19f;on" (attention) · "communica&#x19f;on" · "cri&#x19f;cal" · "cumula&#x19f;ng"</div>
+            <div class="after"><div class="lab">After</div>Open tommy9.pptx and check these words on S3/S5 render as normal letters. If they look fine on screen, this is only a PDF text-layer artifact and is harmless for a screen-recorded video. <strong>If you record by screen-capturing the PDF</strong>, re-export with fonts embedded and stylistic ligatures disabled, or switch the affected text box to a standard font (e.g. Calibri/Arial).</div>
+          </div>
+          <div class="note">Because the deliverable is a <em>video of you presenting from PowerPoint</em>, this is almost certainly cosmetic — but verify, since the glitch could also appear if the presentation font isn't installed on the recording machine.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div id="notes" class="chapter">
+    <div class="chapter-head ch-notes">
+      <h2>Chapter 6 — Speaker notes (not marker-visible) <span class="pts-pill">Delivery polish</span></h2>
+      <div class="pts">Notes are clean and well-timed; only minor spelling slips remain.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-Notes-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Fix delivery-script typos in S2 + S3 notes</span>
+          <span class="est">~3 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>S2: "Br<strong>n</strong>fenbrenners" · "domestic viol<strong>a</strong>nce" · "re<strong>o</strong>curring" · "neuroloc<strong>i</strong>gal" · "sensible for neurological changes". S3: "contin<strong>o</strong>usly"</div>
+            <div class="after"><div class="lab">After</div>"Bronfenbrenner's" · "domestic violence" · "recurring" · "neurological" · "sensitive to neurological changes" · "continuously"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTIONAL -->
+  <div id="optional" class="chapter">
+    <div class="chapter-head ch-slide" style="background:linear-gradient(135deg,#455a64 0%,#607d8b 100%);">
+      <h2>Chapter 7 — Optional upside <span class="pts-pill">Curriculum depth</span></h2>
+      <div class="pts">Both restore content that was present in tommy6.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-S3-T1</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Name Fonagy / mentalizing explicitly (M4 W4)</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <p>S3 covers hostile misattribution via Lee &amp; Hoaken, but the curriculum's <strong>mentalizing</strong> concept (Fonagy) is no longer named. If room, add a phrase in the relational column or notes: <em>"impaired mentalizing — difficulty reading others' intentions — so neutral cues are misread as hostile (Fonagy)."</em> Add Fonagy et al. (2002) to the reference list if you do.</p>
+        </div>
+      </div>
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V4-Notes-T2</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Re-add Continuum of Need verbal mention (M4 W3)</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <p>tommy6's S5 notes named the Continuum of Need (Universal → Selective → Indicated → Specialist) mapped to Tommy. It's gone in tommy9. A single spoken line in the S5 notes — e.g. <em>"these supports sit across the continuum of need, from universal free school meals to targeted LSA work"</em> — restores a W3 link cheaply.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Essay Fabrik — Detailed Change Tasks V4 — tommy9 → tommy10 — Module 4 Part A — 3 June 2026 · Egbert
+  </div>
+
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-03 10:07 &middot; Essay Fabrik</div></body>
+</html>

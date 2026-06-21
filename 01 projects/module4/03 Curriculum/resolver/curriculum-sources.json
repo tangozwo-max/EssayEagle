@@ -1,0 +1,76 @@
+{
+  "project": "module4",
+  "essay": "Module 4 Part B — Anxiety in Children and Adolescents: A Systemic Disorder",
+  "version": "v006",
+  "generatedAt": "2026-06-04",
+  "entries": [
+    {
+      "key": "NPMH M4 W4 P51",
+      "concept": "UK prevalence of child/adolescent anxiety (~1 in 12); EBSA rise post-pandemic",
+      "usages": [
+        {
+          "section": "Introduction (p.2)",
+          "quote": "roughly one in twelve in the United Kingdom at any given time (NPMH M4 W4 P51)"
+        },
+        {
+          "section": "Section 3.4 Post-COVID (p.6)",
+          "quote": "School-based anxiety, including emotionally-based school avoidance, also appears to have risen markedly in the post-pandemic period (NPMH M4 W4 P51)"
+        }
+      ],
+      "source": "Anxiety Disorders in Children and Adolescents   Kowalchuk et al",
+      "notes": "",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "done"
+    },
+    {
+      "key": "NPMH M4 W4 P56",
+      "concept": "CBT adaptations by developmental stage; adolescent autonomy constraining parental involvement",
+      "usages": [
+        {
+          "section": "Section 2.3 (p.4)",
+          "quote": "family involvement is consistently associated with improved outcomes… endorsed in evidence-based guidelines (Wang et al., 2017; NPMH M4 W4 P56)"
+        },
+        {
+          "section": "Section 2.3 calibration (p.4)",
+          "quote": "adolescents' developmental need for autonomy is likely to constrain parental involvement at older ages (Lebowitz et al., 2019; NPMH M4 W4 P56)"
+        }
+      ],
+      "source": "Adapting cognitive behaviour therapy for children and adolescents  Source: Stallard\nEarly Treatment Response in Children and Adolescents Receiving CBT for Trauma  Source: Wamser-Nanney et al.",
+      "notes": "",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "done"
+    },
+    {
+      "key": "NPMH M4 W1 P06",
+      "concept": "vmPFC maturation into early adulthood; neurobiological basis of adolescent vulnerability to fear-learning",
+      "usages": [
+        {
+          "section": "Section 3.1 (p.5)",
+          "quote": "The ventromedial prefrontal cortex… continues to mature into early adulthood (Casey et al., 2015; NPMH M4 W1 P06)"
+        }
+      ],
+      "source": "",
+      "notes": "The secret life of the teenage brain :  Blakemore Youtube!\nYour brain from birth to death:   The Economist YOUTUBE!  \nbetter find other more credible source!",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "pending"
+    },
+    {
+      "key": "NPMH M4 W3 P35",
+      "concept": "Stepped-care framework / continuum of need (universal → targeted → specialist)",
+      "usages": [
+        {
+          "section": "Section 4 Integration (p.7)",
+          "quote": "A stepped-care framework, grounded in the continuum of need, offers the organising logic for a systemic response (NPMH M4 W3 P35)"
+        }
+      ],
+      "source": "",
+      "notes": "The checkup uk: Understanding the Continuum of Need: A Guide for UK Citizens\nmabye too weak as source!! find other?",
+      "inBibliography": false,
+      "notNeeded": false,
+      "status": "pending"
+    }
+  ]
+}

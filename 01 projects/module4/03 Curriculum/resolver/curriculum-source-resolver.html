@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Source Resolver — Module 4 Part B</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+
+header { background: #1a2744; color: white; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; }
+header h1 { font-size: 1.15rem; font-weight: 700; }
+header .sub { font-size: 0.75rem; opacity: 0.6; margin-top: 2px; }
+.badge { background: #c9973a; color: white; padding: 4px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+
+main { max-width: 900px; margin: 24px auto; padding: 0 16px 48px; }
+
+.info-bar { background: #fff8e6; border: 1px solid #e8c96a; border-radius: 8px; padding: 14px 18px; font-size: 0.83rem; line-height: 1.6; margin-bottom: 20px; color: #5a4000; }
+.info-bar strong { color: #1a2744; }
+.progress-wrap { background: #e0e4eb; border-radius: 6px; height: 7px; margin: 10px 0 3px; }
+.progress-bar { background: #2e7d52; height: 7px; border-radius: 6px; transition: width 0.4s; }
+.progress-label { font-size: 0.75rem; color: #777; }
+
+.card { background: white; border-radius: 10px; margin-bottom: 22px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.09); border-left: 4px solid #c9973a; }
+.card.done { border-left-color: #2e7d52; }
+
+.card-head { background: #f5f7fa; border-bottom: 1px solid #e6eaf0; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px; }
+.key-tag { background: #1a2744; color: #c9973a; font-family: 'Courier New', monospace; font-weight: 700; font-size: 0.82rem; padding: 5px 12px; border-radius: 5px; white-space: nowrap; flex-shrink: 0; }
+.head-info { flex: 1; min-width: 0; }
+.head-info h3 { font-size: 0.9rem; font-weight: 700; color: #1a2744; margin-bottom: 3px; }
+.head-info p { font-size: 0.78rem; color: #666; line-height: 1.5; }
+
+.curriculum-link { display: inline-flex; align-items: center; gap: 6px; background: #1a2744; color: white; text-decoration: none; font-size: 0.75rem; font-weight: 600; padding: 7px 14px; border-radius: 5px; white-space: nowrap; flex-shrink: 0; transition: opacity 0.15s; }
+.curriculum-link:hover { opacity: 0.82; }
+
+.card-body { padding: 16px 18px; }
+
+.usage { background: #f8f9fb; border: 1px solid #e4e8ef; border-radius: 6px; padding: 9px 13px; margin-bottom: 10px; font-size: 0.8rem; }
+.usage .lbl { font-size: 0.68rem; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 3px; }
+.usage em { color: #1a2744; font-style: italic; }
+
+.alert { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 10px 14px; font-size: 0.79rem; color: #664d00; margin: 10px 0; line-height: 1.6; }
+.alert strong { color: #1a2744; }
+.alert a { color: #1a5c38; }
+
+.hints { margin: 12px 0 4px; }
+.hints-title { font-size: 0.7rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+.hint-pill { display: inline-flex; align-items: center; background: #e8f0fb; color: #1a2744; border: 1px solid #c5d5f0; border-radius: 5px; font-size: 0.74rem; padding: 3px 9px; margin: 0 4px 4px 0; }
+.hint-pill.warn { background: #fff0e0; border-color: #f0c080; color: #804000; }
+.hint-pill.link { background: #e8f5ee; border-color: #a8d8b9; color: #1a5c38; text-decoration: none; }
+.hint-pill.link:hover { background: #d0eddc; }
+
+label { display: block; font-size: 0.8rem; font-weight: 600; color: #444; margin: 12px 0 5px; }
+label span { font-weight: 400; color: #999; }
+textarea { width: 100%; border: 1.5px solid #d0d5de; border-radius: 6px; padding: 9px 12px; font-size: 0.83rem; font-family: inherit; color: #1a1a2e; resize: vertical; }
+textarea:focus { outline: none; border-color: #1a2744; box-shadow: 0 0 0 3px rgba(26,39,68,0.07); }
+
+.check-row { display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap; }
+.check-row label { display: flex; align-items: center; gap: 7px; margin: 0; cursor: pointer; font-weight: 400; font-size: 0.82rem; }
+.check-row input { width: 15px; height: 15px; accent-color: #2e7d52; cursor: pointer; }
+
+.status-tag { display: inline-flex; align-items: center; gap: 5px; font-size: 0.73rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; margin-top: 11px; }
+.status-tag.ok { background: #e6f4ec; color: #1a5c38; }
+.status-tag.pending { background: #fff4e5; color: #804000; }
+
+.actions { background: white; border-radius: 10px; padding: 18px 20px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+button { padding: 9px 20px; border: none; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: opacity 0.15s; }
+button:active { opacity: 0.75; }
+.btn-save { background: #1a2744; color: white; }
+.btn-export { background: #2e7d52; color: white; }
+.btn-copy { background: #c9973a; color: white; }
+.btn-preview { background: #e8edf5; color: #1a2744; }
+
+.json-out { background: #1a2744; color: #a8d8b9; border-radius: 8px; padding: 14px; font-family: 'Courier New', monospace; font-size: 0.73rem; line-height: 1.55; white-space: pre-wrap; margin-top: 14px; max-height: 220px; overflow-y: auto; display: none; }
+.json-out.show { display: block; }
+
+.toast { position: fixed; bottom: 22px; right: 22px; background: #1a2744; color: white; padding: 11px 18px; border-radius: 7px; font-size: 0.82rem; font-weight: 600; opacity: 0; transform: translateY(8px); transition: opacity 0.3s, transform 0.3s; pointer-events: none; z-index: 999; }
+.toast.show { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Curriculum Source Resolver</h1>
+    <div class="sub">Module 4 Part B &nbsp;·&nbsp; v006 &nbsp;·&nbsp; Essay Fabrik — 03 Curriculum/resolver/</div>
+  </div>
+  <div class="badge" id="badge">4 offen</div>
+</header>
+
+<main>
+  <div class="info-bar">
+    <strong>Aufgabe:</strong> 4 Curriculum-Schlüssel im Essay müssen durch zitierfähige akademische Quellen ersetzt werden.
+    Klicke <strong>"Curriculum-Seite öffnen"</strong> um den Originalinhalt auf der Plattform nachzuschlagen und die dort angegebene Quelle zu identifizieren.
+    Trag die echte Quelle im Harvard-Format ein → <strong>JSON exportieren</strong> → an Claude zurückgeben.
+    <div class="progress-wrap"><div class="progress-bar" id="pbar" style="width:0%"></div></div>
+    <div class="progress-label" id="plbl">0 von 4 erledigt</div>
+  </div>
+
+  <!-- CARD 1 -->
+  <div class="card" id="c0">
+    <div class="card-head">
+      <div class="key-tag">NPMH M4 W4 P51</div>
+      <div class="head-info">
+        <h3>Anxiety in Adolescents — Prävalenz &amp; EBSA post-COVID</h3>
+        <p>Woche 4 · Seite 51 — Globaldata Angststörungen Kinder; emotionsbasierte Schulverweigerung (EBSA) nach Pandemie</p>
+      </div>
+      <a class="curriculum-link" href="https://learn.iheed.org/courses/758/modules/items/357140" target="_blank">&#8599; Curriculum-Seite öffnen</a>
+    </div>
+    <div class="card-body">
+      <div class="usage"><div class="lbl">Verwendung 1 — Einleitung (S. 2)</div>
+        <em>"…roughly one in twelve in the United Kingdom at any given time (NPMH M4 W4 P51)."</em>
+      </div>
+      <div class="usage"><div class="lbl">Verwendung 2 — Section 3.4 Post-COVID (S. 6)</div>
+        <em>"School-based anxiety, including EBSA, also appears to have risen markedly in the post-pandemic period (NPMH M4 W4 P51)."</em>
+      </div>
+
+      <div class="alert">
+        <strong>&#9888; Wichtig — Länderfehler im Essay:</strong> Die Curriculum-Seite nennt "1 in 12 in the <u>United States</u> (Kowalchuk et al.)" — das Essay sagt aber <u>United Kingdom</u>. Das ist faktisch falsch. Für UK-Daten brauchst du eine UK-spezifische Quelle, z.B.:<br>
+        • NHS Digital (2020) <em>Mental Health of Children and Young People in England, 2020.</em> London: NHS Digital.<br>
+        • Sadler, K. et al. (2018) <em>Mental Health of Children and Young People in England, 2017.</em> NHS Digital.<br><br>
+        Für EBSA post-COVID ist der BMJ-Artikel auf der Curriculum-Seite verlinkt (&#8599; unten).
+      </div>
+
+      <div class="hints">
+        <div class="hints-title">Auto-erkannte Quellen im Curriculum-Markdown</div>
+        <span class="hint-pill">Kowalchuk et al. — Prävalenz USA (nicht UK!)</span>
+        <span class="hint-pill">Anna Freud — EBSA school absence doubled</span>
+        <span class="hint-pill">Creswell et al. — CBT effectiveness</span>
+        <a class="hint-pill link" href="https://mentalhealth.bmj.com/content/27/1/e300944" target="_blank">&#8599; BMJ: EBSA post-COVID article (Curriculum-Link)</a>
+      </div>
+
+      <label>Quelle für Verwendung 1 (Prävalenz — UK-spezifisch) <span>Harvard-Format</span></label>
+      <textarea id="s0a" rows="2" placeholder="z.B. NHS Digital (2020) Mental Health of Children and Young People in England, 2020. London: NHS Digital." oninput="upd()"></textarea>
+
+      <label>Quelle für Verwendung 2 (EBSA post-COVID) <span>Harvard-Format</span></label>
+      <textarea id="s0b" rows="2" placeholder="z.B. [Autorenname] (2024) Perfect storm: emotionally based school avoidance in the post-COVID-19 pandemic context. BJPsych Open, 27(1)..." oninput="upd()"></textarea>
+
+      <label>Notizen</label>
+      <textarea id="n0" rows="2" placeholder="" oninput="upd()"></textarea>
+      <div class="check-row">
+        <label><input type="checkbox" id="ib0" onchange="upd()"> In Bibliographie (Zotero)</label>
+        <label><input type="checkbox" id="nn0" onchange="upd()"> Kein Beleg nötig</label>
+      </div>
+      <div id="st0"></div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" id="c1">
+    <div class="card-head">
+      <div class="key-tag">NPMH M4 W4 P56</div>
+      <div class="head-info">
+        <h3>Adapting CBT for Children &amp; Adolescents</h3>
+        <p>Woche 4 · Seite 56 — CBT-Adaptationen nach Entwicklungsstufe; Adoleszenten-Autonomie &amp; Elterneinbindung</p>
+      </div>
+      <a class="curriculum-link" href="https://learn.iheed.org/courses/758/modules/items/357145" target="_blank">&#8599; Curriculum-Seite öffnen</a>
+    </div>
+    <div class="card-body">
+      <div class="usage"><div class="lbl">Verwendung 1 — Section 2.3 (S. 4)</div>
+        <em>"…family involvement is consistently associated with improved outcomes… endorsed in evidence-based guidelines (Wang et al., 2017; NPMH M4 W4 P56)."</em>
+      </div>
+      <div class="usage"><div class="lbl">Verwendung 2 — Section 2.3 Kalibrierung (S. 4)</div>
+        <em>"…adolescents' developmental need for autonomy is likely to constrain parental involvement at older ages (Lebowitz et al., 2019; NPMH M4 W4 P56)."</em>
+      </div>
+
+      <div class="alert">
+        <strong>Empfehlung:</strong> Die Curriculum-Seite zitiert "Stallard" (CBT für Adoleszenz) und "Graham &amp; Reynolds" (CBT-Framework). Mögliche vollständige Quellen:<br>
+        • Stallard, P. (2009) <em>Anxiety: Cognitive Behaviour Therapy with Children and Young People.</em> London: Routledge.<br>
+        • Graham, P. and Reynolds, S. (eds.) (2013) <em>Cognitive Behaviour Therapy for Children and Families.</em> 3rd edn. Cambridge: Cambridge University Press.<br>
+        Bitte auf der Curriculum-Seite nachschlagen, welche Ausgabe/welcher Autor genau gemeint ist.
+      </div>
+
+      <div class="hints">
+        <div class="hints-title">Auto-erkannte Quellen im Curriculum-Markdown</div>
+        <span class="hint-pill">Graham &amp; Reynolds — CBT framework</span>
+        <span class="hint-pill">Wamser-Nanney et al. — CBT unter 7 Jahre</span>
+        <span class="hint-pill">Stallard — CBT für Adoleszente</span>
+      </div>
+
+      <label>Akademische Quelle <span>(für beide Verwendungen — Harvard-Format)</span></label>
+      <textarea id="s1" rows="3" placeholder="z.B. Stallard, P. (2009) Anxiety: Cognitive Behaviour Therapy with Children and Young People. London: Routledge.&#10;&#10;UND/ODER: Graham, P. and Reynolds, S. (eds.) (2013) Cognitive Behaviour Therapy for Children and Families. 3rd edn. Cambridge: Cambridge University Press." oninput="upd()"></textarea>
+      <label>Notizen</label>
+      <textarea id="n1" rows="2" oninput="upd()"></textarea>
+      <div class="check-row">
+        <label><input type="checkbox" id="ib1" onchange="upd()"> In Bibliographie</label>
+        <label><input type="checkbox" id="nn1" onchange="upd()"> Kein Beleg nötig</label>
+      </div>
+      <div id="st1"></div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" id="c2">
+    <div class="card-head">
+      <div class="key-tag">NPMH M4 W1 P06</div>
+      <div class="head-info">
+        <h3>Brain Development in the Early Years — vmPFC-Reifung</h3>
+        <p>Woche 1 · Seite 6 — Präfrontaler Kortex reift bis frühes Erwachsenenalter; neurobiologische Grundlage Adoleszenz-Vulnerabilität</p>
+      </div>
+      <a class="curriculum-link" href="https://learn.iheed.org/courses/758/modules/items/357092" target="_blank">&#8599; Curriculum-Seite öffnen</a>
+    </div>
+    <div class="card-body">
+      <div class="usage"><div class="lbl">Verwendung 1 — Section 3.1 (S. 5)</div>
+        <em>"The ventromedial prefrontal cortex… continues to mature into early adulthood (Casey et al., 2015; NPMH M4 W1 P06)."</em>
+      </div>
+
+      <div class="alert">
+        <strong>Option A (empfohlen) — Einfachste Lösung:</strong> Casey et al. (2015) ist bereits vollständig als Quelle [NB-1] im Essay und belegt exakt denselben Punkt. Einfach <code>(NPMH M4 W1 P06)</code> aus der Klammer entfernen → kein weiterer Beleg nötig.<br><br>
+        <strong>Option B — Blakemore als akademische Zweitquelle:</strong><br>
+        Blakemore, S.-J. (2012) 'Development of the social brain in adolescence', <em>Journal of the Royal Society of Medicine</em>, 105(3), pp. 111–116.<br><br>
+        <strong>Option C — Systematic Review (Curriculum-Link):</strong><br>
+        <a href="http://journals.sagepub.com/doi/10.1177/2514183X20974231" target="_blank">SAGE: Neuroplasticity in children and adolescents in response to treatment intervention (2020)</a>
+      </div>
+
+      <div class="hints">
+        <div class="hints-title">Quellen im Curriculum-Markdown</div>
+        <span class="hint-pill warn">Konkel — Journalist, nicht zitierfähig</span>
+        <span class="hint-pill warn">The Economist / YouTube — nicht zitierfähig</span>
+        <span class="hint-pill">Blakemore — akademisch ✓</span>
+        <a class="hint-pill link" href="http://journals.sagepub.com/doi/10.1177/2514183X20974231" target="_blank">&#8599; SAGE Systematic Review (Curriculum-Link)</a>
+      </div>
+
+      <label>Entscheidung + Quelle <span>(oder "Casey reicht — Curriculum-Ref streichen")</span></label>
+      <textarea id="s2" rows="3" placeholder="Option A: Casey et al. (2015) reicht allein — Curriculum-Verweis streichen.&#10;Option B: Blakemore, S.-J. (2012) Development of the social brain in adolescence. Journal of the Royal Society of Medicine, 105(3), pp. 111–116." oninput="upd()"></textarea>
+      <label>Notizen</label>
+      <textarea id="n2" rows="2" oninput="upd()"></textarea>
+      <div class="check-row">
+        <label><input type="checkbox" id="ib2" onchange="upd()"> In Bibliographie</label>
+        <label><input type="checkbox" id="nn2" onchange="upd()"> Casey et al. reicht — Curriculum-Ref streichen</label>
+      </div>
+      <div id="st2"></div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" id="c3">
+    <div class="card-head">
+      <div class="key-tag">NPMH M4 W3 P35</div>
+      <div class="head-info">
+        <h3>A Continuum of Need — Stepped-Care Framework</h3>
+        <p>Woche 3 · Seite 35 — Continuum of Need (Universal → Targeted → Specialist); UK-Versorgungsrahmen</p>
+      </div>
+      <a class="curriculum-link" href="https://learn.iheed.org/courses/758/modules/items/357123" target="_blank">&#8599; Curriculum-Seite öffnen</a>
+    </div>
+    <div class="card-body">
+      <div class="usage"><div class="lbl">Verwendung 1 — Section 4 (S. 7)</div>
+        <em>"A stepped-care framework, grounded in the continuum of need, offers the organising logic for a systemic response (NPMH M4 W3 P35)."</em>
+      </div>
+
+      <div class="alert">
+        <strong>Hinweis:</strong> Das Curriculum zitiert "The checkup" — kein akademischer Beleg. Das references_wiki enthält bereits zwei starke geprüfte Quellen für Stepped Care:<br>
+        • <strong>Ho et al. (2016)</strong> — Stepped care for depression/anxiety: SR &amp; meta-analysis. <em>Scientific Reports</em>, 6, 29281. DOI: 10.1038/srep29281<br>
+        • <strong>Rapee et al. (2017)</strong> — Stepped care vs. single CBT for youth anxiety: RCT. <em>JAACAP</em>, 56(10).<br><br>
+        Alternativ der Klassiker: Bower, P. and Gilbody, S. (2005) Stepped care in psychological therapies: access, effectiveness and efficiency. <em>British Journal of Psychiatry</em>, 186, pp. 11–17.
+      </div>
+
+      <div class="hints">
+        <div class="hints-title">Vorhandene Quellen in references_wiki (bereits in Projekt)</div>
+        <span class="hint-pill">Ho et al. (2016) — Stepped care SR ✓</span>
+        <span class="hint-pill">Rapee et al. (2017) — Stepped care RCT ✓</span>
+        <span class="hint-pill warn">The checkup — kein akademischer Beleg</span>
+      </div>
+
+      <label>Akademische Quelle <span>(Harvard-Format — Ho et al. oder Bower &amp; Gilbody empfohlen)</span></label>
+      <textarea id="s3" rows="3" placeholder="z.B. Ho, F.Y.Y. et al. (2016) Stepped care for depression and anxiety: systematic review and meta-analysis. Scientific Reports, 6, 29281. DOI: 10.1038/srep29281&#10;&#10;ODER: Bower, P. and Gilbody, S. (2005) Stepped care in psychological therapies: access, effectiveness and efficiency. British Journal of Psychiatry, 186, pp. 11–17." oninput="upd()"></textarea>
+      <label>Notizen</label>
+      <textarea id="n3" rows="2" oninput="upd()"></textarea>
+      <div class="check-row">
+        <label><input type="checkbox" id="ib3" onchange="upd()"> In Bibliographie</label>
+        <label><input type="checkbox" id="nn3" onchange="upd()"> Kein Beleg nötig</label>
+      </div>
+      <div id="st3"></div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn-save" onclick="save()">&#128190; Speichern</button>
+    <button class="btn-export" onclick="exportJson()">&#8595; JSON exportieren</button>
+    <button class="btn-copy" onclick="copyJson()">&#128203; JSON kopieren</button>
+    <button class="btn-preview" onclick="togglePreview()">&#128065; Vorschau</button>
+    <span style="font-size:0.78rem;color:#999;margin-left:auto;">Wird automatisch im Browser gespeichert</span>
+  </div>
+  <div class="json-out" id="jout"></div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const SK = 'ef_m4b_src_v3';
+function v(id){return(document.getElementById(id)||{}).value||'';}
+function g(id){return(document.getElementById(id)||{}).checked||false;}
+
+function isDone(i){
+  if(i===0) return v('s0a').length>8||v('s0b').length>8||g('ib0')||g('nn0');
+  if(i===1) return v('s1').length>8||g('ib1')||g('nn1');
+  if(i===2) return v('s2').length>8||g('ib2')||g('nn2');
+  if(i===3) return v('s3').length>8||g('ib3')||g('nn3');
+}
+
+function upd(){
+  let done=0;
+  for(let i=0;i<4;i++){
+    const ok=isDone(i);
+    if(ok)done++;
+    document.getElementById('c'+i).className='card'+(ok?' done':'');
+    document.getElementById('st'+i).innerHTML=ok
+      ?'<span class="status-tag ok">&#10003; Erledigt</span>'
+      :'<span class="status-tag pending">&#9675; Ausstehend</span>';
+  }
+  const pct=Math.round(done/4*100);
+  document.getElementById('pbar').style.width=pct+'%';
+  document.getElementById('plbl').textContent=done+' von 4 erledigt';
+  document.getElementById('badge').textContent=(4-done)+' offen';
+  save();
+}
+
+function buildData(){
+  return{
+    project:'module4',version:'v006',
+    essay:'Module 4 Part B — Anxiety in Children and Adolescents: A Systemic Disorder',
+    exportedAt:new Date().toISOString().split('T')[0],
+    entries:[
+      {key:'NPMH M4 W4 P51',curriculumUrl:'https://learn.iheed.org/courses/758/modules/items/357140',
+       concept:'UK prevalence child/adolescent anxiety; EBSA rise post-pandemic',
+       sourceUsage1:v('s0a'),sourceUsage2:v('s0b'),notes:v('n0'),
+       inBibliography:g('ib0'),notNeeded:g('nn0'),status:isDone(0)?'done':'pending'},
+      {key:'NPMH M4 W4 P56',curriculumUrl:'https://learn.iheed.org/courses/758/modules/items/357145',
+       concept:'CBT adaptations by developmental stage; adolescent autonomy constraining parental involvement',
+       source:v('s1'),notes:v('n1'),
+       inBibliography:g('ib1'),notNeeded:g('nn1'),status:isDone(1)?'done':'pending'},
+      {key:'NPMH M4 W1 P06',curriculumUrl:'https://learn.iheed.org/courses/758/modules/items/357092',
+       concept:'vmPFC maturation into early adulthood; neurobiological basis of adolescent vulnerability',
+       source:v('s2'),notes:v('n2'),
+       inBibliography:g('ib2'),notNeeded:g('nn2'),status:isDone(2)?'done':'pending'},
+      {key:'NPMH M4 W3 P35',curriculumUrl:'https://learn.iheed.org/courses/758/modules/items/357123',
+       concept:'Stepped-care framework / continuum of need (universal to targeted to specialist)',
+       source:v('s3'),notes:v('n3'),
+       inBibliography:g('ib3'),notNeeded:g('nn3'),status:isDone(3)?'done':'pending'}
+    ]
+  };
+}
+
+function save(){
+  localStorage.setItem(SK,JSON.stringify({
+    s0a:v('s0a'),s0b:v('s0b'),n0:v('n0'),ib0:g('ib0'),nn0:g('nn0'),
+    s1:v('s1'),n1:v('n1'),ib1:g('ib1'),nn1:g('nn1'),
+    s2:v('s2'),n2:v('n2'),ib2:g('ib2'),nn2:g('nn2'),
+    s3:v('s3'),n3:v('n3'),ib3:g('ib3'),nn3:g('nn3')
+  }));
+}
+
+function load(){
+  try{
+    const d=JSON.parse(localStorage.getItem(SK)||'{}');
+    const f=(id,val)=>{if(val===undefined)return;const el=document.getElementById(id);if(!el)return;typeof val==='boolean'?el.checked=val:el.value=val;};
+    f('s0a',d.s0a);f('s0b',d.s0b);f('n0',d.n0);f('ib0',d.ib0);f('nn0',d.nn0);
+    f('s1',d.s1);f('n1',d.n1);f('ib1',d.ib1);f('nn1',d.nn1);
+    f('s2',d.s2);f('n2',d.n2);f('ib2',d.ib2);f('nn2',d.nn2);
+    f('s3',d.s3);f('n3',d.n3);f('ib3',d.ib3);f('nn3',d.nn3);
+  }catch(e){}
+}
+
+function exportJson(){
+  const j=JSON.stringify(buildData(),null,2);
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([j],{type:'application/json'}));
+  a.download='curriculum-sources.json';a.click();
+  toast('curriculum-sources.json exportiert');
+}
+
+function copyJson(){
+  const j=JSON.stringify(buildData(),null,2);
+  navigator.clipboard.writeText(j).then(()=>toast('JSON kopiert')).catch(()=>{
+    document.getElementById('jout').textContent=j;
+    document.getElementById('jout').className='json-out show';
+    toast('Bitte manuell kopieren (unten)');
+  });
+}
+
+function togglePreview(){
+  const el=document.getElementById('jout');
+  el.textContent=JSON.stringify(buildData(),null,2);
+  el.className=el.className.includes('show')?'json-out':'json-out show';
+}
+
+function toast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.className='toast show';
+  setTimeout(()=>t.className='toast',2600);
+}
+
+window.addEventListener('DOMContentLoaded',()=>{load();upd();});
+</script>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-04 13:28 &middot; Essay Fabrik</div></body>
+</html>

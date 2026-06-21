@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FQA Report — tommy9 — Module 4 Part A (unified standard)</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Tahoma,sans-serif;background:#f3f5f9;color:#1a1f2e;line-height:1.6;padding:32px 20px 80px;font-size:14.5px}
+  .page{max-width:1040px;margin:0 auto}
+  .report-header{background:linear-gradient(135deg,#0d2240 0%,#1e3a5f 100%);color:#fff;border-radius:10px;padding:32px 36px 26px;margin-bottom:24px}
+  .filename-badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:5px 14px;border-radius:18px;font-weight:700;font-size:.9rem;margin-bottom:14px}
+  .version-badge{display:inline-block;background:rgba(243,156,18,.25);border:1px solid rgba(243,156,18,.6);padding:5px 14px;border-radius:18px;font-weight:700;font-size:.9rem;margin:0 0 14px 8px;color:#f39c12}
+  .type-badge{display:inline-block;background:rgba(102,187,106,.22);border:1px solid rgba(102,187,106,.6);padding:5px 14px;border-radius:18px;font-weight:700;font-size:.9rem;margin:0 0 14px 8px;color:#a5d6a7}
+  .report-header h1{font-size:1.7rem;font-weight:800;margin-bottom:6px}.report-header .subtitle{font-size:1rem;opacity:.78;margin-bottom:14px}
+  .report-meta{font-size:.82rem;opacity:.85;display:flex;gap:18px;flex-wrap:wrap}
+  .nav{background:#fff;border-radius:8px;padding:12px 16px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;border:1px solid #dde3ee}.nav a{padding:5px 12px;border-radius:4px;text-decoration:none;font-size:.82rem;font-weight:700;background:#f0f3f9;color:#1a1f2e}.nav a:hover{background:#0d2240;color:#f39c12}
+  .map{background:#fff;border-radius:8px;overflow:hidden;margin-bottom:24px;border:1px solid #dde3ee}.map-header{background:#0d2240;color:#fff;padding:10px 18px;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+  table.maptab{width:100%;border-collapse:collapse;font-size:.85rem}table.maptab th{background:#f0f3f9;padding:8px 12px;text-align:left;font-size:.72rem;text-transform:uppercase;color:#6b7a99}table.maptab td{padding:7px 12px;border-bottom:1px solid #f0f3f9}table.maptab td:nth-child(1),table.maptab td:nth-child(2){font-weight:700;color:#0d2240}
+  .card{background:#fff;border-radius:10px;padding:26px;margin-bottom:24px;border:1px solid #dde3ee;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+  .card h2{font-size:1.05rem;color:#0d2240;margin-bottom:16px;border-bottom:2px solid #f0f3f9;padding-bottom:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .role-pill{padding:5px 14px;border-radius:18px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+  .rp-christoph{background:#e3f2fd;color:#0d47a1}.rp-jackie{background:#fce4ec;color:#880e4f}.rp-peter{background:#e8f5e9;color:#1b5e20}.rp-steven{background:#fff3e0;color:#bf360c}.rp-alex{background:#e0f7fa;color:#006064}.rp-egbert{background:#f3e5f5;color:#4a148c}
+  h3{color:#0d2240;font-size:.95rem;margin:18px 0 10px}
+  .dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px}
+  .dash-card{text-align:center;padding:16px 8px;border-radius:10px;border:1.5px solid #ddd}.dash-card .r-label{font-size:.72rem;font-weight:800;text-transform:uppercase;color:#666}.dash-card .r-score{font-size:1.85rem;font-weight:900;margin:6px 0 2px}.dash-card .r-grade{font-size:.85rem;font-weight:600}.dash-card .r-delta{font-size:.74rem;color:#999;margin-top:2px}
+  .dc-b{background:#e3f2fd;border-color:#1e88e5}.dc-b .r-score{color:#1565c0}.dc-j{background:#fce4ec;border-color:#ec407a}.dc-j .r-score{color:#ad1457}.dc-p{background:#e8f5e9;border-color:#43a047}.dc-p .r-score{color:#2e7d32}.dc-s{background:#fff3e0;border-color:#ffa726}.dc-s .r-score{color:#e65100}
+  .overall-row{background:linear-gradient(135deg,#0d2240 0%,#4a148c 100%);border-radius:10px;padding:16px 24px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .overall-row .o-label{font-weight:700;font-size:1rem}.overall-row .o-score{font-size:2.2rem;font-weight:900}.overall-row .o-detail{font-size:.85rem;opacity:.85}.grade-pill{padding:6px 16px;border-radius:20px;font-weight:800;font-size:1rem;background:rgba(255,255,255,.2)}
+  .check-list{list-style:none}.check-list li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid #f0f3f9;font-size:.88rem}.check-list li:last-child{border-bottom:none}.ci{font-size:1rem;flex-shrink:0;margin-top:2px}
+  .tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-left:5px}.t-crit{background:#ffcdd2;color:#b71c1c}.t-high{background:#ffe0b2;color:#bf360c}.t-med{background:#fff8e1;color:#ef6c00}.t-ok{background:#e8f5e9;color:#2e7d32}.t-info{background:#e3f2fd;color:#0d47a1}.t-new{background:#f3e5f5;color:#4a148c}
+  table{width:100%;border-collapse:collapse;font-size:.86rem;margin:12px 0}th{background:#ede7f6;color:#4a148c;padding:9px 12px;text-align:left;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em}td{padding:9px 12px;border-bottom:1px solid #f0f3f9;vertical-align:top}tr:nth-child(even) td{background:#fafbfd}
+  .p1{color:#b71c1c;font-weight:800}.p2{color:#e65100;font-weight:700}.p3{color:#f9a825;font-weight:600}.p4{color:#388e3c}
+  .metric-box{background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:8px;padding:16px 20px;margin:14px 0}.metric-box h4{margin:0 0 12px;color:#1b5e20;font-size:.95rem}.metric-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:.88rem;border-bottom:1px solid #c8e6c9}.metric-row:last-child{border-bottom:none;font-weight:700;color:#1b5e20}
+  .alert-box{background:#fff8e1;border:1.5px solid #ffe082;border-radius:8px;padding:14px 18px;margin:14px 0}.alert-box h4{margin:0 0 10px;color:#e65100;font-size:.92rem}
+  .verdict-box{background:linear-gradient(135deg,#f3e5f5 0%,#ede7f6 100%);border:2px solid #ce93d8;border-radius:10px;padding:18px 22px;margin-top:14px}.verdict-box.warn{background:linear-gradient(135deg,#fff3e0 0%,#ffe0b2 100%);border-color:#ffb300}.verdict-box .v-title{font-weight:800;color:#4a148c;font-size:1rem;margin-bottom:8px}.verdict-box.warn .v-title{color:#e65100}.verdict-box .v-text{font-size:.92rem}
+  .notes-good{background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:.86rem}.notes-good strong{color:#1b5e20}
+  code{background:#f0f3f9;padding:1px 5px;border-radius:3px;font-size:.82em;font-family:'Courier New',monospace;color:#4a148c}
+  .report-footer{text-align:center;font-size:.78rem;color:#888;margin-top:36px;padding:16px 0;border-top:1px solid #dde3ee}.anchor{scroll-margin-top:20px}.delta-badge{font-size:.72rem;padding:2px 8px;border-radius:10px;background:#e8f5e9;color:#2e7d32;font-weight:700;margin-left:8px}.delta-down{background:#ffcdd2;color:#b71c1c}
+</style></head>
+<body><div class="page">
+
+  <div class="report-header">
+    <div class="filename-badge">📄 tommy9.pdf + tommy9.pptx</div>
+    <div class="version-badge">v9</div>
+    <div class="type-badge">TYPE: PRESENTATION / SLIDES</div>
+    <h1>Final Quality Assessment</h1>
+    <p class="subtitle">Case "Tommy": A Developmental Formulation — Module 4 Part A</p>
+    <div class="report-meta">
+      <span>Student: 5779906</span><span>Module 4 Part A (Presentation, 30%)</span><span>Lecturer: Jasmin Kroll</span>
+      <span>Due: 15 June 2026, 10:00</span><span>FQA Date: 3 June 2026</span><span>Assessors: Christoph · Jackie · Peter · Steven · Alex · Egbert</span><span>Baseline: tommy6 (80, A−)</span>
+    </div>
+  </div>
+
+  <div class="nav"><a href="#dash">Dashboard</a><a href="#map">Slide map</a><a href="#christoph">Christoph</a><a href="#jackie">Jackie</a><a href="#peter">Peter</a><a href="#steven">Steven</a><a href="#alex">Alex</a><a href="#egbert">Egbert</a></div>
+
+  <!-- SLIDE MAP (presentation variant) -->
+  <div id="map" class="map anchor">
+    <div class="map-header">Slide content map — tommy9 (11 pages / 11 PPTX slides)</div>
+    <table class="maptab">
+      <thead><tr><th>Slide</th><th>PDF</th><th>Title</th><th>Speaker-notes status</th></tr></thead>
+      <tbody>
+        <tr><td>Cover</td><td>p.1</td><td>Cover sheet</td><td style="color:#e65100;">⚠ "Date Submitted 2026-04-13" ≠ signature 2026-06-15</td></tr>
+        <tr><td>Title</td><td>p.2</td><td>A Developmental Formulation</td><td style="color:#2e7d32;font-weight:700;">✓ FIXED — correct Tommy intro (wrong-deck script gone)</td></tr>
+        <tr><td>S1</td><td>p.3</td><td>Presenting issues &amp; formulation</td><td style="color:#2e7d32;">✓ Clean, [click]-cued, ~1:56</td></tr>
+        <tr><td>S2</td><td>p.4</td><td>Predisposing factors</td><td style="color:#2e7d32;">✓ FIXED — reference-dump removed; ~2:24</td></tr>
+        <tr><td>S3</td><td>p.5</td><td>Mechanism on developmental impact</td><td style="color:#2e7d32;font-weight:700;">✓ FIXED — wrong-Achenbach guidance gone</td></tr>
+        <tr><td>S4</td><td>p.6</td><td>Driving factors &amp; complexity</td><td style="color:#2e7d32;">✓ Clean, ~0:52</td></tr>
+        <tr><td>S5</td><td>p.7</td><td>Protective factors &amp; opportunity</td><td style="color:#2e7d32;">✓ Synthesis + close, ~1:16</td></tr>
+        <tr><td>Refs 1–3/3</td><td>p.8–10</td><td>References</td><td style="color:#b71c1c;font-weight:700;">✗ P1 — populated from the WRONG library set (see Jackie)</td></tr>
+        <tr><td>End</td><td>p.11</td><td>End of presentation</td><td style="color:#e65100;">⚠ Subtitle "A Biopsychosocial Analysis" ≠ title page</td></tr>
+        <tr><td colspan="4" style="background:#fff8e1;color:#555;font-size:.8rem;">✓ Clean export — no appended non-presentation pages this time.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dash" class="card anchor">
+    <h2>🎯 Executive Dashboard</h2>
+    <div class="dash-grid">
+      <div class="dash-card dc-b"><div class="r-label">Christoph</div><div class="r-score">88%</div><div class="r-grade">A</div><div class="r-delta">+3 vs tommy6</div></div>
+      <div class="dash-card dc-j"><div class="r-label">Jackie</div><div class="r-score">72%</div><div class="r-grade">B</div><div class="r-delta" style="color:#b71c1c;">−6 vs tommy6</div></div>
+      <div class="dash-card dc-p"><div class="r-label">Peter</div><div class="r-score">85%</div><div class="r-grade">A−</div><div class="r-delta">+3 vs tommy6</div></div>
+      <div class="dash-card dc-s"><div class="r-label">Steven</div><div class="r-score">87%</div><div class="r-grade">A</div><div class="r-delta">+11 vs tommy6</div></div>
+    </div>
+    <div class="overall-row">
+      <div><div class="o-label">Overall (rubric-weighted KU30 / AE50 / CR20)</div><div class="o-detail">tommy6 baseline 80 · improvement +3 · provisional pending the reference-slide rebuild</div></div>
+      <div class="o-score">83%</div>
+      <div><div class="grade-pill">A−</div><div style="font-size:.82rem;opacity:.85;margin-top:5px;">~166/200 (KU 51 · AE 85 · CR 30)</div><div style="font-size:.8rem;opacity:.75;">After ref rebuild: 182–190/200 (A/A+)</div></div>
+    </div>
+    <p style="margin-top:14px;color:#555;font-size:.88rem;"><strong>Summary:</strong> tommy9 <strong>resolves both tommy6 P1 blockers</strong> — the three reference slides are populated and the speaker notes are clean, correctly sequenced and time to <strong>~8:45</strong>. Four new sources (Lee &amp; Hoaken 2007, Chasnoff 2015, Prado &amp; Dewey 2014, Tadanki 2025) were verified real (PubMed).<br><br><strong>One new P1 is the only thing short of an A+:</strong> the reference slides were built from the wrong library set — ~16 cited sources are missing (incl. Achenbach, Bronfenbrenner, Bowlby), ~20 uncited entries pad the list, plus 2 mismatches and 3 duplicates. A citation audit fails ~16 lookups. A 25–35 min rebuild (no new research) lifts A− → A/A+. Companion file: <code>reference-check-tommy9-unified.html</code>.</p>
+  </div>
+
+  <!-- CHRISTOPH -->
+  <div id="christoph" class="card anchor">
+    <h2><span class="role-pill rp-christoph">Christoph</span> Compliance &amp; Rubric — 88/100 <span class="delta-badge">+3 vs tommy6</span></h2>
+    <h3>Format checklist</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>5 content slides (S1–S5) — within the 5-slide maximum; cover + title + 3 ref slides + end.</span></li>
+      <li><span class="ci">✅</span><span>All three reference slides now populated in Harvard format — the tommy5/6 empty-slide defect is cleared. <span class="tag t-ok">P1 CLEARED</span></span></li>
+      <li><span class="ci">✅</span><span>All 5P elements present (presenting → predisposing → mechanism → perpetuating → protective); closing synthesis on S5.</span></li>
+      <li><span class="ci">✅</span><span>Consistent professional visual template (iceberg, 5P wheel, Bronfenbrenner rings, mechanism grid); clean export.</span></li>
+      <li><span class="ci">❌</span><span>Cover date "2026-04-13" ≠ signature "2026-06-15". <span class="tag t-high">V4-Cover</span></span></li>
+      <li><span class="ci">⚠️</span><span>End-slide subtitle "A Biopsychosocial Analysis" ≠ title; "advercity" typo on S4; "ti/tt" ligature glyphs in the PDF text layer. <span class="tag t-med">V4-End/S4/Font</span></span></li>
+    </ul>
+    <h3>Rubric alignment (200-pt total)</h3>
+    <table>
+      <tr><th>Criterion</th><th>Weight</th><th>Current state</th><th>Mark</th></tr>
+      <tr><td><strong>Knowledge of ACEs &amp; development</strong></td><td>30% (60)</td><td>Excellent — biological (HPA/FASD), cognitive (EF), social-emotional (disorganised attachment/IWM), latent vulnerability, intergenerational transmission all named &amp; evidenced.</td><td><strong>51/60</strong></td></tr>
+      <tr><td><strong>Analysis &amp; Evaluation</strong></td><td>50% (100)</td><td>Strong 5P formulation arc; probabilistic framing ("population-level odds, not a prediction") is exactly the analytical move the criterion rewards; synthesis ties risks → buffers → opportunity.</td><td><strong>85/100</strong></td></tr>
+      <tr><td><strong>Communication</strong></td><td>20% (40)</td><td>Visuals strong, notes deliverable in time. <strong>Held down only by the reference slides</strong> (populated-but-wrong) — rises to ~36/40 after the rebuild.</td><td><strong>30/40</strong></td></tr>
+    </table>
+    <div class="metric-box"><h4>⏱ Delivery timing @150 wpm (from tommy9.pptx notes)</h4>
+      <div class="metric-row"><span>Title + intro</span><span>0:14</span></div>
+      <div class="metric-row"><span>S1 Presenting + formulation (~290 w)</span><span>1:56</span></div>
+      <div class="metric-row"><span>S2 Predisposing (~360 w)</span><span>2:24</span></div>
+      <div class="metric-row"><span>S3 Mechanism (~310 w)</span><span>2:04</span></div>
+      <div class="metric-row"><span>S4 Driving factors (~130 w)</span><span>0:52</span></div>
+      <div class="metric-row"><span>S5 Protective + opportunity (~190 w)</span><span>1:16</span></div>
+      <div class="metric-row"><span>TOTAL (limit 10:00)</span><span>~8:46 ✓</span></div>
+    </div>
+  </div>
+
+  <!-- JACKIE -->
+  <div id="jackie" class="card anchor">
+    <h2><span class="role-pill rp-jackie">Jackie</span> Evidence &amp; References — 72/100 <span class="delta-badge delta-down">−6 vs tommy6</span></h2>
+    <p style="color:#555;font-size:.88rem;">On-slide citation placement is excellent and four new sources verified real; the score drops only because the now-visible bibliography fails a cross-check. Full detail: <code>reference-check-tommy9-unified.html</code>.</p>
+    <div class="alert-box">
+      <h4>🚨 P1 — Bibliography ≠ in-text citations</h4>
+      <ul class="check-list" style="margin-top:6px;">
+        <li><span class="ci">❌</span><span><strong>16 cited sources invisible</strong> (cited on a slide, absent from the bibliography) — incl. the three foundational ones: <strong>Achenbach &amp; Rescorla 2001</strong>, <strong>Bronfenbrenner 1979</strong>, <strong>Bowlby 1969</strong>.</span></li>
+        <li><span class="ci">❌</span><span><strong>2 mismatches</strong> (Weerasekera cited 1996 / listed 1993; Reiss cited 2019 / listed F. 2013) and <strong>3 duplicates</strong> (Donaldson, Berg, Dinkler).</span></li>
+        <li><span class="ci">❌</span><span><strong>~20 uncited padding entries</strong> on no slide.</span></li>
+      </ul>
+      <p style="font-size:.86rem;margin-top:6px;"><strong>Fix:</strong> rebuild the three ref slides from the 35 actually-cited sources — paste-ready list in the reference-check file. No new research.</p>
+    </div>
+    <h3>New sources introduced in tommy9 — verified ✓ (PubMed)</h3>
+    <table>
+      <tr><th>Source</th><th>Used for</th><th>Verdict</th></tr>
+      <tr><td><strong>Lee &amp; Hoaken (2007)</strong></td><td>S3 hostile attribution bias</td><td><span class="tag t-ok">Strong</span> abstract covers "hostile attributional bias" after maltreatment</td></tr>
+      <tr><td><strong>Chasnoff et al. (2015)</strong></td><td>S4 missed FASD / overshadowing</td><td><span class="tag t-ok">Strong</span> 80% missed-diagnosis rate, on point</td></tr>
+      <tr><td><strong>Prado &amp; Dewey (2014)</strong></td><td>S3 malnutrition → brain dev</td><td><span class="tag t-ok">Good</span> nutrient deficiency &amp; neurodevelopment review</td></tr>
+      <tr><td><strong>Tadanki et al. (2025)</strong></td><td>S2 prenatal maternal stress</td><td><span class="tag t-info">Acceptable</span> real 2025 review; newer/low-impact — support, not anchor</td></tr>
+    </table>
+  </div>
+
+  <!-- PETER -->
+  <div id="peter" class="card anchor">
+    <h2><span class="role-pill rp-peter">Peter</span> Curriculum Coverage — 85/100 <span class="delta-badge">+3 vs tommy6</span></h2>
+    <table>
+      <tr><th>Concept</th><th>M4</th><th>Status</th></tr>
+      <tr><td>ACEs &amp; dose-response</td><td>W1/2</td><td><span class="tag t-ok">✓ S2</span> Felitti; "4+ → ~4× depression/anxiety"</td></tr>
+      <tr><td>Biological (HPA, toxic stress)</td><td>W2</td><td><span class="tag t-ok">✓ S3</span> Teicher, Garner &amp; Yogman, Glover</td></tr>
+      <tr><td>Neuro (amygdala–PFC)</td><td>W2</td><td><span class="tag t-ok">✓ S3</span> McLaughlin 2019</td></tr>
+      <tr><td>Attachment / disorganised / IWM</td><td>W1</td><td><span class="tag t-ok">✓ S3</span> Main &amp; Hesse, Bowlby</td></tr>
+      <tr><td>5P formulation</td><td>W4</td><td><span class="tag t-ok">✓ S1/S4</span> Macneil + Weerasekera</td></tr>
+      <tr><td>Bronfenbrenner ecological model</td><td>W1</td><td><span class="tag t-ok">✓ S2</span> (ref invisible pending rebuild)</td></tr>
+      <tr><td>Protective factors / resilience</td><td>W2</td><td><span class="tag t-ok">✓ S5</span> Masten "ordinary magic"</td></tr>
+      <tr><td>FASD / overshadowing</td><td>W2/4</td><td><span class="tag t-ok">✓ S3/S4</span> SIGN, Chasnoff, Gajwani &amp; Minnis</td></tr>
+      <tr><td>Latent vulnerability</td><td>W2</td><td><span class="tag t-ok">✓ S3</span> McCrory &amp; Viding</td></tr>
+      <tr><td>Mentalizing / Fonagy</td><td>W4</td><td><span class="tag t-med">△</span> concept present, Fonagy not named (optional re-add)</td></tr>
+      <tr><td>Continuum of Need / GIRFEC</td><td>W3</td><td><span class="tag t-med">△</span> dropped from S5 notes (optional verbal re-add)</td></tr>
+    </table>
+    <p style="font-size:.88rem;color:#555;"><strong>Peter:</strong> broad, curriculum-aligned, now <em>sourced</em>. Two soft spots (Fonagy, Continuum of Need) are optional at this grade.</p>
+  </div>
+
+  <!-- STEVEN -->
+  <div id="steven" class="card anchor">
+    <h2><span class="role-pill rp-steven">Steven</span> Narrative &amp; Script — 87/100 <span class="delta-badge">+11 vs tommy6</span></h2>
+    <h3>Through-line</h3>
+    <p><em>"Tommy's behaviour is an adapted survival response to cumulative adversity — a formulation, not a diagnosis, explains how it developed; and because risk is probabilistic and the adolescent brain is plastic, the outcome is not fixed."</em> Stated on S1, resolved on S5 — one of the cleanest arcs across all versions.</p>
+    <div class="notes-good"><strong>✓ FIXED — title-slide, S2 &amp; S3 notes.</strong> Correct Tommy intro (stray neuroplasticity/MDD opening gone); S2 reference-dump removed; S3 wrong-Achenbach instruction removed.</div>
+    <h3>Slide bridges</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>S1→S2 presenting iceberg → predisposing vulnerability; S2→S3 "act through three interacting domains".</span></li>
+      <li><span class="ci">✅</span><span>S3→S4 "they interact and reinforce"; S4→S5 "but Tommy's story isn't one of risk alone".</span></li>
+    </ul>
+    <p style="font-size:.88rem;color:#555;">Delivery times to ~8:46 (see Christoph's timing box) — comfortably within 10:00. S2 (~2:24) is the slide to trim first if live delivery runs long. Minor speaker-notes typos (Brnfenbrenners, violance, reocurring) — quick spelling pass.</p>
+  </div>
+
+  <!-- ALEX -->
+  <div id="alex" class="card anchor">
+    <h2><span class="role-pill rp-alex">Alex</span> Tone &amp; Delivery Register — n/a benchmark</h2>
+    <p style="font-size:.88rem;">Register is professional, measured and consistent with an academic case presentation; probabilistic, non-deterministic framing fits a clinical-formulation voice. <strong>No prior student presentation decks are on file to benchmark tone against</strong> (unlike the essays), so this is noted rather than scored. If prior recorded presentations exist, add them to <code>00 Input/previous_assignments/</code> for a true tone-fidelity check.</p>
+  </div>
+
+  <!-- EGBERT -->
+  <div id="egbert" class="card anchor">
+    <h2><span class="role-pill rp-egbert">Egbert</span> Synthesis &amp; Prioritised Recommendations</h2>
+    <div class="verdict-box"><div class="v-title">Grade estimate: A− (~166–176/200) → A+ achievable with one fix</div><div class="v-text">tommy9 is the strongest version on everything the student <em>delivers</em>: the formulation arc is sharp and probabilistic, the notes are clean and timed at ~8:46, the four new citations are real, and both tommy6 P1 blockers are cleared. It is let down by one self-inflicted problem in the one artifact a marker can independently audit — the reference slides list the wrong sources. A 25–35 min rebuild (no new research) moves it to A/A+.</div></div>
+    <h3>Prioritised actions</h3>
+    <table>
+      <tr><th>Priority</th><th>Task</th><th>Location</th><th>Action</th></tr>
+      <tr><td class="p1">P1</td><td>Bibliography ≠ citations</td><td>Refs 1–3/3</td><td>Rebuild from the 35 cited sources (paste-ready list in reference-check) — 25–35 min</td></tr>
+      <tr><td class="p2">P2</td><td>Mismatches + duplicates + cover date</td><td>Bib / cover</td><td>Reconcile Weerasekera/Reiss years; delete Donaldson/Berg/Dinkler dups; fix cover date — folds into rebuild</td></tr>
+      <tr><td class="p3">P3</td><td>Ligatures / typos / end-slide subtitle</td><td>S3/S5, S4, end</td><td>Confirm font rendering; "advercity"→"adversity"; align end subtitle — ~10 min</td></tr>
+      <tr><td class="p4">P4</td><td>Fonagy / Continuum of Need</td><td>S3 / S5 notes</td><td>Optional one-line verbal re-adds</td></tr>
+    </table>
+    <h3>Go / No-Go</h3>
+    <div class="verdict-box warn"><div class="v-title">🟡 CONDITIONAL GO — rebuild the reference slides before recording</div><div class="v-text">The deck is delivery-ready (notes clean, ~8:46). But the reference slides are shown on camera and form part of the submitted record, and they currently fail a citation check. Rebuild the three ref slides (P1) + fix the cover date, then record. All P3/P4 items are same-session polish. After P1 this is a clean A/A+.</div></div>
+  </div>
+
+  <div class="report-footer">Essay Fabrik — FQA Report — tommy9 (presentation) — Module 4 Part A — assessed 3 June 2026 · reformatted to unified FQA standard v1 (10 June 2026)<br>Egbert (Christoph · Jackie · Peter · Steven · Alex, synthesised) · new-source verification via PubMed</div>
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Essay Fabrik · unified FQA standard v1</div>
+</body></html>

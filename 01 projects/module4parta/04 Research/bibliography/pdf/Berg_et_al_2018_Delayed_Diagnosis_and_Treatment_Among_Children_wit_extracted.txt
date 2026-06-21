@@ -1,0 +1,2884 @@
+4 
+Autism 
+Dev Disord (2018) 
+DOI 
+ORIGINAL 
+PAPER, 
+Delayed Diagnosis and Treatment 
+Among Children 
+with 
+Autism 
+Who Experience Adversity 
+Kristin 
+L, Berg'*@ - 
+Kruti 
+Acharya· 
+- Cheng-Shi Shiu· - 
+Michael 
+E, Msall** 
+Published 
+online: 
+1 September 2017 
+© Springer 
+Science+Business 
+Media, LLC 
+2017 
+Abstract The 
+effects 
+of family adverse 
+childhood 
+experi- 
+·ences 
+(ACEs) on 
+timing 
+of ASD diagnoses and receipt of 
+therapies were 
+measured 
+using 
+data from 
+the 2011-2012 
+National 
+Survey of Children·s 
+Health, 
+Parametric 
+acceler- 
+ated failure 
+time 
+models 
+estimated 
+the relationship between 
+family ACEs 
+and both timing 
+of ASD diagnosis ard receipt 
+of 
+therapies among 
+US children 
+(age 
+2-17 years; 
+N= 1624), 
+Compared to children 
+without 
+family ACEs, 
+the adjusted 
+effects 
+of 1-2 and 
+> 3 ACEs 
+resulted 
+in prolonged time 
+of, 
+diagnoses with 
+time 
+ratios 
+of 1.17 and 1.23. Report of 1-2 
+and >3 ACEs 
+were 
+associated 
+with 
+a 22 and 27% 
+increase 
+in 
+the median 
+age of entry 
+into 
+services. 
+ACEs 
+may pose 
+significant barriers 
+to diagnoses and treatment 
+of children 
+with 
+ASD. 
+Keywords 
+Autism spectrum 
+disorder 
+- 
+Adverse 
+childhood 
+experiences - 
+Diagnosis 
+- National 
+Survey of 
+Children·s 
+Health - 
+Access 
+to treatment 
+© 
+Kristin L. 
+Berg 
+"Temple University Collegeof 
+Public 
+Heath, 
+1700 N. 
+Broad, 
+Philadelphia, PA 
+19086, USA, 
+Children·s 
+Hospital of Philadelphia, Philadelphia, PA, 
+USA. 
+University of Minos 
+at Chicago, 
+Chicago, HL, USA 
++ 
+County Community College, 
+Media, 
+PA, US 
+5 
+University of 
+Chicago Medicine, 
+Chicago, IL, USA 
+University of Chicago Comer 
+Children's 
+Hospital 
+and Kennedy Research 
+Center on 
+and Developmental Disabilities, 
+Chicago, IL, 
+USA 
+Abbreviations 
+NSCH 
+National 
+Survey of Children·s 
+Health 
+ASD 
+Autism 
+spectrum disorder 
+ACEs 
+Adverse 
+childhood 
+experiences 
+Introduction 
+Early identification 
+of autism 
+spectrum 
+disorder 
+(ASD) 
+is 
+critically important 
+to improve 
+health, level of functioning 
+and wellbeing. Even though ASD 
+can 
+be identified 
+as early 
+as 
+16-24 
+months, 
+a significant proportion 
+of children 
+are 
+not diagnosed or treated until 
+the school years (Daniels eta 
+2014; Shattuck 
+et al. 2009; Christensen 
+et al. 2016). The 
+median 
+age at diagnosis for Autism 
+disorder 
+is 46 months 
+and for Asperger's 74 months, according to the Centers 
+for 
+Disease 
+Control 
+and Prevention 
+(Christensen et al. 2016). 
+Delayed identification 
+and subsequent service 
+entry repre- 
+sent 
+missed opportunities 
+to 
+reduce 
+ASD symptomatology 
+and to optimize developmental outcomes 
+beyond childhood 
+Growing awareness 
+of these 
+·missed 
+opportunities· 
+has 
+prompted state 
+and federal agencies 
+to develop interventions 
+to improve early detection 
+and promote earlier 
+treatment, 
+yet 
+delays in diagnosis and treatment 
+a considerable 
+numberof 
+children 
+with 
+ASD (Fountain et al. 2011; 
+Hertz- 
+Picciotto 
+and Delwiche 
+2009; 
+Daniel 
+et al. 2009: Daniels 
+et al. 2014; CDC 
+2014; Esler etal. 
+2015; Christensen 
+eta 
+2016), 
+Several 
+contextual 
+factors 
+have been linked 
+to delayed 
+diagnosis and treatment 
+among 
+children 
+with ASD, includ 
+ing low 
+socioeconomic 
+status 
+and racial/ethnic 
+status 
+(Man- 
+dell 
+et al. 2002, 2009: Chen 
+et al. 2008; Rosenberg etal 
+2011; 
+Valicenti-MeDermott 
+et 
+al. 2012; 
+Mazurek 
+etal 
+2014). Compared to non-Hispanic White 
+children, 
+African 
+·American 
+and Latino 
+children 
+with 
+ASD 
+are 
+more 
+likely to 
+D springer 
+J Autism 
+Dev Disord (2018) 
+receive a 
+delayed diagnosis 
+(Mandell 
+et al. 2002; Rosenberg 
+etal. 
+2011), Although the majority 
+of studies 
+have reported 
+delayed ASD diagnoses among 
+racial 
+minority 
+children 
+in 
+the United 
+States 
+afew 
+studies 
+have documented 
+no difer- 
+·ence 
+in 
+age of diagnoses by race/ethnicity, suggesting 
+the 
+relationship between 
+race/ethnicity and timely 
+diagnoses 
+may be more 
+complex, and potentially driven 
+by unmeas- 
+ured variables 
+(Hertz-Piciotto and 
+Delwiche 2009; Shattuck 
+etal. 
+2009; Mazurek 
+etal 
+2014), Research 
+on 
+socioeconomic 
+status 
+and age of 
+child diagnoses has 
+also 
+yielded 
+mixed 
+find- 
+ings. Several studies 
+have 
+linked 
+lower parent education 
+and 
+lower family income 
+to later 
+ASD diagnoses; whereas 
+others 
+have documented 
+no 
+such association 
+(Shattuck et al. 
+2009; 
+Valicenti-MeDermot 
+etal. 
+2012; Twyman etal. 
+2009; Levy 
+etal. 2010). However, 
+a recent 
+study that controlled 
+for sev- 
+eral confounding factors (e.g. clinical 
+features) documented 
+a strong, positive 
+association 
+between 
+higher family SES 
+and timely ASD diagnoses (Goin-Kochel 
+et al. 2006). These 
+mixed findings suggest that disparities in timely ASD diagno- 
+sis 
+cannot be 
+fully explained by race/ethnicity and 
+S2S 
+alone. 
+(One variable 
+yet unexamined 
+in te 
+literature 
+isthe 
+role of 
+adverse 
+childhood 
+experiences 
+(ACEs) in timely diagnosis 
+and treatment. 
+ACES, defined 
+as stressful or 
+traumatic 
+experi 
+·ences, 
+have 
+been identified as 
+potent precursors to 
+adult health 
+behaviors, disease and other social and behavioral 
+outcomes 
+(Feliti etal 
+1998; Feit 
+and 
+Anda 
+2010). ACES are 
+measured 
+by a 10-item 
+scale, and include 
+child 
+maltreatmen:, 
+neglect 
+and other houschold 
+stressors 
+such as witnessing family vio- 
+lence, experiencing 
+the death 
+or 
+incarceration 
+of a parent and 
+growing 
+up with substance 
+abuse, mental 
+illness, or parental 
+divorce/separation (Felt 
+etal. 
+1998). Modified 
+ACE ques- 
+tionnaire 
+(e.g. 
+Adverse 
+Family Experiences 
+Questionnaire), 
+have 
+incorporated 
+additional, contextual 
+items 
+about exposure 
+to neighborhood violence 
+and racial/ethnic 
+discrimination 
+in 
+their 
+index 
+of stressors 
+(Cronholm 
+etal. 
+2015). Acgording to 
+the Andersen 
+(1995) Behavioral 
+Model 
+of Health 
+Care Use, 
+stressful 
+family experiences, 
+such as ACES, act 
+as inhibiting 
+factors; 
+negatively impacting 
+the ability of families 
+to meet 
+the health 
+care 
+needs of their children 
+To date, 
+few studies 
+have investigated the relationship 
+between 
+exposure 
+to ACES inhibiting factors) and children's 
+health 
+care 
+access. 
+However, 
+a small body of research 
+has 
+documented 
+a significant, 
+inverse 
+relationship between 
+stressful 
+family experiences 
+and utilization 
+of health 
+care 
+services 
+(Duchon et al. 1999; Jelleyman and Spencer 2008; 
+etal. 
+1997; Fairbrother 
+etal. 
+2005; Janicke 
+et al. 
+2001). For example, parental health challenges, residential 
+instability and other family stressors 
+have been correlated 
+with 
+barriers 
+to 
+insurance 
+enrollment, 
+dissatisfaction 
+with 
+health 
+care, 
+poor continuity 
+of 
+care 
+and children's 
+unmet 
+physical and dental 
+health 
+care 
+needs (Duchon etal. 
+1999; 
+Jelleyman and Spencer 2008; Auslander 
+etal. 
+1997; Fair 
+brother 
+etal. 
+2005; 
+Janicke 
+etal. 2001). 
+D Springer 
+Families 
+of children 
+with 
+ASD 
+experience 
+disparities in 
+exposure 
+to adversity 
+(Berg 
+et al. 2016; Mandell 
+etal. 2005; 
+Maiano 
+et al, 2015; 
+Larsson 
+et al. 2005; Freedman 
+et al. 
+2012; Hartley etal. 2010; Roberts et al. 
+2016). A population- 
+based study employing a modified 
+ACE 
+seale indicated 
+that, 
+US children 
+with ASD 
+had a significantly greater probability 
+of exposure 
+to 
+1-3 ACEs 
+and >4 ACEs 
+in 
+comparison 
+to 
+peers without 
+ASD (Berg et al. 2016). Additional 
+studies 
+have linked 
+child 
+ASD 
+status 
+to specific stressors, 
+including 
+parental mental 
+health challenges, substance 
+abuse, domestic 
+violence 
+and in 
+some 
+cases, 
+divorce 
+(Berg et al. 2016; Lars- 
+son etal. 
+2005; Hartley et al. 2010; Roberts 
+etal. 2016). Few 
+studies have yet explored whether 
+risk for ACEs might vary 
+among 
+families 
+of children 
+with 
+ASD 
+and no study has yet 
+explicitly examined 
+how ACEs 
+may impact age of diagno- 
+sis and timing 
+of therapy among children(Berg et 
+al. 2016). 
+Unfortunately, families 
+of children 
+with 
+ASD 
+are 
+not 
+rou- 
+tinely screened 
+for ACES; 
+therefore, 
+the information 
+required 
+to effectively meet 
+the health 
+care 
+needs of children 
+with 
+ASD who experience 
+adversity is 
+not yet available. 
+Drawing 
+upon 
+the only available 
+population based survey 
+of fam- 
+ily ACEs 
+and ASD 
+status, 
+the objectives of this study were 
+to: (1) 
+describe 
+the population characteristics of 
+families 
+of 
+children 
+with 
+ASD 
+with 
+different 
+levels 
+of ACEs 
+and (2) 
+explore how level of family ACEs 
+was 
+associated 
+with 
+(a) 
+age of ASD diagnoses and (b) timing 
+of therapy services. 
+Methods 
+This project employed the 2011-2012 
+National 
+Survey of 
+Children's 
+Health 
+(NSCH) sponsored by the Maternal 
+and 
+Child 
+Health 
+Bureau 
+of the Health 
+Resources 
+and Services 
+Administration 
+(Child 
+and Adolescent 
+Health 
+Measure- 
+Initiative 
+2016). The NSCH 
+utilizes 
+a complex survey 
+design to collect 
+a broad 
+range 
+of information 
+pertaining 
+to 
+the health 
+of US children, 
+ages 0-17 
+years. 
+Between 
+2011 
+and 2012, parent interview 
+data 
+was 
+collected 
+on 
+a total of 
+95,677 children 
+nationwide; 
+completion rate 
+for the tele- 
+phone survey 
+was 
+54.1 and 41.2% 
+for the landline 
+and cell 
+phone samples, respectively. Survey data 
+was 
+reweighted to 
+be generalizable to the US population of non-institutional- 
+ized children 
+ages 0-17 
+years (Child and Adolescent 
+Health 
+Measurement 
+Initiative 
+2012). 
+Autism 
+Spectrum Disorder 
+(ASD) 
+(Our sample was 
+limited 
+to parents of 
+children 
+age 2-17 
+years 
+given 
+that 
+age of diagnosis is typically >2 years 
+of age 
+for developmental disabilities 
+such 
+as ASD 
+(Boyle et al. 
+2011). Children 
+were 
+identified 
+as having ASD 
+if the par- 
+ent reported both of the following: (a) were 
+ever 
+informed 
+by a doctor 
+or other health 
+care 
+professional that their child 
+4 Autism 
+Dev Disord (2018) 
+0 
+hhad ASD 
+and (b) the child currently has ASD. 
+Based upon 
+this criteria, 
+a total 
+of 1624 
+children 
+with 
+ASD 
+(N= 
+1624; 
+est. population = 
+1,174,871) 
+were 
+included 
+in 
+the analy- 
+sis. 
+Severity of ASD 
+was 
+assessed by parent rating of 
+their 
+children·s 
+symptoms 
+as 
+either 
+mild, 
+moderate 
+or 
+severe. 
+Children 
+with 
+ASD 
+were 
+categorized into 
+two 
+groups: 
+mild 
+(N=844) 
+or moderate/severe ASD 
+(N=780). 
+ACEs 
+A modified 
+version 
+of the Adverse 
+Childhood 
+Experiences 
+Scale (ACEs) was 
+developed for this survey 
+based upon the 
+Behavioral 
+Risk Factor Surveillance 
+System survey (BRFSS) 
+and a technical 
+report panel (Balistreri 2015; Child 
+and Ado- 
+Health 
+Measurement 
+Initiative 
+2012; Feltti 
+et al, 
+1998). ACEs 
+were 
+measured by parent response 
+to questions 
+bout 
+children·s 
+exposure 
+to: neighborhood violence, racial/ 
+ethnic 
+discrimination, 
+income 
+hardship, parental divorce, 
+incarceration, 
+death, domestic 
+violence, 
+substance 
+abuse 
+and mental 
+illness 
+(see 
+·Appendix 1·). For 
+each 
+of 
+the nine 
+items, 
+parent responses 
+were 
+recoded 
+(0, 1) and aggregated 
+to calculate 
+composite 
+ACE 
+scores 
+(0-9). Based upon 
+the 
+·unequal response 
+distribution 
+and extremely small cell 
+size 
+above 
+3 ACES (5.5%=4 
+ACES; 3.3%=5 
+ACEs; 2.3% 
+ACES; 0.7% =7 
+ACEs; 
+0.4%=8 
+ACES; 
+0.06% 
+=9 ACES) 
+children 
+were 
+categorized into 
+three dummy groups: 
+(0) no. 
+reported ACEs, (I) 
+I-2 ACEs, 
+and >3 reported ACEs. 
+This 
+categorization 
+has been 
+used effectively in previous 
+studies 
+and aligns with 
+research 
+demonstrating a 
+graded relationship 
+between 
+number 
+of ACEs and maladaptive outcomes 
+(Felit 
+ct al. 1998; 
+Felitti and 
+Anda 2010). 
+Timing of ASD Diagnosis 
+Age of ASD diagnoses was 
+assessed by parent 
+response 
+10 
+the following: 
+·How old [months}was 
+[child] when you 
+were 
+first told by a doctor 
+or 
+other health 
+care 
+provider that (he! 
+she] had autism 
+or 
+autism 
+spectrum disorder?· 
+·Timing of Entry into Therapy Services 
+Parents 
+who responded affirmatively to receipt of therapy 
+services 
+(to meet 
+developmental 
+needs, such 
+as Early Inter- 
+vention, 
+or 
+behavioral 
+therapies), were 
+then 
+asked the following question ·IF YES, 
+how 
+old [months] 
+was 
+[child] 
+when 
+(he/she) began receiving 
+services· 
+Covariates 
+·The following variables 
+were 
+included 
+in the analysis given 
+their potential association 
+with timing of diagnosis and ther- 
+apy: child 
+race, 
+child gender, child 
+age, parent age, parent 
+health (scale from 
+·Poot· 
+to ·Excellent·), 
+parent education 
+(<high 
+school; high school/equivalency;>high 
+school), 
+health 
+insurance, 
+federal poverty level (FPL) (FPL; 0-100% 
+100-199% 
+FPL, 2200% FPL) neighborhood factors 
+(see ·Appendix 
+2·), and 
+residential 
+mobility (number 
+of 
+times 
+moved 
+since 
+birth). 
+We 
+included 
+residential 
+mobility 
+because 
+multiple moves 
+are 
+linked 
+to disrupted healthcare 
+(Duchon et al. 1999; 
+Jelleyman 
+and Spencer 2008). 
+All 
+statistical 
+procedures were 
+conducted 
+in 
+Stata 
+13 
+(StataCorp 2013). Statistical 
+procedures were 
+applied to 
+accommodate 
+survey 
+sampling and weighting 
+schemes. 
+Descriptive and bivariate 
+analysis were 
+used 
+with 
+Rao- 
+·Scott Chi-Square test 
+to estimate 
+prevalence of family ACEs 
+among 
+families 
+of children 
+with 
+ASD 
+and 
+its 
+association 
+with demographic characteristics. 
+Log-logistic models, 
+a 
+parametric 
+accelerated 
+failure 
+time 
+(AFT) models, 
+were 
+employed to model 
+the effects 
+of ACEs 
+on 
+timing 
+of ASD 
+diagnosis and therapies because 
+the hazard 
+functions 
+of 
+diagnosis and 
+treatment 
+reception often 
+increase 
+for the first 
+few years before declining (Patel et al. 2006). Huber-White 
+robust 
+estimator 
+was 
+used to calculate 
+standard 
+errors. 
+Over- 
+all missing 
+values 
+were 
+less than 
+5% across 
+all variables 
+except parental education 
+and health 
+status. 
+Diagnostic anal- 
+ysis 
+was 
+conducted 
+to investigate the model 
+fit and potential 
+deviations 
+of model 
+assumptions 
+(Lee and Wang 2003). A 
+series 
+of sensitivity 
+analyses were 
+also performed to evalu- 
+ate 
+the impact of different 
+statistical 
+decisions 
+on 
+results 
+Wald-test 
+was 
+used 
+for post-hoe comparisons. 
+This 
+study 
+·was exempt from human subjects review 
+by the Temple Uni- 
+versity 
+Institutional 
+Review 
+Board. 
+Results 
+Approximately 
+1.8% (N= 1624) 
+of children in 
+the US, age 
+2-17 
+years, were 
+reported to 
+have an ASD-related 
+diagnoses. 
+Of these 
+children, slightly 
+over 
+half (51.7%) 
+were 
+described 
+as having mild symptoms of ASD while 
+the remainder 
+were 
+reported as having moderate 
+to 
+severe 
+symptomatology 
+(Table 1), The majority 
+of children 
+in 
+our 
+sample were 
+male 
+(82.1%), 
+White 
+(60.5%) 
+with 
+an 
+average 
+age of 10.3 years. 
+Over 
+1/2 of families 
+(58.3%) 
+lived 
+> 
+200% of the FPL. 
+At 
+the time 
+of the survey, 
+nearly all children 
+were 
+reported to 
+have health 
+insurance 
+(98.2%). The 
+mean age 
+of initial 
+ASD 
+diagnosis was 
+4.96 
+years 
+and the 
+mean 
+age of 
+entry 
+into 
+services 
+was 
+4.2 years. 
+Residential 
+mobility was 
+relatively 
+high for 
+some 
+families 
+of children 
+with 
+ASD; 
+40% reported 
+3 or 
+more 
+moves 
+during the focal child·s 
+lifetime, 
+More 
+than 
+half 
+of children 
+with 
+ASD 
+were 
+exposed to 
+>1 ACE 
+with approximately 20% experienc- 
+ing> 3 
+ACEs 
+(N=325) 
+(Table 1). The 
+results 
+of bivariate 
+analysis indicated 
+that experience 
+of ACEs 
+was 
+associated 
+with delayed diagnosis of ASD 
+and entry 
+into 
+treatment. 
+·That is, 
+mean 
+age of initial 
+ASD diagnosis was 
+4.3 years for 
+© 
+springer 
+cg 
+{Autism 
+Dev Disord (2018) 48:45-54 
+·Table 1 
+Population 
+characteristics 
+and 
+bivariate analysis 
+by 
+ACES groups among 
+children 
+wi 
+autism 
+spectrum disorder 
+Toul 
+DACE 
+T2ACES 
+value 
+· 
+Gormean(9S% 
+ormean(9S% C1 
+ormean (95% 
+CD, 
+Sample 
+size 
+1624 
+ar 
+335 
+Estimated 
+population 
+1174871 
+$56,562 
+489.918 
+228,302 
+Age 
+of frst 
+diagnosis 
+4308.95, 
+466) 
+524(465,583) 
+5.66 
+(5.04,6.27) 
+<0 
+Age 
+of firstherapy 
+services 
+4.70 
+<0 
+(Children's 
+characteristics 
+Age 
+1O31(991,1071) 
+351 
+Childs 
+Race/Ethnicity 
+315 
+Hispanic 
+185 
+(123,246) 
+17655,179) 
+182 
+(15,348) 
+White 
+605 (547,664) 
+66.2(58.2, 74.2) 
+55.9(06.4,653) 
+59.3 
+(449,736) 
+Black 
+105 (71,138) 
+1.756, 
+179) 
+102 
+(46, 
+15.8) 
+Odhersmultracial 
+92(68, 
+113) 
+8705.1, 
+122) 
+12060, 
+180) 
+Childs 
+sex 
+932 
+Male 
+884) 
+81.2(75.6,869) 
+Pemale 
+179 (142,215) 
+18:8(13.1,244) 
+174 (85,263) 
+(Child's symptom 
+severity 
+<ol 
+Mild 
+412,288,525) 
+Moderatesevere 
+-378298,458) 
+52.2433, 61.1) 
+$8.7 
+(Child's 
+health 
+insurance 
+on 
+No 
+05 (00. 
+1.1) 3.4(06,62) 
+05 (00, 10) 
+Any 
+98.2(970,994) 
+1.0) 96.5 
+(93.7, 
+99.3) 99.5 
+(990, 
+1.0) 
+Family's characteristics 
+Father's 
+education 
+<High school 
+785,121) 
+52(06,99) 
+6123,98) 
+166 (-03,335) 
+High schoo! 
+or GED 
+142(105,179) 
+98 (54, 14) 
+17:7 
+008,245) 
+156 (78,233) 
+>High school 
+Missing 
+254(21.0,208) 
+1.2) 
+328 (247,410) 
+44.7(32.0,574) 
+Mother's 
+education 
+068 
+·<High 
+school 
+89653, 
+126) 
+68(10,126) 
+18.4) 
+672.0,115) 
+High 
+schoo! 
+or 
+GED 
+143 (112, 
+173) 
+158 (111,205) 
+High school 
+62.3 
+(50.8, 
+73.9) 
+Missing 
+77G8,0116) 
+345,53) 
+196) 
+Father's 
+health 
+<a 
+Poor 
+or fair 
+10.1) 
+453,79) 
+85449, 
+121) 
+Goad 
+or excellent 
+673(625,722) 
+88.1 
+59.1 
+(505, 
+67.7) 
+Missing 
+25.0(206,294) 
+7.4 (40,108) 
+32.4 
+(243,405) 
+·Mother's 
+health 
+Poor 
+or fir 
+282(192,37.) 
+Good 
+or excellent 
+733(678,78.7) 
+63.3 
+(532. 73.4) 
+63.1 (51.8, 
+744) 
+Missing 
+85 
+676,195) 
+of moves 
+to new 
+address 
+<1 
+Nomove 
+20.1(167,236) 
+27.1 
+209.333) 
+19.4(140,248) 
+7841115) 
+1-2 moves 
+382.027.4387) 
+3S moves 
+32.1 264,378) 
+198.(29,266) 
+370Q78,46.1) 
+463824, 
+602) 
+64 moves 
+9.0(52, 
+12.9) 
+17.0(98,242) 
+children 
+who reported no 
+ACEs 
+versus 
+5.24 and 5.66 years 
+to 4.59 
+years 
+and 4,70 
+years 
+for children 
+who experienced 
+for children 
+who experienced 1-2 and 23 ACEs (p<.01), 
+1-2.and >3 ACEs, respectively (p-<.01). Most children 
+with 
+respectively, Similarly, 
+mean 
+age of entry 
+into 
+services 
+for 
+ASD 
+(92.6%) 
+received 
+therapy and receipt of 
+services 
+did 
+children 
+who experienced no ACEs 
+was 
+3.53 years compared 
+not 
+differ by family ACEs (p=.35). 
+De
+J Autism 
+Dey Disord (2018) 48:45-54 
+4 
+Children 
+with 
+ASD 
+who experienced any ACES 
+were 
+significantly different 
+from children 
+who did not 
+experience 
+ACEs 
+on 
+a number 
+of characteristics 
+(Table 1). For 
+ple, children 
+with 
+moderate 
+to 
+severe 
+ASD symptomatology 
+were 
+associated 
+with higher ACEs 
+while 
+those 
+with 
+more 
+highly educated 
+fathers 
+or 
+who lived 
+at 
+or 
+above 200% 
+of 
+the FPL 
+were 
+significantly more 
+likely to report 
+zero 
+ACES 
+(p<.01). Probability of moderate 
+or high ACEs 
+was 
+also 
+significantly higher for children 
+with 
+a parent 
+in poor/fair 
+health (p 
+<.01) 
+or who experienced higher 
+residential 
+mobil- 
+ity 3-5 
+or 
+6+ moves) 
+LLog-logistic models 
+were 
+utilized 
+to estimate 
+the relation- 
+ship between 
+ACEs 
+and both timing 
+of ASD diagnosis and 
+entry 
+into 
+services 
+among 
+US children 
+(Table 2). Compared 
+to children 
+without 
+ACES, the adjusted effects of 1-2 ACEs 
+and 23 ACEs 
+resulted 
+in prolonged time 
+to receipt of 
+diag- 
+noses 
+with 
+time 
+ratios 
+of 1.17 (95% CI 1.05-1.31; 
+p<.01) 
+and 1.23 (95% CI 1.07-1.42; 
+p 
+<.01) respectively. However, 
+time 
+to diagnosis did 
+not 
+differ 
+between 
+children 
+with 
+1-2 
+and >3 ACEs (F(1, 95,575) 
+=0.52, p=.471]. Compared to 
+children 
+without 
+ACES, report of 1-2 ACEs 
+and >3 ACEs 
+were 
+associated 
+with 
+a 22% (TR=1.22; 
+95% CI 1.04-1.42; 
+·Fable 2. 
+Results oflog-lopstc 
+repression 
+model 
+with 
+age of fst 
+diagnosis and age of fis 
+therapy service 
+a8 outcomes 
+·Age of ist 
+diagrosis 
+fies therapy service 
+Model 
+·Model 
+2 
+Model 
+2 
+mR 
+TR 
+TR 
+ACES 
+1-2 ACES (vs. 
+0 ACE) 
+120% 
+(05,131) 
+1.29" 
+(106,157) 
+L21* 
+(1.03, 
+142) 
+3+ACES 
+(¥s.0 ACE) 
+Lager 
+(121,172) 
+123% 
+(LAS.1.75) 
+(1.05, 158) 
+(Children's 
+characteristics 
+Age 
+LOT 
+(1.06, 1.09) 
+(1.05, 
+1.09) 
+Race/Ethnicity 
+Hispanic (vs. White) 
+096 
+83,111) 
+102 
+(079,132) 
+Black 
+(vs. White) 
+oss 
+074,098) 
+102 
+(087, 1.18) 
+Others 
+Multiracial 
+(vs. White) 
+080° 
+061,098) 
+0.91 
+(076, 1.09 
+sex 
+Female 
+(vs. 
+male) 
+098 
+086,113) 
+Lot 
+(0386, 1.18) 
+symptom 
+severity 
+Moderate/severe 
+(vs. Mild) 
+071,086) 
+hit·s 
+insurance 
+·Yes (vs. no) 
+087 
+063,119) 
+(058,095) 
+Family's 
+characteristics 
+Father· 
+education 
+High school 
+or 
+GED 
+(<HS) 
+095 
+x2, 
+1.11) 
+073+ 
+(0.50, 1.06) 
+>High school 
+(¢HS) 
+(065,088) 
+0744 
+(054, 1.02) 
+Missing 
+ost 
+(044,149) 
+0.96 
+(035,261) 
+·Mothers 
+education 
+High school or GED 
+(<HS) 
+Los 
+88, 
+1.31) 
+079 
+school 
+(<HS) 
+109 
+081, 
+1.32) 
+0.69" 
+(08,099) 
+Missing 
+089 
+(52,152) 
+097 
+(034,279) 
+Father's 
+health 
+Good 
+or excellent 
+(vs. poor oF 
+fit) 
+LITE 
+140) 
+096 
+Missing 
+117 
+(063,217) 
+086 
+(032,234) 
+·Mothers 
+ealth 
+Good or 
+excellent poor 
+or fair 
+092 
+1.05) 
+108 
+(085, 1.36) 
+Missing 
+095 
+077 
+(028,218) 
+4 oF moves 
+10 new 
+address 
+1-2 moves 
+(vs. 
+no move) 
+Los 
+(083,1.18) 
+093 
+(081, 107) 
+3-5 
+moves 
+(vs. 
+no move) 
+110 
+10s 
+(087,127) 
+6+ 
+moves (vs. 
+no move) 
+131% 
+(1.08, 
+158) 
+113 
+(090, 140) 
+Constant 
+(G.28,4.03) 
+2.20% 
+308 
+279,341) 
+378% 
+(2.09,683) 
+<001 
+© 
+springer 
+4 Autism 
+Dev Disord (2018) 
+48:45-54 
+p<.05) 
+and 27% (TR= 
+1.27; 95% CI 
+p-<.05) 
+inerease 
+in 
+the median 
+age of entry 
+into therapy services, 
+respectively. However, time to 
+service 
+did not differ between 
+children 
+who 
+had experienced ACEs [(I-2 
+vs. 
+23 ACES): 
+F(L, 95,575) 
+=0.24, 
+Additional 
+variables 
+were 
+associated 
+with 
+timing of ASD 
+diagnosis and 
+entry 
+into 
+services 
+(Table 2). 
+Moderate to 
+severe 
+ASD symptoms (p <.05), 
+greater paternal education 
+(p 
+<.01) 
+and African-American 
+or multiracial 
+ethnic 
+status 
+(p 
+<.05) 
+were 
+all 
+associated 
+with a 
+significant decrease 
+in median 
+age 
+of ASD diagnosis. Similarly, severity of ASD symptomatol- 
+ogy and health 
+insurance 
+were 
+both associated 
+with a 
+lower 
+·median age of entry 
+into 
+therapy services 
+(p 
+<.05). 
+In con- 
+trast, 
+child 
+age was 
+positively correlated 
+with delayed diag- 
+nosis 
+(p<.01) and entrance 
+into 
+treatment 
+(p <.01). Addition- 
+ally, moving 
+> 6 
+times 
+during a child· 
+lifetime 
+was 
+associated 
+with 
+a 32% increase 
+in median age of ASD diagnosis (p 
+<.01). 
+Figures 
+| and 2 visualize 
+the estimated probabilities of 
+receipt 
+of 
+diagnosis and service 
+across 
+ages by ACEs 
+groups. 
+Based 
+(on the diagnostic analysis, 
+our 
+models 
+fit relatively well to the 
+data, and there 
+was 
+no known 
+violations 
+of statistical 
+assump- 
+tions. 
+The sensitivity analysis yielded the same 
+corclusions, 
+suggesting 
+our 
+results 
+were 
+relatively stable. 
+Discussion 
+·This study is the first, to date, 
+to document 
+the pivotal role of| 
+ACEs 
+in 
+timing of 
+ASD diagnosis and 
+interventions 
+using a 
+population-based sample, Based 
+on our 
+results, 
+exposure 
+to 
+ACE 
+resulted 
+in 
+moderate 
+delays in timing 
+of ASD diag- 
+nd therapy. Our 
+findings are 
+consistent 
+with 
+multiple 
+studies which 
+link 
+ACEs and stressful life events 
+to lower 
+health 
+care 
+access 
+and suboptimal 
+utilization 
+of health- 
+care 
+services 
+(Duchon et 
+al. 1999; Jelleyman and Spencer: 
+2 
+7 
+2ACES 
+ACES 
+Fig. 1 Probability of no diagnosis by 
+child 
+age 
+D Springer 
+ct 
+No Therapy 
+Ageiot 
+1 
+ACES 
+Fig.2. Probability of 
+no therapy service by 
+child 
+age 
+et al. 2001). 
+Since there 
+was 
+no significant difference 
+inthe 
+·median age of diagnosis or 
+treatment between 
+childre
+who 
+experience 
+1-2 
+and those 
+who 
+3 
+ACES, 
+our 
+findings suggest that report of atleast 
+one 
+ACE 
+is 
+a signifi 
+cant 
+correlate 
+of delayed diagnosis and treatment. 
+The link 
+between 
+ACES 
+and delayed ASD diagnosis and treatment 
+remained 
+robust despite controlling for a numbero
+potential 
+confounders, 
+including health 
+insurance, child 
+and socioeconomic 
+status. 
+·Our findings 
+suggest 
+that 
+health 
+insurance 
+coverage 
+may 
+be necessary 
+but 
+not 
+sulficient 
+to 
+ensure 
+access 
+to timely 
+diagnosis and weatment 
+for children 
+with 
+ASD (Fairbrother 
+etal, 
+2005; Starfield 
+and Shi 2004). Efforts 
+to promote early 
+diagnosis 
+and treatment 
+have largely centered 
+on 
+insurance 
+coverage 
+and access 
+medical 
+home, 
+without 
+considering 
+the role of family 
+such 
+as ACES (Kullgren eta. 
+2012). Future studies could explore how, and to what extent, 
+health 
+care 
+policies that address 
+financial 
+barriers 
+to health 
+care 
+access 
+(e.g. Affordable 
+Care Act and Medieaid 
+Expan- 
+sion) 
+interact 
+with 
+ACES 
+to predict timing 
+of diagnosis for 
+children 
+with 
+ASD (Kullgren etal. 
+2012). Our findings, if 
+replicated also suggest that family support programs/poli- 
+cies, 
+including treatment/referral 
+for family ACES, 
+could 
+become 
+a key complement of 
+current 
+efforts 
+to 
+improve 
+healthcare 
+utilization 
+among 
+vulnerable 
+families 
+of children 
+with developmental disabilities, 
+such as ASD. 
+Interestingly, timing 
+of ASD 
+diagnosis was 
+positively 
+correlated 
+with 
+children·s 
+current 
+age, suggesting that older 
+cohorts 
+of US children 
+were 
+more 
+likely to have received 
+a 
+delayed diagnosis in 
+comparison 
+to younger 
+cohorts. 
+The 
+fact that younger 
+children 
+in 
+our 
+study received 
+an 
+earlier 
+diagnosis of ASD may reflect improved screening 
+practices 
+and greater public and professional awareness 
+about 
+child 
+ASD 
+and its diverse 
+clinical 
+features 
+(Mazurek et al. 2014; 
+Goin-Kochel 
+etal. 2006). However, these gains 
+in early diag- 
+nosis 
+may not 
+extend 
+to children 
+with 
+ASD 
+who experience 
+4 
+Autism 
+Dev Disord 
+(2018) 
+48:45-S4 
+31 
+ACEs, potentially widening within-group disparities. For 
+these children, 
+the missed 
+window 
+of opportunity 
+for early 
+identification 
+and evidence-based 
+intervention 
+amplifies dis- 
+parities 
+in health, 
+behavior 
+and functioning outcomes 
+associ- 
+ated with both ASD 
+status 
+and adverse family experiences, 
+·Our results 
+indicate 
+that child symptomatology may be 
+an additional 
+factor 
+in both risk 
+of ACEs 
+and timing of ASD 
+diagnosis and therapy. First, 
+as documented 
+in 
+a previous 
+study, children 
+with 
+more 
+severe 
+ASD 
+symptomatology 
+were 
+associated 
+with 
+elevated 
+risk of ACEs, regardless of 
+poverty 
+and other 
+factors 
+(Berg et al. 2016). Second, 
+we 
+linked 
+severity 
+of ASD symptomatology to earlier 
+age of 
+diagnosis and treatment; 
+a finding also echoed 
+in previous 
+studies (Mazurek 
+et al. 2014; Shattuck 
+et al. 2008; Howlin 
+and Asgharian 1999; 
+Wiggins 
+etal. 2006). Thus, for 
+children 
+with 
+more 
+severe 
+ASD, 
+risk for delayed diagnosis ¢s 
+a result 
+of ACEs 
+may be offset by their higher probability of being 
+recognized and treated 
+at an earlier 
+age. However, it remains 
+unknown 
+whether 
+exposure to 
+ACEs 
+could have exacerbated 
+existing 
+health 
+challenges leading to 
+more 
+·severe· 
+ASD 
+symptomatology (Berg et 
+al. 2016). Further 
+studies 
+are 
+needed 
+to unravel 
+the complex relationship betwe 
+ity of ASD, 
+timing, 
+type and sequelae of ACEs 
+and access 
+to diagnosis/services among 
+children 
+with 
+ASD. 
+In addition 
+to child functioning, other demographic vari- 
+ables, including race, 
+education 
+and residential 
+mobility, 
+·emerged 
+as important 
+correlates 
+of both exposure 
+to ACES 
+and timing of 
+diagnosis and treatment. 
+Contrary to expecta- 
+tions, 
+African 
+American 
+and multiracial 
+children 
+with ASD 
+were 
+associated 
+with 
+similar 
+prevalence of ACEs 
+and ear- 
+lier age of ASD diagnosis in comparison 
+to White 
+children. 
+This finding is 
+inconsistent 
+with 
+studies documenting racial 
+disparities 
+in 
+both 
+stress exposure 
+and 
+access 
+to 
+serv 
+for child 
+ASD (Braveman 
+et al. 2005; Bynum et al. 2010; 
+Mandell 
+et al. 2002; Rosenberg et al. 
+2011). 
+·controlled 
+for an 
+array 
+of potential confounders, 
+including 
+parental education 
+and residential 
+characteristics, 
+which 
+·may 
+not 
+have been considered 
+in 
+previous 
+studies. 
+In our 
+study, higher residential 
+mobility 
+(or 
+instability) emerged 
+asa 
+significant correlate 
+of both 
+higher ACEs 
+and 
+delayed 
+diagnosis of 
+ASD. Although 
+not typically 
+included 
+in studies 
+Of diagnosis/treatment, this finding corresponds to research 
+·on residential 
+instability 
+as both 
+an 
+important indicator 
+of 
+socioeconomic 
+adversity 
+and correlate 
+of disrupted health 
+care 
+(Duchon 
+et al. 
+1999; 
+Jelleyman and Spencer 2008). If 
+replicated in 
+future 
+studies, 
+this finding suggests 
+that 
+resi- 
+dential 
+instability, 
+which 
+disproportionately 
+impacts 
+low 
+income 
+and minority 
+families, 
+may help drive 
+observed 
+racial/ethnic 
+disparities in 
+health 
+care 
+access/utilization, 
+including timely 
+diagnosis and treatment 
+of ASD 
+(Ihrke and 
+Faber 2012; 
+Desmond 
+et al. 2015). Second, higher levels of 
+paternal education 
+were 
+associated 
+with 
+lower 
+risk of ACES, 
+age of ASD diagnosis and 
+a marginally significant 
+decrease 
+in age of initial 
+therapy. This finding suggests that 
+paternal education 
+may be a protective 
+factor 
+in promoting 
+child well-being and parity 
+in health 
+care 
+utilization 
+across 
+racial/ethnic 
+groups, 
+although typically not prioritized in 
+health 
+care 
+research 
+(Goin-Kochel 
+et al. 2006). 
+This study has several limitations. 
+Fist, it employs cross- 
+sectional data, 
+which makes 
+it difficult 
+to 
+assess 
+causality. In 
+particular, the dataset 
+did 
+not provide information 
+on 
+tim- 
+ing of ACEs. 
+Without 
+data 
+on timing, 
+we 
+cannot 
+determine 
+whether 
+ACEs 
+occurred 
+prior 
+or subsequent to ASD diag- 
+nosis 
+and therapy. That 
+said, 
+we 
+documented a 
+clinically 
+·meaningful association 
+between 
+experience 
+of ACEs 
+and 
+delayed diagnosis and treatment 
+among 
+children 
+with 
+ASD. 
+Future 
+studies 
+can 
+build 
+upon the results 
+of our 
+exploratory 
+study and further 
+unravel 
+the role 
+of ACEs 
+in 
+health 
+care 
+access 
+disparities, including timing 
+of ACES, 
+differential 
+impacts of specific types of ACEs, 
+etc. Finally, because 
+the 
+NSCH 
+relies upon self report, children·s 
+ASD symptomatol- 
+ogy (mild vs. moderate/severe) is 
+a subjective measure 
+and 
+not verifiable 
+with medical 
+records 
+while specific ACEs may
+be underreported (e.g. substance 
+abuse, domestic 
+violence) 
+by parents 
+Conclusion 
+Beginning in childhood, 
+individuals 
+with 
+ASD 
+are 
+at dis- 
+proportionate 
+risk 
+of adversities 
+which 
+may contribute 
+to 
+disparities in 
+access 
+to diagnosis and therapeutic services. 
+Given 
+the importance 
+of early intervention 
+in the health 
+out- 
+comes 
+of children 
+with 
+ASD, 
+it 
+is important 
+that efforts 
+to 
+promote early diagnosis and therapy consider 
+family stress- 
+ors, 
+such 
+as ACES, Strategies exclusively focused 
+on 
+eco- 
+nomic 
+barriers 
+to access 
+may only exacerbate 
+extant 
+health 
+care 
+disparities 
+impacting 
+vulnerable 
+youth with 
+ASD. 
+Future 
+research is needed 
+to disentangle the relationship. 
+between 
+timing 
+of ACEs, family supports and health 
+care 
+utilization 
+for vulnerable 
+children 
+with 
+ASD. 
+Funding 
+This study was 
+supported by Grant 
+R4OMC 
+Autism 
+Inter 
+vention 
+Research 
+Program, from 
+the Maternal 
+and Child 
+Health 
+Bureau 
+Health 
+Resources and 
+Services 
+Administration, 
+Department of Health 
+and Human 
+Services. 
+Dr. Msall 
+and Dr. 
+efforts 
+were 
+also 
+Supported in part by T73 MCI 
+1087 
+HRSA, 
+Financial 
+Disclosure 
+The 
+authors have 
+no financial 
+relation
+relevant to 
+this article to 
+disclose, 
+Author 
+Contributions 
+KL 
+concvived 
+ofthe study, participated in 
+its design and coordination 
+and drafted 
+the manuscript; 
+KA parii- 
+pte 
+inthe 
+design and interpretation ofthe 
+data and helped to draft 
+the 
+·manuscript; CS participated inthe 
+design of the study and performed 
+the statistical 
+analysis: MEM 
+participate 
+in 
+its design and 
+tion 
+of data All authors read and approved the final manuscript. 
+4 Autism 
+Dev Disord (2018) 48:45-54 
+·Compliance with 
+Ethical 
+Standards 
+of 
+interest 
+The 
+suthors have 
+no confit 
+of interest 
+relevant 
+to this article 
+io disclose. 
+Ethical 
+Approval and Informed 
+Consent 
+This manuscripts based 
+·upon publically available, 
+secondary data 
+from 
+the 
+Data 
+Resource 
+·Center for Child 
+and 
+Adolescent 
+Health. 
+The 
+authors 
+requested the 
+·dataset and codebook 
+and signed s user 
+agreement 
+form 
+in accordance 
+With procedures. This study was 
+exempt 
+from human subjects review 
+·bythe Temple University 
+Institutional 
+Review 
+Board 
+Appendix 1 
+·Adverse Childhood 
+Experiences Seale 
+2011-2012 
+National 
+Survey of Children's 
+Health· 
+1 
+Economic 
+hardship (ving 
+in 
+a household 
+that often had di 
+basic 
+necessities 
+such as 
+housing of food) 
+Living with a 
+parent who 
+was 
+divorced or 
+separated since 
+the 
+·hik·s 
+bith 
+Living with 
+parent who died 
+Living with 
+a parent who served time 
+in jai after 
+the 
+hil 
+was 
+born 
+·Witnessing intimate 
+partner 
+violence 
+·Witnessing or 
+was 
+the victim 
+of violence 
+in thei neighborhood 
+Living with 
+someone 
+who was mentally il, suicidal, or severely 
+for moe 
+than a coupe of weeks 
+Living with 
+someone 
+who had a problem with aleohol 
+or drugs 
+Having been 
+discriminated against 
+ecause 
+of raclethnizity 
+culty 
+·National 
+Survey of Children's 
+Health (2012). Child 
+and Adolescent 
+Health 
+Measurement 
+Initiative 
+(CAHMI), 
+2011-2012 NSCH: 
+Child 
+Health 
+Indicator and 
+Subgroups SAS Codebook, 
+Version 
+1.0", 
+2013, 
+Data 
+Resource 
+Center for Child 
+and Adolescent 
+Health, spensored by 
+the Maternal and 
+Child Health 
+Bureau, 
+Retrieved 
+December, 
+02,2015 
+from 
+Appendix 2 
+Neighborhood variable 
+Neighborhood 
+amenitiesdetract- 
+Ameri 
+ing elements 
+places and things 
+sre 
+available to 
+children 
+in 
+your neighborhood, 
+even 
+if 
+[CHILD'S NAME} does not 
+sctally 
+use them 
+1. Sidewalks 
+or walking paths? 
+park 
+or 
+playgroundarea? 
+3. A recreation 
+center 
+community 
+·center, 
+oF boys· or 
+4. A library or bookmobile? 
+DETRACTING. 
+5. Is there 
+litter 
+or 
+garbage onthe 
+or sidewall? 
+6. How about poorly kept or 
+Aiapidated housing? 
+7. How about vandalism 
+suchas, 
+broken 
+windows 
+or grit? 
+Amenities: 
+counts 
+how 
+many 
+of 
+{our amenities 
+are 
+presen 
+in 
+the children·s 
+neighborhoods 
+counts 
+how many of| 
+the 
+detracting elements 
+are 
+present in children's 
+neighbor. 
+hoods 
+D Springer 
+Neighborhood social 
+support 
+Soa 
+·The threshold 
+for living ina 
+supportive neighborhood is 
+mean 
+score 
+of 
+225 or higher, 
+indicating that 
+no 
+more 
+than 
+·one 
+item 
+responses 
+was 
+one 
+of 
+the 
+·disagree· 
+options 
+Support 
+Respondents were 
+asked whether 
+they strongly agree, 
+somewhat 
+·agree, somewhat 
+disagree, or 
+strongly disagree with 
+each 
+statement. 
+Only children 
+with 
+Valid responses 
+ona 
+least 
+·hee 
+items 
+ae 
+included 
+inthe 
+·To score 
+this indicator, 
+item 
+responses 
+are assigned values 
+(1-4 
+and an average 
+is caleu- 
+lated 
+for eligible 
+cases 
+in 
+my neighborhood 
+help each other out· 
+watch out 
+foreach 
+other's 
+children 
+inthis 
+neighborhood· 
+3."There 
+are 
+people Ican 
+count 
+·on 
+in 
+this neighborhood.· 
+my child 
+were 
+outside play- 
+ing and got hurt or scared, there 
+are adults nearby who Trust 
+to 
+my chil·? 
+·Although we controlled for 
+variables, we 
+did not 
+include 
+these 
+variables 
+in 
+our 
+tables 
+or 
+manuscript 
+text 
+fora 
+vareny 
+of 
+reasons. 
+our 
+primary 
+focus 
+was 
+on 
+the relationship between 
+ACEs and accesso 
+diagnosis. Secondly. the magnitude and 
+direction 
+ofthe 
+association 
+between neighborhood context 
+and access to 
+dias- 
+nosivservces 
+was largely non-significant and 
+dificult to 
+imerpret 
+due 
+to conficting results. By far, the most 
+powerful residential 
+variable 
+·was mobility, which 
+we reported in 
+our 
+table 
+and manuscript. We 
+plan 
+todo 
+additional 
+analyses 
+and focus 
+on neighborhood 
+context 
+in 
+& 
+subsequent manuscript 
+References 
+Andersen, R. M. 
+(1995). Revisiting the behavioral 
+model and acess to 
+·medical 
+care: 
+Does it matter? Journal 
+of Health & Socal 
+Behav 
+for 
+36(1), 
+1-10. 
+Auslander, W. 
+F, Thompson, 
+S.J, Dreitzer, D. & 
+Santiago, 
+J.V. 
+(1997). 
+Mothers 
+with 
+medical 
+care: 
+Perceptions of 
+·acim, 
+family 
+stress, and 
+medical outcomes 
+in children 
+with 
+di- 
+betes. Health 
+& Social 
+Work, 22(3), 190-199. 
+Balisreri,K. 
+S. (2015), Adverse 
+childhood 
+experiences, 
+the medical 
+·home, and 
+child 
+well-being. Maternal and 
+Child Health 
+Jour
+19{11), 
+2492-2800. 
+Berg. K.L., 
+Shiu, C.S., 
+Acharya, K., 
+Stolbach, 
+B.C., & 
+Msall, 
+M 
+E, (2016). Disparities in adversity 
+among 
+children 
+with 
+autism 
+spectrum 
+disorder: 
+population-based study. Developmental 
+Medicine 
+& Child Neurology, 58(11), 
+124-1131 
+Boyle,C.A., 
+Boulet, S.,Schieve, 
+R.A. Blumberg. 
+·Yeargn-Allsopp. ML... 
+Kogan, 
+M.D. 2011). Trends 
+inthe 
+alence of 
+developmental disabilities 
+in 
+US cldren, 
+1997-2008. 
+Pediatrics 
+12716), 1034-1082 
+Braverman, P.A., 
+Cubbin, C, 
+Egerter, S., 
+Chideya, S., 
+Marci, K. 
+. 
+M., & 
+Posner, S. (2005), Socioeconom
+status 
+in 
+health 
+research: 
+One size 
+does 
+nt fal. 
+The Journal of 
+American Med
+·eal 
+Association, 2942), 
+2879-2888. 
+Bynum, L., Griffin, ., 
+Ridings, D. 
+L.. Wynkoop, K. 
+S.. Anda, R. 
+F, Edwards, 
+Croft, 3 
+B. (2010). 
+Adverse 
+childhood 

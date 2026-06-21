@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Change Tasks V5 — v0.10 → final — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.55; padding: 32px 20px 80px; font-size: 14px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); color: white; border-radius: 10px; padding: 28px 34px; margin-bottom: 22px; }
+  .header h1 { font-size: 1.5rem; font-weight: 800; }
+  .header .sub { opacity: 0.9; font-size: 0.95rem; margin-top: 4px; }
+  .header .meta { font-size: 0.8rem; opacity: 0.85; margin-top: 10px; display:flex; gap:16px; flex-wrap:wrap;}
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 22px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #1b5e20; color: #fff; }
+
+  .resolved { background: #e8f5e9; border: 1.5px solid #a5d6a7; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; }
+  .resolved h3 { color: #1b5e20; margin-bottom: 8px; font-size: 0.95rem; }
+  .resolved ul { list-style: none; }
+  .resolved li { padding: 3px 0; font-size: 0.86rem; display:flex; gap:8px; align-items:flex-start;}
+  .resolved li::before { content: "✅"; flex-shrink:0; }
+
+  .chapter { background: white; border-radius: 10px; margin-bottom: 24px; border: 1px solid #dde3ee; overflow: hidden; }
+  .chapter-head { padding: 16px 22px; color: white; }
+  .ch-refs   { background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%); }
+  .ch-cover  { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
+  .ch-slide  { background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); }
+  .ch-opt    { background: linear-gradient(135deg, #455a64 0%, #607d8b 100%); }
+  .chapter-head h2 { font-size: 1.15rem; font-weight: 800; }
+  .chapter-head .pts { font-size: 0.82rem; opacity: 0.95; margin-top: 4px; }
+  .chapter-body { padding: 18px 22px; }
+  .summary-block { background: #f0f3f9; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 0.88rem; }
+  .pts-pill { display:inline-block; background:#fff3e0; color:#bf360c; border:1.5px solid #ffb74d; border-radius:14px; padding:3px 12px; font-weight:800; font-size:0.78rem; margin-left:8px;}
+
+  .task { border: 1px solid #e0e4ee; border-radius: 8px; margin: 14px 0; overflow: hidden; }
+  .task-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fafbfd; border-bottom: 1px solid #eef1f7; flex-wrap: wrap; }
+  .task-id { font-family: 'Courier New', monospace; font-weight: 800; color: #0d2240; font-size: 0.84rem; }
+  .prio { padding: 2px 9px; border-radius: 10px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .pr1 { background:#ffcdd2; color:#b71c1c;} .pr2 { background:#ffe0b2; color:#bf360c;} .pr3 { background:#fff8e1; color:#ef6c00;} .pr4 { background:#e8f5e9; color:#2e7d32;}
+  .task-title { font-weight: 700; font-size: 0.9rem; }
+  .est { margin-left:auto; font-size:0.74rem; color:#888; font-weight:700;}
+  .task-body { padding: 12px 14px; font-size: 0.87rem; }
+  .diff { margin: 10px 0; }
+  .diff .lab { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+  .before { background: #fff5f5; border-left: 3px solid #e53935; padding: 8px 12px; border-radius: 0 5px 5px 0; margin-bottom: 8px; }
+  .before .lab { color: #b71c1c; }
+  .after { background: #f1f8f1; border-left: 3px solid #43a047; padding: 8px 12px; border-radius: 0 5px 5px 0; }
+  .after .lab { color: #1b5e20; }
+  .mono { font-family: 'Courier New', monospace; font-size: 0.85em; }
+  .note { background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:9px 13px;font-size:0.83rem;margin:8px 0;}
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .order { background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:8px;padding:14px 18px;margin-bottom:22px;font-size:0.88rem;}
+  .order h3 { color:#1b5e20; margin-bottom:6px; }
+  ol.steps { margin-left:20px; } ol.steps li { margin:3px 0; }
+  .refslide { border:1px solid #d6dcea; border-radius:8px; margin:10px 0; overflow:hidden;}
+  .refslide-h { background:#ede7f6; color:#4a148c; padding:7px 12px; font-weight:800; font-size:0.8rem;}
+  .refslide-b { padding:10px 14px; font-size:0.82rem; line-height:1.7;}
+  .addline { background:#f1f8f1; border-left:3px solid #43a047; padding:6px 10px; margin:5px 0; border-radius:0 4px 4px 0;}
+  .addline b { color:#1b5e20;}
+  .footer { text-align:center; font-size:0.78rem; color:#888; margin-top:30px; padding-top:14px; border-top:1px solid #dde3ee;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Detailed Change Tasks — V5</h1>
+    <div class="sub">v0.10 → final · Case "Tommy" · Module 4 Part A</div>
+    <div class="meta"><span>Student 5779906</span><span>3 June 2026</span><span>1 × P1 · 2 × P2 · 1 × P3 · 2 × optional</span><span>Total effort ≈ 20 min</span></div>
+  </div>
+
+  <div class="resolved">
+    <h3>Already resolved in v0.10 (no action needed)</h3>
+    <ul>
+      <li>Reference duplicates cleared — Berg single, Dinkler removed, Donaldson no longer doubled.</li>
+      <li>Uncited padding removed — Cross, Hostinar, Kieling, Shakiba, Tottenham &amp; Galván, Valrie deleted.</li>
+      <li>Six recommended sources promoted and cited correctly — Poulain (S2), Roos + Lund + Granqvist (S3), Crouch + Baker (S5) — each appears in-text <em>and</em> in the bibliography.</li>
+      <li>End slide removed — the conflicting "A Biopsychosocial Analysis" subtitle is gone.</li>
+      <li>Ligature glitch gone — PPTX text is clean ("hitting", "attention", "critical"); it was a tommy9 PDF-export artifact only.</li>
+      <li>Reiss (2019) now has a matching bibliography entry for its in-text citation.</li>
+    </ul>
+  </div>
+
+  <div class="order">
+    <h3>Recommended order before recording</h3>
+    <ol class="steps">
+      <li><strong>V5-R-T1</strong> — add the 9 missing book/report references (the only P1; ~12 min).</li>
+      <li><strong>V5-R-T2</strong> — fix the Weerasekera year (~1 min).</li>
+      <li><strong>V5-Cover-T1</strong> + <strong>V5-S4-T1</strong> — cover date + "advercity" typo (~2 min).</li>
+      <li>Then record. V5-R-T3 (surplus cleanup) and the two optional items are upside only.</li>
+    </ol>
+  </div>
+
+  <div class="nav">
+    <a href="#refs">Refs (P1)</a>
+    <a href="#weera">Weerasekera</a>
+    <a href="#surplus">Surplus</a>
+    <a href="#cover">Cover</a>
+    <a href="#s4">Slide 4</a>
+    <a href="#optional">Optional</a>
+  </div>
+
+  <!-- REFERENCES -->
+  <div id="refs" class="chapter">
+    <div class="chapter-head ch-refs">
+      <h2>Chapter 1 — Add the 9 missing references (Refs 1/3–3/3) <span class="pts-pill">Possible points gained: +8–12 / 200</span></h2>
+      <div class="pts">The last citation-integrity gap. Every missing source is a book, report, or guideline.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="summary-block">
+        v0.10 reconciled the journal-article citations, but <strong>9 cited sources are still missing from the bibliography</strong> — all of them grey literature (books / reports / a clinical guideline), which the Zotero auto-export skipped. Three are foundational (★). Add them by hand in alphabetical position. Entries below are paste-ready in the deck's Harvard style — confirm against your own copy before pasting.
+      </div>
+
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-R-T1</span><span class="prio pr1">P1 Critical</span>
+          <span class="task-title">Insert the 9 grey-literature references</span>
+          <span class="est">~12 min</span>
+        </div>
+        <div class="task-body">
+
+          <div class="refslide">
+            <div class="refslide-h">Refs 1/3 (slide 8, A–D) — insert 4</div>
+            <div class="refslide-b">
+              <div class="addline"><b>Achenbach, T.M. &amp; Rescorla, L.A. (2001)</b> <i>Manual for the ASEBA School-Age Forms &amp; Profiles.</i> Burlington, VT: University of Vermont, Research Center for Children, Youth, &amp; Families. &nbsp;<b>[★ place at very top, before Arpino — S1 fn 1]</b></div>
+              <div class="addline"><b>Bongers, I.L., Koot, H.M., van der Ende, J., &amp; Verhulst, F.C. (2004)</b> Developmental Trajectories of Externalizing Behaviors in Childhood and Adolescence. <i>Child Development,</i> 75 (5), 1523–1537. &nbsp;<b>[after Blakemore — S1 fn 4]</b></div>
+              <div class="addline"><b>Bowlby, J. (1969)</b> <i>Attachment and Loss, Vol. 1: Attachment.</i> London: Hogarth Press. &nbsp;<b>[★ after Bongers — S3 fn 12]</b></div>
+              <div class="addline"><b>Bronfenbrenner, U. (1979)</b> <i>The Ecology of Human Development: Experiments by Nature and Design.</i> Cambridge, MA: Harvard University Press. &nbsp;<b>[★ after Bowlby — S2 fn 2]</b></div>
+              <div class="addline"><b>Center on the Developing Child (2007)</b> <i>The Science of Early Childhood Development.</i> Cambridge, MA: Harvard University. Available from: https://developingchild.harvard.edu (Accessed 3 June 2026). &nbsp;<b>[after Card, before Chasnoff — S3 fn 11]</b></div>
+            </div>
+          </div>
+
+          <div class="refslide">
+            <div class="refslide-h">Refs 2/3 (slide 9, F–M) — insert 1</div>
+            <div class="refslide-b">
+              <div class="addline"><b>Main, M. &amp; Hesse, E. (1990)</b> Parents' unresolved traumatic experiences are related to infant disorganized attachment status. In: Greenberg, M.T., Cicchetti, D. &amp; Cummings, E.M. (eds.) <i>Attachment in the Preschool Years.</i> Chicago: University of Chicago Press, 161–182. &nbsp;<b>[after Macneil, at the end of this slide — S3 fn 10]</b></div>
+            </div>
+          </div>
+
+          <div class="refslide">
+            <div class="refslide-h">Refs 3/3 (slide 10, M–Z) — insert 3</div>
+            <div class="refslide-b">
+              <div class="addline"><b>Shonkoff, J.P. &amp; Phillips, D.A. (eds.) (2000)</b> <i>From Neurons to Neighborhoods: The Science of Early Childhood Development.</i> Washington, DC: National Academy Press. &nbsp;<b>[after Roos, before SIGN — S2 fn 4]</b></div>
+              <div class="addline"><b>SIGN (2019)</b> <i>Children and young people exposed prenatally to alcohol (SIGN 156).</i> Edinburgh: Scottish Intercollegiate Guidelines Network. &nbsp;<b>[after Shonkoff, before Tadanki — S3 fn 7]</b></div>
+              <div class="addline"><b>van der Kolk, B.A. (2014)</b> <i>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma.</i> New York: Viking. &nbsp;<b>[after Ungar &amp; Theron, before Weerasekera — S1 fn 5]</b></div>
+            </div>
+          </div>
+
+          <div class="note">After inserting, every superscript on S1–S5 resolves to a visible entry. That closes the P1 entirely. The three reference slides will be near-full — if any slide overflows, the cleanup in <strong>V5-R-T3</strong> frees room.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEERASEKERA -->
+  <div id="weera" class="chapter">
+    <div class="chapter-head ch-refs" style="background:linear-gradient(135deg,#ef6c00 0%,#fb8c00 100%);">
+      <h2>Chapter 2 — Weerasekera year mismatch <span class="pts-pill">Citation accuracy</span></h2>
+      <div class="pts">Slides and bibliography disagree on the year.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-R-T2</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Make the Weerasekera year consistent</span>
+          <span class="est">~1 min</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>S1 fn 7 and S4 fn 1 cite <span class="mono">(Weerasekera, 1996)</span> · bibliography lists <span class="mono">Weerasekera, P. (1993) Formulation: A Multiperspective Model. Can J Psychiatry 38(5):351–358</span></div>
+            <div class="after"><div class="lab">After (simplest)</div>Change both in-text superscripts to <strong>(Weerasekera, 1993)</strong> so they match the entry already on the slide (and it is the PubMed-verifiable article, PMID 8348476). <em>Alternatively</em>, if you specifically used the 1996 book <i>Formulation and Treatment Planning</i>, keep 1996 in-text and add that book to the bibliography — but don't leave the two years disagreeing.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SURPLUS -->
+  <div id="surplus" class="chapter">
+    <div class="chapter-head ch-slide">
+      <h2>Chapter 3 — Uncited surplus cleanup <span class="pts-pill">Optional tidy</span></h2>
+      <div class="pts">Three entries are in the bibliography but cited nowhere.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-R-T3</span><span class="prio pr2">P2 High</span>
+          <span class="task-title">Resolve the three remaining uncited entries</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <ul style="list-style:none;">
+            <li style="padding:5px 0;border-bottom:1px solid #f0f3f9;"><strong>Reiss, F. (2013)</strong> — now redundant: the cited version is Reiss et al. (2019). <strong>Delete the 2013 entry</strong> (or switch the S2 fn 8 citation to 2013 and delete 2019 — keep only one).</li>
+            <li style="padding:5px 0;border-bottom:1px solid #f0f3f9;"><strong>Donaldson et al. (2025)</strong> — cited on no slide. <strong>Delete</strong>, unless you add it to a "transition to secondary school" point.</li>
+            <li style="padding:5px 0;"><strong>Ungar &amp; Theron (2020)</strong> — strong resilience source (resilience as multisystemic / environmental, M4 W2). <strong>Either cite it on S5</strong> next to Masten (the "resilience is environmental, not a trait" line) <strong>or delete it.</strong> Recommended: cite it — it directly reinforces your S5 argument.</li>
+          </ul>
+          <div class="note">Deleting these also frees space on the reference slides for the 9 additions in V5-R-T1.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COVER -->
+  <div id="cover" class="chapter">
+    <div class="chapter-head ch-cover">
+      <h2>Chapter 4 — Cover sheet (slide 1) <span class="pts-pill">Compliance</span></h2>
+      <div class="pts">Carried over un-fixed from tommy9.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-Cover-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Correct "Date Submitted"</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div><span class="mono">Date Submitted: 2026-04-13</span> … <span class="mono">Signed: 5779906 &nbsp; Date: 2026-06-15</span></div>
+            <div class="after"><div class="lab">After</div>Set "Date Submitted" to the recording/submission date (e.g. <span class="mono">2026-06-15</span>) to match the signature line. Deadline: 15 June 2026, 10:00.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div id="s4" class="chapter">
+    <div class="chapter-head ch-slide">
+      <h2>Chapter 5 — Slide 4 typo <span class="pts-pill">Communication</span></h2>
+      <div class="pts">Carried over un-fixed from tommy9.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-S4-T1</span><span class="prio pr3">P3 Medium</span>
+          <span class="task-title">Fix "advercity"</span>
+          <span class="est">~30 sec</span>
+        </div>
+        <div class="task-body">
+          <div class="diff">
+            <div class="before"><div class="lab">Before</div>"Ongoing <strong>advercity</strong> perpetuates cycle"</div>
+            <div class="after"><div class="lab">After</div>"Ongoing <strong>adversity</strong> perpetuates cycle"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTIONAL -->
+  <div id="optional" class="chapter">
+    <div class="chapter-head ch-opt">
+      <h2>Chapter 6 — Optional upside <span class="pts-pill">Curriculum depth</span></h2>
+      <div class="pts">Both restore content present in earlier versions; check notes before deciding.</div>
+    </div>
+    <div class="chapter-body">
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-S3-T1</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Name Fonagy / mentalizing explicitly (M4 W4)</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <p>S3 covers hostile misattribution via Lee &amp; Hoaken, but the curriculum's <strong>mentalizing</strong> concept (Fonagy) is not named. Note that Fonagy is already a co-author on the Granqvist (2017) entry you now cite — you could add a half-line in the relational column: <em>"impaired mentalizing → neutral cues misread as hostile."</em> No new reference strictly required.</p>
+        </div>
+      </div>
+      <div class="task">
+        <div class="task-head">
+          <span class="task-id">V5-Notes-T1</span><span class="prio pr4">Optional</span>
+          <span class="task-title">Re-add Continuum of Need verbal mention (M4 W3)</span>
+          <span class="est">~2 min</span>
+        </div>
+        <div class="task-body">
+          <p>Earlier versions named the Continuum of Need (Universal → Selective → Indicated → Specialist) in the S5 notes. If it is no longer there, a single spoken line — e.g. <em>"these supports span the continuum of need, from universal free school meals to targeted LSA work"</em> — restores a W3 link cheaply. <span style="color:#888;">(Verify against the v0.10 notes pane — the speaker notes were not re-extracted this pass.)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Essay Fabrik — Detailed Change Tasks V5 — v0.10 → final — Module 4 Part A — 3 June 2026 · Egbert
+  </div>
+
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-03 19:14 &middot; Essay Fabrik</div></body>
+</html>

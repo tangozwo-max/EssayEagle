@@ -1,0 +1,6387 @@
+Clinical Child and Family 
+Psychology 
+Review (2023) 26:957-974 
+® 
+Examining the Association 
+Between Digital Stress Components 
+and Psychological Wellbeing: A Meta-Analysis 
+Devanshi 
+Khetawat· 
+-RicG. 
+Steele'® 
+Accepted: 19 June 2023 / Published 
+July 2023 
+(©The 
+Authors, 
+under 
+exclusive 
+licence 
+to Springer Science+Business 
+Media, 
+LC, 
+Spinger Nature 
+2023 
+Abstract 
+Extant 
+research 
+suggests that digital stress 
+(DS) and its 
+various 
+components (Hall et al. in Psychol Assess 33(3):230-242, 
+2021) may mediate the 
+association 
+between 
+social 
+media 
+use and 
+psychosocial distress 
+among adolescents 
+and young 
+adults, 
+Yet 
+no systematic 
+and meta-analysis has been conducted 
+to 
+examine 
+the direct 
+associations 
+among 
+DS components 
+approval anxiety, availability stress, 
+fear of missing 
+out 
+(FOMO}, 
+connection 
+overload, 
+and online 
+vigilance) and 
+psychological outcomes. 
+Thus, 
+we 
+aimed 
+to comprehensively synthesize and quantify 
+the association 
+between 
+these five 
+DS components 
+and psychosocial distress, and to 
+examine 
+whether 
+these associations 
+were 
+statistically different 
+from 
+one 
+another. 
+Our search of PubMed, PsycINFO, and Communication and 
+Mass Media 
+Complete 
+yielded a 
+wide range of 
+article 
+abstracts 
+across 
+the five 
+DS components. 
+After 
+reviewing 
+inclusion 
+and exclusion 
+criteria, 
+7, 73, 60, 19, and 
+16 studies 
+·were 
+included 
+for availability stress, 
+approval anxiety, FOMO, 
+connection 
+overload, 
+and 
+online 
+vigilance, 
+respectively. The 
+results suggested that all five digital stress 
+components had significant medium 
+association 
+with psychosocial distress (r=.26 
+to 
+34; p-<.001). Age and 
+sex 
+did 
+not significantly moderate 
+the association 
+between 
+most 
+digital stress 
+components 
+and, 
+psychosocial distress. 
+However, 
+age moderated 
+the association 
+between 
+connection 
+overload 
+and psychosocial distress. 
+Our 
+findings further 
+suggested no 
+statistical 
+differences 
+among 
+the associations 
+between 
+the five digital stress 
+components 
+and 
+psychosocial distress. 
+Notwithstanding its limitaticns, 
+our 
+outcomes 
+help integrate the disparate effect 
+sizes 
+in the literature, 
+indicate 
+the strength of associations, 
+and suggest directions for 
+clinical 
+intervention 
+and future 
+research. 
+Keywords Digital stress 
+- 
+Social media 
+use - 
+Availability stress - 
+Approval anxiety - Fear 
+of missing out 
+(FOMO) 
+Connection 
+overload 
+Online 
+vigilance 
+·The reach and popularity of social 
+media 
+has risen 
+rapidly 
+·ver 
+the last decade, and Social 
+Media 
+Use (SMU) is par- 
+ticularly 
+pervasive 
+among 
+adolescents 
+and 
+young 
+adults 
+(Rideout 
+et al., 2022), 
+Recent 
+surveys 
+suggest 
+that 
+most 
+teens 
+report being on 
+social 
+media daily (92%), and many 
+report 
+being 
+on 
+social 
+media 
+·almost 
+constantly· 
+(Pew 
+Research 
+Center, 
+2018; 
+Vogels et al., 
+2022). Notably, the 
+COVID-19 pandemic 
+and 
+associated social 
+distancing 
+regu- 
+lations 
+restricted 
+adolescents· 
+and young adults· 
+face-to-face 
+·engagements (Marciano 
+etal, 
+2022), Research 
+suggests that 
+inability to 
+interact 
+with 
+peers through other 
+means 
+signifi- 
+cantly bolstered 
+SMU 
+as people could 
+interact 
+with 
+others, 
+RieG, 
+Stele 
+eda 
+"Clinical 
+Child Psychology Program, University of Kansas, 
+1000 Sunnyside 
+Avenue, 
+Suite 2010, Lawrence, 
+KS 6605, 
+USA 
+keep in touch, share updates about their life, and build and 
+sustain 
+social 
+interactions 
+and relationships 
+(Ham 
+ton 
+et al., 
+2022). Indeed, 
+one 
+meta-analysis suggested that 
+SMU 
+among 
+adolescents 
+increased 
+during the pandemic, 
+with some 
+reports of 
+adolescents spending four 
+to 
+six 
+hours 
+online 
+for recreational 
+purposes 
+daily (Marciano 
+et al., 
+2022), 
+Due 
+to the overwhelming 
+popularity 
+and presence 
+of 
+social 
+media among 
+adolescents 
+and young adults, concerns 
+about 
+its potential deleterious 
+effects 
+have grown 
+among 
+ents, advocacy groups, 
+and the popular press (e.g., Barry 
+et al., 2017; 
+United 
+States Surgeon General, 
+2023). Yet 
+despite these 
+concerns, 
+research 
+suggests relatively small 
+and 
+mixed 
+associations 
+between 
+social 
+media 
+use 
+(SMU) 
+and 
+indicators 
+of psychosocial 
+distress 
+and wellbeing. 
+For example, in 
+a systematic 
+narrative 
+review 
+examining 
+the association 
+between 
+SMU 
+and subjective wellbeing in 
+adolescents, Best etal. 
+(2014) reported that although SMU 
+D 
+Springer 
+958 
+·Clinical Child and Family Psychology Review 
+(2023) 
+26:957-974 
+Table Diverse 
+terms 
+employed for 
+digital 
+stress 
+and 
+its 
+components (Hall 
+eta, 2021; 
+Steele 
+etal, 2020) 
+·Concept 
+·Terminologies 
+Digital stress 
+·Technostress 
+(Brod, 
+1984), Comput anxiety 
+(Wang 
+et al, 
+2008), 
+Social media fatigue 
+(Bright 
+etal, 
+2015), Facebook: 
+induced 
+stress 
+(Campisi ct al, 
+2012), Socal 
+network 
+effect (Saxton & Wang, 2014), SNS Exhaustion 
+(Lo, 2019) 
+Availabilty 
+Mobi 
+entrapment (Baron, 
+208), 
+Mobile 
+maintenance 
+expectations 
+(Hall & Baym, 2012), Perpetual 
+mobile 
+(Kneidinger 
+Miler, 
+2017), Aecesbility 
+stress 
+(Thomée eal, 2010), Continuous connectednes
+(Lupinace
+2021), 
+Social pressure (Halfmann & Rieger, 2019) 
+Social comparison 
+(Fox & Moreland, 
+2015) 
+), status 
+seeking (Lampe! &Bhal 
+Approval stress 
+FOMO 
+·Connection 
+overload 
+Communication 
+lod 
+(Reinecke & Bien, 
+·overload 
+(Misra & 
+Stokols, 2012) 
+Online 
+Habit 
+(Reinecke cal, 
+2018) 
+). 
+sef-presentation (Morin-Major 
+eta, 
+2016; Rui & 
+Ste 
+2007 
+Perceived 
+isolation 
+(Primack et, 
+2019), socal 
+exclusion 
+David and Roberts (2017) 
+017), Social information overload 
+(Hefner & Vorderer, 
+2016), Information 
+2016) 
+|, Ned to 
+helong/need for 
+popularity 
+(Beyens et 
+Monitoring (Reinecke 
+eta, 
+2018), Permanently connected 
+(Vorderer 
+et a, 2016), Nomophobia (Wolfers 
+eta, 2020), 
+associated 
+with 
+increased depressive symptoms, 
+social 
+isolation, and 
+cyber-bullying in 
+some 
+studies, it was 
+associ- 
+ated with 
+increased 
+self-esteem, 
+perceived social support, 
+increased 
+sense 
+of belonging, and enhanced 
+self-disclosure 
+in others. 
+Similar 
+outcomes 
+have been reported in 
+recent 
+quanti- 
+tative 
+meta-analyses. For example, 
+in 
+their 
+meta-ar 
+Of the association 
+between 
+SMU 
+and positive 
+and. 
+wellbeing, Hancock 
+et al. (2019) 
+found small 
+but signifi- 
+·cant 
+associations 
+between 
+SMU 
+and symptoms 
+of anxiety 
+(r=0.11, 
+p<0.01) 
+and depressive symptoms 
+(r=0.13, 
+P<0.01). However, 
+they also reported 
+a si 
+ciation 
+between 
+SMU 
+and 
+relational 
+wellbeing 
+(r=0.13, 
+p<0.01). Similarly, in 
+a 
+meta-review 
+of 34 systematic 
+reviews 
+and meta-analyses, Meier 
+and Reinecke 
+(2020) 
+found 
+small 
+to medium 
+(Z=0.25 
+to 0.5) 
+effect 
+sizes 
+for the 
+association 
+between 
+computer 
+mediated 
+communication 
+(CMC) and internalizing 
+symptoms. 
+However, 
+they also 
+found 
+small 
+to medium 
+effect 
+sizes 
+between 
+CMC 
+and indi- 
+cators 
+of wellbeing, such 
+as increased 
+relational 
+wellbeing 
+and social capital 
+(Z=0.20 
+to 0.40). Overall, 
+such studies 
+suggest thatthe 
+association 
+between 
+SMU 
+and psychosocial 
+outcomes 
+is complex and subject to user-specific interven- 
+ing variables. 
+Digital Stress 
+Perhaps explaining the mixed 
+findings in the literature, 
+some 
+authors 
+have suggested that the association 
+between 
+SMU 
+and psychosocial outcomes 
+is mediated 
+or 
+moder- 
+ated by a construct 
+known 
+as digital stress 
+(e.g., Hall 
+et al, 
+2021; Hefner & 
+Vorderer, 2016; Reinecke 
+et al, 2018; Yang 
+et al., 2023). Digital stress 
+(DS) is defined 
+as ·the 
+stress 
+and anxiety 
+that 
+accompanies 
+notifications 
+from 
+and 
+use 
+of informational 
+and communication 
+technologies enabled 
+through mobile 
+and social 
+media· 
+(Steele et al., 2020: p. 16). 
+D Springer 
+Consistent 
+with 
+Lazarus 
+and Folkman·s 
+(1984) stress 
+and 
+coping 
+framework, 
+DS 
+is described 
+as 
+a subjective experi- 
+tence 
+which 
+is predicated on people's coping 
+resources 
+and 
+environmental, 
+social, 
+and relational 
+demands. 
+Essentially, 
+when there 
+isa discrepancy between 
+ones 
+coping 
+resoure: 
+and the amount 
+of digital input, such that the social 
+media 
+input exceeds 
+ones 
+existing 
+resources 
+and coping 
+strategies, 
+·one is 
+likely 
+to experience 
+higher 
+DS. Specifically, 
+Steele 
+et al, (2020) hypothesized that when 
+SMU 
+increases 
+(or is 
+accompanied by) DS, one might anticipate 
+more 
+robust 
+asso- 
+ciations 
+between 
+SMU 
+and negative psychosocial outcomes. 
+Although the literature 
+uses 
+varied 
+nomenclature 
+to refer 
+{0 the components 
+of DS (See Table 
+1), Steele 
+et al. (2020) 
+and 
+Hall etal. 
+(2021), proposed an organizing framework, 
+identifying five 
+first-order 
+factors 
+availability stress, 
+approval anxiety, 
+Fear 
+of Missing Out [FOMO], 
+connee- 
+tion 
+overload, and online 
+vigilance) that contribute 
+to a 
+sin- 
+gle higher-order DS construct. 
+Briefly, availability stress 
+is 
+defined 
+as the guilt and distress 
+stemming 
+from 
+the belief 
+that others expect one 
+to always be accessible through digital 
+·media and 
+is 
+consistent 
+with 
+Reinecke 
+and Eden's 
+(2017) 
+conception 
+of ·social 
+pressure.· Approval anxiety 
+refers 
+to 
+the stress, 
+nervousness, 
+and worry 
+about others· 
+reaction 
+to 
+·one·s post, photo, or 
+social 
+media engagement 
+and 
+is 
+com- 
+monly referred 
+as ·digital self-presentation· (Morin- 
+Maj
+etal., 2016, 
+p. 9) or 
+·social comparison· (Fox & Moreland, 
+2015, p.3). FOMO 
+relates 
+to the seeming 
+isolation 
+from 
+enjoyable events 
+and is formally defined as 
+·distress 
+result- 
+ing from 
+the real, perceived, or anticipated social 
+conse- 
+quences of 
+others 
+engaging 
+in rewarding experiences 
+from 
+which 
+one 
+is absent· 
+(Steele et 
+al., 2020, p. 19), 
+Unlike 
+the first three 
+DS components, 
+(i.e., availability 
+stress, 
+approval anxiety, 
+and FOMO), 
+connection 
+overload 
+and online vigilance are 
+not explicitly social, and have been 
+associated 
+with 
+the technological aspects of social 
+media, 
+and mobile 
+devices 
+(Hall 
+et al, 2021). Connection 
+overload 
+refers 
+to feeling overwhelmed 
+and distress 
+due 
+to 
+excessive 
+nical 
+Child and Family Psychology Review (2023) 26957-9784 
+959 
+digital input 
+notifications, alerts; LaRose 
+etal, 2014; 
+Reinecke 
+& Eden, 2017), and can 
+be thought of as the sub- 
+Jective, rather 
+than 
+the objective perception 
+of being 
+inun- 
+dated 
+by social 
+media 
+(Halfmann & Rieger, 2019). Finally, 
+online 
+vigilance 
+is defined 
+as the ·compulsive 
+checking 
+of social 
+media 
+and 
+a strong desire 
+to have 
+access 
+to one·s 
+·mobile device/phone· (Hall et al. 2021; p. 19). Halfmann 
+and Rieger (2019) proposed that 
+certain 
+platform features 
+such 
+as ·read· 
+and 
+·conversation 
+streaks· 
+might increase 
+the need 
+for visibility and connection 
+demands, 
+which 
+in 
+turn 
+might enhance 
+the perceived connection 
+overload 
+and 
+online vigilance. 
+Digital Stress 
+and Psychosocial Outcomes 
+Substantial 
+research 
+suggests an 
+association 
+between 
+each 
+of 
+the 
+first-order 
+components 
+of DS and psychosocial well- 
+being. For 
+instance, 
+availability stress 
+is associated 
+with 
+overdependence, as 
+it 
+is noted 
+that the pressure 
+and guilt 
+around 
+responsiveness 
+is correlated 
+with 
+an 
+inereased 
+emo- 
+tional 
+involvement 
+in the online 
+world 
+(Hall, 2017; 
+Hall & 
+Baym, 2012). Availability demands 
+can 
+also 
+be associated 
+with 
+increased 
+interruptions 
+in everyday activities 
+and sleep 
+(Thomée etal, 
+2012; Yang et al, 2023), 
+as well as 
+hyperten- 
+sion, 
+and increased 
+stress, 
+anxiety, 
+and worry 
+(Halfmann & 
+Rieger, 2019; Hall, 2017). Further, 
+availability stress 
+has 
+been associated 
+with 
+low subjective wellbeing 
+(Baym, 2015; 
+·Yang et al, 2023), 
+and is hypothesized to prospectively pre- 
+ict 
+in-the-moment 
+satisfaction 
+during social 
+media 
+interac- 
+tions 
+(Mai et al., 2015). 
+Approval anxiety has also been 
+associated with 
+increased 
+depressive symptoms, 
+anxiety, stress, 
+and 
+poor psychosocial 
+wellbeing (Fox & Moreland, 
+2015; Nesi & Prinstein, 
+2015), 
+Some studies 
+suggest that characteristics 
+of social 
+media, 
+such 
+as 
+·likes,· 
+·comments,· 
+and 
+online ·followers· 
+are 
+likely to make 
+users 
+aware 
+of and seek out 
+others· 
+feedback 
+and reassurance 
+(Nesi et al., 2018a), which 
+may 
+be associ- 
+ated with lower 
+life satisfaction 
+(Krasnova 
+et al., 
+2015), and 
+high rumination 
+and depressive symptoms (Fe 
+2013). Indeed, 
+Brooks 
+and Longstreet 
+(2015) found that 
+not 
+receiving 
+a desired 
+number 
+of likes 
+or 
+comments 
+on 
+one·s 
+posts and photos was 
+correlated 
+with 
+increased disappoint- 
+·ment, 
+stress, 
+and worry 
+in college students. 
+Experiencing 
+high approval anxiety 
+is also associated 
+with 
+lower 
+self- 
+worth, 
+resilience, 
+and self-compassion and higher 
+levels 
+of 
+stress 
+and anxiety (Sabik et al, 2020). 
+FOMO 
+has demonstrated 
+significant associations 
+with 
+psychosocial distress, anxiety, depressive symptoms, 
+and 
+feelings of isolation 
+and 
+loneliness 
+(Beyens et al., 2016; 
+Roberts 
+& David, 2020; Yang et al., 2023). For example, 
+Bevan 
+et al. (2012) found 
+that FOMO 
+is associated 
+with 
+increased 
+feelings of social 
+exclusion. 
+Beyens et al. (2016) 
+reported that FOMO 
+can 
+be related 
+to reduced 
+self-control, 
+sense 
+of belonging, 
+and self-esteem. 
+Moreover, 
+several 
+Studies have demonstrated 
+that social 
+media 
+users 
+with high 
+FOMO 
+are 
+more 
+likely to experience 
+low mood, compu
+social media 
+use, 
+low 
+life satisfaction, 
+reduced 
+competency, 
+and poor sleep quality (Elhai et al., 2016; 
+Wolniewicz etal, 
+2018), 
+Similarly, connection 
+overload, 
+also referred 
+to 
+as 
+com- 
+·munication 
+load (Reinecke & Eden, 2017), has been 
+associ- 
+ated 
+with 
+increased 
+social 
+anxiety, depressive symptoms, 
+stress, 
+and 
+lower 
+psychological wellbeing (e.g., LaRose 
+etal., 2014), as well as 
+feelings of disconnection 
+from 
+other 
+aspects of one·s 
+life (Lee et al., 2013). Research 
+suggests 
+that connection 
+demands 
+may be associated 
+with 
+reduced 
+daily productivity and can 
+be expressed as 
+·near· compul: 
+sion 
+or 
+social 
+media 
+addiction 
+(Reinecke & Eden, 2017). 
+Connection 
+demands 
+have also been correlated 
+with 
+reduced 
+coping 
+skills, which 
+may be associated 
+with 
+low mood and 
+poor mental 
+health (Lee et a., 2013). Connection 
+overload 
+is also associated 
+with 
+low attention 
+and concentration 
+abili- 
+ties, 
+as 
+it is potentially related 
+to increased 
+cognitive 
+burden 
+(Kamal et al., 2020). 
+Finally, online vigilance has been associated 
+with psycho- 
+logical distress 
+and anxiety 
+in some 
+studies. 
+For 
+instance, 
+LaRose 
+et al. (2014) suggest that being constantly 
+aware 
+of social 
+media 
+activities 
+can 
+burden 
+self-regulation and 
+control 
+capacities and are 
+associated 
+with physical and psy- 
+chological fatigue. Further, online vigilance has been 
+asso- 
+ted with 
+compulsive social 
+media 
+use, overdependency, 
+and negative physiological markers, such 
+as headaches, 
+heat- 
+tension, 
+or fatigue (Thomée 
+et al., 2010, 2012). It 
+is also 
+postulated to be associated 
+with 
+poor coping 
+resources 
+and 
+strategies, potentially impairing 
+one·s ability to manage 
+the 
+stress 
+online 
+(Reinecke et al, 2018). 
+Current 
+Study 
+Although 
+several 
+empirical studies 
+suggest that the 
+com- 
+ponents of DS are 
+associated 
+with 
+indicators 
+Of psychosocial wellbeing (as reviewed 
+above), the Titera- 
+ture currently lacks 
+a comprehensive 
+systematic 
+review 
+and 
+·meta-analysis of 
+such 
+associations 
+(Hall etal, 2021). 
+Whil 
+·some 
+individual 
+studies 
+associate 
+components 
+of DS with 
+poor psychosocial wellbeing (Baym, 2015; Thomée 
+et al., 
+2012), others 
+do 
+not 
+Best 
+et al., 2014). Thus, 
+the pri- 
+·mary 
+aim 
+of the 
+current 
+study is 
+to quantify the 
+associa- 
+tion 
+between 
+each 
+of the five DS components 
+identified 
+by 
+Hall et 
+al. (2021) 
+and Steele 
+et al. (2020) and 
+indicators 
+of 
+psychosocial wellbeing. 
+Since extant 
+research 
+suggests that 
+the DS components 
+are 
+more 
+likely to be associated 
+with 
+poor 
+psychosocial wellbeing (e.g., 
+Beyens et al, 
+2016; 
+Half- 
+mann & 
+Rieger, 2019; Nesi & Prinstein, 
+2015), we 
+aimed 
+© 
+springer 
+960 
+Clinical Child and Family Psychology Review 
+(2023) 
+2657-974 
+to 
+calculate 
+quantitative 
+effect 
+sizes 
+for the 
+association 
+between 
+each component 
+of DS and indices 
+of psychosocial 
+distress·a 
+crucial 
+step for comprehensively understanding 
+and consolidating the literature, 
+for theory building, and 
+for clinical 
+practice (Hall et al., 2021; LaRose 
+et a., 2014; 
+Meier 
+& Reinecke, 2020). 
+·As 
+asecondary aim, 
+the current 
+study examines 
+the mag- 
+nitudes 
+of association 
+between 
+each DS component 
+and the 
+indicators 
+of psychosocial distress. Essentially, we aimed 
+to 
+determine 
+whether 
+the DS components differentially associ- 
+ate with 
+overall 
+psychosocial distress. 
+This 
+is 
+a helpful step 
+forward, as 
+it can 
+have wide-ranging ramifications 
+for future 
+research 
+and practice (Hall, 2017; Weinstein 
+et a, 2014), 
+Outcomes 
+from 
+this 
+aim 
+may suggest that unique pathways 
+associate 
+each DS component 
+with overall psychosocial dis- 
+tress, 
+and this 
+can 
+motivate 
+further 
+research 
+into 
+investigat- 
+ing the underlying mechanisms 
+of these associations. 
+Methods 
+Literature 
+Search 
+Multiple databases, including PubMed, 
+PsycINFO, and 
+·Communication 
+and Mass Media 
+Complete were 
+searched 
+to conduct 
+a comprehensive literature 
+review 
+of published 
+articles 
+that explore the association 
+between 
+the DS com- 
+ponents and psychosocial distress 
+in adolescents 
+and young 
+adults. 
+Each search consisted 
+of atleast 
+one 
+(or more) key- 
+term 
+about 
+a DS component (Table 
+1), and psychosocial 
+distress 
+variable 
+(including distress, mental 
+health 
+life 
+sat- 
+isfaction, 
+stress, anxi*, 
+depress*, and lone!*). 
+The 
+ter 
+·Social 
+Media 
+Use,· 
+·digital,· ·online,· 
+or 
+·social 
+media· 
+were 
+employed as 
+a filter 
+to 
+further 
+narrow 
+the search 
+if 
+required. Age filters 
+were 
+also employed for adolescents 
+(13-17-year-olds) 
+and young 
+adults 
+(18-25), 
+Forward 
+and 
+backward 
+searching in the reference 
+sections 
+ofthe 
+identi- 
+fied empirical articles 
+and relevant 
+qualitative studies 
+and 
+reviews 
+was 
+performed to identify 
+additional 
+articles 
+not 
+found 
+in the preliminary database 
+search. 
+Doctoral 
+disser- 
+tations 
+and conference 
+proceeding were 
+not 
+excluded 
+from 
+this 
+review. 
+The authors 
+also reached 
+out 
+to the research 
+·community 
+and commonly cited 
+researchers 
+to determine 
+·whether additional 
+studies (sil 
+in the review 
+process) could 
+be included 
+asa part 
+ofthe analysis. Further, 
+in 
+cases 
+where 
+published studies 
+did not 
+include 
+sufficient 
+information 
+for 
+inclusion 
+(c.g, age, gender, effect sizes) we 
+reached 
+out 
+to 
+study authors 
+to attempt to gather the necessary 
+information 
+for inclusion 
+in the meta-analysis. 
+Inclusion/Exclusion 
+Criteria 
+To be included 
+in 
+the analysis, articles 
+must 
+have (a) been 
+written 
+in English, (b) have been available 
+in full 
+text, 
+(©) 
+included participants 
+with 
+a mean 
+age <25 years atthe 
+time 
+of study participation, 
+(4) 
+not included 
+clinical 
+samples, and 
+(©) provided enough information 
+to calculate 
+effect 
+sizes. 
+Articles 
+must have 
+also studied 
+SMU explicitly. Any stud- 
+ies 
+measuring 
+broad 
+internet 
+use 
+were 
+excluded. 
+Further, 
+the articles 
+must 
+have measured 
+the association 
+between 
+at 
+Teast one 
+DS component 
+and psychosocial wellbeing 
+anxiety, depressive symptoms, 
+loneliness). 
+Articles 
+that 
+·measured 
+SMU 
+more 
+broadly and did 
+not address 
+a speci 
+DS 
+component (e.g., 
+see 
+Table 
+I) were 
+excluded, Article 
+·measuring 
+SMU 
+as 
+a continuous 
+variable 
+(time spent online) 
+and as 
+a categorical variable 
+(use or 
+no use) were 
+included. 
+Further, articles 
+must 
+have measured psychological wellbe- 
+ing 
+or distress 
+as 
+a continuous 
+variable 
+or 
+on 
+a Likert 
+scale. 
+Articles 
+that merely stated 
+presence 
+of psychological dis- 
+tress, 
+without 
+quantifying the distress 
+were 
+excluded. 
+Both 
+cross-sectional 
+and longitudinal 
+studies 
+were 
+included. 
+Survey 
+studies 
+(conducted 
+in-person 
+or online), 
+studies, 
+and 
+experimental 
+studies that 
+repor
+quantitative 
+test-statistics 
+(e.g., Pearson 
+or Spearman cor 
+relation, 
+regression 
+coefficients) 
+were 
+included. 
+Studies 
+that did 
+not provide quantitative 
+data allowing 
+calculation 
+of effect sizes 
+for direct 
+associations 
+were 
+excluded. 
+Articles 
+Published before 2006 
+were 
+excluded 
+because 
+of the dra- 
+·matic 
+transformations 
+in 
+the digital landscape (Valkenburg 
+etal, 2006). 
+Studies published 
+until 
+July 2022 were 
+includ
+as part of the analysis. Multiple 
+articles employing the same 
+database 
+were 
+excluded. 
+Coding of Studies 
+At least 
+two 
+trained 
+reviewers 
+independently screened 
+and 
+double 
+coded 
+all article 
+abstracts 
+and/or 
+full 
+texts 
+to deter- 
+·mine 
+whether 
+articles 
+met 
+inclusion 
+criteria. 
+Discrepancies 
+were 
+resolved 
+through discussion 
+and ultimately reaching 
+a consensus. 
+After 
+studies 
+were 
+identified, 
+the first 
+author 
+coded 
+all 
+full-text 
+articles 
+selected 
+for 
+inclusion. 
+Each 
+included 
+study was 
+coded for sample size, 
+mean 
+participant 
+age, participant 
+demographic characteristics 
+(e.g., sex, 
+eth- 
+nicity), study method 
+(e.g., cross-sectional, 
+longitudinal), 
+study mode (online questionnaire, 
+interview, observational 
+study), and SMU 
+measurement 
+(objective or subjective). 
+Further, 
+label 
+of measured 
+DS component 
+(e-g., approval 
+anxiety, 
+FOMO) 
+and 
+measured 
+indicator 
+of psychoso- 
+cial wellbeing (e-g., anxiety, depression, loneliness) 
+was. 
+coded. 
+Consistent 
+with 
+recommendations 
+in 
+the literature 
+(eg., Card, 2015), at least 25% of included 
+full-text 
+arti- 
+cles for each DS component 
+were 
+double 
+coded by a second 
+reviewer 
+to establish 
+reliability for the variables of 
+interest. 
+Child and Family Psychology Review (2023) 26:957-974 
+961 
+Quantitative 
+statistics 
+indicating the direct 
+association 
+sta- 
+tistic 
+(i.e, bivariate 
+correlations, 
+regressions, 
+t-tests, 
+and 
+effect 
+sizes, 
+and p-values were 
+recorded. 
+EndNote 
+version 
+X9 (Clarivate Analytics, Philadelphia, PA) 
+was 
+used 
+to facilitate 
+the organization 
+and coding of articles. 
+Data Analysis 
+Fisher's 
+Z was 
+employed to quantify the effect 
+size 
+of the 
+associations 
+between 
+DS components and psychosocial well- 
+being (Card, 2015). Appropriate corrections 
+for study sam- 
+ple sizes 
+(ranging between 
+20 participants 
+per study to 
+over 
+1000 participants) were 
+performed to 
+increase 
+the validity of 
+outcomes 
+(Durlak, 2009). Fisher's 
+Z coeflicients 
+were 
+trans- 
+formed 
+into 
+Pearson's 
+r values 
+for ease of 
+communication. 
+·To address 
+the primary 
+aim. 
+five separate 
+random 
+effects 
+·models 
+were 
+used to quantify the 
+association 
+between 
+each 
+DS component and 
+overall psychosocial wellbeing. Ifa 
+sin- 
+gle study assessed 
+the association 
+between 
+more 
+than 
+one 
+DS component (e-g., approval anxiety and FOMO) and 
+psy- 
+cchosocial wellbeing, then separate effect 
+sizes 
+were 
+calcu- 
+lated 
+to independently quantify the different 
+outcome 
+types. 
+Further 
+if a 
+single study examined 
+the 
+associations 
+between 
+specific 
+DS component (e.g., availability stress) and mul- 
+tiple indicators 
+of psychosocial wellbeing (e.g., anxiety, 
+depression, loneliness), then the effect 
+sizes 
+were 
+averaged 
+to compute a 
+single indicator 
+of psychosocial distress for the 
+study. Q-statisties was 
+calculated 
+for the five models 
+to test 
+for significant within-group 
+difference (Card, 2015). When 
+the Q-statistic was 
+significant 
+in 
+some 
+or all models, further 
+investigations 
+into 
+the role of 
+potential 
+moderator 
+variables 
+was 
+conducted. 
+These 
+included 
+participants· 
+age and sex. 
+·Age was 
+coded 
+in 
+mean years 
+and 
+sex 
+was 
+coded 
+as percent- 
+age of females. 
+·As recommended 
+by Card (2015), the Fail-safe N 
+statis- 
+tic 
+was 
+calculated 
+for all five random 
+effects models. 
+The 
+Fail-safe 
+N represents the number 
+of potentially excluded 
+existed 
+to lower 
+the average 
+effect 
+size 
+to 
+a nonsignificant 
+level (Rosenthal, 1979). 
+To address 
+the secondary aim 
+to determine 
+whether 
+the effect 
+sizes 
+among 
+the five components 
+of DS and psy- 
+chosocial 
+distress 
+differed) 
+an 
+additional 
+meta-analysis of 
+all studies 
+across 
+the five DS components 
+was 
+conducted, 
+in 
+which 
+all effect 
+sizes 
+were 
+entered 
+into 
+a single random. 
+effects 
+model. 
+The 
+nominal 
+DS component 
+label 
+(c.g., 
+approval anxiety, availability stress, 
+FOMO, 
+communication 
+overload, online vigilance) was 
+examined 
+as 
+a moderator 
+of 
+the effect 
+between 
+DS and psychological distress. 
+Results 
+As 
+indicated 
+in 
+Table 
+2. the initial 
+literature 
+search 
+and. 
+the subsequent forward 
+and backward 
+search 
+for each DS 
+component yielded a range of abstracts 
+for further 
+review. 
+Attempts to identify additional 
+articles 
+by reaching out 
+to 
+the research 
+community 
+yielded no 
+additional 
+articles 
+for 
+inclusion. 
+After duplicates and non-articles 
+(.g., book chap- 
+ters) were 
+removed, 
+between 
+334 and 521 unique 
+abstracts 
+remained 
+across 
+DS components. 
+Across 
+multiple 
+trained 
+reviewers, 
+abstract 
+screeners 
+had 48% (for online vigilance) 
+t0 97% (for FOMO) agreement and interrater 
+reliability was 
+fair (Cohen·s k=0.48) 
+to good 
+Sim & 
+·Wright, 2005). Discrepant abstract 
+screens 
+were 
+reconciled 
+to 
+100% agreement by consensus, 
+leaving 
+seven 
+to 73 total 
+articles 
+meeting 
+for inclusion 
+eriteria 
+across 
+the 
+five 
+DS 
+components. 
+A PRISMA 
+diagram for each DS component 
+is 
+provided in Ontine Supplement 1. Based 
+on abstract 
+sereen- 
+ing, articles 
+were 
+excluded 
+for 
+not having full texts 
+available, 
+not providing appropriate 
+statistical 
+information, not 
+appro- 
+priately measuring 
+or conceptualizing 
+the DS component, 
+and 
+not specifying the construet 
+for psychosocial distress. 
+Across 
+DS components, 
+percent agreement for coding 
+of 
+full 
+texts ranged from 96 to 72% and interrater 
+reliability 
+was 
+fair 
+studies 
+(averaging an 
+effect 
+size 
+of 
+zero) that 
+must 
+have 
+(Cohen·s k=0.51) 
+to good 
+(Cohen's 
+k=0.93). 
+Description of search 
+strategy 
+DS variable 
+Reconds 
+Abstract 
+per. 
+Cohen's 
+Studied 
+·Fulltext 
+pers 
+Fulltext, 
+sud 
+ideni-- 
+forward 
+back- 
+abstracts 
+centagree- 
+Kappa, 
+reviewed 
+in 
+cent 
+agree- 
+Cohen's· 
+included 
+fied 
+wardsearch 
+ment 
+abstracts 
+fulltext 
+ment 
+(%) 
+Kappa 
+Availability 
+45671 
+528 
+n 
+9 
+3 
+2 
+7 
+Approval = 
+os 
+9 
+2 
+2B 
+n 
+st 
+n 
+FOMO 
+«S879 
+616 
+9 
+92 
+0 
+94 
+16 
+o 
+432 
+462 
+n 
+32 
+23 
+9 
+88 
+9 
+Online 
+38825 
+43 
+6 
+48 
+9% 
+9% 
+6 
+lance 
+© 
+springer 
+962 
+(Clinical 
+Child 
+and 
+Family 
+Psychology 
+Review 
+(2023) 
+Description of 
+Included 
+Studies 
+·The publication years 
+for included 
+studies 
+for availability 
+stress 
+and connection 
+overload 
+ranged from 
+2011 
+to 2021. 
+For approval anxiety, 
+FOMO, 
+and online 
+vigilance, the 
+publication years ranged from 
+2011-2022, 
+2013-2022, 
+to 
+2015-2022, 
+respectively. Studies 
+included 
+young 
+adults 
+ranging 
+in age from 
+18 to 25 years and most 
+studiesincluded 
+a near-equal split of 
+males 
+and females. 
+All 
+studies (100%) 
+across 
+all DS components 
+measured 
+SMU through subjec- 
+tive 
+self-report questionnaires. 
+All 
+included 
+studies 
+were 
+·cross-sectional 
+by design. The majority 
+of studies (78.4%) 
+included 
+data 
+from 
+online 
+questionnaires. 
+The 
+remain- 
+ing studies 
+used questionnaire data that 
+were 
+collected 
+in- 
+person, 
+Across 
+all DS components, 
+a large proportion 
+of 
+included 
+studies 
+(87.48%) provided correlation 
+and the rest provided regression 
+A complete list 
+of 
+studies 
+included 
+across 
+each of 
+the 
+five DS components 
+is 
+included 
+in Online 
+Supplement 2. 
+·The majority 
+of studies 
+measured 
+anxiety, depression, 
+stress, 
+and loneliness 
+using 
+multi-item 
+instruments 
+with 
+·established 
+reliability and validity (e.g., Beck Depression 
+Inventory, 
+Beck 
+et al., 1987; the Perceived 
+Stress Scale, 
+Coben 
+et 
+al., 1983; Revised 
+Children 
+and Adolescents Anxi 
+ety and Depression Scale, Chorpita et al., 2000). However, 
+DS components 
+were 
+often measured 
+using ad hoc or single- 
+item 
+measures 
+for which study authors reported no reliabi 
+ity or validity estimates. 
+The majority 
+of studies 
+measuring 
+availability stress 
+(57.1%), approval anxiety (69.9%), FOMO 
+(50.3%), and connection 
+overload 
+(59.9%), and 
+a signifi- 
+cant 
+percentage 
+of the studies 
+measuring 
+online 
+vigilance 
+(43.8%) did not 
+report information 
+about 
+the reliability or 
+validity of their 
+assessment 
+tools 
+for the DS components. 
+Notable 
+exceptions 
+included 
+a minority 
+of studies that used 
+measures 
+for approval anxiety 
+(e.g., Jowa Neth- 
+erlands 
+Comparison Orientation 
+Scale, 
+Gibbons 
+& Bunk, 
+1999; the Positive Seif 
+Presentation 
+and Honest 
+entation 
+Scale, Kim 
+& Lee, 2011) and FOMO 
+(e.g., Fear of 
+Missing Out Scale, Przybylski et al., 2013). The remainder 
+of studies 
+that did present reliability and validity estimates 
+for their 
+DS instruments 
+established 
+reliability and validity 
+ost 
+hoc (ie., 
+as part of the investigation 
+included 
+in 
+the 
+·meta-analysis). Description of studies, including tke sample 
+size, 
+age, gender, information 
+about DS measurement 
+tools, 
+and outcomes 
+assessed 
+is included 
+in Online 
+Supplement 3 
+Effect Sizes 
+Effect 
+sizes 
+were 
+categorized using 
+Cohen's 
+(1988) guid- 
+ance; effect 
+sizes 
+less than 0.2 were 
+considered 
+small, effect 
+sizes 
+between 
+0.20 and 0.40 
+were 
+considered 
+medium, and 
+sizes 
+greater than 0.4 
+were 
+considered 
+large. Results 
+yielded medium 
+positive 
+associations 
+between 
+all five DS 
+D Springer 
+·study 
+Estimate 
+[95% Cl] 
+Thomée et al, 
+2011 
+Vorderer et al, 
+0.25 
+[0.22, 
+0.28] 
+0.08 
+{-0.07, 
+0.23 
+Hatfmann et 
+al, 2010 
+0.04 
+0.18] 
+Hall et 
+al,.2011 
+e+ 
+069/057, 
+0.82] 
+Hall, 2017 
+on 
+0.18 
+{-0.04, 
+0.40) 
+Reinecke et 
+al.2016 
+a 
+0.15 [ 0.10, 
+0.20} 
+Hallet 
+He 
+0441028, 
+059] 
+RE Model 
+·_· 
+0.26 [ 0.09, 0.43} 
+ma, 
+02 
+02 
+06 
+1 
+Fisherz 
+Fig. 1. 
+Forest plot for random 
+effects model 
+for availablity stress and 
+psychosocial distress 
+components 
+and indicators 
+of psychosocial distress: 
+avail- 
+ability stress 
+and psychosocial distress, 
+26, p<0.001; approval anxiety and psychosocial dis- 
+tress, 
+Fishers 
+Z=0.30, 
+r=0.29, 
+p <0.001; FOMO 
+and psy- 
+chosocial 
+distress, 
+Fisher·s 
+7=0.35, r=0.34, 
+p <0.001; 
+con- 
+nection 
+overload and 
+psychosocial distress, 
+Fisher's 
+7=0.30, 
+and online 
+vigilance and 
+psychosocial 
+distress, Fishers 
+Z=0.28, 
+r=0.27, 
+p <0.001. Forrest 
+plots 
+depicting the distribution 
+of effect sizes 
+aeross 
+the DS com- 
+ponents are 
+presented in 
+Figs. 1,2, 
+3,4, and 5 
+Model Heterogeneity 
+Three 
+measures 
+of heterogeneity were 
+calculated 
+to deter 
+mine 
+whether 
+moderators 
+ofthe 
+five models 
+noted 
+above 
+should 
+be examined: 
+the Q-statistic, 7, 
+For all five 
+DS components, 
+results 
+significant Q-statistics 
+and substantially high 7? values 
+and heterogeneity estimates 
+(·; See Table 3). Given high model heterogeneity, moders- 
+tor 
+variables 
+were 
+examined 
+for approval anxicty, 
+FOMO, 
+connection 
+overioad, and online vigilance. Moderator 
+var- 
+ables 
+were 
+not 
+examined 
+for availability stress 
+because 
+of 
+the small 
+number 
+of available 
+effect 
+sizes 
+Aguinis 
+etal, 
+2005). 
+For approval anxiety, 
+FOMO, 
+connection 
+overload, 
+examine 
+age (mean age of sample) and sex 
+(female 
+inthe 
+sample) as moderators 
+of the association 
+between 
+DS com- 
+ponents and psychological distress. 
+The analysis indicated 
+linia Child 
+and Family 
+Psychology Review 
+2023) 
+2697-978 
+963 
+Fisherz 
+= 
+= 
+= 
+teen 
+Seren 
+= 
+·· 
+· 
+= 
+EE 
+= 
+T 
+T 
+T 
+T 
+T 
+1 
+2 
+Fig.2. Fores 
+plot 
+for 
+approval anxiety 
+968 
+(Clinical Child and Family Psychology Review 
+(2023) 
+Estimate 
+[95% 
+Ci) 
+aaa 
+= 
+· 
+SERS 
+Se 
+te 
+·Tandon et al. 
+2017 
+0.47 [0.38 
+056) 
+· 
+9.390 30. 
+0.48] 
+aaa 
+Si 
+: 
+Be 
+Se 
+= 
+subsea 
+San 
+Sa 
+eas 
+Se 
+= 
+eee 
+seta 
+= 
+Franca eta, 
+2019 
+= 
+931 028 
+038 
+2019 
+7 O34 
+Yinet 
+al, 2020 
+0.37 [0 29: 
+0.44] 
+·Wonewer 
+= 
+8321035: 
+oe 
+rae 
+ra 
+re 
+· 
+=< 
+et al, 2020 
+= 
+0.40) 
+pate 
+0.31) 
+0.25 
+10.19. 0.31 
+=. 
+sake 
+Sa 
+seats 
+== 
+Se 
+ree 
+= 
+ae 
+0.24 
+029) 
+pa 
+supa em 
+oa 
+ete? 
+oa 
+Se 
+· 
+Ss 
+· 
+oe 
+sta 
+2018 
+oo 
+ed 
+0.27 
+[0.16 
+038) 
+ere 
+·" 
+= 
+DE 
+Fores plot for FOMO 
+that 
+age did 
+not 
+significantly 
+moderate 
+the 
+(r=0.01, 
+p=0.046), such that young 
+adults 
+demonstrated 
+between approval 
+anxiety, 
+FOMO, and 
+online vigilance, 
+and 
+stronger associations 
+between connection 
+overload
+and psy- 
+psychosocial distress (See Table 3). For 
+connection 
+over- 
+_chosocial distress than adolescents. The R® value indicated 
+load, however, age significantly moderated 
+the effect 
+size 
+that age explained approximately 16.5% of the observed 
+D Springer 
+linia 
+Child and Family Psychology Review 2023) 2697-978 
+965 
+Study 
+Estimate 
+[95% Cl] 
+[0.97, 
+128) 
+0.54 [ 0.46, 0.62] 
+0.52 [ 0.41, 0.62) 
+0.42 
+[ 0.33, 
+0.50} 
+0.22[0.13,031} 
+Hallet 
+al, 2021 
+Peng et al, 2019 
+- 
+Gao et al, 
+2020 
+Raza et al, 2021 
+- 
+Matthes et al, 
+2020 
+Kamal et al., 
+2020 
+0.37 [0.25, 0.48] 
+Liu et 
+al, 2021, 
+. 
+0.36 [0}29, 0.44) 
+Holletal, 
+2011 
+sa 
+0.30 
+0.17, 
+0.42} 
+Gao 
+et al., 
+2018 
+- 
+0.26 
+[ 0.18, 
+0.35] 
+·Chen et al., 
+2013 
+gy 
+0.20 
+[ 0.12, 
+0.29] 
+2016 
+0.23 
+[0.11, 
+0.36] 
+LaRose 
+etal, 
+2014 
+0.16 
+[0.08 
+0.24) 
+Chen et al, 
+2013 
+0.20 [0.12, 0.29} 
+Choiet al, 
+2016, 
+Fanetal, 
+2021'S" 
+0.09 
+023) 
+= 
+0.08 [-0.00, 0.17] 
+Reinecke 
+et 
+014 (0.02, 0.27] 
+2016 
+. 
+0.03 [-0.02, 0.08] 
+Liang et al, 
+0.03 
+[-0.11, 
+0.17] 
+RE Model 
+- 
+0.29 [0.18, 0.41] 
+05 
+0 
+05 
+1 
+18 
+Fisherz 
+Forest plot for connection 
+overload 
+·Study 
+Estimate [95% 
+Cl] 
+et al, 
+2021 
+wes 
+1.44) 
+2021 
+©· 
+Schneider 
+etal, 
+2021 
+Sant, 
+etal, 
+2022 
+ves 
+0.46 
+(031,058) 
+Gahardo 
+etal, 
+2022 
+0.33 0.44) 
+Le Roux 
+0.40] 
+Hal eta, 
+2021 
+Tomezyk 
+etal, 2022 
+Scott et a, 
+2621 
+0.29{026,033) 
+Sharma 
+eta, 
+2019 
+Freytag 
+etal, 2021 
+ve 
+0:21 
+Linet 
+31,2031 
+w 
+·johannes et al, 2018 
+0.18 
+Reinecke 
+etal, 
+2018 
+~~ 
+0.18 
+{0.08, 
+0.29) 
+Angetal, 
+2015 
+0.14 
+(0.09: 
+0.19] 
+Vordecer et 
+al, 2021-+~ 
+005 
+RE Mode! 
+= 
+0.48) 
+05 
+0 
+05 
+1 
+18 
+Fisherz 
+Fores 
+plot 
+for online 
+vigilance 
+heterogeneity between 
+connection 
+overload 
+and distress. 
+In 
+contrast, 
+sex 
+did 
+not significantly moderate 
+the effect 
+size 
+for approval anxiety, FOMO, 
+connection 
+overload, 
+or online 
+vigilance (See Table 3). 
+Publication 
+Bias 
+Funnel plots were 
+created 
+for visual 
+inspection 
+of distribu- 
+tion 
+of effect 
+sizes 
+within 
+each of the DS components 
+(see 
+Online 
+Supplement 4). For approval anxiety 
+and FOMO, 
+the funnel plots appeared to be mostly symmetric. 
+The stud- 
+ies 
+in both analyses formed 
+a cloud-like 
+structure 
+as 
+antici- 
+pated and the scatter 
+across 
+the plot appeared uniform. 
+For 
+connection 
+overload 
+and online vigilance, the funnel 
+plots 
+predominantly demonstrated 
+symmetry, 
+with 
+exception 
+of 
+one 
+outlier. 
+For availability stress, the funnel plots displayed 
+notable 
+gaps. However, 
+these plots should 
+be interpreted 
+with 
+caution 
+as gaps 
+in 
+models 
+with 
+less than 
+ten 
+studies 
+·may be due to 
+a lack of studies, rather than publication bias 
+(Sterne et 
+al,, 2011). 
+·To further 
+examine 
+publication bias, Fail-Safe 
+N statis- 
+tics 
+were 
+calculated for 
+each 
+DS component. 
+For availability 
+stress, 
+approval anxiety, 
+FOMO, 
+and connection 
+overload, 
+the Fail-Safe 
+Ns were 
+estimated 
+at 39, 81, 60, and 32, respee- 
+tively, suggesting relatively low 
+to moderate 
+risk for publi- 
+cation 
+bias. However, 
+for online vigilance, the Fail-Safe 
+N 
+·was 
+estimated 
+as 6, suggesting relatively higher risk of 
+bias. 
+Secondary 
+ur 
+secondary aim 
+was 
+to determine 
+whether 
+the effect 
+sizes 
+among 
+the five components 
+of DS and psychosocial dis- 
+tress differed across 
+components. 
+To this end, final 
+random 
+effects meta-analysis was 
+conducted, 
+which 
+consisted 
+of all 
+elfect 
+sizes 
+acroxs 
+all DS components, 
+Studies 
+were 
+sub- 
+grouped on 
+the basis of the DS component they examined. 
+The Q-statistic was 
+first calculated 
+to 
+examine 
+heterogene- 
+ity within 
+the larger sample. Following the examination 
+of 
+the Q-Statstc, 
+a moderator 
+analysis was 
+planned with 
+the 
+nominal 
+label of the DS component 
+(i... 
+approval anxiety, 
+availabilty 
+stress, 
+FOMO, 
+connection 
+overioad, and online 
+vigilance) as the moderator 
+variable. 
+·A 
+total of 180 studies 
+were 
+identified as 
+meeting inclusion 
+criteria, 
+however, 
+twenty-six 
+effect 
+sizes 
+were 
+excluded 
+from 
+this final analysis, as they were 
+derived 
+from overlapping 
+studies. 
+For instance, 
+ifa single study contributed 
+to effect 
+sizes 
+for 
+more 
+than 
+one 
+DS component, 
+such as 
+availability 
+stress 
+and approval anxiety, only one 
+effect 
+size 
+from 
+this 
+study was 
+included. 
+This 
+was 
+done to prevent duplication of 
+data within 
+our 
+study. Seven effect 
+sizes 
+were 
+included 
+for 
+availability stress, 
+66 for 
+approval anxiety, 50 
+for 
+FOMO, 
+15 
+Child Paychalogy 
+Reviews 
+(2823) 
+· 
+DSSomponent 
+Caustic 
+Fsquared (9) 
+Age 
+Gender 
+oF 
+Approvalanviety 
+985.72 
+93.33 
+0% 
+818939257 
+© 
+Connection 
+36056 
+96.08 
+38 
+Online 
+97.60 
+os 
+for connection 
+overload, 
+and 14 for online vigilance. Effect 
+size 
+in Fisher's 
+Z ranged from 0,01 
+to 0.83 and the summary 
+Fisher's Z was 
+0.31 (r=0.30, p<0.01)." 
+Prior 
+to conducting moderation 
+analyses, the Q-statistic 
+used 
+to 
+examine 
+the degree of heterogeneity among 
+the 
+total sample of studies 
+included 
+across 
+all five DS compo- 
+nents. 
+In contrast 
+to the results 
+ofthe 
+individual 
+component 
+Q-statistics noted 
+above, the overall 
+Q-statistic for the total 
+sample was 
+not significant (p=0.175). Further, 
+examination 
+of confidence 
+intervals 
+for each of the individual 
+compo- 
+nent 
+effect 
+sizes 
+indicated 
+substantial overlap 
+(See 
+Table 4). 
+Based 
+on 
+the non-significant Q-statistic and the overlap in 
+confidence 
+intervals 
+for the DS effect 
+sizes, 
+no 
+further 
+mod- 
+·eration 
+analyses were 
+conducted. 
+Discussion 
+Previous 
+research 
+has documented 
+associations 
+between 
+social 
+media 
+use (SMU) and various 
+indices 
+of psychologi- 
+cal 
+distress 
+(e.g. Best 
+et al., 2014; Hancock 
+et al., 2019; 
+Meier & 
+Reinecke, 
+2020). However, 
+the literature 
+yields 
+small 
+and 
+inconsistent 
+associations 
+across 
+studies, 
+which 
+·may suggest thatthe 
+association 
+is mediated 
+or moderated 
+by 
+user-specific 
+intervening variables, perhaps 
+including 
+digital 
+stress 
+(DS; 
+Hall 
+et al., 2021; 
+Steele 
+et al., 2020), 
+Although 
+substantial 
+research 
+has suggested significant associations 
+between 
+each of the identified 
+DS components and 
+psycho- 
+social 
+distress 
+(sce above, 
+for review), 
+no comprehensive 
+·meta-analysis has yet been conducted. 
+Thus, the primary 
+purpose 
+of the current 
+study was 
+to systematically 
+review 
+the literature 
+for studies 
+examining 
+the association 
+the five DS components proposed by Hall 
+et al. (2021) and 
+Steele etal. (2020) 
+and 
+indices 
+of psychological distress. 
+In 
+there 
+is 
+a 
+substantial 
+diference 
+in 
+the 
+summary 
+effect 
+sizes 
+between 
+primary 
+and 
+secondary 
+sim 
+for 
+comnedion 
+over 
+load and online 
+vigilance. For 
+connection 
+overioad 
+there 
+was 
+a0 
+·decrease 
+in effect 
+size 
+between 
+the primary 
+and secondary aim 
+and 
+for online 
+vigilance 
+thee 
+was 
+increase. 
+Since 
+we 
+exchded 
+three 
+studies 
+for connection 
+overload 
+and 
+two 
+for online 
+vgilaace 
+to pro- 
+tect 
+the statistical 
+power 
+of 
+stress, 
+it 
+ean 
+be inferred 
+that 
+the excluded 
+studies 
+were 
+substantially influencing the effet 
+size 
+for 
+·these factors. 
+D Springer 
+·Table 
+Secondary sim 
+summary 
+effect 
+sizes 
+with 
+confidence 
+in 
+vals 
+Digital 
+component 
+Summary 
+Fisher's 
+95% 
+Zz 
+contidence 
+interval 
+Availablity 
+stress 
+029 
+Approval anxiety 
+030 
+025-034 
+FOMO 
+035 
+031-040 
+Connection 
+overload 
+026 
+018-034 
+Online vigilance 
+034 
+022-046 
+addition, 
+the current 
+study was 
+intended 
+to 
+examine 
+these 
+associations 
+to determine 
+whether 
+individual 
+components 
+of DS 
+availability 
+stress, 
+approval anxiety, 
+FOMO, 
+connection 
+overload, 
+and online 
+vigilance) differ 
+in 
+their 
+associations 
+with 
+indices 
+of psychological distress. 
+Results 
+of this meta-analysis yielded consistent 
+effect 
+sizes 
+between 
+all 
+five components 
+of DS and 
+indices 
+of 
+psychological 
+distress. 
+Approval anxiety, 
+FOMO, 
+avail- 
+ability 
+stress, 
+connection 
+overload, 
+and online 
+vigilance 
+each 
+demonstrated 
+significant and 
+medium 
+(Cohen, 1988) 
+effect 
+sizes 
+with 
+psychological 
+distress (e.g., depressive 
+symptoms, 
+anxiety, loneliness). 
+On the one 
+hand, 
+this 
+find- 
+ing might have been expected, given 
+that 
+each component 
+hhas been proposed as a first-order 
+factor that loads 
+onto 
+a 
+higher-order DS factor, which 
+may be related 
+to distress. 
+Indeed, using a 
+fouritem 
+general measure 
+of DS 
+reflecting 
+several 
+of the components 
+noted 
+here, Nick 
+et al. (2022) 
+reported significant 
+associations 
+between 
+SMU and DS, and 
+between 
+DS 
+and 
+psychosocial problems concurrently 
+and 
+one-year period. 
+Further, in 
+their developm
+of the 
+Digital Stress Scale, Hall et al. (2021) found consistent 
+load- 
+ings among 
+items 
+measuring 
+the five components 
+of DS and 
+a single higher-order DS factor. 
+To the extent 
+that the five 
+components 
+reflected 
+in 
+this 
+review 
+overlap with 
+a single 
+higher-order construct, 
+it may follow 
+that the individual 
+DS 
+components do not significantly differ 
+when associated 
+with 
+psychosocial distress 
+·On the other hand, each of the components of DS 
+exam- 
+ined here 
+was 
+originally proposed as 
+a unique pathway by 
+which 
+DS might be associated 
+with psychological outcomes 
+(Steele et al., 2020). For example, some 
+research 
+suggests 
+Clinical Child and Family Psychology Review (2023) 6957-974 
+967 
+that SMU 
+ean 
+increase 
+the ease 
+with 
+which 
+adolescents 
+and 
+young 
+adults 
+can 
+compare 
+themselves 
+to, and seek reassur- 
+ance 
+from 
+others (Nesi 
+& Prinstein, 
+2015). This 
+social 
+com- 
+parison 
+may 
+be associated 
+with approval anxiety, perhaps 
+leading to envy, 
+anxiety, 
+and depressive symptoms (Li et al. 
+2018). Further, watching others· highlight rels, 
+posts, and 
+images 
+online 
+can 
+also potentially make 
+adolescents 
+and 
+young 
+adults 
+feel like they are 
+missing 
+out 
+on 
+fun, excite- 
+·ment, 
+or happiness (David & Roberts, 2017). This 
+pervasive 
+feeling of perceived isolation 
+online 
+and FOMO 
+bas been 
+associated 
+with depressive symptoms, 
+anxiety, 
+stress, 
+and 
+psychosocial distress 
+(Keles etal, 
+2020). Moreover, 
+Rei- 
+necke and Eden (2017) suggest that 
+excessive 
+social media 
+activity, 
+notifications, 
+and posts can 
+make adolescents 
+and 
+young 
+adults 
+feel overwhelmed 
+and cognitively burdened 
+connection 
+overload), which 
+might negatively impact 
+their ability to pay attention 
+and concentrate, 
+reduce active 
+coping 
+(McHugh et al, 
+2018), and 
+increase 
+anxiety 
+and 
+distress 
+(Demirtepe-Saygili & Metin-Orta, 
+2021). Indeed, 
+·Yang et al. (2023) recently demonstrated 
+that several 
+DS 
+·components mediated 
+the association 
+between digital social 
+multitasking (.., 
+phone use during face-to-face 
+interactions 
+with 
+friends) 
+and depressive symptoms. 
+Given 
+the poten 
+tially distinct 
+pathways by which 
+DS components 
+may be 
+associated 
+with 
+SMU, 
+itis 
+interesting 
+that 
+our 
+results 
+indi- 
+cated relatively uniform 
+associations 
+between 
+DS compo- 
+nents 
+and psychosocial distress. 
+Future 
+research 
+is needed 
+to 
+confirm 
+these findings and to further 
+test 
+the pathways by 
+·which SMU 
+may operate through DS components 
+to impact 
+psychosocial outcomes. 
+Effect of Moderators 
+Although 
+some 
+studies 
+suggest that the association 
+bet 
+the DS components 
+and psychosocial 
+wellbeing 
+can 
+be 
+Jes when compared to their 
+male 
+coun- 
+terparts (Kim 
+et a., 2015; Twenge & Martin, 
+2020), 
+other 
+studies 
+do not 
+show 
+such 
+sex 
+differences 
+(Huang, 2017; 
+·Thorisdottir et 
+al., 2020). Thus, we 
+examined 
+sex 
+zs 
+a mod- 
+·erator of 
+the 
+associations 
+between 
+DS components 
+and out- 
+·comes. 
+In spite of high model heterogeneity across 
+all five 
+DS components, 
+sex 
+did not significantly moderate the 
+asso- 
+ciations 
+between 
+DS components 
+and psychosocial distress. 
+·This 
+can 
+be partly attributed 
+to the complex role of sex 
+as 
+an intervening 
+variable 
+in the associations 
+(Nelson & Flem- 
+ing, 2019). For instance, 
+some 
+research 
+indicates 
+that while 
+·women 
+are 
+more 
+susceptible to negative psychosocial out- 
+·comes 
+associated 
+with approval anxiety 
+and FOMO 
+(Con- 
+nelly and Osbourne, 2017) they may also 
+receive 
+relatively 
+more 
+social 
+support 
+online 
+(Frison 
+& Eggermont, 2016). 
+·Conversely, males 
+are 
+more 
+likely to experience 
+higher psy- 
+(Zhang et al., 2016). 
+Our analyses did not allow 
+an 
+exami- 
+nation 
+of the specific roles of SMU. 
+Thus, future 
+research 
+·must 
+attempt to disentangle the complex moderating role of 
+sex 
+and evaluate 
+the nuanced 
+and person-specific risk and 
+protective 
+factors 
+for males and females 
+in the social 
+media 
+environment. 
+Some 
+studies 
+in 
+the literature 
+have suggested that the 
+association 
+between 
+the DS components 
+and psychosocial 
+wellbeing is stronger among 
+adolescents 
+in comparison 
+to 
+young 
+adults 
+(Course-Choi 
+& Hammond, 
+2021; Verduyn 
+etal. 2017), whereas 
+other studies have not 
+identified 
+differ- 
+ences 
+across 
+age (e.g., Plaisime et 
+al., 2020). Subsequently, 
+wwe examined 
+age as 
+a moderator 
+of the overall 
+association 
+between 
+DS components 
+and outcomes. 
+Interestingly, age 
+did 
+not 
+significantly 
+moderate 
+the 
+association 
+between 
+psychosocial distress 
+and most 
+DS components 
+(availabil- 
+ity stress, approval anxiety, FOMO, 
+and online 
+vigilence), 
+This 
+can 
+be potentially attributed 
+to the relatively minimal 
+age variance 
+within 
+the samples represented by 
+the included 
+studies; across 
+all studies the mean 
+age of the assessed 
+sam- 
+ples was 
+19.47 (SD=2.7). 
+Thus, our 
+ability to 
+examine 
+age 
+as 
+a moderator 
+of the relationship between 
+DS and psy- 
+chosocial 
+outcomes 
+was 
+correspondingly limited. 
+Several 
+studies 
+suggest that adolescents 
+might be more 
+vulnerable 
+to psychosocial distress 
+associated 
+with approval anxiety 
+and FOMO 
+(Alt 
+et al., 2018), 
+whereas 
+young 
+adults might 
+experience 
+greater online vigilance (Reinecke 
+et al., 2018). 
+Hence, 
+future 
+research 
+must 
+examine 
+how the association 
+between 
+each DS components 
+and psychosocial wellbeing 
+varies 
+across 
+a sample having a wider 
+developmental and 
+chronological age difference. 
+Results 
+did indicate, 
+however, 
+that age significantly mod- 
+ess 
+component, 
+ion 
+overload, 
+and psychosocial 
+distress. 
+Extant 
+research 
+suggests 
+that young 
+adults 
+report greater cumula- 
+stress, 
+which 
+can 
+be attribu 
+and chronicity of online 
+stressors, 
+such 
+as emails, notific 
+tions, 
+and posts, and offline 
+engagements 
+(Reinecke 
+et al., 
+2018), Junco (2013) and Ricciardeli 
+et al. (2020) reported 
+that young 
+adults 
+experience 
+an 
+intense 
+and pervasive 
+feel- 
+ing of being overwhelmed, 
+stressed, and anxious, 
+which 
+can 
+often contribute 
+to an 
+overestimation 
+of social 
+media-related 
+stress. 
+Thus, the correlation 
+between 
+connection 
+overload 
+and psychosocial distress 
+might be further 
+strengthened 
+among 
+young adults 
+owing 
+to the pervasive 
+feeling of being 
+overwhelmed 
+and burnt-out 
+(Hefner 
+& Vorderer, 
+2016; 
+Vor 
+derer & 
+Klimmt, 
+2020). Moving forward, thoughtful experi- 
+·mental studies might manipulate the duration, intensity, and
+chronicity of social 
+media exposure 
+among 
+adolescents 
+and 
+young 
+adults 
+to better 
+understand 
+the long-term impact of 
+connection 
+overload 
+on psychosocial wellbeing. 
+that SMU 
+can 
+increase 
+the ease 
+with 
+which 
+adolescents 
+and 
+young 
+adults 
+can 
+compare 
+themselves 
+to, and seek reassur- 
+ance 
+from 
+others (Nesi 
+& Prinstein, 
+2015). This 
+social 
+com- 
+parison 
+may 
+be associated 
+with approval anxiety, perhaps 
+leading to envy, 
+anxiety, 
+and depressive symptoms (Li et al. 
+2018). Further, watching others· highlight rels, 
+posts, and 
+images 
+online 
+can 
+also potentially make 
+adolescents 
+and 
+young 
+adults 
+feel like they are 
+missing 
+out 
+on 
+fun, excite- 
+·ment, 
+or happiness (David & Roberts, 2017). This 
+pervasive 
+feeling of perceived isolation 
+online 
+and FOMO 
+bas been 
+associated 
+with depressive symptoms, 
+anxiety, 
+stress, 
+and 
+psychosocial distress 
+(Keles etal, 
+2020). Moreover, 
+Rei- 
+necke and Eden (2017) suggest that 
+excessive 
+social media 
+activity, 
+notifications, 
+and posts can 
+make adolescents 
+and 
+young 
+adults 
+feel overwhelmed 
+and cognitively burdened 
+connection 
+overload), which 
+might negatively impact 
+their ability to pay attention 
+and concentrate, 
+reduce active 
+coping 
+(McHugh et al, 
+2018), and 
+increase 
+anxiety 
+and 
+distress 
+(Demirtepe-Saygili & Metin-Orta, 
+2021). Indeed, 
+·Yang et al. (2023) recently demonstrated 
+that several 
+DS 
+·components mediated 
+the association 
+between digital social 
+multitasking (.., 
+phone use during face-to-face 
+interactions 
+with 
+friends) 
+and depressive symptoms. 
+Given 
+the poten 
+tially distinct 
+pathways by which 
+DS components 
+may be 
+associated 
+with 
+SMU, 
+itis 
+interesting 
+that 
+our 
+results 
+indi- 
+cated relatively uniform 
+associations 
+between 
+DS compo- 
+nents 
+and psychosocial distress. 
+Future 
+research 
+is needed 
+to 
+confirm 
+these findings and to further 
+test 
+the pathways by 
+·which SMU 
+may operate through DS components 
+to impact 
+psychosocial outcomes. 
+Effect of Moderators 
+Although 
+some 
+studies suggest that the association 
+betwes 
+the DS 
+components 
+and psychosocial wellbeing 
+can 
+be 
+Stronger among 
+females 
+when compared 
+to their 
+male coun- 
+terparts (Kim 
+et a., 2015; Twenge & Martin, 
+2020), 
+other 
+studies 
+do not 
+show 
+such 
+sex 
+differences 
+(Huang, 2017; 
+·Thorisdottir et 
+al., 
+2020). Thus, we 
+examined 
+sex 
+zs 
+a mod- 
+·erator of 
+the 
+associations 
+between 
+DS components 
+and out- 
+·comes. 
+In spite of high model heterogeneity across 
+all five 
+DS components, 
+sex 
+did not significantly moderate the 
+asso- 
+ciations 
+between 
+DS components 
+and psychosocial distress. 
+·This 
+can 
+be partly attributed 
+to the complex role of sex 
+as 
+an intervening 
+variable 
+in the associations 
+(Nelson & Flem- 
+ing, 2019). For instance, 
+some 
+research 
+indicates 
+that while 
+·women 
+are 
+more 
+susceptible to negative psychosocial out- 
+·comes 
+associated 
+with approval anxiety 
+and FOMO 
+(Con- 
+nelly and Osbourne, 2017) they may also 
+receive 
+relatively 
+more 
+social 
+support 
+online 
+(Frison 
+& Eggermont, 2016). 
+Conversely, males 
+are 
+more 
+likely to experience 
+higher psy- 
+cchosocial 
+distress 
+associated 
+with 
+social 
+media fatigue but 
+can 
+also 
+use 
+social 
+media 
+to 
+connect 
+and build friendships 
+(Zhang et al., 2016). 
+Our analyses did not allow 
+an 
+exami- 
+nation 
+of the specific roles of SMU. 
+Thus, future 
+research 
+·must 
+attempt to disentangle the complex moderating role of 
+sex 
+and evaluate 
+the nuanced 
+and person-specific risk and 
+protective 
+factors 
+for males and females 
+in the social 
+media 
+environment. 
+Some 
+studies 
+in 
+the literature 
+have suggested that the 
+association 
+between 
+the DS components 
+and psychosocial 
+wellbeing is stronger among 
+adolescents 
+in comparison 
+to 
+young 
+adults 
+(Course-Choi 
+& Hammond, 
+2021; Verduyn 
+etal. 2017), whereas 
+other studies have not 
+identified 
+differ- 
+ences 
+across 
+age (e.g., Plaisime et 
+al., 2020). Subsequently, 
+wwe examined 
+age as 
+a moderator 
+of the overall 
+association 
+between 
+DS components 
+and outcomes. 
+Interestingly, age 
+did 
+not 
+significantly 
+moderate 
+the 
+association 
+between 
+psychosocial distress 
+and most 
+DS components 
+(availabil- 
+ity stress, approval anxiety, FOMO, 
+and online 
+vigilence), 
+This 
+can 
+be potentially attributed 
+to the relatively minimal 
+age variance 
+within 
+the samples represented by 
+the included 
+studies; across 
+all studies the mean 
+age of the assessed 
+sam- 
+ples was 
+19.47 (SD=2.7). 
+Thus, our 
+ability to 
+examine 
+age 
+as 
+a moderator 
+of the relationship between 
+DS and psy- 
+chosocial 
+outcomes 
+was 
+correspondingly limited. 
+Several 
+studies 
+suggest that adolescents 
+might be more 
+vulnerable 
+to psychosocial distress 
+associated 
+with approval anxiety 
+and FOMO 
+(Alt 
+et al., 2018), 
+whereas 
+young 
+adults might 
+experience 
+greater online vigilance (Reinecke 
+et al., 2018). 
+Hence, 
+future 
+research 
+must 
+examine 
+how the association 
+between 
+each DS components 
+and psychosocial wellbeing 
+varies 
+across 
+a sample having a wider 
+developmental and 
+chronological age difference. 
+Results 
+did indicate, however, 
+that age 
+significantly mod- 
+crated the 
+association between 
+one 
+digital 
+stress 
+component, 
+connection 
+overload, 
+and psychosocial 
+distress, 
+Extant 
+research 
+suggests 
+that young 
+adults 
+report greater cumula- 
+tive 
+stress, 
+which 
+can 
+be attributed 
+to the gradual build 
+up 
+and chronicity of online 
+stressors, 
+such 
+as 
+emails, 
+notific 
+tions, 
+and posts, and offline 
+engagements 
+(Reinecke 
+et 
+2018), Junco (2013) and Ricciardeli 
+et al. (2020) reported 
+that young 
+adults 
+experience 
+an 
+intense 
+and pervasive 
+feel- 
+ing of being overwhelmed, 
+stressed, and anxious, 
+which 
+can 
+often contribute 
+to an 
+overestimation 
+of social media-related 
+stress. 
+Thus, the correlation 
+between 
+connection 
+overload 
+and psychosocial distress 
+might be further 
+strengthened 
+among 
+young adults 
+owing 
+to the pervasive 
+feeling of being 
+overwhelmed 
+and burnt-out 
+(Hefner 
+& Vorderer, 
+2016; 
+Vor 
+derer & 
+Klimmt, 
+2020). Moving forward, thoughtful experi- 
+·mental studies might manipulate the duration, intensity, and
+chronicity of social 
+media exposure 
+among 
+adolescents 
+and 
+young 
+adults 
+to better 
+understand 
+the long-term impact of 
+connection 
+overload 
+on psychosocial wellbeing, 
+Since 
+we 
+noted high within- 
+and between-study variance, 
+it 
+is possible that other 
+unexamined 
+moderators 
+can 
+also 
+springer 
+968 
+Child and Family Psychology Review 
+(2023) 
+26:957-974 
+intervene 
+in 
+the association 
+between 
+the DS components 
+and psychosocial distress. 
+Thus, additional 
+variables 
+should 
+be further 
+explored to explain the study heterogeneity. This 
+·can 
+include 
+the type of psychological indicator 
+(Hancock. 
+ct al., 2019), quality of employed measures 
+(Nesi, 2020), 
+motivations 
+for SMU 
+(Keles et al., 2020), 
+social 
+support 
+(Valkenburg et al., 2022), pre-existing psychological vulner- 
+abilities 
+(Beyens et al, 2016), 
+and patterns of use 
+(active vs. 
+passive 
+SMU; 
+Odgers & Jensen, 2020). Further, 
+the extant 
+literature 
+suggests that DS components 
+might be 
+differen- 
+tially linked 
+with specific psychosocial variables 
+(Radovic 
+etal., 2017). For example, connection 
+overload 
+may be more 
+strongly associated 
+with anxiety (Choi, 2022), and FOMO 
+with depressive symptoms (Harrigan et al., 
+2021). Similarly, 
+adolescents 
+with 
+pre-existing psychological vulnerabilities, 
+such as loneliness 
+(Song et 
+al.. 
+2014) and 
+depressive symp- 
+toms 
+(e.g., McCrae 
+et al., 2017) show 
+a stronger 
+associa- 
+tion 
+between 
+the DS components 
+and psychosocial distress. 
+Hence, 
+future 
+research 
+must 
+examine 
+additional 
+moderating 
+variables 
+to help explicate the 
+association 
+between 
+the DS 
+·components and psychosocial wellbeing. 
+Strengths, Limitations, 
+and Future 
+Research 
+Our analysis included 
+a globally diverse 
+representation 
+of 
+studies, 
+which 
+had participants from 
+the United 
+States, 
+China, Australia, 
+United Kingdom, Germany, Netherlands, 
+and 
+India, 
+among 
+others 
+(e-g., Halfmann 
+& Rieger, 2019: Li 
+et al,, 2021; Pang, 2021; Reinecke 
+et al., 2018). However, 
+information 
+about racial/ethnic 
+distribution 
+of participants 
+within 
+studies 
+was 
+often sparse. 
+Several 
+studies provided 
+incomplete 
+information by dichotomizing 
+race/ethnie distri- 
+bution 
+(e.g., white, 
+black, 
+Hispanic, ·other·; 
+Chen 
+& Lee., 
+2013), some 
+studies provided no information 
+about 
+race 
+and 
+instead 
+commented 
+on 
+nationality of 
+samples 
+(e., 
+Half- 
+mann 
+& Reiger, 2019; Reinecke 
+& Eden, 
+2017), and 
+some 
+failed 
+to record both 
+race 
+and ethnicity of their samples 
+(e. 
+Vorderer 
+et al., 2016). Consistent 
+with 
+American 
+Psycho- 
+logical Association 
+guidelines (APA, 2017), future 
+research 
+ncouraged to report 
+adequate information about 
+the racial 
+and ethnic 
+distribution 
+of their samples, This 
+is especially 
+important 
+because 
+some 
+studies 
+and young 
+adults 
+from 
+racial 
+and ethnic 
+minority 
+co 
+nities 
+are 
+increasingly vulnerable 
+to negative psychosocial 
+experiences 
+online 
+(Mossie 
+& Wang, 2020), 
+and are more 
+Iso yielded low 
+to moderate 
+indications 
+of 
+publication bias 
+across 
+our 
+funnel plots and Fail-Safe NV 
+sta- 
+tistics 
+for most 
+DS components. 
+Nevertheless, 
+our 
+outcomes 
+·must 
+be interpreted with 
+caution 
+because 
+of methodological 
+limitations 
+inherent 
+in the identified 
+studies. 
+Included 
+stud- 
+ies only provided retrospective self-report measures 
+of DS 
+·components and psychosocial distress, 
+and it is possible that 
+there 
+may 
+be systematic 
+biases 
+inherent 
+in self-reports of 
+social 
+media-related 
+distress (Verbeij et al., 2021). Research 
+suggests that adolescents are 
+prone 
+to underestimating their 
+social 
+media-related 
+distress 
+due 
+to high prevalence and 
+duration 
+of 
+use 
+(Ricciardelli 
+et al., 2020) or 
+overestimat- 
+ing it given 
+the widespread cultural 
+expectation 
+that SMU 
+negatively impacts adolescent 
+psychosocial health Johannes 
+etal., 2018; Junco, 2013). Further, having participants 
+self- 
+report both their DS and their psychosocial distress 
+can 
+lead 
+to 
+concerns 
+with 
+common 
+method 
+variance 
+(CMV) inflat- 
+ing the observed 
+associations 
+(Junco, 2013). Thus, future 
+research 
+must 
+examine 
+whether 
+the effect 
+sizes 
+identified 
+in 
+this study generalize to samples 
+when 
+DS and psychosocial 
+adjustment are 
+measured 
+using 
+methods 
+that would 
+reduce 
+the impact 
+of CMV. 
+Further, 
+across 
+DS components, 
+a substantial 
+number 
+of the included 
+studies 
+did 
+not report adequate information 
+about the reliability and validity of the 
+measurement 
+tools 
+for DS. 
+This finding echoes eatlier 
+reports and 
+reviews 
+that 
+highlight measurement 
+issues 
+in the field of SMU 
+and digi- 
+tal 
+stress 
+(Hancock et al., 2019; Meier 
+& Reinecke, 
+202 
+Nesi 
+et al., 2018b). Future 
+investigations should 
+focus 
+on 
+improving 
+existing 
+measurement 
+tools 
+and providing ade- 
+quate information 
+about reliability and validity of employed 
+instruments, 
+This 
+would transparently communicate 
+the gen- 
+eralizability and limits 
+of varied 
+measurement 
+instruments, 
+and allow 
+future 
+investigators 
+to employ suitable 
+tools 
+that 
+adequately measure 
+the appropriate 
+DS component 
+Although 
+our 
+search 
+yielded 
+a good number 
+of studies 
+examining 
+most 
+of the 
+DS 
+components, only seven 
+relevant 
+studies 
+were 
+found for the association 
+between 
+availabil- 
+ity 
+stress 
+and psychosocial outcomes, 
+making it the least 
+examined 
+digital 
+stress 
+component. 
+Thus, despite the rela- 
+tively high 
+Fail-Safe 
+N for this component, the possibility of 
+publication bias and potential file drawer problems persists. 
+Conversely, although we 
+found 
+a relatively higher number: 
+of studies 
+examining 
+online 
+vigilance, our 
+results yielded a 
+relatively low Fail-Safe N 
+for 
+this construct, 
+Future 
+studi 
+·must 
+further 
+examine 
+the 
+associations 
+between 
+availability 
+stress 
+and online vigilance and psychosocial distress 
+among 
+diverse 
+adolescent 
+and young 
+adult populations to 
+increase 
+the generalizability and applicability 
+of our 
+outcomes. 
+·The current 
+study examined 
+the association 
+between 
+DS 
+components 
+and the pooled index of psychosocial distress, 
+which 
+consisted 
+of anxiety, depressive symptoms, 
+stress, 
+and 
+low 
+life 
+satisfaction. 
+Thus, 
+although 
+our 
+results do 
+not 
+suggest associations 
+between 
+DS components 
+and narrow-band 
+symptom clusters, 
+future investigations 
+can 
+explore how the DS components 
+are differentially associated 
+with the specific (narrow band) 
+psychosocial 
+indices 
+as 
+some 
+DS components 
+may be more 
+strongly associated 
+with 
+some 
+indices 
+of psychosocial distress 
+in comparison 
+to others. For 
+nical 
+Child and Family Psychology Review (2023) 26957-9784 
+969 
+·example, FOMO 
+might be more 
+strongly associated 
+with 
+depressive symptoms 
+(Baker 
+et al., 2016), whereas 
+ontine 
+vigilance could 
+have 
+a stronger 
+association 
+with 
+anxiety 
+symptomology (Reinecke etal, 2018). 
+Finally, and 
+as noted above, 
+all of the studies 
+identified 
+in 
+this meta-analysis used 
+correlational 
+(non-experimental) 
+designs, Future 
+studies 
+that 
+use 
+more 
+robust 
+experimental 
+designs to 
+examine 
+potential 
+causal 
+associations 
+among 
+digital stress 
+components 
+and outcomes 
+will 
+afford stronger. 
+conclusions 
+upon 
+which 
+to 
+build 
+clinical 
+interventions 
+(King et al, 2022). 
+For example, experimental studies might 
+manipulate adolescents· 
+and young 
+adults· 
+experiences 
+of 
+the different 
+DS components 
+to observe 
+the effects 
+of DS 
+on psychosocial distress. 
+Implications 
+Notwithstanding its limitations, 
+our 
+outcomes 
+have several 
+clinical 
+and research implications. This study was 
+the frst 
+to comprehensively review 
+the literature 
+and quantitatively 
+synthesize effect 
+sizes 
+of the associations 
+between 
+the five 
+DS components 
+and psychosocial distress (Hall 
+2021), 
+Because 
+the literature 
+yielded primarily correlational 
+studies 
+of the associations 
+among 
+DS components 
+and ostcomes, 
+clinical 
+implications remain 
+somewhat 
+limited. 
+Neverthe- 
+less, our 
+results 
+suggest relatively consistent 
+and moderate 
+associations 
+among 
+specific aspects of digital siress 
+and 
+psychosocial distress 
+variables. 
+From 
+clinical 
+perspective, 
+the moderate 
+effect 
+sizes 
+obtained 
+in this study reinforce 
+the 
+value of assessing digital 
+stress 
+(generally) and its specific 
+·components (specifically) at intake 
+(Halfmann 
+& Rieger, 
+2019; 
+All 
+et al., 2018; Lee et 
+al, 2022), 
+particular'y among 
+adolescents 
+and young 
+adults, 
+Previous 
+empirical studies 
+have suggested digital stress 
+as mediator 
+or moderator 
+of the 
+association 
+between 
+SMU 
+and psychosocial outcomes 
+(Nick 
+cet al, 2022; Yang et al., 2023). 
+Our results 
+lend support 
+to a 
+variety 
+of pathways by which 
+SMU might relate 
+to clinical 
+outcomes 
+and suggest the value 
+of probing the degree to 
+which 
+the five distinct 
+and equally important 
+components 
+of DS may be causing, 
+maintaining, 
+or exacerbating ado- 
+lescents· 
+and young 
+adults· psychosocial distress 
+(Prinstein 
+ct al., 2020), 
+·The conceptual underpinnings of digital stress 
+are 
+not 
+new. 
+As noted by Nesi etal. (2018b), adolescents 
+and young 
+adults 
+have always, to 
+varying 
+degrees, been tasked 
+with 
+addressing approval anxiety, FOMO, 
+and availability stress. 
+However, 
+the specific affordances 
+and features 
+of digital 
+platforms and 
+the ubiquity of SMU 
+bring new 
+potency 
+and efficacy to these age-old stresses. 
+Online 
+reactions 
+to 
+posts·one's 
+own 
+or 
+others·are 
+more 
+immediate, public, 
+visual, and permanent 
+than 
+ever 
+before, enhancing the con- 
+sequences 
+of social approval or 
+expectations 
+in both 
+on- 
+and 
+off-line 
+environments 
+(Nesi & Prinstein, 
+2015: 
+et al, 2022). Adding to these social components 
+of digital 
+stress 
+are the technological aspects of the digital experience 
+communication 
+overload 
+and online vigilance), which 
+our 
+results 
+suggest are 
+associated 
+with 
+negative psychosocial 
+outcomes 
+in their 
+own 
+right 
+Because 
+of the association 
+of DS components 
+to clinically 
+significant outcomes, 
+our 
+results 
+may suggest fruitful 
+diree- 
+tions 
+for therapeutic interventions. 
+For example, clients 
+who, 
+present with 
+concerns 
+relating to approval anxiety or availabil- 
+ity stress 
+might benefit 
+from cognitive 
+interventions 
+specifi- 
+cally addressing their 
+expectations 
+regarding others· behavior 
+on 
+social 
+media 
+or 
+others· 
+expectations 
+for their 
+own 
+the client's) behavior. 
+Given 
+the evaluative 
+components 
+of 
+approval anxiety and availability stress, 
+these DS components. 
+·may be responsive 
+to cognitive restructuring or 
+thought-chal- 
+paradigms (e-g., Otte, 2011). 
+Further, 
+since 
+some 
+DS components 
+(e.g., FOMO) 
+are 
+often 
+associated 
+with 
+depressive symptoms 
+(Hunt 
+et al. 
+2018; 
+Oberst 
+et al., 2017), evidence-based 
+interventions 
+such as behavioral 
+activation 
+(McCauley et al., 2016) 
+may be 
+cemployed 
+to minimize 
+the impact of 
+these 
+aspects of DS. 
+This 
+·might include strategies to enhance clients· 
+use 
+of social media 
+to actively engage with friends, family, or community 
+groups 
+(ie., 
+rather 
+than passive 
+SMU). Similarly, Johannes 
+et al 
+(2018) suggest that mindfulness-based 
+interventions, 
+including 
+strategies such as 
+meditation 
+and value identification, 
+can 
+be 
+to reduce anxiety associated 
+with online vigilance. 
+However, although a number 
+of digital interventions 
+have 
+been developed to facilitate 
+stress 
+management (e.g., Morri- 
+son 
+et al., 2018), there 
+are 
+few 
+evidence-based 
+interventions 
+designed to address 
+DS specifically (see Steele 
+et al., 2020). 
+Thus, future studies should attempt to 
+develop evidence-based 
+interventions 
+to address DS components and psychosocial 
+tress online 
+more 
+broadly. 
+One of the anticipated (but challenging) aspects of thi 
+study was 
+the diversity of 
+terminologies 
+that were 
+employed 
+in 
+the literature 
+when referring to similar 
+or 
+identical 
+con- 
+structs 
+(See Table 
+1). As noted by Steele 
+et al. (2020), the 
+use 
+of numerous 
+terminologies for the different 
+components 
+of digital 
+stress 
+may 
+serve 
+to obscure findings across 
+stud- 
+ies. 
+As expected (see Widmann, 
+2020), results of this analy- 
+sis yielded higher inter-rater 
+agreement 
+and reliability 
+for 
+DS components 
+that 
+are 
+more 
+examined 
+in 
+the field (e.g., 
+approval anxiety, FOMO) 
+and relatively poorer 
+agreement 
+for components that are 
+less frequently examined 
+(e.g., avail- 
+ability stress, 
+connection 
+overload). 
+Nevertheless, 
+the inter- 
+rater 
+agreement 
+was 
+moderate 
+to good across 
+DS compo- 
+nents. 
+Given 
+the consistent 
+associations 
+between the 
+various 
+DS components 
+and psychosocial outcomes, 
+our 
+results pro- 
+vide 
+one possible common 
+nomenclature 
+for future 
+research 
+in this area, 
+which 
+should positively impact future 
+research- 
+ers (Odgers & Gensen, 
+2020; Valkenburg et al, 2022), and 
+970 
+Clinical Child and Family Psychology Review 
+(2023) 
+26:957-974 
+·may contribute 
+to a better understanding of clinical 
+implica- 
+tions 
+for the various 
+aspects of 
+digitals stress. 
+Conclusion 
+·This 
+is the first identified 
+study to systematically review 
+and 
+synthesize quantitative effect 
+sizes 
+for the association 
+between 
+the five DS components (Hall et al., 2021) and psychosocial 
+wellbeing among adolescents 
+and young adults. We found that 
+all five DS components (availability stress, approval anxiety, 
+FOMO, 
+connection 
+overload, and online vigilance) were 
+sig- 
+nificantly associated 
+with psychosocial distress, and that these 
+associations 
+did not statistically differ 
+across 
+DS component. 
+In terms of 
+clinical 
+practices, 
+our 
+results suggest 
+that 
+the DS 
+·components 
+should be examined 
+in clinical 
+settings (e.g. dur- 
+ing intakes) as potential contributors 
+to psychosocial distress 
+among 
+social 
+media 
+users. 
+Greater 
+clinical 
+understanding of 
+the mechanisms 
+by which 
+DS might impact wellbeing may 
+suggest specific targets for 
+therapeutic intervention. 
+However, 
+given the current 
+state 
+ofthe 
+literature, we 
+recommend 
+future 
+research 
+to explore how 
+the DS components 
+associate 
+dif- 
+ferentially and through unique 
+mechanisms 
+with psychoso- 
+cial 
+distress. 
+Moreover, 
+future 
+investigations 
+should employ 
+diverse methodologies (experimental designs, objective data) 
+and populations (e-g., age, race/ethnicity) to 
+increase 
+the con- 
+fidence 
+in 
+and generalizability of our 
+outcomes. 
+Our results 
+also suggest the need 
+to further 
+examine 
+the role ofinterven- 
+ing or 
+moderator 
+variables 
+to help explicate the underpinning 
+·mechanisms 
+for the association 
+between 
+the DS components 
+and psychosocial distress. 
+Supplementary Information ·Te 
+online 
+version 
+supplemen- 
+·ary material 
+aailale 
+at 
+Acknowledgements ·The authors 
+wish o 
+thank 
+Dr 
+Neal Kingston for 
+helping with conceptualization and problemsolving during statistical 
+analysis. Special thanks 
+10 Avery Poindexter, 
+Versha 
+Rajvani, Claire 
+Pursell, 
+and Caitlyn Browne for 
+reviewing articles 
+in fll 
+ex 
+and help- 
+ing with initial coding of 
+article 
+abstracts 
+Funding Neither of 
+the 
+authors 
+has 
+a financial 
+or personal relation 
+ship between 
+themselves, 
+ther families, 
+and/or 
+others 
+that might be 
+perceived by readers 
+us biasing our 
+work 
+Declarations 
+Competing Interests 
+·The suthors 
+declare 
+that they have nocompeting 
+interests, 
+financial 
+o 
+otherwise 
+Ethical approval Not applicable 
+References 
+Apuinis, H., 
+Beaty, 1. C., 
+Boik, RJ, 
+& Pierce, C. 
+A. (2008). Effect 
+·size 
+and power 
+in 
+assessing moderating effects 
+of categorical 
+·variables 
+using multiple regression: 
+A 30-year review. 
+Journal 
+of 
+Applied Psychology, 90(1), 94-107. 
+(0021-9010.90.1.94 
+American 
+Association 
+(APA), (2017). Malticultural 
+Guidelines: 
+An ecological approach 10 
+context, 
+identity, 
+and 
+interseetionality, 
+Retrieved 
+from 
+apa.org/aboutl 
+policy/multicultural-guidelines pf 
+Baker, Z. G. Krieger. 
+H. & LeRoy, A. 8. (2016). Fear of 
+missing 
+·out: 
+Relationships with depression mindfulness 
+and physical 
+symptoms. 
+Translational 
+Issues in Psychological Science, 23), 
+275-282. 
+Baron, N. 
+on: 
+Language in 
+an online 
+and mobile
+world. 
+·Oxford University Pres. 
+Barry, C.T, 
+Sidoti, C. 
+L., 
+Briggs, S. M., 
+Reiter, S.R. 
+& Lindsey, R 
+·A. (2017). Adolescent 
+social media 
+use and mental 
+health from 
+adolescent 
+and parent perspectives. Journal 
+of Adolescence, 01,
+T-I1. 
+isps:fdo.ofg/10.1016 adolescence 
+Baym, N.K. 
+2015). Social 
+media and 
+the 
+struggle for society. Social 
+·Media 
++ Society. 
+Beck, 
+AT, Seer, 
+R.A., & 
+Brown, G. 
+K. (1987), Beck 
+depre
+inventory. 
+Harcourt 
+Brace Jovanovich 
+Best, 
+P, Manktelow, 
+R, & 
+Taylor, B. 
+(2014). Online 
+communication, 
+social 
+media 
+and adolescent 
+wellbeing: A systematic 
+narrative 
+review. 
+Children 
+and Youth Services 
+Review: 
+41, 27-36. 
+pl! 
+Bevan, J, 
+J. 
+& Barclay, B, (2012). Negative emotional and 
+cog- 
+nitive 
+responses 
+o being 
+unfiended 
+on Facebook
+Aa explora- 
+tory study. Computers in 
+Human 
+Behavior, 
+28(4), 
+1488-1464 
+2012.03.08 
+Beyens, 1, 
+Frison, E. 
+& Eggermont, 8. 
+2016). 
+want 
+to 
+miss 
+·a thing": Adolescents· 
+fear of 
+missing out 
+and 
+its 
+relation 
+ship to 
+social needs, Facebook 
+use, and Facebook 
+related stess. 
+Computers in 
+Human 
+Behavior, 
+64, 
+1-8. 
+ch 2016 
+05.083 
+Bright 
+L-F., Kleiser, 
+B.. & Grau, 
+S. L. 
+(2015). Too 
+much 
+Fac
+·book? 
+·An 
+exploratory 
+examination 
+of social 
+media 
+fatigue 
+Computers in 
+Human 
+Behavior, 
+44, 148-155, 
+Brod, C. 
+(1984), Technostress: 
+The human 
+cos 
+ofthe computer 
+revo 
+lution. 
+Addison-Wesley. 
+Brooks, 
+$., & Longstreet, P. 
+(2015). Social 
+networking·s peri: 
+Cognitive absorption, social 
+networking 
+usage, 
+and depres: 
+sion. 
+Cyberpsychology: Journal 
+of Psychosocial Research 
+on 
+Cyberspace, 
+5. 
+TICP2015-4-5 
+Campisi.J. 
+Bynog, P, 
+McGehee, H., 
+Oakland, J.C, 
+Quirk, 
+8, 
+Taga, 
+.,et 
+al. (2012), Facebook, stress, 
+and incidence 
+of upper res 
+piratory 
+infection 
+in undergraduate college 
+students
+Cyberpsy 
+·chology, Behavior, 
+and Social Networking, 
+15(12), 675-681 
+Card, 
+N. 
+A. 
+(2015). 
+Applied 
+meta-analysis for 
+social 
+science. 
+·esearch. 
+Guilford 
+Publications. 
+W., & Lee, 
+(2013). Sharing, liking, 
+commenting, and 
+dis-
+The 
+pathway between Facebook 
+interaction and 
+psycho: 
+logical distress. Cyberpsvchology, Behavior, and 
+Socal Network 
+ing, 16(10), 
+728-734. 
+Choi, 
+J. (2022), Do Facebook 
+and Instagram differ 
+in 
+thei 
+influence 
+·nlite 
+satisfaction? A 
+study of college men 
+and women 
+in South 
+Korea. Cyberpsschology Journal 
+of Psychosocial 
+Research 
+on 
+Cyberspace, 16(1), 2 
+Chorpita, B. ., 
+Yim, L 
+Mofit, 
+C, 
+Umemoto, 
+LA. 
+& Francis, S. 
+(2000), 
+Assessment 
+of 
+symptoms of DSM-IV 
+anxiety 
+and 
+fo 
+Chit 
+and Family Psychology 
+Review 
+2023) 
+2697-978 
+on 
+depression in 
+children: 
+A revised child 
+anxiety 
+and 
+depression 
+scale. Behaviour 
+Research 
+and Therapy. 
+835-855. 
+«oi 
+Cohen, J. 
+(1988). Staistical 
+power 
+analsis 
+for the behavioral 
+sci 
+·ences, 
+Erlbaum, 
+Cohen, S.. Kamarck, 
+T., & Mermelstein, 
+R (1983). A glabal meas- 
+ture of 
+stress. 
+Journal of 
+Health and Social 
+Behavior, 
+2444), 385-396, 
+J, 
+& Hammond, 
+L. (2021). Social 
+media use 
+and ado- 
+Tescent 
+wellbeing: A narrative 
+review 
+of longitudinal studies. 
+Cyberpsychology, Behavior, 
+and Social 
+Networking, 
+223-236 
+htps:/doi 
+2020-0020 
+David, M.E, 
+& Roberts J. 
+A. 2017), Phubbed and 
+alone: Phone 
+snub- 
+bing, social 
+exclusion, 
+and 
+attachment 
+to social 
+media. Journal of 
+the Association 
+for Consumer 
+Research, 22), 
+185-153. 
+doi og/10.1086/690940 
+D. 
+& Metin-Orta, 
+I. (2021). An invesigzation of 
+in elation 
+to coping styles and psychological symp- 
+toms 
+in 
+an 
+educational 
+seting. Psychological Repons, 1244), 
+1559-1587. 
+Digital Information 
+World. (2020). Study reveals parent· top 
+concerns 
+about social media. (2020). Web Desk. Retrieved 
+from hups:// 
+wwe 
+paren 
+ts think 
+theirtcens 
+hl 
+Dura, 
+J. A. (2009) Howto 
+select, calculate 
+and interpret 
+effect 
+sizes. 
+Journal of 
+Pediatric 
+J, Levine, 
+J, Dvorak, 
+R.,& 
+(2016) Fear 
+of 
+missing ou, 
+need fr 
+touch, anxiety and depession ae 
+related 
+to problematic 
+smartphone use. 
+Computers in 
+Human 
+Behavior, 
+10.1016), 
+addbeh, 2019.08.020 
+Feinstein, B., Hershenberg, R., Bhatia. 
+V., Latack, 
+J, Meuwly, 
+Ni & 
+Davila, 
+J. 2013), Negative social 
+comparison 
+on Facebook 
+and 
+depressive symptoms: Rumination 
+as 
+mechanism. 
+Psychology 
+of Popular Media 
+Culture, 
+161-170. 
+1037/40033111 
+Fox, J. & 
+Moreland, J 
+J. (2015). The 
+dark 
+side 
+of social 
+networking 
+·ies: 
+An exploration ofthe 
+relational 
+and psychological seess- 
+·ors associated 
+with 
+Facebook 
+use and affordances. 
+Computers 
+in 
+Human 
+Behavior, 
+45(11), 
+V68-176. 
+10165 
+chb.2014.11.083 
+Prison, E. & Eggermont, 8. 2016). ·Harder, 
+better, faster, 
+stronger" 
+·Negative comparison 
+on 
+Facebook 
+and 
+life 
+sat- 
+isfacton 
+are reciprocally elated. 
+Cyberpsychology. Behavior 
+·and Social 
+Networking, 193), 158-166. 
+yer. 
+2015,0296 
+Gibbons, 
+FX. 
+& Buunk, 
+Individual 
+differences 
+in 
+social 
+·comparison:Development ofa scale 
+of 
+social 
+comparison 
+ori- 
+entation. 
+Journal of 
+Personality and Social Psychology. 76(1). 
+129-142. 
+1. 
+Halfmann, 
+& Rieger, D. (2019). Permanently on call: The effects 
+·of social 
+pressure 
+on smartphone 
+self-control, 
+need 
+sais: 
+faction, and wellbeing. Journal of 
+Computer Mediated 
+Commu 
+nication, 
+244), 
+165-181. 
+Hall J. 
+2017). The 
+experience 
+of mobile 
+entrapment 
+in dil life. 
+Jour 
+tal 
+of Media Psychology: Theories, Methods, and 
+Applications, 
+148-158 
+& Baym, N. 
+K. (2012). Calling and 
+texting (Wo much): 
+Mobile 
+maintenance 
+expectations, 
+(over\dependence, entrap 
+·ment, 
+and friendship salisfaction, 
+New Media 
+& Society, 4, 
+316-331, 
+htps/doi 
+org/10.1177/146144481 1415087 
+Hall, J.A, 
+Steele, 
+R.G., 
+Chrstfferson, J... & 
+T. 
+(2021. 
+Development and 
+inital 
+evaluation of « 
+multidimensional 
+digital 
+stress 
+sale. 
+Psychological Assessment, 
+33(3), 
+230-282. 
+i 
+org/10.1037/pas0000079 
+Con 
+Hamilton, J. 
+Nesi, J, & Choukas-Bradley, 8. 
+(2022), Reexamin- 
+ing social 
+media 
+and socioemotional 
+well-being among 
+adoles- 
+cents 
+through the 
+len 
+ofthe 
+COVID-19 
+pandemic: A theoretical 
+review 
+and directions 
+for future research. 
+Perspectives on 
+Ps 
+chological Science, 17(3), 662-679. 
+1745691621 
+1014189 
+Hancock, I 
+Liu, 
+X., 
+Freach, 
+M., 
+Luo, 
+M., 
+& Micezkowski, 
+H 
+(2019), Social 
+media 
+use 
+and wellbeing: A meta-analysis. 
+615 
+·Annual 
+International 
+Communication 
+Association 
+Conference, 
+Washington 
+1. M.M., 
+Benz, 
+1, Hauck, 
+C., 
+LaRocca, F., 
+Renders, R. 
+& 
+·Roney, 
+The 
+dialectical experience 
+ofthe 
+fear 
+of miss-
+ing 
+out 
+for US American 
+iGen emerging 
+adult college students 
+Journal 
+of Applied Communication 
+Research, 49(3), 424-440, 
+20211898656 
+Hefner, C. 
+Z. D., & 
+Vordeter, 
+P. (2016). Digital 
+stress: 
+Permanent 
+connectedness and 
+multitasking. In L. Reinecke 
+& 
+M-B. Oli 
+ver 
+(Eds), Handbook 
+of media se 
+and wellbeing (pp. 23-249). 
+Routledge. 
+Huang, C. (2017). 
+Time 
+spent on 
+social 
+network 
+sites 
+and psycho- 
+logical wellbeing: A meta-analysis. Cyerpsyehology, Behavior, 
+«and Social 
+Nesworking, 
+206), 346-384. 
+20160758 
+Hunt, M.G., 
+Marx, 
+Lipson, C., & 
+Young, J. 
+(2018). 
+No more 
+'FOMO: 
+Limiting socal 
+media decreases 
+loneliness 
+and depres- 
+sion. Journal 
+of Social 
+and Clinical 
+Psychology, 37(10),751· 
+7168 
+2018.37 
+10.751 
+Johannes, N.. 
+Veling, 
+H., 
+Dora... 
+Meier, 
+A. Reinecke, 
+L. 
+& Buijzen
+·M. 2018). Mind-wandering and 
+mindfulness 
+as 
+mediators
+of the 
+relationship between 
+online vigilance 
+and 
+wellbeing. Cyberpsy- 
+chology, Behavior, 
+and 
+Social 
+Networking, 21(12), 
+761-767. 
+Junco, 
+R. (2013). Comparing actual 
+and self-reported measures 
+of 
+Facebook 
+use. 
+Computers in Hunan 
+Behavior, 
+293), 
+626-631. 
+hb 
+Kamal, N., 
+Rabbani S., 
+Samdani, H., 
+Shujsat, S., 
+& Ahmad,
+M. 
+(2020), Social 
+media 
+usage, overioad 
+and 
+exhaustion: 
+A peifor 
+·mance 
+perspective. International 
+Review of 
+Management and 
+Marketing 105), 
+19-26. 
+10190 
+Keles, B., MeCrae, N., & Grealish, A. (2020), 
+A systematic 
+review: 
+·The influence 
+of social 
+media 
+on depression, anxiety and psy- 
+chological dstess in 
+adolescents. 
+International 
+Journal 
+of Ado 
+Iescence and Youth, 251), 79-93. 
+org/10.108002673 
+Chan, 
+H.C, & Gupta, S. 
+2015). 
+Social 
+media for 
+busi- 
+ness 
+and society. 
+Asia Pacific Journal 
+of Information Systems, 
+25(2), 329-336, 
+Kim, J, 
+& Lee, 
+1. R, (2011). The 
+Facebook 
+paths to happiness: 
+Effects ofthe 
+number 
+of Facebook 
+friends 
+and sel presentation 
+·on subjective well-being. CyberPsychology, Behavior. 
+and Socia
+14(6), 359-364 
+King, 
+DL, Billieux, J, 
+Muelle, 
+K.,& 
+Delfabbeo, 
+(2022). 
+Clii- 
+·cal 
+interventions 
+for technology-based problems. In Mental 
+·heath 
+ina 
+digital world (pp. 435-457). 
+1B978-0-12-822201-0.00016-2 
+B. (2017). Mobile 
+communication 
+as invader in 
+face-to-face 
+interactions: 
+An analysis of predictors for paral 
+Jel communication 
+habits. 
+Computers in 
+Human 
+Behavior, 
+73, 
+328-335, 
+1016) chbs.2017.03.055 
+Krasnova, H., 
+Widjaa, 
+, Buxmann, P, 
+Wenninger, H., 
+& 
+(2015). Research note·why 
+following friends 
+can 
+hurt 
+you: 
+An 
+exploratory investigation 
+ofthe 
+effects of envy 
+on 
+social network: 
+ing sites 
+among 
+college-age 
+users. 
+Ijormation 
+Systems Resear
+26(3), 585-605. 
+ki 
+Child and Family Psychology Review 
+(2023) 
+26:957-974 
+J, 
+& Bhalla, 
+A. (2007) 
+The role of 
+status seeking in online 
+·communities: 
+Giving the gift of experience. 
+Journal 
+of Cam: 
+puter 
+Mediated 
+Communication, 
+120) 434-485. 
+org! 
+LaRose,R., 
+Connolly, 
+R. Lee, Li, 
+K, & Hales, 
+K.D. 214). 
+Con- 
+nection 
+overload? 
+A cross 
+cultural 
+study of the consequences 
+·of 
+social 
+media 
+connection. 
+Information Systems 
+Management 
+59-173 
+2014.854097 
+Lazarus, 
+R'S., & Folkman, S. 
+(1984). Siress, appratsal and 
+coping 
+Springer. 
+Le, 
+H., Connolly, 
+R. Li, K: Hales, K. 
+& LaRose, 
+Impacts 
+·of social 
+media 
+connection 
+demands: 
+A study of 
+Irish 
+college 
+students. 
+America·s Conference on Information 
+Systems (AMCIS) 
+2013 Proceedings. Retrieved 
+from hups/aisel.aisnet ory/ame 
+Lee, D. 5. ang, T., Crocker, J Way, B. M, (2022), Social media 
+·use and is 
+link to physical health indicators. 
+Cyberpsychology 
+Behavior, 
+and Social 
+Networking, 25(2), 87-93. 
+10.1089/eyber2021.0188 
+Mo, 
+PK. 
+Lau, 
+J. 
+Su, XP, Zhang, 
+X., 
+Wa, A. M., 
+Mal, 
+& Chen, ¥-X. 
+(2018). Online 
+social 
+networking 
+addiction 
+snd depression: The 
+resls 
+from 
+a large-scale prospective 
+cohort 
+study in Chinese 
+adolescents. Journal of 
+Behavioral Addictions, 
+7G), 686-696. 
+Wu, 
+L, Shi, 
+N. 
+Li, 
+X Zhang, ¥. 
+& Zheng, ¥. 
+2021), 
+·The continued use 
+of social 
+eommerce platforms and 
+rsycholosi- 
+cal anxiety·the 
+roles 
+of influencers, 
+informational 
+incentives 
+and FOMO. 
+International 
+Journal 
+of Environmental Research 
+and 
+Public 
+Health, 
+18(22), 12254. 
+Lo, J. 
+2019). Exploring the buffer effet 
+of receiving 
+socal 
+support 
+·om lonely and emotionally unstable 
+social 
+networking users. 
+Computers in 
+Human 
+Behavior, 
+9, 
+103-116. 
+hupsHdoi.org/ 
+Lupinacci, L. (2021). ·Absentmindedly scrolling throug 
+noth 
+Liveness 
+and compulsory continuous 
+connectedness 
+in 
+soc 
+Media, 
+Culture & 
+Society, 
+432), 
+273-290. 
+Mai, L. 
+M. 
+Freudenthaer R., 
+Schneider, 
+F.M., & Vorderer,. 
+(2015), 
+·Tow you've 
+seen 
+it· 
+Individual 
+and social factors for user 
+chatting behavior on 
+Facebook. 
+Computers in 
+Human 
+Behavior, 
++49, 296-302. 
+2015.01.074| 
+Marciano, L., 
+Osroumova, 
+M., Schulz P.1., 
+& Camerini, 
+AL. 
+(2022). 
+Digital 
+media 
+use 
+and adolescents· 
+mental 
+health during the 
+COVID-19 
+pandemic: A systematic 
+review 
+and meta-analysis. 
+Fromters 
+in 
+Public 
+Health, 
+9, 2208. 
+fpubh 2021.793868 
+McCauley. E., 
+Gudmundsen, G., Schloredt, K, 
+Martell, 
+C 
+L, 
+Hubley, S. 
+& Dimidjian, S. 2016). 
+The Adolescent 
+·Activation 
+Program: Adapting 
+behavioral 
+activation as 
+a 
+teat- 
+·ment for depression in adolescence. 
+Journal 
+of Clinical Child 
+and 
+Adolescent 
+Psychology, 45(3), 291-308. 
+hps:/do.org/10. 
+1080/15374416.2014.979933 
+McCrae, N., 
+Gettings, & 
+Pursell, E. 
+(2017). Social media 
+and 
+·depressive sympioms 
+in childhood and 
+adolescence: 
+A system 
+atic review. 
+Adolescent Research 
+Review, 
+(4), 315-330, psf 
+oi 
+McHugh, B.C., 
+Wisniewski, 
+Rosson, 
+M.B.,& 
+(2018). 
+·When social 
+media 
+traumatizes 
+teens: 
+The roles of online 
+risk 
+exposure, 
+coping, 
+and post-traumatic 
+stress. 
+Inernet 
+Research, 
+2845), 1169-1188. 
+Meier, 
+A. 
+& Reinecke 1. 
+(2020), Computer-mediated communication, 
+·social 
+media, 
+and 
+mental 
+health: 
+A conceptual and 
+empiric 
+Communication 
+Research. 
+Misra, 
+S. & Stokols, D. (2012). Psychological and health 
+outcomes 
+·of perceived information 
+overload. 
+Environment 
+and Behavior, 
+737-758. 
+1404
+J. K., 
+Marin, M.-F, 
+Durand, 
+N., 
+Wan, 
+N.Justr, 
+RP, 
+·& 
+Lupien, S.J. (2016). Facebook behavior 
+associat
+with 
+dur 
+ral cortisol 
+in 
+adolescents: 
+Is befriending stress 
+with depres 
+sive 
+symptoms. 
+Journal 
+of Abnormal Child Psychology. 
+1427-1438, 
+nips//do.or/10.1016/ 
+psyneuen 
+2015, 10.005 
+Morrison, 
+L. 
+G., Geraghty, 
+A. 
+W., 
+Lloyd, 
+S., Goodman, 
+N., 
+Michaelides· 
+D."T, Hargood, C.,. 
+& Yardley, L 
+2018). Com. 
+paring 
+usage of 
+a Web and 
+app 
+stress 
+management 
+intervention: 
+·An observational 
+stud. 
+interventions, 
+12, 74-82 hp! 
+{doi 
+oe/10. 
+1016, 
+03,006, 
+& Wang, J. H. (2020). Vulnerable 
+community 
+identifica 
+tion 
+using 
+hate speech detection 
+on 
+social 
+media. 
+Information 
+Processing & 
+Management, $7(3), 
+102087. 
+Nelson, A. 
+M., & Fleming, R. (2019) Gender 
+diferences 
+in diet and 
+social 
+media: 
+An explorative study. Appetite, 142, 
+104383, 
+1016), appet.2019.104383, 
+esi J. 
+(2020). The impact of 
+social 
+media 
+on youth mental 
+health: 
+Challenges and opportunities. 
+North Carolina 
+Medical 
+Journal, 
+8102), 116-121. 
+esi, 
+Choukas-Bradley, S.,& 
+Prnstein, 
+M.. 
+Tansforma- 
+tion 
+of 
+adolescent 
+peer relations 
+inthe 
+socal 
+media 
+context: 
+Pat 
+|-A theoretical 
+framework and to 
+dyadic peer
+rela 
+Lionships. Clinical 
+Child and 
+Family Psychology Review
+21(
+267-294, 
+Nesi, 1, 
+Choukas-Bradley, S., 
+& 
+Prinstein, M. 
+J. 2018b). 
+Transfor 
+·mation of 
+adolescent peer 
+relations 
+in 
+the social 
+media 
+content: 
+Part 2·applicaton 
+to peer group 
+processes and 
+future 
+directions 
+{or research, 
+Clinical 
+Child and 
+Family Psychology Review, 21, 
+319, 
+Prinstin, 
+(2015). Using social 
+media fr 
+social com
+parison 
+and feedback-secking: Gender 
+and 
+popularity moderate 
+sssociations 
+with depressive symptoms. 
+Journal 
+of Abnormal 
+Child Psychology, 4318), 1427-1438, 
+Nick, E. A. 
+Klic,., 
+Nes. 
+J, 
+E. H.,Lindguist, 
+KA, & Prin 
+stein, 
+M.J. (2022). Adolescent 
+digital stress: 
+Frequencies, cor 
+relates, and longitudinal association 
+wth depressive symptoms. 
+Journal of 
+Adolescent Health, 
+702), 
+336-339. 
+10.1016) 
+2021.08.025 
+Oberst, 
+U, Wegmann, 
+E. Sted, 
+B. Brand, 
+M. 
+& Chamarr
+·Negative consequences 
+from heavy social networking in adoles- 
+cents: 
+The mediating role of fear 
+of missing out. 
+Journal of 
+cence, 
+$5, 51-60. 
+adolescen
+Odgers, 
+& Jensen, M. 
+R. (2020). Annual 
+research 
+review: 
+Ado- 
+mental 
+health 
+in 
+the digital age: Facts, fears, 
+and future 
+rections. 
+Journal 
+of Child 
+Psychology and Psychiatry, 61 
+336-248, 
+(Otte, ·. 
+2011), Cognitive behavioral 
+therapy in anxiety disorders: 
+Cur 
+fent 
+state 
+ofthe 
+evidence. 
+Dialogues in 
+Clinical 
+Neuroscience, 
+13(4), 
+413-421, 
+201 1.13 
+cote 
+Pang, H. 2021), Identifying associations 
+between 
+mobile 
+social 
+media 
+users· perceived values, atitude, 
+satisfaction, and 
+EWOM
+engage 
+·ment: 
+The moderating role of affective 
+factors. 
+Telematics 
+and 
+Informatics 58, 
+101561. 
+20001
+Pew Research 
+Center 
+(2018), Social 
+Media 
+Use 
+in 
+018. 
+Pew Research 
+Center, 
+Retrieved 
+from htips://www-pewresearch 
+Paisime, 
+M., Robertson-James, 
+C, Mejia, L., Nie, 
+A., Wolf, J, & 
+Reels, 8. (2020). Social 
+media 
+and teens: 
+A needs assessment 
+exploring the 
+potential role 
+of 
+social 
+media in 
+promoting 
+heath 
+·Social 
+Media 
+Society, 6(1),
+https://doi.org/ 
+Nes, 

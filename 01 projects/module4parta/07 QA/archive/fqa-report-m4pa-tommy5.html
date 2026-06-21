@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FQA Report — tommy5.pdf — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.6; padding: 32px 20px 80px; font-size: 14.5px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+
+  /* HEADER */
+  .report-header { background: linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%); color: white; border-radius: 10px; padding: 32px 36px 26px; margin-bottom: 24px; }
+  .filename-badge { display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4); padding: 5px 14px; border-radius: 18px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; }
+  .report-header h1 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+  .report-header .subtitle { font-size: 1rem; opacity: 0.78; margin-bottom: 14px; }
+  .report-meta { font-size: 0.82rem; opacity: 0.85; display: flex; gap: 18px; flex-wrap: wrap; }
+
+  /* NAV */
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.82rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #0d2240; color: #f39c12; }
+
+  /* SLIDE MAP */
+  .slide-map { background: white; border-radius: 8px; overflow: hidden; margin-bottom: 24px; border: 1px solid #dde3ee; }
+  .slide-map-header { background: #0d2240; color: white; padding: 10px 18px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  table.map { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.map th { background: #f0f3f9; padding: 8px 12px; text-align: left; font-size: 0.72rem; text-transform: uppercase; color: #6b7a99; }
+  table.map td { padding: 7px 12px; border-bottom: 1px solid #f0f3f9; }
+  table.map td:nth-child(1), table.map td:nth-child(2) { font-weight: 700; color: #0d2240; }
+
+  /* CARD */
+  .card { background: white; border-radius: 10px; padding: 26px; margin-bottom: 24px; border: 1px solid #dde3ee; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+  .card h2 { font-size: 1.05rem; color: #0d2240; margin-bottom: 16px; border-bottom: 2px solid #f0f3f9; padding-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+  .role-pill { padding: 5px 14px; border-radius: 18px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
+  .rp-christoph { background: #e3f2fd; color: #0d47a1; }
+  .rp-jackie    { background: #fce4ec; color: #880e4f; }
+  .rp-peter     { background: #e8f5e9; color: #1b5e20; }
+  .rp-steven    { background: #fff3e0; color: #bf360c; }
+  .rp-egbert    { background: #f3e5f5; color: #4a148c; }
+  h3 { color: #0d2240; font-size: 0.95rem; margin: 18px 0 10px; }
+
+  /* DASHBOARD */
+  .dash-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 16px; }
+  .dash-card { text-align: center; padding: 16px 8px; border-radius: 10px; border: 1.5px solid #ddd; }
+  .dash-card .r-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #666; }
+  .dash-card .r-score { font-size: 1.85rem; font-weight: 900; margin: 6px 0 2px; }
+  .dash-card .r-grade { font-size: 0.85rem; font-weight: 600; }
+  .dash-card .r-delta { font-size: 0.74rem; color: #999; margin-top: 2px; }
+  .dc-b { background: #e3f2fd; border-color: #1e88e5; }  .dc-b .r-score { color: #1565c0; }
+  .dc-j { background: #fce4ec; border-color: #ec407a; }  .dc-j .r-score { color: #ad1457; }
+  .dc-p { background: #e8f5e9; border-color: #43a047; }  .dc-p .r-score { color: #2e7d32; }
+  .dc-s { background: #fff3e0; border-color: #ffa726; }  .dc-s .r-score { color: #e65100; }
+  .overall-row { background: linear-gradient(135deg, #0d2240 0%, #4a148c 100%); border-radius: 10px; padding: 16px 24px; color: white; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .overall-row .o-label { font-weight: 700; font-size: 1rem; }
+  .overall-row .o-score { font-size: 2.2rem; font-weight: 900; }
+  .overall-row .o-detail { font-size: 0.85rem; opacity: 0.85; }
+  .grade-pill { padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; background: rgba(255,255,255,0.2); }
+
+  /* SLIDE BLOCK */
+  .slide-block { border-left: 4px solid #0d2240; padding: 12px 16px; margin: 14px 0; background: #fafbfd; border-radius: 0 6px 6px 0; }
+  .slide-tag { font-size: 0.74rem; font-weight: 800; color: #0d2240; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .pdf-ref { background: #ede7f6; color: #4a148c; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; }
+
+  /* CHECK LIST */
+  .check-list { list-style: none; }
+  .check-list li { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-bottom: 1px solid #f0f3f9; font-size: 0.88rem; }
+  .check-list li:last-child { border-bottom: none; }
+  .ci { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+
+  /* TAG */
+  .tag { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 5px; }
+  .t-crit  { background: #ffcdd2; color: #b71c1c; }
+  .t-high  { background: #ffe0b2; color: #bf360c; }
+  .t-med   { background: #fff8e1; color: #ef6c00; }
+  .t-ok    { background: #e8f5e9; color: #2e7d32; }
+  .t-info  { background: #e3f2fd; color: #0d47a1; }
+  .t-notes { background: #e0f7fa; color: #006064; }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 12px 0; }
+  th { background: #ede7f6; color: #4a148c; padding: 9px 12px; text-align: left; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f3f9; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafbfd; }
+
+  /* PRIORITY COLORS */
+  .p1 { color: #b71c1c; font-weight: 800; }
+  .p2 { color: #e65100; font-weight: 700; }
+  .p3 { color: #f9a825; font-weight: 600; }
+  .p4 { color: #388e3c; }
+
+  /* BOXES */
+  .timing-box { background: #e8f5e9; border: 1.5px solid #a5d6a7; border-radius: 8px; padding: 16px 20px; margin: 14px 0; }
+  .timing-box h4 { margin: 0 0 12px; color: #1b5e20; font-size: 0.95rem; }
+  .timing-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; font-size: 0.88rem; border-bottom: 1px solid #c8e6c9; }
+  .timing-row:last-child { border-bottom: none; font-weight: 700; color: #1b5e20; }
+  .t-warn { color: #e65100 !important; }
+  .trim-box { background: #fff8e1; border: 1.5px solid #ffe082; border-radius: 8px; padding: 14px 18px; margin: 14px 0; }
+  .trim-box h4 { margin: 0 0 10px; color: #e65100; font-size: 0.92rem; }
+  .trim-item { padding: 7px 0; border-bottom: 1px solid #ffe082; font-size: 0.88rem; }
+  .trim-item:last-child { border-bottom: none; }
+  .verdict-box { background: linear-gradient(135deg, #f3e5f5 0%, #ede7f6 100%); border: 2px solid #ce93d8; border-radius: 10px; padding: 18px 22px; margin-top: 14px; }
+  .verdict-box.warn { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-color: #ffb300; }
+  .verdict-box .v-title { font-weight: 800; color: #4a148c; font-size: 1rem; margin-bottom: 8px; }
+  .verdict-box.warn .v-title { color: #e65100; }
+  .verdict-box .v-text { color: #1a1f2e; font-size: 0.92rem; }
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .report-footer { text-align: center; font-size: 0.78rem; color: #888; margin-top: 36px; padding: 16px 0; border-top: 1px solid #dde3ee; }
+  .anchor { scroll-margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="report-header">
+    <div class="filename-badge">📄 tommy5.pdf</div>
+    <h1>Final Quality Assessment</h1>
+    <p class="subtitle">Case "Tommy": A Developmental Formulation — Module 4 Part A</p>
+    <div class="report-meta">
+      <span>Student: 5779906</span>
+      <span>Lecturer: Jasmin Kroll</span>
+      <span>Due: 15 June 2026</span>
+      <span>FQA Date: 30 May 2026</span>
+      <span>Assessors: Christoph · Jackie · Peter · Steven · Egbert</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="#dash">Dashboard</a>
+    <a href="#map">Slide map</a>
+    <a href="#christoph">Christoph</a>
+    <a href="#jackie">Jackie</a>
+    <a href="#peter">Peter</a>
+    <a href="#steven">Steven</a>
+    <a href="#egbert">Egbert</a>
+  </div>
+
+  <!-- SLIDE MAP -->
+  <div id="map" class="slide-map anchor">
+    <div class="slide-map-header">Slide content map — single source of truth</div>
+    <table class="map">
+      <thead><tr><th>PowerPoint Slide</th><th>PDF page</th><th>Title</th></tr></thead>
+      <tbody>
+        <tr><td>Title</td><td>p.2</td><td>Case "Tommy": A Developmental Formulation</td></tr>
+        <tr><td>Slide 1</td><td>p.3</td><td>Tommy: Presenting issues and formulation</td></tr>
+        <tr><td>Slide 2</td><td>p.4</td><td>Predisposing factors</td></tr>
+        <tr><td>Slide 3</td><td>p.5</td><td>Possible mechanism on developmental Impact</td></tr>
+        <tr><td>Slide 4</td><td>p.6</td><td>Risk of complexity</td></tr>
+        <tr><td>Slide 5</td><td>p.7</td><td>Protective factors and Opportunity</td></tr>
+        <tr><td>End</td><td>p.8</td><td>End of presentation</td></tr>
+        <tr><td>Refs 1/3</td><td>p.9</td><td>References (1/3) — populated</td></tr>
+        <tr><td>Refs 2/3</td><td>p.10</td><td>References (2/3) — EMPTY</td></tr>
+        <tr><td>Refs 3/4</td><td>p.11</td><td>References (3/4) — EMPTY</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dash" class="card anchor">
+    <h2>🎯 Executive Dashboard</h2>
+    <div class="dash-grid">
+      <div class="dash-card dc-b">
+        <div class="r-label">Christoph</div>
+        <div class="r-score">80%</div>
+        <div class="r-grade">B+</div>
+        <div class="r-delta">+1 vs tommy4</div>
+      </div>
+      <div class="dash-card dc-j">
+        <div class="r-label">Jackie</div>
+        <div class="r-score">65%</div>
+        <div class="r-grade">C+</div>
+        <div class="r-delta">+1 vs tommy4</div>
+      </div>
+      <div class="dash-card dc-p">
+        <div class="r-label">Peter</div>
+        <div class="r-score">76%</div>
+        <div class="r-grade">B</div>
+        <div class="r-delta">+4 vs tommy4</div>
+      </div>
+      <div class="dash-card dc-s">
+        <div class="r-label">Steven</div>
+        <div class="r-score">72%</div>
+        <div class="r-grade">B−</div>
+        <div class="r-delta">+9 vs tommy4</div>
+      </div>
+    </div>
+    <div class="overall-row">
+      <div>
+        <div class="o-label">Overall (tommy5)</div>
+        <div class="o-detail">tommy4 baseline: 70% · Improvement: +3</div>
+      </div>
+      <div class="o-score">73%</div>
+      <div>
+        <div class="grade-pill">B+</div>
+        <div style="font-size:0.82rem;opacity:0.85;margin-top:5px;">Est. 146–162 / 200</div>
+        <div style="font-size:0.8rem;opacity:0.75;">Target after V2 fixes: 172–182 / 200</div>
+      </div>
+    </div>
+    <p style="margin-top:14px;color:#555;font-size:0.88rem;">
+      <strong>Summary:</strong> tommy5 shows meaningful improvement over tommy4 — references now typed, Fonagy/SIGN/Achenbach 2001 added on S3, strong closing synthesis on S5. Jackie (65%) remains the ceiling — two critical citation errors (S1 transposition, S3 Achenbach 1966) and the broken S4 footnote drag the deck below A. Fixing the four critical V2 tasks in 45–60 minutes pushes the grade to A/A+. Companion files: <code>detailed_change_tasks_v2.html</code> for actions, <code>reference_check.html</code> for the full evidence audit.
+    </p>
+  </div>
+
+  <!-- CHRISTOPH -->
+  <div id="christoph" class="card anchor">
+    <h2><span class="role-pill rp-christoph">Christoph</span> Compliance &amp; Rubric — 80/100</h2>
+
+    <h3>Format checklist</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>5 content slides (S1–S5) — within maximum</span></li>
+      <li><span class="ci">✅</span><span>Title slide present with student number and subtitle</span></li>
+      <li><span class="ci">✅</span><span>Lecturer name (Jasmin Kroll) on cover sheet</span></li>
+      <li><span class="ci">✅</span><span>Harvard-format references on reference slide 1 (PDF p.9)</span></li>
+      <li><span class="ci">✅</span><span>Thesis statement on Slide 1 (formulation framing)</span></li>
+      <li><span class="ci">✅</span><span>Closing synthesis statement on Slide 5 — strong improvement over tommy4</span></li>
+      <li><span class="ci">✅</span><span>Visual aids used throughout (iceberg, Bronfenbrenner, 6-box mechanism grid, 5P cycle)</span></li>
+      <li><span class="ci">⚠️</span><span><strong>Reference slides 2/3 (PDF p.10) and 3/4 (PDF p.11) are EMPTY</strong> — only "…" placeholder visible <span class="tag t-crit">CRITICAL</span></span></li>
+      <li><span class="ci">⚠️</span><span><strong>Slide 4 footnote reads "1) _."</strong> — broken citation, placeholder never filled <span class="tag t-crit">CRITICAL</span></span></li>
+      <li><span class="ci">⚠️</span><span>Slide 1 cites Achenbach &amp; Rescorla 2000 (preschool manual — wrong for school-age Tommy) <span class="tag t-high">HIGH</span></span></li>
+      <li><span class="ci">⚠️</span><span>End-slide subtitle reads "A Biopsychosocial Analysis" but title slide says "A Developmental Formulation" — inconsistent <span class="tag t-med">LOW</span></span></li>
+      <li><span class="ci">⚠️</span><span>Three spelling errors on Slide 4 (PDF p.6): "stimuly", "prophycy", "neurodevelomental" <span class="tag t-med">LOW</span></span></li>
+    </ul>
+
+    <h3>Rubric alignment (200-pt total)</h3>
+    <table>
+      <tr><th>Criterion</th><th>Weight</th><th>Current state</th><th>Risk</th></tr>
+      <tr><td><strong>Knowledge of ACEs &amp; development</strong></td><td>30% (60 pt)</td><td>Strong — bio / cognitive / social-emotional domains all covered. Continuum of Need (M4 W3) absent but optional.</td><td>Low</td></tr>
+      <tr><td><strong>Analysis &amp; Evaluation</strong></td><td>50% (100 pt)</td><td>Formulation framing strong; closing synthesis added; 5P framework named on S1 and visualised on S4. Citation transposition on S1 weakens analytical credibility marginally.</td><td>Medium</td></tr>
+      <tr><td><strong>Communication</strong></td><td>20% (40 pt)</td><td>Visuals excellent; <strong>two empty ref slides + broken S4 citation</strong> signal unfinished work. This criterion is where the most marks are at risk.</td><td>High</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#555;">Communication is the at-risk criterion. The empty reference slides and broken S4 citation are visible defects that a marker will register negatively. Both are quick fixes (see V2-R-T1 and V2-S4-T1).</p>
+  </div>
+
+  <!-- JACKIE -->
+  <div id="jackie" class="card anchor">
+    <h2><span class="role-pill rp-jackie">Jackie</span> Evidence Audit — 65/100</h2>
+    <p style="color:#555;font-size:0.88rem;margin-bottom:18px;">Rule: bullets with a superscript number have a citation; bullets without need one. Full statement-by-statement audit with copy-paste citations is in <code>reference_check.html</code>.</p>
+
+    <!-- Slide 1 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.3</span><span class="pdf-ref">PowerPoint Slide 1</span> Tommy: Presenting issues and formulation</div>
+      <ul class="check-list">
+        <li><span class="ci">❌</span><span><strong>Citation transposition.</strong> "survival strategies<sup>3</sup>" cites Bongers (wrong source — Bongers is about externalising trajectories, not survival strategies). "5P framework<sup>4</sup>" cites van der Kolk (wrong source — 5P is Weerasekera). Sources are simply swapped. <span class="tag t-crit">CRITICAL</span></span></li>
+        <li><span class="ci">⚠️</span><span>Footnote 1 (Achenbach &amp; Rescorla 2000) is the preschool manual. Only the 2001 school-age manual is correct for Tommy. <span class="tag t-high">HIGH</span></span></li>
+        <li><span class="ci">✅</span><span>Footnote 2 (Achenbach &amp; Rescorla 2001), 3 (Bongers 2004), 4 (van der Kolk 2014), 5 (Weerasekera 1996 / Engel 1977) — all sources themselves are valid; only the linkage to claims is wrong.</span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.4</span><span class="pdf-ref">PowerPoint Slide 2</span> Predisposing factors</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span>Felitti et al. (1998) cited correctly for ACE definition and 4+ ACE risk — verified PMID 9635069.</span></li>
+        <li><span class="ci">❌</span><span><strong>Bronfenbrenner ecological diagram uncited.</strong> Diagram is a direct visual of Bronfenbrenner's model — needs citation. <span class="tag t-high">HIGH</span></span></li>
+        <li><span class="ci">❌</span><span>"→ Social causation" — uncited term, jargon-y on the slide. Best to delete the label. <span class="tag t-med">MEDIUM</span></span></li>
+        <li><span class="ci">❌</span><span>"Critical windows of neuroplasticity" — uncited factual claim. Recommend Shonkoff &amp; Phillips (2000). <span class="tag t-med">MEDIUM</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.5</span><span class="pdf-ref">PowerPoint Slide 3</span> Possible mechanism on developmental Impact</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span>Shonkoff &amp; Garner (1), McCrory &amp; Viding 2015 (2), Teicher 2003 (3), Main &amp; Hesse 1990 (6), van der Kolk 2014 (8), Fonagy 2002 (9), SIGN 2019 (10), Achenbach &amp; Rescorla 2001 (11) — all correct.</span></li>
+        <li><span class="ci">⚠️</span><span>Dodge 2006 (4) — not PubMed-verifiable. Likely a book chapter. Recommended fallback if needed: Crick &amp; Dodge (1994). <span class="tag t-high">UNVERIFIED</span></span></li>
+        <li><span class="ci">❌</span><span><strong>Achenbach (1966) (footnote 5) for "shame → aggression" is the wrong paper.</strong> 1966 is the factor-analytic taxonomy paper — does NOT address shame or aggression. Must remove or replace with Tangney et al. (1992). <span class="tag t-crit">CRITICAL</span></span></li>
+        <li><span class="ci">⚠️</span><span>Bowlby (footnote 7) — no year. Add (1969). <span class="tag t-high">HIGH</span></span></li>
+        <li><span class="ci">❌</span><span>Five uncited sub-bullets: "Executive function difficulties", "Low sustained attention → impulse regulation", "Missing serve &amp; return", "Maternal low mood + ACEs → MH risk", "ACEs → chronic disease risk". Most can be fixed by superscripting sources already on the slide; only the maternal-mood claim needs a new source (McCrory, Gerin &amp; Viding 2017). <span class="tag t-high">HIGH</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.6</span><span class="pdf-ref">PowerPoint Slide 4</span> Risk of complexity</div>
+      <ul class="check-list">
+        <li><span class="ci">❌</span><span><strong>Footnote bar reads "1) _."</strong> — placeholder never completed. All seven steps effectively uncited. Replace with Weerasekera (1996) for the 5P cycle + Teicher (2003) for the biology cascade. <span class="tag t-crit">CRITICAL</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.7</span><span class="pdf-ref">PowerPoint Slide 5</span> Protective factors and Opportunity</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span>Siegel 2012 (1) and Masten 2001 (2) — both correctly cited.</span></li>
+        <li><span class="ci">⚠️</span><span>Three Opportunity bullets ("ACEs do not affect all children…", "Resilience = environmental…", "Increased neuroplasticity in adolescence…") have no superscripts — sources are already on the slide. Just add superscripts (2, 2, and 1 respectively). <span class="tag t-med">EASY FIX</span></span></li>
+        <li><span class="ci">ℹ️</span><span>Continuum of Need / GIRFEC absent — Peter flag, not strictly Jackie. <span class="tag t-info">CURRICULUM GAP</span></span></li>
+      </ul>
+    </div>
+
+    <!-- References -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.9–11</span><span class="pdf-ref">PowerPoint Ref slides 1–3</span> References</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span>Reference slide 1 (PDF p.9) is fully populated with typed Harvard — major improvement vs tommy4 image-based reference.</span></li>
+        <li><span class="ci">❌</span><span><strong>Reference slides 2/3 (PDF p.10) and 3/4 (PDF p.11) are EMPTY.</strong> Numbering inconsistent (2/3 then 3/4). Either delete the empty slides or fill them. <span class="tag t-crit">CRITICAL</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PETER -->
+  <div id="peter" class="card anchor">
+    <h2><span class="role-pill rp-peter">Peter</span> Curriculum Coverage — 76/100</h2>
+
+    <table>
+      <tr><th>Curriculum concept</th><th>Source</th><th>Status</th></tr>
+      <tr><td>ACEs definition &amp; cumulative risk</td><td>M4 W1</td><td><span class="tag t-ok">✓ S2 (PDF p.4)</span> Felitti 1998 cited, 4+ ACE risk stated</td></tr>
+      <tr><td>Biological impacts (HPA, toxic stress)</td><td>M4 W2</td><td><span class="tag t-ok">✓ S3 (PDF p.5)</span> Teicher, Shonkoff cited</td></tr>
+      <tr><td>Neurological impact (amygdala–PFC)</td><td>M4 W2</td><td><span class="tag t-ok">✓ S3 (PDF p.5)</span> "Neurological Hijack" — Teicher, van der Kolk</td></tr>
+      <tr><td>Cognitive impacts (executive function, attention)</td><td>M4 W2</td><td><span class="tag t-high">⚠️ S3 (PDF p.5)</span> Mentioned but uncited</td></tr>
+      <tr><td>Social-emotional development (attachment)</td><td>M4 W3</td><td><span class="tag t-ok">✓ S3 (PDF p.5)</span> Main &amp; Hesse, Bowlby, Fonagy cited</td></tr>
+      <tr><td>Mentalizing / Fonagy</td><td>M4 W4</td><td><span class="tag t-ok">✓ S3 (PDF p.5)</span> Fonagy 2002 — improvement vs tommy4</td></tr>
+      <tr><td>5P formulation framework</td><td>M4 W4</td><td><span class="tag t-ok">✓ S1, S4</span> Named S1; visualised S4 — needs citation fix on both</td></tr>
+      <tr><td>Bronfenbrenner ecological model</td><td>M4 W1</td><td><span class="tag t-high">⚠️ S2 (PDF p.4)</span> Diagram used but UNCITED</td></tr>
+      <tr><td>Protective factors &amp; resilience</td><td>M4 W5</td><td><span class="tag t-ok">✓ S5 (PDF p.7)</span> Masten 2001 cited</td></tr>
+      <tr><td>FASD / neurodevelopmental risk</td><td>M4 W3</td><td><span class="tag t-ok">✓ S3 (PDF p.5)</span> SIGN 2019 — improvement vs tommy4</td></tr>
+      <tr><td>Diagnostic overshadowing</td><td>M4 W4</td><td><span class="tag t-ok">✓ S4 (PDF p.6)</span> Step 7 — uncited but concept present</td></tr>
+      <tr><td>Individual / family / community levels</td><td>Assignment brief</td><td><span class="tag t-ok">✓ S2 (PDF p.4)</span> Explicit risk layers</td></tr>
+      <tr><td><strong>Continuum of Need / GIRFEC</strong></td><td>M4 W3 p.35</td><td><span class="tag t-crit">❌ ABSENT</span> Universal → Specialist not mentioned anywhere in deck</td></tr>
+      <tr><td>Depression as specific MH outcome</td><td>M4 W4</td><td><span class="tag t-high">⚠️ S3 (PDF p.5)</span> "Mental health risk" generic; depression not named explicitly</td></tr>
+      <tr><td>Intergenerational transmission of trauma</td><td>M4 W2</td><td><span class="tag t-ok">✓ S2 (PDF p.4)</span> Mary's 15 placements + parents' history</td></tr>
+    </table>
+
+    <p><strong>Peter's overall:</strong> Coverage has strengthened over tommy4 (Fonagy, SIGN, Achenbach 2001 added). Two named curriculum elements remain: <strong>Continuum of Need</strong> (optional one-bullet fix on S5 — see V2-S5-T3) and <strong>depression named explicitly</strong> on S3 (covered when adding McCrory, Gerin &amp; Viding 2017 — see V2-S3-T3).</p>
+  </div>
+
+  <!-- STEVEN -->
+  <div id="steven" class="card anchor">
+    <h2><span class="role-pill rp-steven">Steven</span> Narrative &amp; Script Review — 72/100</h2>
+
+    <h3>Through-line</h3>
+    <p><em>"Tommy's behaviours are the cumulative product of interacting developmental adversities — a formulation-based reading can explain and begin to address them. Outcome is not fixed."</em></p>
+    <p>This through-line is <strong>clear and well-constructed</strong>. The thesis is stated explicitly on Slide 1 and resolved as a synthesis statement on Slide 5. The S1 → S2 → S3 → S4 → S5 sequence (Presenting → Predisposing → Mechanism → Complexity → Protective) is logically sound and curriculum-aligned. This is the strongest improvement vs tommy4.</p>
+
+    <h3>Bridge quality between slides</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>S1 (PDF p.3) → S2 (PDF p.4): natural progression from presenting iceberg to predisposing origins.</span></li>
+      <li><span class="ci">✅</span><span>S2 (PDF p.4) → S3 (PDF p.5): ACE categories → mechanisms is logical.</span></li>
+      <li><span class="ci">⚠️</span><span>S3 (PDF p.5) → S4 (PDF p.6): no spoken bridge. Suggest a notes-pane sentence: <em>"These mechanisms don't operate in isolation — they form an interlocking cycle, which I'll walk through now."</em></span></li>
+      <li><span class="ci">⚠️</span><span>S4 (PDF p.6) → S5 (PDF p.7): abrupt — S4 ends on diagnostic overshadowing; S5 opens on protective factors. Suggest a notes-pane bridge: <em>"Despite this complexity, Tommy's story is not one-directional."</em></span></li>
+    </ul>
+
+    <h3>Slide density per slide</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span><strong>Slide 1 (PDF p.3):</strong> manageable density. Iceberg + thesis + risk pathway. Good balance.</span></li>
+      <li><span class="ci">⚠️</span><span><strong>Slide 2 (PDF p.4):</strong> dense but readable. The "ACE interact and compound" sentence can move to notes (V2-S2-T4).</span></li>
+      <li><span class="ci">⚠️</span><span><strong>Slide 3 (PDF p.5):</strong> DENSEST slide in the deck. Six boxes + 11 footnote citations + multiple sub-bullets. Highest script-time risk. Two text-to-notes moves recommended.</span></li>
+      <li><span class="ci">✅</span><span><strong>Slide 4 (PDF p.6):</strong> numbered list is easy to deliver. Optional merge of steps 6+7 saves 15 sec.</span></li>
+      <li><span class="ci">✅</span><span><strong>Slide 5 (PDF p.7):</strong> clean structure (protective + opportunity + closing). One parenthetical can move to notes.</span></li>
+    </ul>
+
+    <h3>Script timing — realistic 10-minute check</h3>
+    <div class="timing-box">
+      <h4>⏱ Estimated script timing at 150 wpm</h4>
+      <div class="timing-row"><span>Title + intro</span><span style="font-family:monospace;color:#1b5e20;">0:25</span></div>
+      <div class="timing-row"><span>Slide 1 — Presenting issues + thesis</span><span style="font-family:monospace;color:#1b5e20;">1:55</span></div>
+      <div class="timing-row"><span>Slide 2 — Predisposing factors</span><span style="font-family:monospace;color:#1b5e20;">2:10</span></div>
+      <div class="timing-row" style="color:#e65100;"><span>Slide 3 — Mechanisms (DENSE — 6 boxes, 11 citations)</span><span class="t-warn" style="font-family:monospace;">2:25</span></div>
+      <div class="timing-row"><span>Slide 4 — Risk of complexity</span><span style="font-family:monospace;color:#1b5e20;">1:25</span></div>
+      <div class="timing-row"><span>Slide 5 — Protective factors + opportunity</span><span style="font-family:monospace;color:#1b5e20;">1:25</span></div>
+      <div class="timing-row"><span>Closing + sign-off</span><span style="font-family:monospace;color:#1b5e20;">0:20</span></div>
+      <div class="timing-row" style="font-weight:800;border-top:2px solid #a5d6a7;padding-top:8px;"><span>TOTAL (current)</span><span class="t-warn" style="font-family:monospace;">~10:05</span></div>
+    </div>
+    <p style="font-size:0.88rem;color:#555;">Marginally over 10 minutes. The trims below recover ~50 seconds, bringing the total to ~9:15 — comfortable margin for pauses.</p>
+
+    <div class="trim-box">
+      <h4>✂️ Weakest arguments to remove (per the user's request #6)</h4>
+      <div class="trim-item"><strong>Trim 1 — S3 "ACEs → chronic disease risk" bullet</strong> (saves ~15 sec). Peripheral to Tommy's developmental story; Felitti (1998) already covers this on S2; uncited on S3. Net benefit: timing + removes uncited claim.</div>
+      <div class="trim-item"><strong>Trim 2 — S3 "shame → aggression<sup>5</sup>" sub-bullet</strong> (saves ~10 sec + fixes citation error). The wrong Achenbach (1966) citation is here. Removing the sub-bullet kills both birds.</div>
+      <div class="trim-item"><strong>Trim 3 — S3 "Internal Working Models: adults = unpredictable; safety = fragile" sub-bullet → notes pane</strong> (saves ~12 sec). Duplicates the disorganised attachment bullet below. Moving to notes lets you speak it without dense slide text.</div>
+      <div class="trim-item"><strong>Trim 4 — S4 steps 6+7 merge</strong> (saves ~15 sec). Combines self-fulfilling prophecy and overshadowing into one tighter sentence without losing content. See V2-S4-T3.</div>
+    </div>
+    <p style="font-size:0.88rem;color:#555;"><strong>Steven's overall:</strong> The narrative arc is now defensible. The strongest improvement vs tommy4 is the closing synthesis statement on S5. Remaining risks: S3 density (mitigated by trims) and absent spoken bridges between S3→S4 and S4→S5 (notes-pane sentences suggested above).</p>
+  </div>
+
+  <!-- EGBERT -->
+  <div id="egbert" class="card anchor">
+    <h2><span class="role-pill rp-egbert">Egbert</span> Synthesis &amp; Prioritised Recommendations</h2>
+
+    <div class="verdict-box">
+      <div class="v-title">Grade estimate: B+ / A− (~146–162 / 200)</div>
+      <div class="v-text">tommy5 is a clear improvement on tommy4. The formulation framing is strong, references are typed, the closing synthesis is added. The ceiling is Jackie's score: two critical citation errors (S1 transposition, S3 Achenbach 1966) and one critical broken citation (S4 "1) _.") drag the deck below A. Fixing the four critical V2 tasks in 45–60 minutes — V2-S1-T1, V2-S3-T1, V2-S4-T1, V2-R-T1 — realistically pushes the grade to <strong>A / A+ (~172–182 / 200)</strong>.</div>
+    </div>
+
+    <h3>Prioritised actions (cross-referenced to V2 change tasks)</h3>
+    <table>
+      <tr><th>Priority</th><th>Task ID</th><th>Slide</th><th>Issue</th><th>Action summary</th></tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V2-S1-T1</td>
+        <td>S1 / PDF p.3</td>
+        <td>Citation transposition (3 and 4 swapped)</td>
+        <td>Change two superscripts only — 30 seconds</td>
+      </tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V2-S4-T1</td>
+        <td>S4 / PDF p.6</td>
+        <td>Broken citation "1) _."</td>
+        <td>Replace with Weerasekera (1996) + Teicher (2003) — 2 min</td>
+      </tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V2-S3-T1</td>
+        <td>S3 / PDF p.5</td>
+        <td>Achenbach (1966) is the wrong paper for shame→aggression</td>
+        <td>Option A: remove sub-bullet (recommended); Option B: replace with Tangney et al. (1992) — 5–10 min</td>
+      </tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V2-R-T1</td>
+        <td>Refs / PDF p.10–11</td>
+        <td>Two empty reference slides</td>
+        <td>Recommended: delete the empty slides — 2 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V2-S1-T2</td>
+        <td>S1 / PDF p.3</td>
+        <td>Achenbach &amp; Rescorla 2000 (preschool manual)</td>
+        <td>Delete + renumber footnotes — 5 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V2-S2-T1</td>
+        <td>S2 / PDF p.4</td>
+        <td>Bronfenbrenner diagram uncited</td>
+        <td>Add footnote 2 — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V2-S3-T2</td>
+        <td>S3 / PDF p.5</td>
+        <td>Bowlby no year</td>
+        <td>Add (1969) — 30 sec</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V2-S3-T3</td>
+        <td>S3 / PDF p.5</td>
+        <td>"Maternal low mood + ACEs → MH risk" uncited</td>
+        <td>Add McCrory, Gerin &amp; Viding (2017) — 2 min</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V2-S2-T2/T3</td>
+        <td>S2 / PDF p.4</td>
+        <td>"Social causation" jargon + "neuroplasticity windows" uncited</td>
+        <td>Delete label / add Shonkoff &amp; Phillips (2000) — 3 min</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V2-S3-T4</td>
+        <td>S3 / PDF p.5</td>
+        <td>3 uncited S3 sub-bullets (executive function / attention / serve &amp; return)</td>
+        <td>Add superscripts; add Center on the Developing Child (2007) — 3 min</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V2-S4-T2</td>
+        <td>S4 / PDF p.6</td>
+        <td>Three spelling errors</td>
+        <td>Fix "stimuli", "prophecy", "neurodevelopmental" — 30 sec</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V2-S5-T1</td>
+        <td>S5 / PDF p.7</td>
+        <td>3 Opportunity bullets lack superscripts</td>
+        <td>Add (2), (2), (1) — sources already on slide — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p4">P4 OPTIONAL</td><td>V2-S5-T3</td>
+        <td>S5 / PDF p.7</td>
+        <td>Continuum of Need / GIRFEC absent</td>
+        <td>Add one bullet only if space permits — 2 min</td>
+      </tr>
+      <tr>
+        <td class="p4">P4 OPTIONAL</td><td>Trim 1–4</td>
+        <td>S3 + S4</td>
+        <td>Script ~10:05 (over)</td>
+        <td>Apply trims — script drops to ~9:15</td>
+      </tr>
+    </table>
+
+    <h3>Go / No-Go</h3>
+    <div class="verdict-box warn">
+      <div class="v-title">🟡 CONDITIONAL GO — fix the 4 critical V2 tasks before recording</div>
+      <div class="v-text">The presentation should not be recorded with <code>1) _.</code> visible on Slide 4 or with two empty reference slides. These are visual defects a marker will spot in seconds. Once V2-S1-T1, V2-S3-T1, V2-S4-T1 and V2-R-T1 are applied, the deck is record-ready. P2 tasks should also be done in the same pass — they take a few minutes each and contribute meaningfully to the grade band. P3/P4 are upside.</div>
+    </div>
+
+    <p style="margin-top:14px;font-size:0.88rem;color:#555;">Companion files for execution:</p>
+    <ul style="margin-left:22px;font-size:0.88rem;color:#555;">
+      <li><code>detailed_change_tasks_v2.html</code> — slide-by-slide chapters with summary + possible points gained header per chapter; every task self-contained with exact wording.</li>
+      <li><code>reference_check.html</code> — every visible claim classified (synthesis / cited &amp; verified / cited but wrong / uncited) with copy-paste Harvard bibliography, in-text citation, and original source quote.</li>
+    </ul>
+  </div>
+
+  <div class="report-footer">
+    Essay Fabrik — FQA Report — tommy5.pdf — Module 4 Part A — 30 May 2026<br>
+    Egbert (Christoph · Jackie · Peter · Steven, synthesised)
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FQA Report — v008 (presentation)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fb; color: #1a2035; font-size: 13.5px; line-height: 1.55; }
+  .page { max-width: 960px; margin: 0 auto; padding: 28px 24px 60px; }
+  h1 { font-size: 22px; font-weight: 700; color: #0f1e3a; }
+  h2 { font-size: 15px; font-weight: 700; color: #1a2d5a; margin: 28px 0 10px; border-bottom: 2px solid #dde3ee; padding-bottom: 5px; }
+  h3 { font-size: 13px; font-weight: 600; color: #2a3f6a; margin: 16px 0 6px; }
+  p { margin-bottom: 9px; }
+  .header { background: linear-gradient(135deg, #0f1e3a 0%, #1a3a6a 100%); color: white; border-radius: 12px; padding: 22px 28px; margin-bottom: 24px; }
+  .header .label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #8aa4cc; margin-bottom: 4px; }
+  .header .meta { display: flex; gap: 28px; margin-top: 12px; flex-wrap: wrap; }
+  .header .meta-item { font-size: 11px; color: #a8bdd8; }
+  .header .meta-item strong { color: white; display: block; font-size: 13px; }
+  .gate-pass { background: #e8faf0; border: 2px solid #34c069; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; display: flex; align-items: center; gap: 14px; }
+  .gate-pass .gate-icon { font-size: 28px; }
+  .gate-pass .gate-score { font-size: 28px; font-weight: 800; color: #1a9650; }
+  .gate-pass .gate-text { font-size: 13px; color: #1a7040; }
+  .gate-pass .gate-text strong { font-size: 15px; display: block; margin-bottom: 2px; }
+  .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .card { background: white; border-radius: 10px; padding: 14px 16px; border: 1px solid #dde3ee; }
+  .card .c-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 4px; }
+  .card .c-value { font-size: 24px; font-weight: 800; color: #1a2d5a; }
+  .card .c-sub { font-size: 10px; color: #888; margin-top: 2px; }
+  .card.green .c-value { color: #1a9650; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 16px; }
+  th { background: #f0f3f9; color: #445; font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 2px solid #dde3ee; }
+  td { padding: 7px 10px; border-bottom: 1px solid #eaecf3; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8f9fc; }
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10.5px; font-weight: 600; }
+  .ok { background: #e3f7ed; color: #1a7040; }
+  .warn { background: #fff3cd; color: #7a5800; }
+  .flag { background: #fde8e8; color: #991a1a; }
+  .new-ok { background: #e0f0ff; color: #0055aa; }
+  .info { background: #eef2ff; color: #3344aa; }
+  .box { border-radius: 9px; padding: 13px 16px; margin-bottom: 14px; border-left: 4px solid; }
+  .box.green { background: #e8faf0; border-color: #34c069; }
+  .box.amber { background: #fff8e8; border-color: #f0a800; }
+  .box.blue { background: #eef4ff; border-color: #3366cc; }
+  .agent-header { display: flex; align-items: center; gap: 10px; background: white; border: 1px solid #dde3ee; border-radius: 10px; padding: 12px 16px; margin-bottom: 16px; }
+  .agent-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .agent-header h2 { margin: 0; border: none; padding: 0; font-size: 14px; }
+  .slide-row { display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid #eaecf3; font-size: 12.5px; }
+  .slide-row:last-child { border-bottom: none; }
+  .slide-id { font-weight: 700; color: #1a3a6a; min-width: 86px; flex-shrink: 0; }
+  .slide-content { color: #444; flex: 1; }
+  .slide-status { flex-shrink: 0; }
+  .footer { margin-top: 48px; border-top: 1px solid #dde3ee; padding: 9px 0 7px; font-size: 10.5px; color: #aaa; text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="label">Essay Fabrik · FQA Report</div>
+    <h1>Module 4 Part A — v008 (presentation.pptx)</h1>
+    <div class="meta">
+      <div class="meta-item"><strong>Loop</strong>FQA Loop 7</div>
+      <div class="meta-item"><strong>FQA Date</strong>13 June 2026</div>
+      <div class="meta-item"><strong>Parent Version</strong>v006 (v0.13)</div>
+      <div class="meta-item"><strong>Student</strong>5779906</div>
+      <div class="meta-item"><strong>Threshold</strong>85 (project min 83)</div>
+    </div>
+  </div>
+
+  <div class="gate-pass">
+    <div class="gate-icon">&#9989;</div>
+    <div>
+      <div class="gate-score">88 / 85</div>
+      <div class="gate-text">
+        <strong>GATE PASSED — v008 accepted &amp; submission-ready</strong>
+        &Delta;0 vs v006 (88) · cover date fixed (P3 resolved) · reference integrity verified clean 44/44 · 0 open P1/P2/P3
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div class="card green"><div class="c-label">KU (30%)</div><div class="c-value">90</div><div class="c-sub">= v006 — sources retained</div></div>
+    <div class="card green"><div class="c-label">AE (50%)</div><div class="c-value">89</div><div class="c-sub">+1 — Ecclestone &amp; Hayes counter-point</div></div>
+    <div class="card green"><div class="c-label">CR (20%)</div><div class="c-value">84</div><div class="c-sub">+1 — cover date fixed; refs verified clean</div></div>
+    <div class="card green"><div class="c-label">fqaScore</div><div class="c-value">88</div><div class="c-sub">27.0 + 44.5 + 16.8 = 88.3</div></div>
+    <div class="card"><div class="c-label">Warwick pts</div><div class="c-value">177</div><div class="c-sub">/ 200 — A band</div></div>
+    <div class="card green"><div class="c-label">Open P1/P2/P3</div><div class="c-value">0</div><div class="c-sub">submission-ready</div></div>
+  </div>
+
+  <div class="box blue">
+    <strong>What v008 is.</strong> v008 is the accepted v006 argument, re-verified after two changes: (1) the cover "Date Submitted" field was corrected to <strong>2026-06-15</strong> (resolving the only open P3), and (2) one source was added — <strong>Ecclestone &amp; Hayes (2019)</strong> on slide 4 — supporting the "balanced approach / avoid overmedicalisation" counter-point. A full three-level reference cross-check (superscripts &rarr; footnotes &rarr; bibliography) was run and is <strong>clean at 44/44</strong>. See the companion <em>reference-check.html</em>.
+  </div>
+
+  <!-- SLIDE MAP -->
+  <h2>Slide Content Map — v008 (11 slides)</h2>
+  <div style="background:white;border:1px solid #dde3ee;border-radius:10px;padding:14px 18px;margin-bottom:22px;">
+    <div class="slide-row"><div class="slide-id">Cover (S1)</div><div class="slide-content">Cover sheet — student 5779906, Jasmin Kroll</div><div class="slide-status"><span class="badge ok">&check; "Date Submitted: 2026-06-15" — fixed</span></div></div>
+    <div class="slide-row"><div class="slide-id">Title (S2)</div><div class="slide-content">Case "Tommy": A Developmental Formulation</div><div class="slide-status"><span class="badge ok">&check; Clean</span></div></div>
+    <div class="slide-row"><div class="slide-id">Page 1 (S3)</div><div class="slide-content">Presenting issues &amp; formulation · fn1&ndash;8</div><div class="slide-status"><span class="badge ok">&check; Clean</span></div></div>
+    <div class="slide-row"><div class="slide-id">Page 2 (S4)</div><div class="slide-content">Predisposing factors (ecological model) · fn1&ndash;11</div><div class="slide-status"><span class="badge ok">&check; Shonkoff 2001 = bib</span></div></div>
+    <div class="slide-row"><div class="slide-id">Page 3 (S5)</div><div class="slide-content">Mechanism of developmental impact · fn1&ndash;15</div><div class="slide-status"><span class="badge ok">&check; Clean</span></div></div>
+    <div class="slide-row"><div class="slide-id">Page 4 (S6)</div><div class="slide-content">Driving factors &amp; complexity · fn1&ndash;6</div><div class="slide-status"><span class="badge new-ok">+ Ecclestone &amp; Hayes counter-point</span></div></div>
+    <div class="slide-row"><div class="slide-id">Page 5 (S7)</div><div class="slide-content">Protective factors &amp; opportunity · fn1&ndash;7 · synthesis</div><div class="slide-status"><span class="badge ok">&check; Clean</span></div></div>
+    <div class="slide-row"><div class="slide-id">S8&ndash;S11</div><div class="slide-content">References (1 of 4)&ndash;(4 of 4) · 44 sources</div><div class="slide-status"><span class="badge ok">&check; 44/44 reconciled</span></div></div>
+  </div>
+
+  <!-- CHRISTOPH -->
+  <div class="agent-header"><div class="agent-dot" style="background:#5a77cc;"></div><h2>Christoph — Compliance &amp; Rubric Scoring</h2></div>
+  <h3>Rubric Alignment (v008)</h3>
+  <table>
+    <tr><th>Criterion</th><th>Weight</th><th>v006</th><th>v008</th><th>&Delta;</th><th>Driver</th></tr>
+    <tr><td><strong>KU</strong> Knowledge &amp; Understanding</td><td>30%</td><td>90</td><td><strong>90</strong></td><td>0</td><td>All sources retained; the new Ecclestone &amp; Hayes adds depth (a critique), not breadth — KU ceiling held</td></tr>
+    <tr><td><strong>AE</strong> Analysis &amp; Evaluation</td><td>50%</td><td>88</td><td><strong>89</strong></td><td style="color:#1a9650">+1</td><td>Ecclestone &amp; Hayes (2019) introduces a genuine counter-position (risk of overmedicalising childhood adaptation), which the slide weighs against the ACE/NDC risk — exactly the evaluative move the dominant criterion rewards</td></tr>
+    <tr><td><strong>CR</strong> Communication &amp; Referencing</td><td>20%</td><td>83</td><td><strong>84</strong></td><td style="color:#1a9650">+1</td><td>Cover "Date Submitted" corrected to 2026-06-15; full 3-level reference system verified clean (44/44, 0 mismatches/orphans). Residual: P3 cosmetics only (footnote spacing on S5, one missing full stop, &amp;/and inconsistency)</td></tr>
+    <tr style="background:#f5f7fb;font-weight:700;"><td>fqaScore</td><td>100%</td><td>88</td><td><strong>88</strong></td><td>0</td><td>27.0 + 44.5 + 16.8 = 88.3 &rarr; 88</td></tr>
+  </table>
+
+  <h3>Format Checklist</h3>
+  <table>
+    <tr><th>Item</th><th>v006</th><th>v008</th></tr>
+    <tr><td>Cover "Date Submitted"</td><td><span class="badge warn">2026-04-15 (P3)</span></td><td><span class="badge ok">2026-06-15 &check;</span></td></tr>
+    <tr><td>Signed declaration date</td><td><span class="badge ok">2026-06-15 &check;</span></td><td><span class="badge ok">2026-06-15 &check;</span></td></tr>
+    <tr><td>Shonkoff year (in-text = bib)</td><td><span class="badge ok">2001 &check;</span></td><td><span class="badge ok">2001 &check;</span></td></tr>
+    <tr><td>Superscript &rarr; footnote coverage</td><td><span class="badge ok">fn ranges present</span></td><td><span class="badge ok">all 5 slides complete &check;</span></td></tr>
+    <tr><td>Footnote &rarr; bibliography</td><td><span class="badge ok">42 sources</span></td><td><span class="badge ok">44/44 reconciled &check;</span></td></tr>
+    <tr><td>Orphan bibliography entries</td><td><span class="badge ok">0 (Van der Kolk removed)</span></td><td><span class="badge ok">0 &check;</span></td></tr>
+    <tr><td>Curriculum-internal refs (P1)</td><td><span class="badge ok">None &check;</span></td><td><span class="badge ok">None &check;</span></td></tr>
+    <tr><td>Footnote spacing / typos</td><td><span class="badge ok">—</span></td><td><span class="badge warn">P3 cosmetics (S5 spacing, "Felitti et al," , "ofchildhood")</span></td></tr>
+  </table>
+
+  <!-- JACKIE -->
+  <div class="agent-header" style="margin-top:28px;"><div class="agent-dot" style="background:#2a9d5c;"></div><h2>Jackie — Evidence &amp; References</h2></div>
+  <div class="box green"><strong>P1 Status: CLEAR.</strong> No ghost references, no invented sources, no curriculum-internal page citations (no "NPMH M/W/P" pointers).</div>
+  <div class="box green"><strong>P2 Status: CLEAR.</strong> Every footnote author&ndash;year matches its bibliography entry; the Shonkoff year reads 2001 in-text and in bib (internally consistent). No mismatches found across the 44 sources.</div>
+  <div class="box green"><strong>Three-level integrity: CLEAN.</strong> Superscripts &rarr; footnotes (every body marker on S3&ndash;S7 footnoted) &rarr; bibliography (44 distinct sources all listed) &rarr; cited (44 listed = 44 cited, zero orphans either way). The one new source, Ecclestone &amp; Hayes (2019), is correctly added to the bibliography. Full per-marker map in <em>reference-check.html</em>.</div>
+
+  <!-- PETER -->
+  <div class="agent-header" style="margin-top:28px;"><div class="agent-dot" style="background:#e07000;"></div><h2>Peter — Curriculum &amp; Theory Coverage</h2></div>
+  <table>
+    <tr><th>Concept</th><th>Source(s)</th><th>v008 status</th></tr>
+    <tr><td>Ecological systems framework</td><td>Bronfenbrenner (2009)</td><td><span class="badge ok">&check; Retained S4</span></td></tr>
+    <tr><td>ACEs / cumulative risk</td><td>Felitti 1998; Wilhelmsen 2023; Zhang 2023</td><td><span class="badge ok">&check; Retained S4</span></td></tr>
+    <tr><td>Developmental-trauma framework</td><td>Cruz et al. (2022)</td><td><span class="badge ok">&check; S3/S5</span></td></tr>
+    <tr><td>Attachment (disorganised)</td><td>Bowlby 1997; Main &amp; Hesse 1990; Granqvist 2017</td><td><span class="badge ok">&check; S5</span></td></tr>
+    <tr><td>HPA-axis / neuro-mechanism</td><td>Teicher 2003; Garner &amp; Yogman 2021; Roos 2020</td><td><span class="badge ok">&check; S5</span></td></tr>
+    <tr><td>Latent vulnerability</td><td>McCrory &amp; Viding 2015</td><td><span class="badge ok">&check; S5/S6</span></td></tr>
+    <tr><td>Formulation (4Ps)</td><td>Weerasekera 1993; Macneil 2012</td><td><span class="badge ok">&check; S3/S6</span></td></tr>
+    <tr><td>Prenatal stress / FASD</td><td>Glover 2015; Tadanki 2025; SIGN 2019; Arpino 2010</td><td><span class="badge ok">&check; S4/S5</span></td></tr>
+    <tr><td>Resilience (multisystemic)</td><td>Masten 2001; Ungar &amp; Theron 2020; Crouch 2019</td><td><span class="badge ok">&check; S7</span></td></tr>
+    <tr><td>NDC / ACE interplay &amp; over-medicalisation critique</td><td>Gajwani &amp; Minnis 2023; Berg 2018; <strong>Ecclestone &amp; Hayes 2019</strong></td><td><span class="badge new-ok">&check; deepened S6</span></td></tr>
+    <tr><td>Curriculum-internal refs</td><td>—</td><td><span class="badge ok">&check; None</span></td></tr>
+  </table>
+  <div class="box amber"><strong>Golden rule held:</strong> the new source deepens an existing argument (it adds a counter-position to the NDC/over-medicalisation point) rather than widening coverage. No name-dropping; depth over breadth maintained.</div>
+
+  <!-- STEVEN -->
+  <div class="agent-header" style="margin-top:28px;"><div class="agent-dot" style="background:#9933cc;"></div><h2>Steven — Narrative &amp; Argumentation</h2></div>
+  <div class="box green"><strong>Through-line intact:</strong> "Tommy's behaviour follows developmental trajectories based on adaptation to long-term adversity" — stated as the S3 thesis and carried to the S7 synthesis. The S6 over-medicalisation counter-point (Ecclestone &amp; Hayes) strengthens the argument by acknowledging the opposing risk of pathologising adaptive behaviour before resolving it — a genuine evaluative beat, not a digression.</div>
+  <table>
+    <tr><th>Page</th><th>Claim quality</th><th>Notes</th></tr>
+    <tr><td>S3</td><td><span class="badge ok">Strong</span></td><td>Externalising/internalising taxonomy well-sourced; formulation approach stated up front</td></tr>
+    <tr><td>S4</td><td><span class="badge ok">Strong</span></td><td>Bronfenbrenner framing + Felitti ACEs + cumulative-risk layering; Shonkoff internally consistent</td></tr>
+    <tr><td>S5</td><td><span class="badge ok">Strong</span></td><td>Mechanistic pathway (prenatal &rarr; HPA &rarr; PFC &rarr; behaviour) persuasive; latent vulnerability well placed</td></tr>
+    <tr><td>S6</td><td><span class="badge ok">Strong (was Good)</span></td><td>Perpetuating-cycle reasoning solid; the new balanced-approach/over-medicalisation counter-point lifts the evaluative quality</td></tr>
+    <tr><td>S7</td><td><span class="badge ok">Strong</span></td><td>Synthesis integrates prenatal, attachment, trauma, SES and protective layers; Masten "ordinary magic" frames the practical implication</td></tr>
+  </table>
+
+  <!-- EGBERT -->
+  <div class="agent-header" style="margin-top:28px;"><div class="agent-dot" style="background:#cc3300;"></div><h2>Egbert — Gate Decision</h2></div>
+  <div class="box green"><strong>GATE PASSED. v008 accepted &amp; submission-ready.</strong> fqaScore 88 &ge; threshold 85 (project min 83). All P1/P2/P3 items are now closed: the cover date is corrected and the full reference system reconciles at 44/44. The Ecclestone &amp; Hayes addition modestly lifts AE (+1) and the housekeeping lifts CR (+1); the aggregate holds at 88 (A band). Remaining items are P3 cosmetics with no effect on the grade — fix them if convenient before recording, but they are not blockers.</div>
+
+  <h3>Score Progression</h3>
+  <table>
+    <tr><th>Version</th><th>KU</th><th>AE</th><th>CR</th><th>fqaScore</th><th>Status</th></tr>
+    <tr><td>v001 (tommy9)</td><td>85</td><td>85</td><td>75</td><td>83</td><td><span class="badge info">Escalated</span></td></tr>
+    <tr><td>v002 (v0.11)</td><td>88</td><td>87</td><td>75</td><td>85</td><td><span class="badge ok">Accepted</span></td></tr>
+    <tr><td>v003 (v0.11-rev)</td><td>89</td><td>88</td><td>74</td><td>86</td><td><span class="badge ok">Accepted</span></td></tr>
+    <tr><td>v005 (v0.12)</td><td>90</td><td>88</td><td>80</td><td>87</td><td><span class="badge ok">Accepted</span></td></tr>
+    <tr><td>v006 (v0.13)</td><td>90</td><td>88</td><td>83</td><td>88</td><td><span class="badge ok">Accepted</span></td></tr>
+    <tr><td><strong>v008 (presentation)</strong></td><td><strong>90</strong></td><td><strong>89</strong></td><td><strong>84</strong></td><td><strong>88</strong></td><td><span class="badge ok">Accepted &check; submission-ready</span></td></tr>
+  </table>
+
+  <h3>Recording Checklist</h3>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>fqaScore &ge; 85</td><td><span class="badge ok">88 &check;</span></td></tr>
+    <tr><td>No P1 blockers</td><td><span class="badge ok">Clear &check;</span></td></tr>
+    <tr><td>No P2 referencing mismatches</td><td><span class="badge ok">Clear &check;</span></td></tr>
+    <tr><td>Superscripts &rarr; footnotes &rarr; bibliography reconcile</td><td><span class="badge ok">44/44 &check;</span></td></tr>
+    <tr><td>Cover date 2026-06-15</td><td><span class="badge ok">&check; fixed</span></td></tr>
+    <tr><td>P3 cosmetics (S5 spacing, "Felitti et al,", "ofchildhood", stray "cc")</td><td><span class="badge warn">optional pre-recording tidy</span></td></tr>
+  </table>
+
+  <div class="footer">Generated: 2026-06-13 &middot; Essay Fabrik &middot; FQA panel (Christoph · Jackie · Peter · Steven · Egbert)</div>
+</div>
+</body>
+</html>

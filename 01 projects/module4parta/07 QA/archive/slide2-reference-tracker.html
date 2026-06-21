@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide 2 Reference Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #d9e0ea;
+      --accent: #7c3aed;
+      --accent-2: #0f766e;
+      --accent-soft: #efe7ff;
+      --ok: #166534;
+      --ok-soft: #dcfce7;
+      --warn: #92400e;
+      --warn-soft: #fef3c7;
+      --info: #1d4ed8;
+      --info-soft: #dbeafe;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #f1efff 0%, var(--bg) 100%);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero {
+      background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.88;
+      margin-bottom: 10px;
+    }
+    h1, h2, h3 { margin: 0 0 12px; line-height: 1.15; }
+    h1 { font-family: Merriweather, serif; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.05rem; }
+    .lead { max-width: 96ch; margin: 0; font-size: 1rem; opacity: 0.96; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+    .card {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .statement { font-size: 1.05rem; font-weight: 700; margin: 0; }
+    .small { color: var(--muted); font-size: 0.92rem; }
+    .status {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .verified { background: var(--ok-soft); color: var(--ok); }
+    .provisional { background: var(--warn-soft); color: var(--warn); }
+    .context { background: var(--info-soft); color: var(--info); }
+    table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-top: 1px solid var(--line); }
+    th { width: 22%; color: var(--muted); font-weight: 700; background: #fbfcfe; }
+    ul { margin: 10px 0 0 20px; padding: 0; }
+    li + li { margin-top: 8px; }
+    .note, .warn, .good {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    .note { background: var(--info-soft); color: var(--info); }
+    .warn { background: var(--warn-soft); color: var(--warn); }
+    .good { background: var(--ok-soft); color: var(--ok); }
+    .checklist li { list-style: none; margin-left: -18px; }
+    .checklist li::before { content: '• '; color: var(--accent-2); font-weight: 800; }
+    .refs li { word-break: break-word; }
+    a { color: #1d4ed8; }
+    @media (max-width: 960px) {
+      .half, .third { grid-column: span 12; }
+      th, td { display: block; width: 100%; }
+      th { border-top: none; padding-bottom: 4px; }
+      td { padding-top: 4px; }
+      tr { display: block; border-top: 1px solid var(--line); padding: 8px 0; }
+      table { border-top: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Presentation evidence tracker</div>
+      <h1>Slide 2 — Predisposing factors</h1>
+      <p class="lead">Working slide logic: define ACEs, show cumulative and interacting predisposing risk, situate Tommy’s adversity within ecological systems, and explain why repeated adversity increases vulnerability rather than representing isolated events.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="pill">Current slide argument</div>
+        <p class="statement">Tommy’s predisposing factors are best understood as cumulative ACE-related risk operating across individual, family, community and developmental systems.</p>
+        <ul>
+          <li>Start with a brief definition of ACEs.</li>
+          <li>Then show dose-response and cumulative risk.</li>
+          <li>Then locate Tommy’s risks in an ecological model.</li>
+          <li>Finish with the case-specific point: Tommy is not facing one adversity, but stacked and interacting adversities across time.</li>
+        </ul>
+      </article>
+
+      <article class="card half">
+        <div class="pill">Writing guidance</div>
+        <ul>
+          <li>Use Felitti et al. (1998) as the classic foundational ACE source, but mark page-specific quoting as pending unless you verify it line by line.</li>
+          <li>For the slide itself, “highly stressful and potentially traumatic experiences occurring before age 18” is a safe short definition.</li>
+          <li>Use “cumulative risk” and “dose-response pattern” for the stacking point.</li>
+          <li>For Tommy, separate <strong>case evidence</strong> from <strong>general evidence</strong>: the vignette shows the adversities; ACE literature explains why they matter.</li>
+        </ul>
+        <div class="warn">Some entries below are marked provisional where the reference is conceptually strong but exact DOI/page verification was not locked in this file yet.</div>
+      </article>
+
+      <article class="card third">
+        <div class="pill">Box labels</div>
+        <ul class="checklist">
+          <li>Individual risk layer</li>
+          <li>Family risk layer</li>
+          <li>Community risk layer</li>
+          <li>Life cycle / developmental timing layer</li>
+          <li>Chrono dimension: accumulation over time</li>
+        </ul>
+      </article>
+
+      <article class="card third">
+        <div class="pill">Best summary line</div>
+        <p class="statement">Predisposing risk is not one event. It is the accumulation of adversity across systems and across time.</p>
+        <div class="good">This wording fits both the ecological diagram and the ACE dose-response idea.</div>
+      </article>
+
+      <article class="card third">
+        <div class="pill">Case anchor</div>
+        <p class="statement">Tommy appears to fit multiple adversity categories in the vignette, including prenatal exposure, domestic abuse, neglect, inconsistent care, poverty and unsafe community conditions.</p>
+        <div class="note">Use the vignette as the case anchor; use ACE literature to interpret the level of risk.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 1</div>
+        <p class="statement">Adverse childhood experiences are highly stressful, potentially traumatic experiences occurring before age 18. <span class="status provisional">provisional classic source</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A classic ACE source to define ACEs for the slide in a compact way.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Felitti, V.J. et al. (1998) ‘Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults’, <em>American Journal of Preventive Medicine</em>, 14(4), pp. 245–258.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>This is the foundational ACE study and is the standard anchor for defining childhood abuse and household dysfunction as major early adversities with lasting health implications.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Not inserted here because exact page/line verification was not locked in this file.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Felitti et al., 1998)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td>Add after final database check.</td>
+          </tr>
+        </table>
+        <div class="good">Safe slide wording: “ACEs are highly stressful, potentially traumatic experiences occurring before age 18.”</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 2</div>
+        <p class="statement">Individuals with four or more ACEs are at substantially higher risk of chronic physical and mental health problems, with a dose-response pattern. <span class="status provisional">provisional classic source</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A strong source for the “4 or more ACEs” threshold and dose-response risk argument.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Felitti, V.J. et al. (1998) ‘Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults’, <em>American Journal of Preventive Medicine</em>, 14(4), pp. 245–258.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>This is the canonical source for the cumulative ACE score and the dose-response relationship between higher ACE exposure and later health burden.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Keep general unless the exact results table/figure is checked in full text.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Felitti et al., 1998)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td>Add after final database check.</td>
+          </tr>
+        </table>
+        <div class="warn">If you want to mention specific outcomes like heart disease, depression, or impaired brain development, the safest approach is to keep the claim broad unless each outcome is separately cross-checked.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 3</div>
+        <p class="statement">Predisposing factors should be understood within an ecological system, not only at the level of the individual child. <span class="status provisional">foundational theory</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A foundational reference for the individual / micro / meso / exo / macro / chrono ecological framing.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Bronfenbrenner, U. (1979) <em>The Ecology of Human Development: Experiments by Nature and Design</em>. Cambridge, MA: Harvard University Press.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>This is the foundational ecological systems framework for understanding development through nested environmental systems across time.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Do not add a pinpoint citation unless the edition/page is checked directly.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Bronfenbrenner, 1979)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td>Book source; DOI not required here.</td>
+          </tr>
+        </table>
+        <div class="good">This works well for your diagram even if the boxes themselves do not all need separate citations.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 4</div>
+        <p class="statement">Social causation is a useful keyword for the community-risk box. <span class="status provisional">concept tag</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A brief conceptual anchor for the idea that socioeconomic adversity and harmful environments increase mental health risk.</td>
+          </tr>
+          <tr>
+            <th>Suggested handling</th>
+            <td>Use this as a <strong>concept label</strong> rather than a detailed evidence claim on the slide. It can sit in the community-risk box without overloading the presentation.</td>
+          </tr>
+          <tr>
+            <th>Why this is acceptable</th>
+            <td>Your spoken explanation can clarify that low socioeconomic status, crime exposure, and weak support structures contribute to risk environmentally, while the core slide evidence remains anchored in ACE and formulation literature.</td>
+          </tr>
+          <tr>
+            <th>Reference plan</th>
+            <td>Add a dedicated social-causation source later only if you decide to make it a spoken analytic point rather than a diagram label.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>Optional at this stage.</td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 5</div>
+        <p class="statement">ACEs accumulate over time, and the risk lies in the stacking or cumulative burden rather than in a single isolated event. <span class="status provisional">strong wording, source pending exact check</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source supporting cumulative / stacked adversity and dose-response risk.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Felitti et al. (1998) as the primary anchor for cumulative ACE score and dose-response logic.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The ACE framework is built around cumulative adversity scoring, which makes it suitable for your wording about stacked or accumulating risk.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Not locked here; keep this as a general claim until full-text recheck.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Felitti et al., 1998)</td>
+          </tr>
+        </table>
+        <div class="good">Recommended slide wording: “Risk increases through cumulative exposure: adversity stacks across development rather than acting as a single event.”</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 6</div>
+        <p class="statement">Tommy appears to tick multiple ACE-related categories in the vignette, which indicates high predisposing risk. <span class="status context">case evidence</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A case source showing that Tommy’s story includes multiple early adversities.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Tommy vignette.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The vignette supports prenatal and early adversity themes including domestic abuse during pregnancy, maternal substance use, poor nutrition, prematurity, NICU stay, inconsistent caregiving, neglect, physical punishment, poverty and environmental instability.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Use the vignette directly when speaking about Tommy’s case details.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Tommy vignette, 2026 module materials) or your local course citation style.</td>
+          </tr>
+        </table>
+        <div class="note">For the live presentation, this is the point where you can say: “Tommy is not exposed to one adversity; he appears to be exposed to multiple, interacting risk categories from the prenatal period onward.”</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 7</div>
+        <p class="statement">These adversities likely interact and compound, with each adversity eroding the relational and developmental conditions that would otherwise buffer risk. <span class="status verified">module-aligned interpretation</span></p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A formulation-compatible source supporting whole-story interpretation rather than isolated-factor reading.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Module 4 Week 4 formulation teaching, plus the Tommy vignette for case detail.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The module explains formulation as understanding how biological, psychological, social and developmental factors interact in context; Tommy’s vignette provides the interacting adversities themselves.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Use the module’s formulation section for the “interacting factors” logic and the vignette for the case content.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>Use your course citation style for module materials; this line can also be presented as your analytic synthesis rather than a direct quoted claim.</td>
+          </tr>
+        </table>
+        <div class="good">This is a strong spoken line because it links predisposing factors to the next slide on development and mental health outcomes.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Suggested final slide wording</div>
+        <ul>
+          <li><strong>ACEs:</strong> highly stressful, potentially traumatic experiences occurring before age 18.</li>
+          <li><strong>Cumulative risk:</strong> higher ACE exposure is associated with greater later physical and mental health burden.</li>
+          <li><strong>Ecology:</strong> Tommy’s risk sits across individual, family, community and developmental systems.</li>
+          <li><strong>Case conclusion:</strong> Tommy appears to show multiple, stacked adversities from the prenatal period onward, suggesting high predisposing risk.</li>
+          <li><strong>Interpretation:</strong> these adversities likely interact and compound rather than operating as isolated events.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="pill">Reference list for this slide</div>
+        <ul class="refs">
+          <li>Bronfenbrenner, U. (1979) <em>The Ecology of Human Development: Experiments by Nature and Design</em>. Cambridge, MA: Harvard University Press.</li>
+          <li>Felitti, V.J., Anda, R.F., Nordenberg, D., Williamson, D.F., Spitz, A.M., Edwards, V., Koss, M.P. and Marks, J.S. (1998) ‘Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults’, <em>American Journal of Preventive Medicine</em>, 14(4), pp. 245–258.</li>
+          <li>Module 4 Week 4 formulation materials.</li>
+          <li>Tommy vignette / module case materials.</li>
+        </ul>
+        <p class="small">This file intentionally distinguishes between <strong>verified course/case support</strong> and <strong>provisional classic references pending final DOI/page check</strong>, so you can keep writing without overclaiming precision.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide 4 Systemic Complexity Tracker</title>
+  <style>
+    :root {
+      --bg:#f7f6f2; --surface:#ffffff; --surface-2:#f2efe7; --text:#1f2937; --muted:#5f6774;
+      --border:#d8d1c5; --accent:#0f766e; --accent2:#1d4ed8; --good:#166534; --warn:#92400e;
+      --shadow:0 12px 30px rgba(0,0,0,.08); --radius:18px;
+    }
+    [data-theme="dark"] {
+      --bg:#111315; --surface:#1a1d20; --surface-2:#23272b; --text:#ece7df; --muted:#b8b0a4;
+      --border:#33383f; --accent:#5eead4; --accent2:#93c5fd; --good:#86efac; --warn:#fcd34d;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:16px/1.58 Inter,Segoe UI,Roboto,Arial,sans-serif;padding:28px}
+    .wrap{max-width:1320px;margin:0 auto}
+    .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+    h1{margin:0 0 8px;font-size:clamp(2rem,3vw,3rem);line-height:1.06}
+    .lede{margin:0;max-width:92ch;color:var(--muted)}
+    .toggle{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:10px 14px;border-radius:999px;cursor:pointer;box-shadow:var(--shadow)}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin:18px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:1100px){.grid{grid-template-columns:1fr 1fr}}
+    .label{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800;margin-bottom:10px}
+    .pill{display:inline-block;background:var(--surface-2);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.92rem;margin:4px 8px 0 0}
+    h2{font-size:1.7rem;margin:0 0 10px} h3{font-size:1.13rem;margin:0 0 10px}
+    p{margin:8px 0} ul{margin:8px 0 0 20px;padding:0} li{margin:6px 0}
+    .callout{border-left:4px solid var(--accent);padding-left:14px}
+    .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:16px}
+    table{width:100%;border-collapse:collapse;min-width:1080px;background:var(--surface)}
+    th,td{padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+    th{background:var(--surface-2);font-size:.92rem}
+    tr:last-child td{border-bottom:none}
+    .fit-direct{color:var(--good);font-weight:800}
+    .fit-partial{color:var(--warn);font-weight:800}
+    .small{font-size:.94rem;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    mark{background:#fef3c7;color:inherit;padding:0 .25em;border-radius:.2em}
+    .footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Slide 4 Systemic Complexity Tracker</h1>
+      <p class="lede">Working sheet for the systemic and interdependent complexity slide. This version uses the 5P formulation logic and turns your ideas into cautious, evidence-based statements you can place on the slide or in speaker notes.</p>
+    </div>
+    <button class="toggle" id="themeToggle" aria-label="Toggle theme">Toggle theme</button>
+  </div>
+
+  <section class="card">
+    <div class="label">Slide focus</div>
+    <h2>Systemic interdependent complexity through a 5P lens</h2>
+    <p class="callout"><strong>Suggested core argument:</strong> Tommy’s difficulties are maintained by interacting biological, relational, and social processes: stress-related dysregulation affects thinking and behaviour; relational disruption can heighten stress responsivity; and continuing adversity or new external demands can perpetuate or precipitate further difficulties.</p>
+    <p><span class="pill">Predisposing</span><span class="pill">Precipitating</span><span class="pill">Perpetuating</span><span class="pill">Protective</span><span class="pill">Presenting</span></p>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <div class="label">Content block 1</div>
+      <h3>Stress biology and cognitive-behavioural regulation</h3>
+      <p><strong>Your idea:</strong> Stress biology wraps around cognitive, behavioural, and emotional regulation.</p>
+      <p><strong>Tighter statement:</strong> Stress-related alterations in prefrontal–amygdala systems can affect attention, inhibitory control, and emotion regulation, making behavioural and cognitive difficulties more likely under pressure.</p>
+      <p><strong>How it fits Tommy:</strong> This lets you connect stress biology to impulsivity, poor concentration, and reactive behaviour without claiming a single simple cause.</p>
+      <p><strong>Use:</strong> Reuse the evidence from the earlier attention-and-learning slide as the biological-regulation anchor.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 2</div>
+      <h3>Impaired regulation disrupts social-relational development</h3>
+      <p><strong>Your idea:</strong> When regulation is poor, relationships also suffer.</p>
+      <p><strong>Tighter statement:</strong> Difficulties in emotional and behavioural regulation can interfere with peer relationships, school adjustment, and the ability to use adults effectively for support.</p>
+      <p><strong>How it fits Tommy:</strong> Dysregulation is not only an individual symptom; it can become relational, creating conflict, rejection, and misunderstanding with peers and adults.</p>
+      <p><strong>Use:</strong> This point is best framed as a systemic consequence rather than a stand-alone diagnosis claim.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 3</div>
+      <h3>Disrupted attachment and stress reactivity</h3>
+      <p><strong>Your idea:</strong> Disrupted attachment may biologically increase stress reactivity.</p>
+      <p><strong>Tighter statement:</strong> Attachment relationships help regulate children’s HPA-axis responses to stress, and insecure or disrupted attachment patterns may be associated with less effective physiological regulation under challenge.</p>
+      <p><strong>How it fits Tommy:</strong> This gives you a biologically informed explanation for why relational insecurity may intensify stress responses rather than merely coexist with them.</p>
+      <p><strong>Use:</strong> Keep the claim modest: say attachment quality is associated with HPA-axis regulation and cortisol responses, rather than claiming a fixed biological defect.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 4</div>
+      <h3>Continuing adversity as a perpetuating factor</h3>
+      <p><strong>Your idea:</strong> Ongoing low SES, maternal substance use, and life volatility keep the child stuck.</p>
+      <p><strong>Tighter statement:</strong> When socioeconomic adversity, caregiver difficulties, and instability remain unchanged, they can act as perpetuating factors that maintain dysregulation, limit recovery, and repeatedly reactivate existing vulnerabilities.</p>
+      <p><strong>How it fits Tommy:</strong> This helps you show that outcomes are not produced by one past event alone; the surrounding environment can keep difficulties going.</p>
+      <p><strong>Use:</strong> Pair this with one SES-and-mental-health source and one formulation sentence in your narration.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 5</div>
+      <h3>New external situations as precipitating triggers</h3>
+      <p><strong>Your idea:</strong> School pressure, conflict, and transitions can trigger more problems in an already vulnerable child.</p>
+      <p><strong>Tighter statement:</strong> Developmental transitions and new external stressors, such as school change, peer difficulties, or rising demands, can precipitate worsening mental health in children who already carry vulnerabilities.</p>
+      <p><strong>How it fits Tommy:</strong> This lets you explain why symptoms may intensify at specific moments rather than appearing uniformly all the time.</p>
+      <p><strong>Use:</strong> Very useful for the 5P “precipitating” part of your slide.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 6</div>
+      <h3>Negative relational experiences as self-reinforcing</h3>
+      <p><strong>Your idea:</strong> Existing patterns get confirmed by later peer and school experiences.</p>
+      <p><strong>Tighter statement:</strong> Repeated negative relational experiences may reinforce threat-based expectations, confirm hostile interpretations, and create self-perpetuating cycles of rejection, defensiveness, and further dysregulation.</p>
+      <p><strong>How it fits Tommy:</strong> This is a strong systems point because it links home adversity, school experiences, and cognitive-social bias into one feedback loop.</p>
+      <p><strong>Use:</strong> Best treated as a formulation synthesis point rather than as a single-source empirical claim.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 7</div>
+      <h3>Risk of overshadowing neurodevelopmental needs</h3>
+      <p><strong>Your idea:</strong> ACEs or ODD labels could overshadow ADHD, autism, or other neurodevelopmental issues.</p>
+      <p><strong>Tighter statement:</strong> In highly complex cases, trauma-related explanations and behavioural labels may overshadow co-occurring neurodevelopmental needs, so formulation should remain open to multiple interacting pathways rather than assuming one single cause.</p>
+      <p><strong>How it fits Tommy:</strong> This helps you sound clinically thoughtful and avoids over-reducing Tommy to an ACEs-only story.</p>
+      <p><strong>Use:</strong> Present this as a critical reflection point unless you add a dedicated source on diagnostic overshadowing in child mental health.</p>
+    </section>
+
+    <section class="card">
+      <div class="label">Content block 8</div>
+      <h3>Low SES as an independent mental health risk</h3>
+      <p><strong>Your idea:</strong> Low socioeconomic status itself is a risk factor for child mental health problems.</p>
+      <p><strong>Tighter statement:</strong> Low socioeconomic status is associated with increased risk for emotional and behavioural difficulties in children, and some of this association may operate through parental wellbeing, parenting stress, and ongoing adversity.</p>
+      <p><strong>How it fits Tommy:</strong> This lets you distinguish structural disadvantage from individual pathology and grounds your perpetuating-factors point in evidence.</p>
+      <p><strong>Use:</strong> Good anchor for your social-context sentence on the slide.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="label">Evidence map</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Subtopic</th>
+            <th>Recommended source</th>
+            <th>What the source covers</th>
+            <th>Best citation point</th>
+            <th>Fit</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stress biology and regulation</td>
+            <td>Earlier stress / executive function sources from Slide 3, especially the amygdala–prefrontal review</td>
+            <td>Supports the claim that stress exposure affects neurodevelopmental systems relevant to attention, emotion regulation, and behaviour.</td>
+            <td>Abstract and Introduction of the stress-and-adolescent-brain review.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Reuse rather than adding another new source.</td>
+          </tr>
+          <tr>
+            <td>Attachment and stress reactivity</td>
+            <td>Shakiba et al. / attachment dimensions and cortisol responses during the Strange Situation<br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8664559/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+            <td>Directly supports that attachment relationships help regulate HPA-axis responses and that insecure patterns may be associated with less effective cortisol regulation under stress.</td>
+            <td>Abstract; section “Child-Parent Attachment Quality and HPA Axis Reactivity”; Discussion.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Best source for your disrupted-attachment/stress-reactivity point.</td>
+          </tr>
+          <tr>
+            <td>Low SES and child mental health</td>
+            <td>Poulain et al. review on SES in child health and development<br><span class="small"><a href="https://pubmed.ncbi.nlm.nih.gov/31895161/" target="_blank" rel="noopener noreferrer">PubMed summary</a></span></td>
+            <td>Supports the broader review-level claim that low SES has detrimental effects on child development and psychological health.</td>
+            <td>Abstract, especially “Recent findings” and “Summary”.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Good review-level anchor for the social-context point.</td>
+          </tr>
+          <tr>
+            <td>Mechanisms linking SES and mental health</td>
+            <td>Ribeiro et al. / SES and child mental health: parental emotional wellbeing and parenting practices<br><span class="small"><a href="https://pubmed.ncbi.nlm.nih.gov/24150864/" target="_blank" rel="noopener noreferrer">PubMed summary</a></span></td>
+            <td>Supports that family economy is associated with child mental health problems partly through parental wellbeing and parenting practices.</td>
+            <td>Abstract and Results summary.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Useful if you want to explain <mark>how</mark> low SES perpetuates difficulties.</td>
+          </tr>
+          <tr>
+            <td>School transition as precipitating factor</td>
+            <td>Donaldson et al. (2025), trajectories of mental health across primary to secondary school transition<br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11889646/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+            <td>Supports that transition-related worries, low SES, SEN, and negative life events are associated with elevated mental health difficulties across school transition.</td>
+            <td>Abstract; Key points; Results table on odds ratios; Discussion.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Best current source for precipitating external stressors like school transition.</td>
+          </tr>
+          <tr>
+            <td>Negative life events as amplifiers</td>
+            <td>Donaldson et al. (2025) same paper</td>
+            <td>Shows that young people with two or more negative life events had higher odds of elevated mental health trajectories during transition.</td>
+            <td>Results table with odds ratios for NLEs.</td>
+            <td class="fit-direct">Direct</td>
+            <td>Use this to support the idea that new stressors can intensify existing vulnerability.</td>
+          </tr>
+          <tr>
+            <td>Relational difficulties reinforcing problems</td>
+            <td>Use as a synthesis point with your earlier hostile-attribution / attachment material</td>
+            <td>No single source here fully captures the whole feedback-loop argument, but it is well supported as a formulation synthesis across attachment, bias, and school stress literature.</td>
+            <td>Speaker notes rather than a discrete citation-heavy slide bullet.</td>
+            <td class="fit-partial">Synthesis</td>
+            <td>Keep, but phrase as a formulation inference.</td>
+          </tr>
+          <tr>
+            <td>Neurodevelopmental overshadowing</td>
+            <td>No checked source added yet</td>
+            <td>This is a clinically important caution, but you still need a dedicated evidence-based source if you want it as a formal claim rather than reflective critique.</td>
+            <td>Add only if you later source a paper on diagnostic overshadowing or overlapping trauma/neurodevelopmental presentations.</td>
+            <td class="fit-partial">Needs source</td>
+            <td>Keep as optional critical reflection for now.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="label">Suggested slide wording</div>
+    <ul>
+      <li><strong>Systemic complexity:</strong> Tommy’s presentation can be understood through interacting predisposing, precipitating, and perpetuating factors rather than one isolated cause.</li>
+      <li><strong>Biology and regulation:</strong> Stress-related dysregulation may affect attention, behaviour, and emotion regulation, which in turn can disrupt relationships and learning.</li>
+      <li><strong>Relational stress:</strong> Disrupted attachment may reduce effective stress regulation and heighten vulnerability under challenge.</li>
+      <li><strong>Perpetuating context:</strong> Ongoing poverty, instability, and caregiver difficulties may maintain existing vulnerabilities and reduce opportunities for recovery.</li>
+      <li><strong>Precipitating triggers:</strong> New school demands, peer stress, and other negative life events may trigger worsening difficulties in an already vulnerable child.</li>
+      <li><strong>Critical reflection:</strong> Formulation should remain open to possible neurodevelopmental needs as well as ACE-related explanations.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <div class="label">Task list</div>
+    <ul>
+      <li>Reuse your existing 5P formulation reference as the organising framework rather than adding another framework source.</li>
+      <li>Reuse one stress-biology source from Slide 3 instead of overloading Slide 4 with repeated neuroscience citations.</li>
+      <li>Use one direct source for attachment and cortisol, one for SES and mental health, and one for school transition/negative life events.</li>
+      <li>Keep the “negative relational experiences create new triggers” point as a synthesis sentence unless you want to add more literature on peer rejection and coercive cycles.</li>
+      <li>Leave the neurodevelopmental-overshadowing point as a brief critical caveat unless you later add a dedicated source.</li>
+      <li>In spoken delivery, stress that the 5P model helps explain <strong>interaction</strong>, not just a list of separate risk factors.</li>
+    </ul>
+  </section>
+
+  <p class="footer">Built as a working reference tracker for the next slide only. Intended for drafting, source-checking, and deciding what stays on the slide versus in speaker notes.</p>
+</div>
+<script>
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const root = document.documentElement;
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+</script>
+</body>
+</html>

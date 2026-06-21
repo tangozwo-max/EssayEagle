@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Change Tasks v3 — tommy6.pdf — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.6; padding: 32px 20px 80px; font-size: 14.5px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+
+  .report-header { background: linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%); color: white; border-radius: 10px; padding: 32px 36px 26px; margin-bottom: 24px; }
+  .filename-badge { display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4); padding: 5px 14px; border-radius: 18px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; }
+  .report-header h1 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+  .report-header .subtitle { font-size: 1rem; opacity: 0.78; margin-bottom: 14px; }
+  .report-meta { font-size: 0.82rem; opacity: 0.85; display: flex; gap: 18px; flex-wrap: wrap; }
+
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.82rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #0d2240; color: #f39c12; }
+
+  .intro-card { background: white; border-radius: 10px; padding: 22px 26px; margin-bottom: 24px; border: 1px solid #dde3ee; font-size: 0.9rem; }
+  .intro-card h2 { font-size: 1rem; color: #0d2240; margin-bottom: 10px; font-weight: 800; }
+
+  .chapter { margin-bottom: 36px; border-radius: 10px; overflow: hidden; border: 1px solid #dde3ee; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+  .chapter-header { color: white; padding: 22px 28px 18px; }
+  .chapter-header.refs  { background: linear-gradient(90deg, #4a148c, #6a1b9a); }
+  .chapter-header.notes { background: linear-gradient(90deg, #1a237e, #283593); }
+  .chapter-header.s3    { background: linear-gradient(90deg, #ad1457, #e91e8c); }
+  .chapter-header.s4    { background: linear-gradient(90deg, #bf360c, #f4511e); }
+  .chapter-header.end   { background: linear-gradient(90deg, #37474f, #546e7a); }
+  .chapter-header.opt   { background: linear-gradient(90deg, #e65100, #ff8f00); }
+  .chapter-title { font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; }
+  .chapter-coord { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chapter-coord span { background: rgba(255,255,255,0.22); padding: 4px 11px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; }
+  .chapter-summary-block { background: rgba(255,255,255,0.13); border-left: 3px solid rgba(255,255,255,0.55); border-radius: 0 6px 6px 0; padding: 10px 14px; margin-top: 10px; font-size: 0.86rem; line-height: 1.55; }
+  .chapter-summary-block .sm-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.78; margin-bottom: 4px; }
+  .points-pill { background: rgba(255,255,255,0.95); color: #0d2240; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 0.85rem; display: inline-block; margin-top: 8px; }
+  .points-pill .pts-num { color: #2e7d32; }
+  .points-pill .pts-detail { font-weight: 600; font-size: 0.78rem; color: #555; margin-left: 6px; }
+
+  .tasks { background: white; }
+  .task { padding: 18px 26px; border-bottom: 1px solid #f0f3f9; }
+  .task:last-child { border-bottom: none; }
+  .task-top { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+  .task-id { background: #0d2240; color: white; padding: 4px 11px; border-radius: 5px; font-size: 0.75rem; font-weight: 800; flex-shrink: 0; font-family: 'Courier New', monospace; }
+  .task-pri { padding: 4px 11px; border-radius: 5px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; white-space: nowrap; }
+  .pri-crit  { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; }
+  .pri-high  { background: #ffe0b2; color: #bf360c; border: 1px solid #ffb74d; }
+  .pri-med   { background: #fff3e0; color: #ef6c00; border: 1px solid #ffcc80; }
+  .pri-trim  { background: #fff9c4; color: #f57f17; border: 1px solid #ffe082; }
+  .pri-opt   { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+  .task-title { font-size: 0.97rem; font-weight: 700; color: #1a1f2e; flex: 1; }
+
+  .d-box { padding: 11px 14px; border-radius: 6px; margin: 8px 0; font-size: 0.86rem; line-height: 1.55; }
+  .d-issue { background: #fff0f0; border-left: 3px solid #f5c6cb; }
+  .d-fix   { background: #f1f8e9; border-left: 3px solid #a8dfc0; }
+  .d-cite  { background: #f8f5fd; border-left: 3px solid #ce93d8; font-family: 'Courier New', monospace; font-size: 0.82rem; }
+  .d-notes { background: #e0f7fa; border-left: 3px solid #80deea; }
+  .d-warn  { background: #fff8e1; border-left: 3px solid #ffd54f; }
+  .d-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 5px; display: block; }
+  .d-issue .d-label { color: #c0392b; }
+  .d-fix   .d-label { color: #1a7a45; }
+  .d-cite  .d-label { color: #4a148c; }
+  .d-notes .d-label { color: #006064; }
+  .d-warn  .d-label { color: #ef6c00; }
+
+  .diff { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+  .diff > div { padding: 10px 14px; border-radius: 5px; font-size: 0.85rem; }
+  .diff-old { background: #fff0f0; border: 1px solid #f5c6cb; }
+  .diff-new { background: #f0fdf4; border: 1px solid #a8dfc0; }
+  .diff-old .d-label { color: #c0392b; }
+  .diff-new .d-label { color: #1a7a45; }
+  .diff-text { font-style: italic; line-height: 1.5; }
+
+  .time-pill { display: inline-block; background: #e8f5e9; color: #1b5e20; border: 1px solid #a5d6a7; padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; margin-left: 8px; }
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .report-footer { text-align: center; font-size: 0.78rem; color: #888; margin-top: 36px; padding: 16px 0; border-top: 1px solid #dde3ee; }
+  .anchor { scroll-margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="report-header">
+    <div class="filename-badge">📝 Change Tasks v3 — tommy6.pdf</div>
+    <h1>Detailed Change Tasks — v3</h1>
+    <p class="subtitle">Case "Tommy": A Developmental Formulation — Module 4 Part A</p>
+    <div class="report-meta">
+      <span>Student: 5779906</span>
+      <span>Version: v0.5 CLAUDE → v0.6</span>
+      <span>Date: 1 June 2026</span>
+      <span>P1 tasks: 2 · P2 tasks: 3 · P3 tasks: 2 · Optional: 3</span>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="#refs">References</a>
+    <a href="#notes">Speaker Notes</a>
+    <a href="#s4">Slide 4</a>
+    <a href="#end">End Slide</a>
+    <a href="#opt">Optional</a>
+  </div>
+
+  <div class="intro-card">
+    <h2>How to use this file</h2>
+    <p>Tasks are ordered by priority. Complete all P1 tasks before recording. P2 tasks should be done in the same editing pass (each takes under 2 minutes). P3 and Optional are upside — do them if time allows. Task IDs use the format <code>V3-&lt;location&gt;-T&lt;n&gt;</code>. Each task includes the exact current text (BEFORE) and the exact replacement (AFTER) where relevant.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ REFERENCES CHAPTER -->
+  <div id="refs" class="chapter anchor">
+    <div class="chapter-header refs">
+      <div class="chapter-title">References</div>
+      <div class="chapter-coord">
+        <span>PDF p.8, p.10, p.11</span>
+        <span>Refs 1/3 · Refs 2/3 · Refs 3/4</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Chapter summary</div>
+        The most impactful remaining issue. References 1/3 (PDF p.8) is now a rich, properly formatted Harvard bibliography. But references 2/3 (PDF p.10) and 3/4 (PDF p.11) are still empty — leaving approximately 18 slide-cited sources invisible to the marker. Additionally, two sources are duplicated in the reference list.
+        <div><span class="points-pill">Possible gain: <span class="pts-num">+8–12 pts</span> <span class="pts-detail">Communication criterion + evidence credibility</span></span></div>
+      </div>
+    </div>
+    <div class="tasks">
+
+      <!-- V3-R-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-R-T1</span>
+          <span class="task-pri pri-crit">P1 Critical</span>
+          <span class="task-title">Populate or delete the two empty reference slides</span>
+          <span class="time-pill">⏱ 5–15 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          Reference slides 2/3 (PDF p.10) and 3/4 (PDF p.11) show only "…" — they are completely empty. Approximately 18 sources cited on slides are not visible in any printed reference slide. A marker cannot see the bibliographic details for: Achenbach &amp; Rescorla (2001), Bongers (2004), Bowlby (1969), Bronfenbrenner (1979), Center on the Developing Child (2007), Dodge (2006), Fonagy et al. (2002), Main &amp; Hesse (1990), McCrory et al. (2017), Narayan et al. (2021), Shonkoff &amp; Phillips (2000), SIGN (2019), Siegel (2012), Tangney et al. (1992), Teicher et al. (2003), van der Kolk (2014), Weerasekera (1996), Zhang et al. (2023).
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Recommended fix — Option A: Delete the empty slides</span>
+          Delete both "Refs 2/3" and "Refs 3/4" slides entirely. Rename the remaining reference slide from "References (1/3)" to "References" or "References (cont.)". The full bibliography is not required to fit on the reference slides — the student's name and student number on the cover sheet identifies ownership, and the references on Refs 1/3 plus the in-slide footnotes establish the citation chain. This is the fastest fix.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Alternative fix — Option B: Populate the slides</span>
+          Copy the missing sources (listed above) into the two empty slides in Harvard format. Sort alphabetically, match the font and spacing of Refs 1/3. This is the most complete solution but takes 15–20 minutes. Copy-paste Harvard entries are in <code>reference_check_tommy6.html</code>.
+        </div>
+        <div class="d-box d-warn">
+          <span class="d-label">Note on ordering</span>
+          The current PDF ordering places the End slide (p.9) between Refs 1/3 (p.8) and Refs 2/3 (p.10). If you delete the empty slides, this is no longer an issue. If you keep them, consider moving the End slide to after all reference slides so the bibliography runs together.
+        </div>
+      </div>
+
+      <!-- V3-R-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-R-T2</span>
+          <span class="task-pri pri-high">P2 High</span>
+          <span class="task-title">Remove duplicate reference entries (Berg 2018, Dinkler 2017)</span>
+          <span class="time-pill">⏱ 1 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          In Refs 1/3, two sources appear twice under "(2018a)" + "(2018b)" and "(2017a)" + "(2017b)" labels. Both 2018a and 2018b are identical (Berg, K.L. et al., J Autism Dev Disord). Both 2017a and 2017b are identical (Dinkler, L. et al., JCPP). These were likely inserted by a reference manager that added duplicate suffixes.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix</span>
+          Delete one of each pair. Keep "Berg, K.L., Acharya, K., Shiu, C.-S., &amp; Msall, M.E. (2018)" — delete the duplicate. Keep "Dinkler, L., Lundström, S., Gajwani, R., Lichtenstein, P., Gillberg, C., &amp; Minnis, H. (2017)" — delete the duplicate. Also remove the "(2018a)" / "(2018b)" label distinction from the remaining entry.
+        </div>
+      </div>
+
+      <!-- V3-R-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-R-T3</span>
+          <span class="task-pri pri-opt">Optional</span>
+          <span class="task-title">Remove uncited sources from reference list</span>
+          <span class="time-pill">⏱ 3 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          Nine sources appear in the Refs 1/3 bibliography but are not cited on any slide: Baker, A.E. et al. (2025); Bøe, T. et al. (2014); Cross, D. et al. (2017); Crouch, E. et al. (2019); Donaldson, C. et al. (2025); Granqvist, P. et al. (2017); Hostinar, C.E. et al. (2012); Kieling, C. et al. (2011); Lund, J.I. et al. (2020). Over-referencing is not penalised but creates clutter and may signal to a marker that the bibliography was auto-generated rather than curated.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix (optional)</span>
+          Remove all nine entries listed above from the reference slide. No slide content needs to change — these sources are not cited on any slide.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ NOTES CHAPTER -->
+  <div id="notes" class="chapter anchor">
+    <div class="chapter-header notes">
+      <div class="chapter-title">Speaker Notes</div>
+      <div class="chapter-coord">
+        <span>Title slide notes</span>
+        <span>S1 notes</span>
+        <span>S3 notes</span>
+        <span>S1–S2 notes length</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Chapter summary</div>
+        The speaker notes contain three issues that are recording-blockers or grade risks. The title slide notes open with a completely wrong presentation's script. The S3 notes contain old QA guidance recommending the wrong citation (already fixed on slide but still present as a verbal instruction). The S1 notes still cite the preschool manual. These are quick deletions — no new content needs to be written.
+        <div><span class="points-pill">Possible gain: <span class="pts-num">Recording safety + verbal accuracy</span></span></div>
+      </div>
+    </div>
+    <div class="tasks">
+
+      <!-- V3-Notes-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-Notes-T1</span>
+          <span class="task-pri pri-crit">P1 Critical</span>
+          <span class="task-title">Delete wrong-presentation content from title slide notes</span>
+          <span class="time-pill">⏱ 2 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue — Current title slide notes (opening sentences)</span>
+          "Good day, everyone. Today I'll elaborate on a possible paradigm shift in psychotropic interventions. Specifically, how neuroplasticity enhancement might reshape understanding and treatment of major depressive disorder."<br><br>
+          This is content from a different presentation (appears to be a pharmacology/MDD topic). If read aloud at the start of a Tommy ACEs recording, the student immediately signals they are reading the wrong script. This is the highest-risk issue in the entire deck for the recording.
+        </div>
+        <div class="diff">
+          <div class="diff-old"><span class="d-label">Delete — opening sentences</span><span class="diff-text">"Good day, everyone. Today I'll elaborate on a possible paradigm shift in psychotropic interventions. Specifically, how neuroplasticity enhancement might reshape understanding and treatment of major depressive disorder."</span></div>
+          <div class="diff-new"><span class="d-label">Replace with — suggested opening</span><span class="diff-text">"Good day. My name is Student 5779906 and today I'll be presenting a developmental formulation for the case of Tommy, exploring how adverse childhood experiences may have shaped his development, behaviour, and wellbeing."</span></div>
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Note</span>
+          The remainder of the title slide notes (after the two wrong sentences) contains appropriate Tommy context — keep that content.
+        </div>
+      </div>
+
+      <!-- V3-Notes-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-Notes-T2</span>
+          <span class="task-pri pri-high">P2 High</span>
+          <span class="task-title">Remove Achenbach (2000) preschool citation from S1 notes</span>
+          <span class="time-pill">⏱ 1 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue — S1 speaker notes contain</span>
+          "Research indicates that high Externalizing scores in childhood predict a higher risk for Conduct Disorder, whereas high Internalizing scores are predictive of later Anxiety and Major Depressive Disorders <strong>(Achenbach &amp; Rescorla, 2000; Bongers et al., 2004)</strong>."<br><br>
+          The slide itself was correctly updated to cite Achenbach &amp; Rescorla (2001) — but the notes still reference the 2000 preschool manual. If spoken verbally during recording, this re-introduces the P2 error that was fixed on the slide.
+        </div>
+        <div class="diff">
+          <div class="diff-old"><span class="d-label">Current (in notes)</span><span class="diff-text">…(Achenbach &amp; Rescorla, 2000; Bongers et al., 2004)…</span></div>
+          <div class="diff-new"><span class="d-label">Replace with</span><span class="diff-text">…(Achenbach &amp; Rescorla, 2001; Bongers et al., 2004)…</span></div>
+        </div>
+      </div>
+
+      <!-- V3-Notes-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-Notes-T3</span>
+          <span class="task-pri pri-high">P2 High</span>
+          <span class="task-title">Delete old Achenbach (1966) recommendation from S3 notes</span>
+          <span class="time-pill">⏱ 1 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue — S3 speaker notes contain (old FQA guidance, never removed)</span>
+          "For Wellbeing (Internalizing/Externalizing): The relationship between your keywords (Shame vs. Aggression) is best supported by <strong>Achenbach (1966)</strong>. This proves that Tommy is showing a 'mixed' presentation of acting in and acting out."<br><br>
+          This was the FQA guidance text from a previous QA session. It was used to motivate the slide fix — which was correctly applied (the shame→aggression sub-bullet was removed from the slide). However, the guidance was never deleted from the notes pane. If the student reads these notes during recording, they will verbally cite the wrong paper for a claim that no longer exists on the slide.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix</span>
+          Delete the entire paragraph beginning "For Wellbeing (Internalizing/Externalizing):" from S3 notes. The correction has already been applied to the slide — no new content is needed.
+        </div>
+      </div>
+
+      <!-- V3-Notes-T4 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-Notes-T4</span>
+          <span class="task-pri pri-med">P3 Medium</span>
+          <span class="task-title">Trim S1 and S2 notes to delivery-ready script (~150 words per slide)</span>
+          <span class="time-pill">⏱ 20 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          S1 and S2 notes are very long — they function as reference libraries rather than delivery scripts. S1 notes would take ~2:30–3:00 to read as written; S2 notes ~2:30–3:00 similarly. With S3–S5 notes included, the total scripted content exceeds 18 minutes if read in full.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix</span>
+          For each slide, identify the core 4–5 sentences that advance the argument and include any bridging transition. Target ~150 words per content slide (= ~1 minute at 150 wpm). The current notes have excellent raw material — this is an editing task, not a writing task. Keep:
+          <ul style="margin: 8px 0 0 18px; line-height: 1.8;">
+            <li>S1: The iceberg framing sentence, the 5P introduction, the transition to S2.</li>
+            <li>S2: The ecological system framing, the ACE count for Tommy (~5–8), the dose-response point, the transition to S3.</li>
+            <li>S3–S5 notes are already closer to appropriate length.</li>
+          </ul>
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Tip — S5 notes</span>
+          The Continuum of Need (Universal → Selective → Indicated → Specialist) is already mapped in S5 notes with Tommy-specific examples. This is excellent content — include a one-sentence verbal reference to it during the recording even though it's not on the slide.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ SLIDE 4 -->
+  <div id="s4" class="chapter anchor">
+    <div class="chapter-header s4">
+      <div class="chapter-title">Slide 4 — Risk of complexity</div>
+      <div class="chapter-coord">
+        <span>PDF p.6</span>
+        <span>PowerPoint Slide 4</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Chapter summary</div>
+        One remaining typo. All citation issues on S4 are now fixed — seven complete citations cover all seven steps. This is a 30-second fix.
+        <div><span class="points-pill">Possible gain: <span class="pts-num">+1–2 pts</span> <span class="pts-detail">Communication / presentation quality</span></span></div>
+      </div>
+    </div>
+    <div class="tasks">
+
+      <!-- V3-S4-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-S4-T1</span>
+          <span class="task-pri pri-med">P3 Medium</span>
+          <span class="task-title">Fix "neurodevelomental" typo on step 7</span>
+          <span class="time-pill">⏱ 30 sec</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue — Step 7 currently reads</span>
+          "Potential overshadowing of <strong>neurodevelomental</strong> or neurodivergent base through ACE 6, 7"
+        </div>
+        <div class="diff">
+          <div class="diff-old"><span class="d-label">Before</span><span class="diff-text">neurodevelomental</span></div>
+          <div class="diff-new"><span class="d-label">After</span><span class="diff-text">neurodevelopmental</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ END SLIDE -->
+  <div id="end" class="chapter anchor">
+    <div class="chapter-header end">
+      <div class="chapter-title">End Slide</div>
+      <div class="chapter-coord">
+        <span>PDF p.9</span>
+        <span>PowerPoint End slide</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Chapter summary</div>
+        The end slide subtitle reads "A Biopsychosocial Analysis of the Case 'Tommy'" — this does not match the title slide subtitle "Developmental risk under cumulative adversity" or the presentation title "A Developmental Formulation." The inconsistency signals a copy-paste from an earlier version.
+        <div><span class="points-pill">Possible gain: <span class="pts-num">+1 pt</span> <span class="pts-detail">Consistency / Communication</span></span></div>
+      </div>
+    </div>
+    <div class="tasks">
+
+      <!-- V3-End-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-End-T1</span>
+          <span class="task-pri pri-med">P3 Medium</span>
+          <span class="task-title">Fix inconsistent subtitle on end slide</span>
+          <span class="time-pill">⏱ 1 min</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          End slide subtitle: "A Biopsychosocial Analysis of the Case 'Tommy'"<br>
+          Title slide subtitle: "Developmental risk under cumulative adversity"<br>
+          Presentation title: "Case 'Tommy': A Developmental Formulation"<br><br>
+          These three phrasings are inconsistent and suggest the end slide was not updated when the framing shifted from biopsychosocial to formulation-based.
+        </div>
+        <div class="diff">
+          <div class="diff-old"><span class="d-label">Before (end slide subtitle)</span><span class="diff-text">A Biopsychosocial Analysis of the Case "Tommy"</span></div>
+          <div class="diff-new"><span class="d-label">After — either option</span><span class="diff-text">Option A: "Developmental risk under cumulative adversity" (matches title slide)<br><br>Option B: "Case 'Tommy': A Developmental Formulation" (matches presentation title)</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ OPTIONAL -->
+  <div id="opt" class="chapter anchor">
+    <div class="chapter-header opt">
+      <div class="chapter-title">Optional — Upside Tasks</div>
+      <div class="chapter-coord">
+        <span>S3 trim</span>
+        <span>S5 Continuum of Need</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Chapter summary</div>
+        Do these only if the main tasks are complete and time permits. Neither is required for A/A+ — they are refinements.
+      </div>
+    </div>
+    <div class="tasks">
+
+      <!-- V3-S3-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-S3-T1</span>
+          <span class="task-pri pri-trim">Trim</span>
+          <span class="task-title">Remove "ACEs → chronic disease risk" bullet from S3</span>
+          <span class="time-pill">⏱ 30 sec · saves ~15 sec script</span>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">Issue</span>
+          S3 "Overall Health" section contains: "ACEs → chronic disease risk¹⁴" cited with Felitti (1998). This point was already made on S2 (ACE dose-response, increased risk for chronic health conditions). Repeating it on S3 adds nothing to the mechanism analysis and consumes ~15 seconds of script time.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix</span>
+          Delete the "Overall Health" sub-section and its "ACEs → chronic disease risk¹⁴" bullet from S3. Remove footnote 14 (Felitti 1998) from the S3 footnote bar — Felitti is already on S2 and does not need to be re-cited on S3. Net benefit: reduces S3 footnote count from 15 to 14, removes duplication, and saves ~15 seconds of delivery time.
+        </div>
+      </div>
+
+      <!-- V3-S5-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V3-S5-T1</span>
+          <span class="task-pri pri-opt">Optional</span>
+          <span class="task-title">Add Continuum of Need bullet to S5 slide</span>
+          <span class="time-pill">⏱ 2 min</span>
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Context</span>
+          The Continuum of Need (M4 W3 p.35: Universal → Selective → Indicated → Specialist) is already mapped in the S5 speaker notes with excellent Tommy-specific examples. It can be mentioned verbally without being on the slide. Adding it to the slide would complete Peter's curriculum coverage score.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">Fix (if adding to slide)</span>
+          Under the Protective factors column, add one bullet: "Continuum of Need: from universal (school meals) → indicated (LSA) → specialist (FASD assessment)." This one bullet maps three vignette-evidenced interventions to the curriculum framework explicitly.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="report-footer">
+    Essay Fabrik — Detailed Change Tasks v3 — tommy6.pdf (v0.5 CLAUDE) — Module 4 Part A — 1 June 2026
+  </div>
+
+</div>
+</body>
+</html>

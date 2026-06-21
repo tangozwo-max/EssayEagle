@@ -1,0 +1,17 @@
+{
+  "phase": "fqa → submission-prep",
+  "loop": "v011 fqa complete",
+  "iteration": 9,
+  "maxLoops": 9,
+  "metric": "fqaScore",
+  "score": 92,
+  "threshold": 85,
+  "prevScore": 91,
+  "state": "passed",
+  "currentVersion": "v011",
+  "lastAction": "Cut v010: added Section 2 'Anxiety and the Developing Brain' (Casey 2015 PFC/amygdala; Sisk & Romeo 2019 plasticity/sensitive window), framed to justify developmental-matching + early intervention (not aetiology). Renumbered sections 3-7; dropped 2 elaboration sentences for budget. Full reference reconciliation: systematic essay-vs-Zotero DOI diff now 0 mismatches (fixed Lebowitz/Sigurvinsdottir->2020, Park->2025, Sebastian->5(10):1266-1268, plus earlier Zhou/Grist/Teesson/Csirmaz/Kaajalaakso/Baschab). 39 refs, 0 ghosts/orphans, BQA PASS. K&U 88->90, C&R 88->90, curriculum 66->70. Word ~2,063 (within +/-10%). Casey & Sisk already verified in v008.",
+  "nextAction": "SUBMISSION-READY (v010). Add 2 DOIs to Zotero for the new sources: 10.1016/j.neuron.2015.05.020 (Casey 2015), 10.1093/oso/9780195314373.003.0007 (Sisk & Romeo 2019). Nicety: 3 in-press refs get final pages when issued. v009 prior accepted; v008 older fallback.",
+  "budgetSpent": 7.30,
+  "budgetCap": 15,
+  "updatedAt": "2026-06-07T23:10:00Z"
+}

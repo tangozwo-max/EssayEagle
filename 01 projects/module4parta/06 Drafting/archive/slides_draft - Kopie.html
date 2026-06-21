@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tommy: A Developmental Formulation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0c1528;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .presentation-layout {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      max-width: 1540px;
+      align-items: flex-start;
+    }
+    .slide-area { flex: 1; min-width: 0; }
+
+    /* ─── SLIDE SHELL ─── */
+    .slide {
+      display: none;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #111d35;
+      border-radius: 6px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.5);
+      padding: 44px 64px 32px;
+      position: relative;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    .slide.active { display: flex; }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, #1e5fa8, #54a0ff, #1e5fa8);
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 10px; right: 22px;
+      font-size: 10px; color: rgba(255,255,255,0.18); letter-spacing: 1px;
+    }
+
+    /* ─── BRIDGE ─── */
+    .bridge {
+      margin-top: auto;
+      padding: 6px 14px;
+      background: rgba(84,160,255,0.05);
+      border-top: 1px solid rgba(84,160,255,0.1);
+      font-size: 10.5px;
+      color: rgba(255,255,255,0.26);
+      font-style: italic;
+      flex-shrink: 0;
+    }
+    .bridge .next { color: rgba(84,160,255,0.6); font-style: normal; font-weight: 600; }
+
+    /* ─── TITLE SLIDE ─── */
+    .title-body { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+    .title-eyebrow { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #54a0ff; margin-bottom: 18px; }
+    .title-body h1 { font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 16px; }
+    .title-body h1 .accent { color: #54a0ff; }
+    .title-divider { width: 50px; height: 3px; background: #2e86de; margin-bottom: 18px; }
+    .title-body .subtitle { font-size: 15px; color: rgba(255,255,255,0.44); line-height: 1.6; margin-bottom: 22px; }
+    .title-meta { font-size: 12px; color: rgba(255,255,255,0.22); }
+    .central-arg {
+      position: absolute; bottom: 32px; right: 64px;
+      max-width: 340px; padding: 13px 17px;
+      background: rgba(46,134,222,0.1);
+      border-left: 3px solid #2e86de;
+      font-size: 11.5px; font-style: italic;
+      color: rgba(255,255,255,0.48); line-height: 1.6;
+    }
+
+    /* ─── CONTENT HEADER ─── */
+    .slide-header { margin-bottom: 14px; flex-shrink: 0; }
+    .slide-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: #54a0ff; margin-bottom: 4px; }
+    .slide-header h2 { font-size: 24px; font-weight: 700; }
+    .slide-thread { font-size: 12px; color: rgba(255,255,255,0.32); font-style: italic; margin-top: 4px; }
+    .slide-body { flex: 1; overflow: hidden; min-height: 0; display: flex; flex-direction: column; }
+
+    /* ─── SHARED COMPONENTS ─── */
+    .callout {
+      padding: 9px 14px; flex-shrink: 0;
+      background: rgba(46,134,222,0.09);
+      border-left: 3px solid #2e86de;
+      font-size: 11px; color: rgba(255,255,255,0.68); line-height: 1.52;
+    }
+    .callout strong { color: #82c4ff; }
+
+    .warn-callout {
+      padding: 9px 14px; flex-shrink: 0;
+      background: rgba(243,156,18,0.07);
+      border-left: 3px solid #f39c12;
+      font-size: 11px; color: rgba(255,255,255,0.65); line-height: 1.52;
+    }
+    .warn-callout strong { color: #f5a623; }
+
+    /* ══════════════════════════════
+       SLIDE 1 — FORMULATION
+    ══════════════════════════════ */
+    .presenting-brief {
+      font-size: 12px;
+      color: rgba(255,255,255,0.52);
+      line-height: 1.6;
+      margin-bottom: 13px;
+      flex-shrink: 0;
+    }
+    .presenting-brief strong { color: rgba(255,255,255,0.78); }
+
+    .formulation-box {
+      background: rgba(46,134,222,0.09);
+      border: 1px solid rgba(84,160,255,0.22);
+      border-radius: 4px;
+      padding: 20px 26px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .formulation-box::before {
+      content: '\201C';
+      position: absolute; top: -6px; left: 16px;
+      font-size: 56px; color: rgba(84,160,255,0.12);
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .formulation-box p {
+      font-size: 14.5px;
+      line-height: 1.68;
+      color: rgba(255,255,255,0.88);
+    }
+    .formulation-box p em { color: #82c4ff; font-style: normal; font-weight: 600; }
+    .formulation-src {
+      font-size: 10px;
+      color: rgba(255,255,255,0.28);
+      text-align: right;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .formulation-caveat {
+      margin-top: 11px; padding: 9px 14px; flex-shrink: 0;
+      background: rgba(255,255,255,0.04);
+      border-left: 2px solid rgba(255,255,255,0.12);
+      font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.52;
+      font-style: italic;
+    }
+
+    /* ══════════════════════════════
+       SLIDE 2 — ACE CLUSTERS
+    ══════════════════════════════ */
+    .ace-intro {
+      font-size: 12px; color: rgba(255,255,255,0.55);
+      line-height: 1.55; margin-bottom: 12px; flex-shrink: 0;
+    }
+    .ace-intro strong { color: #82c4ff; }
+
+    .cluster-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      flex: 1;
+      min-height: 0;
+    }
+    .cluster {
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 3px;
+      border-left: 3px solid;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .cluster:nth-child(1) { border-color: #e74c3c; }
+    .cluster:nth-child(2) { border-color: #e67e22; }
+    .cluster:nth-child(3) { border-color: #f39c12; }
+    .cluster:nth-child(4) { border-color: #9b59b6; }
+
+    .cluster-title { font-size: 12.5px; font-weight: 700; color: #fff; }
+    .cluster-why {
+      font-size: 10.5px; color: rgba(255,255,255,0.62);
+      line-height: 1.48;
+    }
+    .cluster-why em { color: rgba(255,255,255,0.85); font-style: normal; }
+
+    /* ══════════════════════════════
+       SLIDE 3 — DEVELOPMENTAL EFFECTS
+    ══════════════════════════════ */
+    .dev-intro {
+      font-size: 11.5px; color: rgba(255,255,255,0.5);
+      line-height: 1.52; margin-bottom: 11px; flex-shrink: 0;
+      font-style: italic;
+    }
+
+    .domain-blocks {
+      display: flex;
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+    }
+    .domain-block {
+      flex: 1;
+      padding: 13px 15px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 3px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .domain-block.bio { border-top: 2px solid #54a0ff; }
+    .domain-block.cog { border-top: 2px solid #a29bfe; }
+    .domain-block.soc { border-top: 2px solid #6fcf97; }
+
+    .domain-label {
+      font-size: 9.5px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .domain-block.bio .domain-label { color: #54a0ff; }
+    .domain-block.cog .domain-label { color: #a29bfe; }
+    .domain-block.soc .domain-label { color: #6fcf97; }
+
+    .domain-heading { font-size: 13.5px; font-weight: 700; color: #fff; line-height: 1.2; }
+    .domain-text {
+      font-size: 11px; color: rgba(255,255,255,0.65);
+      line-height: 1.52; flex: 1;
+    }
+    .domain-text em { color: rgba(255,255,255,0.88); font-style: normal; }
+
+    /* ══════════════════════════════
+       SLIDE 4 — WHAT MUST NOT BE OVERLOOKED
+    ══════════════════════════════ */
+    .overshadow-main {
+      background: rgba(243,156,18,0.08);
+      border: 1px solid rgba(243,156,18,0.22);
+      border-radius: 4px;
+      padding: 16px 22px;
+      margin-bottom: 11px;
+      flex-shrink: 0;
+    }
+    .overshadow-main p {
+      font-size: 13.5px; line-height: 1.65;
+      color: rgba(255,255,255,0.86);
+    }
+    .overshadow-main p strong { color: #f5a623; }
+
+    .critical-points {
+      display: flex; flex-direction: column; gap: 6px; flex: 1;
+    }
+    .crit-pt {
+      padding: 8px 13px;
+      background: rgba(255,255,255,0.04);
+      border-left: 2px solid rgba(255,255,255,0.1);
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.5;
+    }
+    .crit-pt strong { color: rgba(255,255,255,0.92); }
+    .crit-pt .crit-label {
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; color: #f5a623;
+      display: block; margin-bottom: 2px;
+    }
+
+    /* ══════════════════════════════
+       SLIDE 5 — OUTCOME NOT FIXED
+    ══════════════════════════════ */
+    .outcome-layout {
+      display: flex; flex-direction: column; gap: 10px; flex: 1;
+    }
+    .outcome-block {
+      flex: 1;
+      padding: 11px 14px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 3px;
+    }
+    .outcome-block.green { border-left: 3px solid #27ae60; }
+    .outcome-block.blue  { border-left: 3px solid #2e86de; }
+    .outcome-heading {
+      font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 5px;
+    }
+    .outcome-block.green .outcome-heading { color: #6fcf97; }
+    .outcome-block.blue  .outcome-heading { color: #82c4ff; }
+    .outcome-text {
+      font-size: 11.5px; color: rgba(255,255,255,0.68); line-height: 1.52;
+    }
+    .outcome-text em { color: rgba(255,255,255,0.9); font-style: normal; }
+
+    .closing-thesis {
+      padding: 12px 16px; flex-shrink: 0;
+      background: rgba(46,134,222,0.1);
+      border: 1px solid rgba(84,160,255,0.2);
+      border-radius: 3px;
+      font-size: 12.5px; color: rgba(255,255,255,0.82); line-height: 1.6;
+    }
+    .closing-thesis em { color: #82c4ff; font-style: normal; font-weight: 600; }
+
+    /* ─── REFERENCES ─── */
+    .refs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 28px; }
+    .ref { font-size: 10.5px; color: rgba(255,255,255,0.52); line-height: 1.5; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .ref em { color: rgba(255,255,255,0.3); }
+
+    /* ─── SIDEBARS ─── */
+    .sidebar-col { width: 234px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; }
+    .sidebar-panel { background: #0d1a2e; border-radius: 5px; border: 1px solid rgba(255,255,255,0.07); overflow: hidden; display: flex; flex-direction: column; }
+    .sidebar-panel.refs-panel { flex: 1.1; }
+    .sidebar-panel.curric-panel { flex: 0.9; }
+    .sb-header { padding: 7px 12px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; flex-shrink: 0; }
+    .refs-panel .sb-header { background: rgba(46,134,222,0.18); color: #82c4ff; border-bottom: 1px solid rgba(46,134,222,0.16); }
+    .curric-panel .sb-header { background: rgba(130,100,220,0.18); color: #b39dff; border-bottom: 1px solid rgba(130,100,220,0.16); }
+    .sb-body { padding: 10px 12px; overflow-y: auto; flex: 1; }
+    .sb-section { display: none; }
+    .sb-section.active { display: block; }
+    .sb-item { margin-bottom: 9px; }
+    .sb-item:last-child { margin-bottom: 0; }
+    .sb-label { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.56); margin-bottom: 2px; line-height: 1.3; }
+    .sb-desc { font-size: 10px; color: rgba(255,255,255,0.34); line-height: 1.5; }
+    .sb-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 7px 0; }
+    .sb-empty { font-size: 10px; color: rgba(255,255,255,0.2); font-style: italic; }
+
+    /* ─── NAV ─── */
+    .nav { display: flex; align-items: center; gap: 14px; margin-top: 14px; }
+    .nav button {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.13);
+      color: #fff; padding: 8px 22px;
+      border-radius: 3px; cursor: pointer; font-size: 13px; transition: all 0.15s;
+    }
+    .nav button:hover:not(:disabled) { background: rgba(46,134,222,0.3); border-color: #2e86de; }
+    .nav button:disabled { opacity: 0.24; cursor: default; }
+    .nav .counter { font-size: 12px; color: rgba(255,255,255,0.28); min-width: 70px; text-align: center; }
+  </style>
+</head>
+<body>
+
+<div class="presentation-layout">
+<div class="slide-area">
+
+  <!-- ══════ TITLE ══════ -->
+  <div class="slide active" id="s0">
+    <div class="title-body">
+      <div class="title-eyebrow">Module 4 Part A · Mental Health in Children &amp; Adolescents · iheed / University of Warwick</div>
+      <h1>Tommy:<br><span class="accent">A Developmental Formulation</span></h1>
+      <div class="title-divider"></div>
+      <div class="subtitle">
+        Cumulative adversity, developmental risk, and why outcome is not fixed<br>
+        <span style="font-size:13px;color:rgba(255,255,255,0.22)">10-minute recorded presentation</span>
+      </div>
+      <div class="title-meta">June 2026 &nbsp;·&nbsp; Student 5779906</div>
+    </div>
+    <div class="central-arg">
+      "Formulation, not diagnosis. The goal is to understand how Tommy came to be where he is — and what that means for where he might go."
+    </div>
+    <div class="slide-num">Title</div>
+  </div>
+
+  <!-- ══════ SLIDE 1 — MY FORMULATION ══════ -->
+  <div class="slide" id="s1">
+    <div class="slide-header">
+      <div class="slide-label">Slide 1 of 5</div>
+      <h2>My Formulation of Tommy's Case</h2>
+      <div class="slide-thread">Formulation begins with what we observe, then asks why — and holds open the question of what we may not yet know.</div>
+    </div>
+    <div class="slide-body">
+      <div class="presenting-brief">
+        Tommy, age 7, is referred because of <strong>aggression toward peers, impulsivity, poor frustration tolerance, and difficulty concentrating</strong>. He also shows emerging shame and withdrawal. His teachers describe his reactions as "over the top." A surface reading labels him difficult. A formulation asks what is producing this presentation — and whether the explanation is complete.
+      </div>
+      <div class="formulation-box">
+        <p>
+          Tommy's difficulties are best understood through a <em>formulation-based lens</em>: cumulative adversity has plausibly shaped his developmental trajectory across biological, cognitive, social, and emotional domains.
+          But these adversities should not be treated as a complete explanation.
+          <em>Co-occurring neurodevelopmental needs may have been overlooked.</em>
+          His current difficulties therefore represent <em>elevated risk rather than fixed destiny</em> — particularly in the presence of emerging protective relationships at school.
+        </p>
+        <div class="formulation-src">Central argument — held across all five slides</div>
+      </div>
+      <div class="formulation-caveat">
+        Applying a single causal frame prematurely — whether "bad behaviour" or "it's all ACEs" — risks misunderstanding Tommy and shaping support around the wrong hypothesis. This formulation is deliberately provisional.
+      </div>
+    </div>
+    <div class="bridge">Formulation stated — <span class="next">which adversities are most analytically significant?</span> → Slide 2 selects the four ACE clusters with the highest developmental impact.</div>
+    <div class="slide-num">1 / 5</div>
+  </div>
+
+  <!-- ══════ SLIDE 2 — WHICH ADVERSITIES MATTER MOST? ══════ -->
+  <div class="slide" id="s2">
+    <div class="slide-header">
+      <div class="slide-label">Slide 2 of 5</div>
+      <h2>Which Adversities Matter Most?</h2>
+      <div class="slide-thread">Tommy's vignette maps to 6+ ACE categories (Felitti et al., 1998). What matters analytically is not the count alone — it is where these adversities cluster, how they interact, and when they occurred in development.</div>
+    </div>
+    <div class="slide-body">
+      <div class="cluster-grid">
+        <div class="cluster">
+          <div class="cluster-title">Prenatal adversity</div>
+          <div class="cluster-why">
+            Maternal cortisol from domestic violence, low mood, and substance use crosses the placenta. Alcohol exposure creates plausible FASD risk. Poor nutrition and fragmented antenatal care compound this.
+            <em>The stress-response system begins calibrating before birth.</em>
+          </div>
+        </div>
+        <div class="cluster">
+          <div class="cluster-title">Disrupted and frightening caregiving</div>
+          <div class="cluster-why">
+            Mary's caregiving combined warmth with fear, emotional unavailability, and physical aggression. NICU separation removed consistent co-regulation at a sensitive period.
+            <em>No coherent relational pattern was available for Tommy to learn from.</em>
+          </div>
+        </div>
+        <div class="cluster">
+          <div class="cluster-title">Abuse and neglect</div>
+          <div class="cluster-why">
+            Direct exposure to verbal and physical aggression, unmet care needs, and periods of emotional abandonment — occurring throughout the developmental window where self-regulation, trust, and emotional cognition are forming.
+            <em>The child's own home became a source of threat.</em>
+          </div>
+        </div>
+        <div class="cluster">
+          <div class="cluster-title">Poverty and community stress</div>
+          <div class="cluster-why">
+            Chronic economic precarity, 6+ house moves, community-level adversity, and social isolation reduced Mary's buffering capacity. These are not background noise.
+            <em>They are the conditions that made consistent caregiving structurally difficult.</em>
+          </div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:9px;">
+        These adversities do not simply add up — <strong>they interact and compound.</strong> Each one further eroded the relational conditions Tommy needed at precisely the developmental periods when those conditions matter most.
+      </div>
+    </div>
+    <div class="bridge">Adversities identified — <span class="next">how might they plausibly affect development?</span> → Slide 3 considers effects across biological, cognitive, and social-emotional domains.</div>
+    <div class="slide-num">2 / 5</div>
+  </div>
+
+  <!-- ══════ SLIDE 3 — HOW MIGHT THEY AFFECT DEVELOPMENT? ══════ -->
+  <div class="slide" id="s3">
+    <div class="slide-header">
+      <div class="slide-label">Slide 3 of 5</div>
+      <h2>How Might These Adversities Affect Development?</h2>
+      <div class="slide-thread">Not a diagnosis — a developmental hypothesis. Research links cumulative adversity to effects across all three domains. Crucially, they interact: each domain shapes the others.</div>
+    </div>
+    <div class="slide-body">
+      <div class="dev-intro">
+        The following represents plausible effects based on Tommy's profile and the research evidence — framed as hypothesis, not certainty. The key word throughout is <em>consistent with</em>.
+      </div>
+      <div class="domain-blocks">
+        <div class="domain-block bio">
+          <div class="domain-label">Biological / Neurodevelopmental</div>
+          <div class="domain-heading">A stress-response system shaped by threat</div>
+          <div class="domain-text">
+            Chronic early adversity is associated with a stress-regulation system calibrated toward hypervigilance rather than exploration (Shonkoff &amp; Garner, 2012). This is not a disorder — it is a biological adaptation to an environment of unpredictability. The research term is <em>latent vulnerability</em>: a sensitised system that responds to future stressors more intensely than it otherwise would.
+            Prenatal alcohol exposure may have compounded this through additional effects on neurodevelopment.
+          </div>
+        </div>
+        <div class="domain-block cog">
+          <div class="domain-label">Cognitive-Regulatory</div>
+          <div class="domain-heading">Attention, impulse control, and learning under stress</div>
+          <div class="domain-text">
+            Early chronic stress is consistently associated with difficulties in executive function, sustained attention, and impulse regulation — the capacities Tommy's teachers are observing. His difficulty focusing and acting before processing are <em>consistent with</em> this pathway. However, the same profile is also characteristic of ADHD and FASD — a critical point addressed in Slide 4.
+          </div>
+        </div>
+        <div class="domain-block soc">
+          <div class="domain-label">Social-Emotional</div>
+          <div class="domain-heading">Attachment, trust, and reading relationships</div>
+          <div class="domain-text">
+            Inconsistent caregiving — warmth and fear from the same person — is associated with a disorganised attachment pattern (Main &amp; Hesse, 1990): no coherent relational strategy, high activation under threat. Tommy's internal working model (Bowlby, 1969) appears to code adults as unpredictable and safety as fragile — which explains why neutral peer interactions register as hostile and why school relationships are so effortful.
+          </div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:9px;">
+        These domains <strong>interact</strong>: stress biology disrupts cognitive regulation; impaired regulation disrupts social-emotional learning; disrupted attachment increases stress reactivity. The effects are systemic, not modular.
+      </div>
+    </div>
+    <div class="bridge">Developmental effects across all three domains — <span class="next">but does this explanation account for everything?</span> → Slide 4 raises what an ACE-only formulation risks missing.</div>
+    <div class="slide-num">3 / 5</div>
+  </div>
+
+  <!-- ══════ SLIDE 4 — WHAT MUST NOT BE OVERLOOKED? ══════ -->
+  <div class="slide" id="s4">
+    <div class="slide-header">
+      <div class="slide-label">Slide 4 of 5</div>
+      <h2>What Must Not Be Overlooked?</h2>
+      <div class="slide-thread">A formulation based solely on ACEs may be incomplete — and an incomplete formulation shapes the wrong response.</div>
+    </div>
+    <div class="slide-body">
+      <div class="overshadow-main">
+        <p>
+          Tommy's attention difficulties, impulsivity, and social-communication challenges could reflect
+          <strong>trauma-related dysregulation</strong>, a <strong>neurodevelopmental condition such as ADHD</strong>,
+          effects of <strong>prenatal alcohol exposure (FASD)</strong>, or — most likely — a combination of these.
+          These presentations overlap clinically and <strong>cannot be distinguished without comprehensive assessment</strong>.
+          The critical point is that no such assessment appears to have occurred.
+        </p>
+      </div>
+      <div class="critical-points">
+        <div class="crit-pt">
+          <span class="crit-label">No developmental assessment</span>
+          Mary systematically avoided healthcare appointments — she felt judged and withdrew. This disengagement, itself a consequence of the adversity and social conditions she experienced, has removed opportunities for developmental screening throughout Tommy's life.
+        </div>
+        <div class="crit-pt">
+          <span class="crit-label">Diagnostic overshadowing</span>
+          The curriculum (M4) explicitly notes that <strong>ACEs can delay recognition of autism or ADHD</strong>, and that maltreated children should receive full neurodevelopmental assessment. When one explanation is prominent, co-occurring needs tend to go unrecognised — a documented clinical risk.
+        </div>
+        <div class="crit-pt">
+          <span class="crit-label">Risk of misreading dysregulation as conduct</span>
+          Without this nuance, practitioners — including teachers — risk interpreting Tommy's dysregulation as deliberate misconduct. This shapes disciplinary rather than supportive responses, and risks deepening the very relational ruptures that are maintaining his difficulties.
+        </div>
+      </div>
+      <div class="warn-callout" style="margin-top:8px;">
+        A <strong>neuroaffirmative approach</strong> acknowledges that some of Tommy's difficulties may have a neurodevelopmental basis requiring support independent of trauma-informed intervention — and that both may be needed simultaneously.
+      </div>
+    </div>
+    <div class="bridge">Overshadowing acknowledged — <span class="next">does elevated risk mean a fixed outcome?</span> → Slide 5 considers why the trajectory remains open to change.</div>
+    <div class="slide-num">4 / 5</div>
+  </div>
+
+  <!-- ══════ SLIDE 5 — WHY IS OUTCOME NOT FIXED? ══════ -->
+  <div class="slide" id="s5">
+    <div class="slide-header">
+      <div class="slide-label">Slide 5 of 5</div>
+      <h2>Why Is Outcome Not Fixed?</h2>
+      <div class="slide-thread">The ACE–outcome relationship is dose-response and probabilistic — not deterministic. Tommy's trajectory carries elevated risk; it is not sealed.</div>
+    </div>
+    <div class="slide-body">
+      <div class="outcome-layout">
+        <div class="outcome-block green">
+          <div class="outcome-heading">Protective factors are already visible in the vignette</div>
+          <div class="outcome-text">
+            Mary's warm and responsive moments — Peek-A-Boo, babbling, outdoor play, expressing pride in Tommy — are serve-and-return interactions that build neural connections and begin revising his relational template, even within an inconsistent relationship.
+            Calm and predictable teachers provide <em>felt safety</em> (Siegel, 2012): a regulated adult presence that keeps Tommy within a window of tolerance where PFC-mediated learning is possible.
+            The LSA's emotion-naming sessions function as <em>co-regulation</em>: naming internal states activates language pathways, and over time builds Tommy's own regulatory capacity. The shift from hitting to verbal communication is direct evidence of this working.
+            School meals provide physiological stability — the precondition for relational repair to take effect.
+          </div>
+        </div>
+        <div class="outcome-block blue">
+          <div class="outcome-heading">Resilience is environmental, not individual character</div>
+          <div class="outcome-text">
+            Research consistently shows that resilience in adversity-exposed children emerges from <em>ordinary relational conditions</em> — not exceptional individual traits (Masten, 2001). The mechanism is not Tommy's strength; it is the consistency of the adults around him.
+            This reframes the question: not "is Tommy resilient enough?" but "can the conditions that are already producing change be sustained and extended?" — at school, in the family, and in the community structures that determine whether Mary herself can be a buffer.
+          </div>
+        </div>
+      </div>
+      <div class="closing-thesis" style="margin-top:9px;">
+        Tommy's presentation is not the endpoint of a fixed trajectory. It is the current expression of a developmental pathway shaped by cumulative adversity — a pathway that <em>remains open to change</em> wherever consistent, attuned relationships are available. This formulation therefore points not toward labelling, but toward <em>understanding</em> — and toward the kinds of comprehensive assessment and relational support that can meaningfully shift the trajectory.
+      </div>
+    </div>
+    <div class="slide-num">5 / 5</div>
+  </div>
+
+  <!-- ══════ REFERENCES ══════ -->
+  <div class="slide" id="s6">
+    <div class="slide-header">
+      <div class="slide-label">References</div>
+      <h2>References</h2>
+    </div>
+    <div class="slide-body">
+      <div class="refs-grid">
+        <div class="ref">Achenbach, T.M. (1966). The classification of children's psychiatric symptoms. <em>Psychological Monographs, 80</em>(7).</div>
+        <div class="ref">Masten, A.S. (2001). Ordinary magic: Resilience processes in development. <em>American Psychologist, 56</em>(3), 227–238.</div>
+        <div class="ref">Bowlby, J. (1969). <em>Attachment and Loss, Vol. 1: Attachment.</em> Basic Books.</div>
+        <div class="ref">Shonkoff, J.P. &amp; Garner, A.S. (2012). The lifelong effects of early childhood adversity and toxic stress. <em>Pediatrics, 129</em>(1), e232–e246.</div>
+        <div class="ref">Bronfenbrenner, U. (1979). <em>The Ecology of Human Development.</em> Harvard University Press.</div>
+        <div class="ref">Siegel, D.J. (2012). <em>The Developing Mind</em> (2nd ed.). Guilford Press.</div>
+        <div class="ref">Felitti, V.J. et al. (1998). Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults. <em>American Journal of Preventive Medicine, 14</em>(4), 245–258.</div>
+        <div class="ref">Fonagy, P. et al. (2002). <em>Affect Regulation, Mentalization and the Development of the Self.</em> Other Press.</div>
+        <div class="ref">Main, M. &amp; Hesse, E. (1990). Parents' unresolved traumatic experiences are related to infant disorganized attachment status. In <em>Attachment in the Preschool Years.</em> University of Chicago Press.</div>
+        <div class="ref">Teicher, M.H. et al. (2003). The neurobiological consequences of early stress. <em>Neuroscience &amp; Biobehavioral Reviews, 27</em>(1–2), 33–44.</div>
+        <div class="ref">M4 W2 P29 — SIGN guidance on FASD &nbsp;·&nbsp; M4 W2 P32 — Latent vulnerability, sensitive periods</div>
+        <div class="ref">M4 W4 — Internalising/externalising disorder risk &nbsp;·&nbsp; M4 — Neurodevelopmental assessment in maltreated children</div>
+      </div>
+    </div>
+    <div class="slide-num">Ref</div>
+  </div>
+
+</div><!-- end slide-area -->
+
+<!-- ══════════════════════════════════════════
+     SIDEBARS
+══════════════════════════════════════════ -->
+<div class="sidebar-col">
+
+  <div class="sidebar-panel refs-panel">
+    <div class="sb-header">Evidence &amp; Sources</div>
+    <div class="sb-body">
+
+      <div class="sb-section active" id="refs-s0">
+        <div class="sb-item"><div class="sb-label">Central argument</div><div class="sb-desc">Formulation-based lens. ACEs plausibly shaped trajectory but are not the complete explanation. Co-occurring neurodevelopmental needs may be overlooked. Elevated risk, not fixed destiny.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Felitti et al. (1998)</div><div class="sb-desc">ACE study foundation: 10 categories, dose-response relationship with health and mental health outcomes across the lifespan.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s1">
+        <div class="sb-item"><div class="sb-label">Formulation approach</div><div class="sb-desc">Clinical formulation: a hypothesis about how difficulties developed and are maintained. Preferable to premature diagnosis in complex developmental presentations. Provisional and revisable.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Achenbach (1966)</div><div class="sb-desc">Internalising/externalising taxonomy: both tracks visible in Tommy's presentation. Externalising (aggression, impulsivity) currently primary. Internalising (shame, withdrawal, hypervigilance) emerging. Both carry distinct long-term risk profiles.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Felitti et al. (1998)</div><div class="sb-desc">Dose-response: 4+ ACEs significantly elevate risk. Tommy's profile: 6+ categories. But the count is not the analysis — the timing, clustering, and interaction of adversities is.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s2">
+        <div class="sb-item"><div class="sb-label">Felitti et al. (1998) — ACE clusters</div><div class="sb-desc">Original 10 categories grouped analytically: prenatal adversity, disrupted caregiving, abuse/neglect, community/poverty stress. Each cluster selected for developmental impact at sensitive periods.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Bronfenbrenner (1979)</div><div class="sb-desc">Ecological systems theory: required by the assignment. Informs the poverty/community cluster — macro-level adversity reduces parental buffering capacity, which is the mechanism by which community stress becomes relational harm.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Interaction, not addition</div><div class="sb-desc">Key analytical point: adversities compound each other. Poverty makes consistent caregiving harder; DV increases maternal cortisol; substance use reduces emotional availability. The clusters are not independent.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s3">
+        <div class="sb-item"><div class="sb-label">Shonkoff &amp; Garner (2012)</div><div class="sb-desc">Toxic stress: sustained, unbuffered HPA activation. Latent vulnerability as the biological trace. Evidence-based — not deterministic language ("may be associated with," "consistent with").</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Main &amp; Hesse (1990)</div><div class="sb-desc">Disorganised attachment: the specific pattern produced by frightening/frightened caregiving. No coherent strategy available. Most strongly associated with later social-emotional and regulatory difficulties.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Bowlby (1969)</div><div class="sb-desc">Internal Working Model: cognitive-emotional template from primary caregiver, generalised to all relationships. Tommy's template — adults as unpredictable — is the social-emotional consequence of disorganised attachment.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Domain interaction</div><div class="sb-desc">Stress biology → disrupts cognitive regulation → disrupts social-emotional development. The three domains are not parallel — they feed into each other. This is the "systemic" point on the slide.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s4">
+        <div class="sb-item"><div class="sb-label">Diagnostic overshadowing</div><div class="sb-desc">Well-documented clinical phenomenon: a prominent presenting explanation (here, ACEs) draws attention away from co-occurring conditions. In trauma contexts: ADHD and FASD are most commonly overlooked.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">FASD overlap</div><div class="sb-desc">SIGN guidance (M4 W2 P29): FASD profile overlaps significantly with ADHD and with trauma responses — attention, impulsivity, social difficulties. Prenatal alcohol exposure is already established in Tommy's vignette.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Neuroaffirmative framing</div><div class="sb-desc">Acknowledges neurodevelopmental differences as valid presentations requiring support independent of (or alongside) trauma-informed approaches. Not pathologising — accepting that some difficulties may not be solely trauma-derived.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s5">
+        <div class="sb-item"><div class="sb-label">Felitti et al. — probabilistic</div><div class="sb-desc">Dose-response is not determinism: adversity elevates risk but does not guarantee disorder. The same research that documents risk also documents variability — the mediating variable is the protective environment.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Shonkoff — serve-and-return</div><div class="sb-desc">Mary's warm moments as partial relational repair. Even inconsistent warmth has documented protective value when it produces responsive serve-and-return exchanges.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Siegel (2012)</div><div class="sb-desc">Felt safety: regulated adult presence keeps child within window of tolerance. Teachers and LSA providing this is direct vignette evidence.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Masten (2001)</div><div class="sb-desc">Ordinary magic: resilience as environmental output, not individual trait. The adults' consistency is the protective factor — not Tommy's character.</div></div>
+      </div>
+
+      <div class="sb-section" id="refs-s6">
+        <div class="sb-empty">Full reference list on slide.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-panel curric-panel">
+    <div class="sb-header">Curriculum Links</div>
+    <div class="sb-body">
+
+      <div class="sb-section active" id="curric-s0">
+        <div class="sb-item"><div class="sb-label">Assignment brief</div><div class="sb-desc">10-min · 5 slides · Understanding Tommy's development, behaviour, health and wellbeing in context of ACEs · biological, social, cognitive, mental health, neurological · individual, family, community.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Rubric</div><div class="sb-desc">Analysis/Evaluation 50% — the formulation-based approach directly targets this criterion by demonstrating critical thinking rather than descriptive ACE-listing.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s1">
+        <div class="sb-item"><div class="sb-label">M4 W4</div><div class="sb-desc">Internalising/externalising disorder risk — both tracks mentioned here connect directly to the outcome research in the curriculum.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Tommy vignette</div><div class="sb-desc">All presenting behaviours (aggression, impulsivity, focus, shame, withdrawal) drawn directly from the vignette text.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Formulation vs. diagnosis</div><div class="sb-desc">The assignment does not ask for a diagnosis — it asks for "understanding." A formulation approach is academically appropriate and safer.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s2">
+        <div class="sb-item"><div class="sb-label">M4 / ACE framework</div><div class="sb-desc">Felitti et al. (1998) — 10 categories. Dose-response. Tommy's 6+ count. Required content from the brief.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Assignment brief</div><div class="sb-desc">"Individual, family, and community circumstances" — addressed through the four cluster analysis and the intergenerational/poverty framing.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W1 — Bronfenbrenner</div><div class="sb-desc">Required by the assignment. Informs Cluster 4 (poverty/community) and the intergenerational mechanism — not used as a table but as analytical framing.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s3">
+        <div class="sb-item"><div class="sb-label">Assignment brief</div><div class="sb-desc">"Biological, social, cognitive, and mental health as well as neurological and brain development" — this slide directly fulfils this requirement across three integrated domains.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W2 P32</div><div class="sb-desc">Latent vulnerability and sensitive periods — cited in the biological domain section. Key curriculum concept grounding the stress-sensitisation argument.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W1 P02 + Anna Freud</div><div class="sb-desc">IWM and disorganised attachment — curriculum basis for the social-emotional domain section.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s4">
+        <div class="sb-item"><div class="sb-label">M4 — Neurodevelopmental assessment</div><div class="sb-desc">The curriculum explicitly states: ACEs can delay recognition of autism or ADHD; maltreated children should receive full neurodevelopmental assessment. This slide is built around that curriculum content.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W2 P29 — FASD</div><div class="sb-desc">SIGN guidance: prenatal alcohol exposure risk. Connects to Cluster 1 on Slide 2 and to the overshadowing argument here.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">Trauma vs. conduct</div><div class="sb-desc">The curriculum's emphasis on trauma-informed approaches underpins the risk of misreading dysregulation as deliberate misconduct.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s5">
+        <div class="sb-item"><div class="sb-label">M4 — Protective factors</div><div class="sb-desc">Brief explicitly asks for "understanding of protective factors." All four here are drawn from the vignette text — not imposed from a framework.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W3 — IHEED</div><div class="sb-desc">The Continuum of Need concept informs the protective factors analytically, but the framework label is not used on the slide — avoiding the "framework name-dropping" problem.</div></div>
+        <div class="sb-divider"></div>
+        <div class="sb-item"><div class="sb-label">M4 W4 — Probabilistic outcomes</div><div class="sb-desc">Curriculum's own framing: ACEs increase risk but resilience can emerge from relationships and environments. Slide 5 is the direct expression of this curriculum principle.</div></div>
+      </div>
+
+      <div class="sb-section" id="curric-s6">
+        <div class="sb-empty">References slide — no additional curriculum notes.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end sidebar-col -->
+</div><!-- end presentation-layout -->
+
+<div class="nav">
+  <button id="prevBtn" onclick="go(-1)" disabled>← Previous</button>
+  <span class="counter" id="ctr">1 / 7</span>
+  <button id="nextBtn" onclick="go(1)">Next →</button>
+</div>
+
+<script>
+  let cur = 0;
+  const slides  = document.querySelectorAll('.slide-area .slide');
+  const refs    = document.querySelectorAll('[id^="refs-s"]');
+  const currics = document.querySelectorAll('[id^="curric-s"]');
+  const n = slides.length;
+
+  function go(dir) {
+    [slides, refs, currics].forEach(list => list[cur].classList.remove('active'));
+    cur = Math.max(0, Math.min(n - 1, cur + dir));
+    [slides, refs, currics].forEach(list => list[cur].classList.add('active'));
+    document.getElementById('ctr').textContent = (cur + 1) + ' / ' + n;
+    document.getElementById('prevBtn').disabled = cur === 0;
+    document.getElementById('nextBtn').disabled = cur === n - 1;
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')                      go(-1);
+  });
+</script>
+</body>
+</html>

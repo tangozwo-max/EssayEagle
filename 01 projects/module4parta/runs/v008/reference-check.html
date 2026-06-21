@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reference Check — v008 (presentation)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fb; color: #1a2035; font-size: 13px; line-height: 1.55; }
+  .page { max-width: 980px; margin: 0 auto; padding: 28px 24px 60px; }
+  h1 { font-size: 20px; font-weight: 700; color: #0f1e3a; }
+  h2 { font-size: 14px; font-weight: 700; color: #1a2d5a; margin: 26px 0 10px; border-bottom: 2px solid #dde3ee; padding-bottom: 5px; }
+  h3 { font-size: 12.5px; font-weight: 600; color: #2a3f6a; margin: 16px 0 6px; }
+  p { margin-bottom: 9px; }
+  .header { background: linear-gradient(135deg, #0f1e3a 0%, #1a3a6a 100%); color: white; border-radius: 12px; padding: 20px 26px; margin-bottom: 22px; }
+  .header .label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #8aa4cc; margin-bottom: 4px; }
+  .header .meta { display: flex; gap: 24px; margin-top: 10px; flex-wrap: wrap; }
+  .header .meta-item { font-size: 11px; color: #a8bdd8; }
+  .header .meta-item strong { color: white; display: block; font-size: 13px; }
+  .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 22px; }
+  .card { background: white; border-radius: 9px; padding: 12px 14px; border: 1px solid #dde3ee; }
+  .card .c-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 3px; }
+  .card .c-value { font-size: 22px; font-weight: 800; }
+  .card .c-sub { font-size: 10px; color: #888; margin-top: 2px; }
+  .card.green .c-value { color: #1a9650; }
+  .card.amber .c-value { color: #c97a00; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 14px; }
+  th { background: #f0f3f9; color: #445; font-weight: 600; text-align: left; padding: 7px 9px; border-bottom: 2px solid #dde3ee; }
+  td { padding: 6px 9px; border-bottom: 1px solid #eaecf3; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8f9fc; }
+  .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+  .ok { background: #e3f7ed; color: #1a7040; }
+  .warn { background: #fff3cd; color: #7a5800; }
+  .flag { background: #fde8e8; color: #991a1a; }
+  .new-ok { background: #e0f0ff; color: #0055aa; }
+  .box { border-radius: 9px; padding: 12px 15px; margin-bottom: 12px; border-left: 4px solid; }
+  .box.green { background: #e8faf0; border-color: #34c069; }
+  .box.amber { background: #fff8e8; border-color: #f0a800; }
+  .box.blue { background: #eef4ff; border-color: #3366cc; }
+  .mono { font-variant-numeric: tabular-nums; }
+  .footer { margin-top: 48px; border-top: 1px solid #dde3ee; padding: 9px 0 7px; font-size: 10.5px; color: #aaa; text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="label">Essay Fabrik · Reference Check</div>
+    <h1>Module 4 Part A — v008 (presentation.pptx)</h1>
+    <div class="meta">
+      <div class="meta-item"><strong>Date</strong>13 June 2026</div>
+      <div class="meta-item"><strong>Deck</strong>11 slides · 5 content</div>
+      <div class="meta-item"><strong>Sources in bib</strong>44</div>
+      <div class="meta-item"><strong>Parent</strong>v006 (v0.13)</div>
+      <div class="meta-item"><strong>Student</strong>5779906</div>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div class="card green"><div class="c-label">Superscripts &rarr; footnotes</div><div class="c-value">CLEAN</div><div class="c-sub">all body markers footnoted</div></div>
+    <div class="card green"><div class="c-label">Footnotes &rarr; bib</div><div class="c-value">44/44</div><div class="c-sub">every source listed</div></div>
+    <div class="card green"><div class="c-label">Bib &rarr; cited</div><div class="c-value">44/44</div><div class="c-sub">zero orphans</div></div>
+    <div class="card green"><div class="c-label">Mismatches</div><div class="c-value">0</div><div class="c-sub">years &amp; names align</div></div>
+    <div class="card green"><div class="c-label">Ghost / curriculum refs</div><div class="c-value">0</div><div class="c-sub">no NPMH M/W/P</div></div>
+  </div>
+
+  <div class="box green">
+    <strong>Reference integrity: CLEAN at all three levels.</strong> Every superscript number in the body text of the five content slides resolves to a numbered footnote on the same slide; every footnote (44 distinct author&ndash;year sources) appears in the bibliography on slides 8&ndash;11; and every bibliography entry is cited at least once. The mapping is an exact 1:1 (44 cited = 44 listed) with no orphaned entries in either direction, no ghost/invented sources, and no curriculum-internal page citations. The cover "Date Submitted" now reads <strong>2026-06-15</strong>, resolving the only open P3 carried from v006.
+  </div>
+
+  <div class="box blue">
+    <strong>How this deck cites (3-level system):</strong>
+    body claim carries a <em>superscript number</em> &nbsp;&rarr;&nbsp; the slide's <em>footnote strip</em> maps that number to an author&ndash;year source &nbsp;&rarr;&nbsp; the <em>bibliography</em> (slides 8&ndash;11) gives the full Harvard&ndash;WMS entry. This check walks all three hops for every marker.
+  </div>
+
+  <!-- LEVEL 1 -->
+  <h2>Level 1 — Superscripts &rarr; footnotes (per content slide)</h2>
+  <table>
+    <tr><th>Deck page</th><th>Slide</th><th>Title</th><th>Body superscripts used</th><th>Footnotes provided</th><th>Status</th></tr>
+    <tr><td>1</td><td>S3</td><td>Presenting issues &amp; formulation</td><td class="mono">1&ndash;8</td><td class="mono">1&ndash;8</td><td><span class="badge ok">&check; complete</span></td></tr>
+    <tr><td>2</td><td>S4</td><td>Predisposing factors (ecological)</td><td class="mono">1&ndash;11</td><td class="mono">1&ndash;11</td><td><span class="badge ok">&check; complete</span></td></tr>
+    <tr><td>3</td><td>S5</td><td>Mechanism of developmental impact</td><td class="mono">1&ndash;15</td><td class="mono">1&ndash;15</td><td><span class="badge ok">&check; complete</span></td></tr>
+    <tr><td>4</td><td>S6</td><td>Driving factors &amp; complexity</td><td class="mono">1&ndash;6</td><td class="mono">1&ndash;6</td><td><span class="badge ok">&check; complete</span></td></tr>
+    <tr><td>5</td><td>S7</td><td>Protective factors &amp; opportunity</td><td class="mono">1&ndash;7</td><td class="mono">1&ndash;7</td><td><span class="badge ok">&check; complete</span></td></tr>
+  </table>
+  <p style="font-size:11px;color:#888;">Every slide uses exactly the footnote range it provides — no body marker points to a missing footnote, and no footnote number is left without a body reference.</p>
+
+  <!-- LEVEL 2 -->
+  <h2>Level 2 — Footnote number &rarr; source &rarr; in bibliography?</h2>
+
+  <h3>Slide 1 (S3) — Presenting issues &amp; formulation</h3>
+  <table>
+    <tr><th>fn</th><th>Source</th><th>In bib?</th></tr>
+    <tr><td>1</td><td>Achenbach &amp; Rescorla (2001)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>2</td><td>Card and Little (2006)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>3</td><td>Tangney et al. (1992)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Bongers et al. (2004)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>Cruz et al. (2022)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>Macneil et al. (2012)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>7</td><td>Weerasekera (1993)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>8</td><td>Dol et al. (2022)</td><td><span class="badge ok">&check;</span></td></tr>
+  </table>
+
+  <h3>Slide 2 (S4) — Predisposing factors</h3>
+  <table>
+    <tr><th>fn</th><th>Source</th><th>In bib?</th></tr>
+    <tr><td>1</td><td>Wilhelmsen et al. (2023)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>2</td><td>Felitti et al. (1998)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>3</td><td>Bronfenbrenner (2009)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Link &amp; Phelan (1995)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>Zhang et al. (2023)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>Narayan et al. (2021)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>7</td><td>Tadanki et al. (2025)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>8</td><td>Reiss et al. (2019)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>9</td><td>Poulain et al. (2020)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>10</td><td>Donaldson et al. (2025)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>11</td><td>Shonkoff and Phillips (2001)</td><td><span class="badge ok">&check;</span></td></tr>
+  </table>
+
+  <h3>Slide 3 (S5) — Mechanism of developmental impact</h3>
+  <table>
+    <tr><th>fn</th><th>Source</th><th>In bib?</th></tr>
+    <tr><td>1</td><td>Garner &amp; Yogman (2021)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>2</td><td>Glover (2015)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>3</td><td>Teicher et al. (2003)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Lee &amp; Hoaken (2007)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>McCrory &amp; Viding (2015)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>McLaughlin et al. (2019)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>7</td><td>SIGN (2019)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>8</td><td>Arpino et al. (2010)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>9</td><td>Prado &amp; Dewey (2014)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>10</td><td>Main &amp; Hesse (1990)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>11</td><td>Bowlby (1997)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>12</td><td>Roos et al. (2020)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>13</td><td>Lund et al. (2020)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>14</td><td>Granqvist et al. (2017)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>15</td><td>Cruz et al. (2022)</td><td><span class="badge ok">&check; (also S3)</span></td></tr>
+  </table>
+
+  <h3>Slide 4 (S6) — Driving factors &amp; complexity</h3>
+  <table>
+    <tr><th>fn</th><th>Source</th><th>In bib?</th></tr>
+    <tr><td>1</td><td>Weerasekera (1993)</td><td><span class="badge ok">&check; (also S3)</span></td></tr>
+    <tr><td>2</td><td>McCrory &amp; Viding (2015)</td><td><span class="badge ok">&check; (also S5)</span></td></tr>
+    <tr><td>3</td><td>Berg et al. (2018)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Chasnoff et al. (2015)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>Gajwani &amp; Minnis (2023)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>Ecclestone &amp; Hayes (2019)</td><td><span class="badge new-ok">&check; new vs v006</span></td></tr>
+  </table>
+
+  <h3>Slide 5 (S7) — Protective factors &amp; opportunity</h3>
+  <table>
+    <tr><th>fn</th><th>Source</th><th>In bib?</th></tr>
+    <tr><td>1</td><td>Corrigan et al. (2011)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>2</td><td>Lieberman et al. (2011)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>3</td><td>Masten (2001)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Blakemore &amp; Choudhury (2006)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>Crouch et al. (2019)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>Baker et al. (2025)</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>7</td><td>Ungar &amp; Theron (2020)</td><td><span class="badge ok">&check;</span></td></tr>
+  </table>
+
+  <!-- LEVEL 3 -->
+  <h2>Level 3 — Bibliography &rarr; cited? (all 44 sources, slides 8&ndash;11)</h2>
+  <table>
+    <tr><th>#</th><th>Bibliography entry (surname)</th><th>Cited on</th><th>Status</th></tr>
+    <tr><td>1</td><td>Achenbach &amp; Rescorla</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>2</td><td>Arpino et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>3</td><td>Baker et al.</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>4</td><td>Berg et al.</td><td>S6</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>5</td><td>Blakemore &amp; Choudhury</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>6</td><td>Bongers et al.</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>7</td><td>Bowlby</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>8</td><td>Bronfenbrenner</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>9</td><td>Card &amp; Little</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>10</td><td>Chasnoff et al.</td><td>S6</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>11</td><td>Corrigan et al.</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>12</td><td>Crouch et al.</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>13</td><td>Cruz et al.</td><td>S3, S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>14</td><td>Dol et al.</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>15</td><td>Donaldson et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>16</td><td>Ecclestone &amp; Hayes</td><td>S6</td><td><span class="badge new-ok">&check; new</span></td></tr>
+    <tr><td>17</td><td>Felitti et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>18</td><td>Gajwani &amp; Minnis</td><td>S6</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>19</td><td>Garner &amp; Yogman</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>20</td><td>Glover</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>21</td><td>Granqvist et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>22</td><td>Lee &amp; Hoaken</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>23</td><td>Lieberman et al.</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>24</td><td>Link &amp; Phelan</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>25</td><td>Lund et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>26</td><td>Macneil et al.</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>27</td><td>Main &amp; Hesse</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>28</td><td>Masten</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>29</td><td>McCrory &amp; Viding</td><td>S5, S6</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>30</td><td>McLaughlin et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>31</td><td>Narayan et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>32</td><td>Poulain et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>33</td><td>Prado &amp; Dewey</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>34</td><td>Reiss et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>35</td><td>Roos et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>36</td><td>Shonkoff &amp; Phillips</td><td>S4</td><td><span class="badge ok">&check; 2001 = bib</span></td></tr>
+    <tr><td>37</td><td>SIGN</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>38</td><td>Tadanki et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>39</td><td>Tangney et al.</td><td>S3</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>40</td><td>Teicher et al.</td><td>S5</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>41</td><td>Ungar &amp; Theron</td><td>S7</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>42</td><td>Weerasekera</td><td>S3, S6</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>43</td><td>Wilhelmsen et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+    <tr><td>44</td><td>Zhang et al.</td><td>S4</td><td><span class="badge ok">&check;</span></td></tr>
+  </table>
+
+  <!-- COSMETIC -->
+  <h2>Cosmetic / formatting notes (P3 — no effect on referencing integrity or grade)</h2>
+  <table>
+    <tr><th>Where</th><th>Item</th><th>Type</th></tr>
+    <tr><td>S5 footnote strip</td><td>Three entries run together without a separator: <span class="mono">…2019)7)</span>, <span class="mono">…2014)10)</span>, <span class="mono">…2017)15)</span>. Numbering and sources are correct; only the visual spacing is missing.</td><td><span class="badge warn">P3</span></td></tr>
+    <tr><td>S4 fn 2</td><td>"(Felitti et al<strong>,</strong> 1998)" — missing full stop after "al" (should be "et al."). Bib entry is correct.</td><td><span class="badge warn">P3</span></td></tr>
+    <tr><td>S6 helper line</td><td>Stray "cc" after the second NDC definition; "NDC" is defined twice.</td><td><span class="badge warn">P3</span></td></tr>
+    <tr><td>S6 body</td><td>"overmedicalization of<strong>childhood</strong>" — missing space.</td><td><span class="badge warn">P3</span></td></tr>
+    <tr><td>Footnotes (all)</td><td>Author connectors mix "&amp;" and "and" (Achenbach &amp; … vs Card and … vs Shonkoff and …). Harmless but inconsistent.</td><td><span class="badge warn">P3</span></td></tr>
+    <tr><td>Bib — Bowlby (1997)</td><td>Still carries an online/URL tag; Harvard-WMS does not require a URL for a physical book. Optional removal (carried from v006).</td><td><span class="badge" style="background:#eef2ff;color:#3344aa;">Optional</span></td></tr>
+  </table>
+
+  <div class="footer">Generated: 2026-06-13 &middot; Essay Fabrik &middot; Jackie (Evidence) + Christoph (Compliance)</div>
+</div>
+</body>
+</html>

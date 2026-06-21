@@ -1,0 +1,3721 @@
+(Childs Nery Syst 2010) 
+26:1139-1149 
+BOF 
+REVIEW 
+PAPER 
+Preterm 
+birth 
+and neurodevelopmental 
+outcome: 
+a review 
+Carla 
+Arpino - 
+Eliana 
+Compagnone - 
+Maria 
+L. Montanaro 
+« Denise 
+Cacciatore + 
+Stefano 
+Di 
+Angela De Luca 
+- Angelica Cera 
+irolamo - 
+Paolo 
+Curatolo 
+13 Febrnry 2010 
+Accepted 3 March 
+2010 
+Published 
+onlin: 
+27 March 
+2010 
+1 
+Springer-Verlag 
+2010, 
+Abstract 
+Background The 
+incidence 
+of 
+preterm 
+delivery 
+and 
+the 
+urvival 
+rate 
+of preterm 
+newboms 
+are 
+rising, 
+due to 
+the 
+increased 
+use 
+of assisted reproductive technology associated 
+·with 
+multiple gestations 
+and improved technology in 
+·obstetrics 
+and neonatology, which 
+allow 
+saving. 
+preterm 
+infants 
+at earlier gestational ages. As a consequence 
+the risk 
+·of 
+developmental disabilities 
+in preterm children 
+is high, and 
+pictures 
+need to be fully 
+defined. 
+Methods 
+Narative 
+review 
+including 
+articles 
+regarding 
+neurodevclopmental disorders 
+published inthe 
+international 
+medical 
+literature 
+and reported in 
+Pub 
+Med 
+between 
+the 
+·years 2000 and January 2010, 
+Results Although survival 
+rates 
+of extremely low 
+birth 
+·weight infants (ELBW) significantly 
+inereased 
+during the 
+last decade, the substantial 
+stability of disability trends 
+in 
+·this population 
+was 
+disappointing. 
+Late-preterm infants, 
+·who 
+account 
+for about 
+75% 
+of all preterm births 
+and had 
+not 
+been 
+al 
+risk 
+for 
+adverse 
+longterm 
+developmental outcomes 
+in the past, are 
+now 
+reconsidered 
+P.Cartlo 
+Department of 
+Neurosciences, Paiaic 
+Neurology Unit, 
+·Tor 
+University of Rome, 
+Via Montpellier I, 
+(00153 Rome, 
+ly 
+De 
+Luc 
+M., 
+* 
+8. Di 
+Girolamo 
+Department af Ea, Nose, 
+& Head Neck Surgery, 
+·Tor 
+Vergata· University of Rome, 
+Rome, 
+tly 
+Department of Pharmacobilogs; University 
+of 
+Calabi, 
+as 
+more 
+likely 
+to develop such 
+events, 
+though their 
+risk 
+remains 
+lower than in 
+ELBW. 
+Conclusions 
+The findings of the studios discussed 
+in 
+article 
+support the importance 
+of early diagnosis in 
+oder 
+to 
+make 
+decision 
+about 
+appropriate 
+treatment 
+of 
+preterm 
+infants, 
+Keywords 
+Cerebral 
+palsy- Developmental coordination 
+disorder: 
+Visual 
+impairment 
+Introduction 
+The incidence 
+of preterm delivery and the survival 
+rate 
+of 
+preterm 
+newboms 
+are 
+rising, 
+due 
+10 the 
+increased use 
+of 
+assisted 
+reproductive technology, which 
+is associated 
+with 
+multiple gestations, 
+and the improvement 
+of technology in 
+·obstetrics 
+and in neonatology, which 
+increase the 
+probability 
+·of saving 
+preterm infants 
+at earlier gestational ages [1,2] 
+·The survival 
+rate of infants 
+bor 
+at 24-25 
+weeks of 
+gestation 
+has significantly increased 
+in 
+2008 compared to 
+1994 (36 to 
+47%), probably duc 
+to 
+the 
+improvement 
+of neonatal 
+intensive 
+care; 
+care 
+for 
+infants 
+born 
+at 
+22-23 
+weeks 
+of 
+·gestation, 
+instead, 
+remains 
+unsuccessful 
+with 
+death 
+of 
+·newboms 
+in 
+the immediate 
+postnatal period [3]. Ia pretemn 
+·newhoms, prenatal, perinatal, and postnatal determinants 
+ean 
+tive 
+rise 
+o adverse neurological outcomes 
+through complex 
+·causal 
+pathways, with 
+hypoxiaischemia 
+and 
+infection 
+inflammation 
+of 
+chorial 
+membranes 
+apparently playing & 
+major 
+role [4]. The risk 
+of brain injury 
+(ie. 
+White 
+Mater 
+Damage, intraventricular 
+hemorthage, 
+and cortical 
+and deep 
+·gray 
+matter 
+damage), and subsequent adverse 
+clinical 
+·outcomes 
+increases 
+with 
+decreasing. gestational age 
+[5] 
+however, 
+in 
+late-preterm infants 
+without 
+brain 
+injury, 
+alteration 
+of cerebral 
+maturation 
+can 
+be detected 
+[6]. la 
+fac, 
+(Childs 
+Nerw Syst (2010) 26:1139-1149 
+·DOI 
+REVIEW 
+PAPER 
+Preterm 
+birth 
+and neurodevelopmental outcome: 
+a review 
+Carla 
+Arpino 
+- Eliana 
+Compagnone 
+- Maria 
+L. Monta 
+1r0 - 
+Denise 
+ciatore 
++ 
+Angela De Luca 
+« Angelica Cerulli- 
+Stefano 
+Di Girolamo - 
+Paolo 
+Curatolo 
+·Received: 
+13 
+2010 /Accepied: 3 March 2010 
+/Published online: 
+27 March 
+2010 
+© Springr-Veriag 2010 
+Abstract 
+Background The 
+incidence 
+of 
+preterm 
+delivery and 
+the 
+survival 
+rate 
+of preterm 
+newboms 
+are 
+rising, 
+due to the 
+increased 
+use 
+of assisted reproductive technology associated 
+·with 
+multiple gestations 
+and improved technology 
+in 
+obstetrics 
+and neonatology, which 
+allow 
+saving 
+preterm 
+infants at earlier gestational ages. 
+As a consequence, the 
+risk 
+·of 
+developmental disabilities in preterm children 
+is 
+high, 
+and 
+clinical 
+pictures need to be fully defined 
+Methods 
+Narrative 
+review 
+including 
+articles 
+regarding 
+neurodevelopmental disorders published in the international 
+·medical literature 
+and reported in 
+Pub Med 
+between the 
+·years 2000 
+and January 2010, 
+Results 
+Although 
+survival 
+rates 
+of extremely 
+low 
+birth 
+·weight infants (ELBW) significantly increased 
+during the 
+last decade, the substantial stability of disability trends 
+in 
+this population was 
+disappointing. Late-preterm infants, 
+·who account 
+for about 
+75% 
+of all preterm 
+births 
+and had 
+not 
+been 
+considered 
+at 
+risk 
+for adverse 
+long-term neuro- 
+developmental outcomes 
+in 
+the past, are 
+now 
+reconsidered 
+F, Compagnone =D. Cacciatore A, 
+De 
+Lica 
+Department of Neurosciences, 
+Pediatic 
+Neurology Unit, 
+·Tor Vergata· University 
+of Rome, 
+Via Montpellier 1, 
+(00133 Rome, 
+lly 
+·e-mail 
+1M. L, Montanaro 
+S. Di Girolamo 
+Department of Ear, Nose, Throat 
+& Head Neck 
+·Tor Vergata· University of Rome, 
+Rome, 
+ACen 
+Department of Pharmacobiology, University of Calabria, 
+Cosenza, 
+Italy 
+as 
+more 
+likely to develop such 
+events, 
+though their 
+risk 
+remains 
+lower 
+than 
+in 
+ELBW. 
+Conclusions 
+The findings of the studies discussed 
+in 
+our 
+article 
+support the importance of 
+early diagnosis in order 
+to 
+make 
+decision 
+about 
+appropriate 
+treatment 
+of 
+preterm 
+infants 
+Keywords Cerebral palsy- Developmental coordination 
+disorder: 
+Visual 
+impairment 
+Introduction 
+·The incidence 
+of preterm delivery and the survival 
+rate 
+of 
+preterm 
+newboms 
+are 
+rising, 
+due 
+to 
+the increased 
+use 
+of 
+assisted reproductive technology, which 
+is associated 
+with 
+·multiple 
+and the improvement 
+of technology in 
+·obstetrics 
+and in neonatology, which 
+increase 
+the probability 
+of saving 
+preterm infants 
+at earlier gestational ages (1, 2 
+·The survival 
+rate 
+of infants bom at 24-25 
+weeks of gestation 
+hha significantly increased 
+in 2005 compared to 1994 (36 to 
+47%), probably 
+due 
+to 
+the 
+improvement 
+of 
+neonatal 
+intensive 
+care; 
+care 
+for infants 
+bor 
+at 
+22-23 
+weeks 
+of 
+gestation, 
+instead, 
+remains 
+unsuccessful 
+with 
+death 
+of 
+newboms 
+in the immediate 
+postnatal period [3]. In preterm 
+prenatal, perinatal, and postnatal determinants 
+can 
+sive 
+rise 
+to adverse neurological outcomes 
+through complex 
+causal 
+pathways, with 
+hypoxia/ischemia and 
+infection/ 
+inflammation 
+of chorial 
+membranes 
+apparently playing a 
+role [4]. The risk 
+of brain 
+injury 
+(i.e. White 
+Matter 
+Damage, intraventricular 
+hemorrhage, and cortical 
+and deep 
+·gray 
+matter 
+damage), and 
+subsequent adverse 
+clinical 
+·outcomes 
+inereases 
+with 
+decreasing gestational age 
+[5 
+however, 
+in 
+late-preterm infants 
+without 
+brain 
+injury, 
+alteration 
+of cerebral 
+maturation 
+can 
+be detected (6). In fact, 
+D springer 
+carly birth has an 
+influence 
+on 
+brain development and timing 
+·of neurobiological 
+processes 
+[7]. These 
+processes 
+include 
+neuronal 
+migration 
+and differentiation, 
+axon 
+and dendrite 
+sprouting, synapse formation, myelination, programmed cell 
+death, and the persistence of 
+transient 
+structures 
+the 
+ssubplate), which 
+are 
+involved 
+in 
+the anatomical 
+segregation 
+Of thalamic 
+axons 
+fiom 
+the lateral 
+geniculate nucleus 
+into 
+·ocular dominance 
+columns 
+in 
+primary 
+visual 
+cortex, 
+and 
+in 
+the organization of 
+somatosensory 
+and auditory cornestions; 
+the subplate is also supposed to play a role 
+in the 
+guidance of 
+corticofugal pathways [8]. A significant proportior 
+of brain 
+·growth, development, and networking occur 
+approximately 
+during the last 
+6 weeks of gestation [9] 
+The spectrum 
+of clinical 
+disabilities 
+in preterm children 
+is 
+wide 
+and 
+is 
+represented by cerebral 
+palsy (CP), 
+developmental coordination 
+disorder 
+(DCD), 
+neurosenso- 
+·ial impairment, 
+including peripheral and/or central hearing, 
+and 
+visual 
+impairments, cognitive 
+impairment, 
+learning 
+disabilities, and psychiatric 
+disorders 
+(i.e. attention 
+deficit 
+disorder, conduct 
+problems, and emotional 
+symptoms). 
+This 
+narrative 
+review 
+includes 
+articles 
+regarding neuro- 
+developmental disorders 
+published in 
+the 
+international 
+·medical 
+literature 
+and reported in 
+Pub 
+Med 
+in 
+the 
+last 
+10 years (January 1, 2000-January 31, 2010). 
+Keywords for search 
+strategy 
+were: 
+preterm 
+birth 
+and 
+neurodevelopmental outcome, 
+and neurological outcome, 
+and CP, and DCD, and minor 
+neuromotor 
+dysfunction, and 
+developmental dyspraxia, and visual hearing deficivimpair- 
+·mentdisorder, 
+and learning, and cognition, 
+and 
+·and psychiatric, and autism, 
+and autism 
+spectrum disorders, 
+and 
+ADHD, 
+and 
+conduct 
+disorders/problems, 
+and 
+late 
+preterm, 
+Preterm 
+birth 
+and 
+neurodevelopmental-neurosensorial 
+·outcomes. 
+Cerebral 
+palsy 
+CP represents one 
+of the outcomes 
+of major 
+concer 
+in the 
+very/extremely preterm (VPT/EPT) 
+newbom, 
+The 
+White 
+Matter 
+Damage (WMD), 
+in 
+particular the Periventrcular 
+Leukomalacia 
+(PVL), is the 
+main 
+predictor of CP that i 
+20 
+80 times 
+more 
+likely to appear 
+in these infants 
+than 
+in 
+full: 
+term 
+controls 
+{10]. Frequency distribution 
+of CP 
+in preterm 
+offen 
+shows 
+inconsistencies 
+between 
+rates 
+found 
+indifferent 
+studies; furthermore, 
+most 
+studies 
+are 
+focused 
+on extremely 
+preterm/very 
+low 
+birth weight (VLBW) 
+babies 
+and fail 
+to 
+evaluate 
+the other age categories. However, results 
+from 
+a 
+recent 
+meta-analysis, including 26 studies, suggest that the 
+prevalence of CP 
+is 
+about 
+14% 
+at 22-27 
+gestational age 
+GGA), 6% 
+at 
+28-31 
+GA 
+and 
+<I% 
+at 
+32-36 
+GA. 
+The 
+D springer 
+prevalent type 
+is represented by bilateral 
+spastic CP, while 
+unilateral 
+spastic CP seems 
+to be more 
+prevalent in full-term 
+infants. 
+A relationship between 
+severity of CP and GA has 
+not 
+been identified, but different 
+definitions 
+of severity and 
+different 
+assessment 
+used in different 
+studies (.c., categories 
+·of mild, moderate, and 
+severe 
+not 
+otherwise 
+specified; the 
+Gross 
+Motor 
+Classification 
+System; the Griffiths 
+locomo- 
+tor quotient) could 
+affect 
+this 
+result 
+[11]. CP prevalen 
+among 
+VLBW 
+increased 
+during 
+the 
+1980s 
+and 
+started 
+decreasing early in the 1990s. 
+This decline 
+appears 
+to be 
+related 
+to 
+a reduction 
+in 
+the frequency of bilateral 
+spastic 
+CP among 
+infants 
+of 1,000-1,499 g birth weight, and itis 
+not 
+associated 
+with 
+a less severe 
+clinical 
+profile of children 
+presenting 
+this form. The prevalence of 
+unilateral spastic 
+CP 
+seems 
+not 
+to 
+have 
+changed significantly [12]. The 
+causes 
+of the decreasing prevalence of CP 
+in 
+these 
+birth 
+weight categories 
+are 
+not completely clear, but improve- 
+ment 
+in 
+neonatal 
+care, 
+also resulting in 
+inereased 
+survival, 
+is supposed to play an important 
+role. Finally late preterms 
+(LPT), usually considered 
+having the 
+same 
+risk profile as, 
+term 
+infants 
+have 
+been recently shown 
+to 
+be three 
+times 
+·more 
+likely to 
+be diagnosed with 
+CP than children 
+born 
+at 
+term 
+[13]. 
+Preterms 
+with 
+diffuse 
+WMD 
+show 
+about 
+a 
+33% 
+reduction 
+in 
+cortical 
+and deep gray 
+matter 
+volume, and/or 
+reduction 
+in 
+complexity of cortical 
+folding compared to 
+hhealthy full-term 
+infants 
+[14]. The 
+most 
+involved 
+areas 
+seem 
+to be basal ganglia, amygdala, thalamus, hippocampus, 
+·and brainstem 
+[15]. Furthermore, 
+primary 
+hemorrhages of 
+the cerebellum 
+linked 
+to 
+vaso-oeclusive 
+events 
+of inferior 
+and 
+posterior 
+cerebellar 
+arteries 
+have 
+also been 
+reporte 
+because of the immaturity 
+of the cerebellar 
+vascular 
+supply. 
+AA significant 
+impairment 
+of cerebellar growth in. 
+preterm 
+infants, 
+even 
+in the absence of 
+obvious 
+cerebellar 
+injury, has 
+·been demonstrated 
+by conventional 
+MRI 
+studies [16] 
+Neuroimaging plays a substantial 
+role 
+in identifying the 
+·non-progressive lesion 
+or 
+abnormality of the developing/ 
+immature 
+brain·, 
+which 
+is supposed to be the neurobiological 
+subsirate 
+of CP. MRI 
+and the introduction 
+of the Diffusion 
+Weighted MRI 
+have led to the identification, 
+in 
+addition 
+to 
+PVL 
+with 
+or without 
+eystic formation, of subtle 
+WMD 
+(ie, 
+punctuate hemorthages) that 
+was 
+previously 
+misdiagnosed by means 
+of Cerebral 
+Ultrasound 
+Scan [17, 18] 
+Diffusion 
+Tensor 
+imaging 
+(DTI), allows 
+for 
+the 
+mea- 
+surement 
+of 
+Fractional 
+anisotropy 
+(FA), 
+a 
+measure 
+of 
+·microstructure 
+that helps in understanding normal 
+develop- 
+·ment 
+or 
+the brain 
+response 
+to 
+injury 
+[19, 20]. Diffusion 
+tensor 
+tractography permits 
+to 
+assess 
+connectivity 
+in 
+preterm birth [21] 
+·The adoption of 
+a well-described 
+and intemationally 
+shared 
+classification 
+system, 
+such 
+as 
+that proposed by the 
+SCPE 
+[10], and 
+the inclusion 
+of all 
+age 
+categories, 
+are 
+mandatory to clarify the effect 
+of GA 
+on prevalence, type, 
+lds 
+Nerv 
+Syst (2010) 26:1139-1149 
+nat 
+and 
+distribution 
+of CP, and 
+to 
+correlate 
+neuroimaging 
+findings with 
+clinical 
+picture. 
+Developmental coordination 
+disorder 
+A high prevalence of DCD, 
+isolated 
+or 
+associsted 
+with 
+other 
+disorders, 
+such 
+as 
+Attention 
+Deficit 
+Hyperactivity 
+Disorder 
+(ADHD) 
+[22, 23], is 
+common 
+in very/extremely 
+preterm or 
+low/extremely 
+low birthweight children, 
+In these 
+DCD 
+rates 
+range between 9.5 and 51% [24-30] 
+(Table 1), while 
+it 
+is estimated 
+to be between 
+5 and 6% in 
+the general population [31] 
+The 
+reasons 
+for 
+prevalence variations 
+are 
+probably 
+related 
+10 the case 
+definition 
+used (ie, 
+DCD 
+or 
+minor 
+neuromotor 
+dysfunction, developmental dyspraxia), to 
+different 
+motor 
+assessment, 
+andlor 
+to 
+the inconsistency 
+in 
+·cut-offs adopted 10 
+quantify 
+motor 
+impairment 
+(26) 
+In fact, in 
+the absence 
+of gold standard 
+to identify the 
+disorder 
+both 
+in 
+preterm and term 
+children, 
+the diagnosis 
+relies 
+on 
+different 
+tests, 
+which 
+allow 
+to identify the 
+main 
+functional 
+difficulties 
+that 
+affect 
+children 
+presenting 
+with 
+DCD. 
+These difficulties 
+can 
+be categorized into 
+three 
+areas: 
+·poor postural control 
+(moderate hypotonia, or hypertonia, 
+poor 
+distal control, 
+static, 
+and dynamic balance), difficulty 
+in 
+motor 
+learning (leaming 
+new 
+skills, 
+planning of 
+·movement, 
+adaptation to change, and automatization), 
+and 
+poor 
+sensorimotor 
+coordination 
+(coordination 
+within! 
+between 
+limbs, 
+sequencing 
+of movement, 
+use 
+of feedback, 
+·timing, anticipation, 
+and strategic planning)· [32]. 
+Neural 
+correlates 
+of DCD 
+are 
+not 
+yet known, but 
+it may 
+bbe hypothesized that 
+this 
+impairment 
+is 
+associated 
+with 
+diffuse 
+white 
+matter 
+damage, which 
+is 
+common 
+in 
+very 
+preterm 
+infants 
+[33]. The cerebellum, 
+basal ganglia, parietal 
+lobe, and 
+corpus 
+callosum 
+may 
+also play a role [26, 34]. 
+The cerebellum 
+has 
+an 
+important 
+role 
+in 
+motor 
+coordina- 
+tion, 
+established by both animal models and human 
+studies 
+35, 36], the capacity 
+10 modify a leamed 
+motor 
+action 
+response 
+to perceived changes in 
+environmental 
+context 
+(motor adaptation) is 
+also 
+controlled 
+by the cerebellum, 
+Poor 
+motor 
+coordination 
+and 
+poor 
+motor 
+adaptation are 
+·common 
+in 
+DCD. Visual-spatial processing, 
+facial emotion 
+recognition, 
+and 
+motor 
+imagery, 
+which 
+are 
+reported to 
+be 
+poor 
+in children 
+with 
+DCD, 
+seems 
+to be linked 
+to parietal 
+lobe involvement 
+[34]. This 
+finding 
+suggests that 
+a network 
+of regions, 
+including parietal lobe, may be 
+involved 
+in 
+this 
+disorder 
+[35] 
+Visual 
+impairment 
+Visual impairments are 
+classified 
+into 
+disorders 
+of peripheral 
+origin (refraction errors, 
+congenital cataract, coloboma of 
+the 
+retina, 
+optical atrophy or sub-atrophy, retrolentalfibroplasias, 
+nd retinopathy of prematurity) and disorders of 
+central 
+origin 
+(Cortical visual 
+impairment, 
+reduction 
+of visual 
+acuity with 
+·Table 1 Developmental coordination 
+disorders 
+neuromotor 
+dysfunctions 
+(MND) 
+in preterm children 
+by gestational age 
+(GA) and biehweight (BW) 
+Reference 
+Ganw 
+Exclusion 
+Tests used 
+Percent 
+Goyen 
+and 
+Lui (24) 
+<29 
+50 
+1Q<84; 
+Other 
+·Wocadlo 
+and Rieger (25) <30 
+323 
+Neurosensory 
+dissilis; 
+BOMP. 
+313 
+(DCD) 
+Davis 
+et al. 
+[26] 
+<28 
+weeks 
+210 
+SD 
+MARC (<Sth 
+centile)" 9.5 
+(DCD) 
+Ammaud etal 
+(27) 
+weeks 
+1,719 1Q50; 
+Neurosensory 
+disabilities 
+Touwen 
+523 
+(mild MND) 
+EPIPAGE 
+Stuy 
+28-30 
+works 
+5.1 (moderate 
+MND) 
+SI 
+weeks 
+402 
+(mild MND) 
+32 
+weeks 
+3.6 
+(moderate MND) 
+3334 
+40.7 
+(mild 
+MND) 
+23 (moderate MND) 
+2384 (mild MND) 
+1.9 (moderate MND) 
+308 
+(mild MND) 
+(0.1 (moderate MND) 
+De 
+Klein 
+etal. 
+g 
+396 
+Severe disabilities 
+MABE 
+(<Sth centile)" 22 (DCD) 
+weeks! 
+2x0 
+MABE 
+(«Sth 
+30.7 
+(DCD) 
+and Cooke 
+[29] 
+et al. 
+(30) 
+g 
+73. 
+Neurosensory 
+CP; 1Q<85 BOMP(·1SD/" 
+51 (DCD) 
+·n number 
+of sample size, 
+MABC 
+Movement 
+Assessment 
+Battery for Children, 
+BOMP Bruninks- 
+Oseretsky 
+Test of Motor 
+Proficiency 
+"Cutoff o 
+dente 
+cildren 
+with 
+DCDMND 
+D springer 
+142 
+Childs 
+Nery 
+Syst (2010) 
+26:1139-1149 
+normal 
+pupillar 
+response 
+and negative 
+eye 
+examination, 
+disturbance 
+of 
+motility, 
+strabismus, 
+nistagmus, 
+and 
+impairment 
+of fixation 
+The retinopathy of prema- 
+turity 
+(ROP) 
+is 
+the 
+most 
+frequent peripheral visual 
+alteration 
+in 
+preterms [37], The disease 
+is 
+characterized 
+by proliferation of abnormal 
+fibrovascular 
+tissue 
+at 
+the 
+border 
+of 
+the vascularized 
+and 
+non-vascularized 
+retina 
+·The etiology of this 
+disease 
+is complex, multifactorial, and 
+not 
+fully 
+understood. 
+Retinal 
+blood 
+vessel development 
+begins during the 
+fourth 
+month 
+of gestation. 
+Therefore, 
+infants 
+born 
+prematurely have incompletely 
+vascularized 
+retinas 
+with 
+a peripheral avascular 
+zone. 
+In 
+premature 
+infants, normal 
+retinal 
+vascular 
+growth that would 
+occur 
+in 
+·utero 
+ceases, 
+and there 
+is loss of 
+some 
+of the developed 
+vessels (phase I of ROP). With 
+maturation 
+of the infant, 
+the resulting non-vascularized 
+retina 
+becomes 
+inc-easingly 
+·metabolically active 
+and hypoxic. The 
+second 
+phase of 
+ROP, retinal 
+neovascularization, 
+is 
+induced 
+by hypoxia 
+and 
+occurs 
+at 
+about 
+32-34 
+GA. 
+The hypoxia-induced 
+retinal 
+neovascularization 
+phase of ROP 
+is similar 
+to other 
+proliferative retinopathies [38]. The strongest 
+risk 
+factor 
+for 
+ROP 
+is 
+low gestational age 
+at 
+birth. 
+Approximately 
+20% of infants 
+born 
+before 
+37 weeks 
+will develop ROP of 
+any stage; among 
+infants 
+<34 weeks, the prevalence of any 
+ROP 
+is reported to be 56% [39]. In 
+a regional study from 
+New South Wales, Australia, ROP 
+was 
+detected 
+in 29% of 
+examined 
+survivors 
+with 
+<32 GA and 
+in 65% of 
+survivors 
+bom 
+at 23-26 
+weeks 
+[39]. Retinal 
+cryotherapy and laser 
+photocoagulation 
+have 
+both 
+proven 
+to 
+be 
+successful 
+·methods 
+for treating 
+active 
+ROP. 
+·A higher prevalence, 
+of many 
+types of refractive 
+error 
+(.e., 
+myopia, 
+hypermetropia, anisometropia 
+and astigma- 
+tism) compared with 
+that 
+of the general population, 
+is 
+described 
+[40]. Strabismus 
+is 
+also reported to 
+be very 
+common 
+in 
+preterm 
+children, 
+with 
+a prevalence rate 
+ranging 
+from 
+12 t0 20% [41]. Hypoxia, to whom 
+preterms 
+are 
+often 
+exposed, is 
+associated 
+with 
+defect of 
+different 
+types of eye movement, 
+including saccades, smooth pursuit, 
+and convergenv/divergent movements 
+[42] 
+Cerebral Visual Impairment (CVI) 
+is 
+visual abnormality 
+due 
+to damage of central 
+visual pathways (retrochiasmatic 
+visual 
+pathways and 
+other 
+cerebral 
+areas 
+involved 
+in 
+perception and 
+processing of visual 
+stimuli) 
+[43]. The severity 
+of 
+central 
+visual dysfunctions is related 
+to the exteasion 
+and 
+to the localization 
+of brain lesions, with 
+moderate 
+or 
+severe 
+lesions of basal 
+ganglia and WMD 
+often reported associated 
+·with abnormal 
+visual 
+function 
+[44] 
+Intraventricular 
+hemorthage (grades | and Il) 
+is generally 
+associated 
+with 
+normal 
+visual 
+acuity. 
+Infants 
+with 
+large 
+hhemorthages 
+show 
+poor acuity 
+at term 
+age, but this deficit 
+tends to 
+improve after 
+few months. 
+Visual acuity is generally 
+normal 
+in PVL types I and I, but visual impairment becomes 
+in PVL 
+type Ill and is usually severe 
+in 
+infants with 
+D springer 
+·subcortical 
+eystic 
+leukomalacia, 
+The incidence 
+of low acuity 
+in children 
+with 
+PVL 
+is about 60% [45]. 
+However, 
+and 
+surprisingly, 
+it has been reported that 
+very/extremely 
+preterm 
+infants 
+without 
+brain 
+lesions, 
+in 
+whom 
+visual 
+function 
+has 
+been 
+assessed 
+by using 
+a 
+validated 
+test 
+battery, tend 
+to 
+show 
+a 
+more 
+mature 
+visual 
+function 
+than 
+term-bom 
+infants 
+for 
+ocular 
+movements, 
+vertical 
+and 
+arc 
+ocular 
+tracking, when 
+evaluated 
+at 
+term- 
+equivalent age. 
+To explain this 
+finding, 
+it 
+has 
+been 
+hypothesized that 
+extrauterine 
+experience 
+may 
+accelerate 
+the maturation 
+of these aspects [46] 
+Hearing impairment 
+Up to 
+3% of infants 
+born 
+at <28 
+GA show 
+some 
+hearing 
+deficit, ranging 
+from 
+conductive 
+disorders 
+to 
+sensorineural 
+loss, that i 
+about 25 times 
+higher compared with the 
+prevalence of hearing deficits 
+found 
+in 
+the 
+pediatric 
+population (J.1-1.3/1,000 
+within 
+40 dB) [47]. Gestational 
+age-specific prevalence of hearing loss among 
+children 
+aged 
+3-10 
+years, from 
+a recent 
+nested case-control 
+study carried 
+·out 
+in the context 
+of the Metropolitan Atlanta Developmental 
+Disabilities 
+Surveillance 
+Program, shows 
+a rte of 
+1.43% in 
+the 
+age category 20-23 
+weeks, 0.63% 
+at 24-28 
+weeks, 
+(0.19% 
+at 29-32 
+weeks, and 0.1 at 33-36 
+weeks [48]. 
+This high prevalence of hearing impairment 
+in preterms, 
+in 
+particular in 
+very 
+low 
+birth 
+weight, suggests 
+that 
+prenatal factors 
+responsible for 
+the pathway leading to 
+preterm 
+birth 
+and perinatal/neonatal complications 
+may 
+damage the auditory function 
+and 
+its early development. 
+Factors 
+increasing 
+the 
+risk 
+of 
+hearing 
+impairment 
+in 
+preterm 
+babies 
+are 
+heterogencous and 
+include: 
+hypoxia, 
+[49], the use of noisy 
+incubators, 
+and 
+the 
+exposure 
+to 
+antibiotics 
+that 
+are 
+potentially ototoxic 
+because 
+of life-threatening infections. 
+One 
+of 
+the 
+most 
+important 
+consequences 
+of 
+severe 
+hearing impairment 
+is 
+the delay of language development that plays a erucial 
+role 
+in 
+the acquisition 
+of 
+communication 
+abilities 
+and 
+social 
+sills 
+[50]. Furthermore, hearing loss in 
+children 
+ean 
+affect 
+cognition, 
+educational levels, social and emotional develop- 
+ment, 
+and family-child 
+interaction. 
+Early identification 
+of 
+hearing loss and appropriate 
+intervention 
+within 
+the 
+first 
+·6 months of life have been demonstrated 
+to prevent many 
+of 
+the adverse consequences 
+and facilitate 
+language acquisition. 
+Protocol 
+of neonatal hearing screening 
+is based on 
+a two-step 
+system: 
+Evoked 
+Otoacoustic 
+Emissions 
+test 
+(EOAE) 
+followed 
+by the 
+Brainstem 
+Auditory 
+Evoked 
+Potentials 
+(BAEP/ABR) 
+for 
+all 
+infants 
+failing the EOAE 
+[51, 52}. 
+Otoacoustic 
+emissions 
+provide 
+an 
+indication 
+of 
+the 
+integrity 
+of the cochlea 
+[53]. BAEP 
+provide information 
+related 
+to 
+hearing system functions, 
+starting from 
+the 
+cochlea 
+up 
+to 
+the 
+inferior 
+colliculum, 
+and 
+information 
+bout 
+the maturation 
+of the immature 
+nervous 
+system [54]. 
+Childs 
+Nerv 
+Syst (2010) 26:1139-1149 
+143 
+·The lifetime 
+cost 
+to society of prelingual onset 
+of profound 
+deafiness 
+is estimated 
+to be $1 million 
+per subject, largely 
+because of 
+special education 
+and reduced work productivity. 
+Interventions 
+such 
+as 
+cochlear 
+implants in 
+profoundly 
+deaf 
+children 
+have 
+a positive 
+effect 
+on 
+their 
+quality of 
+life 
+at 
+reasonable 
+costs 
+and 
+seem 
+to 
+result 
+in 
+a 
+net 
+savings 
+to society 
+[55]. 
+Cognitive impairment 
+Cognitive impairment 
+(IQ<70) 
+is the 
+most 
+common 
+and 
+severe 
+disability 
+in 
+preterm 
+infants [56-64] 
+and 
+prevalence is reported to 
+be higher than motor, 
+visual, or 
+hearing impairments [59, 65-70]. 
+Rates 
+of cognitive 
+disability vary 
+across 
+the studies depending on sample size 
+and the inclusion of 
+different 
+GA categories, and have been 
+shown 
+to 
+be inversely related 
+to 
+GA 
+and 
+birth 
+weight 
+[56, 61, 71-74], Data 
+from 
+several 
+cohort 
+studies suggest 
+that cognitive 
+impairment 
+ranges from 
+4 to 47% 
+in the GA. 
+between 
+22 and 34 weeks 
+or between 
+750 g and 
+1,500 g [58, 59, 69, 75-83] (Table 2). Furthermore, 
+when, 
+·comparing 
+school-ages preterm 
+without 
+mental 
+retardation, 
+·with full-term 
+children, 
+a mean 
+difference 
+of 10.9 points 
+in 
+the cognitive 
+scores 
+has been found [56]. 
+Differences 
+in IQ scores 
+between 
+preterm and full 
+term 
+remain 
+after adjustment for possible confounders, 
+such 
+as 
+bilingual households, teenage mothers, matemal 
+education, 
+·Table 
+2 Cognitive impairment 
+stratified 
+by 
+age (GA) and birthwe 
+and 
+socio-economic 
+status [61], suggesting 
+that 
+environ- 
+mental 
+factors 
+may 
+be implicated in the cognitive 
+outcome, 
+but that early disruption of brain development seems 
+to 
+play an 
+important 
+roe. 
+Proterm 
+birth 
+is associated 
+with 
+alteration 
+of volumes 
+of 
+white 
+and gray 
+matter 
+and delayed or disrupted pattems of 
+neurodevelopment 
+may 
+represent 
+the 
+neurobiological 
+substrate 
+of cognitive 
+impairment 
+[84] 
+An early indicator of 
+impaired cognitive development in 
+preterm 
+infants 
+[85] can 
+be represented by maturational 
+changes in 
+morphology and latency recorded 
+through 
+Mismatch 
+Negativity 
+(MMN), 
+a 
+pre-attentive 
+change- 
+specific component 
+of event-related 
+brain potentials. In fact 
+in 
+polarity of MMN 
+are 
+supposed to reflect the 
+rapid development of thalamo-cortical 
+connections, 
+cortical 
+lamination, and synaptic activity 
+in early development [86] 
+Neuropsychological disabilities 
+persist throughout adoles- 
+cence 
+and 
+adulthood 
+[61, 87-89], and only 56-74% 
+of. 
+preterm 
+children, 
+significantly fewer 
+than 
+normal 
+birth 
+·weight teens, 
+graduate from high school [87, 88]. Moreover, 
+72% 
+of ELBW 
+adolescents, 
+53% 
+of VLBW 
+vs. 
+13% 
+of 
+·normal birth weight controls 
+show school 
+difficulties 
+[90] 
+·School underachievement 
+has been reported even 
+in those 
+without neurosensory 
+impairment and normal 
+1Q [91]. Mild 
+of visual 
+processing 
+tasks (74, 92], memory, 
+e functioning [74, 93] 
+common 
+in. 
+preterm 
+ld influence child·s 
+school 
+performances [94]. 
+BW) 
+Reference 
+GARW 
+n 
+Exclusion 
+eritera 
+1Q tests 
+Percent 
+impaired 
+Maree 
+etal 
+[69] EPIPAGE Study 
+30-34 
+wooks!~ 
+Mel 
+MPC 
+53-107 
+Seite al 
+(75) 
+1250 
+g 
+K-ABC 
+10-20 
+Fearoogi 
+eta. 
+76] 
+26, 
+wo 
+Five 
+4 
+(Parent reper) 
+Marlow 
+etal 
+[59] EPICure 
+Study 
+K-ABC 
+a 
+Hints 
+etal. 
+(77) 
+25 
+366 
+BSID- 
+40 
+4a 
+a 
+Hack et 
+a. (78) 
+219 
+Major malformations 
+K-ABC 
+Is 
+Tuberous sclerosis, AIDS 
+Mikkola 
+et a. (79] Finnish 
+ELBW 
+g 
+172 
+Severe disabilities 
+° 
+Cohort 
+Study 
+Larroque etal. 
+(80] EPIRAGE 
+33. 
+wosks!- 
+let 
+K-ABC 
+2 
+·Sud 
+·ol 
+ta 
+[81] Multicenter 
+22-26 
+weeks! 
+ams 
+BSID-I 
+Cohort 
+Study 
+27-32 
+woeks!- 
+28 
+·Shankaran et 
+al. [$2] 
+2450 
+g 
+246 
+46 
+·Anderson and Doyle [58] Victorian 
+<28 
+wesks/<1,000 
+g 
+258 
+Severe disabilities 
+s 
+Infant Collaborative 
+Study 
+Bohm 
+eta. 
+(83] Stockholm 
+1500 
+g 
+143 
+Severe 
+disabilities 
+10 
+Neonatal 
+Project 
+numberof sample 
+size, 
+K-ABC Kaufiman 
+Assessment 
+Batery 
+f 
+for 
+Children), 
+BSID-M Bayley 
+Seals of 
+Infant 
+Developmen 
+Ti)
+tae
+tel
+Wine
+Children, 
+MPC 
+Mental 
+Processing Composite (Kaufnan 
+Assessment 
+Battery 
+WPPSI-R 
+Wechsler 
+Preschool 
+and Primary Scale of Intelligence
+Revise
+WISC- 
+144 
+Childs 
+Nerv 
+Syst (2010) 
+26:1139-1149 
+It 
+has been 
+suggested that 
+deficits 
+in 
+visuo-spatial 
+performances have implication beyond peneil skills 
+and 
+design because 
+of poor spatial judgement, poor 
+orientation, 
+and directionality [94]. 
+Finally VPT/VLBW 
+is reported to 
+be more 
+likely than 
+term 
+children 
+to perform poorer 
+in mathematics, reading, 
+and spelling [90]. Vulnerability in the preterm population in 
+dorsal 
+stream, 
+a pathway that 
+projects 
+to magnocellular 
+layer of Lateral 
+Geniculate 
+Nucleus 
+and 
+then to parietal 
+cerebral 
+cortex, 
+also called 
+·where 
+system·, 
+important 
+in 
+processing 
+motion, 
+orientation, 
+dynamic form, and 
+[95], could 
+represent 
+one 
+of 
+the factors contributing, to 
+learning difficulties 
+disorders 
+Very low/extremely low 
+birth 
+weight or 
+very/extremely 
+preterms 
+are 
+reported to 
+be at risk for, ADHD, 
+behavioral 
+disorders, anxiety/depression, and Autism 
+Spectrum Disor- 
+ders (ASD) (29, 48, 57, 58, 70, 74, 76, 96-104], Studies 
+focusing on 
+the relationship between 
+preterm 
+birth 
+and 
+inattention/hyperactivity are 
+relatively few, but consistently 
+show 
+that 
+attention 
+problems are 
+most 
+pronounced in 
+VPT 
+and/or 
+VLBW 
+children 
+than 
+in 
+controls 
+[56, 10S]. Few 
+studies tried 
+to investigate the proportion 
+of Attention 
+Deficit 
+Disorder/ADHD 
+[106, 107]: attention 
+deficit 
+disorder, 
+without 
+hyperactivity, seems 
+to 
+be 
+more 
+common 
+than 
+ADHD 
+in 
+LBW 
+children. 
+However, the scarcity of 
+studies 
+aimed 
+at evaluating the DSM-IV-TR-defined 
+subtypes (ie. 
+predominantly 
+inattentive, 
+predominantly 
+impulsive, and combined 
+type of ADHD) makes 
+ii difficult 
+to 
+explore the 
+causal 
+pathways eventually 
+involved 
+in 
+preterm birth-mediated 
+ADHD. 
+One of the 
+most 
+credited 
+pathogenetic models 
+of ADHD 
+is that this condition 
+reflects 
+fa primary 
+executive 
+function 
+(EF) deficit. 
+Results 
+from 
+a 
+recent 
+meta-analysis 
+show 
+that 
+verbal 
+fluency, working 
+·memory, 
+and cognitive flexibility 
+are significantly poorer 
+in 
+children 
+bom 
+very 
+preterm 
+or 
+in 
+VLBW 
+than 
+in 
+controls 
+[105]. A possible explanation for this association 
+could 
+be 
+that preterm birth disrupts, in 
+some 
+way, cortical development 
+and brain connectivity 
+(including cortcal/subcortcal 
+circuits 
+·connecting the 
+frontal, striatal, and thalamic 
+regions) and that 
+this disruption increases 
+when GA and birth weight decrease 
+[108]. 
+Internalizing (jc, 
+anxious/depressed symptoms, 
+with- 
+<drawn, 
+and somatic 
+complaints) and externalizing (delinquent 
+and aggressive 
+behavior) disorders 
+are 
+reported to be more 
+common 
+in 
+VPT/EPT 
+and VLBW/ELBW 
+than 
+in 
+controls 
+[72]. However, prevalence rates 
+vary 
+across 
+studies; data 
+from 
+meta-analysis carried 
+out 
+in 
+2002 
+suggest 
+a 
+major 
+predominance of externalizing with 
+respect to intemalizing 
+disorders 
+(ie., 
+75 
+vs. 
+69%) [56], whereas 
+another 
+meta- 
+analysis found 
+no 
+differences 
+between 
+the two 
+groups [105]. 
+Finally, behavioral 
+disorders 
+seem 
+to 
+remain 
+stable during 
+development and persist 
+into 
+young 
+adulthood 
+[105]. The 
+association 
+between 
+autism 
+and 
+birth 
+weight 
+and/or 
+preterm birth 
+has been evaluated 
+in several 
+studies 
+leading 
+to 
+somewhat 
+controversial 
+results, because 
+of methodo- 
+logic differences, 
+small 
+clinic-based 
+samples, and lack 
+of 
+control 
+for confounding factors [48, 97, 99, 100, 108-110]. 
+However, even 
+though the magnitude of the 
+risk 
+varies, 
+the 
+direction 
+of the 
+association 
+is 
+consistent 
+across 
+studies. 
+A 
+·twofold 
+increased 
+risk 
+for 
+autism, 
+adjusted for possible 
+confounders, 
+has been reported 
+in 
+LBW 
+and/or 
+preterm 
+infants (97, 99-101, 
+103, 111, 112], Data from a lange cohort 
+study show 
+that the risk 
+is higher for 
+LBW girls than for 
+LBW 
+boys and 
+further 
+increases 
+in 
+LBW 
+girls presenting 
+with 
+autism associated 
+with 
+mental 
+retardation 
+or 
+other 
+developmental disorders; no significant association 
+between 
+LBW boys 
+and autism, without 
+developmental disorders, has, 
+been 
+found, 
+When 
+considering GA categories instead 
+of 
+birth weight, similar 
+results 
+are 
+obtained 
+even 
+though the 
+·strength of 
+the 
+association 
+is weaker compared to that found 
+·when birth weight is used 
+as 
+an independent variable 
+[48]. 
+With regard to gender 
+difference, 
+it has been hypothesized 
+that girls, usually at lower 
+risk 
+for autism 
+than boys, could 
+require 
+a prenatal/perinatal insult 
+in 
+order 
+to develop autism 
+with 
+comorbid 
+developmental disorders 
+[48]. In this 
+case, 
+LBW 
+or preterm birth could represent a marker of an 
+adverse 
+prenatal course, 
+Taking into 
+account 
+the neurobiological substrate 
+of 
+ncurobehavioral 
+disorders 
+described 
+in 
+preterms, 
+it 
+is also 
+important 
+to consider 
+·environmental· 
+risk 
+factors 
+such 
+as 
+matemal 
+distress, 
+duration 
+of hospitalization, 
+and distur- 
+bance 
+in parent-child interactions, 
+These factors can 
+act 
+as 
+modifier· 
+either increasing or decreasing the risk of 
+neurobehavioral 
+disorders, 
+Thus, in 
+order 
+to 
+prevent psychiatric morbidity, more 
+studies focused 
+on disentangling the contribution of 
+several 
+risk factors 
+to the final 
+outcome 
+are 
+needed, 
+Late-preterm 
+birth 
+and 
+clinical 
+outcomes 
+LPT infants, recently defined 
+as those born between 
+34 and 
+36 weeks 
+of gestation [113], account 
+for about 
+75% of all 
+proterm 
+births [114] and for about 
+8% of live births [115]. 
+·They increased 
+from 
+7.3% 
+in 1990 to 9.1% 
+in 
+2005 [116] 
+and have 
+come 
+to be recognized as 
+the fastest increasing 
+·and largest proportion 
+of singleton preterm 
+births 
+in 
+the 
+United 
+States [113, 116]. The 
+reason 
+for the 
+increase 
+in 
+LPT 
+births during the last decade 
+is 
+not 
+well 
+understood. 
+·One hypothesis is that 
+it 
+may 
+be attributable, 
+in 
+part, 10 
+increased 
+use 
+of reproductive technologies resulting in 
+an 
+increase 
+in multfetal 
+pregnancies. 
+Another 
+hypothesis is that 
+·advances 
+in 
+obstetric 
+practice 
+have 
+led 
+to 
+an 
+increase 
+in 
+Childs 
+Nerv 
+Syst (2010) 26:1139-1149 
+nas 
+surveillance 
+and 
+medical 
+interventions 
+during 
+pregnancy 
+[114 
+117]. Late-preterm infants 
+are 
+physiologically 
+and 
+·metabolically immature. 
+As 
+a consequence, 
+LPT infants 
+are 
+fat higher risk 
+than 
+term 
+infants 
+of developing medical 
+complications that result 
+in higher rates 
+of mortality and 
+·morbidity. LPT infants 
+are 
+also 
+more 
+likely than term 
+infants 
+to have longer initial 
+hospital stays and to be admitted 
+to 
+NICU, 
+A large cohort study found 
+that 88% of infants 
+born 
+at 34 GA, 
+54% of infants born 
+at 35 GA, 
+25% of infants 
+bom 
+at 36 GA, 
+12% of infants 
+born 
+at 37 
+GA, and 2.6% of 
+infants 
+bor 
+at 
+38 through 40 GA 
+are 
+admitted 
+at NICU 
+[118]. LPT 
+infants 
+have been reported to be three times 
+more 
+likely than 
+terms 
+to 
+die before 
+their 
+first birthday and 
+six 
+times 
+more 
+likely to die 
+in their first week of 
+life, 
+as 
+a result, 
+of congenital malformations, deformations, 
+and 
+chromo- 
+somal 
+abnormalities; 
+bacterial 
+sepsis; 
+and 
+maternal 
+complication of pregnancy 
+[119], 
+LPT 
+infants 
+have 
+also 
+a higher rate 
+of 
+immediate 
+newbom 
+morbidities, 
+such as respiratory distress syndrome, 
+apnea, 
+transient 
+tachypnea, hypoglycaemia, hypothermia, 
+seizures, 
+and feeding problems. LPT infants 
+may 
+also be at 
+significant 
+risk 
+for 
+brain 
+injury 
+and 
+adverse 
+long-term 
+neurodevelopmental 
+outcomes 
+even 
+though 
+the 
+risk 
+is 
+lower than that reported in 
+ELBW 
+[13]. It 
+is 
+important 
+to 
+recognize 
+that 
+a significant 
+proportion 
+of 
+brain 
+growth, 
+development, and networking occur 
+during the last 6 weeks 
+of gestation. 
+In particular, 
+active 
+myelination persists 
+in 
+LPT 
+period and 
+for 
+an 
+additional 
+24 weeks 
+postnatally: 
+approximatively 25% 
+of 
+the 
+cerebellar 
+volume 
+and 
+its 
+connections 
+develop after 
+preterm 
+birth. 
+Over 
+the 
+final 
+4 weeks 
+of gestation, dramatic 
+growth is 
+seen 
+in the gyri, 
+sulei, 
+synapses, 
+dendrites, 
+axons, 
+oligodendrocytes, 
+astro- 
+cytes, 
+and microglia [120]. Its 
+estimated 
+that at 35 GA, the 
+surface of the brain shows significantly fewer sule, and the 
+\weight of the brain 
+is only about 60% 
+than 
+of term 
+infants. 
+Subplate neurons 
+are 
+still 
+prominent 
+in 
+the late-preterm 
+brain 
+and 
+axonal 
+interconnections 
+between 
+the thalamus. 
+and cerebral 
+cortex 
+are 
+not completely 
+formed 
+at this 
+age 
+[121]. Cerebral 
+tissues 
+are 
+vulnerable 
+to injury 
+during thi 
+critical 
+period of development that 
+may 
+result 
+in 
+direct 
+damage of 
+critical 
+pathway needed 
+for neuronal 
+and glial 
+development. The 
+LPT 
+is 
+also 
+at 
+risk 
+for 
+white 
+matter 
+injury 
+through multiple potential mechanisms, 
+including 
+developmental vulnerability of the oligodendrocyte, cyto- 
+kkine and free radical-mediated 
+injury, 
+and a developmental 
+lack 
+of 
+antioxidant 
+enzymes 
+to help regulate oxidative 
+stress. 
+LPT 
+infants 
+show 
+a higher risk 
+of developing 
+significant hyperbilirubinemia and 
+an 
+increased 
+risk 
+for 
+long-term sequelae compared with 
+term 
+infants 
+because of 
+immaturity of 
+conjugation of enzymatic pathways, immature 
+feeding pattems, and 
+the age-dependent susceptibility of 
+developing neurons 
+and 
+astrocytes 
+to 
+bilirubin-induced 
+injuries 
+[9]. 
+·The long-term neurodevelopmental outcome 
+of 
+LPT 
+infants 
+has 
+been 
+evaluated 
+only 
+in 
+a 
+few 
+studies. 
+Neurologic abnormalities, 
+learning difficulties, 
+poor 
+scholastic 
+achievement, 
+and 
+behavioral 
+problems have 
+been reported [122]. CP has been found 
+to be three 
+times 
+more 
+likely 
+in 
+LPT 
+compared with 
+full-term 
+children; 
+Developmental Delay and Mental 
+Retardation 
+have 
+been 
+found 
+2 or 
+1.3 times 
+more 
+than full-term 
+infants 
+[13, 48]. 
+No evidence of 
+risk of 
+autism 
+has been reported 
+in 
+LPT compared with 
+term 
+children [48], 
+With 
+regard to leaming difficulties, 
+LPT 
+infants 
+have 
+24% increased 
+odds for reading scores 
+below 
+average 
+in the 
+first grade of education, compared to 
+full 
+term. 
+A 
+risk 
+ranging 
+from 1.4 to 2.1 for special education, 
+compared to 
+full-term 
+infants, has also been reported [122] 
+More 
+studies 
+are 
+needed 
+in this 
+GA eategory in order to 
+set 
+preventive strategies, In fact, it is 
+not negligible that, 
+although 
+they are 
+at lower risk than VPT 
+for poor neurodevelopmental 
+·outcome, 
+LPT account 
+for about 75% of al preterm births. 
+Conclusion 
+Preterm 
+infants 
+are likely to present adverse neurodevelop- 
+mental 
+outcomes 
+covering 
+motor, 
+sensorial, cognitive, 
+and 
+behavioral 
+domains. 
+Although 
+a large amount 
+of data 
+on 
+ELBW 
+and 
+LBWIVPT 
+is 
+available, 
+there 
+is 
+limited 
+information 
+about 
+LPT. 
+Moreover, 
+the 
+identification 
+of 
+·ends 
+is impaired by the lack of stratification 
+of the data, 
+with overlaps between 
+different 
+strata, which 
+may provide 
+conservative 
+estimates 
+of the difference 
+between 
+different 
+GAvbirth 
+weight strata. 
+This problem also affects 
+compar- 
+isons 
+between 
+different 
+studies 
+which 
+use 
+different 
+cut-off 
+for stratifying relevant 
+categories, 
+such 
+as gestational age 
+·and birth 
+weight. 
+Further 
+limits 
+derive 
+from 
+the 
+use 
+of 
+cut-off 
+to define 
+the presence/absence of disorders, 
+and from limited 
+availability and/or 
+use 
+of functional 
+scales 
+·and 
+quality-of-life indicators. The 
+knowledge of these 
+limits 
+should guide further research 
+in 
+the field 
+in 
+order 
+to gain 
+evidence 
+about best 
+options 
+for the 
+treatment 
+of preterm 
+children, 
+References 
+1. 
+NH, 
+Kallen 
+K, Hagherg H,Jacobsson 
+B (2008) Preterm 
+bith 
+in 
+Sweden 
+1973-2001: 
+mate, 
+subgroups, and 
+elfet 
+of 
+changing pattems in multiple bs, 
+maternal 
+age, and smoking, 
+Acta 
+Obstet 
+Gynecol Scand 
+84:558-565, 
+2. Blondel 
+B, 
+A, 
+Gissler 
+M, 
+Breart 
+G, Zein 
+J, 
+PERISTAT 
+Study Group (2006) 
+Preterm 
+and_ multiple 
+pregnancy 
+in European counties 
+participating 
+inthe 
+PERISTAT 
+project. BIORG 
+113:528-535 
+3. Field 
+DJ, Dorling JS, Manktclow 
+BN, 
+Droper 
+ES (2008) 
+Survival 
+of 
+extremely 
+premature 
+babies 
+in 
+geographically 
+D springer 
+146 
+Childs 
+Nery 
+Syst (2010) 26:1139-1149 
+20. 
+24 
+defined 
+population: 
+a prospective cohort 
+study of 
+1994-1999 
+·compared with 
+2000-2005, 
+BMJ 
+336(76S5)-1221-1223 
+C, D'Argenzio L, 
+Ticconi 
+C, Di 
+Paolo A, 
+V, 
+Lopez L, Curatolo 
+P (2005) Brain damage in 
+pretem 
+infants: 
+pathways, Ann Ist Super Sanita 41:229-237 
+Krageloh-Mann 1, Cans 
+C (2009) Cercbral 
+Palsy update. Brain 
+Dev 
+31:537-544 
+MeQuillen 
+PS, Sheldon 
+RA, 
+Shatz CJ, 
+Ferrero 
+DA (2003) 
+Selective 
+vulnerability of subplate neurons 
+after early neonatal 
+Neurosci 
+23(8)3308-3315 
+Volpe 3 (2009) Brain 
+injury 
+in 
+premature 
+infants: 
+a complex 
+amalgam of destrctive 
+and developmental disturbances, 
+Lancet 
+Neurol 
+§:110-124 
+Kanold 
+PO, Kara P, Reid RC, Shatz CJ 2003) 
+Role of subpate 
+·neurons 
+in· 
+Functional 
+maturation 
+of 
+visual 
+cortical 
+columns. 
+Seience 
+25:521-525 
+·Adams-Chapman 1 (2006) Neurodevelopment 
+late preterm 
+infant. 
+Clin Perinatol 
+33:947-964 
+SCPE Working group (2000) Surveillance 
+of Cerebn! 
+Palsy in 
+Europe: a collaboration 
+of cerebral 
+pay 
+surveys 
+and registers 
+Surveillance 
+of 
+Cersbral 
+Palsy 
+in 
+Europe (SCPE). Dev 
+Med 
+(Child Neurol 
+42816-824 
+Himpens E, 
+van 
+den 
+Broeck 
+C, 
+Ocasira 
+A, 
+Clachers 
+Vanhaesebrouch 
+P (2008) 
+Prevalence, 
+type, distribution 
+and 
+severity 
+of cerebral 
+palsy 
+in 
+relation 
+to gestational age: 
+a 
+meta-analytie review. 
+Dev Med Child 
+Neurol 
+50:334-340 
+Platt MJ, Cans C, Johnson 
+A etal 
+(2007) Trends 
+in cerebral 
+palsy among 
+infants 
+of very 
+low birthweight (£1500 g) or 
+born 
+prematurely (<32 weeks) in 
+16 European centes: 
+1 database 
+study. The Lancet 369:43-S0 
+Petin 
+JR, Dias T, McCormick 
+MC, MI M, Green S8, Escobar 
+GI (2008) Inereased 
+risk of adverse neurologieal development 
+fo late 
+pretem 
+infants. 
+J Pediatr 
+154(8) 169-176 
+M, Soeed N, Cowan FM 
+(2000) Reduced development 
+·of 
+cerebral 
+cortex 
+in exremely preterm infants. Lancet 356:1162- 
+es 
+Lin 
+Y, Okomura 
+A, Hayakawa F (2001) Quantitative 
+evaluation 
+cof thalumi 
+and 
+basal ganglia in 
+infants 
+with 
+periventricular 
+leukomalacia, 
+Dev Med Child 
+Neurol 
+43:481-485 
+C, Bassan H, Gauvteau 
+K (2007) Does cerebellar 
+injury 
+in premature infants 
+contribute 
+tothe 
+high prevalence of 
+long-term cognitive, 
+learning and 
+behavioral 
+in 
+survivors? 
+Pediatrics 
+FF, 
+Duggan PJ, Counsel 
+SJ, Rutherford 
+MA, 
+Cowan 
+F, 
+·Azzopardi D, Edwards 
+AD 
+(2001) Comparison of fadings on 
+·cranial ullrsound 
+and magnetic resonance 
+imaging 
+in 
+preterm 
+infants. 
+Pediatrics 
+107:719-727 
+LG, Tanner SF, Rumenghi LA, Mall 
+LS, Childs 
+AM, 
+AAthur RJ, Martinez 
+D, Levene 
+MI (2002) Magnetic resonance 
+imaging 
+of 
+the 
+infant 
+brain: 
+anatomical 
+and 
+clinical 
+significance of punciate 
+lesions. 
+Arch 
+Dis 
+Child 
+Fetal 
+Neonatal 
+Ed 86:F171-F177 
+PS, Dubois 
+J (2006) Diffusion 
+tensor 
+imaging 
+of 
+brain 
+Semin Fetal Neonatal 
+Med 11:489-497 
+Partridge SC, Mukherjee P, Henry RG, Miller 
+SP, Berman JI, in 
+H, Lu Y, Glenn 
+OA, 
+Ferrero 
+DM, Barkovich 
+AJ, Vigneron DB 
+(2004) 
+Diffusion 
+tensor 
+imaging: 
+serial 
+quantitation 
+of 
+white 
+·alter 
+tract 
+maturity 
+in 
+premature 
+newborns. 
+Neuroimage 
+22:1302-1314 
+Ramenghi LA, 
+Rutherford 
+M, Fumagalli Met 
+al (2008) Neonatal 
+·neuroimaging: 
+going beyond the 
+pictures, Early Hum 
+dev 
+S75- 
+s7 
+Valtonen 
+R, Ahonen 
+T, Lyytinen P, Lyytinen H (2003) Co- 
+of developmental delays in 
+a screening 
+study of 
+Finnish 
+children. 
+Dev 
+Med 
+Child 
+Neurol 
+46:436- 
+aa 
+outcome 
+of the 
+2 
+2. 
+2, 
+3 
+3s. 
+36 
+D, O'Callaghan M, 
+K, 
+Shum 
+D, Burns ¥ 
+(2006) The 
+association between carly minor 
+moter 
+difficulties 
+in 
+·extreme 
+low 
+bith 
+weight infants 
+and 
+sehool 
+age 
+attentional 
+Barly Hum Dev 82:249-255 
+Goyen 
+TA, Lai 
+K (2009) Developmental coordination 
+disorder 
+in 
+normal· 
+schoolchildren 
+bor 
+extremely preterm, 
+·Arch Dis Child 
+94:298-302 
+·Weocadlo C, Rieger 1 (2008) 
+Motor 
+impairment 
+and 
+low 
+achievement 
+in 
+very 
+preterm children 
+at eight years 
+of 
+age. 
+Early 
+Hum 
+Dey 84(11):769-776 
+Davis 
+NM, 
+Ford 
+GW, 
+Anderson 
+PJ, Doyle 
+LW 
+(2007) 
+Developmental coordination 
+disorder 
+at 
+& years 
+of 
+age 
+in 
+a 
+regional cohort 
+of extremely-Jow-birhweight or 
+very 
+preterm 
+Dev Med Child 
+Neur 49:325-330 
+·Amaud C, 
+L, White-Koning M etal 
+(2007) 
+Prevalence 
+and 
+associated 
+factors 
+of 
+minor 
+neuromotor 
+dysfunctions at 
+age 
+5 years 
+in 
+prematurely bor 
+children 
+·The 
+EPIPAGE 
+study. Arch 
+Pediatr 
+Adolesc 
+Med 
+161 
+De 
+KLeine 
+MJK, 
+Nifhuis-van Der 
+Sanden 
+MWG, 
+Den 
+Ouden 
+AL 
+(2004) Is peti 
+assessment 
+of motor 
+development of very 
+preterm 
+and 
+low 
+binhweight 
+children 
+appropriate? Acta 
+Paediatrica 
+98:1202-1208 
+Foulder 
+Hughes 
+LA, 
+Cooke 
+RWI 
+(2003) Motor, cognitive, 
+and 
+·behavioural 
+disorders 
+in 
+children 
+bo 
+very preterm. Dev 
+Med. 
+(Child 
+Neurol 
+45(2)97-103 
+Holst: 
+L, Grinau 
+RV, 
+Whitekl 
+MF 
+(2002) Developmental 
+coordination 
+disorder 
+in extremely low 
+bith 
+weight children 
+at 
+nine 
+yeas. 
+J Dev 
+Behaw Pediatr 23:9-15 
+American 
+Psychiatric Assocation 
+(1994) Diagnostic und statistical 
+manual 
+of mental 
+disorders, 
+4th 
+eda, 
+American 
+Psychiatric 
+Assxiaton, 
+Washington 
+·Geuze 
+RH (2005) Postural 
+control 
+i 
+children 
+with developmental 
+·coordination 
+disorder. 
+Neural Plas 
+12:183-196 
+Inder 
+TE, Anderson 
+NJ, Spencer C, Weels S, Volpe JJ (2003) 
+White 
+mater 
+injury 
+in 
+the premature 
+infants: 
+a comparison 
+·tween 
+serial 
+cranial 
+sonographic and 
+MR 
+findings at tem. 
+Am 
+·Neuroradiol 
+24:805-809 
+·Cummins 
+A, 
+Piek 
+JP, Dyck MJ (2005) 
+Motor 
+coordination, 
+·empathy, and socal behaviour 
+in school-aged children. 
+Dev Med 
+(Child 
+Neurol 
+47:437-442 
+Zwicker 
+1G, Missiuna 
+C, Boyd LA (2000) Neural 
+corelates 
+of 
+3 
+coordination 
+disorder 
+a 
+review 
+of bypotheses. J 
+Swinay 1D, van 
+der Want 
+JJ, 
+Gramsbergen 
+A (2005) Cerebellar 
+development and plasticity: perspectives for motor 
+coordi
+·ad 
+for terapy, Neural 
+Plast 
+12:153- 
+Dammann 
+O, Brinkhaus 
+MJ, Bartels DB 
+et al (2009) Immatuity, 
+perinatal inflammation, 
+and 
+retinopathy of 
+prematurity: 
+a 
+hypothesis. Early Hum 
+Dev 
+85(5)325-329, 
+Epub 
+2009 
+Feb 13 
+Smith 
+LEH 
+(2003) Pathogenesis of retinopathy of prematurity. 
+Semins 
+Neonatol 
+Mechoulam 
+H, Pierce EA (2008) Retinopathy of prematurity 
+molecular 
+pathology and therapeutic suategies, Am 
+J Pharma 
+·cogenomics 
+Hoyt CS (2003) Visual 
+function 
+in 
+brain-damaged child, 
+Eye 
+Holmstrom 
+G, Rydbere A, 
+Larsson 
+E (2006) 
+Prevalence 
+and 
+development of 
+in 10-year-old premature children: 
+a 
+population-based study. J Pediatr 
+Swabismus 
+43 
+12, 
+Salat, 
+Borgati R, Giammari G, 
+Jacobson I. (2002) 
+Oculo
+dysfunction in 
+cercbral_ visual 
+impaimment 
+folowing perinatal 
+hypoxia, Dev Med 
+Chill 
+Neurol 
+4448): 
+542-550, 

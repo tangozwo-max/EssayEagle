@@ -1,0 +1,4741 @@
+Moderators 
+of response 
+to 
+child-based 
+and 
+parent-based 
+child 
+anxiety 
+treatment: 
+a machine 
+learning-based analysis 
+Eli 
+R. Lebowitz," Sigal Zilcha-Mano,· 
+Meital 
+Orbach,· (} Yaara 
+Shimshoni,· 
+and 
+Wendy 
+K. Silverman· 
+·Child Study Center, 
+Yale School 
+of Medicine, 
+Yale University, 
+New 
+Haven, 
+CT, USA; *Department of Psychology, 
+University 
+of Haifa, 
+Haifa, 
+Isracl 
+Background: 
+Identifying 
+moderators 
+of 
+response 
+to 
+treatment 
+for 
+childhood 
+anxiety 
+can 
+inform 
+clinical 
+decision- 
+making 
+and 
+improve 
+overall 
+treatment 
+efficacy. 
+We 
+examined 
+moderators 
+of response 
+to child-based 
+cognitive- 
+behavioral 
+therapy 
+(CBT) and 
+parent-based 
+SPACE 
+(Supportive 
+Parenting 
+for 
+Anxious 
+Childhood 
+Emotions) 
+in 
+a 
+recent 
+randomized 
+clinical 
+trial. 
+Methods: 
+We applied 
+a 
+machine 
+learning 
+approach 
+to 
+identify 
+moderators 
+of 
+treatment 
+response 
+to CBT 
+versus 
+SPACE, in 
+a dinical 
+trial 
+of 124 
+children 
+with 
+primary 
+anxiety 
+disorders. 
+We tested 
+the 
+clinical 
+benefit 
+of prescribing 
+treatment 
+based 
+on 
+the 
+identified 
+moderators 
+by comparing 
+for 
+children 
+randomly 
+assigned 
+to 
+their 
+optimal 
+and nonoptimal 
+treatment 
+conditions. 
+We further 
+applied machine 
+learning 
+to 
+explore relations 
+between 
+moderators 
+and 
+shed light on 
+how they interact 
+to predict 
+outcomes. 
+Potential 
+moderators, 
+included 
+demographic, 
+socioemotional, 
+parenting, 
+and biological variables. 
+We examined 
+moderation 
+separately for 
+child-reported, 
+parent-reported, 
+and independeat-evaluator-reported 
+outcomes. 
+Results: 
+Parent-reported 
+outcomes 
+were 
+moderated 
+by parent 
+negativity 
+and 
+child 
+oxytocin 
+levels. 
+Child-reported 
+outcomes 
+were 
+moderated by 
+baseline 
+anxiety, 
+parent 
+negativity, 
+and 
+parent 
+oxytocin 
+levels. 
+Independent 
+evaluator-reported 
+outcomes 
+were 
+moderated 
+by 
+baseline 
+anxiety. 
+Children 
+assigned 
+to 
+their 
+cptimal 
+treatment 
+condition 
+had 
+significantly 
+greater 
+reduction 
+in 
+anxiety 
+symptoms, 
+compared 
+with 
+children assigned 
+to their 
+nonoptimal 
+treatment. 
+Significant 
+interactions
+emer
+between 
+the 
+identified 
+moderators. 
+Conelusions: 
+Our 
+findings 
+represent 
+an 
+important 
+step 
+toward 
+optimizing 
+treatment 
+selection 
+and 
+increasing 
+treatment 
+efficacy. 
+Keywords: 
+Anxiety: 
+parent 
+training; 
+behavior 
+therapy: 
+·machine 
+learning. 
+Introduction 
+Well-established 
+treatments 
+for 
+childhood 
+anxiety 
+disorders, 
+including 
+cognitive-behavioral 
+therapy 
+(CBT) and 
+medication, 
+are 
+insufficiently 
+efficacious 
+in 
+up 
+to 
+50% 
+of 
+cases 
+(Wang et 
+al., 2017). 
+Parent- 
+based 
+treatment 
+provides 
+an 
+alternative 
+to 
+current, 
+frontline 
+therapies, 
+and 
+a 
+recent 
+randomized 
+con- 
+trolled 
+trial 
+(RCT) 
+was 
+the 
+first 
+to 
+compare 
+the 
+efficacy of 
+an 
+entirely parent-based 
+treatment 
+with 
+that 
+of CBT 
+(Lebowitz, 
+Marin, 
+Martino, 
+Shimshoni, 
+& 
+Silverman, 
+2020). 
+SPACE 
+(Supportive 
+Parenting 
+for 
+Anxious 
+Childhood 
+Emotions), 
+the 
+paren:-based 
+·treatment, 
+was 
+efficacious 
+and 
+noninferior 
+to 
+CBT. 
+·These 
+findings 
+represent 
+an 
+important 
+development 
+for 
+the 
+field 
+and 
+underscore 
+the potential 
+of parent- 
+based 
+treatment 
+for childhood 
+anxiety. 
+·The 
+availability 
+of 
+an 
+efficacious 
+paren:-based 
+alternative 
+to 
+CBT 
+raises 
+important 
+questions 
+how- 
+·ever, 
+and 
+among 
+them 
+the question 
+of personalizing 
+treatment 
+prescription. 
+In the 
+absence 
+of empirical 
+data 
+to 
+inform 
+treatment 
+assignment, 
+clinicians 
+rely 
+fon 
+subjective 
+factors 
+such 
+as 
+patient 
+or 
+therapist 
+preference 
+(Chu, 
+Merson, 
+Zandberg, 
+& 
+Areizaga, 
+2012). 
+Given 
+the 
+overall 
+similar 
+efficacy of SPACE 
+and 
+CBT, 
+it 
+is 
+theoretically 
+possible 
+that 
+treatment 
+·Conflict 
+of 
+interest 
+statement: 
+No 
+conflicts 
+© 2021 
+Association 
+for 
+Child 
+and 
+Adolescent 
+Mental 
+Health. 
+selection 
+is 
+of little 
+importance. 
+However, 
+given the 
+distinct 
+modalities, 
+and 
+hypothesized 
+mechanisms. 
+and 
+active 
+ingredients 
+of SPACE 
+and 
+CBT, 
+it 
+is 
+also 
+possible that 
+despite overall 
+similar 
+response 
+rates, 
+individual 
+response 
+to 
+each 
+treatment 
+could 
+be 
+meaningfully 
+different. 
+Apart 
+from 
+the 
+differences 
+inherent 
+in 
+treating 
+a 
+child 
+directly 
+versus 
+treating 
+the 
+child·s 
+disorder 
+exclusively through parents, 
+SPACE 
+and 
+CBT 
+focus 
+on 
+different 
+aspects 
+of 
+child 
+and 
+target 
+different 
+behaviors 
+for 
+change. 
+CBT 
+focuses 
+on 
+children·s 
+cognitive 
+and 
+behavioral 
+symptoms 
+(Gosch, 
+Flannery-Schrocder, 
+Mauro, 
+& 
+Compton, 
+2006). 
+SPACE 
+focuses 
+on 
+family accommodation 
+of 
+childhood 
+anxiety 
+(Lebowitz & Omer, 
+2013). 
+Parents 
+in 
+SPACE 
+are 
+guided 
+in 
+identifying 
+and 
+systemati- 
+cally reducing 
+family accommodation 
+and 
+are 
+taught 
+to 
+increase 
+supportive 
+responses 
+by 
+conveying 
+acceptance 
+of the 
+child·s 
+distress 
+along with 
+confi- 
+dence 
+in 
+the 
+child·s 
+ability 
+to 
+tolerate 
+anxiety. 
+The 
+interpersonal/affiliative 
+aspects 
+of child 
+anxiety 
+tar- 
+geted 
+in 
+SPACE 
+and 
+the 
+individual-level 
+symptoms 
+targeted in CBT 
+also 
+involve 
+different 
+neurobiological 
+systems 
+that 
+may 
+differentially 
+impact 
+treatment 
+outcomes. 
+Identifying 
+moderators 
+of treatment 
+outcomes is 
+a 
+critical 
+step 
+toward 
+more 
+precise 
+clinical 
+decision- 
+making, 
+as 
+emphasized 
+by 
+NIMH·s 
+Strategic 
+1176 = · 
+Eli 
+R. Lebowitz 
+et 
+al. 
+Research 
+Priorities 
+(National 
+Institute 
+of 
+Mental 
+Health, 
+2019). 
+Traditional 
+approaches 
+to 
+examining, 
+·outcome 
+moderators 
+focus 
+on 
+single variables 
+and 
+have 
+yielded important, 
+albeit 
+inconsistent, 
+results 
+(Norris 
+& Kendall, 
+2020). 
+For example, 
+most 
+studies 
+examining child 
+age and 
+sex 
+as potential 
+moderators 
+of anxiety 
+treatment 
+outcome 
+reported 
+nonsignifi- 
+cant 
+findings, 
+while 
+others 
+reported 
+significant 
+effects 
+(Bodden 
+et 
+al., 
+2008; 
+Cobham, 
+Dadds, 
+Spence, 
+& McDermott, 
+2010; 
+Legerstee 
+et al., 2008: 
+Nilsen, 
+Eisemann, 
+& 
+Kvernmo, 
+2013). 
+Likewise, 
+examining 
+psychosocial 
+factors 
+such 
+as 
+specific 
+anxiety 
+disorders 
+or 
+comorbid 
+diagnoses 
+and 
+symp- 
+toms 
+has yielded both 
+significant 
+and nonsignificant 
+findings 
+(Berman, 
+Weems, 
+Silverman, 
+& 
+Kurtines, 
+2000; 
+Compton 
+et 
+al., 
+2014; 
+Liber 
+et 
+al., 
+2008; 
+Manassis et 
+al., 2002; 
+Puleo 
+& Kendall, 
+2011; 
+Shortt, 
+Barrett, 
+& Fox, 
+2001; 
+Taylor 
+et 
+al., 
+2018; 
+Walkup 
+et 
+al., 
+2003), 
+as 
+has 
+examining 
+parental 
+psy- 
+chopathology 
+and family functioning 
+(Bodden 
+et al., 
+2008; 
+Cobham, 
+Dadds, 
+& 
+Spence, 
+1998; 
+Taylor 
+et 
+al., 
+2018; 
+Victor, 
+Bemat, 
+Bernstein, 
+& 
+Layne, 
+2007}. 
+The 
+inconsistent 
+pattern 
+of results 
+highlights 
+lim- 
+itations 
+inherent 
+to searching 
+for 
+a single factor 
+to 
+explain 
+variability 
+in 
+treatment 
+response, 
+while 
+it 
+is 
+more 
+plausible 
+to hypothesize 
+that 
+no 
+single factor 
+is 
+fas 
+important 
+as 
+a 
+set 
+of 
+interrelated 
+factors 
+in 
+predicting 
+who 
+benefits 
+the 
+most 
+from 
+each 
+treat- 
+ment. 
+·Treating 
+each 
+moderator 
+as 
+a 
+separate 
+hypothesis 
+also 
+leads 
+to multiple 
+comparisons 
+and 
+potentially 
+inflated 
+type 
+I errors, 
+model 
+misspecifi- 
+cation, 
+and 
+multicoliinearity, 
+reducing 
+replicability 
+across 
+studies. 
+Although technically possible, exam- 
+ining 
+multiple 
+moderators 
+concurrently 
+using 
+tradi- 
+tional 
+moderation 
+analyses 
+is 
+usually 
+not 
+feasible 
+given 
+the sample 
+sizes 
+in 
+childhood 
+anxiety 
+studies. 
+Machine 
+learning approaches 
+offer 
+an 
+alternative 
+to traditional 
+moderation 
+analysis 
+and 
+address 
+these 
+challenges 
+by examining 
+moderation 
+effects 
+within 
+a 
+set 
+of interrelated 
+variables, 
+allowing for the integra- 
+tion 
+of 
+multiple 
+units 
+of 
+analysis 
+from 
+various 
+domains. 
+Machine 
+learning 
+has 
+been 
+instrumental 
+in identifying 
+moderators 
+where 
+few 
+consistent 
+find- 
+ings 
+could 
+previously 
+be 
+reached 
+(e.g., 
+Cohen 
+& 
+DeRubeis, 
+2018; 
+Zilcha-Mano, 
+Roose, 
+Brown, 
+& 
+Rutherford, 
+2018). 
+Our 
+goal was 
+to apply a machine 
+learning method 
+capable 
+of evaluating 
+multiple 
+moderators 
+and 
+their 
+interactions, 
+to 
+the 
+search 
+for 
+moderators 
+of treat- 
+ment 
+response 
+to 
+SPACE 
+versus 
+CBT. 
+We 
+examined 
+·a 
+range 
+of potential 
+moderators, 
+building 
+on 
+and 
+expanding previous research, 
+and 
+reflecting impor- 
+tant 
+differences 
+between 
+SPACE 
+and 
+CBT. 
+Thus, 
+we 
+included 
+demographic 
+(age and sex}, socioemotional 
+(anxiety diagnosis and 
+severity, 
+family accommoda- 
+tion, 
+comorbid 
+diagnoses/symptoms, 
+social 
+skills), 
+parenting 
+(acceptance, 
+control, 
+involvement, 
+nega- 
+tivity), 
+and 
+parent-level 
+socioemotional 
+(anxiety, 
+depression, marital 
+satisfaction) 
+variables. 
+J Child 
+Psychol Psychiatr 
+2021; 
+62(10): 
+1175-82 
+We further 
+extended 
+prior 
+research 
+by also 
+includ- 
+ing 
+biological 
+variables, 
+child 
+and 
+parent 
+salivary 
+oxytocin 
+levels. 
+Identifying 
+biological 
+moderators 
+is 
+particularly 
+important 
+as 
+these 
+are 
+objectively 
+mea- 
+sured 
+(and 
+not 
+prone 
+to subjective 
+biases) 
+and 
+can 
+provide 
+new 
+insights 
+into 
+underlying 
+mechanisms 
+targeted by different 
+treatments. 
+We 
+focused 
+on 
+the 
+system 
+because 
+previous 
+research 
+implicates 
+it 
+in 
+interpersonal/affiliative 
+behavior 
+and 
+anxiety 
+regulation, 
+as 
+well 
+as 
+in 
+parental 
+responses 
+to child 
+anxiety: 
+a crossroads 
+of interper- 
+sonal 
+behavior 
+and 
+anxiety 
+regulation 
+(MacDonald & 
+Feifel, 
+2014; 
+Milrod 
+et al., 2014; 
+Neumann 
+& Slat- 
+tery, 2016). 
+In particular, 
+oxytocin 
+levels 
+have 
+been 
+significantly 
+linked 
+to 
+family 
+accommodation 
+(Lebowitz 
+et al., 2016) and reducing 
+accommodation 
+is 
+a central 
+focus 
+of SPACE. 
+Using 
+machine 
+learning, 
+we 
+examined 
+the 
+effects 
+of 
+the 
+proposed 
+moderators 
+on 
+child 
+anxiety 
+out- 
+·comes, 
+as 
+reported by children, 
+parents, 
+and 
+inde- 
+pendent-evaluators. 
+Intra-informant 
+agreement 
+is 
+typically 
+low 
+in 
+childhood 
+anxiety 
+research 
+(Mash & 
+Hunsley, 
+2005), making 
+it important 
+to compare 
+and 
+contrast 
+results 
+across 
+informants. 
+Each of 
+the 
+three 
+outcomes/informants 
+was 
+examined 
+in 
+separate 
+models 
+to 
+create 
+a 
+multidimensional 
+assessment 
+that 
+can 
+underscore 
+their 
+distinct 
+pros 
+and 
+cons 
+likely to 
+be instrumental 
+to 
+future 
+clinical 
+decision- 
+making, 
+and 
+to 
+ensure 
+that 
+the 
+psychometric 
+prop- 
+erties 
+of each 
+instrument 
+are 
+retained. 
+Correlations 
+between 
+the 
+three 
+measures 
+are 
+provided 
+in 
+the 
+Supplement 
+(Tables $1-S3) 
+To test 
+the clinical 
+benefit 
+of prescribing 
+treatment 
+based 
+on 
+identified 
+moderators, 
+we 
+compared symp- 
+tom 
+reduction 
+for 
+patients 
+randomly 
+assigned 
+to 
+their 
+optimal and nonoptimal 
+treatment 
+conditions. 
+We hypothesized 
+that 
+children 
+randomly 
+assigned 
+to 
+their 
+optimal 
+treatment 
+condition 
+would 
+show 
+sig- 
+nificantly 
+more 
+anxiety 
+reduction, 
+compared 
+with 
+children 
+randomly 
+assigned 
+to 
+their 
+nonoptimal 
+·treatment. 
+Finally, 
+to 
+explore 
+relations 
+between 
+moderators 
+and 
+shed 
+light 
+on 
+how 
+they 
+interact 
+to 
+predict 
+·outcomes, 
+we 
+used 
+regression 
+tree 
+analysis 
+con- 
+ducted 
+separately 
+for 
+child-reported 
+and 
+parent- 
+reported 
+outcomes, 
+focusing 
+on 
+those 
+variables 
+with 
+the strongest 
+moderating 
+effects 
+in 
+the random 
+forest 
+analyses. 
+The 
+random 
+forest 
+analysis 
+is 
+aimed 
+at 
+identifying 
+the 
+strongest 
+moderators 
+whereas 
+the 
+regression 
+tree 
+analysis 
+is 
+aimed 
+at exploring 
+how 
+the variables 
+interact 
+to predict 
+outcomes. 
+Methods 
+·The 
+methods 
+and 
+sample 
+characteristics 
+for 
+the 
+RCT 
+are 
+detailed 
+elsewhere 
+2020). In brief, 
+124 children. 
+(ages 7-14 
+years) 
+were 
+randomly assigned to either 12 
+sessions 
+·of parent-based 
+SPACE 
+with 
+no 
+direct 
+child-therapist 
+contact, 
+·or to 12 sessions of 
+child-based 
+CBT. 
+All children 
+had 
+primary. 
+anxiety 
+disorders, 
+were 
+either 
+medication 
+free 
+or 
+on 
+a 
+stable 
+dose of 
+antidepressant or 
+stimulant 
+and 
+agreed to refrain 
+from. 
+© 2021 
+Association 
+for 
+Child 
+and 
+Adolescent 
+Mental 
+Health. 
+·changes or 
+additional 
+treatments 
+during the study, Therapists 
+·were 
+doctoral 
+and 
+level 
+peychology students 
+and 
+received 
+extensive 
+training 
+in 
+SPACE 
+and 
+CBT. 
+The study was 
+·approved by the Institutional 
+Review 
+Board; parental informed 
+permission 
+and 
+consent, 
+and 
+child 
+assent, 
+were 
+obtained, 
+Measures 
+All 
+potential 
+moderators 
+were 
+assessed 
+prior 
+to 
+treatment 
+·assignment 
+and 
+the 
+same 
+variables 
+were 
+inchided 
+in analyses 
+focusing 
+on 
+child-reported, 
+parent-reported 
+and 
+independent 
+outcomes. 
+Of 
+note: 
+the 
+machine 
+learning 
+·approach 
+used 
+can 
+effectively 
+handle 
+highly 
+intercorrelated 
+variables. 
+The 
+following 
+variables 
+were 
+included 
+as 
+potential 
+·moderators 
+Demographic variables: 
+Child 
+sex 
+and age 
+Child-rated 
+variables. 
+Anxiety 
+symptoms 
+(child rated 
+Screen 
+for 
+Child 
+Anxiety 
+Related 
+Emotional 
+Disorders; 
+SCARED-C; 
+Muris, 
+Merckelbach, 
+Van 
+Brakel, 
+& Mayer, 1999) 
+depression 
+symptoms 
+(Child 
+Depression 
+Inventory; 
+CDI 
+Kovaes, 
+1985) 
+family accommodation 
+(Family 
+Accommodation 
+Scale ~ 
+Anxiety, Child-Report; 
+FASA-CR; 
+Lebowitz, 
+Scharfstein, 
+Jones, 
+2015) 
+maternal 
+acceptance, 
+maternal 
+psycrological 
+·control 
+and 
+maternal 
+firm 
+control 
+(Child Report of 
+Parental 
+Rehaviors 
+Inventory; 
+CRPRI; 
+Schaefer, 
+1965) 
+social. 
+skills 
+(child-rated 
+Social 
+Skills 
+Rating System; 
+SSRS-C; 
+Gresham 
+& 
+Eliot, 
+1990). 
+Parent-rated 
+variables. 
+Child 
+anxiety 
+symptoms (parent 
+rated 
+Screen 
+for 
+Child 
+Anxiety 
+Related 
+Emotional 
+Disorders; 
+SCARED-P; 
+Muris 
+et 
+al., 
+1999) 
+child 
+depression 
+symptoms. 
+(parent-rated 
+Mood 
+and 
+Feelings Questionnaire; 
+MFQ; Angold 
+Costello, 
+1987) family accommodation 
+(parent-rated 
+Family 
+·Accommodation 
+Scale 
+- Anxiety; 
+FASA; 
+Lebowitz 
+et al, 2013) 
+·child 
+externalizing 
+symptoms 
+(Externalizing 
+Problems 
+on 
+the 
+Child 
+Behavior 
+Checklist; 
+CBCL-EXT, 
+Achenbact, 
+1994) 
+maternal 
+acceptance, 
+psychological 
+control 
+and 
+firm· 
+control 
+(Parent Report of Parental 
+Behaviors 
+Inventory; 
+PRPBI; 
+Schae- 
+fer, 1965) child 
+social 
+skills 
+parent-rated 
+Social 
+Skills 
+Rating 
+System; 
+SSRS-P; Gresham 
+& 
+Eliott, 
+1990) 
+parent 
+symptoms 
+(Beck 
+Anxiety 
+Inventory; 
+BAl; 
+Beck, Epstein, 
+Brown, 
+Steer, 1988) parent depression symptoms 
+(Beck Depression 
+Inventory; 
+BDI; Beck, 
+Steer, & Brown, 
+1996) marital 
+saisfac~ 
+ton 
+(Couples Satisfaction 
+Index; CSI; Funke 
+& Rogge, 2007) 
+Independent-evaluator-assessed 
+variables. 
+Child 
+diagnoses (Anxiety 
+Disorders 
+Interview 
+Schedule: 
+Child 
+and 
+Parent 
+Versions; 
+ADIS 
+C/P; 
+Albano 
+& Silverman, 
+2020) 
+child 
+·anxiety symptoms (Pediatric 
+Anxiety 
+Rating 
+Scale; 
+PARS; RUPP 
+Anxiety 
+Study Group, 2002) 
+Behavioral 
+observations. 
+Maternal 
+behavior 
+was 
+coded. 
+based 
+on a 
+brief 
+parent-child 
+interaction 
+involving 
+a 
+series 
+of 
+challenging 
+tangram-block 
+puzzles. 
+Interactions were 
+coded 
+by 
+two 
+independentevaluators 
+trained 
+to 
+reliability 
+(Hudson & 
+Rape, 
+2001). 
+Two 
+variables 
+were 
+coded: 
+parental negativity 
+·during the 
+interaction 
+(Parent Negativity) and 
+parental 
+involve- 
+·ment 
+during 
+the 
+interaction 
+(Parent Involvement) 
+Biological 
+variables. 
+Salivary oxytocin 
+levels 
+were 
+mea- 
+sured 
+in 
+children 
+and 
+parents, 
+Samples 
+were 
+collected 
+using 
+salivettes 
+(Sarstedt, Rommelsdorf, Germany), 
+between 
+4PM and. 
+SPM, after @ 
+2-hour 
+fast and 
+stored 
+at 
+~20°C 
+until 
+centrifuged. 
+twice. 
+2 days 
+apart. 
+at 
+40°C 
+at 
+1,500 
+9 for 
+20 
+min. 
+Liquid 
+samples 
+were 
+Ivophilized 
+and 
+stored 
+at 
+~80C. Samples were 
+reconstituted 
+in water 
+and 
+concentrated 
+4 
+before 
+immunoas- 
+say with 
+an 
+Enzo· 
+(NY, USA) ELISA 
+kit. 
+Measurements 
+were 
+(© 
+2021 Association 
+for Child
+and
+Adolescent 
+Mental 
+Health. 
+performed 
+in duplicate, 
+Concentrations 
+were 
+calculated 
+using 
+Matlab-7 
+according 
+to relevant 
+standard 
+curves, 
+·Two 
+samples 
+were 
+collected 
+from 
+each 
+child 
+and 
+mother, 
+before 
+and after 
+the 
+parent-child 
+interaction, 
+and wereincluded 
+{n analyses both separately (Child OT 
+[Before}; Child OT 
+Parent OT 
+[Before|; Parent 
+OT [After)), 
+and 
+as 
+the 
+mean 
+of both 
+·measurements 
+(Child 
+OT; Parent 
+OT). As noted, 
+the 
+machine 
+learning approach 
+effectively handles 
+high collinearity. 
+Statistical 
+analyses 
+Overview. 
+A four-step process 
+was 
+followed. 
+First, 
+the 
+39 
+a 
+priori 
+selected 
+potential 
+moderators 
+were 
+introduced 
+to 
+a 
+random 
+forest 
+machine 
+learning 
+algorithm 
+to 
+identify 
+the 
+strongest 
+moderators. 
+Second, 
+the importance 
+of the modera- 
+tors 
+was 
+calculated, 
+they were 
+ranked 
+by order 
+of importance, 
+and 
+the mostimportant 
+ones 
+and used 
+in 
+the nex
+step. Third, 
+to explore the 
+utility of 
+the identified 
+variab
+we 
+·estimated 
+the 
+Personalized 
+Advantage Index 
+(PAI). Fourth, 
+to 
+·explore 
+the 
+directions 
+ofthe 
+ellects 
+and 
+drive 
+potentia
+post 
+ho
+explanations, we 
+applied regression 
+tree analyses, which 
+enable 
+the 
+detection 
+of complex interactions 
+between 
+variables 
+Identifying the strongest 
+moderators. 
+To identity the 
+strongest 
+moderators 
+of 
+the 
+association 
+treatment 
+condition 
+and 
+outcome, 
+we 
+used 
+bootstrap 
+aggregation 
+of 
+model-based 
+recursive 
+partitioning 
+by the 
+random 
+forest 
+algo 
+rithm, 
+implemented 
+in 
+the 
+R package ·mobForest·(version 
+1.2; 
+Garge, Bobashev, 
+& Eggleston, 2013}. In this 
+method, 
+1,000 
+·model-based 
+trees 
+(pathways determining 
+which 
+variables 
+best 
+·moderate 
+outcomes) 
+were 
+constructed 
+based 
+on 
+bootstrapped 
+samples 
+from 
+the 
+primary 
+dataset. 
+For 
+each 
+tree, 
+the 
+model- 
+based 
+recursive 
+partitioning 
+searched 
+for binary splits 
+in 
+the 
+sample that 
+result 
+in 
+model 
+parameters 
+on 
+one 
+side ofthe 
+split 
+·being most 
+diferent 
+from 
+those 
+on 
+the 
+ather 
+side. 
+We 
+used 
+a 
+random 
+sample 
+of partitioning 
+variables 
+for splitting 
+at 
+each. 
+·node (potential split-point). 
+In each leaf 
+split) 
+ofthe 
+tree, 
+we 
+·estimated 
+outcomes 
+for SPACE 
+versus 
+CBT. 
+Final 
+model 
+pre- 
+dictions 
+were 
+obtained 
+by aggregation 
+across 
+trees. 
+The 
+mini- 
+·mumalpha level for spits 
+was 
+set 
+to 
+0.05, and 
+the minimum 
+leaf 
+size 
+was 
+set 
+to 
+20 
+children. 
+To impute 
+missing 
+observations 
+in 
+the 
+predictors, 
+we 
+used 
+a 
+Markov 
+Chain 
+Monte 
+Carlo-based 
+·method, 
+with 
+500 
+repetitions. 
+Estimating 
+the 
+importance 
+of potential 
+modera- 
+tors. 
+To identity 
+the 
+strength 
+of potential 
+moderator 
+splits, 
+wwe 
+calculated 
+a variable-importance 
+statistic 
+using 
+the 
+condi- 
+tional 
+permutation 
+scheme 
+(Strobl, 
+Boulesteix, 
+Knelb, Augus- 
+tin, 
+& 
+Zeileis, 
+2008). 
+The 
+importance 
+statistic 
+reflects 
+the 
+contribution 
+of each 
+variable 
+to predicting 
+the target 
+varia
+It 
+is 
+measured 
+by the 
+amount 
+of worsening 
+in 
+prediction 
+of 
+·held 
+out· 
+cases 
+in 
+a bootstrapped 
+sample, 
+when 
+using 
+a 
+random 
+permutation 
+of 
+each 
+original 
+variable 
+separately. 
+Although 
+the 
+bootstrapped 
+scheme 
+ia exploratory, 
+using 
+it 
+to 
+select 
+variables 
+can 
+result 
+in 
+stable 
+predictors, 
+often 
+less 
+sensitive 
+to 
+unique 
+features 
+of 
+a given 
+dataset. 
+We repeated 
+this 
+process 
+for each 
+of the three 
+informants, 
+Exploring 
+the 
+utility 
+of 
+the 
+potential 
+identified 
+moderators. 
+To 
+examine 
+the 
+utility 
+of 
+the 
+models 
+for 
+improving 
+treatment 
+efficacy through 
+treatment 
+assignment, 
+·we 
+compared 
+the 
+difference 
+in 
+symptom 
+reduction 
+between, 
+participants 
+randomly 
+assigned 
+to 
+their 
+predicted 
+optimal 
+treatment 
+versus 
+those 
+assigned to their 
+nonoptimal 
+treatment 
+(DeRubeis 
+etal, 
+2014). The optimal treatment 
+for each patient 
+was 
+determined 
+within 
+a 
+Crose-Validation 
+procedure. 
+We 
+Femoved 
+each 
+patient 
+in 
+turn 
+from 
+the 
+dataset 
+and 
+fitted 
+a 
+regression 
+with 
+the 
+main 
+effects 
+and 
+interactions 
+with 
+treat- 
+ment 
+arm 
+of the 
+moderators 
+identified 
+by the 
+random 
+forest 
+1178 
+FIR. 
+Lebowitz 
+et 
+al 
+·using 
+the 
+data 
+from 
+the 
+rest 
+ofthe 
+patients, 
+This 
+ft 
+was 
+used 
+to 
+the 
+potential 
+predicted 
+outcome 
+of 
+the 
+patient 
+removed, 
+had 
+that 
+patient 
+been 
+assigned 
+to 
+each 
+arm. 
+The 
+treatment 
+with 
+the highest predicted 
+symptom 
+reduction 
+was, 
+·considered 
+optimal ifthe 
+difference 
+was 
+at least 
+0.1 
+times 
+the 
+Standard 
+deviation 
+of the symptom 
+index 
+(equivalent toa 
+small 
+effec 
+size). Individuals 
+with 
+below-threshold 
+difference 
+did 
+not 
+·enter 
+the 
+PAI 
+calculation. 
+The 
+difference 
+in 
+average 
+outcome 
+for 
+patients 
+assigned 
+to 
+their 
+optimal 
+versus 
+nonoptimal 
+treat- 
+·ment 
+is 
+the 
+average 
+Personalized 
+Advantage 
+Index 
+(PAI; 
+DeRubeis 
+etal, 
+2014). 
+Exploring 
+interactions 
+between 
+identified 
+modera- 
+tors 
+in predicting 
+outcomes. 
+To explore how 
+identified 
+moderators 
+interact 
+with 
+trestment 
+condition 
+in. 
+predicting 
+outcomes, 
+we 
+used 
+the 
+most 
+robust 
+predictors 
+identified 
+in 
+·mobForest, 
+These 
+were 
+introduced 
+in 
+regression 
+tree analysis 
+the 
+·mob· 
+function 
+of the 
+R ·party· package (Zeleis, 
+Hothorn, 
+& Hornik, 
+2008). The criterion 
+for adding splits to the 
+tree 
+was 
+a 
+level 
+of significance 
+of 
+0.1 for 
+the 
+split. Regression 
+·ree 
+analyses were 
+conducted 
+only when 
+mobForest 
+resulted 
+in 
+22 moderators, 
+s0 
+that 
+interactions 
+between 
+moderators 
+could, 
+be explored. 
+Results 
+Identified 
+moderators 
+·The 
+random 
+forest 
+analyses 
+identified 
+a 
+set 
+of 
+variables 
+as 
+important 
+moderators 
+of 
+treatment 
+outcome 
+for 
+each 
+of the 
+three 
+informants. 
+Figure 
+1 
+shows 
+the 
+resulting variable-importance 
+plots. For 
+the analysis 
+based 
+on 
+parent-reported 
+child 
+anxiety 
+outcomes 
+(SCARED-P), 
+two 
+variables 
+were 
+selected 
+by the algorithm: 
+Child 
+OT (After) and 
+Parent 
+Nega- 
+tivity. 
+For 
+the 
+analysis 
+based 
+on 
+child-reported 
+outcomes 
+(SCARED-C), 
+three 
+variables 
+were 
+selected: 
+baseline 
+SCARED-C, 
+Oxytocin 
+Parent 
+(Before), 
+and 
+Parent 
+Negativity. 
+For 
+the 
+analysis 
+based 
+on 
+independent-evaluator-rated 
+outcomes: 
+(PARS) only baseline 
+PARS 
+level 
+was 
+selected. 
+Utility of identified 
+moderators 
+For parent-rated 
+outcomes 
+(SCARED-P), 
+55 patients 
+were 
+randomly 
+assigned 
+to 
+their 
+optimal 
+treatment 
+and 
+49 
+to 
+their 
+counter-optimum 
+treatment. 
+The 
+mean 
+decrease 
+in 
+the 
+former 
+was 
+12.98 
+versus 
+8.52 
+in 
+the latter, 
+a significant 
+difference 
+(1(86.7) 
+= -2.18, 
+p=.031, 
+Thus, 
+patients 
+gained 
+4.46 
+points 
+reduction 
+on 
+average 
+through 
+random 
+assign- 
+·ment 
+to their 
+optimal 
+treatment. 
+For 
+SCARED-C 
+as 
+the 
+outcome, 
+50 patients 
+were 
+randomly 
+assigned 
+to their 
+optimal 
+treatment 
+and 
+44 
+to 
+their 
+counter-optimum 
+treatment. 
+The 
+mean 
+decrease 
+in 
+the 
+former 
+was 
+11.97 
+versus 
+11 
+in 
+the 
+latter, 
+a nonsignificant 
+difference 
+= -0.31, 
+p=.75, 
+Interactions 
+between 
+moderators 
+·Two regression 
+tree 
+analyses 
+were 
+conducted, 
+for the 
+·two 
+outcome 
+variables 
+for 
+which 
+random 
+forest 
+·J Child 
+Psychol Psychiatr 2021; 62(10): 1175-82 
+identified 
+> 2 variables 
+(SCARED-P; 
+SCARED-C; 
+Fig- 
+ure 
+2). For 
+SCARED-P, 
+for participants 
+with 
+higher 
+Parent 
+Negativity 
+(©2.5) and 
+higher 
+Child 
+Oxytocin 
+(After) 
+(°18.28), 
+SPACE 
+led 
+to 
+greater 
+symptom 
+reduction 
+than 
+CBT 
+(true 
+for 
+n= 
+38 
+participants) 
+For 
+those 
+with 
+higher 
+Parent 
+Negativity 
+(2.5) 
+but 
+lower 
+Child 
+Oxytocin (After) (<18.28), 
+no 
+meaningful 
+differences 
+were 
+apparent 
+between 
+the 
+treatments 
+(true 
+for 
+n= 
+21 participants). 
+For 
+those 
+with 
+lower 
+Parent 
+Negativity (<2.5), CBT 
+led 
+to 
+more 
+symptom 
+reduction 
+than 
+SPACE 
+(true for 
+n 
+= 
+45 participants), 
+For 
+SCARED-C, 
+for 
+those 
+with 
+higher 
+baseline 
+SCARED-C 
+(°28), CBT 
+Ied 
+to 
+more 
+symptom 
+reduc- 
+tion 
+than 
+did 
+SPACE. 
+For 
+those 
+with 
+baseline 
+SCARED-C < 28, 
+no 
+meaningful 
+differences 
+were 
+apparent 
+between 
+the 
+treatments 
+(Figure 3) 
+Discussion 
+We applied machine 
+learning 
+to 
+evaluate 
+moderators: 
+of 
+treatment 
+response 
+to 
+child-based 
+CBT 
+versus 
+parent-based 
+SPACE 
+for childhood 
+anxiety. 
+Potential 
+moderators 
+included 
+demographic, 
+clinical, 
+behav- 
+ioral, 
+and 
+biological 
+variables 
+relating 
+to 
+both 
+the 
+parent 
+and 
+the child, 
+and 
+we 
+examined 
+moderation 
+of 
+outcomes 
+rated 
+by children, 
+parents, 
+and 
+inde- 
+pendent-evaluators. 
+For 
+each 
+of these 
+outcomes, 
+meaningful 
+modera- 
+tors 
+emerged. The 
+models 
+based 
+on 
+child-rated 
+and 
+parent-rated 
+outcomes 
+both 
+pointed 
+to 
+parental 
+negativity 
+and 
+to oxytocinergic 
+functioning 
+as 
+impor- 
+tant 
+moderators. 
+The 
+model 
+based 
+on 
+child 
+reports 
+also 
+identified 
+child 
+self-reported 
+anxiety 
+severity 
+as. 
+·an 
+important 
+moderator. 
+The 
+model 
+based 
+on 
+inde- 
+pendent-evaluator 
+assessments 
+was 
+different 
+and 
+pointed only 
+to 
+baseline 
+anxiety 
+severity, 
+also 
+as 
+assessed 
+by the independent-evaluator. 
+·The 
+concordance 
+between 
+the 
+separate 
+models, 
+based 
+on 
+child-rated 
+and 
+parent-rated 
+outcomes, 
+strengthens 
+confidence 
+in 
+the importance 
+ofidenti
+moderators. 
+Both 
+underscore 
+the 
+importance 
+of 
+parental 
+negativity 
+and 
+oxytocinergic 
+functioning 
+in 
+treatment 
+response. 
+Parental 
+negativity, 
+especially 
+in. 
+relation 
+to child 
+anxiety, 
+may 
+be an 
+important 
+aspect 
+of 
+the 
+clinical 
+presentation 
+that 
+is 
+addressed 
+more 
+·through parent-based 
+treatment 
+than 
+through 
+CBT. 
+Changing parental 
+responses 
+may 
+be particularly 
+important 
+for 
+when negativity 
+is high. Thisis 
+strength- 
+ened by the exploration 
+of interactions 
+between 
+mod- 
+erators, 
+showing 
+higher 
+parental 
+negativity, 
+in 
+conjunction 
+with 
+higher 
+child 
+oxytocin 
+levels, 
+pre- 
+dicted 
+greater improvement 
+in 
+SPACE, whereas 
+low 
+negativity 
+predicted greater 
+response 
+to 
+CBT. 
+Both 
+models 
+also 
+highlighted 
+oxytocinergic 
+fune- 
+tioning 
+as 
+an 
+important 
+moderator. 
+Oxytocin 
+is 
+implicated 
+in 
+anxiety 
+regulation 
+and 
+in 
+the 
+modula- 
+tion 
+of social/affiliative 
+behavior 
+(Lebowitz 
+et 
+al., 
+2016; 
+MacDonald 
+& Feifel, 2014; 
+Neumann 
+& Slat- 
+tery, 
+2016). 
+As such, 
+it 
+may 
+be particularly 
+impor- 
+tant 
+for 
+comparing 
+child-based 
+treatment 
+with 
+doi:10.1111/jepp.13386 
+Moderators 
+of child 
+anxiety 
+treatment 
+response 
+1179 
+Panel (A) 
+Panel (B) 
+Figure 1 Variance-importance 
+plot for 
+model-based 
+recursive 
+partitioning 
+trees 
+based 
+on 
+parent-reported 
+(Panel A), Child-Reported 
+(Panel 8), and 
+(Panel C) Child Anxiety 
+Outcomes. 
+The horizontal axis 
+represents the 
+average increase in 
+Classification 
+accuracy 
+gained by 
+using 
+the specific variable 
+in the ·rea· data, 
+compared with 
+using 
+the specific variable in 
+permuted data, 
+Positive 
+values 
+indicate 
+that a 
+variable 
+predicts chld-specific treatment 
+outcome 
+and performs better 
+than 
+random 
+noise, 
+Variables 
+to the 
+Fight of the 
+red line 
+are 
+selected 
+for 
+later modeling. Neve: PARS - 
+Pediatric 
+Anxiety Rating Scale; Child-Rated 
+Social Skill - 
+Social Skills 
+Rating System, child-report; 
+Screen for 
+Childhood 
+Anxiety Related 
+Disorders, 
+child 
+report; 
+SP Dx 
+- 
+Diagnosis of Social Phobia; 
+CDI ~ 
+Child 
+Depression Inventory, child 
+report; 
+MEQ - 
+Mood 
+and Feelings Questionnaire, 
+parent-report; 
+Depression 
+Dx · Diagnosis of 
+·Major or 
+Persistent 
+Depression; 
+OCD 
+Dx - 
+Diagnosis of OCD; CBCL 
+EXT 
+~ Child 
+Behavior 
+Checklist 
+(Externalizing Problems); 
+Psychological Control: 
+Parent 
+Report of Parental 
+Behavior 
+(Psychological Control); 
+Parent-Rated 
+Acceptance - 
+Parent 
+Report 
+of Parental 
+Behavior 
+(Acceptance); Child 
+OT (Before) - 
+Child Salivary; Oxytocin Level (pg/ml) Before 
+Parent-Child 
+interaction; 
+Child-Rated 
+Acceptance 
+Child Report of Parental 
+Behavior 
+(Acceptance); GAD 
+Dx - 
+Diagnosis of Generalized 
+Anxiety Disorder; Specific Phobia 
+Dx - 
+Diagnosis of 
+Specific Phobia; Parent 
+Negativity 
+Parent 
+Negativity during Parent-Child 
+Interaction; 
+Parent 
+Invalvement-Parent 
+Involvement 
+during 
+Parent-Child 
+Interaction; 
+CSI 
+~ Couple's Satisfaction 
+Index: FASAp 
+~ Family Accommodation 
+Scale 
+- Anxiety, 
+parent-report; 
+· 
+·Screen for Childhood 
+Anxiety 
+Related 
+Disorders, parent report; 
+BAI 
+- 
+Beck Anxiety 
+Inventory; 
+Parent 
+Rated 
+Firm 
+Control 
+- Parent 
+Report 
+·of Parental Behavior 
+(Firm 
+Control); 
+Child-Rated 
+Psychological Control 
+- Child Report of 
+Parental Behavior 
+(Psychological Control); 
+Parent 
+Salivary 
+Oxytocin Level (pg/ml), mean of 
+before 
+and after 
+interaction; 
+Sex N/A: 
+Age 
+N/A; Parent 
+OT Before 
+Parent 
+Salivary 
+·Oxytocin Level (pg/ml) Before 
+Parent-Child 
+interaction; 
+FASA-CR 
+- Family Accommodation 
+Scale -Anxiety, Child-Report 
+Child 
+OT - 
+Child 
+Salivary Oxytocin Level (pg/ml), mean 
+of before 
+and after 
+interaction; 
+Chld-Rated 
+Firm Control 
+Child Report of Parental 
+Behavior 
+(Firm 
+Control; 
+SAD 
+Dx - 
+Diagnosis of Separation 
+Anxiety Disorder; 
+BDI . 
+Beck 
+Depression Inventory; Parent-Rated 
+Social 
+Skills. 
+Social 
+Skils 
+Rating System, parent 
+report; 
+Parent OT 
+After 
+- 
+Parent 
+Salivary Oxytocin 
+Level (pg/ml) After 
+Parent-Child 
+Interaction; 
+Child 
+OT (After 
+Child Salivary Oxytocin 
+Level (pg/ml 
+After 
+Parent-Child 
+interaction 
+>25 
+\ 
+Node 2 (n= 
+45) 
+Node 5 (n 
+= 38) 
+13 
+13 
+i 
+8 
+log 
+PDifference 
+1180 
+FR 
+Lebowitz 
+et 
+al 
+7 
+\ 
+Node 940 
+= 57) 
+2 
+2 
+SCARED. 
+| 
+| 
+SCARED. 
+ca 
+ca 
+SPACE 
+CBT 
+Treatment 
+condition 
+SPACE 
+CT 
+Treatment 
+condition 
+Figure 3 Regression 
+tree 
+for identifying 
+moderators 
+of teatment 
+response 
+based 
+on child-teported 
+child anxiety 
+outcomes. 
+The red. 
+dots 
+are 
+the 
+means 
+of the 
+outcome 
+variables 
+(calculated 
+a5 the 
+from 
+post- 
+to pretreatment) for 
+the specific subgroup. 
+·The redline 
+connects 
+the 
+two 
+means. 
+The three 
+middle 
+black lines 
+(the box) of 
+the 
+box-plots 
+are 
+as 
+follows: 
+the 
+midde 
+is 
+the 
+median, 
+and the 
+two 
+other 
+lines 
+are 
+the 
+first and 
+third 
+quartiles. 
+·The two 
+extreme 
+lines (the whiskers) 
+extend 
+to the 
+most 
+extreme 
+{data point, 
+which 
+isno more 
+than 
+1.5 times 
+the length of 
+the 
+box. 
+Note: 
+SCARED-C: 
+Screen 
+for 
+Childhood 
+Anxiety 
+Related 
+Emo- 
+·onal 
+Disorders 
+Report 
+parent-based 
+treatment 
+focused 
+on 
+changing 
+parent- 
+child 
+interactions, 
+Furthermore, 
+higher 
+oxytocin 
+levels 
+in 
+anxious 
+children 
+have 
+been 
+shown 
+to 
+increase 
+the 
+impact 
+of negative 
+interpersonal 
+inter- 
+actions. 
+For 
+example, 
+negative 
+peer 
+interactions 
+predicted 
+more 
+suicidality 
+in 
+anxious 
+children 
+with 
+high oxytocin 
+levels, 
+but 
+not 
+with 
+low oxytocia 
+levels 
+(Lebowitz, Blumberg, 
+& Silverman, 
+2019). 
+This 
+may 
+explain 
+the 
+finding 
+that 
+parental 
+negativity 
+only 
+moderated 
+outcomes 
+for children 
+with 
+high oxytocin 
+levels, 
+leading 
+to 
+more 
+improvement 
+in SPACE. 
+For 
+the 
+model 
+based 
+on 
+independent-eveluator- 
+rated 
+outcomes, 
+the algorithm 
+selected 
+only baseline 
+anxiety 
+severity 
+as 
+an 
+important 
+moderator. 
+It may 
+be that 
+the 
+difference 
+in 
+measures 
+used 
+by indepen- 
+dent-evaluators 
+and 
+by 
+parents 
+and 
+children 
+impacted 
+findings. 
+Whereas 
+parents 
+and 
+children 
+completed 
+the 
+SCARED, 
+a 
+measure 
+with 
+numerous 
+items 
+covering 
+multiple 
+domains 
+of anxiety, 
+inde- 
+pendent-evaluators 
+used 
+the PARS. 
+On PARS, 
+scores 
+are 
+derived 
+from 
+only a 
+few 
+items 
+that 
+rate 
+overall 
+severity 
+across 
+domains. 
+The 
+format 
+and psychome- 
+tric 
+structure 
+of PARS 
+may 
+have 
+reduced 
+sensitivity 
+·to moderator 
+variables. 
+Overall, 
+the current 
+study provides novel, potentially 
+important 
+information 
+that 
+can 
+advance 
+mere 
+pre- 
+scriptive 
+treatment 
+assignment. 
+Finding that 
+children. 
+randomly 
+assigned 
+to their 
+optimal 
+treatment 
+experi- 
+enced 
+greater improvement 
+than 
+children 
+assigned to 
+their 
+counter-ontimal 
+treatment 
+the 
+utilitv 
+of 
+·J Child 
+Paychol Psychiatr 2021; 62(10): 1175-82 
+selection. 
+If research 
+continues 
+to support 
+these 
+mod- 
+erators, 
+future 
+cases 
+could 
+be 
+evaluated 
+on 
+these 
+variables 
+and 
+treatment 
+selection 
+could 
+be algorithmi- 
+cally 
+determined. 
+Findings 
+also 
+support 
+the 
+overall 
+utility 
+of the machine 
+learning approach to moderator 
+analysis 
+and 
+of accounting 
+for the effects 
+and 
+interac 
+tions 
+of numerous 
+variables 
+simultaneously. 
+·The study 
+is 
+not 
+without 
+limitations. 
+Sample 
+size 
+was 
+substantial 
+for 
+a clinical 
+trial 
+of child 
+anxiety, 
+but 
+a larger dataset 
+would 
+provide more power 
+and ability 
+to 
+identify 
+moderators 
+and 
+their 
+interactions. 
+The 
+sample was 
+determined 
+by the original 
+RCT and 
+was 
+somewhat 
+homogenous 
+in 
+race 
+and 
+socioeconomic 
+status. 
+Homogeneity hampers moderator 
+tion 
+and 
+research 
+with 
+more 
+heterogeneous samples 
+may 
+better 
+identify 
+treatment 
+response 
+moderators. 
+·The machine 
+learning algorithm 
+was 
+chosen 
+given 
+its 
+strength 
+in 
+ensuring 
+that 
+main 
+effects 
+are 
+accounted 
+for when 
+considering 
+potential 
+interactions, 
+but 
+has 
+limitations 
+(Strobl, Boulesteix, 
+Zeileis, 
+& 
+Hothorn, 
+2007). Especially notable 
+is 
+that 
+the PATis 
+calculated 
+using 
+linear 
+regression, 
+whereas 
+some 
+of the 
+algo- 
+rithm·s 
+advantages 
+are 
+in 
+detecting 
+more 
+complex 
+interactions, 
+Other 
+limitations 
+are 
+inherent to 
+periph- 
+eral 
+oxytocin 
+research. 
+Despite 
+substantial 
+research 
+supporting 
+its 
+usefulness 
+in 
+psychiatric 
+research, 
+questions 
+remain 
+about 
+the 
+degree of coordination 
+between 
+central 
+and peripheral oxytocin, 
+and 
+about 
+optimal 
+methods 
+for oxytocin 
+quantification 
+(McCul- 
+lough, Churchland, 
+& Mendez, 2013; Young & Ander- 
+son, 
+2010). Finally, 
+to fully understand 
+the 
+clinical 
+applications 
+of any 
+treatment 
+selection 
+approach, 
+it 
+should 
+be applied prospectively. 
+Despite 
+these 
+limitations, 
+the 
+study 
+is 
+an 
+impor- 
+tant 
+step toward 
+identifying 
+moderators 
+of treatment 
+response 
+and 
+toward 
+better 
+decision-making 
+tools 
+for treating 
+childhood 
+anxiety. 
+Supporting information 
+Additional 
+supporting 
+information 
+may 
+be found 
+online 
+in 
+the Supporting 
+Information 
+section 
+at 
+the 
+end 
+of the 
+article: 
+·Table 
+S1. 
+Lincar 
+regressions. 
+Table 
+S2. 
+Correlations 
+(baseline) 
+between 
+the 
+three 
+child 
+anxiety 
+outcomes. 
+·Table 
+83. Correlations 
+of changes (pre-to-post] 
+between. 
+the three 
+child 
+anxiety 
+outcomes. 
+Acknowledgements 
+·This study was 
+supported through grants 
+from 
+NIMH 
+to 
+ELL. 
+(K23MH103355; 
+1R61MH115113). 
+The 
+authors 
+have 
+declared 
+that 
+they have 
+no 
+competing 
+or potential 
+conflicts of 
+interest. 
+Correspondence 
+Eli 
+R. 
+Lebowitz, 
+Child 
+Study Center, 
+Yale 
+University 
+School ofMedicine. 
+230 
+8. 
+Rd.. 
+New 
+Haven. 
+Key points 
+alternative 
+to 
+child-based 
+cognitive-behavi 
+could 
+increase 
+overall 
+efficacy. 
+·© 
+Arecent 
+randomized 
+controlled 
+trial 
+demonstrated 
+that 
+SPACE, a parent-based 
+treatment, 
+is an 
+efficacious 
+ral therapy for 
+childhood 
+anxiety disorders. 
+© 
+Despite similar efficacy for SPACE and CBT, identifying 
+moderators 
+of treatment 
+response 
+to SPACE and CBT 
+Maternal 
+negativity, 
+peripheral (salivary) oxytocin levels, and 
+baseline 
+anxiety severity moderated 
+treatment 
+response 
+to SPACE and CBT, using 
+a machine 
+learning-based approach to 
+moderator 
+analysis. 
+·© 
+Children 
+who 
+were 
+randomly assigned to their optimal treatment 
+condition 
+in the clinical 
+trial, based 
+on 
+the 
+moderators 
+identified 
+in 
+the 
+current 
+study, had significantly more 
+reduction 
+in parent-rated 
+child 
+anxiety, 
+than 
+did 
+children 
+randomly assigned to their 
+nonoptimal 
+treatment 
+condition. 
+© 
+Clinical 
+practice, 
+and child anxiety outcomes, 
+could 
+be improved through prescriptive treatment 
+selection 
+based 
+on 
+empirically established 
+moderators 
+of treatment 
+response. 
+References 
+Achenbach, 
+TM. 
+(1994), 
+Child 
+behavior 
+checklist 
+and 
+related 
+ingtruments. 
+In M. 
+Maurish 
+(Ed), 
+The use 
+of psychological 
+testing for treatment 
+planning 
+and 
+outcome 
+assessment 
+517-549), 
+Hillsdale, NJ: 
+Lawrence 
+Erlbaum 
+Associates. 
+Albano, 
+AM., 
+& 
+Silverman, 
+W.K. 
+(2020). 
+Anxiety 
+disorders 
+interview 
+schedule 
+(adis-5) child 
+and parent 
+interviews. 
+New 
+York: 
+Oxford 
+University 
+Press. 
+Angold, A., 
+& Costello, 
+E.J. 
+(1987). 
+Mood 
+and 
+feelings ques: 
+Honnaire. 
+Durham, 
+NC: 
+Developmental 
+Epidemiology 
+Pro- 
+gram, 
+Duke 
+University 
+Beck, 
+Epstein, N., Brown, 
+G., & Steer, 
+RA, 
+(1988). An. 
+inventory 
+for 
+meastiring 
+clinical 
+anxiety: 
+Psychometric prop- 
+erties, 
+Joumal 
+of Consulting 
+and 
+Clinical 
+Psychoiogy, 
+56, 
+1393-897, 
+Beck, 
+A.T., 
+Steer, 
+RA., 
+& 
+Brown, 
+G.K. 
+(1996), 
+Babi, 
+beck 
+depression inventory: Manual 
+(2nd edn). Boston: 
+Psycholog- 
+ical Corp.; Harcourt 
+Brace. 
+Berman, 
+S.1., Weems, 
+C-F., Silverman, 
+W.K., & Kurtines, 
+WM 
+{2000}, 
+Predictors 
+of 
+outcome 
+in 
+expostre-based 
+cognitive 
+behavioral 
+treatments 
+for phobic 
+and 
+anxiety 
+disorders 
+in 
+children, 
+Behavior 
+Therapy, 31, 
+713-731 
+Bodden, 
+D.H.M., 
+Bogels, S.M., 
+Nauta, 
+MHL, 
+De Haan, 
+B., 
+J.,·Appelboom, 
+C., 
+....& Appelboom-Geerts, 
+(2008). 
+Child 
+versus 
+family 
+therapy 
+in 
+clinically 
+anxious 
+youth: 
+An efficacy and 
+partial 
+effectiveness 
+study. 
+Jounal 
+of the 
+American 
+Academy of 
+Child 
+and 
+Adolescent 
+Psychiatry, 
+47, 1384-1994. 
+(Chu, 
+B.C,, 
+Merson, R.A., 
+Zandberg, Lt, 
+& Areizaga, W. 
+(2012) 
+Calibrating 
+for 
+comorbidity: 
+Clinical 
+decision-making 
+in 
+youth depression 
+and 
+anxiety. 
+Cognitive 
+and 
+Behavioral 
+Practice, 
+19, 5-16. 
+Cobham, 
+Dadds, 
+& Spence, 
+S.H, (1998). The 
+role 
+of 
+anxiety 
+in 
+the· 
+treatment 
+of 
+childhood 
+anxiety. 
+of Consulting 
+and 
+Psychology, 66, 893-905, 
+Cobham, V.E., 
+Dads, 
+M.R,, 
+Spence, 
+S.H., 
+& McDermott, 
+5 
+(2010). 
+Parental 
+anxiety 
+in 
+the 
+treatment 
+of 
+childhood 
+anxiety: 
+A different 
+story three 
+years 
+later. 
+Journal of 
+Clinical 
+Child and 
+Adolescent 
+Psychology, 29, 410-420. 
+Cohen, 
+Z.D., 
+& DeRubeis, 
+RJ. 
+(2018). 
+Treatment 
+selection 
+in 
+depression. 
+Annual 
+Review 
+of Clinical Psychology, 
+14, 209- 
+236, 
+Compton, S.N., Peri, 
+T:S., 
+lmiral, 
+D., Birmaher, 
+B., Sherrill, 
+·J, 
+Kendall, P.C.,... 
+& Albano, AM. 
+(2014). 
+Predictors and 
+·moderators 
+of 
+treatment 
+response 
+in 
+childhood 
+anxiety 
+disorders: 
+Results 
+from 
+the 
+cams 
+trial. 
+Journal 
+of Consulting 
+·and 
+Clinical 
+Psychology, 82, 
+212-224. 
+© 2021 
+Association 
+for 
+Child 
+and 
+Adolescent 
+Mental 
+Health. 
+DeRubels, 
+RJ., 
+Cohen, 
+Z-D., 
+Forand, 
+Fournier, 
+J.C. 
+Gelfand, 
+& Lorenzo-Luaces, L. 
+(2014). The 
+personalized 
+advantage 
+index: 
+Translating 
+research 
+on 
+prediction 
+into 
+individualized 
+treatment 
+recommendations. 
+A demonstra 
+ton. PLoS 
+One, 
+9, e83875, 
+Funk, 
+& Rogge, RD. 
+(2007). Testing 
+the 
+ruler 
+with 
+item 
+response 
+theory: Increasing 
+precision 
+of measurement 
+for 
+relationship 
+satisfaction 
+with 
+the couples satisfaction 
+index 
+Journal 
+of Family Psychology, 21, 572-583. 
+Garge, N.R., Bobashev, 
+G., 
+& Eggleston, 
+B. (2013). 
+Random 
+forest 
+methodology 
+for 
+model-based 
+recursive 
+partitioning: 
+·The 
+mobforest 
+package 
+for r. 
+BMC 
+Bioinformatics, 
+14, 
+125. 
+Gosch, 
+E.A., Flannery-Schroeder, E., 
+Mauro, 
+C.F., 
+& Compton, 
+·SIN. (2006). 
+Principles 
+of cognitive-behavioral 
+therapy 
+for 
+anxiety 
+disorders 
+in 
+children. 
+Joumal 
+of Cognitive Psy- 
+chotherapy, 
+20, 247-262. 
+Gresham, 
+FAM, 
+& 
+Eliott, 
+S.N. 
+(1990). 
+Social 
+skills 
+rating 
+·system 
+(SRS) 
+Circle 
+Pines, MN, USA: 
+American 
+Guidance 
+Service. 
+Hudson, 
+J-L., 
+& Rapee, 
+RM. (2001). 
+Parent-child 
+interactions 
+land 
+anxiety 
+disorders: 
+An 
+observational 
+study. 
+Behaviour 
+Research 
+and 
+Therapy, 
+39, 
+1411-1427. 
+Kovaes, 
+M. (1985). The children's 
+depression, inventory 
+(CDI 
+Psychopharmacology 
+Bulletin, 
+21, 995-998, 
+Lebowitz, 
+E.R, 
+Blumberg, 
+H.P., 
+& Silverman, 
+W-K. 
+(2019), 
+·Negative peer 
+social 
+interactions 
+and 
+oxytocin 
+levels 
+linked 
+to 
+suicidal 
+ideation 
+in 
+anxious 
+youth. 
+Jounal of 
+Affective 
+Disorders, 
+245, 
+806-811 
+Lebowitz, 
+E:R., 
+Leckman, 
+J.P., 
+Feldman, 
+R., Zagoory-Sharon, 
+(©., MeDonald, 
+N., 
+& 
+Silverman, 
+W.K. 
+(2016). 
+Salivary 
+·oxytocin 
+in 
+clinically 
+anxious 
+youth: 
+Associations 
+with 
+separation 
+anxiety 
+and 
+family 
+accommodation. 
+Psychoneu- 
+roendocrinology, 
+65, 
+35-43. 
+Lebowitz, 
+Matin, 
+C., Martino, 
+Shimshoni, 
+Y., 
+& 
+Silverman, 
+W.K. 
+(2020). 
+Parent-based 
+treatment 
+as 
+effica 
+as 
+therapy 
+for 
+childhood 
+anxiety: 
+·A randomized 
+noninferiority 
+study 
+of supportive 
+parenting 
+{or 
+anxious 
+childhood 
+emotions. 
+Journal 
+of the 
+American 
+Academy of Child 
+and 
+Adolescent 
+Psychiatry, 
+59, 362-372. 
+Lebowitz, 
+E:R., 
+& Omer, 
+H. (2013). Treating childhood 
+and 
+adolescent 
+anxiety: 
+A· guide for caregivers. 
+Hoboken, 
+Ni 
+Witey 
+Lebowits, 
+E:R., Scharfstein, 
+L., &Jones, J. 
+(2015). Child-report 
+·of family 
+accommodation 
+in 
+pediatric 
+anxiety 
+disorders: 
+Comparison 
+and 
+integration 
+with 
+mother-report. 
+Child 
+Psy- 
+chiatry and 
+Human 
+Development, 46, 501-511 
+Lebowitz, 
+E.R, 
+Woolston, 
+J, 
+Bar-Haim, 
+Y., Calvocoressi, 
+L, 
+Dauser, C., 
+Warnick, E,,... 
+& Leckman, 
+J.P. (2013), Family 
+1182 
+EWR 
+Lebowiteet 
+al 
+·accommodation 
+in 
+pediatric 
+anxiety 
+disorders, 
+Depression 
+land Anxiety, 
+30, 
+47-54, 
+Legerstee, 
+Huizink, 
+A.C., 
+van 
+Gastel, 
+W., Liber, 
+J.M., 
+Treffers, 
+P-DA., 
+Verhulst, 
+FC, & Utens, 
+E-MW.J. 
+(2008), 
+·Maternal 
+anxiety 
+predicts favourable 
+treatment 
+outcomes 
+in 
+anxicty-disordered 
+adolescents, 
+Acta 
+Psyehiatriea 
+Scandi 
+117, 289-298, 
+ber, J-M., 
+Van Widenfelt, 
+B.M., Utens, F.M.W.J., 
+Ferdinand, 
+RF., 
+Van 
+der 
+Leeden, 
+AJM., 
+Van 
+Gastel, 
+W., & Treffers, 
+P.D.A. 
+(2008). 
+No differences 
+between 
+group 
+versus 
+individ 
+ual 
+treatment 
+of 
+childhood 
+anxiety 
+disorders 
+in 
+a 
+ran- 
+domised 
+clinical 
+trial. 
+Journal 
+of Child 
+Psychology 
+and 
+Psychiatry, 
+49, 886-893, 
+MacDonald, 
+K., 
+& Feifel,D. 
+(2014). Oxytocin's role 
+in 
+anxiety: A 
+appraisal. Brain 
+Research, 
+1580, 22-56. 
+Manassis, 
+K., 
+Mendlowitz, 
+S.L., 
+Scapillato, 
+D., 
+Avery, 
+D. 
+Fiksenbaum, L., Freire, 
+M.,..·& 
+Owens, MM. 
+(2002). Group 
+and 
+individual 
+cognitive-behavioral 
+therapy 
+for 
+childhood 
+anxiety 
+disorders. 
+A randomized 
+trial. 
+Journal 
+of tae Amer 
+ican 
+Academy 
+of Child and 
+Adolescent 
+Psychiatry, 41, 1423 
+1430. 
+·Mash, E.J., 
+& Hunsley, J. (2005). 
+Evidence-based 
+assessment 
+·of child 
+and 
+adolescent 
+disorders: 
+Issues 
+and 
+challenges, 
+Journal 
+of Clinical 
+Child 
+and 
+Adolescent 
+Psychology, 
+34, 
+362.379. 
+McCullough, 
+M.E., 
+Churchland, 
+P.S., & Mendez, 
+A.J. (2013). 
+Problems 
+with 
+measuring 
+peripheral 
+oxytocin: 
+Can the 
+data 
+fon 
+oxytocin 
+and 
+human 
+behavior 
+be trusted? 
+Neuroscience 
+·and Biobehavioral 
+Reviews, 
+47, 
+1485-1492, 
+Milrod, 
+B., 
+Markowitz, 
+J.C., 
+Gerber, AJ., 
+Cyranowski, 
+J., 
+Altemus, 
+M., Shapiro, T, 
+& Glatt, 
+C. (2014). Childhood 
+separation 
+anxiety 
+and 
+the pathogenesis 
+and 
+treatment 
+of 
+adult 
+anxiety. American 
+Journal 
+of Psychiatry, 
+171, 
+34-43, 
+Muris, 
+P., 
+Merckelbach, 
+H., 
+Van 
+Brakel, 
+A., 
+& Mayer, AB. 
+(1999), 
+The 
+revised 
+version 
+of the 
+screen 
+for 
+child 
+anxiety 
+related 
+emotional 
+disorders 
+Further 
+evidence 
+for 
+its reliability 
+and validity. Anxiety, Stress, 
+and Coping, 12, 
+411-435, 
+National 
+Institute 
+of Mental 
+Health. 
+(2019). Strategic 
+research. 
+priorities 
+overview. 
+Available 
+from: 
+nib, 
+priorites/index 
+shtml. 
+last 
+accessed 
+28 April 2020} 
+Neumann, 
+LD., 
+& Slattery, 
+D.A. 
+(2016). Oxytocin 
+in 
+general 
+·anxiety 
+and 
+¢ocial 
+fear: 
+A translational 
+approach. Biological 
+79, 213-221 
+Nilsen, 
+T.S., 
+Eisemann, 
+M., & Kvernmo, 
+S. (2012). 
+Predictors 
+·and 
+moderators of 
+outcome 
+in 
+child 
+and 
+adolescent 
+anxiety 
+and 
+depression: 
+A systematic 
+review of 
+psychological 
+treat 
+·ment 
+studies. 
+Buropean Child 
+and 
+Adolescent 
+Psychiatry, 
+22, 
+69-87. 
+LA, 
+& Kendall, 
+PC. 
+(2020). 
+Moderators of 
+outcome 
+for 
+youth 
+anxiety 
+treatments: 
+Current 
+findings 
+and 
+future 
+directions. 
+Journal of 
+Clinical Child 
+and 
+Adolescent 
+Psychol 
+ogy, 
+1-14, 
+https:/ 
+/doi.org/ 
+10.1080/ 
+15374416,2020. 
+1833397. 
+[Bpub ahead 
+of print 
+·J Child 
+Paychol Psychiatr 
+2021; 
+62(10}: 
+1175-82 
+Puleo, 
+C.M., 
+& 
+Kendall, 
+P.C. 
+(2011). 
+Anxiety 
+disorders 
+in 
+·ypically developing youth: Autism 
+spectrum 
+symptoms as 
+a 
+predictor 
+of cognitive-behavioral 
+treatment. 
+Journal 
+of Aut 
+{sm 
+and 
+Developmental Disorders, 
+41, 275-286. 
+RUPP 
+Anxiety 
+Study 
+Group. 
+(2002). 
+The 
+pediatric 
+anxiety 
+rating 
+scale 
+(pars): Development 
+and 
+psychometric 
+proper- 
+ties, 
+Journal 
+of the American 
+Academy of 
+Child and 
+cent 
+Psychiatry, 41, 1061-1069. 
+Schaefer, 
+E-S. 
+(1965). 
+Children·s 
+reports of 
+parental 
+behavior: 
+·An inventory. 
+Child 
+Development, 
+36, 
+413-425. 
+Shortt, 
+A.L,, 
+Barrett, 
+P.M., & Fox, 
+T-L, 
+(2001). Evaluating 
+the 
+friends 
+program: 
+A cognitive-behavioral 
+group 
+treatment 
+for 
+anxious 
+children 
+and 
+their 
+parents. 
+Journal 
+of Clinical 
+Child 
+Psychology, 30, 525-535. 
+Strobl, 
+C., Boulesteix, 
+AL., Kneib, 
+T., Augustin, 
+T., 
+& Zeile 
+·A. 
+(2008). 
+Conditional 
+variable 
+importance 
+for 
+random 
+forests. 
+BMC 
+Bioinformatics, 
+9, 307. 
+Strobl, 
+C., Boulesteix, 
+Zeileis, 
+A., & Hothorn, 
+T. (2007). 
+Bias 
+in 
+random 
+forest 
+variable 
+importance 
+measures: 
+[Ilus- 
+tations, 
+sources 
+and 
+a 
+solution. 
+BMC 
+Bioinformatics, 
+8, 25, 
+Taylor, 
+JH, 
+Lebowitz, E-R., 
+Jakubovski, 
+E., Coughlin, 
+C.G. 
+Silverman, 
+W-K., & Bloch, 
+M-H. 
+(2018). Monotherapy 
+ficient 
+in 
+severe 
+anxiety? 
+Predictors 
+and 
+moderators 
+in 
+the 
+child/adolescent 
+anxiety multimodal 
+study. Journal 
+of Clin- 
+·cal 
+Child 
+and 
+Adolescent 
+Psychology, 47, 266-281 
+Vietor, 
+AM, 
+Bernat, 
+Dill, 
+Bernstein, 
+G.A., 
+& Layne, AC. 
+(2007). 
+Eiffects 
+of 
+parent 
+and 
+family 
+characteristics 
+on 
+treatment 
+outcome of 
+anxious 
+children. 
+Journal 
+of Anxiety 
+Disorders, 
+21, 835-848, 
+Walkup, 
+J-T., 
+Labellarte, 
+MJ, Riddle, 
+M.A., 
+Pine, 
+D., 
+Green- 
+bill, 
+Klein, 
+R., 
+& Roper, M. (2003). Searching 
+for 
+·moderators 
+and 
+mediators 
+of pharmacological 
+treatment 
+effects 
+in 
+children 
+and 
+adolescents 
+with 
+anxiety 
+disorders, 
+Journal 
+of the 
+American 
+Academy of Child 
+and 
+Adolescent 
+Psychiatry, 
+42, 
+13-21 
+Wang, Z., Whiteside, 
+S.P-H., Sim, 
+L., Farah, 
+W., Morrow, 
+A.S., 
+Alsawas, M., 
+... 
+& Murad, 
+(2017), Comparative 
+effec- 
+tiveness· 
+and 
+safety 
+of 
+cognitive 
+behavioral 
+therapy 
+and 
+pharmacotherapy 
+for 
+childhood 
+anxiety 
+disorders: 
+A sys- 
+tematic 
+review 
+and 
+meta-analysis. 
+JAMA 
+Pediatrics, 
+171, 
+1049-1056. 
+Young, 
+S.N., 
+& Anderson, 
+G.M. 
+(2010). 
+Bioanalytical 
+inaccu- 
+racy: 
+A threat 
+to 
+the 
+integrity 
+and 
+efficiency 
+of research. 
+of Psychiatry 
+and 
+Neuroscience, 
+35, 
+3-6. 
+Zelleis, 
+A., Hothorn, 
+T., & 
+Hornik, 
+K. (2008). Model-based 
+recursive 
+partitioning. 
+Jounal 
+of Computational and 
+Graph: 
+ical 
+Statisties, 
+17, 492-514. 
+Zilcha-Mano, S., 
+Roose, 
+S.P., 
+Brown, 
+& Rutherford, 
+(2018). A machine 
+learning approach to identifying 
+placebo 
+responders 
+in 
+late-life 
+depression 
+trials. 
+The 
+American 
+Joural 
+of Geriatric Psychiatry, 26, 669-677. 
+Accepted for publication: 
+18 December 
+2020 

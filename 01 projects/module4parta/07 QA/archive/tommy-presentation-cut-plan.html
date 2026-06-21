@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tommy Presentation Cut Plan</title>
+  <style>
+    :root {
+      --bg:#f7f6f2; --surface:#ffffff; --surface-2:#f2efe7; --text:#1f2937; --muted:#5f6774;
+      --border:#d8d1c5; --accent:#0f766e; --accent2:#1d4ed8; --good:#166534; --warn:#92400e; --bad:#991b1b;
+      --shadow:0 12px 30px rgba(0,0,0,.08); --radius:18px;
+    }
+    [data-theme="dark"] {
+      --bg:#111315; --surface:#1a1d20; --surface-2:#23272b; --text:#ece7df; --muted:#b8b0a4;
+      --border:#33383f; --accent:#5eead4; --accent2:#93c5fd; --good:#86efac; --warn:#fcd34d; --bad:#fca5a5;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:16px/1.58 Inter,Segoe UI,Roboto,Arial,sans-serif;padding:28px}
+    .wrap{max-width:1280px;margin:0 auto}
+    .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+    h1{margin:0 0 8px;font-size:clamp(2rem,3vw,3rem);line-height:1.06}
+    .lede{margin:0;max-width:95ch;color:var(--muted)}
+    .toggle{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:10px 14px;border-radius:999px;cursor:pointer;box-shadow:var(--shadow)}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin:18px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:1050px){.grid{grid-template-columns:1fr 1fr}}
+    .label{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800;margin-bottom:10px}
+    .callout{border-left:4px solid var(--accent);padding-left:14px}
+    .pill{display:inline-block;background:var(--surface-2);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.92rem;margin:4px 8px 0 0}
+    h2{font-size:1.6rem;margin:0 0 10px} h3{font-size:1.12rem;margin:0 0 10px}
+    p{margin:8px 0} ul{margin:8px 0 0 20px;padding:0} li{margin:6px 0}
+    .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:16px}
+    table{width:100%;border-collapse:collapse;min-width:1020px;background:var(--surface)}
+    th,td{padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+    th{background:var(--surface-2);font-size:.92rem}
+    tr:last-child td{border-bottom:none}
+    .keep{color:var(--good);font-weight:800}
+    .cut{color:var(--bad);font-weight:800}
+    .trim{color:var(--warn);font-weight:800}
+    .small{font-size:.94rem;color:var(--muted)}
+    .footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Tommy Presentation Cut Plan</h1>
+      <p class="lede">A focused cut plan for the 10-minute version. The aim is to preserve the academic story, keep the analysis strong, and remove visible detail that slows delivery or repeats points already made elsewhere.</p>
+    </div>
+    <button class="toggle" id="themeToggle" aria-label="Toggle theme">Toggle theme</button>
+  </div>
+
+  <section class="card">
+    <div class="label">Core principle</div>
+    <h2>Cut detail, not structure</h2>
+    <p class="callout"><strong>Through-line to keep:</strong> Tommy’s presentation is best understood as the cumulative result of prenatal, relational, and social adversity, with protective relationships offering a realistic opportunity to shift trajectory.</p>
+    <p><span class="pill">Keep 5 content slides</span><span class="pill">Aim for 4 spoken points max per slide</span><span class="pill">Move weaker points into narration</span></p>
+  </section>
+
+  <section class="card">
+    <div class="label">Fast answer</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Slide</th>
+            <th>Keep</th>
+            <th>Cut or compress</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Presenting issues</td>
+            <td class="keep">Keep the visual and the core thesis that behaviour is adaptation, not simple misconduct.</td>
+            <td class="trim">Fold “possible risk pathway” into speech instead of keeping it as a separate visible section.</td>
+            <td>This slide should frame the case quickly, not split attention between two right-side arguments.</td>
+          </tr>
+          <tr>
+            <td>2. Predisposing factors</td>
+            <td class="keep">Keep cumulative ACEs and the individual-family-community structure.</td>
+            <td class="trim">Reduce each risk-layer box to 2 bullets; say “ACEs interact and compound” aloud instead of on the slide.</td>
+            <td>The ecological logic is essential to the brief, but the current text density is slowing the story.</td>
+          </tr>
+          <tr>
+            <td>3. Developmental impact</td>
+            <td class="keep">Keep HPA/stress, attention-learning, attachment-trust, and mental-health risk.</td>
+            <td class="cut">Cut “overall health” from the visible slide.</td>
+            <td>Overall physical-health risk is true, but it is not central enough for a 10-minute case presentation.</td>
+          </tr>
+          <tr>
+            <td>4. Risk of complexity</td>
+            <td class="keep">Keep the 5P idea and four big mechanisms.</td>
+            <td class="cut">Cut separate bullets on impaired regulation disrupting social development, negative relational experiences as self-fulfilling prophecy, and teacher/school trigger detail as stand-alone items.</td>
+            <td>This slide is the most overloaded and repeats material already covered on Slides 2 and 3.</td>
+          </tr>
+          <tr>
+            <td>5. Protective factors</td>
+            <td class="keep">Keep partial maternal protection, predictable teachers, ACEs are probabilistic, and the final synthesis.</td>
+            <td class="cut">Cut school meals as a separate bullet, “ordinary magic” as a named on-slide concept, and adolescent neuroplasticity as a stand-alone bullet.</td>
+            <td>These are useful ideas, but they cost explanation time and work better in speaker notes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <div class="label">Slide 1</div>
+      <h3>Tommy: presenting issues and formulation</h3>
+      <p><strong>Keep:</strong> the presenting-issues image, the adaptation framing, and one thesis sentence.</p>
+      <p><strong>Cut:</strong> the separate “possible risk pathway” box as visible text.</p>
+      <ul>
+        <li><span class="keep">Keep</span> “Tommy’s behaviours are best understood as adaptive responses to cumulative developmental adversity.”</li>
+        <li><span class="trim">Move to speech</span> long-term psychiatric vulnerability and internalising/externalising elaboration.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">Slide 2</div>
+      <h3>Predisposing factors</h3>
+      <p><strong>Keep:</strong> ACE definition, cumulative adversity, and the three-layer ecology.</p>
+      <p><strong>Trim:</strong> each box to the two most persuasive case-linked items.</p>
+      <ul>
+        <li><span class="keep">Keep</span> prenatal exposure, domestic violence, inconsistent caregiving, poverty/community adversity.</li>
+        <li><span class="cut">Cut</span> any wording that repeats “interact and compound” more than once.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">Slide 3</div>
+      <h3>Possible mechanism on developmental impact</h3>
+      <p><strong>Keep:</strong> one biological column, one cognitive-regulation column, and one relational column.</p>
+      <p><strong>Cut:</strong> visible “overall health” material and any extra labels that do not directly help explain Tommy’s school-age presentation.</p>
+      <ul>
+        <li><span class="keep">Keep</span> HPA dysfunction, neurodevelopmental risk, attention and learning, trust/rapport, attachment.</li>
+        <li><span class="cut">Cut</span> chronic disease risk from the visible slide.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">Slide 4</div>
+      <h3>Risk of complexity</h3>
+      <p><strong>Best cut target:</strong> reduce from seven visible bullets to four.</p>
+      <p><strong>Recommended final visible bullets:</strong></p>
+      <ul>
+        <li>Stress biology disrupts regulation.</li>
+        <li>Disrupted attachment increases stress reactivity.</li>
+        <li>Ongoing adversity perpetuates the cycle.</li>
+        <li>New external stressors can trigger difficulties; neurodevelopmental needs should not be overlooked.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">Slide 5</div>
+      <h3>Protective factors and opportunity</h3>
+      <p><strong>Keep:</strong> the message that not all is fixed, and that relationships buffer risk.</p>
+      <p><strong>Trim hard:</strong> leave only the most intuitive and case-linked protective factors on screen.</p>
+      <ul>
+        <li><span class="keep">Keep</span> warm maternal moments, predictable teachers, ACEs are probabilistic, final synthesis.</li>
+        <li><span class="trim">Move to speech</span> emotion naming/co-regulation, ordinary magic, adolescent plasticity.</li>
+        <li><span class="cut">Cut</span> school meals as a separate bullet.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">If time is very tight</div>
+      <h3>One-sentence rule</h3>
+      <p>If a visible bullet cannot be explained in one spoken sentence, it should probably be cut from the slide and kept only in notes.</p>
+      <p>This version will preserve your analysis while improving communication and timing.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="label">Minimal final story arc</div>
+    <ol>
+      <li>What Tommy is showing now.</li>
+      <li>Where the risk came from across ecology and ACE accumulation.</li>
+      <li>How adversity shaped stress, attachment, cognition, and behaviour.</li>
+      <li>Why difficulties persist or flare up.</li>
+      <li>Why protective relationships still create opportunity for change.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <div class="label">Priority cuts</div>
+    <ul>
+      <li>First cut: visible complexity on Slide 4.</li>
+      <li>Second cut: visible complexity on Slide 5.</li>
+      <li>Third cut: “overall health” on Slide 3.</li>
+      <li>Fourth cut: duplicated wording on Slide 2.</li>
+    </ul>
+  </section>
+
+  <p class="footer">Use this as a trimming guide while editing the PowerPoint. The goal is not to remove academic depth, but to stop the slides from competing with your narration.</p>
+</div>
+<script>
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const root = document.documentElement;
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+</script>
+</body>
+</html>

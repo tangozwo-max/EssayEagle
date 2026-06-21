@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliography Quality Assessment — Module 4 Part A</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a1a; font-size: 13px; }
+  h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
+  h2 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: #444; }
+  .header { background: #1a3a2a; color: white; padding: 18px 24px; }
+  .header .meta { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 16px 24px; }
+
+  /* Dashboard cards */
+  .dashboard { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+  .card { background: white; border-radius: 8px; padding: 14px 18px; min-width: 140px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+  .card .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .card .value { font-size: 1.8rem; font-weight: 700; color: #1a3a2a; margin: 4px 0; }
+  .card .sub { font-size: 10px; color: #666; }
+  .card.warn .value { color: #e07000; }
+  .card.flag .value { color: #cc3300; }
+
+  /* Tier bar */
+  .tier-section { background: white; border-radius: 8px; padding: 16px 18px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+  .tier-bar { display: flex; gap: 4px; margin: 10px 0 6px; }
+  .tier-seg { height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 10px; font-weight: 700; cursor: default; min-width: 30px; }
+  .tier-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .tier-item { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #555; }
+  .tier-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+  /* Badges */
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 10px; font-size: 10px; font-weight: 600; white-space: nowrap; }
+  .t7 { background: #1a7c3f; color: white; }
+  .t6 { background: #276749; color: white; }
+  .t5 { background: #4a8f3f; color: white; }
+  .t4 { background: #f0a500; color: white; }
+  .t3 { background: #e07000; color: white; }
+  .t2 { background: #cc3300; color: white; }
+  .t1 { background: #990000; color: white; }
+  .open { background: #276749; color: white; }
+  .paywalled { background: #e07000; color: white; }
+  .preprint { background: #2255aa; color: white; }
+  .abstract-only { background: #888; color: white; }
+  .wiki-yes { background: #008891; color: white; }
+  .wiki-no { background: #bbb; color: #333; }
+  .pdf-yes { color: #276749; font-weight: 700; }
+  .pdf-no { color: #cc3300; font-weight: 700; }
+  .pdf-abstract { color: #e07000; font-weight: 700; font-size: 10px; }
+  .year-flag { background: #fff0e0; color: #cc3300; font-weight: 700; border-radius: 3px; padding: 1px 4px; font-size: 10px; }
+  .orphan { background: #fff0e0; color: #cc3300; font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 10px; }
+  .cited { color: #276749; font-size: 10px; }
+
+  /* Table */
+  .table-wrap { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); overflow-x: auto; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  th { background: #1a3a2a; color: white; padding: 9px 10px; text-align: left; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.4px; position: sticky; top: 0; white-space: nowrap; }
+  td { padding: 8px 10px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:hover td { background: #f9fdf9; }
+  tr.recency td:nth-child(7) { background: #fff5e5; }
+  .citation { max-width: 320px; line-height: 1.4; }
+  .citation em { font-style: italic; }
+  .links { white-space: nowrap; display: flex; gap: 6px; align-items: center; }
+  .links a { text-decoration: none; font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
+  .links a.doi { background: #e8f4ee; color: #1a7c3f; }
+  .links a.pdf { background: #e8eef8; color: #2255aa; }
+  .links a.url { background: #f0f0f0; color: #555; }
+  .vs { font-size: 10px; color: #999; font-style: italic; }
+
+  /* Alerts section */
+  .alerts { background: white; border-radius: 8px; padding: 16px 18px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+  .alert { display: flex; gap: 10px; padding: 10px 12px; border-radius: 6px; margin-bottom: 8px; font-size: 11.5px; }
+  .alert.warn { background: #fff8e8; border-left: 3px solid #f0a500; }
+  .alert.info { background: #e8f4f8; border-left: 3px solid #2255aa; }
+  .alert.danger { background: #ffeee8; border-left: 3px solid #cc3300; }
+  .alert-icon { font-size: 14px; }
+
+  @media print { body { font-size: 11px; } .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; } th { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Bibliography Quality Assessment</h1>
+  <div class="meta">Module 4 Part A · Student 5779906 · Generated by Jackie · 2026-06-04 · Updated 2026-06-04 (reiss2013 removed, cruz2022 added) · Source of truth: <code>Module4 PartA FULL.ris</code></div>
+</div>
+
+<div class="container">
+
+  <!-- DASHBOARD -->
+  <div class="dashboard">
+    <div class="card">
+      <div class="label">Total Sources</div>
+      <div class="value">44</div>
+      <div class="sub">in bibliography</div>
+    </div>
+    <div class="card">
+      <div class="label">Full PDFs</div>
+      <div class="value" style="color:#276749">17</div>
+      <div class="sub">17 / 44 (39%) — full text locally available</div>
+    </div>
+    <div class="card warn">
+      <div class="label">Abstract-only (!)</div>
+      <div class="value">19</div>
+      <div class="sub">19 / 44 (43%) — paywalled; ! prefix in PDF folder</div>
+    </div>
+    <div class="card">
+      <div class="label">Wiki Ingested</div>
+      <div class="value" style="color:#008891">44</div>
+      <div class="sub">100% — full ingest completed 2026-06-04</div>
+    </div>
+    <div class="card warn">
+      <div class="label">Recency Flags</div>
+      <div class="value">13</div>
+      <div class="sub">&gt;10 yrs old, tier &lt; 6 (non-landmark)</div>
+    </div>
+    <div class="card">
+      <div class="label">Open Access</div>
+      <div class="value" style="color:#276749">11</div>
+      <div class="sub">11 / 44 (25%)</div>
+    </div>
+    <div class="card flag">
+      <div class="label">Duplicate PDFs</div>
+      <div class="value">1</div>
+      <div class="sub">Crouch 2019 — 2 PDFs; delete _aga.pdf</div>
+    </div>
+    <div class="card">
+      <div class="label">Author Concentration</div>
+      <div class="value" style="color:#276749">OK</div>
+      <div class="sub">No author ≥3 entries</div>
+    </div>
+    <div class="card warn">
+      <div class="label">Orphan Entries</div>
+      <div class="value">1–2</div>
+      <div class="sub">Donaldson (delete), Ungar (optional) — Reiss 2013 removed from RIS</div>
+    </div>
+  </div>
+
+  <!-- TIER DISTRIBUTION -->
+  <div class="tier-section">
+    <h2>Evidence Tier Distribution</h2>
+    <div class="tier-bar">
+      <div class="tier-seg t7" style="flex:3" title="Tier 7 · SR/Meta-analysis: 3">7 · 3</div>
+      <div class="tier-seg t6" style="flex:11" title="Tier 6 · Landmark: 11">6 · 11</div>
+      <div class="tier-seg t5" style="flex:6" title="Tier 5 · Experimental/Longitudinal: 6">5 · 6</div>
+      <div class="tier-seg t4" style="flex:13" title="Tier 4 · Observational/Narrative Review: 13">4 · 13</div>
+      <div class="tier-seg t3" style="flex:9" title="Tier 3 · Theory/Conceptual/Books: 9">3 · 9</div>
+      <div class="tier-seg t2" style="flex:2" title="Tier 2 · Editorial/Practitioner: 2">2 · 2</div>
+    </div>
+    <div class="tier-legend">
+      <div class="tier-item"><div class="tier-dot t7"></div>T7 — Systematic Review / Meta-Analysis (3)</div>
+      <div class="tier-item"><div class="tier-dot t6"></div>T6 — Landmark Review / Large Cohort (11)</div>
+      <div class="tier-item"><div class="tier-dot t5"></div>T5 — Experimental / Longitudinal / Guideline (6)</div>
+      <div class="tier-item"><div class="tier-dot t4"></div>T4 — Observational / Narrative Review (13)</div>
+      <div class="tier-item"><div class="tier-dot t3"></div>T3 — Theory / Conceptual / Book (9)</div>
+      <div class="tier-item"><div class="tier-dot t2"></div>T2 — Editorial / Practitioner Book (2)</div>
+    </div>
+    <p style="margin-top:10px;font-size:11px;color:#666;">Overall quality: <strong>strong</strong> — 75% of sources are T4 or above (33/44); T6–T7 alone account for 32% (14/44). Tier distribution appropriate for a developmental formulation presentation. Recency of lower-tier sources is the main concern.</p>
+  </div>
+
+  <!-- ALERTS -->
+  <div class="alerts">
+    <h2>Action Items</h2>
+    <div class="alert danger">
+      <div class="alert-icon">🗑</div>
+      <div><strong>Donaldson et al. (2025) — ORPHAN → DELETE</strong>: Never cited in the draft. Egbert's recommendation: delete from bibliography.</div>
+    </div>
+    <div class="alert info">
+      <div class="alert-icon">✓</div>
+      <div><strong>Reiss, F. (2013) — REMOVED</strong>: Confirmed deleted from updated RIS (2026-06-04). Removed from index and BQA. Glossary card retained as archive only.</div>
+    </div>
+    <div class="alert info">
+      <div class="alert-icon">🆕</div>
+      <div><strong>Cruz et al. (2022) — NEW SOURCE</strong>: Added in updated RIS (2026-06-04). <em>Frontiers in Psychiatry</em>, T4 Narrative Review on Developmental Trauma framework. Open access. No local PDF. Ingested to wiki.</div>
+    </div>
+    <div class="alert warn">
+      <div class="alert-icon">⚠</div>
+      <div><strong>Ungar &amp; Theron (2020) — OPTIONAL</strong>: Either add a citation on S5 (Masten resilience-as-multisystemic line) or delete. Strong Lancet Psychiatry source — worth keeping if you can add one citation.</div>
+    </div>
+    <div class="alert danger">
+      <div class="alert-icon">🗑</div>
+      <div><strong>Duplicate PDF — Crouch 2019</strong>: Two PDFs found: <code>..._full.pdf</code> and <code>..._aga.pdf</code>. Keep <code>_full.pdf</code>; move <code>_aga.pdf</code> to <code>PDF/not-used/</code> or delete.</div>
+    </div>
+    <div class="alert warn">
+      <div class="alert-icon">📅</div>
+      <div><strong>13 recency-flagged sources</strong>: Sources older than 10 years with tier &lt; 6 are flagged in the table (yellow year cell). These include foundational classics (Bowlby, Bronfenbrenner, Weerasekera) that are appropriate to cite — the flag is informational, not a blocker. However, Tangney (1992), Lee &amp; Hoaken (2007), Arpino (2010), Lieberman (2011), and Prado (2014) should be checked: are there more recent reviews that could supplement or replace them?</div>
+    </div>
+    <div class="alert info">
+      <div class="alert-icon">ℹ</div>
+      <div><strong>Verification status note</strong>: All 44 sources are ingested into the wiki. Verification status for most sources is <em>abstract-only</em> or <em>metadata-only</em> — full paraphrase verification against PDF text has not been performed in this ingest cycle. Run <code>reference-audit</code> for detailed paraphrase confidence check before final submission.</div>
+    </div>
+    <div class="alert info">
+      <div class="alert-icon">ℹ</div>
+      <div><strong>PDF folder convention — '!' prefix</strong>: Files in <code>PDF/</code> whose name starts with <code>!</code> (e.g. <code>!Arpino_et_al_2010_....pdf</code>) are <strong>abstract-only placeholder files</strong>. The paper is paywalled; only the abstract or first page was saved. 19 of 35 local files are abstract-only (shown as <span style="color:#e07000;font-weight:700">! abst.</span> in the table). Full-text verification is not possible for these sources — use <code>reference-audit</code> to assess paraphrase confidence.</div>
+    </div>
+  </div>
+
+  <!-- PER-SOURCE TABLE -->
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Citation</th>
+          <th>Tier</th>
+          <th>Access</th>
+          <th>PDF</th>
+          <th>Wiki</th>
+          <th>Year</th>
+          <th>Orphan?</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>1</td>
+          <td class="citation">Achenbach, T.M. &amp; Rescorla, L.A. (2001) <em>Manual for the ASEBA School-age Forms &amp; Profiles</em>. Burlington: ASEBA.</td>
+          <td><span class="badge t3">T3 Manual</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2001</span></td>
+          <td class="cited">—</td>
+          <td class="links">—</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td class="citation">Arpino, C. et al. (2010) 'Preterm birth and neurodevelopmental outcome: a review'. <em>Child's Nervous System</em>, 26(9), pp. 1139–1149.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2010</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1007/s00381-010-1125-y" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td class="citation">Baker, A.E., Galván, A. &amp; Fuligni, A.J. (2025) 'The connecting brain in context'. <em>Developmental Cognitive Neuroscience</em>, 71, p. 101486.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2025</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/j.dcn.2024.101486" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td class="citation">Berg, K.L. et al. (2018) 'Delayed Diagnosis and Treatment Among Children with Autism Who Experience Adversity'. <em>J Autism Dev Disord</em>, 48(1), pp. 45–54.</td>
+          <td><span class="badge t4">T4 Obs.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2018</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1007/s10803-017-3294-y" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td class="citation">Blakemore, S-J. &amp; Choudhury, S. (2006) 'Development of the adolescent brain'. <em>J Child Psychology &amp; Psychiatry</em>, 47(3–4), pp. 296–312.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2006</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1111/j.1469-7610.2006.01611.x" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td class="citation">Bongers, I.L. et al. (2004) 'Developmental trajectories of externalizing behaviors'. <em>Child Development</em>, 75(5), pp. 1523–1537.</td>
+          <td><span class="badge t6">T6 Cohort</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2004</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1111/j.1467-8624.2004.00755.x" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td class="citation">Bowlby, J. (1997) <em>Attachment and Loss: Attachment</em>. London: Pimlico.</td>
+          <td><span class="badge t3">T3 Book</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">1997</span></td>
+          <td class="cited">—</td>
+          <td class="links">—</td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td class="citation">Bronfenbrenner, U. (2009) <em>The Ecology of Human Development</em>. Cambridge, MA: Harvard University Press.</td>
+          <td><span class="badge t3">T3 Book</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2009</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.4159/9780674028845" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+          <td class="citation">Card, N.A. &amp; Little, T.D. (2006) 'Proactive and reactive aggression…: A meta-analysis'. <em>Int J Behavioral Development</em>, 30(5), pp. 466–480.</td>
+          <td><span class="badge t7">T7 Meta-A</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2006</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1177/0165025406071904" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td class="citation">Chasnoff, I.J., Wells, A.M. &amp; King, L. (2015) 'Misdiagnosis and Missed Diagnoses in Foster and Adopted Children With Prenatal Alcohol Exposure'. <em>Pediatrics</em>, 135(2), pp. 264–270.</td>
+          <td><span class="badge t4">T4 Obs.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2015</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1542/peds.2014-2171" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+          <td class="citation">Corrigan, F.M., Fisher, J.J. &amp; Nutt, D.J. (2011) 'Autonomic dysregulation and the Window of Tolerance'. <em>J Psychopharmacology</em>, 25(1), pp. 17–25.</td>
+          <td><span class="badge t3">T3 Theory</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2011</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1177/0269881109354930" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+          <td class="citation">Crouch, E. et al. (2019) 'Safe, Stable, and Nurtured: Protective Factors against ACEs'. <em>J Child &amp; Adolescent Trauma</em>, 12(2), pp. 165–173.</td>
+          <td><span class="badge t4">T4 Obs.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓ <span class="vs">(2 PDFs — delete _aga)</span></td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2019</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1007/s40653-018-0217-9" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+          <td class="citation">Dol, M., Reed, M. &amp; Ferro, M.A. (2022) 'Internalizing–Externalizing Comorbidity and Impaired Functioning'. <em>Children</em>, 9(10), p. 1547.</td>
+          <td><span class="badge t4">T4 Obs.</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2022</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.3390/children9101547" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr style="background:#fff8f0">
+          <td>14</td>
+          <td class="citation">Donaldson, C. et al. (2025) 'Trajectories of mental health across the primary to secondary school transition'. <em>JCPP Advances</em>, 5(1), p. e12244.</td>
+          <td><span class="badge t5">T5 Long.</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2025</td>
+          <td><span class="orphan">ORPHAN → delete</span></td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1002/jcv2.12244" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+          <td class="citation">Felitti, V.J. et al. (1998) 'Relationship of Childhood Abuse and Household Dysfunction to Leading Causes of Death'. <em>Am J Preventive Medicine</em>, 14(4), pp. 245–258.</td>
+          <td><span class="badge t6">T6 Landmark</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>1998</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/S0749-3797(98)00017-8" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+          <td class="citation">Gajwani, R. &amp; Minnis, H. (2023) 'Double jeopardy: neurodevelopmental conditions and ACEs'. <em>European Child &amp; Adolescent Psychiatry</em>, 32(1), pp. 1–4.</td>
+          <td><span class="badge t2">T2 Editorial</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2023</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1007/s00787-022-02081-9" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+          <td class="citation">Garner, A. &amp; Yogman, M. (2021) 'Preventing Childhood Toxic Stress: Partnering With Families and Communities'. <em>Pediatrics</em>, 148(2), p. e2021052582.</td>
+          <td><span class="badge t6">T6 Guideline</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2021</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1542/peds.2021-052582" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+          <td class="citation">Glover, V. (2015) 'Prenatal Stress and Its Effects on the Fetus and the Child', in Antonelli, M.C. (ed.) <em>Perinatal Programming of Neurodevelopment</em>. New York: Springer, pp. 269–283.</td>
+          <td><span class="badge t3">T3 Chapter</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2015</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1007/978-1-4939-1372-5_13" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td class="citation">Granqvist, P., Sroufe, L.A., Dozier, M. et al. (2017) 'Disorganized attachment in infancy: a review'. <em>Attachment &amp; Human Development</em>, 19(6), pp. 534–558.</td>
+          <td><span class="badge t6">T6 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2017</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1080/14616734.2017.1354040" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td class="citation">Lee, V. &amp; Hoaken, P.N.S. (2007) 'Cognition, Emotion, and Neurobiological Development: Mediating Maltreatment and Aggression'. <em>Child Maltreatment</em>, 12(3), pp. 281–298.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2007</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1177/1077559507303778" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+          <td class="citation">Lieberman, M.D. et al. (2011) 'Subjective responses to emotional stimuli during labeling, reappraisal, and distraction'. <em>Emotion</em>, 11(3), pp. 468–480.</td>
+          <td><span class="badge t5">T5 Exp.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2011</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1037/a0023503" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+          <td class="citation">Link, B.G. &amp; Phelan, J. (1995) 'Social Conditions As Fundamental Causes of Disease'. <em>J Health and Social Behavior</em>, 35, p. 80.</td>
+          <td><span class="badge t3">T3 Theory</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">1995</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.2307/2626958" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>23</td>
+          <td class="citation">Lund, J.I. et al. (2020) 'ACEs and Executive Function Difficulties in Children: A Systematic Review'. <em>Child Abuse &amp; Neglect</em>, 106, p. 104485.</td>
+          <td><span class="badge t7">T7 SR</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2020</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/j.chiabu.2020.104485" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>24</td>
+          <td class="citation">Macneil, C.A. et al. (2012) 'Is diagnosis enough to guide interventions in mental health? Using case formulation'. <em>BMC Medicine</em>, 10(1), p. 111.</td>
+          <td><span class="badge t3">T3 Commentary</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2012</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1186/1741-7015-10-111" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>25</td>
+          <td class="citation">Main, M. &amp; Hesse, E. (1990) 'Parents' unresolved traumatic experiences are related to infant disorganized attachment', in Greenberg et al. (eds.) <em>Attachment in the Preschool Years</em>. Chicago: University of Chicago Press, pp. 161–182.</td>
+          <td><span class="badge t6">T6 Landmark</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>1990</td>
+          <td class="cited">—</td>
+          <td class="links">—</td>
+        </tr>
+
+        <tr>
+          <td>26</td>
+          <td class="citation">Masten, A.S. (2001) 'Ordinary magic: Resilience processes in development'. <em>American Psychologist</em>, 56(3), pp. 227–238.</td>
+          <td><span class="badge t6">T6 Landmark</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2001</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1037/0003-066X.56.3.227" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>27</td>
+          <td class="citation">McCrory, E.J. &amp; Viding, E. (2015) 'The theory of latent vulnerability'. <em>Development and Psychopathology</em>, 27(2), pp. 493–505.</td>
+          <td><span class="badge t3">T3 Theory</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2015</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1017/S0954579415000115" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>28</td>
+          <td class="citation">McLaughlin, K.A., Weissman, D. &amp; Bitrán, D. (2019) 'Childhood Adversity and Neural Development: A Systematic Review'. <em>Annual Review of Dev Psychology</em>, 1(1), pp. 277–312.</td>
+          <td><span class="badge t7">T7 SR</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2019</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1146/annurev-devpsych-121318-084950" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>29</td>
+          <td class="citation">Narayan, A.J., Lieberman, A.F. &amp; Masten, A.S. (2021) 'Intergenerational transmission and prevention of ACEs'. <em>Clinical Psychology Review</em>, 85, p. 101997.</td>
+          <td><span class="badge t6">T6 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2021</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/j.cpr.2021.101997" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>30</td>
+          <td class="citation">Poulain, T., Vogel, M. &amp; Kiess, W. (2020) 'Review on the role of socioeconomic status in child health and development'. <em>Current Opinion in Pediatrics</em>, 32(2), pp. 308–314.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2020</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1097/MOP.0000000000000876" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>31</td>
+          <td class="citation">Prado, E.L. &amp; Dewey, K.G. (2014) 'Nutrition and brain development in early life'. <em>Nutrition Reviews</em>, 72(4), pp. 267–284.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2014</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1111/nure.12102" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>32</td>
+          <td class="citation">Cruz, D., Lichten, M., Berg, K. &amp; George, P. (2022) 'Developmental trauma: Conceptual framework, associated risks and comorbidities, and evaluation and treatment'. <em>Frontiers in Psychiatry</em>, 13, p. 800687.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2022</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.3389/fpsyt.2022.800687" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>33</td>
+          <td class="citation">Reiss, F. et al. (2019) <em>Socioeconomic status, stressful life situations and mental health problems</em>. Berlin: Robert Koch-Institut.</td>
+          <td><span class="badge t6">T6 Cohort</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2019</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.25646/6125" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>34</td>
+          <td class="citation">Roos, L.E. et al. (2020) 'Acute stress impairs children's sustained attention'. <em>Developmental Psychobiology</em>, 62(4), pp. 532–543.</td>
+          <td><span class="badge t5">T5 Exp.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2020</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1002/dev.21915" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>35</td>
+          <td class="citation">Shonkoff, J.P. &amp; National Research Council (2001) <em>From neurons to neighborhoods</em>. Washington, DC: National Academy Press.</td>
+          <td><span class="badge t6">T6 Report</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2001</td>
+          <td class="cited">—</td>
+          <td class="links">—</td>
+        </tr>
+
+        <tr>
+          <td>36</td>
+          <td class="citation">SIGN (2019) <em>Children and young people exposed prenatally to alcohol (SIGN 156)</em>. Edinburgh: SIGN.</td>
+          <td><span class="badge t5">T5 Guideline</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2019</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="url" href="https://www.sign.ac.uk/our-guidelines/children-and-young-people-exposed-prenatally-to-alcohol/" target="_blank">URL</a></td>
+        </tr>
+
+        <tr>
+          <td>37</td>
+          <td class="citation">Tadanki, D. et al. (2025) 'Comprehensive Review of the Impact of Maternal Stress on Fetal Development'. <em>Pediatric Discovery</em>, 3(3), p. e70004.</td>
+          <td><span class="badge t4">T4 Review</span></td>
+          <td><span class="badge open">open</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2025</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1002/pdi3.70004" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>38</td>
+          <td class="citation">Tangney, J.P. et al. (1992) 'Shamed into anger? The relation of shame and guilt to anger and self-reported aggression'. <em>J Personality and Social Psychology</em>, 62(4), pp. 669–675.</td>
+          <td><span class="badge t4">T4 Exp.</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">1992</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1037/0022-3514.62.4.669" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>39</td>
+          <td class="citation">Teicher, M.H. et al. (2003) 'The neurobiological consequences of early stress and childhood maltreatment'. <em>Neuroscience &amp; Biobehavioral Reviews</em>, 27(1–2), pp. 33–44.</td>
+          <td><span class="badge t6">T6 Landmark</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2003</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/S0149-7634(03)00007-1" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr style="background:#fff8f0">
+          <td>40</td>
+          <td class="citation">Ungar, M. &amp; Theron, L. (2020) 'Resilience and mental health: how multisystemic processes contribute to positive outcomes'. <em>The Lancet Psychiatry</em>, 7(5), pp. 441–448.</td>
+          <td><span class="badge t5">T5 Review</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2020</td>
+          <td><span class="orphan">optional — cite S5 or delete</span></td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/S2215-0366(19)30434-1" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>41</td>
+          <td class="citation">Van der Kolk, B.A. (2015) <em>The body keeps the score</em>. New York: Penguin Books.</td>
+          <td><span class="badge t2">T2 Book</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-no">✗</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">2015</span></td>
+          <td class="cited">—</td>
+          <td class="links">—</td>
+        </tr>
+
+        <tr>
+          <td>42</td>
+          <td class="citation">Weerasekera, P. (1993) 'Formulation: A Multiperspective Model'. <em>The Canadian Journal of Psychiatry</em>, 38(5), pp. 351–358.</td>
+          <td><span class="badge t3">T3 Theory</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td><span class="year-flag">1993</span></td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1177/070674379303800513" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>43</td>
+          <td class="citation">Wilhelmsen, T. et al. (2023) 'Children's mental health: The role of multiple risks and child care quality'. <em>Journal of Applied Developmental Psychology</em>, 86, p. 101546.</td>
+          <td><span class="badge t5">T5 Cohort</span></td>
+          <td><span class="badge open">open access</span></td>
+          <td class="pdf-yes">✓</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2023</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1016/j.appdev.2023.101546" target="_blank">DOI</a></td>
+        </tr>
+
+        <tr>
+          <td>44</td>
+          <td class="citation">Zhang, L. et al. (2023) 'Intergenerational Transmission of Parental ACEs: A Scoping Review'. <em>Trauma, Violence, &amp; Abuse</em>, 24(5), pp. 3251–3264.</td>
+          <td><span class="badge t6">T6 Scoping SR</span></td>
+          <td><span class="badge paywalled">paywalled</span></td>
+          <td class="pdf-abstract">! abst.</td>
+          <td><span class="badge wiki-yes">ingested</span></td>
+          <td>2023</td>
+          <td class="cited">—</td>
+          <td class="links"><a class="doi" href="https://doi.org/10.1177/15248380221126186" target="_blank">DOI</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LOW-TIER EVIDENCE CRITIQUE -->
+  <div class="tier-section" style="border-left:4px solid #cc3300;margin-bottom:24px;">
+    <h2 style="color:#cc3300;">Tier 2–3 Sources — Why These Carry Limited Evidentiary Weight</h2>
+    <p style="font-size:11.5px;color:#555;margin-bottom:14px;">11 of 43 sources (26%) are Tier 2 or 3. These are appropriate for <strong>framing and contextualising</strong> arguments but must <strong>never</strong> serve as primary evidence for empirical claims. The rule: every T2–T3 citation needs a named T4+ empirical partner in the same or adjacent sentence. If you cannot name it, the T3 source is carrying weight it cannot bear.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:11.5px;margin-bottom:16px;">
+      <thead>
+        <tr>
+          <th style="background:#cc3300;color:white;padding:8px 10px;text-align:left;width:150px;">Source</th>
+          <th style="background:#cc3300;color:white;padding:8px 10px;text-align:left;width:130px;">Type</th>
+          <th style="background:#cc3300;color:white;padding:8px 10px;text-align:left;">Why it is weaker evidence</th>
+          <th style="background:#cc3300;color:white;padding:8px 10px;text-align:left;width:220px;">How to use it correctly</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#fff0ec;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;font-weight:600;">Gajwani &amp; Minnis (2023)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;"><span class="badge t2">T2 Editorial</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;">4-page opinion piece; no original data; expert commentary only. Peer review lighter than for research articles. Cannot carry evidentiary weight for any statistical or clinical claim.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;">Use to introduce a clinical concern or frame the dual-jeopardy concept. Pair with McLaughlin (2019) T7 or Lund (2020) T7 for empirical backing.</td>
+        </tr>
+        <tr style="background:#fff0ec;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;font-weight:600;">Van der Kolk (2015)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;"><span class="badge t2">T2 Prac. Book</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;">Practitioner trade book; mixes peer-reviewed evidence with clinical narrative and anecdote; not peer-reviewed as primary research. Author selects evidence to fit a clinical argument.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0d0c8;">Acceptable for naming widely-known clinical concepts (Window of Tolerance, somatic trauma). Replace with Teicher (2003) T6 or McCrory &amp; Viding (2015) T3 + Teicher for neurobiological claims.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Bowlby (1997)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory Book</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Foundational theoretical treatise (original 1969); no primary empirical data; no systematic search; author's interpretive synthesis of ethology and clinical observation. Cannot validate any empirical claim independently.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Use only to introduce attachment theory and Internal Working Model concept. Pair with Granqvist et al. (2017) T6 for empirical attachment evidence.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Bronfenbrenner (2009)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory Book</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Ecological systems framework (original 1979); no primary data; conceptual architecture only; does not address neurobiological mechanisms. Reprint of a 45-year-old text; bioecological extensions (Bronfenbrenner &amp; Morris 2006) are not captured here.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Use to introduce and name the ecological systems framework. Every ecological risk claim must cite a T4+ empirical source (e.g. Poulain 2020 for SES, Garner &amp; Yogman 2021 for community/family factors).</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Weerasekera (1993)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Descriptive formulation model (4Ps); no empirical testing reported; describes a clinical tool rather than research findings. 1993 — no update of this specific paper since publication.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Cite only to name and attribute the 4Ps formulation structure. Do not use to support any claim about outcomes or effectiveness of formulation.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">McCrory &amp; Viding (2015)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Theoretical framework paper proposing the latent vulnerability model; no new primary data; framework awaits full empirical testing. Valuable conceptual contribution but is not empirical evidence itself.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Cite to introduce the latent vulnerability framework and sensitised neural systems concept. Pair with McLaughlin (2019) T7 SR for neurobiological evidence of adversity effects.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Link &amp; Phelan (1995)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Sociological theory paper (fundamental cause theory); 1995; theoretical proposition rather than primary empirical test. Discipline of sociology, not developmental psychology — transferability must be stated, not assumed.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Use only to name and frame structural/SES mechanisms as fundamental causes. Pair with Reiss et al. (2019) T6 or Poulain et al. (2020) T4 for empirical SES–mental health evidence.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Corrigan et al. (2011)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Theory</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Theory/narrative review proposing an autonomic dysregulation model; limited original data; interpretive synthesis. Window of Tolerance as a concept predates this paper and derives from Siegel — proper attribution requires care.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Cite for the autonomic dysregulation framing of trauma response. Pair with Teicher et al. (2003) T6 Landmark for neurobiological evidence of HPA and stress-response dysregulation.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Glover (2015)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Chapter</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Book chapter; author-selected literature review; no systematic search protocol; editorial volume format. Evidence selection reflects author's interpretive lens and the volume's framing, not an independent synthesis.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Use to introduce prenatal stress mechanisms and HPA programming concepts. Pair with Tadanki et al. (2025) T4 review or Arpino et al. (2010) for broader evidence.</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Macneil et al. (2012)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Commentary</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Scholarly commentary in BMC Medicine; no primary data; argues for case formulation over diagnosis through selective literature review. Author position paper — not an evidence synthesis of formulation outcomes.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Appropriate to cite as justification for using a formulation approach. Do not use to claim that formulation improves clinical outcomes (no data in this paper supports that).</td>
+        </tr>
+        <tr style="background:#fff8f0;">
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;font-weight:600;">Achenbach &amp; Rescorla (2001)</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;"><span class="badge t3">T3 Manual</span></td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Assessment instrument manual; documents tool development and psychometric norms; not a primary research study. Appropriate for methodological citation only — does not report findings about child development or intervention outcomes.</td>
+          <td style="padding:7px 10px;border-bottom:1px solid #f0e8d8;">Cite only when referencing the CBCL/ASEBA as an assessment tool: "measured using the CBCL (Achenbach &amp; Rescorla, 2001)." Do not use to support substantive claims about child mental health patterns.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert warn" style="margin-bottom:0;">
+      <div class="alert-icon">⚠</div>
+      <div><strong>Audit test for T2–T3 citations:</strong> For each T2–T3 source in the draft, you must be able to complete this sentence: "I cite [source] to <em>frame/name</em> [concept]; the empirical evidence for this claim comes from [T4+ source] cited in the same paragraph." If you cannot name the T4+ partner, the T2–T3 citation is doing evidential work it is not qualified to do.</div>
+    </div>
+  </div>
+
+  <p style="font-size:10px;color:#999;text-align:center;padding-bottom:20px;">Generated by Jackie (Evidence Curator) · Essay Fabrik · Module 4 Part A · 2026-06-04 · Verification: abstract-only / metadata-only — run reference-audit for full paraphrase verification</p>
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-04 19:46 &middot; Essay Fabrik</div></body>
+</html>

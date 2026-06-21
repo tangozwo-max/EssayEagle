@@ -1,0 +1,82 @@
+[
+    {
+        "index":  1,
+        "title":  "Cover Sheet",
+        "notes":  ""
+    },
+    {
+        "index":  2,
+        "title":  "Case “Tommy”:  A Developmental Formulation",
+        "notes":  "Good day. \nThis presentation is about a developmental formulation for the case of „Tommy“ — exploring how adverse childhood experiences may have shaped his development, behaviour, and wellbeing."
+    },
+    {
+        "index":  3,
+        "title":  "Tommy: Presenting issues and formulation",
+        "notes":  "Tommy\u0027s presenting issues fall into two categories. \nThe first is what\u0027s visible: the externalising behaviours his teachers see: aggression, impulsivity, poor frustration tolerance, and difficulty interacting with other children. \nAnd the hidden, internalising experiences : feeling unsure, scared, ashamed, overwhelmed, and struggling to concentrate.\n\nThese two layers are connected. Evidence suggests that externalising behaviour is often rooted in internalising distress — for example, a child who feels disrespected or ashamed may respond outwardly with aggression. The visible act is the tip of an inward state.\nThis matters because when internalising and externalising difficulties coexist, the evidence points to compromised emotional wellbeing and greater psychiatric vulnerability over time — a more complex and impairing presentation than either pattern alone.\nSo my thesis is this: Tommy\u0027s behaviour is not random, and it is not simply misconduct. It appears to follow identifiable developmental trajectories — better understood as adapted survival strategies in response to long-term adversity.\n\nTo read these as trajectories rather than isolated symptoms, „formulation approach“ is used, rather than diagnosis. A diagnosis labels what the problem is; a formulation explains how it developed — and in a child, it avoids mistaking an adaptive response to adversity for an inherent disorder.\nThe five-P framework gives that explanation its structure: presenting, predisposing, precipitating, perpetuating, and protective factors. \nThroughout, this is a probabilistic reading — increased risk, not certainty."
+    },
+    {
+        "index":  4,
+        "title":  "Predisposing factors",
+        "notes":  "Predisposing factors are anything that raised Tommy\u0027s baseline vulnerability to developing the presenting difficulties or to a range of later developmental, mental health, and physical health difficulties. \n\nTommy\u0027s history contains a dense cluster of such factors.\n A well-established way to characterise and quantify the social-environmental ones is the adverse childhood experiences framework\nBriefly, ACEs are highly stressful, potentially traumatic events occurring before age eighteen.\n The evidence points to a dose-response pattern: risk accumulates as exposures add up, with four or more ACEs associated with significantly higher risk of chronic health problems. \nCompared with children with no ACEs, four or more is associated with roughly a four-fold increase in the odds of depression and anxiety in later life, and 10fold higher risk of problematic substance use. \nTwo limitations are worth noting — the framework doesn\u0027t capture biological risks, and it doesn\u0027t account for the intensity or duration of each exposure.\n\nThe predisposing risk is best understood within an ecological framework — nested layers from the individual outward.\n\nAt the individual level, his risk begins before birth: prenatal substance exposure, high maternal stress, and poor nutrition, followed by premature birth and a neonatal intensive care stay — biological vulnerabilities that sit alongside, rather than within, the ACE count.\n\nAt the family level, he experienced abuse, emotional and physical neglect, maternal substance use and low mood, and a deeply unstable home — more than six house moves and repeated changes in caregivers.\n\nAt the community level, low socioeconomic status, high crime, and limited support add environmental risk, compounded by systemic barriers — including Mary\u0027s reluctance to engage with services she felt judged by.\n\nAnd across the life cycle, this stress occurred during critical windows of neuroplasticity, alongside evidence of intergenerational trauma, with risks cumulating over time.\n\nWith an estimated count of five to eight, Tommy sits firmly in that highest-risk group — though, crucially, these are population-level odds, not a prediction about Tommy as an individual.\"\n\n\nAdverse childhood experiences are highly stressful, potentially traumatic experiences occurring before age 18\nACEs, especially child maltreatment, greatly increase the risk of a wide range of poor health and psychosocial outcomes in a dose–response relationship: the more adversity an individual has experienced in early childhood, the higher the risk of negative health outcomes in adulthood\nThe Adverse Childhood Experiences (ACE) Study established a clear \"dose-response\" relationship: as the number of ACEs increases, so does the risk of severe health and social dysfunction. Individuals with four or more ACEs are significantly more likely to experience chronic illness, mental health disorders, and reduced life expectancy compared to those with an ACE score of zero (Felitti et al., 1998). Tommy, with an estimated score of 6+, falls into the highest clinical risk category.\n\t\nIndividuals with four or more ACEs are at substantially higher risk of chronic physical and mental health problems, with a dose-response pattern.\nIndividuals with 4+ ACEs are at significantly higher risk for chronic health conditions (e.g., heart disease), mental health disorders (e.g., depression), and impaired brain development.\n\nLIMITATION: The ACE score measures breadth of adversity, not severity, duration, timing, or resilience factors. This is one of the major criticisms of the ACE framework.\n\nPredisposing factors should be understood within an ecological system, not only at the level of the individual child. \n\n\nPrenatal: Exposure to substances, high maternal stress, low nutrition\nPostnatal: premature birth, respiratory distress, NICU stay\nChildhood: inconsistent healthcare\n\n\nDomestic Adversity: Verbally abusive mother\nInconsistent Care: Volatile (love/aggression) or emotional unavailability.\nInconsistent environment: house moves (6+), caretaker changes\n\nEconomic Shift: Low SES, high crime, substance use, lack of protective community\nYour spoken explanation can clarify that low socioeconomic status, crime exposure, and weak support structures contribute to risk environmentally, while the core slide evidence remains anchored in ACE and formulation literature.\nSystemic Barriers: Lack of supportive childcare; Mary’s fear of being judged by medical staff.\n\n\nTiming: Chronic stress occurring during the most critical windows of neuroplasticity\nIntergenerational: Mary’s history of 15 foster placements and neglectful/abusive carers + Legacy: Mary’s parents’ own history of traumatic childhoods.\nIntergenerational trauma : Mary’s history of 15 foster placements and neglectful/abusive carers + Legacy: Mary’s parents’ own history of traumatic childhoods.\nMary\u0027s parents were \"very young\" Both had experienced \"traumatic childhoods\" Mary entered the social care system She experienced 15 foster placements Some carers were neglectful Some were abusive\nBehavioural / environmental transmission, Attachment transmission, HPA biological effects\n\nRisks cumulating over time\n\n\nTommy appears to tick multiple ACE-related categories in the vignette, which indicates high predisposing risk.\nACE categories: Prenatal exposure, domestic violence, physical/verbal abuse, neglect, substance use in the home, and housing instability \nThese adversities likely interact and compound, with each adversity eroding the relational and developmental conditions that would otherwise buffer risk.\n\nThese ACEs don\u0027t just stack up — they interact. Each adversity further eroded the relational conditions Tommy needed for typical development. This compounding effect is exactly what Felitti\u0027s graded-relationship finding describes.\""
+    },
+    {
+        "index":  5,
+        "title":  "Possible mechanism on developmental Impact",
+        "notes":  "These predisposing factors act through three interacting domains — biological, cognitive and relational \n\nBiologically, it starts with the HPA axis — the body\u0027s central stress-response system. Normally it releases cortisol to meet a threat, then switches off. But under chronic, unbuffered stress — and even prenatally, as maternal cortisol crosses the placenta — it is repeatedly triggered and its feedback control breaks down. The threat threshold drops, the amygdala stays sensitised, and Tommy is left in persistent hypervigilance — primed for danger even when he is safe. This is latent vulnerability: not damage, but a brain calibrating itself to expect threat, carried forward at a cost.\n\nRunning alongside is a more direct neurodevelopmental risk — prenatal alcohol, prematurity and poor nutrition can each impair brain development independently.\nFetal Alcohol Spectrum Disorders (FASD) refers to a group of irreversible physical and psychological birth defects that can occur in children whose mothers\n\nCognitively, that hyper-reactive threat system and a stress-weakened prefrontal \"brake\" mean his reactions fire faster than he can control — the impulsivity, poor attention and frustration you can see.\n\nRelationally, inconsistent, frightening care underlies disorganised attachment — and with healthy serve-and-return missing, he builds a model of adults as unpredictable and safety as fragile. He then misreads neutral cues as hostile, explaining the aggression when he feels disrespected.\nAnd these domains don\u0027t act alone — they reinforce one another, which is exactly where I\u0027ll turn next.\n\nTaken together, these biological, cognitive and relational changes all fit one idea of latent vulnerability. Tommy\u0027s brain isn\u0027t broken, it has calibrated itself to the threatening world it expected. The cost is that this is carried forward as hidden risk — a pattern that could continously being triggered"
+    },
+    {
+        "index":  6,
+        "title":  "Driving factors and complexity",
+        "notes":  "As Tommy\u0027s world expands, new situations become precipitating triggers — a fight at school, or simply the move from home into the classroom, with unfamiliar adults and relationships. Each new demand outpaces his capacity to cope, and the difficulties escalate.\nMeanwhile, ongoing adversity perpetuates the cycle — continued substance use, an unstable home, and his mother\u0027s fluctuating availability. And each negative relational experience reinforces the very neural patterns we just described.\nTwo further risks add complexity. With missed healthcare visits, an underlying neurodevelopmental condition — like FASD from prenatal alcohol — can be overlooked behind the adversity picture. And where ACEs and a neurodevelopmental condition co-occur, the risks multiply — a double jeopardy.\nSo the complexity compounds — but this is not the whole story."
+    },
+    {
+        "index":  7,
+        "title":  "Protective factors and Opportunity",
+        "notes":  "But Tommy\u0027s story isn\u0027t one of risk alone — real protective factors are already buffering it. His mother, at her best, offers warmth and a partial relational repair. Calm, predictable teachers give him felt safety, gradually widening his window of tolerance. And with a learning support assistant — an LSA — he learns to name his emotions, which itself calms the threat response and replaces hitting with words. Free school meals secure the physiological baseline all of this depends on.\nThese open genuine opportunity. As Masten\u0027s research shows, ACEs don\u0027t affect every child the same way — resilience is \"ordinary magic,\" built from consistent, caring adults rather than exceptional traits. And because the adolescent brain remains highly plastic, Tommy\u0027s trajectory can still be shifted.\nIn synthesis: Tommy\u0027s presentation is best understood as the cumulative result of interacting prenatal, attachment, trauma and socioeconomic risks — but partially buffered by protective relationships, with real opportunity for repair, especially in his environment. Thank you."
+    },
+    {
+        "index":  8,
+        "title":  "References (1/3)",
+        "notes":  ""
+    },
+    {
+        "index":  9,
+        "title":  "References (2/3)",
+        "notes":  ""
+    },
+    {
+        "index":  10,
+        "title":  "References (3/3)",
+        "notes":  ""
+    },
+    {
+        "index":  11,
+        "title":  "End of presentation",
+        "notes":  ""
+    },
+    {
+        "index":  12,
+        "title":  "References (2/3)",
+        "notes":  ""
+    },
+    {
+        "index":  13,
+        "title":  "References (3/4)",
+        "notes":  ""
+    },
+    {
+        "index":  14,
+        "title":  "Assignment",
+        "notes":  ""
+    },
+    {
+        "index":  15,
+        "title":  "Vignette",
+        "notes":  ""
+    },
+    {
+        "index":  16,
+        "title":  "",
+        "notes":  ""
+    }
+]

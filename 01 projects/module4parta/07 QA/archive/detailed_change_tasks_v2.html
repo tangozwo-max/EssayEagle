@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Change Tasks v2 — tommy5.pdf — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.6; padding: 32px 20px 80px; font-size: 14.5px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+
+  /* ───── HEADER ───── */
+  .report-header { background: linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%); color: white; border-radius: 10px; padding: 32px 36px 26px; margin-bottom: 24px; }
+  .filename-badge { display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4); padding: 5px 14px; border-radius: 18px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; }
+  .report-header h1 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+  .report-header .subtitle { font-size: 1rem; opacity: 0.78; margin-bottom: 14px; }
+  .report-meta { font-size: 0.82rem; opacity: 0.85; display: flex; gap: 18px; flex-wrap: wrap; }
+
+  /* ───── NAV ───── */
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.82rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #0d2240; color: #f39c12; }
+
+  /* ───── SLIDE MAP ───── */
+  .slide-map { background: white; border-radius: 8px; overflow: hidden; margin-bottom: 24px; border: 1px solid #dde3ee; }
+  .slide-map-header { background: #0d2240; color: white; padding: 10px 18px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  table.map { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.map th { background: #f0f3f9; padding: 8px 12px; text-align: left; font-size: 0.72rem; text-transform: uppercase; color: #6b7a99; }
+  table.map td { padding: 7px 12px; border-bottom: 1px solid #f0f3f9; }
+  table.map td:nth-child(1), table.map td:nth-child(2) { font-weight: 700; color: #0d2240; }
+
+  /* ───── HOW-TO INTRO ───── */
+  .intro-card { background: white; border-radius: 10px; padding: 22px 26px; margin-bottom: 24px; border: 1px solid #dde3ee; box-shadow: 0 1px 4px rgba(0,0,0,0.04); font-size: 0.9rem; }
+  .intro-card h2 { font-size: 1rem; color: #0d2240; margin-bottom: 10px; }
+  .intro-card strong { color: #0d2240; }
+  .intro-card ul { margin: 8px 0 0 22px; }
+  .intro-card li { margin-bottom: 5px; }
+
+  /* ───── CHAPTER ───── */
+  .chapter { margin-bottom: 36px; border-radius: 10px; overflow: hidden; border: 1px solid #dde3ee; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+  .chapter-header { color: white; padding: 22px 28px 18px; }
+  .chapter-header.s1 { background: linear-gradient(90deg, #7b2d8b, #9c3fbf); }
+  .chapter-header.s2 { background: linear-gradient(90deg, #1565c0, #1e88e5); }
+  .chapter-header.s3 { background: linear-gradient(90deg, #ad1457, #e91e8c); }
+  .chapter-header.s4 { background: linear-gradient(90deg, #bf360c, #f4511e); }
+  .chapter-header.s5 { background: linear-gradient(90deg, #2e7d32, #43a047); }
+  .chapter-header.refs { background: linear-gradient(90deg, #4a148c, #6a1b9a); }
+  .chapter-header.trim { background: linear-gradient(90deg, #e65100, #ff8f00); }
+  .chapter-title { font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; }
+  .chapter-coord { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chapter-coord span { background: rgba(255,255,255,0.22); padding: 4px 11px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; }
+  .chapter-summary-block { background: rgba(255,255,255,0.13); border-left: 3px solid rgba(255,255,255,0.55); border-radius: 0 6px 6px 0; padding: 10px 14px; margin-top: 10px; font-size: 0.86rem; line-height: 1.55; }
+  .chapter-summary-block .sm-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.78; margin-bottom: 4px; }
+  .points-pill { background: rgba(255,255,255,0.95); color: #0d2240; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 0.85rem; display: inline-block; margin-top: 8px; }
+  .points-pill .pts-num { color: #2e7d32; }
+  .points-pill .pts-detail { font-weight: 600; font-size: 0.78rem; color: #555; margin-left: 6px; }
+
+  /* ───── TASK CARD ───── */
+  .tasks { background: white; }
+  .task { padding: 18px 26px; border-bottom: 1px solid #f0f3f9; }
+  .task:last-child { border-bottom: none; }
+  .task-top { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+  .task-id { background: #0d2240; color: white; padding: 4px 11px; border-radius: 5px; font-size: 0.75rem; font-weight: 800; flex-shrink: 0; font-family: 'Courier New', monospace; }
+  .task-pri { padding: 4px 11px; border-radius: 5px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; white-space: nowrap; }
+  .pri-crit { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; }
+  .pri-high { background: #ffe0b2; color: #bf360c; border: 1px solid #ffb74d; }
+  .pri-med  { background: #fff3e0; color: #ef6c00; border: 1px solid #ffcc80; }
+  .pri-notes { background: #e0f7fa; color: #006064; border: 1px solid #80deea; }
+  .pri-trim { background: #fff9c4; color: #f57f17; border: 1px solid #ffe082; }
+  .pri-spell { background: #f3e5f5; color: #6a1b9a; border: 1px solid #ce93d8; }
+
+  .task-title { font-size: 0.97rem; font-weight: 700; color: #1a1f2e; flex: 1; }
+
+  /* DETAIL BOXES */
+  .d-box { padding: 11px 14px; border-radius: 6px; margin: 8px 0; font-size: 0.86rem; line-height: 1.55; }
+  .d-issue { background: #fff0f0; border-left: 3px solid #f5c6cb; }
+  .d-fix { background: #f1f8e9; border-left: 3px solid #a8dfc0; }
+  .d-cite { background: #f8f5fd; border-left: 3px solid #ce93d8; font-family: 'Courier New', monospace; font-size: 0.82rem; }
+  .d-notes { background: #e0f7fa; border-left: 3px solid #80deea; }
+  .d-warn { background: #fff8e1; border-left: 3px solid #ffd54f; }
+  .d-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 5px; display: block; }
+  .d-issue .d-label { color: #c0392b; }
+  .d-fix .d-label { color: #1a7a45; }
+  .d-cite .d-label { color: #4a148c; }
+  .d-notes .d-label { color: #006064; }
+  .d-warn .d-label { color: #ef6c00; }
+
+  /* DIFF BLOCK */
+  .diff { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+  .diff > div { padding: 10px 14px; border-radius: 5px; font-size: 0.85rem; }
+  .diff-old { background: #fff0f0; border: 1px solid #f5c6cb; }
+  .diff-new { background: #f0fdf4; border: 1px solid #a8dfc0; }
+  .diff-old .d-label { color: #c0392b; }
+  .diff-new .d-label { color: #1a7a45; }
+  .diff-text { font-style: italic; line-height: 1.5; }
+
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+
+  /* ───── TRIM CHAPTER ───── */
+  .trim-card { padding: 16px 24px; border-bottom: 1px solid #f0f3f9; }
+  .trim-card:last-child { border-bottom: none; }
+  .trim-id { font-size: 0.78rem; font-weight: 800; color: #e65100; margin-bottom: 6px; text-transform: uppercase; }
+  .trim-remove { background: #fff3e0; border-left: 3px solid #ff8f00; padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 6px 0; font-size: 0.88rem; }
+  .trim-keep { background: #f1f8e9; border-left: 3px solid #66bb6a; padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 6px 0; font-size: 0.85rem; color: #1b5e20; }
+
+  /* ───── FOOTER ───── */
+  .report-footer { text-align: center; font-size: 0.78rem; color: #888; margin-top: 36px; padding: 16px 0; border-top: 1px solid #dde3ee; }
+  .anchor { scroll-margin-top: 20px; }
+
+  /* SUMMARY TABLE */
+  table.summary-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin-top: 6px; }
+  table.summary-table th { background: #f0f3f9; padding: 8px 12px; text-align: left; font-size: 0.72rem; text-transform: uppercase; color: #6b7a99; }
+  table.summary-table td { padding: 8px 12px; border-bottom: 1px solid #f0f3f9; vertical-align: top; }
+  .crit-cell { background: #ffebee; color: #c62828; font-weight: 800; }
+  .high-cell { background: #fff3e0; color: #bf360c; font-weight: 700; }
+  .med-cell  { background: #fff8e1; color: #ef6c00; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ──────── HEADER ──────── -->
+  <div class="report-header">
+    <div class="filename-badge">📄 tommy5.pdf</div>
+    <h1>Detailed Change Tasks v2</h1>
+    <p class="subtitle">Slide-by-slide. Each chapter starts with a summary and possible points gained.</p>
+    <div class="report-meta">
+      <span>Student: 5779906</span>
+      <span>Module 4 Part A</span>
+      <span>Date: 30 May 2026</span>
+      <span>20 tasks across 5 slides + refs + trim</span>
+    </div>
+  </div>
+
+  <!-- ──────── NAV ──────── -->
+  <div class="nav">
+    <a href="#intro">Intro</a>
+    <a href="#map">Slide map</a>
+    <a href="#s1">Slide 1</a>
+    <a href="#s2">Slide 2</a>
+    <a href="#s3">Slide 3</a>
+    <a href="#s4">Slide 4</a>
+    <a href="#s5">Slide 5</a>
+    <a href="#refs">References</a>
+    <a href="#trim">Script trim</a>
+  </div>
+
+  <!-- ──────── INTRO ──────── -->
+  <div id="intro" class="intro-card anchor">
+    <h2>Three principles applied throughout</h2>
+    <ul>
+      <li><strong>Conservative on text.</strong> No new bullets proposed unless they replace something. Deletions only flagged where the claim is wrong, redundant, or one of the script-trim candidates needed to hit 10 minutes.</li>
+      <li><strong>Slide-by-slide, not category-by-category.</strong> All Slide 1 tasks under the Slide 1 chapter (citation, spelling, notes-move, trim — together). Same for S2–S5.</li>
+      <li><strong>Every change has a copy-paste ready citation</strong> if a source is needed. Full Harvard bibliography and in-text format are in <code>reference_check.html</code> — referenced by task ID below.</li>
+    </ul>
+    <p style="margin-top:12px;"><strong>Points-gained estimates</strong> are tied to the 200-pt rubric (Knowledge 60 · Analysis/Evaluation 100 · Communication 40). Numbers are realistic, not aspirational.</p>
+  </div>
+
+  <!-- ──────── SLIDE MAP ──────── -->
+  <div id="map" class="slide-map anchor">
+    <div class="slide-map-header">Slide content map — verify nothing is mixed up</div>
+    <table class="map">
+      <thead><tr><th>PowerPoint Slide</th><th>PDF page</th><th>Title</th></tr></thead>
+      <tbody>
+        <tr><td>Title</td><td>p.2</td><td>Case "Tommy": A Developmental Formulation</td></tr>
+        <tr><td>Slide 1</td><td>p.3</td><td>Tommy: Presenting issues and formulation</td></tr>
+        <tr><td>Slide 2</td><td>p.4</td><td>Predisposing factors</td></tr>
+        <tr><td>Slide 3</td><td>p.5</td><td>Possible mechanism on developmental Impact</td></tr>
+        <tr><td>Slide 4</td><td>p.6</td><td>Risk of complexity</td></tr>
+        <tr><td>Slide 5</td><td>p.7</td><td>Protective factors and Opportunity</td></tr>
+        <tr><td>End</td><td>p.8</td><td>End of presentation</td></tr>
+        <tr><td>Refs 1/3</td><td>p.9</td><td>References (1/3) — populated</td></tr>
+        <tr><td>Refs 2/3</td><td>p.10</td><td>References (2/3) — EMPTY</td></tr>
+        <tr><td>Refs 3/4</td><td>p.11</td><td>References (3/4) — EMPTY</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ═════════════════ SLIDE 1 CHAPTER ═════════════════ -->
+  <div id="s1" class="chapter anchor">
+    <div class="chapter-header s1">
+      <div class="chapter-title">Slide 1 — Tommy: Presenting issues and formulation</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.3</span>
+        <span>🎯 PowerPoint Slide 1</span>
+        <span>3 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        Iceberg diagram + thesis + risk pathway. Structure is strong. The thesis sentence works. Two superscripts are <strong>transposed</strong> (3 and 4 between "survival strategies" and "5P framework"). Citation 1 (Achenbach 2000 — preschool manual) is the wrong manual. Fixing these three things removes the worst Jackie problems on this slide.
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+5 to +7 marks</span><span class="pts-detail">primarily Communication (referencing) and Analysis (correct attribution of formulation framework)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-S1-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S1-T1</span>
+          <span class="task-pri pri-crit">🔴 Critical</span>
+          <div class="task-title">Fix citation transposition: superscripts 3 and 4 are swapped</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          The bullet <em>"Behaviours can be viewed as survival strategies rather than misconduct<sup>3</sup>"</em> cites Bongers et al. (2004) — a paper on trajectories of externalising. Bongers does NOT propose "survival strategies."<br>
+          The bullet <em>"5P framework as main theme<sup>4</sup>"</em> cites van der Kolk (2014). Van der Kolk does NOT define the 5P model.<br>
+          Both sources <em>are</em> on the slide, just attached to the wrong claims. They're simply swapped.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — change two superscripts only, no text changes</span>
+          • "survival strategies rather than misconduct<sup>3</sup>" → "survival strategies rather than misconduct<strong><sup>4</sup></strong>" (van der Kolk 2014 = correct)<br>
+          • "5P framework as main theme<sup>4</sup>" → "5P framework as main theme<strong><sup>5</sup></strong>" (Weerasekera 1996 / Engel 1977 = correct)
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Note</span>
+          Citation 3 (Bongers) remains valid for "Long-term psychiatric vulnerability<sup>1,2,3</sup>" — leave that alone.<br>
+          Bibliographies + in-text + quotes for both van der Kolk and Weerasekera/Engel: see <code>reference_check.html</code> entries S1-5, S1-7.
+        </div>
+      </div>
+
+      <!-- V2-S1-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S1-T2</span>
+          <span class="task-pri pri-high">🟠 High</span>
+          <div class="task-title">Remove Achenbach &amp; Rescorla (2000) — preschool manual, wrong for school-age Tommy</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          Footnote 1 currently reads "(Achenbach &amp; Rescorla, 2000". The 2000 manual is the ASEBA Preschool &amp; Early Childhood Forms (ages 1.5–5). Tommy is school-age. The correct manual for the internalising/externalising taxonomy at his age is already on the slide as footnote 2 (Achenbach &amp; Rescorla, 2001).
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — delete and renumber</span>
+          1. Delete footnote 1 (Achenbach &amp; Rescorla, 2000) entirely.<br>
+          2. Renumber the remaining footnotes: old 2→new 1, old 3→new 2, old 4→new 3, old 5→new 4.<br>
+          3. Update all superscripts on slide text accordingly. <strong>This must be done after V2-S1-T1</strong>, otherwise the transposition fix uses old numbers.
+        </div>
+        <div class="d-box d-warn">
+          <span class="d-label">⚠️ Lower-risk alternative if running short on time</span>
+          If full renumbering feels risky pre-deadline: just change <code>2000</code> to <code>2001</code> in footnote 1 and remove the duplicate. Citing 2001 twice is less damaging than citing the wrong manual.
+        </div>
+      </div>
+
+      <!-- V2-S1-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S1-T3</span>
+          <span class="task-pri pri-notes">📋 Notes move</span>
+          <div class="task-title">Move "Need for integration of individual, family, and community dynamics" to notes pane</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Action</span>
+          The bullet is redundant on S1 — the Bronfenbrenner diagram on S2 makes this point visually. Move the sentence to the speaker notes pane and delete from the slide. Saves ~6 seconds of script time and reduces clutter in the Thesis + approach panel.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">📋 Suggested speaker-notes text (paste into PowerPoint Notes pane)</span>
+          <em>"Tommy's situation is not just a family story or just a community story — it's the interaction between individual, family, and community. The ecological diagram on the next slide makes this visible."</em>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ SLIDE 2 CHAPTER ═════════════════ -->
+  <div id="s2" class="chapter anchor">
+    <div class="chapter-header s2">
+      <div class="chapter-title">Slide 2 — Predisposing factors</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.4</span>
+        <span>🎯 PowerPoint Slide 2</span>
+        <span>4 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        ACE definition + Bronfenbrenner diagram + four risk-layer boxes. ACE definition is correctly cited (Felitti). <strong>Bronfenbrenner diagram is uncited</strong> — that's a marker-spotted error. "Social causation" label is jargon-y and uncited. "Critical windows of neuroplasticity" lacks a source.
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+3 to +5 marks</span><span class="pts-detail">primarily Communication (referencing the diagram) and Knowledge (curriculum link)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-S2-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S2-T1</span>
+          <span class="task-pri pri-high">🟠 High</span>
+          <div class="task-title">Add Bronfenbrenner (1979) citation to the ecological diagram</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          The concentric diagram (Individual → Micro/Meso → Macro/Exo → Chrono) is a direct visual representation of Bronfenbrenner's ecological systems theory. No citation appears in S2 footnotes. Any marker familiar with the model will see this.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix</span>
+          Add a footnote 2 to the S2 footnote bar:<br>
+          <code>2) Bronfenbrenner (1979)</code><br>
+          Attach a small <sup>2</sup> to the diagram title or the "Chrono" label.
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Harvard bibliography (for reference slide)</span>
+          Bronfenbrenner, U. (1979) <em>The Ecology of Human Development: Experiments by Nature and Design.</em> Cambridge, MA: Harvard University Press.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">More detail</span>
+          Full source quote and verification: <code>reference_check.html</code> entry S2-5.
+        </div>
+      </div>
+
+      <!-- V2-S2-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S2-T2</span>
+          <span class="task-pri pri-med">🟡 Medium</span>
+          <div class="task-title">"Social causation" — delete the label OR add citation</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          The Community risk layer ends with "→ Social causation" — a sociological term that is unexplained on the slide and reads as jargon to anyone outside health-inequalities research.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Recommended fix — delete the trailing label</span>
+          Delete "→ Social causation" from the Community risk box. The community description preceding it (Low SES, high crime, substance use, lack of protective community) is self-explanatory. This is the least risky fix and saves slide space.
+        </div>
+        <div class="d-box d-warn">
+          <span class="d-label">Alternative if you want to keep it</span>
+          Add citation: Link &amp; Phelan (1995). Full bib + in-text + quote: <code>reference_check.html</code> entry S2-9.
+        </div>
+      </div>
+
+      <!-- V2-S2-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S2-T3</span>
+          <span class="task-pri pri-med">🟡 Medium</span>
+          <div class="task-title">Add citation for "critical windows of neuroplasticity"</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix</span>
+          Add a citation for the sensitive-periods claim in the Life cycle box. Recommended: Shonkoff &amp; Phillips (2000) — the NRC/IOM landmark report. As a shorter alternative, Siegel (2012) is already cited on S5 and covers neuroplasticity.<br><br>
+          Add to S2 footnote bar as footnote 3:<br>
+          <code>3) Shonkoff &amp; Phillips (2000)</code> — and attach <sup>3</sup> to the "critical windows of neuroplasticity" phrase.
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Harvard bibliography</span>
+          Shonkoff, J.P. and Phillips, D.A. (eds) (2000) <em>From Neurons to Neighborhoods: The Science of Early Childhood Development.</em> Washington, DC: National Academy Press.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">More detail</span>
+          Source quote and verification: <code>reference_check.html</code> entry S2-10.
+        </div>
+      </div>
+
+      <!-- V2-S2-T4 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S2-T4</span>
+          <span class="task-pri pri-notes">📋 Notes move</span>
+          <div class="task-title">Move "ACE interact and compound" sentence to notes pane</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Action</span>
+          The sentence <em>"ACE interact and compound: each adversity further eroded the relational conditions"</em> is an analytical conclusion — better spoken than shown. Move to notes pane. The arrow alone ("ACE categories → high risk") is enough visible text.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">📋 Suggested speaker-notes text</span>
+          <em>"These ACEs don't just stack up — they interact. Each adversity further eroded the relational conditions Tommy needed for typical development. This compounding effect is exactly what Felitti's graded-relationship finding describes."</em>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ SLIDE 3 CHAPTER ═════════════════ -->
+  <div id="s3" class="chapter anchor">
+    <div class="chapter-header s3">
+      <div class="chapter-title">Slide 3 — Possible mechanism on developmental Impact</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.5</span>
+        <span>🎯 PowerPoint Slide 3</span>
+        <span>6 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        Six mechanism boxes. Most citations work. <strong>The biggest single error in the deck is here</strong>: Achenbach (1966) is the wrong paper for "shame → aggression" — it's a factor-analytic taxonomy paper, not about shame or aggression. Five uncited claims need citations — most can be fixed by adding superscripts to sources already on this slide. One new source needed for "maternal low mood + ACEs → MH risk".
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+8 to +10 marks</span><span class="pts-detail">primarily Communication (5 uncited claims + 1 wrong) and Knowledge (depression risk named)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-S3-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T1</span>
+          <span class="task-pri pri-crit">🔴 Critical</span>
+          <div class="task-title">Achenbach (1966) for "shame → aggression" — wrong paper, remove or replace</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          Footnote 5 is Achenbach (1966), used for the sub-bullet "shame → aggression". The 1966 paper is the original factor-analytic study that introduced the internalising/externalising distinction. It does NOT discuss shame, anger, or aggression as linked emotional states. A marker familiar with ASEBA history will spot this immediately.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Option A (recommended) — remove the sub-bullet</span>
+          Delete the "shame → aggression<sup>5</sup>" sub-bullet entirely. The shame ↔ aggression link is already visible in the S1 iceberg diagram (shame as internalising, aggression as externalising). Removing the sub-bullet + footnote 5 eliminates the citation error and saves ~10 seconds of script time. <em>Renumber footnotes 6–11 down by one.</em>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Option B (academically stronger) — replace with Tangney et al. (1992)</span>
+          Keep the sub-bullet but replace Achenbach (1966) with Tangney et al. (1992), the seminal empirical paper on the shame–aggression link. Full bib + verified PubMed quote: <code>reference_check.html</code> entry S3-7.
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Tangney et al. (1992) — for Option B</span>
+          Tangney, J.P., Wagner, P., Fletcher, C. and Gramzow, R. (1992) 'Shamed into anger? The relation of shame and guilt to anger and self-reported aggression', <em>Journal of Personality and Social Psychology,</em> 62(4), pp. 669–675. doi:10.1037/0022-3514.62.4.669
+        </div>
+      </div>
+
+      <!-- V2-S3-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T2</span>
+          <span class="task-pri pri-high">🟠 High</span>
+          <div class="task-title">Bowlby citation 7 — add missing year (1969)</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          Footnote 7 reads "(Bowlby)" with no year — Harvard format requires year. Incomplete citation will be penalised under Communication.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix</span>
+          Change footnote 7 to: <code>7) Bowlby (1969)</code>
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Harvard bibliography (verify on reference slide)</span>
+          Bowlby, J. (1969) <em>Attachment and Loss, Volume 1: Attachment.</em> New York: Basic Books.
+        </div>
+      </div>
+
+      <!-- V2-S3-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T3</span>
+          <span class="task-pri pri-high">🟠 High</span>
+          <div class="task-title">Add new citation for "Maternal low mood + ACEs → Mental health risk"</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — add new footnote</span>
+          This is the only S3 claim that needs a genuinely new source. Add footnote 12:<br>
+          <code>12) McCrory, Gerin and Viding (2017)</code><br>
+          Attach <sup>12</sup> to the end of the "Mental health risk" bullet.
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Harvard bibliography</span>
+          McCrory, E.J., Gerin, M.I. and Viding, E. (2017) 'Annual Research Review: childhood maltreatment, latent vulnerability and the shift to preventative psychiatry — the contribution of functional brain imaging', <em>Journal of Child Psychology and Psychiatry,</em> 58(4), pp. 338–357. doi:10.1111/jcpp.12713
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">More detail</span>
+          PubMed-verified quote on depression and reward-processing in maltreatment: <code>reference_check.html</code> entry S3-9.
+        </div>
+      </div>
+
+      <!-- V2-S3-T4 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T4</span>
+          <span class="task-pri pri-med">🟡 Medium</span>
+          <div class="task-title">Add superscripts to three uncited S3 sub-bullets (no new sources)</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — three superscript additions, sources already on slide</span>
+          • "Executive function difficulties" → "Executive function difficulties<strong><sup>3</sup></strong>" (Teicher 2003 already cited)<br>
+          • "Low sustained attention → impulse regulation" → "Low sustained attention → impulse regulation<strong><sup>3</sup></strong>" (Teicher 2003)<br>
+          • "Missing serve &amp; return" → "Missing serve &amp; return<strong><sup>13</sup></strong>" (NEW: Center on the Developing Child, 2007 — add as footnote 13)
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Center on the Developing Child (2007) — new bibliography entry</span>
+          Center on the Developing Child at Harvard University (2007) <em>The Science of Early Childhood Development (InBrief).</em> Cambridge, MA: Harvard University. Available at: https://developingchild.harvard.edu/key-concept/serve-and-return/ (Accessed: 30 May 2026).
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">More detail</span>
+          Verbatim "serve and return" quote: <code>reference_check.html</code> entry S3-10.
+        </div>
+      </div>
+
+      <!-- V2-S3-T5 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T5</span>
+          <span class="task-pri pri-trim">✂️ Trim candidate</span>
+          <div class="task-title">"ACEs → chronic disease risk" — recommend removing (uncited + redundant + script time)</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Recommended action — delete this bullet</span>
+          Three reasons to remove the bullet:<br>
+          1. It is uncited on S3.<br>
+          2. Felitti (1998) already establishes chronic-disease risk on S2.<br>
+          3. It is peripheral to Tommy's <em>developmental</em> story — saves ~15 seconds of script time.<br>
+          Net effect: removes an evidence gap AND helps timing. No replacement needed.
+        </div>
+      </div>
+
+      <!-- V2-S3-T6 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S3-T6</span>
+          <span class="task-pri pri-notes">📋 Notes move</span>
+          <div class="task-title">Move "Internal Working Models" sub-bullet to notes pane</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Action</span>
+          The sub-bullet "Internal Working Models: adults = unpredictable; safety = fragile" duplicates content of the "Disorganised attachment<sup>6</sup>" bullet directly below it on the slide. Keep the disorganised attachment line (it's the stronger framing) and move the IWM elaboration to notes. Reduces clutter and saves ~12 seconds.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">📋 Suggested speaker-notes text</span>
+          <em>"The mechanism behind this — what Bowlby (1969) called the Internal Working Model — is the child's internalised representation of caregivers as either reliable or threatening. For Tommy, that model is built on inconsistency and fear, so adults register as unpredictable and safety as fragile."</em>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ SLIDE 4 CHAPTER ═════════════════ -->
+  <div id="s4" class="chapter anchor">
+    <div class="chapter-header s4">
+      <div class="chapter-title">Slide 4 — Risk of complexity</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.6</span>
+        <span>🎯 PowerPoint Slide 4</span>
+        <span>3 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        Seven-step systemic cycle + 5P diagram. <strong>The whole footnote bar reads "1) _."</strong> — placeholder never completed, so all 7 steps are effectively uncited. Plus three spelling errors. Plus one optional trim (merge steps 6+7).
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+5 to +7 marks</span><span class="pts-detail">primarily Communication (uncited steps + spelling)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-S4-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S4-T1</span>
+          <span class="task-pri pri-crit">🔴 Critical</span>
+          <div class="task-title">Fix broken citation "1) _." in S4 footnote bar</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          The S4 footnote bar literally shows <code>1) _.</code> — a placeholder. All seven numbered steps in the systemic-cycle list are effectively uncited. This is the most visible "broken" element on any slide in the deck.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — replace with two-source minimum</span>
+          Replace <code>1) _.</code> with:<br>
+          <code>1) Weerasekera (1996); 2) Teicher et al. (2003); see also S3 citations 1, 2, 6, 9 for supporting evidence.</code><br><br>
+          This covers steps 1–3 (biology cascade — Teicher), steps 4–5 (perpetuating + precipitating — Weerasekera's 5P model), step 6 (latent vulnerability — McCrory &amp; Viding via S3 cross-ref), step 7 (FASD overshadowing — SIGN 2019 via S3 cross-ref).
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Weerasekera (1996) — Harvard bibliography (verify on reference slide)</span>
+          Weerasekera, P. (1996) <em>Multiperspective Case Formulation: A Step Towards Treatment Integration.</em> Malabar, FL: Krieger Publishing.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">More detail</span>
+          Full source breakdown for all 7 steps: <code>reference_check.html</code> entries S4-1 to S4-8.
+        </div>
+      </div>
+
+      <!-- V2-S4-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S4-T2</span>
+          <span class="task-pri pri-spell">📝 Spelling</span>
+          <div class="task-title">Fix three spelling errors</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — three exact replacements</span>
+          • Step 5: <em>"precipitating <strong>stimuly</strong>"</em> → <em>"precipitating <strong>stimuli</strong>"</em><br>
+          • Step 6: <em>"self fulfilling <strong>prophycy</strong>"</em> → <em>"self-fulfilling <strong>prophecy</strong>"</em><br>
+          • Step 7: <em>"<strong>neurodevelomental</strong>"</em> → <em>"<strong>neurodevelopmental</strong>"</em>
+        </div>
+      </div>
+
+      <!-- V2-S4-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S4-T3</span>
+          <span class="task-pri pri-trim">✂️ Optional trim</span>
+          <div class="task-title">Optional: merge steps 6 and 7 to save ~15 sec script time</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Optional merge</span>
+          Steps 6 and 7 can be combined into one tighter sentence without losing content:
+        </div>
+        <div class="diff">
+          <div class="diff-old">
+            <span class="d-label">Current — two separate steps</span>
+            <div class="diff-text">6) Negative relational experiences create new trigger, self-fulfilling prophecy, enhancing neurological patterns<br>7) Potential overshadowing of neurodevelopmental or neurodivergent base through ACE or ODD</div>
+          </div>
+          <div class="diff-new">
+            <span class="d-label">Merged — one step</span>
+            <div class="diff-text">6) Repeated relational failures create a self-fulfilling prophecy — reinforcing neural threat-patterns and risking overshadowing of underlying neurodevelopmental needs (FASD, ODD)</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ SLIDE 5 CHAPTER ═════════════════ -->
+  <div id="s5" class="chapter anchor">
+    <div class="chapter-header s5">
+      <div class="chapter-title">Slide 5 — Protective factors and Opportunity</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.7</span>
+        <span>🎯 PowerPoint Slide 5</span>
+        <span>3 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        Strong closing slide. Two cited sources (Siegel 2012, Masten 2001) verified. Three Opportunity bullets lack superscripts but the sources are already on the slide — easy fix. Optional: name the Continuum of Need framework (curriculum gap from FQA).
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+3 to +4 marks</span><span class="pts-detail">primarily Knowledge (curriculum coverage) and Communication (superscripts)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-S5-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S5-T1</span>
+          <span class="task-pri pri-med">🟡 Medium</span>
+          <div class="task-title">Add three superscripts in the Opportunity box (no new sources)</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Fix — three superscript additions, sources already on slide</span>
+          • "ACEs do not affect all children in the same way" → add <strong><sup>2</sup></strong> (Masten 2001, already cited)<br>
+          • "Resilience = environmental, not individual, low agency" → add <strong><sup>2</sup></strong> (Masten 2001)<br>
+          • "Increased neuroplasticity in adolescence means his trajectory can be shifted" → add <strong><sup>1</sup></strong> (Siegel 2012, already cited)
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Optional upgrade</span>
+          For the neuroplasticity bullet, you could add a more specific source — Blakemore &amp; Choudhury (2006), PubMed-verified review on adolescent brain development. Full bib + quote: <code>reference_check.html</code> entry S5-8.
+        </div>
+      </div>
+
+      <!-- V2-S5-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S5-T2</span>
+          <span class="task-pri pri-notes">📋 Notes move</span>
+          <div class="task-title">Move "(precondition for relational repair)" parenthetical to notes</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Action</span>
+          The parenthetical after "School meals → physiological baseline" is analytical detail — better spoken than shown. Move to notes; keep the slide bullet as just "School meals → physiological baseline".
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">📋 Suggested speaker-notes text</span>
+          <em>"Free school meals aren't just nutrition — they're a physiological precondition. A child who is hungry or dysregulated cannot use the relational opportunities that teachers and the LSA are offering. The meals widen Tommy's window of tolerance enough for relational repair to actually take hold."</em>
+        </div>
+      </div>
+
+      <!-- V2-S5-T3 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-S5-T3</span>
+          <span class="task-pri pri-med">🟡 Medium (optional — curriculum gap)</span>
+          <div class="task-title">Optional: name the Continuum of Need framework to close the M4 W3 curriculum gap</div>
+        </div>
+        <div class="d-box d-warn">
+          <span class="d-label">⚠️ Note — this would add a new bullet</span>
+          The user explicitly asked to be conservative about new bullets. This task is therefore <strong>optional</strong>. Only do it if S5 has space (it does, in the Opportunity column) and if you want to close the named curriculum gap identified by Peter in the FQA.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ If you do add it — exact wording</span>
+          Add one bullet at the bottom of the Opportunity column:<br>
+          <em>"Whole-system response needed — from universal to specialist support<sup>★</sup>"</em><br>
+          New footnote: <code>★ M4 W3 (Continuum of Need / GIRFEC); Scottish Government (2012)</code>
+        </div>
+        <div class="d-box d-cite">
+          <span class="d-label">📚 Harvard bibliography (optional addition)</span>
+          Scottish Government (2012) <em>A Guide to Getting It Right for Every Child.</em> Edinburgh: Scottish Government.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ REFERENCES CHAPTER ═════════════════ -->
+  <div id="refs" class="chapter anchor">
+    <div class="chapter-header refs">
+      <div class="chapter-title">References — slides 1/3, 2/3, 3/4</div>
+      <div class="chapter-coord">
+        <span>📄 PDF p.9–11</span>
+        <span>🎯 PowerPoint Ref slides 1, 2, 3</span>
+        <span>2 tasks</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        Ref slide 1 is fully populated (good). <strong>Ref slides 2/3 and 3/4 are empty</strong> — only "…" showing. A marker scrolling through will think the work is unfinished. The numbering is also inconsistent (2/3 then 3/4). Either delete the empty slides or fill them.
+      </div>
+      <div class="points-pill">📊 Possible points gained: <span class="pts-num">+3 to +5 marks</span><span class="pts-detail">Communication (formatting integrity)</span></div>
+    </div>
+    <div class="tasks">
+
+      <!-- V2-R-T1 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-R-T1</span>
+          <span class="task-pri pri-crit">🔴 Critical</span>
+          <div class="task-title">Fix empty reference slides 2/3 and 3/4</div>
+        </div>
+        <div class="d-box d-issue">
+          <span class="d-label">⚠️ Issue</span>
+          PDF pages 10 and 11 both show empty reference slides with only "…" placeholder. Title numbering is inconsistent ("2/3" then "3/4"). Looks unfinished.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Option A (simplest, recommended pre-deadline) — delete the empty slides</span>
+          Delete slides 2/3 and 3/4. Keep only one reference slide (the populated one). Rename its title from "References (1/3)" to just "References". This removes the unfinished appearance with zero content risk.
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Option B — distribute references across all three slides</span>
+          Move references Masten→van der Kolk to slide 2, and any new references (Bronfenbrenner 1979, Bowlby 1969, Center on the Developing Child 2007, McCrory Gerin Viding 2017, Weerasekera 1996, Tangney 1992) to slide 3. Fix the inconsistent "3/4" title to "3/3".
+        </div>
+      </div>
+
+      <!-- V2-R-T2 -->
+      <div class="task">
+        <div class="task-top">
+          <span class="task-id">V2-R-T2</span>
+          <span class="task-pri pri-high">🟠 High</span>
+          <div class="task-title">Add new bibliography entries from V2-S1 through V2-S5</div>
+        </div>
+        <div class="d-box d-fix">
+          <span class="d-label">✅ Add these to the reference slide(s), in alphabetical order</span>
+        </div>
+        <div class="d-box d-cite">
+          Bowlby, J. (1969) <em>Attachment and Loss, Volume 1: Attachment.</em> New York: Basic Books.
+        </div>
+        <div class="d-box d-cite">
+          Bronfenbrenner, U. (1979) <em>The Ecology of Human Development: Experiments by Nature and Design.</em> Cambridge, MA: Harvard University Press.
+        </div>
+        <div class="d-box d-cite">
+          Center on the Developing Child at Harvard University (2007) <em>The Science of Early Childhood Development (InBrief).</em> Cambridge, MA: Harvard University. Available at: https://developingchild.harvard.edu/key-concept/serve-and-return/ (Accessed: 30 May 2026).
+        </div>
+        <div class="d-box d-cite">
+          McCrory, E.J., Gerin, M.I. and Viding, E. (2017) 'Annual Research Review: childhood maltreatment, latent vulnerability and the shift to preventative psychiatry — the contribution of functional brain imaging', <em>Journal of Child Psychology and Psychiatry,</em> 58(4), pp. 338–357. doi:10.1111/jcpp.12713
+        </div>
+        <div class="d-box d-cite">
+          Shonkoff, J.P. and Phillips, D.A. (eds) (2000) <em>From Neurons to Neighborhoods: The Science of Early Childhood Development.</em> Washington, DC: National Academy Press.
+        </div>
+        <div class="d-box d-cite">
+          Tangney, J.P., Wagner, P., Fletcher, C. and Gramzow, R. (1992) 'Shamed into anger? The relation of shame and guilt to anger and self-reported aggression', <em>Journal of Personality and Social Psychology,</em> 62(4), pp. 669–675. doi:10.1037/0022-3514.62.4.669<br>
+          <span style="color:#888;font-size:0.78rem;">— only if you use Option B for V2-S3-T1 (replace Achenbach 1966)</span>
+        </div>
+        <div class="d-box d-cite">
+          Weerasekera, P. (1996) <em>Multiperspective Case Formulation: A Step Towards Treatment Integration.</em> Malabar, FL: Krieger Publishing.
+        </div>
+        <div class="d-box d-notes">
+          <span class="d-label">Note — remove from bibliography</span>
+          Drop Achenbach &amp; Rescorla (2000) and Achenbach (1966) entirely (after V2-S1-T2 and V2-S3-T1 are applied).
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═════════════════ SCRIPT TRIM CHAPTER ═════════════════ -->
+  <div id="trim" class="chapter anchor">
+    <div class="chapter-header trim">
+      <div class="chapter-title">Script trim — weakest arguments to remove for 10-min fit</div>
+      <div class="chapter-coord">
+        <span>All slides</span>
+        <span>Currently ~10:05 (over)</span>
+        <span>Target ~9:30 (safe)</span>
+      </div>
+      <div class="chapter-summary-block">
+        <div class="sm-label">Summary</div>
+        At 150 wpm the script runs ~10:05 — marginally over. The slide-trim moves below total ~50 seconds saved, bringing it to ~9:15. Comfortable margin for pauses and natural delivery.
+      </div>
+      <div class="points-pill">📊 Effect: <span class="pts-num">−50 seconds script time</span><span class="pts-detail">+ removes 1 citation error and 1 uncited claim as side-effects</span></div>
+    </div>
+    <div class="tasks">
+
+      <div class="trim-card">
+        <div class="trim-id">Trim 1 — S3 "ACEs → chronic disease risk" (saves ~15 sec)</div>
+        <div class="trim-remove"><strong>REMOVE</strong> from S3 Overall Health box: "ACEs → chronic disease risk"</div>
+        <div class="trim-keep">Why: Felitti (1998) already covers chronic-disease risk on S2. Removing the bullet eliminates an uncited claim, keeps S3 focused on <em>developmental</em> mechanisms (which is the title), and saves script time. See task V2-S3-T5.</div>
+      </div>
+
+      <div class="trim-card">
+        <div class="trim-id">Trim 2 — S3 "shame → aggression" sub-bullet (saves ~10 sec + fixes wrong citation)</div>
+        <div class="trim-remove"><strong>REMOVE</strong> from S3 Attention &amp; learning box: "shame → aggression<sup>5</sup>" (if Option A chosen for V2-S3-T1)</div>
+        <div class="trim-keep">Why: The shame ↔ aggression link is already shown in the S1 iceberg diagram. Removing this sub-bullet eliminates the wrong Achenbach (1966) citation simultaneously.</div>
+      </div>
+
+      <div class="trim-card">
+        <div class="trim-id">Trim 3 — S3 "Internal Working Models" → notes pane (saves ~12 sec)</div>
+        <div class="trim-remove"><strong>MOVE</strong> to notes pane (delete from slide): "Internal Working Models: adults = unpredictable; safety = fragile"</div>
+        <div class="trim-keep">Why: Duplicates the "Disorganised attachment<sup>6</sup>" bullet directly below. Moving lets you choose whether to say it. See task V2-S3-T6.</div>
+      </div>
+
+      <div class="trim-card">
+        <div class="trim-id">Trim 4 — S4 merge steps 6+7 (saves ~15 sec)</div>
+        <div class="trim-remove"><strong>MERGE</strong> S4 steps 6 and 7 into one tighter sentence — see V2-S4-T3.</div>
+        <div class="trim-keep">Why: Two separate steps create the impression of seven equally weighted items. Merging the self-fulfilling-prophecy step with the overshadowing step preserves both ideas while reducing visual and script weight.</div>
+      </div>
+
+      <div class="trim-card" style="background:#f1f8e9;">
+        <div class="trim-id" style="color:#2e7d32;">Total effect</div>
+        <div class="trim-keep">
+          <strong>Time saved: ~50 seconds</strong> → script estimated 9:15 (from 10:05).<br>
+          <strong>Side benefits:</strong> removes 1 wrong citation (Achenbach 1966), 1 uncited claim (chronic disease), and 1 redundant elaboration (IWM). Net effect is a tighter, more defensible deck.<br>
+          <strong>What's protected:</strong> all five thesis-supporting moves remain — the iceberg taxonomy (S1), Felitti's ACE evidence (S2), the six-domain mechanism grid (S3), the 5P cycle (S4), and the closing synthesis statement (S5).
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="report-footer">
+    Essay Fabrik — Detailed Change Tasks v2 — tommy5.pdf — Module 4 Part A — 30 May 2026<br>
+    Cross-reference: full bibliography + in-text format + original source quote for every claim is in <code>reference_check.html</code> alongside this file.
+  </div>
+
+</div>
+</body>
+</html>

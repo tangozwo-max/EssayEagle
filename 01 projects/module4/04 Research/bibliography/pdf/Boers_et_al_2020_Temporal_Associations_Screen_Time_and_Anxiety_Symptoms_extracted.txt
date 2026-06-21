@@ -1,0 +1,881 @@
+Research 
+Letter 
+The 
+Canadian 
+Journal of Psychiatry / 
+La Revue Canadienne 
+de Psychiatrie 
+2020, Vol. 65(3) 206-208 
+© The Author(s) 
+2019 
+Article 
+reuse 
+guidelines: 
+sagepub.com/journals-permissions 
+DOI: 
+10.1177/0706743719885486 
+| LaRCP.ca 
+@SAGE 
+Temporal 
+Associations 
+of Screen 
+Time 
+and 
+Anxiety 
+Symptoms 
+Among 
+Adolescents 
+Associations 
+temporelles 
+du temps 
+d·écran 
+et 
+des symptémes 
+d·anxiété 
+chez 
+des 
+adolescents 
+Elroy Boers, PhD'?®, Mohammad 
+H. Afzali, PhD'?, 
+and 
+Patricia 
+Conrod, 
+PhD!? 
+Abstract 
+There 
+are 
+indications 
+that 
+screen 
+time 
+is associated 
+with 
+symptoms 
+of anxiety in adolescents, 
+but from 
+a longitudinal per- 
+spective, the magnitude, specificity, and temporal precedence in this association 
+are 
+relatively under-explored. To address 
+this 
+gap, over 
+the 
+course 
+of 4 
+years, 
+we 
+annually surveyed adolescents 
+assessing 
+their 
+usage of various 
+types of screen 
+time 
+per day 
+and symptoms 
+of anxiety. 
+indications 
+que 
+le temps 
+d·écran 
+est 
+associé 
+4 des symptémes d·anxiété 
+chez 
+des adolescents 
+(1), mais 
+d·une 
+per- 
+spective longitudinale, la magnitude, la spécificité et 
+la préséance temporelle de cette 
+association 
+sont 
+relativement 
+sous- 
+explorées. Pour 
+corriger 
+cette 
+lacune, 
+sur 
+une 
+période de quatre 
+ans, 
+nous 
+avons 
+sondé 
+annuellement 
+des 
+adolescents 
+et 
+évalué 
+leur 
+usage de divers 
+types 
+de temps 
+d·cran 
+utilisés 
+par jour et 
+leurs 
+d·anxiété. 
+Keywords 
+adolescents, 
+anxiety, 
+screen 
+time 
+Methods 
+We analyzed data from 
+the Co-Venture 
+Trial, 
+a longitudinal 
+randomized 
+trial 
+assessing the efficacy 
+of 
+a personality- 
+targeted drug and alcohol 
+prevention 
+program 
+named 
+Pre- 
+venture. 
+A total 
+of 3,826 seventh 
+graders (47% female, 
+mean 
+age 
+= 
+12.8 years, 
+SD = 0.4 years) were 
+recruited 
+and studied 
+annually from 
+7th grade through 10th grade, with 
+informed 
+assent 
+and parent 
+consent 
+under 
+the approval of the Sainte- 
+Justine·s 
+Hospital 
+Institutional 
+Review 
+Board. 
+Screen 
+time 
+was 
+measured 
+by how 
+much 
+time 
+per day one 
+spends playing 
+video 
+games 
+(on 
+a computer, 
+cell 
+phone, game 
+console), 
+using social 
+media 
+(Facebook, Twitter, 
+or 
+other 
+social 
+net- 
+working sites), watching shows 
+or 
+movies 
+(on television 
+or 
+the computer), 
+and 
+on 
+the computer 
+engaging in other 
+activ- 
+ities. 
+The 
+amount 
+of 
+screen 
+time 
+was 
+operationalized 
+into 
+four categories: 0 to 
+30 minutes, 
+30 minutes 
+to 
+1 hour 
+30 
+minutes, 
+| hour 30 minutes 
+to 2 hour 30 minutes, and 3 hour 
+30 
+minutes 
+or 
+more. 
+Anxiety 
+symptoms 
+were 
+measured 
+using the Brief 
+Symptom Inventory·Anxiety 
+subscale,· ask- 
+ing participants to indicate, 
+on 
+a scale from 
+0 (nor all) to 4 
+(very 
+much) 
+to 
+what 
+extent 
+they experienced 
+seven 
+symptoms of anxiety 
+during the past 
+12 months 
+(e.g., feeling 
+tense, experiencing spells of terror 
+or panic, and being sud- 
+denly scared for 
+no 
+reason). Gender 
+and socioeconomic 
+sta- 
+tus (SES) were 
+also 
+assessed. 
+In total, 3,659 participants (of 
+3,826) had complete data for 
+measures 
+of interest 
+and were 
+included 
+in the analyses. 
+Multilevel 
+linear 
+modeling 
+in R 
+was 
+used 
+to 
+assess 
+the 
+relationship 
+between 
+screen 
+time 
+and 
+anxiety. 
+The 
+model 
+included 
+random 
+intercepts and slopes at the individ- 
+ual and school 
+level. 
+The 
+time 
+parameter 
+was 
+coded 
+as each 
+yearly assessment. 
+Our 
+model 
+evaluated 
+the predictive role 
+of 
+three 
+time-varying predictors for each of the four 
+types of 
+' Department of Psychiatry, University 
+of Montreal, 
+Quebec, 
+Canada 
+? CHU 
+Sainte-Justine Research 
+Center, 
+University of Montreal, 
+Quebec, 
+Canada 
+Corresponding 
+Authors: 
+Elroy Boers, 
+PhD, and Patricia 
+Conrod, 
+PhD, Department 
+of Psychiatry, 
+University of Montreal, 
+Montreal, 
+Quebec, 
+Canada; 
+CHU 
+Sainte Justine 
+Research 
+Centre, 
+University of Montreal, 
+Montreal, 
+Quebec, Canada. 
+Emails: elroyboers@me.com; patricia.conrod@umontreal.ca 
+La Revue Canadienne 
+de Psychiatrie 65(3) 
+207 
+Table 
+I. Estimated 
+Parameters 
+for 
+a Multilevel 
+Model Assessing the Association 
+Between 
+Screen 
+Time 
+and Anxiety Symptoms. 
+Anxiety Symptoms 
+Predictors 
+Estimate 
+Std. Er 
+95% Cl 
+Intercept 
+2.93 
+021 
+0.000 
+2.61 
+to 
+3.43 
+Time 
+0.07 
+0.02 
+0.002 
+0.03 
+to 
+0.12 
+Socioeconomic 
+status 
+·0.03 
+0.02 
+0.206 
+·0.09 
+to 
+0.02 
+Sex 
+0.12 
+0.000 
+Intervention 
+031 
+0.782 
+Social media between-person 
+0.43 
+0.05 
+0.000 
+0.32 
+to 
+0.54 
+Social media within-person 
+0.21 
+0.03 
+0.000 
+0.14 
+to 
+0.28 
+Social 
+media 
+lagged 
+0.06 
+0.052 
+Video 
+gaming between-person 
+·0.01 
+0.05 
+0.789 
+Video 
+gaming within-person 
+0.01 
+0.03 
+0.624 
+Video 
+gaming lagged 
+0.06 
+0.05 
+0.273 
+Television 
+between-person 
+·0.12 
+0.05 
+0.041 
+Television 
+within-person 
+0.15 
+0.03 
+0.001 
+0.08 
+to 
+0.22 
+Television 
+lagged 
+0.07 
+0.421 
+19 to 
+0.08 
+Computer 
+use 
+between-person 
+0.42 
+0.07 
+0.000 
+0.28 
+to 
+0.57 
+·Computer 
+use 
+within-person 
+0.11 
+0.03 
+0.002 
+0.04 
+to 
+0.18 
+Computer 
+use 
+lagged 
+0.07 
+0.406 
+·0.18 
+to 0.07 
+Note. Significant associations 
+are 
+marked 
+in 
+bold 
+font. 
+screen 
+time: 
+average 
+of 
+each 
+screen 
+time 
+over 
+4 years 
+(between-person effects), changes in each 
+screen 
+time 
+over 
+4 years compared to 
+a person·s mean 
+(within-person effects), 
+and 
+screen 
+time 
+use 
+the year before 
+compared with 
+the per- 
+son·s 
+mean 
+use 
+(lagged effects). 
+Results 
+Analyses 
+included 
+exposure/nonexposure 
+to 
+the 
+trial 
+as 
+covariate, 
+as 
+well 
+as gender and SES, which 
+did 
+not signif- 
+icantly 
+affect 
+the associations 
+between 
+screen 
+time 
+and 
+symptoms 
+of anxiety 
+(Table 
+1). The 
+significant 
+within- 
+person 
+effect 
+for 
+social 
+media 
+use 
+indicated 
+that 
+a 
+1-hour 
+increase 
+in average 
+time spent using social 
+media 
+in a given 
+year 
+was 
+associated 
+with 
+a 0.21 
+unit 
+(on 
+a scale 
+from 
+0 to 
+28) increase 
+in the severity of anxiety symptoms 
+(95% CI, 
+0.14 
+to 0.28) within 
+that 
+same 
+year. 
+Significant, but 
+more 
+modest 
+within-person relationships were 
+revealed 
+for tele- 
+vision 
+viewing 
+and computer 
+use 
+on 
+anxiety: 0.15 
+unit 
+increase 
+(95% Cl, 0.08 
+to 0.22) 
+and 
+0.11 
+unit 
+increase 
+(95% Cl, 
+0.04 
+to 0.18), respectively. 
+We 
+found 
+no signifi- 
+cant 
+within-person 
+association 
+between 
+anxiety and 
+video 
+gaming, 
+and there 
+was 
+no 
+evidence of 
+lasting effects 
+of any 
+form 
+of 
+screen 
+time 
+on 
+anxiety 
+if increases 
+in 
+screen 
+time 
+were 
+not 
+sustained. 
+Discussion 
+Our 
+results 
+indicate 
+that anxiety symptoms 
+within 
+a given 
+year 
+may 
+become 
+more 
+severe 
+when 
+social 
+media 
+use, 
+tele- 
+vision 
+viewing, 
+and/or 
+computer 
+use 
+increase 
+within 
+that 
+same 
+year. 
+These 
+are 
+interesting 
+findings 
+considering 
+another 
+recent 
+publication 
+reporting 
+within-person 
+associations 
+between 
+depression, social 
+media 
+and 
+televi- 
+sion, but 
+not 
+computer 
+use, 
+among 
+Canadian 
+adolescents, 
+which 
+were 
+explained by decreases 
+in self-esteem.? Com- 
+puter 
+use 
+appears 
+to 
+be uniquely associated 
+to 
+increases 
+in 
+anxiety, 
+potentially 
+in relation 
+to using the 
+computer 
+for 
+homework 
+activities, 
+but 
+this 
+needs 
+further 
+investigation. 
+Finally, the findings suggest 
+that 
+the association 
+between 
+screen 
+time 
+and anxiety was 
+concurrent 
+and did 
+not 
+last if 
+screen 
+time 
+reduced 
+in intensity. 
+The rising rates 
+of adolescent 
+anxiety and depression in 
+the Western 
+World* 
+have 
+been attributed 
+to the excessive 
+amount of 
+time 
+that adolescents, nowadays, spend in front of 
+digital screens.° The present study indicates 
+that increases 
+in 
+time spent using social media, television, 
+and computers 
+are 
+associated 
+with 
+increases 
+in anxiety. These 
+worrisome 
+find- 
+ings do not 
+only ask for 
+further 
+investigation 
+concerning 
+potential explanatory 
+models 
+of 
+this 
+association 
+but 
+also 
+stress 
+the 
+need for 
+the Canadian 
+scientific 
+community and 
+creators/distributors 
+of 
+digital 
+products to join forces 
+in order 
+to better 
+understand 
+the potential role of 
+digital 
+technologies 
+on 
+mental 
+health. 
+Equally, parents and clinicians 
+are 
+request- 
+ing guidance on 
+how to manage 
+the impact of 
+digital 
+devices 
+in child 
+and 
+adolescent 
+mental 
+health. 
+Common 
+measure- 
+ment 
+tools 
+and more 
+innovative 
+research designs are 
+needed, 
+including 
+ones 
+that help us 
+to better 
+understand 
+how specific 
+types of content 
+and the algorithmic nature 
+of some 
+technol- 
+ogies are potentially exacerbating internalizing symptoms 
+in 
+adolescents. 
+Declaration 
+of Conflicting 
+Interests 
+The author(s) declared 
+no potential conflicts of 
+interest 
+with 
+respect 
+to the research, authorship, and/or publication of 
+this 
+article. 
+208 
+The Canadian Journal of Psychiatry 65(3) 
+Funding 
+The author(s) disclosed 
+receipt of the following financial 
+support 
+for the research, authorship, and/or 
+publication of this article: 
+Insti- 
+tute 
+of Population and Public 
+Health 
+and ERANET- 
+Neuron 
+ELSA 
+(JCT 2018). 
+ORCID 
+iD 
+Elroy Boers, PhD © https://orcid.org/0000-0001-5231-7534 
+References 
+1. Teychenne M, Costigan SA, Parker 
+K. The association 
+between 
+sedentary behaviour 
+and 
+risk of anxiety: 
+a systematic review. 
+BMC 
+Public 
+Health. 
+2015;15:530. 
+. Derogatis 
+LR, 
+Melisaratos 
+N. 
+The 
+brief 
+symptom 
+inven- 
+tory: 
+an 
+introductory 
+report. 
+Psychol 
+Med. 
+1983;13(3): 
+595-605. 
+Boers 
+E, Afzali 
+MH, Newton 
+N, Conrod 
+P. The 
+association 
+of 
+screen 
+time 
+and depression adolescence. 
+JAMA 
+Pediatr. 
+2019; 
+173(9):853-859. 
+. 
+World 
+Health 
+Organization. Mental 
+health: 
+a call for action by 
+world 
+health 
+ministers. 
+2001;200:1-21. 
+. Twenge JM, Joiner 
+TE, Rogers ML, 
+Martin 
+GN. 
+Increases 
+in 
+depressive symptoms, 
+suicide-related 
+outcomes, 
+and suicide 
+rates 
+among 
+U.S. 
+adolescents 
+after 
+2010 
+and 
+links 
+to 
+increased 
+new 
+media 
+screen 
+time. 
+Clin 
+Psychol 
+Sci. 
+2018; 
+6(1):3-17. 

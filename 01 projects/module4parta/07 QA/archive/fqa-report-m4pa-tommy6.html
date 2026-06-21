@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FQA Report — tommy6.pdf — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.6; padding: 32px 20px 80px; font-size: 14.5px; }
+  .page { max-width: 1040px; margin: 0 auto; }
+
+  .report-header { background: linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%); color: white; border-radius: 10px; padding: 32px 36px 26px; margin-bottom: 24px; }
+  .filename-badge { display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4); padding: 5px 14px; border-radius: 18px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; }
+  .version-badge { display: inline-block; background: rgba(243,156,18,0.25); border: 1px solid rgba(243,156,18,0.6); padding: 5px 14px; border-radius: 18px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; margin-left: 8px; color: #f39c12; }
+  .report-header h1 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+  .report-header .subtitle { font-size: 1rem; opacity: 0.78; margin-bottom: 14px; }
+  .report-meta { font-size: 0.82rem; opacity: 0.85; display: flex; gap: 18px; flex-wrap: wrap; }
+
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.82rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #0d2240; color: #f39c12; }
+
+  .slide-map { background: white; border-radius: 8px; overflow: hidden; margin-bottom: 24px; border: 1px solid #dde3ee; }
+  .slide-map-header { background: #0d2240; color: white; padding: 10px 18px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  table.map { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.map th { background: #f0f3f9; padding: 8px 12px; text-align: left; font-size: 0.72rem; text-transform: uppercase; color: #6b7a99; }
+  table.map td { padding: 7px 12px; border-bottom: 1px solid #f0f3f9; }
+  table.map td:nth-child(1), table.map td:nth-child(2) { font-weight: 700; color: #0d2240; }
+
+  .card { background: white; border-radius: 10px; padding: 26px; margin-bottom: 24px; border: 1px solid #dde3ee; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+  .card h2 { font-size: 1.05rem; color: #0d2240; margin-bottom: 16px; border-bottom: 2px solid #f0f3f9; padding-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+  .role-pill { padding: 5px 14px; border-radius: 18px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
+  .rp-christoph { background: #e3f2fd; color: #0d47a1; }
+  .rp-jackie    { background: #fce4ec; color: #880e4f; }
+  .rp-peter     { background: #e8f5e9; color: #1b5e20; }
+  .rp-steven    { background: #fff3e0; color: #bf360c; }
+  .rp-egbert    { background: #f3e5f5; color: #4a148c; }
+  h3 { color: #0d2240; font-size: 0.95rem; margin: 18px 0 10px; }
+
+  .dash-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 16px; }
+  .dash-card { text-align: center; padding: 16px 8px; border-radius: 10px; border: 1.5px solid #ddd; }
+  .dash-card .r-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #666; }
+  .dash-card .r-score { font-size: 1.85rem; font-weight: 900; margin: 6px 0 2px; }
+  .dash-card .r-grade { font-size: 0.85rem; font-weight: 600; }
+  .dash-card .r-delta { font-size: 0.74rem; color: #999; margin-top: 2px; }
+  .dc-b { background: #e3f2fd; border-color: #1e88e5; }  .dc-b .r-score { color: #1565c0; }
+  .dc-j { background: #fce4ec; border-color: #ec407a; }  .dc-j .r-score { color: #ad1457; }
+  .dc-p { background: #e8f5e9; border-color: #43a047; }  .dc-p .r-score { color: #2e7d32; }
+  .dc-s { background: #fff3e0; border-color: #ffa726; }  .dc-s .r-score { color: #e65100; }
+  .overall-row { background: linear-gradient(135deg, #0d2240 0%, #4a148c 100%); border-radius: 10px; padding: 16px 24px; color: white; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .overall-row .o-label { font-weight: 700; font-size: 1rem; }
+  .overall-row .o-score { font-size: 2.2rem; font-weight: 900; }
+  .overall-row .o-detail { font-size: 0.85rem; opacity: 0.85; }
+  .grade-pill { padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; background: rgba(255,255,255,0.2); }
+
+  .slide-block { border-left: 4px solid #0d2240; padding: 12px 16px; margin: 14px 0; background: #fafbfd; border-radius: 0 6px 6px 0; }
+  .slide-tag { font-size: 0.74rem; font-weight: 800; color: #0d2240; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .pdf-ref { background: #ede7f6; color: #4a148c; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; }
+  .notes-ref { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; }
+  .fix-ref { background: #e8f5e9; color: #1b5e20; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; }
+
+  .check-list { list-style: none; }
+  .check-list li { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-bottom: 1px solid #f0f3f9; font-size: 0.88rem; }
+  .check-list li:last-child { border-bottom: none; }
+  .ci { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+
+  .tag { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 5px; }
+  .t-crit  { background: #ffcdd2; color: #b71c1c; }
+  .t-high  { background: #ffe0b2; color: #bf360c; }
+  .t-med   { background: #fff8e1; color: #ef6c00; }
+  .t-ok    { background: #e8f5e9; color: #2e7d32; }
+  .t-info  { background: #e3f2fd; color: #0d47a1; }
+  .t-notes { background: #e0f7fa; color: #006064; }
+  .t-new   { background: #f3e5f5; color: #4a148c; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 12px 0; }
+  th { background: #ede7f6; color: #4a148c; padding: 9px 12px; text-align: left; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f3f9; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafbfd; }
+
+  .p1 { color: #b71c1c; font-weight: 800; }
+  .p2 { color: #e65100; font-weight: 700; }
+  .p3 { color: #f9a825; font-weight: 600; }
+  .p4 { color: #388e3c; }
+
+  .timing-box { background: #e8f5e9; border: 1.5px solid #a5d6a7; border-radius: 8px; padding: 16px 20px; margin: 14px 0; }
+  .timing-box h4 { margin: 0 0 12px; color: #1b5e20; font-size: 0.95rem; }
+  .timing-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; font-size: 0.88rem; border-bottom: 1px solid #c8e6c9; }
+  .timing-row:last-child { border-bottom: none; font-weight: 700; color: #1b5e20; }
+  .t-warn { color: #e65100 !important; }
+  .trim-box { background: #fff8e1; border: 1.5px solid #ffe082; border-radius: 8px; padding: 14px 18px; margin: 14px 0; }
+  .trim-box h4 { margin: 0 0 10px; color: #e65100; font-size: 0.92rem; }
+  .trim-item { padding: 7px 0; border-bottom: 1px solid #ffe082; font-size: 0.88rem; }
+  .trim-item:last-child { border-bottom: none; }
+  .alert-box { background: #fff3e0; border: 1.5px solid #ffb300; border-radius: 8px; padding: 14px 18px; margin: 14px 0; }
+  .alert-box h4 { margin: 0 0 10px; color: #e65100; font-size: 0.92rem; }
+  .verdict-box { background: linear-gradient(135deg, #f3e5f5 0%, #ede7f6 100%); border: 2px solid #ce93d8; border-radius: 10px; padding: 18px 22px; margin-top: 14px; }
+  .verdict-box.warn { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-color: #ffb300; }
+  .verdict-box.go { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-color: #66bb6a; }
+  .verdict-box .v-title { font-weight: 800; color: #4a148c; font-size: 1rem; margin-bottom: 8px; }
+  .verdict-box.warn .v-title { color: #e65100; }
+  .verdict-box.go .v-title { color: #2e7d32; }
+  .verdict-box .v-text { color: #1a1f2e; font-size: 0.92rem; }
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .report-footer { text-align: center; font-size: 0.78rem; color: #888; margin-top: 36px; padding: 16px 0; border-top: 1px solid #dde3ee; }
+  .anchor { scroll-margin-top: 20px; }
+  .delta-badge { font-size: 0.72rem; padding: 2px 8px; border-radius: 10px; background: #e8f5e9; color: #2e7d32; font-weight: 700; margin-left: 8px; }
+  .notes-warn { background: #fff3cd; border: 1.5px solid #ffc107; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.86rem; }
+  .notes-warn strong { color: #856404; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="report-header">
+    <div class="filename-badge">📄 tommy6.pdf</div>
+    <div class="version-badge">v0.5 CLAUDE</div>
+    <h1>Final Quality Assessment</h1>
+    <p class="subtitle">Case "Tommy": A Developmental Formulation — Module 4 Part A</p>
+    <div class="report-meta">
+      <span>Student: 5779906</span>
+      <span>Lecturer: Jasmin Kroll</span>
+      <span>Due: 15 June 2026</span>
+      <span>FQA Date: 1 June 2026</span>
+      <span>Assessors: Christoph · Jackie · Peter · Steven · Egbert</span>
+      <span>Baseline: tommy5 (73%, B+)</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="#dash">Dashboard</a>
+    <a href="#map">Slide map</a>
+    <a href="#christoph">Christoph</a>
+    <a href="#jackie">Jackie</a>
+    <a href="#peter">Peter</a>
+    <a href="#steven">Steven</a>
+    <a href="#egbert">Egbert</a>
+  </div>
+
+  <!-- SLIDE MAP -->
+  <div id="map" class="slide-map anchor">
+    <div class="slide-map-header">Slide content map — tommy6 / v0.5 CLAUDE</div>
+    <table class="map">
+      <thead><tr><th>PowerPoint Slide</th><th>PDF page</th><th>Title</th><th>Notes status</th></tr></thead>
+      <tbody>
+        <tr><td>Cover</td><td>p.1</td><td>Cover sheet</td><td>—</td></tr>
+        <tr><td>Title</td><td>p.2</td><td>Case "Tommy": A Developmental Formulation</td><td style="color:#b71c1c;font-weight:700;">⚠ Notes contain wrong presentation content</td></tr>
+        <tr><td>Slide 1</td><td>p.3</td><td>Tommy: Presenting issues and formulation</td><td style="color:#e65100;">⚠ Notes cite Achenbach 2000 (preschool)</td></tr>
+        <tr><td>Slide 2</td><td>p.4</td><td>Predisposing factors</td><td style="color:#2e7d32;">✓ Notes appropriate</td></tr>
+        <tr><td>Slide 3</td><td>p.5</td><td>Possible mechanism on developmental Impact</td><td style="color:#b71c1c;font-weight:700;">⚠ Notes still recommend Achenbach (1966)</td></tr>
+        <tr><td>Slide 4</td><td>p.6</td><td>Risk of complexity</td><td style="color:#555;">Notes brief (OK for delivery)</td></tr>
+        <tr><td>Slide 5</td><td>p.7</td><td>Protective factors and Opportunity</td><td style="color:#2e7d32;">✓ Continuum of Need in notes</td></tr>
+        <tr><td>Refs 1/3</td><td>p.8</td><td>References (1/3) — populated (Harvard, extensive)</td><td>—</td></tr>
+        <tr><td>End</td><td>p.9</td><td>End of presentation</td><td>—</td></tr>
+        <tr><td>Refs 2/3</td><td>p.10</td><td>References (2/3) — <strong style="color:#b71c1c;">EMPTY</strong> ("…" only)</td><td>—</td></tr>
+        <tr><td>Refs 3/4</td><td>p.11</td><td>References (3/4) — <strong style="color:#b71c1c;">EMPTY</strong> ("…" only)</td><td>—</td></tr>
+        <tr><td colspan="4" style="background:#fff8e1;color:#555;font-size:0.8rem;">⚠ PDF pages 12–14 contain appended materials (assignment brief, vignette, old QA reference check) — not part of the presentation but included in the PDF export. These should not be submitted as part of the recording package.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dash" class="card anchor">
+    <h2>🎯 Executive Dashboard</h2>
+    <div class="dash-grid">
+      <div class="dash-card dc-b">
+        <div class="r-label">Christoph</div>
+        <div class="r-score">85%</div>
+        <div class="r-grade">A−</div>
+        <div class="r-delta">+5 vs tommy5</div>
+      </div>
+      <div class="dash-card dc-j">
+        <div class="r-label">Jackie</div>
+        <div class="r-score">78%</div>
+        <div class="r-grade">B</div>
+        <div class="r-delta">+13 vs tommy5</div>
+      </div>
+      <div class="dash-card dc-p">
+        <div class="r-label">Peter</div>
+        <div class="r-score">82%</div>
+        <div class="r-grade">A−</div>
+        <div class="r-delta">+6 vs tommy5</div>
+      </div>
+      <div class="dash-card dc-s">
+        <div class="r-label">Steven</div>
+        <div class="r-score">76%</div>
+        <div class="r-grade">B</div>
+        <div class="r-delta">+4 vs tommy5</div>
+      </div>
+    </div>
+    <div class="overall-row">
+      <div>
+        <div class="o-label">Overall (tommy6)</div>
+        <div class="o-detail">tommy5 baseline: 73% · Improvement: +8</div>
+      </div>
+      <div class="o-score">80%</div>
+      <div>
+        <div class="grade-pill">A−</div>
+        <div style="font-size:0.82rem;opacity:0.85;margin-top:5px;">Est. 162–172 / 200</div>
+        <div style="font-size:0.8rem;opacity:0.75;">Target after V3 fixes: 180–190 / 200 (A+)</div>
+      </div>
+    </div>
+    <p style="margin-top:14px;color:#555;font-size:0.88rem;">
+      <strong>Summary:</strong> tommy6 is a substantial improvement over tommy5. Three of four P1 citation errors are fixed. References 1/3 is now a rich, extensively sourced Harvard bibliography. New sources (Glover, McLaughlin, Arpino, Dinkler, Berg, Gajwani &amp; Minnis, Blakemore, intergenerational trauma) materially strengthen the academic depth.
+      Two critical issues remain: <strong>the empty reference slides (refs 2/3 and 3/4)</strong> — leaving ~18 cited sources invisible to the marker — and <strong>corrupted speaker notes</strong> (title slide notes contain a different presentation's content; S3 notes still instruct to cite the wrong Achenbach paper). Fixing V3-R-T1 (empty refs) and V3-Notes-T1/T3 (notes cleanup) in a single 30-minute pass pushes the grade to A/A+. Companion files: <code>detailed_change_tasks_v3.html</code> for actions, <code>reference_check_tommy6.html</code> for evidence audit.
+    </p>
+  </div>
+
+  <!-- CHRISTOPH -->
+  <div id="christoph" class="card anchor">
+    <h2><span class="role-pill rp-christoph">Christoph</span> Compliance &amp; Rubric — 85/100 <span class="delta-badge">+5 vs tommy5</span></h2>
+
+    <h3>Format checklist</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>5 content slides (S1–S5) — within maximum</span></li>
+      <li><span class="ci">✅</span><span>Title slide present with student number and subtitle ("Developmental risk under cumulative adversity")</span></li>
+      <li><span class="ci">✅</span><span>Lecturer name (Jasmin Kroll) on cover sheet</span></li>
+      <li><span class="ci">✅</span><span>References (1/3) — heavily populated Harvard bibliography, major improvement over all previous versions</span></li>
+      <li><span class="ci">✅</span><span>All 5P elements visible: presenting issues (S1), predisposing (S2), mechanism (S3), perpetuating/complexity (S4), protective (S5)</span></li>
+      <li><span class="ci">✅</span><span>Closing synthesis statement on S5 — present and well-formed</span></li>
+      <li><span class="ci">✅</span><span>Visual aids used throughout (iceberg S1, Bronfenbrenner S2, mechanism grid S3, 5P cycle S4)</span></li>
+      <li><span class="ci">✅</span><span>S1 citation transposition fixed — survival strategy → van der Kolk ✓; 5P framework → Macneil + Weerasekera ✓; trajectories → Bongers ✓</span></li>
+      <li><span class="ci">✅</span><span>S4 broken citation fixed — seven complete citations now present (Teicher, Garner &amp; Yogman, Main &amp; Hesse, Weerasekera, McCrory &amp; Viding, Berg, Gajwani &amp; Minnis)</span></li>
+      <li><span class="ci">❌</span><span><strong>Reference slides 2/3 (PDF p.10) and 3/4 (PDF p.11) are EMPTY</strong> — "…" placeholder only. Approximately 18 sources cited on slides are not visible in the bibliography. <span class="tag t-crit">CRITICAL — V3-R-T1</span></span></li>
+      <li><span class="ci">❌</span><span><strong>Title slide speaker notes contain wrong presentation content</strong> — notes open with "Today I'll elaborate on a possible paradigm shift in psychotropic interventions / neuroplasticity enhancement / major depressive disorder." This is a different presentation's script and must be deleted before recording. <span class="tag t-crit">CRITICAL — V3-Notes-T1</span></span></li>
+      <li><span class="ci">⚠️</span><span>S4 step 7 still reads "neurodevelomental" — missing 'p'. <span class="tag t-med">TYPO — V3-S4-T1</span></span></li>
+      <li><span class="ci">⚠️</span><span>End-slide subtitle "A Biopsychosocial Analysis of the Case 'Tommy'" inconsistent with title slide ("A Developmental Formulation"). <span class="tag t-med">V3-End-T1</span></span></li>
+      <li><span class="ci">⚠️</span><span>PDF pages 12–14 are appended non-presentation materials (assignment brief, vignette, old reference check). Not part of the deck but included in the export. <span class="tag t-info">FLAG</span></span></li>
+    </ul>
+
+    <h3>Rubric alignment (200-pt total)</h3>
+    <table>
+      <tr><th>Criterion</th><th>Weight</th><th>Current state</th><th>Risk</th></tr>
+      <tr><td><strong>Knowledge of ACEs &amp; development</strong></td><td>30% (60 pt)</td><td>Strong across all five slides. 15 cited sources on S3 alone. Biological, cognitive, social-emotional, and mental health impacts all named and evidenced. Intergenerational trauma newly sourced (Zhang, Narayan).</td><td>Low</td></tr>
+      <tr><td><strong>Analysis &amp; Evaluation</strong></td><td>50% (100 pt)</td><td>Formulation framing (5P, Weerasekera + Macneil) strong. S4 cycle fully cited. Closing synthesis on S5 excellent. Notes pane issues don't affect this criterion directly.</td><td>Low-Medium</td></tr>
+      <tr><td><strong>Communication</strong></td><td>20% (40 pt)</td><td>Visuals consistent and high-quality. <strong>Two empty reference slides remain a visible defect</strong> — a marker will register these as unfinished work. Title slide notes with wrong content is a recording risk, not a visual defect.</td><td>High (refs only)</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#555;margin-top:10px;">Communication is the only remaining at-risk criterion. The empty reference slides are the single fastest fix with the highest grade impact (V3-R-T1, ~5 minutes to delete or populate).</p>
+  </div>
+
+  <!-- JACKIE -->
+  <div id="jackie" class="card anchor">
+    <h2><span class="role-pill rp-jackie">Jackie</span> Evidence Audit — 78/100 <span class="delta-badge">+13 vs tommy5</span></h2>
+    <p style="color:#555;font-size:0.88rem;margin-bottom:18px;">All four P1 citation errors from tommy5 assessed. New sources introduced in v0.5 evaluated. Full statement-level audit: see <code>reference_check_tommy6.html</code>.</p>
+
+    <!-- Slide 1 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.3</span><span class="pdf-ref">Slide 1</span> Tommy: Presenting issues and formulation</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span><strong>P1 citation transposition — FIXED.</strong> Survival strategy⁶ → van der Kolk (2014) ✓; 5P framework⁷,⁸ → Macneil (2012) + Weerasekera (1996) ✓; trajectories⁵ → Bongers (2004) ✓. All linkages now logically correct.</span></li>
+        <li><span class="ci">✅</span><span><strong>P2 Achenbach preschool manual — FIXED.</strong> Footnote 1 now correctly cites Achenbach &amp; Rescorla (2001) school-age manual only.</span></li>
+        <li><span class="ci">✅</span><span>New: Dol, Reed &amp; Ferro (2022) cited for internalizing–externalizing risk pathway ✓ — legitimate peer-reviewed source (Children, MDPI).</span></li>
+        <li><span class="ci">✅</span><span>New: Macneil et al. (2012) cited for case formulation ✓ — BMC Medicine, verified in reference list.</span></li>
+        <li><span class="ci">⚠️</span><span>New: Card &amp; Little (2006) cited for proactive/reactive aggression on iceberg (superscript 3). Legitimate source (IJBD). Not previously in reference check — needs personal access verification. <span class="tag t-new">NEW — VERIFY</span></span></li>
+        <li><span class="ci">⚠️</span><span>Tangney et al. (1992) cited for shame items (superscript 4). Previously verified in tommy5 reference check (PMID 1583590) ✓. Now correctly placed on the internalizing items rather than on a shame→aggression claim. <span class="tag t-ok">CORRECT PLACEMENT</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.4</span><span class="pdf-ref">Slide 2</span> Predisposing factors</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span><strong>P2 Bronfenbrenner — FIXED.</strong> Diagram now footnote 2 = Bronfenbrenner (1979) ✓.</span></li>
+        <li><span class="ci">✅</span><span><strong>P3 neuroplasticity windows — FIXED.</strong> Shonkoff &amp; Phillips (2000) now footnote 4 ✓.</span></li>
+        <li><span class="ci">✅</span><span>"Social causation" label now carries footnote 3 = Link &amp; Phelan (1995) — no longer jargon, now academically grounded ✓.</span></li>
+        <li><span class="ci">✅</span><span>Felitti et al. (1998) remains correctly placed for ACE definition and dose-response ✓.</span></li>
+        <li><span class="ci">⚠️</span><span>New: Zhang et al. (2023) and Narayan et al. (2021) for intergenerational transmission. Not visible in reference list (would be on empty refs 2/3 or 3/4). Cannot verify bibliographic details from PDF. <span class="tag t-high">UNVERIFIED — refs invisible</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.5</span><span class="pdf-ref">Slide 3</span> Possible mechanism on developmental Impact</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span><strong>P1 Achenbach (1966) wrong-paper citation — FIXED.</strong> Shame→aggression sub-bullet removed. Footnote 5 now = Glover (2015) for prenatal HPA stress — correct placement ✓.</span></li>
+        <li><span class="ci">✅</span><span><strong>P2 Bowlby no year — FIXED.</strong> Now Bowlby (1969) footnote 7 ✓.</span></li>
+        <li><span class="ci">✅</span><span><strong>P3 Maternal low mood — FIXED.</strong> McCrory et al. (2017) footnote 12 correctly cited for maternal low mood + ACEs → MH risk ✓.</span></li>
+        <li><span class="ci">✅</span><span><strong>P3 Executive function uncited — FIXED.</strong> Now cited 1,3 (Garner &amp; Yogman + Teicher) ✓.</span></li>
+        <li><span class="ci">✅</span><span><strong>P3 Serve &amp; return uncited — FIXED.</strong> Center on the Developing Child (2007) footnote 13 ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: Glover (2015) for prenatal HPA — book chapter in Springer Advances in Neurobiology. Accessed 1 June 2026, URL in reference list ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: McLaughlin et al. (2019) for ACE + neurodevelopmental — Annual Review of Developmental Psychology 1:277–312 ✓ (verified in reference list).</span></li>
+        <li><span class="ci">✅</span><span>New: Arpino et al. (2010) for premature birth neurodevelopmental — Child's Nervous System 26(9):1139 ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: Dinkler et al. (2017) for FASD/malnutrition — JCPP 58(6):691–701 ✓ (in reference list, though appears as duplicate 2017a/b — see V3-R-T2).</span></li>
+        <li><span class="ci">⚠️</span><span>Dodge (2006) for Hostile Attribution Bias (footnote 4) — not independently PubMed-verifiable, same as tommy5. Still not confirmed. Fallback: Crick &amp; Dodge (1994). <span class="tag t-high">UNVERIFIED</span></span></li>
+        <li><span class="ci">⚠️</span><span>"ACEs → chronic disease risk¹⁴" still on slide — Felitti (1998) correctly cited but this bullet was flagged as optional trim in tommy5. Still present. <span class="tag t-info">OPTIONAL TRIM</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.6</span><span class="pdf-ref">Slide 4</span> Risk of complexity</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span><strong>P1 Broken citation "1) _." — FIXED.</strong> Seven complete citations: Teicher (1), Garner &amp; Yogman (2), Main &amp; Hesse (3), Weerasekera (4), McCrory &amp; Viding (5), Berg (6), Gajwani &amp; Minnis (7) ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: Berg et al. (2018) for diagnostic overshadowing — J Autism Dev Disord 48(1):45–54 ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: Gajwani &amp; Minnis (2023) for double jeopardy neurodevelopmental + ACEs — Eur Child Adolesc Psychiatry 32(1):1–4 ✓.</span></li>
+        <li><span class="ci">⚠️</span><span>Step 7 still reads "neurodevelomental" — typo, missing 'p'. <span class="tag t-med">V3-S4-T1</span></span></li>
+      </ul>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.7</span><span class="pdf-ref">Slide 5</span> Protective factors and Opportunity</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span><strong>P3 Opportunity bullets — FIXED.</strong> All four Opportunity bullets now carry citations (2, 2, 2, 3) — Masten (2001) and Blakemore &amp; Choudhury (2006) ✓.</span></li>
+        <li><span class="ci">✅</span><span>New: Blakemore &amp; Choudhury (2006) for adolescent neuroplasticity — JCPP 47(3–4):296–312, PMID 16492261 ✓.</span></li>
+        <li><span class="ci">✅</span><span>Siegel (2012) and Masten (2001) correctly cited — unchanged from tommy5 ✓.</span></li>
+      </ul>
+    </div>
+
+    <!-- References -->
+    <div class="slide-block">
+      <div class="slide-tag"><span class="pdf-ref">PDF p.8</span><span class="pdf-ref">Refs 1/3</span><span class="pdf-ref">PDF p.10–11</span><span class="pdf-ref">Refs 2/3, 3/4</span> References</div>
+      <ul class="check-list">
+        <li><span class="ci">✅</span><span>Reference slide 1/3 (PDF p.8) — heavily populated, typed Harvard format. Major improvement over all previous versions.</span></li>
+        <li><span class="ci">❌</span><span><strong>Reference slides 2/3 and 3/4 STILL EMPTY.</strong> Approximately 18 slide-cited sources (Achenbach 2001, Bongers, Bowlby, Bronfenbrenner, Center on the Developing Child, Dodge, Fonagy, Main &amp; Hesse, McCrory 2017, Narayan, Shonkoff, SIGN, Siegel, Tangney, Teicher, van der Kolk, Weerasekera, Zhang) are not visible in any printed reference slide. A marker cannot see the bibliographic details for these citations. <span class="tag t-crit">CRITICAL — V3-R-T1</span></span></li>
+        <li><span class="ci">❌</span><span><strong>Berg et al. (2018a) and (2018b) are duplicate entries</strong> — identical paper listed twice. Delete one. <span class="tag t-high">V3-R-T2</span></span></li>
+        <li><span class="ci">❌</span><span><strong>Dinkler et al. (2017a) and (2017b) are duplicate entries</strong> — identical paper listed twice. Delete one. <span class="tag t-high">V3-R-T2</span></span></li>
+        <li><span class="ci">⚠️</span><span>Nine sources appear in the bibliography but are not cited on any slide: Baker (2025), Bøe (2014), Cross (2017), Crouch (2019), Donaldson (2025), Granqvist (2017), Hostinar (2012), Kieling (2011), Lund (2020). Over-referencing is not penalised but creates clutter. Optional to remove. <span class="tag t-info">OPTIONAL — V3-R-T3</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PETER -->
+  <div id="peter" class="card anchor">
+    <h2><span class="role-pill rp-peter">Peter</span> Curriculum Coverage — 82/100 <span class="delta-badge">+6 vs tommy5</span></h2>
+
+    <table>
+      <tr><th>Curriculum concept</th><th>Source</th><th>Status</th></tr>
+      <tr><td>ACEs definition &amp; cumulative risk</td><td>M4 W1</td><td><span class="tag t-ok">✓ S2 (p.4)</span> Felitti 1998 cited, ACE count ~5–8 stated, dose-response explained</td></tr>
+      <tr><td>Biological impacts (HPA, toxic stress)</td><td>M4 W2</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Teicher, Garner &amp; Yogman, Glover (prenatal HPA new)</td></tr>
+      <tr><td>Neurological impact (amygdala–PFC)</td><td>M4 W2</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Teicher, McLaughlin 2019 (new)</td></tr>
+      <tr><td>Cognitive impacts (executive function)</td><td>M4 W2</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Executive function difficulties now cited 1,3 ✓</td></tr>
+      <tr><td>Social-emotional development (attachment)</td><td>M4 W3</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Main &amp; Hesse, Bowlby 1969, Fonagy 2002</td></tr>
+      <tr><td>Mentalizing / Fonagy</td><td>M4 W4</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Fonagy et al. 2002, cited for impaired mentalizing + hostile misattribution</td></tr>
+      <tr><td>5P formulation framework</td><td>M4 W4</td><td><span class="tag t-ok">✓ S1, S4</span> Macneil (2012) + Weerasekera (1996) — now correctly cited on S1</td></tr>
+      <tr><td>Bronfenbrenner ecological model</td><td>M4 W1</td><td><span class="tag t-ok">✓ S2 (p.4)</span> Bronfenbrenner (1979) footnote 2 — FIXED ✓</td></tr>
+      <tr><td>Protective factors &amp; resilience</td><td>M4 W5</td><td><span class="tag t-ok">✓ S5 (p.7)</span> Masten (2001) + Blakemore &amp; Choudhury (2006) new for adolescent neuroplasticity</td></tr>
+      <tr><td>FASD / neurodevelopmental risk</td><td>M4 W3</td><td><span class="tag t-ok">✓ S3 (p.5)</span> SIGN 2019 + Dinkler (2017) new</td></tr>
+      <tr><td>Diagnostic overshadowing</td><td>M4 W4</td><td><span class="tag t-ok">✓ S4 (p.6)</span> Step 7 — Berg (2018) + Gajwani &amp; Minnis (2023) — strongly cited now ✓</td></tr>
+      <tr><td>Individual / family / community levels</td><td>Assignment brief</td><td><span class="tag t-ok">✓ S2 (p.4)</span> Four risk layers explicitly structured</td></tr>
+      <tr><td>Intergenerational transmission</td><td>M4 W2</td><td><span class="tag t-ok">✓ S2 (p.4)</span> Zhang (2023) + Narayan (2021) — newly sourced ✓ (refs invisible pending fix)</td></tr>
+      <tr><td>Serve &amp; return / relational health</td><td>M4 W3</td><td><span class="tag t-ok">✓ S3 (p.5)</span> Center on the Developing Child (2007) footnote 13 — FIXED ✓</td></tr>
+      <tr><td>Depression as specific MH outcome</td><td>M4 W4</td><td><span class="tag t-high">⚠ S3 (p.5)</span> "Mental health risk" still generic; McCrory 2017 covers it but depression not named. Notes for S1 reference depression from Bongers prediction pathway.</td></tr>
+      <tr><td><strong>Continuum of Need / GIRFEC</strong></td><td>M4 W3 p.35</td><td><span class="tag t-info">★ In notes, not on slide</span> S5 notes pane contains a well-structured Continuum of Need (Universal → Selective → Indicated → Specialist) with correct vignette mapping. Verbal mention during recording partially compensates for absence from slide.</td></tr>
+      <tr><td>Adolescent neuroplasticity / brain development</td><td>M4 W4</td><td><span class="tag t-ok">✓ NEW S5 (p.7)</span> Blakemore &amp; Choudhury (2006) — strong addition ✓</td></tr>
+    </table>
+
+    <p style="margin-top:10px;font-size:0.88rem;color:#555;"><strong>Peter's overall:</strong> Coverage has strengthened meaningfully since tommy5. The addition of Blakemore &amp; Choudhury (2006) directly addresses adolescent neuroplasticity and the Continuum of Need appears in the S5 speaker notes — a smart workaround that allows verbal delivery without slide clutter. The two remaining gaps (depression named explicitly, Continuum on slide) are genuinely optional at this grade level.</p>
+  </div>
+
+  <!-- STEVEN -->
+  <div id="steven" class="card anchor">
+    <h2><span class="role-pill rp-steven">Steven</span> Narrative &amp; Script Review — 76/100 <span class="delta-badge">+4 vs tommy5</span></h2>
+
+    <h3>Through-line</h3>
+    <p><em>"Tommy's behaviours are the cumulative product of interacting developmental adversities — a formulation-based reading can explain and begin to address them. Outcome is not fixed."</em></p>
+    <p>Through-line remains strong and well-resolved. S1 thesis → S2 origins → S3 mechanisms → S4 complexity → S5 hope is a logically sound arc fully aligned with the rubric's Analysis &amp; Evaluation criterion.</p>
+
+    <h3>Speaker notes — CRITICAL ISSUES</h3>
+
+    <div class="notes-warn">
+      <strong>⚠ Title slide notes (notesSlide2): WRONG PRESENTATION CONTENT</strong><br>
+      Notes currently open with: <em>"Good day, everyone. Today I'll elaborate on a possible paradigm shift in psychotropic interventions. Specifically, how neuroplasticity enhancement might reshape understanding and treatment of major depressive disorder."</em><br>
+      This is content from a completely different presentation. If read during recording, the student opens a Tommy/ACEs presentation with a neuropharmacology intro. This is a Go/No-Go blocker. <strong>Must be deleted and replaced before recording.</strong> See V3-Notes-T1.
+    </div>
+
+    <div class="notes-warn">
+      <strong>⚠ S3 notes (notesSlide5): Old QA guidance still present</strong><br>
+      Notes still contain the recommendation: <em>"For Wellbeing (Internalizing/Externalizing): The relationship between your keywords (Shame vs. Aggression) is best supported by Achenbach (1966). This proves that Tommy is showing a 'mixed' presentation."</em><br>
+      This is the old FQA guidance that was supposed to trigger the slide fix — the slide was corrected but the notes pane still instructs the student to cite the wrong paper verbally. Must be removed. See V3-Notes-T3.
+    </div>
+
+    <div class="notes-warn">
+      <strong>⚠ S1 notes: Still cite Achenbach &amp; Rescorla (2000) preschool manual</strong><br>
+      S1 speaker notes contain: <em>"Research indicates…(Achenbach &amp; Rescorla, 2000; Bongers et al., 2004)."</em> The slide was corrected to 2001 but the note still references the 2000 preschool manual. If spoken during recording this re-introduces the P2 error verbally. See V3-Notes-T2.
+    </div>
+
+    <h3>Bridge quality between slides</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>S1 → S2: natural from presenting iceberg to predisposing origins.</span></li>
+      <li><span class="ci">✅</span><span>S2 → S3: ACE categories to mechanisms is logical.</span></li>
+      <li><span class="ci">⚠️</span><span>S3 → S4: no explicit spoken bridge in notes. Suggest: <em>"These mechanisms don't operate in isolation — together they form a self-reinforcing cycle, which I'll map now."</em></span></li>
+      <li><span class="ci">⚠️</span><span>S4 → S5: abrupt. S4 ends on diagnostic overshadowing; S5 opens on protective factors. Suggest: <em>"Despite this complexity, Tommy's story is not one-directional."</em></span></li>
+    </ul>
+
+    <h3>Notes length — delivery readiness</h3>
+    <p style="font-size:0.88rem;color:#555;">The speaker notes for S1 and S2 are very long — they function as a reference library rather than a delivery script. S1 notes alone would take ~3 minutes to read. These must be edited to ~150 words per slide before recording. The S3, S4, and S5 notes are more appropriate in length.</p>
+
+    <h3>Slide density</h3>
+    <ul class="check-list">
+      <li><span class="ci">✅</span><span>S1 (PDF p.3): Good balance. New citation structure cleaner than tommy5.</span></li>
+      <li><span class="ci">✅</span><span>S2 (PDF p.4): Manageable. Ecological model well-organised.</span></li>
+      <li><span class="ci">⚠️</span><span>S3 (PDF p.5): Still the densest slide (7 categories, 15 footnotes). Shame→aggression removed ✓ — timing improved. Still recommend removing "ACEs → chronic disease risk" bullet (trim saves ~15 sec). See V3-S3-T1.</span></li>
+      <li><span class="ci">✅</span><span>S4 (PDF p.6): Numbered list works well for delivery.</span></li>
+      <li><span class="ci">✅</span><span>S5 (PDF p.7): Clean structure. Closing synthesis strong.</span></li>
+    </ul>
+
+    <h3>Script timing — realistic 10-minute check</h3>
+    <div class="timing-box">
+      <h4>⏱ Estimated script timing at 150 wpm (after shame→aggression trim)</h4>
+      <div class="timing-row"><span>Title + intro (if notes corrected)</span><span style="font-family:monospace;color:#1b5e20;">0:25</span></div>
+      <div class="timing-row"><span>Slide 1 — Presenting issues + formulation</span><span style="font-family:monospace;color:#1b5e20;">1:55</span></div>
+      <div class="timing-row"><span>Slide 2 — Predisposing factors</span><span style="font-family:monospace;color:#1b5e20;">2:10</span></div>
+      <div class="timing-row" style="color:#e65100;"><span>Slide 3 — Mechanisms (dense, 15 citations — shame→aggression removed)</span><span class="t-warn" style="font-family:monospace;">2:10</span></div>
+      <div class="timing-row"><span>Slide 4 — Risk of complexity</span><span style="font-family:monospace;color:#1b5e20;">1:25</span></div>
+      <div class="timing-row"><span>Slide 5 — Protective factors + opportunity</span><span style="font-family:monospace;color:#1b5e20;">1:25</span></div>
+      <div class="timing-row"><span>Closing + sign-off</span><span style="font-family:monospace;color:#1b5e20;">0:20</span></div>
+      <div class="timing-row" style="font-weight:800;border-top:2px solid #a5d6a7;padding-top:8px;"><span>TOTAL (current)</span><span style="font-family:monospace;color:#1b5e20;">~9:50</span></div>
+    </div>
+    <p style="font-size:0.88rem;color:#555;">Estimated ~9:50 — within the 10-minute limit. Applying the S3 chronic-disease trim recovers a further ~15 seconds (→ ~9:35), giving comfortable delivery margin. Notes editing may affect timing — ensure the final scripted notes clock to ~150 words per slide.</p>
+
+    <div class="trim-box">
+      <h4>✂️ Remaining trim opportunity</h4>
+      <div class="trim-item"><strong>Trim — S3 "ACEs → chronic disease risk¹⁴" bullet</strong> (saves ~15 sec). The Felitti (1998) ACE/chronic disease link was already established on S2 — repeating it on S3 adds nothing. Removing it also reduces S3 footnote count from 15 to 14. See V3-S3-T1.</div>
+    </div>
+  </div>
+
+  <!-- EGBERT -->
+  <div id="egbert" class="card anchor">
+    <h2><span class="role-pill rp-egbert">Egbert</span> Synthesis &amp; Prioritised Recommendations</h2>
+
+    <div class="verdict-box">
+      <div class="v-title">Grade estimate: A− (~162–172 / 200)</div>
+      <div class="v-text">tommy6 is a genuinely strong academic presentation. The citation architecture has been transformed: the 5P framework is correctly anchored, intergenerational trauma is sourced, neuroplasticity in adolescence is evidenced with Blakemore, and the diagnostic overshadowing section carries two new specialist citations (Berg, Gajwani &amp; Minnis). The formulation arc is clear, thesis-driven, and analytically sound. Two issues prevent A+: the empty reference slides (leaving ~18 sources invisible) and corrupted speaker notes (wrong intro + old Achenbach guidance still present). Both are administrative fixes that do not require any new content or academic research. Fix them in one 30-minute session.</div>
+    </div>
+
+    <h3>Prioritised V3 actions</h3>
+    <table>
+      <tr><th>Priority</th><th>Task ID</th><th>Location</th><th>Issue</th><th>Action</th></tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V3-R-T1</td>
+        <td>Refs 2/3 + 3/4</td>
+        <td>Two empty reference slides — ~18 cited sources invisible</td>
+        <td>Populate or delete both slides — 5–15 min</td>
+      </tr>
+      <tr>
+        <td class="p1">P1 CRITICAL</td><td>V3-Notes-T1</td>
+        <td>Title slide notes</td>
+        <td>Notes open with wrong presentation content (neuroplasticity / MDD)</td>
+        <td>Delete first two sentences; replace with Tommy intro — 2 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V3-Notes-T3</td>
+        <td>S3 notes</td>
+        <td>Old QA guidance recommends Achenbach (1966) verbally — already fixed on slide but still in notes</td>
+        <td>Delete that paragraph from S3 notes — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V3-Notes-T2</td>
+        <td>S1 notes</td>
+        <td>Achenbach (2000) preschool manual still cited in notes text</td>
+        <td>Remove "Achenbach &amp; Rescorla, 2000" from spoken sentence — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p2">P2 HIGH</td><td>V3-R-T2</td>
+        <td>Refs 1/3</td>
+        <td>Berg (2018a/b) and Dinkler (2017a/b) duplicate entries</td>
+        <td>Delete one of each — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V3-S4-T1</td>
+        <td>S4 step 7</td>
+        <td>"neurodevelomental" typo</td>
+        <td>Fix to "neurodevelopmental" — 30 sec</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V3-End-T1</td>
+        <td>End slide</td>
+        <td>Subtitle "A Biopsychosocial Analysis" ≠ title slide "A Developmental Formulation"</td>
+        <td>Change to "Developmental risk under cumulative adversity" — 1 min</td>
+      </tr>
+      <tr>
+        <td class="p3">P3 MEDIUM</td><td>V3-Notes-T4</td>
+        <td>S1 + S2 notes</td>
+        <td>Notes too long to deliver in 10 min (S1 ≈ 3 min, S2 ≈ 3 min if read fully)</td>
+        <td>Edit to ~150 words per slide; keep key claims and transitions only — 20 min</td>
+      </tr>
+      <tr>
+        <td class="p4">P4 OPTIONAL</td><td>V3-S3-T1</td>
+        <td>S3</td>
+        <td>"ACEs → chronic disease risk" bullet — already on S2; saves ~15 sec</td>
+        <td>Remove bullet — 30 sec</td>
+      </tr>
+      <tr>
+        <td class="p4">P4 OPTIONAL</td><td>V3-R-T3</td>
+        <td>Refs 1/3</td>
+        <td>9 sources in refs not cited on any slide (Baker, Bøe, Cross, Crouch, Donaldson, Granqvist, Hostinar, Kieling, Lund)</td>
+        <td>Remove uncited entries — 3 min</td>
+      </tr>
+    </table>
+
+    <h3>Go / No-Go</h3>
+    <div class="verdict-box warn">
+      <div class="v-title">🟡 CONDITIONAL GO — fix V3-R-T1 and V3-Notes-T1/T3 before recording</div>
+      <div class="v-text">The presentation <strong>must not be recorded</strong> while the title slide notes contain a different presentation's opening script, or while S3 notes instruct the student to cite the wrong paper verbally. The empty reference slides remain a visible academic defect. These three fixes take under 20 minutes and lift the estimated grade from A− to A/A+. All P2 and P3 tasks are same-session upside. The deck is academically sound — this is purely an administrative pass before recording.</div>
+    </div>
+
+    <p style="margin-top:14px;font-size:0.88rem;color:#555;">Companion files for execution:</p>
+    <ul style="margin-left:22px;font-size:0.88rem;color:#555;">
+      <li><code>detailed_change_tasks_v3.html</code> — slide-by-slide chapters with exact wording and diff for each V3 task.</li>
+      <li><code>reference_check_tommy6.html</code> — full evidence audit: every visible claim classified with Harvard bibliography and source quotes.</li>
+    </ul>
+  </div>
+
+  <div class="report-footer">
+    Essay Fabrik — FQA Report — tommy6.pdf (v0.5 CLAUDE) — Module 4 Part A — 1 June 2026<br>
+    Egbert (Christoph · Jackie · Peter · Steven, synthesised)
+  </div>
+
+</div>
+</body>
+</html>

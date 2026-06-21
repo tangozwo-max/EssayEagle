@@ -1,0 +1,13 @@
+{
+  "version": "v003",
+  "parent": "v002",
+  "phase": "fqa",
+  "loopCount": 2,
+  "fqaScore": 86,
+  "passThreshold": 85,
+  "accepted": true,
+  "criteria": { "KU": 85, "AE": 87, "CR": 83 },
+  "rubricPoints": { "KU": "51/60", "AE": "87/100", "CR": "33/40", "total": "171/200 (85.5%)" },
+  "delta": "+2 vs v002 (84)",
+  "note": "Added a genuine reasoned judgment to §3.3: weighs the general-use causal dispute (Fassi vs Odgers & Jensen) against the mechanism-specific claim, concluding the disagreement is about the wrong variable. This is A+ A&E reasoning (synthesis + judgement). fqaScore 86 >= 85 target -> ACCEPTED."
+}

@@ -1,0 +1,4790 @@
+2023, vot 
+2468) 281-326
+The 
+Authors) 
+2022 
+6166
+(SSAGE 
+Intergenerational 
+Transmission 
+of 
+Parental 
+Adverse 
+Childhood 
+Experiences 
+and 
+Children·s 
+Outcomes: 
+A Scoping 
+Review 
+Lixia 
+Joshua P. Mersky?, 
+Anne 
+Marie 
+H. 
+and June-Yung Kim* 
+Abstract 
+Adverse 
+childhood 
+experiences 
+(ACEs) are 
+among 
+the leading environmental 
+causes 
+of morbidity and mortality. Extending 
+research 
+on 
+within-generation effects, 
+more 
+recent 
+scholarship has explored between-generation consequences 
+of ACEs. 
+Despiee growing 
+interest 
+in the intergenerational effects of parents· ACEs 
+on 
+children·s 
+outcomes, 
+this line of 
+scholarship has 
+yet to 
+be coalesced 
+into 
+a comprehensive review. 
+The 
+current 
+study isa 
+scoping 
+review 
+on 
+the intergenerational transmission 
+of parental ACEs 
+and children·s 
+outcomes. 
+Ten databases 
+such as PubMed, APA PsycArticles, and Social Work 
+Abstracts 
+were 
+searched. 
+To be included, empirical studies 
+must 
+have been published in English and analyzed 
+associations 
+between 
+a 
+·cumulative 
+measure 
+of at 
+least four parental ACEs and children·s 
+outcomes. 
+Sixty-eight studies qualified for the 
+review 
+and, 
+among these, 60 
+were 
+published in the most recent 
+Syears 
+(2018-2022). Fifty-one studies had sample 
+sizes 
+smaller 
+than 500, 
+and 55 focused 
+on 
+the effect 
+of maternal 
+ACEs. Nearly ll 
+studies 
+demonstrated 
+that parental ACEs 
+could affect children's 
+·outcomes 
+directly or indirectly via 
+mechanisms 
+like maternal 
+mental 
+health problems or parenting-related factors. 
+By scoping 
+the extant 
+literature, 
+this 
+review 
+advances the knowledge base regarding the intergenerational impacts of parental childhood 
+trauma 
+and children·s 
+outcomes. 
+It also reveals methodological limitations 
+that should 
+be addressed 
+in future 
+research 
+to 
+strengthen causal inferences 
+along with practical implications for 
+interventions 
+that 
+aim 
+to 
+interrupt 
+the intergenerational 
+transmission 
+of trauma, 
+Keywords 
+adverse 
+childhood 
+experiences, 
+intergenerational transmission, 
+child outcomes, 
+scoping 
+review 
+Adverse 
+childhood 
+experiences 
+(ACEs), including different 
+forms of child maltreatment 
+(e.g, physical abuse, emotional 
+negleet) and 
+household 
+dysfunction (e.g. 
+document 
+the 
+intergenerational 
+effects 
+of 
+ACES 
+(Cooke 
+et 
+al, 
+2019; 
+Fredland 
+et 
+al., 2018; 
+Hatch 
+et 
+al., 2020; 
+Letoumeau 
+et al., 2019; 
+Madigan et al., 2019; 
+MeDonald 
+substance 
+use, 
+domestic 
+violence), are 
+among 
+the leading environmental, 
+causes 
+of morbidity and mortality (Bellis etal.,2019; Hughes. 
+etal, 2017). Research has shown that ACEs 
+are highly prev- 
+alent and interrelated, 
+and that with 
+increased 
+exposure 
+to 
+ACEs 
+comes 
+a greater 
+risk 
+of poor 
+outcomes 
+in 
+later 
+life 
+(Feliti 
+etal, 
+1998; Hughes etal, 
+2017). Although ACEs 
+are 
+often 
+measured 
+retrospectively, 
+causal 
+inferences 
+are 
+strengthened by observations 
+of 
+a dose-response effect 
+between 
+cumulative 
+ACES 
+scores 
+and 
+an 
+array 
+of health 
+eon- 
+sequences. 
+By 
+shifting 
+researchers· 
+attention 
+from 
+single 
+forms 
+of 
+childhood adversity 
+in 
+isolation 
+to 
+cumulative 
+adversity in combination, the ACES framework 
+has conteib- 
+uted to 
+a 
+more 
+comprehensive understanding of the human 
+and economic 
+impact of early adversity throughout the lifes 
+pan (Anda, 2007). 
+Having established 
+that ACEs undermine 
+health and well- 
+being throughout the life 
+course, 
+scholars 
+have begun to 
+et al., 2019; 
+Negriff, 2020; Rieder 
+et al, 2019; 
+et al, 2018; Stepleton et al, 2018; Sun et al., 2017; Zhang, 
+etal, 2022). 
+Extending along line of research 
+indicatin
+that, 
+child maltreatment 
+victims 
+are 
+more 
+likely than 
+to become 
+perpetrators 
+of maltreatment 
+(Assink et 
+al., 
+2018; 
+Langevin et al, 2021; Madigan et 
+al., 2019; 
+Thomberry 
+et al, 2012; Widom, 
+1989), recent 
+studies 
+have uncovered 
+"University of 
+Louis, 
+USA 
+"University of 
+USA 
+of Norther 
+Iowa, USA 
+of North 
+Dakota, USA 
+Corresponding 
+Author: 
+Uni 
+Zhang, Kent 
+Schoo 
+of Socal 
+Work 
+ad 
+Family Science, University of 
+217 
+53rd Stree. 
+Oppenheimer Hall 208, Louie, 
+KY 40292, 
+USA 
+Ema 
+xia 
+·continuity between 
+generations 
+in 
+the amount of 
+childhood 
+adversity experienced by parents and their 
+children 
+(Narayan 
+2017; 
+Negriff, 2020; Schofield 
+etal, 2018). 
+In the last, 
+Sears, 
+there 
+has also 
+been 
+a surge 
+of interest 
+in the 
+effects of 
+'ACEs 
+on 
+the next 
+development, 
+Given 
+the rapid 
+progress 
+ofthis 
+literature, there 
+is 
+a need 
+to take 
+stock 
+of the 
+and identify gaps that warrant 
+further 
+attention 
+Recent 
+intergenerational 
+studies 
+indicate 
+that parents· ret- 
+rospective 
+accounts 
+of their 
+ACE 
+histories 
+are 
+associated 
+·with their offspring·s risk of poor outcomes 
+across 
+domains 
+throughout childhood 
+and adolescence. 
+Beginning in infancy, 
+there 
+is evidence 
+linking parental ACEs 
+to delays in key 
+developmental domains 
+such 
+as 
+motor 
+skills, language, and 
+social 
+interaction 
+(Racine et al., 2018; Sun et al, 2017) as, 
+well 
+as difficult 
+temperament 
+characteristics 
+such 
+as nega- 
+tive 
+mood 
+and withdrawal 
+(Bouvette-Turcot 
+et al., 2020; 
+et al., 2019). Other 
+research 
+has documented 
+a 
+relationship between parental ACEs 
+and child 
+health 
+out- 
+·comes 
+such 
+as child 
+asthma 
+and poor overall 
+health 
+status, 
+(Lé-Scherban et al., 2018). In addition, 
+several intergenera- 
+tional 
+studies have linked parental 
+ACEs 
+to 
+an increased 
+risk. 
+of child 
+extemalizing and intemalizing problems in early 
+childhood 
+(Plant et 
+al., 2017; Schickedanz 
+et al., 
+2018), 
+Moreover, although less attention 
+has been paid to youth out- 
+·comes, 
+emerging 
+evidence 
+suggests that the intergenerational, 
+effects of parental ACES manifest 
+in 
+poorer 
+adolescent 
+men- 
+tal 
+health 
+and academic 
+performance (Doi et al., 2020a,, 
+20206). 
+There 
+are 
+iny plausible causal 
+mechanisms 
+that 
+may 
+explain, in 
+whole 
+or 
+part, the intergenerational effects 
+of 
+ACEs 
+that have been observed. 
+For 
+instance, 
+exposure 
+10 
+·cumulative 
+stress 
+and adversity are 
+known 
+to alter epigene- 
+tic, neurobiological, and physiological profiles (Conradt 
+et al, 2018; Ridout 
+et al., 2018). Few 
+studies 
+to date have 
+explored these potential mechanisms, though one 
+study by 
+·Madigan et al. (2017) 
+found 
+that cumulative 
+biomedical 
+risk 
+mediated 
+Ue 
+between 
+maternal 
+ACEs 
+and infant 
+health. 
+Most 
+studies 
+that have explored indirect 
+pathways, 
+hhave instead 
+focus 
+on 
+psychosocial mediators. 
+Maternal 
+·mental health and parenting behaviors 
+are 
+the hypothesized 
+·mechanisms 
+that have received 
+the most 
+attention 
+to 
+date 
+(Zhang et al., 2022), though other mediators 
+such 
+as social 
+support and 
+socioeconomic 
+status 
+have also been explored 
+(Choi 
+et al., 
+2017; 
+Doi 
+et al., 
+2020a; Racine 
+et al., 
+2018; 
+Treat 
+et al., 2019). 
+Research 
+into intergenerational mechanisms 
+of 
+is particularly promising 
+because 
+it has the potential to 
+strengthen causal 
+inferences 
+while 
+generating implications 
+for strategies that 
+can 
+be used 
+to interrupt 
+the intengenera- 
+tional 
+transmission 
+of 
+trauma. 
+Along with 
+mediation 
+models, 
+studies 
+of moderating 
+effects may 
+also 
+advance the 
+literature 
+by identifying 
+indi- 
+vidual 
+and contextual 
+factors 
+that strengthen or 
+weaken, 
+the effects 
+of 
+ACEs. There 
+are 
+many plausible 
+of 
+moderators 
+that 
+may 
+influence 
+the 
+intergenerational 
+this 
+area, 
+studies 
+of moderation 
+have largely focused 
+on 
+·genetic and biological 
+factors 
+such 
+specific 
+gene 
+variants 
+(Bouvette-Turcot_ 
+et 
+al., 
+2015), 
+hormones 
+(Thomas- 
+Argyriow et al., 
+2020), and 
+brain 
+functions 
+(van de Ven 
+et al., 2020). Other 
+moderator 
+groups 
+that 
+have 
+received. 
+less 
+attention 
+include demographic indicators 
+such 
+child 
+age 
+and 
+parent 
+education 
+status 
+(Rieder 
+et 
+al., 2019; 
+Stepleton et al, 2018) and psychosocial processes 
+such 
+as 
+parent-child attachment 
+(Bouvette-Turcot 
+et al, 2013) and 
+social support (Hatch et al, 2020). 
+Study Aims 
+·Although one 
+recent 
+study systematically reviewed 
+the liter- 
+·ture 
+on maternal 
+ACE and child behavior problems (Cooke 
+cet al, 2021), emergent research 
+on 
+the intergenerational 
+effects 
+of parental ACEs 
+on 
+different 
+child 
+outcomes 
+has yet 
+tobe coalesced 
+into 
+a comprehensive 
+review 
+that synthesizes 
+the knowledge base and identifies 
+research gaps that warrant 
+further 
+exploration. The 
+current 
+scoping 
+review 
+aims 
+to 
+advance 
+rescarch 
+and practice 
+by: (1) mapping 
+the scope 
+of 
+intergenerational research linking parental ACES 
+to impacts 
+·on 
+their 
+children·s 
+outcomes; 
+(2) summarizing 
+the 
+main 
+cifects of parents· 
+ACEs 
+on 
+their children·s 
+outcomes 
+along 
+with potential mediators 
+and moderators; and (3) identifying 
+key 
+research 
+gaps in 
+the literature and 
+pointing out 
+directions 
+for future research and practice 
+Methods 
+·This study utilized 
+the scoping 
+review methodology devel- 
+·oped by Arksey and O'Malley (2005). Scoping reviews. 
+allow 
+researchers 
+to map the landscape of the research 
+area, 
+summarize 
+and 
+interpret 
+the 
+research 
+findings, identify 
+research 
+gaps 
+in 
+the existing literature, and provide direc- 
+tions 
+for 
+future 
+research, 
+practice, 
+and policy (Arksey & 
+·O'Malley, 2005; 
+Davis 
+et 
+ul, 2009). Compared to 
+other 
+review 
+methods 
+like systematic 
+reviews, 
+scoping 
+reviews. 
+provide a broader 
+overview 
+of evidence 
+from 
+studies 
+that 
+coalesce 
+around 
+more 
+general research questions. Thus, it 
+is 
+·especially appropriate 
+for disciplines with 
+emerging 
+evi- 
+dence (Levac etal, 
+2010). 
+·The 
+current 
+study followed 
+the 
+recommendations 
+of 
+and O'Malley (2005), who organized the scoping. 
+review 
+process 
+into five stages: 
+Stage 1: Develop the Research Questions 
+·This scoping 
+review 
+is guided by two overarching research, 
+(1) What 
+evidence 
+exists on 
+the relations 
+between, 
+parental ACES and children·s 
+outcomes? 
+(2) What 
+are 
+the 
+limitations and 
+gaps in 
+the 
+evidence base? Given 
+the fact 
+that 
+standard 
+definitions 
+and measures 
+of 
+ACES 
+have 
+not 
+been 
+agreed upon, 
+we 
+did 
+not 
+operationalize ACES 
+a 
+prior 
+Instead, replicating a recent 
+systematic 
+review 
+that examined 
+the health 
+effects 
+of ACEs 
+(Hughes et al., 2017) and also. 
+considering 
+the fact that 
+many 
+studies 
+have confirmed 
+that 
+exposure 
+to 
+four 
+or 
+more 
+ACES 
+is associated with 
+an 
+array 
+of 
+consequences 
+(eg., Felitt 
+et al., 1998; Hunt 
+et al., 2017; 
+Liu 
+et al, 2021), 
+we 
+included 
+any 
+used 
+@ cumulative 
+count 
+measure 
+of 
+at 
+least 
+four 
+ACES. 
+Moreover, 
+we 
+didn·t 
+predefine children·s 
+outcomes 
+in 
+our 
+search 
+because 
+our 
+purpose 
+is 
+to 
+map the literature 
+and. 
+include 
+all kinds 
+of child 
+outcomes. 
+If 
+we predefine child 
+outcomes, 
+we 
+cannot 
+guarantee that 
+our 
+definition 
+of child 
+outcomes 
+is comprehensive enough to 
+cover 
+all child 
+out- 
+comes 
+and we 
+may 
+miss 
+some 
+relevant 
+studies. 
+Thus, the saf- 
+est strategy is 
+to identify all intergenerational ACES studies, 
+and select studies 
+on 
+child 
+outcomes. 
+We also found 
+some 
+other 
+review 
+studies adopted the same 
+strategy (e.g., Cooke 
+et al., 2021). However, when 
+we 
+reviewed 
+the identified 
+studies, 
+we 
+did 
+limit 
+our 
+review 
+to 
+research 
+on 
+outcomes, 
+·occurring 
+after 
+a child·s 
+birth, thereby excluding studies that, 
+have examined 
+the link 
+between 
+ACEs 
+and poor 
+tive 
+health 
+and 
+birth 
+outcomes 
+(Appleton 
+et 
+al., 2019; 
+Christinens 
+et al., 2015; 
+Mersky & 
+Plummer 
+Lee, 2019), We 
+also restricted 
+our 
+review 
+to studies 
+that examined 
+of child 
+health 
+and functioning. That is, 
+studies 
+includi 
+only proxy 
+measures 
+that are 
+correlated 
+with child 
+outcomes, 
+such as healthcare 
+utilization 
+were 
+not 
+included in 
+the review 
+(Eismann et al, 2019; 
+Shah et al., 
+2020). In sum, 
+this review 
+aims 
+to scope the available 
+literature 
+that has examined 
+how 
+the effects 
+of cumulative 
+exposure 
+to ACEs 
+in one 
+generation 
+undermine 
+the 
+health 
+outcomes 
+of children 
+in 
+the 
+next, 
+generation. 
+rational 
+studies 
+that 
+Stage 2: Identify Relevant Studies 
+·The scoping 
+search 
+was 
+conducted 
+in May 2022. The search 
+strategies 
+were 
+drafted 
+by the social 
+work 
+librarian 
+co- 
+author 
+and 
+further 
+refined 
+through team 
+discussion, 
+The 
+librarian 
+co-author 
+searched 
+10 databases: 
+PubMed, 
+APA 
+PsyeArticles 
+(EBSCOhost 
+platform), 
+APA 
+(EBSCOhost), CINAHL 
+(EBSCOhost), Family & Society 
+Studies 
+Worldwide 
+(EBSCOhost), Social 
+Services 
+Abstracts 
+(ProQuest platform), 
+Social 
+Work 
+Abstracts 
+(ProQuest), 
+Sociological Abstracts 
+(ProQuest), Google Scholar, and 
+the 
+Open 
+Science 
+Framework. 
+The 
+search 
+strategy for PubMed 
+is. as follows: 
+OR 
+OR ·mother· 
+[TW] 
+OR 
+·father· [TW] OR ·Parent-Child 
+AND 
+(adverse 
+childhood 
+OR 
+·Child 
+Abuse· [MeSH] OR ·adversechildhoodexperiences·[TW] 
+OR ACES{TW] 
+OR 
+·childhood 
+adversity"[TW] OR 
+·childhood 
+OR ·Cumulative 
+OR ·cumulative 
+adversity'TTW] OR 
+OR 
+(Adult 
+Survivors 
+of Child Abuse"[MeSH] OR ·parental ACES'TTW] 
+OR ·parental adverse 
+childhood 
+AND 
+Cintergeneratio® [TW] 
+OR 
+·cross-gencratio· [TW] 
+OR 
+Full search strategies for other databases 
+are 
+included 
+in 
+the 
+supplemental materials 
+upon 
+request. Note 
+that straight, 
+rather than curly, quotation marks 
+were 
+used throughout the 
+search 
+process 
+10 
+ensure 
+accurate 
+results 
+(Barrick 
+& 
+1021). To scope the Full intergenerational ACES 
+literature, no 
+publication date 
+limits were 
+applied, 
+meaning, 
+that any qualifying study published by May 2022 
+would 
+be 
+included. 
+We also supplemented 
+our 
+search by hand search- 
+ing and sereening 
+the reference lists 
+of retrieved 
+studies. The 
+search process yielded 3,099 articles, which 
+were 
+exported. 
+into 
+a reference 
+manager 
+database (Zotero). After duplicates 
+·were 
+removed, 1,973 articles 
+remained, 
+Stage 3: Select Articles Using Inclusion and 
+Exclusion Criteria 
+·The following inclusion 
+eriteria 
+were 
+applied at both 
+ttle 
+and abstract 
+review, 
+and full-text 
+review 
+stages: (1) English, 
+language; (2) Peer-reviewed 
+articles; (3) Studies 
+with 
+a 
+cumulative 
+measure 
+of at least four ACEs; (4) Studies 
+of 
+intergenerational ACE 
+effects; (5) Studies 
+of children·s 
+outcomes, 
+·The first author conducted 
+the title and abstract 
+review 
+on 
+the 1,973 unduplicated articles 
+and identified 
+141 articles 
+to 
+be included 
+in the full-text 
+review. 
+The first author 
+and the 
+third author 
+reviewed 
+the full ext 
+of the 141 studies indepen- 
+dently. Discrepancies between 
+the 
+two 
+authors· 
+selection 
+resulls 
+were 
+clarified 
+and discussed 
+among 
+all authors 
+until 
+consensus 
+was 
+reached. Finally, 68 articles 
+were 
+identified 
+for this scoping 
+review. 
+Stage 4: Chart the Data 
+·The narrative 
+reviews 
+approach (Pawson, 2002) was 
+used, 
+to extract 
+data on study characteristies, 
+including author(s), 
+year 
+of publication, 
+study location, 
+study populations, 
+·study objectives, 
+research 
+design, ACEs 
+measurement, 
+child outcomes, 
+mechanisms 
+tested, 
+and main 
+findings
+(See 
+·Supplemental Table) 
+Stage 5: Summarize 
+and Interpret Study Findings 
+Findings that emerged from the studies 
+were 
+summarized 
+in 
+Table 
+| and interpreted in 
+the Results 
+and Dis 
+tions. 
+Implications for future 
+research and pract 
+discussed. 
+Results 
+Study Contexts 
+·The 68 studies reviewed 
+were 
+published between 
+2013 and. 
+2022, with 
+60 (88.2%) published in the most 
+recent 
+5 years, 
+(2018-2022). Thirty-four studies 
+(50.0%) were 
+conducted 
+in 
+the United 
+States, 17 (25.0%) were 
+conducted 
+in 
+Canada, 
+and 17 (25.0%) were 
+conducted 
+in other 
+countries 
+like Japan, 
+Zhang et al 
+3255 
+Korea, South A 
+ica, 
+and the United Kingdom. Twenty-seven 
+studies (39.72%) had a sample 
+size smaller 
+than 200, 24 stud- 
+ies (35.3%) sampled between 
+201 and 500 participants, 
+and 
+17 studies 
+(25.0%) had 
+a 
+sample size 
+larger than 
+S00. 
+Moreover, 23 
+studies (33.8%) 
+mainly 
+focused 
+on populations. 
+status, 
+Most 
+studies 
+80.9%) exclusively examined 
+the effect 
+of maternal 
+ACEs,, 
+while 
+12 studies 
+measured 
+both maternal 
+and paternal ACES. 
+and I study exclusively assessed 
+the impact of 
+paternal ACEs, 
+(Merrill 
+et al, 2021). 
+More 
+than half of 
+the studies (n=37,, 
+'54.4%) 
+focused 
+on the 
+outcomes of children 
+aged 
+0 to 5 years. 
+with 
+lower 
+s 
+Study Designs 
+OF 
+the 
+68 studies, 
+67 (98.5%) were 
+exclusively quantitative, 
+while 
+one 
+study (1.5%) used 
+a mixed-methods 
+approach 
+Bouvette-Turcot 
+et al, 2013). Thirty-five 
+studies (51.5%) 
+were 
+longitudinal and 33 (48.5%) analyzed cross-sectional 
+data, It should 
+be noted 
+that two 
+of the 33 cross-sectional 
+studies 
+were 
+reported as longitudinal studies (Cooke 
+etal, 
+2019; Suglia ct al, 2020), but they were 
+categorized as 
+eross- 
+Sectional 
+studies 
+in 
+this 
+review 
+because they collected 
+data 
+con mediators 
+and 
+outcomes 
+at the same 
+time 
+point. 
+·Measurement of 
+Parental ACEs 
+Over half of 
+the studies 
+(n=40, 
+58.8%) use 
+either the origi- 
+nal ACEs 
+checklist 
+(ive 
+indicators 
+of childhood 
+maltreat- 
+rent 
+and five 
+indicators 
+of houschold 
+dysfunction) 
+or 
+an 
+adapted version 
+with ACES varying 
+from 
+6 o 
+14 types. Four 
+studies (5.9%) adopted the ACEs 
+module 
+with 
+11 types of 
+[ACES fiom 
+the Behavioral 
+Risk 
+Factor 
+System 
+ofthe Centers 
+for Disease 
+Control 
+and Prevention 
+(Greenfield 
+et al, 2019; Haynes etal, 
+2020; Hetherington eta, 
+2020; 
+Stepleton et al., 2018). Seven 
+studies 
+(10.3%) used 
+the 
+Childhood 
+Trauma 
+Questionnaire to 
+measure 
+five types of 
+ACEs 
+(Choi 
+et al, 2017; Condon 
+et 
+al., 2019: Garon- 
+Bissonnette etal, 
+2022; 
+Harris et al, 
+2021; Min 
+et al, 2013; 
+Sauvé etal, 
+2022; van 
+de Ven eta, 
+2020). Seventeen 
+stud- 
+ies 25.0%) used other validated 
+measures 
+or combined 
+mea- 
+sures 
+or 
+administrative 
+data 
+to 
+collect 
+ACES 
+data 
+Bouvette-Turcot 
+et al, 2013, 2015, 2020; 
+Brittain 
+et al, 
+2021; Hendrix 
+et al, 
+2022; Khoury 
+2022; Kumar 
+etal, 
+2018; Lynn et al, 
+2022; L&-Scherban 
+etal, 2018; 
+Madigan 
+tal, 
+2017; MeDonnell et al.,2016; 
+Plant eta, 2017; 
+Rieder 
+ct 
+al, 2019; 
+Schickedanz etal, 
+2018; Tu et al., 
+2021; Yoon 
+et 
+al, 2019; Zhang 
+eta, 
+2022). 
+Children's Outcomes 
+Child 
+outcomes 
+were 
+categorized into 
+six 
+domains: 
+infant! 
+toddler 
+development, 
+child 
+physical/physiological problems, 
+child 
+mental 
+health 
+problems, child 
+internalizing and exter- 
+nalizing problems, child temperament, 
+and child 
+academic 
+performance. Fifteen 
+studies 
+(22.1%) assessed the effects of 
+parental ACEs 
+on 
+infant 
+and toddler 
+developmental out- 
+comes, 
+mainly including four 
+areas: 
+fine and gross 
+motor 
+skills, speech and language development, cognitive develop- 
+·ment 
+and 
+problem solving, and 
+social-emotional 
+develop- 
+·ment 
+(Brittain 
+et al., 2021; 
+Chang 
+et al, 2020; Choi 
+et al, 
+2017; Coe etal.,2020; Folger 
+etal, 2018; 
+Garon-Bissonnette 
+et al, 2022; 
+MeDonnell 
+et al, 2016; Miccoli 
+et al., 2022; 
+Racine 
+etal, 2018; Riggs et al., 2022; Sun etal, 2017; 
+Treat 
+etal, 2019; Tuet 
+al, 2021; Wurster 
+etal, 2020; Zhang etal, 
+2022). 
+Fourteen 
+studies (20.6%) were 
+identified 
+that assessed the 
+intergenerational effects 
+of parental ACEs 
+on 
+children·s 
+physical or physiological problems. Taken together, some 
+studies 
+demonstrated 
+that parental ACEs 
+were 
+associated. 
+with 
+an 
+increased 
+risk 
+of child 
+physical health problems, 
+such as asthma and poor overall 
+health 
+status 
+et al,, 2018; Madigan et al,, 2017), obesity 
+(Lé-Scherban 
+2018; Suglia etal, 2020), and chronic 
+pain (Beveridge 
+et al., 2022; 
+Dennis 
+et al., 2019). Other studies revealed 
+that 
+parental ACEs impacted children·s 
+physiological outcomes, 
+including cortisol, 
+inflammatory cytokines, and cardiovase 
+lar problems 
+(Condon 
+et al, 2019), 
+infar 
+length and epigenetic 
+aging change (Esteves et al., 2020; 
+et al, 2021), 
+infant 
+respiratory 
+sinus 
+(Glackin et al, 2021; Jones 
+et al., 2019), infant 
+pituitary 
+adrenal 
+(HPA) 
+axis 
+(Thomas et al. 
+2018), infant 
+DHA methylation (Folger et al, 2022; Merrill, 
+et 
+al, 
+2021), and 
+child 
+neuro-developmental disorders 
+(Hague et al, 2021). 
+·Seven studies 
+(10.3%) aimed 
+to 
+assess 
+the relationship 
+between 
+parental ACEs 
+and child 
+mental 
+health 
+problems. 
+ich as child psychological adjustment (Adkins et al., 2020), 
+id 
+resilience 
+and self-esteem 
+(Doi etal, 2022), 
+child 
+emo- 
+tional availability 
+(Harris et a, 2021), 
+child 
+stress 
+funetion- 
+ing (Hendrix et al, 2022), child psychiatric disorders 
+(Kang, 
+et al., 2022), child 
+attention-deficithyperactivity disorder 
+symptoms 
+(Moon 
+et al., 2021), and child 
+post-traumatic 
+stress 
+disorder (Na et al., 2021). 
+Nearly half of the studies (n=29, 42.6%) examined 
+the 
+impact of parental ACEs 
+on 
+child 
+internalizing problems 
+(eg. anxiety, depression, fear, withdrawal) and 
+externalizing. 
+problems (e-g., aggression, 
+hyperactivity, conduct problems) 
+(Cooke et al., 2019; 
+Dennis 
+et al., 2019; Doi et al, 
+Fredland 
+et al, 2018; 
+Greenfield 
+et al., 2019; Hatch 
+et al. 
+2020; Haynes et al., 2020; Hetherington et al,, 2020; Kang, 
+2021; 
+Khan & Renk, 2019; Khoury etal. 
+2022; Kumar 
+et al., 2018; 
+Letourneau 
+et al., 2019; 
+McDonald 
+et al., 2019; 
+Merrill 
+et al., 2021; Min 
+et al., 2013; Ochoa 
+et al., 
+2022; 
+Plant et al., 2017; Rieder 
+et al., 2019; 
+Sauvé 
+et al., 2022: 
+Schickedanz 
+et al., 2018; Stargel & 
+Fasterbrooks, 
+2020; 
+Stepleton ct 
+al, 
+2018; 
+Thomas-Argyriou 
+et 
+al, 
+2020; 
+Thomas-Giyer & Keesler, 2021; 
+van 
+de Ven 
+et al., 2020; 
+·Wang et al, 2021, 2022; 
+Yoon 
+et a, 2019). 
+Three 
+studies 
+(4.4%) conducted 
+by Bouvette-Turcot 
+and 
+colleagues confirmed 
+that 
+matemal 
+ACEs 
+had 
+direct 
+or 
+and child 
+telome 
+indirect 
+or indirect 
+effects 
+on 
+indicators 
+of child temperament 
+such 
+as activity 
+Ievel, negative emotionality, and behavioral 
+ation 
+(Bouvette-Turcot ct a, 2013, 
+2015, 2020). Finally, 
+two 
+studies (2.9%) demonstrated 
+that 
+there 
+was 
+significant 
+association 
+between 
+maternal 
+childhood 
+trauma 
+and 
+chil 
+dren's academic 
+performance. Studying a large 
+group 
+of ado- 
+lescents 
+in Japan, Doi and colleagues indicated 
+that maternal 
+ACEs 
+had a dose-response 
+effect 
+on 
+adolescents· 
+academic 
+performance, which 
+means 
+the 
+more 
+maternal 
+ACEs, the 
+·worse 
+adolescent 
+offspring·s academic 
+performance (Doi 
+et 
+al, 
+2020b), Also, 
+Lynn and colleagues examined 
+91 
+·mother-child 
+dyads, and found that maternal 
+ACEs 
+were 
+sig- 
+nificantly related 
+to young 
+children's 
+math skills, especially 
+·numeration 
+and addition/subtraction 
+abilities 
+(Lynn et al., 
+2022). 
+·Mediation and Moderation 
+Effects 
+·Thirty-five studies (51.5%) explored 
+mediating mechanisms, 
+through which 
+parental ACEs 
+impact children·s 
+outcomes. 
+·Twenty-seven out of 
+the 
+35 studies (77.1%) tested 
+an indirect, 
+parental mental 
+health pathway, the most 
+common 
+category 
+of mediator 
+that 
+was 
+explored. Measures 
+of mental 
+health 
+difficulties 
+included 
+depression (Beveridge 
+et 
+al., 
+2022; 
+Bouvette-Turcot 
+et al., 
+2020; Choi etal, 2017; 
+Cooke eta. 
+2019; 
+Dennis 
+et al, 2019; Kang et al, 2022; Kumar 
+et al, 
+2018; Letourneau 
+et al., 2019; Madigan et al., 2017; Ochoa. 
+et al, 2022; 
+Plant 
+et al., 2017; Racine 
+et al., 2018; Rieder 
+et 
+al., 2019; Stargel & 
+Easterbrooks, 
+2020; 
+Sugtia et 
+al., 
+2020; Sun etal, 2017; 
+Treat 
+et al., 2019; Zhang et al, 2022), 
+anxiety (Cooke et al, 2019; Kumar 
+et al, 2018; Letourneau, 
+etal., 
+2019; Racine 
+etal, 2018; 
+Rieder 
+etal, 2019), 
+distress 
+(Doi et al, 2020a; 
+Doi etal, 2022; Hendrix 
+etal, 2022; Min 
+et al, 2013; Schickedanz 
+et al., 2018; Wurster 
+et al., 2020; 
+Zhang et al., 2022), stress 
+(Chang et al., 2020; Racine 
+et al., 
+2018; Zhang et 
+al, 
+2022), posttraumatic 
+stress 
+disorder 
+(Beveridge et al., 2022), 
+·Measures 
+of parenting attitudes 
+and behaviors 
+were 
+also 
+·examined 
+in 
+some 
+mediation 
+studies. 
+Measures of 
+parenting 
+that 
+have 
+been 
+explored include 
+maternal 
+sensitivity 
+(Bouvette-Turcot 
+et al., 2020), scaffolding behaviors 
+(Coe 
+ct al. 2020), mother-child 
+attachment 
+(Cooke et al., 2019; 
+·Thomas-Giyer & Keesler, 2021), 
+positive 
+parenting 
+(Doi 
+et al., 2020a; 
+Doi 
+et al., 2022), hostile 
+behaviors 
+(Racine 
+ct 
+2018), parenting 
+aggravation 
+et 
+al, 
+2018), physical discipline 
+(Yoon 
+etal, 2019), child maltreat- 
+·ment (Doi etal, 2020a; 
+Plant et al., 2017), parental loss (Doi 
+ct al, 2020a), disagreement on 
+parenting 
+with grandparents, 
+(Yoon 
+et 
+al., 2019), parenting 
+self-efficacy 
+(Treat 
+et al., 
+2019), father 
+involvement 
+(Zhang et al, 202), 
+parenting 
+stress 
+(Yoon 
+et 
+al, 
+2019), reflective 
+function 
+(Garon- 
+Bissonnett 
+et al., 2022), and 
+executive 
+function 
+(Harris 
+etal, 
+2021), 
+Other 
+mediators 
+that 
+have 
+been 
+investigated less 
+fre- 
+·quently include maternal physical health 
+(Kumar et 
+al.,2018;, 
+Madigan 
+etal, 
+2017; Moon et al, 
+2021; Racine et 
+al., 2018; 
+Sugtia etal, 2020; 
+Sun 
+2017; 
+Thomas-Argyriou et al, 
+2020), 
+early 
+pregnancy 
+(Kumar et al., 2018; MeDonnell 
+et al,, 2016), 
+infant health 
+risk 
+(MeDonnell et 
+al., 2016; 
+Racine 
+et al, 2018), child 
+frontal 
+alpha asymmetry (van de 
+Ven 
+et al., 2020), family functioning (Suglia et al, 
+2020), 
+social support (Min 
+et al, 2013; Treat 
+et al., 2019), 
+maternal 
+adult 
+adversity 
+(Zhang et al, 2022), 
+socioeconomic 
+status 
+(Doi 
+et al, 2020a; Doi 
+et al, 2022), and parent-adolescent 
+·communication 
+(Ochoa et a, 2022). 
+It 
+is worth 
+noting that, among 
+the 35 studies 
+that have 
+tested indirect 
+mechanisms 
+of effect, 14 (20.6%) conducted 
+cross-sectional 
+mediation 
+analysis (Cooke et 
+al, 201%; 
+Dennis 
+et al, 2019; Doi et al, 2020a; Doi etal, 2022; Kang 
+et al, 2022; Kumar 
+et al., 2018; Moon 
+et al., 2021; Ochoa 
+et al, 2022; Rieder 
+et al, 
+2019: Schickedanz 
+et al., 2018; 
+Suglia etal, 2020; 
+Sun 
+Thomas-Giyer & 
+Keesler, 
+2021; Warster 
+et a, 2020). Causal 
+inferences 
+from research 
+bearing this type of non-prospective 
+design should 
+be made 
+cautiously, especially considering that each of the studies 
+measured ACEs retrospectively. 
+·Among the 68 studies 
+reviewed, 
+16 (23.5%) explored 
+moderation 
+effects. 
+Five 
+studies 
+identified 
+on 
+genetic and 
+biological factors than significantly moderated 
+the effects of 
+maternal 
+ACEs, 
+including 
+child 
+S-HTTLPR 
+genotype 
+(Bouvett-Turcot et al, 2015), 
+ehild 
+frontal alpha asymmetry 
+{van den Ven 
+2020), placental telomere 
+length (Jones 
+et al, 2019), and 
+maternal 
+cortisol 
+levels 
+(Thomas et al, 
+2018; Thomas-Argyriou 
+et 
+al, 2020). Three 
+studies 
+exam- 
+ned how 
+demographic moderators 
+like 
+maternal 
+education 
+(Rieder et al., 2019), child 
+age (Stepleton et al, 2018), 
+and 
+child 
+sex 
+(Garon-Bissonnett 
+et al., 2022) would 
+impact 
+the 
+relationship between 
+matemal 
+ACEs 
+and 
+child 
+health 
+·outcomes 
+Six studies have explored family psychosocial processes 
+as potential moderators. 
+Bouvette 
+etal. (2013) reported that 
+child attachment 
+security moderated 
+the association 
+between 
+maternal adversity and child temperament, 
+and Hatch etal 
+(2020) found that matermal ACEs 
+were 
+only associated 
+with 
+children·s 
+externalizing behaviors 
+in 
+the presence 
+of low 
+family 
+social 
+support. Other 
+scholars 
+revealed 
+that parent 
+state 
+of mind (Sauvé et al., 2022), parental 
+·emotional 
+availability (Wurster et al., 2020), and matemal 
+anxiety 
+(Tu et 
+al, 2021) all 
+moderated 
+the relationship 
+·betwen 
+parental ACEs 
+and child negative health 
+outcomes. 
+However, 
+Wang etal 
+(2022) indicated 
+that parental role had 
+no 
+moderation 
+effect 
+on 
+the 
+association 
+between 
+parental 
+ACES and child behavioral 
+problems and functioning 
+Finally two studies 
+tested 
+the moderation 
+impact of 
+home 
+Visiting programs. 
+One study concluded 
+that higher 
+levels 
+of 
+ACEs 
+were associated 
+with lower 
+infant 
+mean 
+DNAm 
+across 
+·of home 
+visits 
+received 
+by the family moderated 
+the above 
+relationship (Folger et al., 2022). Another 
+study found 
+that 
+maternal 
+ACEs predicted child language delays and that this 
+Zhang et al 
+3257 
+effect 
+was 
+moderated by infant home visiting 
+treatment, 
+sig- 
+nifying that there 
+was 
+no 
+association 
+between 
+maternal 
+ACES, 
+and 
+child 
+language delays for 
+those accepted treatment, 
+(Riggs et al., 2022), 
+·Summary 
+of Main Findings 
+Nearly all studies 
+in this review 
+confirmed 
+direct 
+or indirect, 
+or both impact of parental ACES 
+on 
+adverse child 
+outcomes. 
+Only 
+one 
+study conducted 
+by Beveridge and 
+colleagues. 
+found 
+that 
+parent ACES 
+were 
+not 
+significantly 
+associated 
+with 
+child 
+pain in 
+direct 
+or 
+indirect 
+ways (Beveridge et al, 
+2022). Moreover, 
+among 
+the 35 studies 
+that have examined 
+the pathways linking parental ACEs 
+and child 
+outcomes, 
+only five studies didn·t 
+confirm 
+the mediation 
+effects of the 
+following factors: 
+maternal 
+scaffolding, parental mental, 
+health problems, maternal 
+executive 
+function, maternal 
+dis- 
+tress, mother-child 
+attachment 
+(Beveridge et al., 2022; Coe 
+etal, 2020; 
+Harris 
+et al, 2021; 
+Hendrix 
+et al.,2022; Thomas- 
+Giyer & Keesler, 2021). Similarly, 
+among 
+the 
+16 studies, 
+involved 
+moderation 
+tests, only two 
+studies 
+eame 
+away with 
+null effects (Stepleton et al., 2018; Wang et al., 2022). 
+Discussion 
+This 
+scoping 
+review 
+maps 
+the scholarly literature 
+that has. 
+explored intergenerational 
+associations 
+between 
+parents· 
+ACEs 
+and 
+their 
+children·s 
+development. We 
+found 
+that 
+research 
+in 
+this 
+area has expanded rapidly in the last S years, 
+especially in North 
+America. 
+Most 
+studies 
+have 
+focused 
+on. 
+the detrimental 
+effects 
+of maternal 
+ACEs, pointing 
+to the 
+need for further 
+research 
+linking fathers· 
+ACEs 
+and their 
+children·s 
+outcomes. 
+In addition, intergenerational studies 
+have largely focused 
+on 
+infants 
+and young 
+children; ess 
+is 
+known 
+about how the effects of parental ACES 
+are 
+transmit. 
+ted into 
+adolescence 
+and adulthood. 
+Furthermore, 
+while 
+an 
+array of child 
+outcomes 
+has been examined, mental 
+health 
+difficulties 
+such 
+as interalizing 
+and externalizing symp- 
+toms 
+have 
+received 
+the 
+most 
+attention 
+to 
+date. 
+Further 
+research 
+is needed to explore the intergenerational effects of 
+parental ACEs 
+on 
+children 
+in 
+other 
+areas 
+of development 
+and funetioning. 
+This 
+review 
+also 
+identified 
+methodological limitations 
+that 
+are 
+common 
+in 
+this 
+field, Most studies have investigated. 
+small-to-modest 
+sample sizes 
+based 
+on 
+probability sampling methods 
+that 
+are 
+prone 
+to 
+estimation, 
+biases 
+and generalizability limitations 
+(Sharma, 2017). In 
+addition, while 
+most 
+studies 
+utilized 
+longitudinal designs, 
+parental ACEs 
+have typically been measured retrospectively. 
+Although growing 
+evidence 
+suggests 
+that 
+retrospective 
+ACEs 
+assessments 
+have sound reliability 
+(Karatckin 
+& Hill, 
+2019; Mersky et a., 2017; Pinto 
+et al., 2014), causal 
+infer- 
+ences 
+should be made cautiously when ACES 
+are 
+assessed in 
+adulthood 
+due 
+to recall 
+biases. 
+Furthermore, 
+most 
+studi 
+relied 
+on 
+parent self-report to 
+assess 
+ACES 
+and 
+child 
+ou 
+comes, 
+which 
+can result 
+in 
+additional 
+biases (e.g., mono- 
+·method; social desirability). 
+Despite these limitations, 
+a clear sign of advancement 
+in 
+the intergenerational ACES literature 
+is the growing 
+number 
+of studies that have moved 
+beyond 
+main 
+effect analyses to 
+explore mediating and moderating mechanisms. 
+Several 
+·mediating pathways have been explored, with 
+the two 
+most 
+·common 
+being caregiver 
+mental health and parenting behav~ 
+iors. 
+Other 
+mediators 
+that 
+warrant 
+further 
+investigation 
+include 
+indicators 
+of family functioning, social support, and 
+socioeconomic 
+status. 
+Sixteen 
+studies 
+were 
+identified 
+that 
+have examined 
+hypothesized moderators of 
+the 
+link between 
+parental ACEs 
+and child 
+outcomes, 
+including demographic 
+factors 
+such 
+as child 
+age, biological indicators 
+such as pla- 
+cental 
+telomere 
+length, measures 
+of parental functioning. 
+such as 
+depression, and 
+family processes 
+such as attachment 
+and 
+social support. 
+Strengths and Limitations 
+·To our 
+knowledge, this 
+is the first study to systematically 
+review 
+the literature 
+linking parental ACEs 
+to intengenera- 
+tional 
+effects 
+on 
+different 
+children·s 
+outcomes. 
+Despite the 
+novel contributions 
+of our 
+work, 
+two 
+main limitation
+should 
+be acknowledged. First, 
+our 
+inclusion 
+and exclusion 
+criteria, 
+included 
+only 
+peer-reviewed 
+articles 
+that were 
+published in 
+English where 
+a 
+cumulative 
+measure 
+of at least four ACES 
+·was 
+selected. Therefore, 
+salient 
+findings from 
+the 
+gray litera- 
+ture 
+and 
+international 
+sources 
+may 
+have 
+been 
+omitted, 
+and 
+intergenerational studies 
+that exclusively measure 
+diserete 
+ACE 
+variables 
+have been omitted. 
+Future 
+scoping 
+or system- 
+atic 
+reviews 
+may advance 
+the literature 
+by examining 
+direct, 
+and indirect 
+effects 
+associated 
+with specific 
+ACEs. 
+Second, 
+consistent 
+with 
+prevailing methods 
+for 
+scoping 
+reviews 
+(Arksey & O'Malley, 2005), a broad search 
+was 
+used that is, 
+suitable 
+for describing the amount 
+and type of research 
+in 
+an. 
+area, but that offers limited 
+insights into 
+the methodological, 
+quality of the studies 
+that 
+were 
+included. 
+For example, the 
+selected 
+studies 
+examined 
+a variety 
+of ACE 
+measures, 
+but 
+·our 
+review 
+did not 
+appraise 
+or discriminate 
+between 
+studies, 
+based on 
+the quality of 
+their 
+measurement 
+approaches. 
+Implications for Future Research and Practice 
+·This 
+scoping 
+review 
+identified 
+key gaps in the 
+literature 
+that 
+warrant 
+further 
+exploration 
+in 
+future 
+research. 
+To begin, 
+·most 
+of the evidence 
+related 
+to the intergenerational trans- 
+mission 
+of ACEs 
+has been generated in western, 
+educated, 
+industrialized, rich, 
+and democratic 
+(i.e, 
+WEIRD) 
+coun- 
+tries. 
+To address 
+this 
+common 
+sampling bias and 
+increase 
+the generalizability 
+of 
+the evidence, 
+further 
+research 
+is, 
+needed 
+in non-Western 
+developing countries. 
+The generaliz~ 
+ability of results 
+can 
+be further 
+enhanced 
+by employing, 
+stronger 
+research 
+methodologies. Large-scale, nationally 
+representative 
+studies 
+are 
+needed 
+to generate 
+findings that 
+3258 
+TRAUMA, VIOLENCE, & ABUSE 24(5) 
+are applicable 
+across 
+diverse populations. Additionally, 
+cur- 
+rent research 
+is largely limited 
+to maternal 
+childhood 
+adver- 
+sities 
+and 
+young 
+children·s 
+behavioral 
+problems. Future 
+research 
+should 
+include 
+fathers 
+and explore the intergenera- 
+tional 
+effects 
+of ACES 
+across 
+developmental and 
+funetional 
+domains 
+throughout childhood, adolescence, and adulthood. 
+In addition 
+to advances 
+in quantitative 
+research, qualitative 
+studies 
+may help to reveal the subjective meaning 
+that par- 
+cents ascribe 
+to their childhood 
+experiences 
+along with 
+per- 
+ceptions of how the effects 
+of adversity may be transmitted 
+across 
+generations. Qualitative methodologies may also be 
+appropriate 
+for expanding the literature 
+to consider 
+not only 
+direct 
+experience 
+of childhood 
+adversity but also transgen- 
+experiences 
+of 
+historical 
+trauma 
+(Brave 
+Heart 
+et al., 
+2011; Kirmayer 
+etal, 
+2014), 
+·Arreview 
+of the fledgling literature 
+also revealed 
+promis- 
+ing 
+avenues 
+for exploring the pathways through which 
+par- 
+cent·s ACEs 
+affect 
+their 
+offspring. This 
+review 
+revealed 
+several likely mechanisms, 
+such as 
+mental 
+health, 
+parenting, 
+maternal 
+physical health, 
+maternal 
+early 
+nancy, 
+infant 
+health risk, 
+child frontal 
+alpha asymmetry, fam- 
+ily functioning, social 
+support, 
+and 
+socioeconomic 
+status. 
+Beyond these examples, other plausible mechanisms 
+deserve 
+attention 
+such as the epigenetic and neurobiological mecha- 
+nisms. 
+Future 
+research 
+may 
+integrate 
+genetic, biological, 
+psychological, and social pathways altogether, thereby pro- 
+a holistic 
+assessment 
+of processes through which 
+intergenerational transmission 
+unfolds. 
+Last, among 
+the studies reviewed 
+here, initial 
+efforts 
+have 
+bbeen made to explore factors 
+that moderate 
+the intergenera- 
+tional effects of 
+ACEs, We would like to 
+especially call 
+atten- 
+tion 
+to analyses that 
+have 
+examined 
+potential protective 
+processes, 
+including parent-child 
+attachment 
+and 
+social 
+sup- 
+port, 
+that 
+may 
+counterbalance 
+the 
+effects 
+of 
+adversi 
+Informed 
+by resilience 
+theory, related 
+lines of inquiry 
+indi 
+cate 
+that protective factors 
+such the presence 
+of stable rela- 
+tionships with 
+caring 
+and supportive 
+adults 
+can 
+buffer 
+the 
+detrimental 
+effects 
+of adversity (National Scientific 
+Council 
+fon 
+the Developing Child, 2015). Research 
+that 
+identifies 
+individual, family, and community 
+protective 
+factors 
+holds 
+the promise 
+of identifying alterable 
+factors 
+and conditions 
+that 
+may 
+promote 
+positive adaptation to adversity on 
+an. 
+intergenerational scale (Benzies & Mychasiuk, 2009). That 
+said, we strongly encourage 
+future 
+researchers 
+in this 
+area 
+to 
+publish null effects 
+when they arise. 
+Many studies 
+have suc~ 
+cessfully identified 
+significant mediating and moderating 
+processes, 
+whereas 
+few have failed 
+to find 
+such evidence, 
+raising 
+questions 
+about potential publication biases inthe 
+lit- 
+crature 
+(e.g, 
+file drawer 
+effect), 
+·Moving forward, 
+there 
+is 
+a need for research 
+that trans- 
+lates the lessons learned 
+from 
+this 
+literature 
+into 
+tion 
+strategies 
+that 
+have 
+the 
+potential 
+to 
+interrupt 
+the 
+transmission 
+of adversity 
+and 
+trauma. 
+Early returns 
+from 
+mediation 
+studies 
+suggest that 
+it is pos- 
+sible 
+to promote children·s 
+health and development through 
+carly interventions 
+aimed at enhancing parents· mental health 
+and caregiving 
+practices. 
+Two-generation interventions 
+such 
+as 
+home visiting 
+and parent training 
+programs 
+are 
+particu- 
+larly promising 
+in 
+this regand because they can 
+simultane- 
+ously aet 
+as 
+an 
+tion 
+strategy for 
+one 
+g 
+primary 
+prevention 
+strategy for 
+the 
+next 
+(MeKelvey 
+et al, 
+2016; Zhang et al., 2022). However, 
+o 
+realize 
+this potential, 
+there 
+is 
+a need to bring these two-generation 
+strategies 
+to 
+seale so that they can 
+reach 
+a larger proportion of 
+the 
+popula- 
+tion 
+in need 
+(Shonkoff & 
+Fisher, 2013). Given evidence 
+that, 
+well 
+over 
+half of the U.S. adult population has endured 
+at, 
+least one 
+ACE (Merrick et al, 2018), universal 
+public health 
+strategies should be considered alongside more 
+intensive 
+and 
+·comprehensive 
+interventions. 
+·One 
+example 
+ofa promising universal home 
+visiting 
+inter- 
+vention 
+is Family Connects, 
+a brief, low-cost 
+program 
+that, 
+provides families 
+with postnatal nurse 
+visits 
+and connections. 
+to community 
+services 
+and resources. 
+Three trials 
+in 
+North, 
+Carolina 
+by Dodge and colleagues have 
+linked 
+Family 
+Connects 
+to 
+an 
+array 
+of positive 
+parent and child 
+outcomes, 
+(sce Dodge & Goodman, 2019). Extending these finding 
+recent 
+evidence 
+from 
+Wisconsin 
+suggests. that 
+Family 
+Connects ean 
+he 
+successfully 
+implemented to screen 
+and 
+refe
+<lients 
+to trauma-responsive 
+mental 
+health 
+services, 
+and that, 
+it has the potential to 
+address 
+health disparities because 
+it 
+allocates 
+resources 
+equitably according to families· 
+varying 
+levels 
+of need 
+(Mersky et 
+al, 2021, 2022). 
+·Asecond example isthe Positive 
+Parenting 
+Program (i.e. 
+·Triple P), which 
+is 
+an 
+evidence-based 
+parent training 
+pro- 
+gram 
+that has been shown 
+to reduce harsh and coercive 
+par- 
+practices, 
+nurture 
+positive 
+parent-child interactions, 
+and enhance 
+children·s 
+emotional 
+and behavioral 
+outcomes, 
+diverse populations 
+(Nowak & Heinrichs, 2008; Sanders, 
+2012; Thomas, 
+& Zimmer-Gembeck, 2007). While 
+there 
+are 
+many 
+efficacious 
+parent training 
+interventions, 
+including 
+·and parent management training (Michelson 
+et al., 2013) 
+·and parent-child interaction 
+therapy (Thomas et al, 2017), 
+Triple P is distinctive 
+because 
+itis 
+a multilevel 
+and flexible 
+program 
+that 
+can 
+be used 
+to tailor 
+the intensity 
+of parent 
+·raining based on 
+the family·s level 
+of need (Sanders, 2012. 
+In addition, 
+the model 
+is designed such that direct 
+interven- 
+tion 
+services 
+can 
+be combined 
+with 
+universal 
+public health 
+·communication 
+messages, 
+and as such 
+may 
+promote posi- 
+tive 
+parenting 
+at the population level (Pickering etal.,2016;, 
+Prinz 
+et al., 2009) 
+eration 
+and 
+a 
+Key Findings 
+·+ 
+Research 
+on parental ACEs and 
+child 
+outcomes 
+has 
+proliferated in 
+western 
+countries 
+in 
+reeent 
+years 
+·© 
+Most 
+studies 
+linking parental ACES 
+and child 
+comes 
+have 
+used 
+small 
+sample sizes 
+and 
+quantitative 
+methodologies. 
+The 
+evidence 
+is 
+largely 
+limited 
+to 
+ACES, 
+and 
+young children·s 
+social-emotional 
+·outcomes 
+have received 
+the 
+most 
+attention. 
+Zhang et al 
+3259 
+ACES predicted children·s 
+undesirable 
+out- 
+·comes. 
+The direct effects of parental 
+ACEs 
+were 
+often 
+·mediated 
+or 
+moderated 
+by individual 
+or 
+family 
+factors. 
+Implications for Practice 
+and Research 
+·© 
+More 
+intergenerational ACEs 
+research 
+is needed 
+in 
+·non-Western 
+developing countries. 
+·© 
+Large-scale, nationally 
+representative 
+studies 
+are 
+needed 
+to generate 
+findings 
+across 
+diverse 
+popula- 
+tions. 
+Qualitative research 
+that can 
+reveal the subjec- 
+tive 
+interpretation 
+of parental ACEs 
+and impacts 
+on 
+children 
+should 
+also be conducted. 
+·© 
+Future 
+research 
+should 
+aim 
+to develop more 
+uniform 
+standards 
+of ACE measurement. 
+·© 
+Future 
+research 
+should 
+include 
+fathers· 
+ACEs 
+and 
+cexplore 
+the intergenerational impacts of ACEs 
+across 
+various 
+domains of 
+child 
+outcome. 
+·© 
+Future 
+research 
+should 
+continue 
+to explore factors 
+that 
+may 
+mediate 
+or 
+moderate 
+the effects 
+of ACES. 
+Researchers 
+are 
+encouraged to publish null 
+effects 
+·when they arise. 
+© 
+Research 
+is needed 
+to explore whether 
+interventions 
+like home visiting 
+and parent training 
+programs 
+inter- 
+the intergenerational transmission 
+of trauma, 
+Declaration 
+of Conflicting 
+Interests 
+·The 
+authors) 
+declared no 
+potential conflicts 
+with respect, 
+to the research, authorship, and/or publication ofthis 
+article, 
+Funding 
+·The 
+authors) 
+received no 
+financial suppor forthe research, 
+author- 
+ship, and/or 
+publication ofthis 
+article 
+onciD 
+ibs 
+Lisa Zhang © 
+bps: 
+ary 
+Anne 
+Marie 
+H 
+@ 
+hpi 
+r000-0002.9188-4980 
+·Supplemental Material 
+·Supplemental material 
+for this 
+is available 
+online, 
+References 
+Adkins, T., Reisz, 
+S., Doerge, K., & Nulu, S. 
+(2020). Adverse 
+childhood 
+histories in 
+foster 
+parents: 
+Connections 
+to 
+foster 
+children·s 
+emotional 
+and 
+bchavioral 
+(Child 
+Abuse & 
+Neglect, 104, 104475. 
+chiabu,2020.104875 
+·Anda, R. 
+(2007). 
+The health 
+and 
+social 
+impact of growing 
+up with 
+·adverse 
+childhood 
+experiences: 
+The human 
+and 
+economic 
+costs of 
+the status 
+quo, 
+pdt 
+Appleton, 
+A.A. Kiley, 
+K, Holdsworth, E.A.,& 
+Schell, 
+Sovial 
+support 
+during 
+pregnaney 
+modifies 
+the 
+association 
+between 
+maternal 
+adverse 
+childhood 
+experiences 
+and infant 
+birth 
+size. 
+Maternal 
+and Child 
+Health Journal, 
+233), 408-415, 
+Atksey, H., 
+& O'Malley, L. 
+(2005). Scoping studies: 
+Towards 
+a 
+·methodological framework. 
+International 
+Journal 
+of Social 
+Research 
+Methodology, 8{1), 
+19-32. 
+113645S70320001 
+19616 
+Assink, 
+M., Sprit, 
+A., Schuts, M., Lindauer, 
+R., van 
+der Put, C. 
+E, 
+& Stams, G. 
+..M. 2018). 
+The intergencrational 
+transmis- 
+sion of 
+child 
+maltreatment: 
+A three-level 
+meta-analysis. Child 
+Abuse 
+& 
+Neglect, 84, 
+131-145, 
+chiabu.2018.07.037 
+Barrick, 
+K., & Riegelman, A. (2021). Phrasing in 
+reproducible 
+search methodology: The consequences 
+of straight and curly 
+quotation 
+marks. College & Research 
+Libraries, 82(7), 
+978 
+990. htps:/doi 
+82.7.978 
+Bellis, M.A., 
+Hughes, K., 
+Ford, 
+K., 
+Rodriguez, G. 
+R., Sethi D, & 
+Passmore, 
+Life 
+course 
+health consequences 
+and asso~ 
+ciated 
+anual 
+costs 
+of adverse 
+childhood 
+experiences 
+across 
+urope 
+and North 
+America: 
+A systematic 
+review 
+and meta- 
+analysis. The Lancet Public 
+Health, 
+4(10), 
+htps!/ 
+Benzies, 
+K., & Mychasiuk, R. (2009). Fostering. family 
+A review 
+of the key protective 
+factors. 
+Child & 
+Family 
+Social 
+Work, 
+141), 
+103-114. 
+2206.2008.00586.x 
+Beveridge, 
+Yeates, K.O., 
+Madigan, S, Stone, 
+A. 
+L., Wilson, 
+A. C., 
+Sumpton, J. 
+E, Salberg, S., 
+Mychasiuk, 
+Ry & Noel, 
+M. (2022). Examining parent adverse 
+childhood 
+experiences 
+as 
+a distal 
+risk 
+factor 
+in pediatric 
+pain. 
+The Clinical 
+Journal of 
+Pain, 
+38(2), 
+95-107. 
+·9000000000001002 
+A. A., Bemier, 
+A, 
+& Meaney, M. 
+J. (2013). 
+Intergenerational transmission 
+of psychosocial risk: 
+Maternal 
+childhood 
+adversity, mother-child 
+attachment, 
+and child 
+tem- 
+Belgica, 533), 
+65-83. 
+Bouvette-Turcot, A. 
+A., Fleming, A. S., 
+Wazana, A., 
+Sokolowski 
+M. B., Gaudreau, HL, Gonzalez, A, 
+Deslauriers, 
+J, Kennedy, 
+1. L, Meaney, M. 
+& MAVAN 
+Research 
+Team. 
+(2015), 
+Maternal 
+childhood 
+adversity 
+and 
+child 
+temperament: 
+An 
+association 
+moderated 
+by child 
+5-HTTLPR 
+genotype. 
+Genes, 
+Brain 
+and Behavior, 
+14(3), 229-237. 
+sbb.12205 
+Bouvette-Turcot, A. A., 
+Fleming, 
+A.S.,Untemachrer,E, 
+Gonza
+A., Atkinson, 
+L., Gaudreau, 1, 
+Steiner, 
+M., & Meaney, M. J 
+(2020), Maternal 
+symptoms of depression 
+and sensitivity 
+medi- 
+te the relation 
+between 
+matemal 
+history of early adversity 
+and her child 
+temperament: 
+The inheritance of 
+circumstance. 
+Development and Psychopathology, 32(2), 605-613. 
+htps!/ 
+Brave 
+Heart, M. 
+Y. 
+H., Chase, 1, Fikins, 
+& 
+Altschy 
+(Q011), Historical 
+trauma 
+among 
+indigenous peoples of the 
+Americas: 
+Concepts, research, 
+and 
+clinieal 
+considerations 
+Journal of 
+Psychoactive Drugs, 
+434), 
+282-290. 
+btpslidi.org, 
+/19,1080/02791072.201 
+1.628913, 
+Britain, 
+K., 
+Zerbe, 
+A, Phillips, 
+T.K., 
+Gomba, Y., 
+Mellins, C.A., 
+Myer, L.,.& Abrams, E 
+Impact of 
+adverse 
+childhood 
+experiences 
+on 
+women·s 
+psychosocial and 
+HIV-related 
+3260 
+TRAUMA, VIOLENCE, & ABUSE 24(5) 
+and early child 
+development in 
+their 
+offipring. 
+Global 
+Public 
+Health, 
+1-13. 
+2.2021,1986735 
+Chang, Y. T., 
+Feng, J. Chang, H. 
+¥., 
+Chang, ¥. C., & Les, C 
+K (2020), The impacts of maternal childhood 
+adversity, 
+stress, 
+and 
+mental 
+health 
+on child 
+development at 6 
+months in 
+Taiwan. 
+A follow-up study. Development and Psychopathology, 3303), 
+970-979, 
+Choi, K. W., 
+Sikkema, 
+K.J., 
+Vythilingum, 
+B., Geers, 
+L., Faure, 
+S. C., Watt, M. H., 
+Roos, A, & 
+Stein, D. 
+J. (2017). Maternal 
+childhood 
+trauma, 
+postpartum 
+depression, and 
+infant 
+out- 
+comes: 
+Avoidant 
+affective 
+processing 
+as 
+a potential mecha- 
+nism. 
+Journal 
+of Affective 
+Disorders, 211, 
+107-5. 
+·org/10.1016) jad 
+2017.01.00 
+Cristiaens, 
+1, Hegadoren, K., 
+& Olson, 
+D. 
+M. Q018), Adverse 
+childhood 
+experiences 
+are 
+associated 
+with 
+spontaneous 
+pre- 
+term 
+birth: 
+A case-control 
+study. BMC 
+Medicine, 
+13, 124 
+Coe, J. 
+L., Hufthines, 
+L., Contente, C. 
+A., 
+Seifer, R, & 
+Parade, 
+S. HL (2020). Intergenerational effects 
+of 
+maternal 
+child- 
+hhood experiences 
+on 
+matemal 
+parenting 
+and 
+infant 
+devel- 
+·opmental progress. 
+Journal 
+of Developmental & Behavioral 
+Pediatrics, 
+41, 619-627. 
+dp.000000, 
+·0000000835 
+Condon, E. 
+M., 
+Holland, 
+M.L., 
+Slade, A, 
+Redeker, N.S., 
+Mayes, 
+LC, 
+& Sadler, L. 
+S. (2019). 
+Maternal 
+adverse 
+childhood 
+experiences, 
+family strengths, and chronic 
+stress 
+in 
+children 
+Nursing Research, 
+68(3), 
+189-199. 
+·nr. 
+0000000000000349 
+E., 
+Adkins, 
+D.E., Crowell, 
+Raby, K. L., Diamond, 
+L. M, 
+& 
+Bllis 
+B. (2018), Incorporating epigenetic 
+mecha- 
+nisms to 
+advance 
+fetal 
+programming 
+theories. 
+Development 
+and psychopathology, 303), 807-824. 
+$0954379418000469 
+Cooke, J. 
+E., Racine, 
+N., Pador,P, 
+& Madigan, S. (2021). Maternal 
+·adverse childhood 
+experiences 
+and child behavior 
+problems: 
+A 
+systematic 
+review. 
+Pediatrics, 
+pds 
+2020.044131 
+Cooke, 
+JE, Racine, 
+N., Plamondon, 
+A., Tough, S., & Madigan, 
+'S 0019) Maternal 
+adverse 
+childhood 
+experiences, 
+siyle, and meatal 
+health: 
+Pathways of 
+·behavior 
+problems. 
+Child 
+Abuse & Neglect, 93, 27-37. 
+bps: 
+doi 
+Davis, K, Drey, N., 
+& Gould, D. (2009). What 
+ae 
+scoping 
+stud- 
+ies? A 
+review 
+ofthe 
+nursing 
+literature. 
+Jternational 
+Journal 
+of 
+Nursing Studies, 
+46, 
+1386-1400. 
+Dennis, C. 
+HL, 
+Clohessy, D. S., Stone, A. L., 
+Damall, 
+B.D, & 
+·Wilson, 
+A.C. (2019). Adverse 
+childhood 
+experiences in math- 
+crs 
+with 
+chronic 
+pain 
+and intergenerational impact 
+on 
+chil- 
+dren. 
+The Journal 
+of Pain, 20(10), 1209-1217. 
+·org/10.1016) 
+jpain.2019.04,004 
+Dodge, K. 
+A, 
+& Goodman, W. 
+B. (2019). Universal 
+rach 
+at birth 
+The Future of 
+Children, 29(1), 41-60. 
+htps:/doi.org10.1383 
+fe.2019.0003 
+S., 
+Fujiwara, T., 
+& 
+Isumi, A. (20203), 
+Association 
+between 
+·matemal 
+adverse 
+childhood 
+experiences 
+and 
+mental 
+health 
+problems in 
+offspring: An intergenerational study. Develop- 
+·ment 
+and 
+Psychopathology, 33(3), 
+1041-1058. 
+·org/10.1017/S0954579420000334 
+Do 
+Doi, S., Fujiwara, T., & 
+Isumi, 
+A. (2020b). Association 
+·matemal 
+adverse childhood 
+experiences 
+and child's 
+self-rated 
+academic 
+performance: Results 
+from 
+the K-CHILD 
+study. 
+(Child Abuse & 
+Neglect, 104, 104478, 
+chiabu.2020.104478 
+Doi, Isumi, 
+A., 
+& Fujiwara, T, (2022). Association 
+betweet 
+·matemal 
+adverse 
+childhood 
+experienees 
+and child 
+resilience 
+and 
+self-esteem: 
+Results 
+ffom 
+the 
+K-CHILD 
+study. Child 
+Abuse 
+& 
+Neglect, 127, 105590. 
+·hiabu.2022,108590 
+ismann, F. 
+A. Folger, A. T., 
+Stephenson, N. 
+B., 
+Brownrigg, M. 
+E,, Shapiro, R. 
+A., 
+Macaluso, M., 
+& 
+Gillespie, R. 
+J. 2019), 
+Parental 
+adverse 
+childhood 
+experiences 
+and pediatric health- 
+care 
+use by 2 years of 
+age, Journal of 
+Pediatrics, 211, 146-151 
+Esteves, K.C., 
+Jones, C. W., Wade, M, Callerame, K., Smith, 
+A 
+K, 
+Theall, 
+K. 
+& 
+Drury, S.S, 
+(2020). Adverse 
+childhood 
+experiences: 
+Implications for offspring telomere length and 
+psychopathology. American 
+Journal 
+of Psyehiany, 
+447-57. 
+Feliti, V. 
+Anda, 
+R, F., Nordenberg, D., Williamson, 
+D. F 
+Spit, A·ML, 
+Edwards, V., 
+Koss, 
+M.P., 
+& Marks, 
+JS. (1998), 
+Relationship of childhood 
+abuse and household 
+dysfunction to 
+·many of 
+the leading causes 
+of death 
+in 
+adults: 
+The Adverse 
+Childhood 
+Experiences (ACE) 
+Study. American 
+Jounal 
+of 
+Preventive 
+Medicine, 144), 245-258. 
+$0749-3797(98)00017-8 
+Folger, A. 
+T, 
+Bismann, F, 
+A., Stephenson, N. 
+B, Shapiro, R. 
+A. 
+MacAluso, M., 
+Brownrigg, M.E., 
+& Gillespie, 
+RJ. (2018). 
+Parental 
+adverse 
+childhood 
+experiences 
+and 
+offspring 
+develo
+ment 
+at 2 year 
+of ape. Pediatrics, 
+141(4),e20172826. 
+Folger, A.T., 
+Nidey, N., 
+Ding, L, 
+Ji, H, Yolton, 
+K., 
+Ammerman, 
+RT, 
+& Bowers, K. 
+A. (2022). Association 
+between 
+mater- 
+nal 
+adverse 
+childhood 
+experiences 
+and neonatal 
+SCGS 
+DNA 
+·methylation-¢flect modification 
+by prenatal home 
+visting 
+American 
+Journal of 
+Epidemiology, 
+191(4), 636-645. 
+Fredland, N., 
+McFarlane, J., Symes, 
+L., 
+& 
+Maddous, 
+J. (2018) 
+the 
+msnciston 
+of 
+averse 
+expe 
+riences 
+with 
+maternal 
+health 
+and child 
+behavior 
+following 
+itimate 
+partner violence. 
+Journal 
+of Women's 
+Health, 27(1), 
+(64-71. 
+Garon-Bissonnete, 
+J, Duguay, G., 
+Lemieux, R., 
+Dubois-Comtos, 
+K,, & 
+Berthelot, N. 
+(2022). 
+childhood 
+abuse 
+and 
+neglect predicts offspring development in carly 
+·The 
+roles 
+of 
+reflective 
+fumetioning and 
+child 
+sex. 
+Child 
+Abuse 
+& 
+Neglect, 
+128, 
+105030, 
+Glackin, E. B,, Hatch, V., Drury, 8. 8, 
+& 
+Gray, 
+S. A. (2021). 
+Linking preschoolers· parasympathetic activity 
+to maternal 
+carly adversity and child 
+behavior: 
+An intengeneraional por= 
+spective. 
+Developmental Pychabiology, 
+338-349, 
+Greenfield, 
+B., Wiliams-Butler, 
+A, Fay K. P., Duron, J. F, 
+E. A, 
+Stepleton, K., & 
+Mackenzie, 
+M. 
+J. (2019). 
+Maternal 
+adverse 
+childhood 
+experiences, 
+current 
+cumulative 
+risk, and 
+behavioral 
+dysregulation among 
+child 
+welfare 
+involved 
+chil 
+dren, Developmental Child Welfare, M4), 327-343, 
+·org/10.1177/2516103219892276 
+Zhang et ol 
+3261 
+Hague, 
+M.A.,Tasnim, A. 
+Islam, 
+S.,Towhid, M. 
+LL, 
+Sultana 
+Salwa, M., Barman, N., 
+& Siddique, S. M. (2021). Mother's 
+adverse 
+childhood 
+experiences 
+and 
+elevated 
+risk 
+of 
+neuro- 
+developmental disorders 
+in offspring: A case-control 
+study. 
+Adversity and 
+Resilience 
+Science, 2, 205-214. 
+htips:ido 
+Harts, 
+M., 
+H, Andrews, 
+K., Atkinson, 
+Kimber, 
+M., 
+England-Mason, 
+G., 
+& Gonzalez, A. (2021). Matemal 
+adverse 
+childhood 
+experiences, 
+executive 
+& 
+emotional 
+avail- 
+ability 
+in 
+mother-child 
+dyads. 
+Child 
+Abuse 
+& Neglect, 111, 
+104830, 
+1016 
+Hatch, V., Swerbenski, 
+H., & Gray, S. A. O. (2020). Family socal 
+support buffers 
+the intergenerational association 
+of maternal 
+adverse 
+childhood 
+and preschoolers· exteraliz~ 
+ing behavior. 
+American 
+Journal 
+of Orthopsychiatry, 90(4), 
+489-501 
+Haynes, E., Crouch, 
+E., Probst, J, 
+Radeliff, 
+Bennet, 
+K., & 
+Glover, S. 
+(2020). Exploring the 
+association 
+between a 
+par- 
+cent's exposure 
+to 
+Adverse 
+Childhood 
+Experiences (ACES) 
+·and outcomes 
+of depression and anxiety among 
+their children, 
+Children 
+and 
+Youth 
+Services 
+Review, 113, 105013. 
+·org/10.10164.childyouth 
+2020.105013 
+Hendrix, 
+C. L., 
+Brown, 
+A. L., MeKenna, B. 
+G., Dunlop, A. La 
+·Corwin, EJ, 
+& Brennan, 
+P. A. (2022), 
+Prenatal distress 
+links 
+early life adversity to 
+infant 
+stress 
+functioning inthe 
+next 
+generation. 
+Journal 
+of Psychopathology and 
+Clinical 
+Seience, 131(2), 117. 
+Hetherington, E., 
+Racine, 
+N, Madigan, 
+S. & Tough, 
+S. 2020), 
+Relative 
+of maternal 
+adverse childhood 
+·experiences 
+t0 
+understanding children·s 
+externalizing. and 
+intemalizing behaviours 
+at age 5: 
+Findings from 
+the All Our 
+Families 
+cohort. 
+CMAJ 
+Open, 8(2), e352-e359. 
+hutps/doi 
+·org/10.9778%emajo.20190149 
+Hughes, K., 
+Bellis, 
+M.A., Hardcastle, 
+K.A., Seth, D. 
+Butchart, 
+A. Mikton, 
+C., 
+Jones, 
+L.,& 
+Dunne, 
+M. 
+P. 2017). The 
+effet of 
+·multiple adverse 
+childhood 
+experiences 
+on 
+health: 
+A system= 
+atic 
+review 
+and meta-analysis. The Lancet 
+Public 
+Health, 
+(8), 
+& Berger, L. M. 
+(2017). Adverse 
+child- 
+hood 
+experiences 
+and behavioral 
+problems in 
+middle 
+child- 
+Child! 
+Abuse 
+& 
+Neglect, 67, 
+391-402. 
+ips:ido 
+Esteves, K.C., 
+Gray, 
+..O,, Clarke, 
+T-N.,Callerame, 
+K,, Theall, 
+K.P, 
+& Drury, S. $. (2019). 
+The transgenera- 
+tional 
+transmission 
+of maternal 
+adverse 
+childhood 
+experiences 
+(ACES): Insights ffom placental aging 
+and infant 
+autonomic 
+nervous 
+system reactivity. 
+Psychoneuroendocrinologs, 106, 
+20-27, 
+Kang, N. R., 
+Kwack, Y. 
+8, Song, J. 
+K, 
+Kim, M. D., 
+Park, 
+1H. 
+Kim, 
+& Moon, D. 
+S. (2021). The impact 
+of maternal 
+Adverse 
+Childhood 
+Experiences on 
+offspring·s internalizing 
+·and exteralzing 
+problems. Psychiary 
+Investigaion, 15(11), 
+1050-1057. 
+Kang, N. 
+R., Kwack, Y. 
+8, Song, 
+J. K, Kim, 
+M.D., Park, 
+JH, 
+Kim, 
+B.N., 
+& Moon, 
+D-S. (2022). The 
+inergenerationl 
+trans- 
+mission 
+of maternal 
+adverse 
+childhood 
+experiences 
+on 
+spring's psychiatric disorder 
+and 
+the mediating role of maternal 
+depression: 
+fom across 
+sectional 
+study. Clinical 
+Child 
+Psychology and Psyehiary, 
+hps/doi 
+·org/10.117/1359104521 1056919 
+Karatckin,C., 
+& Hill, M. 
+(2019). Expanding the original definition, 
+of 
+adverse 
+childhood 
+experiences 
+(ACES). Journal of 
+Child & 
+Adolescent 
+Trauma, 12(3), 289-306. 
+Khan, M., & Renk, K. (2019), Mothers· 
+adverse childhood 
+expe- 
+riences, 
+depressive symploms, 
+parenting, 
+and attachment 
+as 
+predictors of young 
+children·s 
+problems. Journal 
+of Child 
+Custody, 16(3), 268-290. 
+019,1578318 
+Khoury, J. E., Tanaka, 
+M., Kimber, M., 
+H. 
+L., Aff 
+T. ,, 
+Boyle, M, 
+Duncan, 
+L., Joshi, 
+D., 
+Georgiades, K., & 
+Gonzalez, A. (2022). Examining the unique 
+contributions 
+of 
+parental and youth malieatment 
+in 
+association 
+with 
+youth 
+·mental health problems. Child Abuse 
+& Neglect, 124, 105851 
+2021105451 
+Kinmayer, LJ, Gone, 
+JP, 
+& Moses, J. 
+(2014). Rethinki
+histo
+I trauma. 
+Transcultural 
+Psychiatry, 51(3), 299-319. 
+hips 
+doi 
+Kumar, M., 
+Amugune, B., 
+Madeghe, B., 
+Wambua, G. 
+N., Oso, 
+1, 
+Polkonikova-Wamoto, 
+A, Bukusi, D., 
+Were, 
+& Huang, 
+K_Y. 
+(2018), 
+Mechanisms 
+associated 
+with 
+matemal 
+adverse 
+childhood 
+experiences 
+on offpring·s mental 
+health 
+in 
+Nairobi 
+informal 
+setlements: 
+A modiational 
+model esting approach, 
+BMC 
+Psyehianry, 18(1), 381, 
+018-1983-y 
+Langevin,R., 
+Kingsland, F. (2021) Interzenerational 
+cycles of 
+maltreatment: 
+A scoping 
+review of 
+psychosocial risk 
+and 
+protective 
+factors. 
+Trauma, 
+Violence, 
+& Abuse, 
+6672-688, 
+Le-Scherban, 
+F., Wang, X., 
+Kathryn, H. 
+B. 
+S., & 
+Pachter, 
+L. 
+M. 
+(2018). Intergenerational 
+·associations 
+of 
+parent 
+adverse 
+childhood 
+experiences 
+and child 
+health 
+outcomes. 
+Pediarics, 
+1416), 
+peds.2017-4274 
+Letoumeau, N., Dewey, D., Kaplan, B. J, Nanda, 
+H., Novick, 
+3, 
+Thomas, 
+Deane, 
+A.J, Leung, B., 
+Pon, K., 
+Giesbrecht, 
+G. F., & APrON 
+Study 
+Team. (2019). Intergenerationaltrans- 
+mmission of 
+adverse childhood 
+experiences 
+via 
+materna
+depr
+son 
+and 
+anxiety 
+and 
+moderation 
+by child 
+sex, 
+Jounal 
+of 
+Developmental Origins of Health 
+and Disease, 10(1), 88-98. 
+Levae, D., 
+Colquhoun, H., 
+& 
+O'Brien, K. 
+K. (2010), Scopin
+jes: 
+Advancing the methodology. Implementation Science, 5, 
+69. htip:/doiong/10.1186/1748-5908-5-69 
+Liu, 
+M., 
+Luong, L., Lachaud, 
+J, 
+Fdalati, 
+H., Reeves, 
+Ay 
+& 
+Hwang, S. 
+W. (2021). 
+Adverse 
+childhood 
+experiences 
+and 
+related 
+outcomes 
+among 
+adults 
+experiencing 
+homelessness: 
+A systematic 
+review 
+and 
+meta-analysis, 
+The Lancet 
+Public 
+Health, 
+6(11), 
+2667(21)00189-4 
+Lynn, A., 
+Humphreys, K. L, 
+& Price, G. R. 
+(2022). The long 
+arm
+of 
+adversity: 
+Children· 
+kindergarten math skis 
+are associated 
+·with 
+materal 
+childhood 
+adversity. 
+Child Abuse 
+& Neglect, 
+105561. 
+2022. 
+Madigan, S, Cyr, 
+C., 
+R, Fearon, 
+R.M. Py 
+Ly, 
+Rash, 
+., Poole, 1.C., 
+& Alink, I. 
+R. A. (2019). Testing the cyele
+of 
+maltreatment 
+hypothesis: Meta-analytie evidence 
+ofthe 
+inter- 
+generational transmission 
+of child 
+maltreatment. Development 
+·and 
+Psychopathology, 31, 
+Madigan, S., 
+Wade, M.,Plamondon, A., 
+Maguire, JL, 
+& Jenkins, 
+J. M, 
+(2017), 
+Maternal 
+adverse 
+childhood 
+experience 
+and 
+infant 
+health: 
+Biomedical 
+and psychosocial 
+risks as 
+intermest- 
+ary 
+mechanisms. Jounal of 
+Pediatris, 
+187, 282-289. 
+bips:// 
+MeDonald, 
+S. W., Madigan, S., Racine, 
+N., Benzies,K., 
+Tomfohr, 
+LL, & Tough, S. 2019). 
+Maternal 
+adverse 
+childhood 
+experi- 
+·ences, mental 
+health, 
+nd 
+child behaviour 
+at age 3: The All Our 
+Families 
+community 
+cohort 
+study. Preventive 
+Medicine, 
+118, 
+286-294. 
+ypmed.2018.11.013 
+MeDonnell, 
+C. 
+G., 
+& 
+Valentino, 
+K. 
+(2016). 
+Intergenerational 
+cffeets 
+of 
+childhood 
+trauma: 
+Evaluating pathways among 
+·maternal 
+ACES, perinatal depressive symptoms, 
+and 
+infant 
+·outcomes. 
+Child 
+Maltreatment, 
+21(4), 
+317-326. 
+bitps/oi 
+McKelvey, 
+L.M., 
+Whiteside-Mansell, 
+L., Conners 
+Burrow, 
+N. A, 
+·Swindle, ., 
+& Fitzgerald, S. 
+(2016). Assessing 
+adverse 
+experi- 
+ences 
+from infancy through carly childhood 
+in 
+home visiting 
+programs. 
+Child 
+Abuse 
+& Neglect, 51, 295-302. 
+Meri, S. 
+M, Moore, 
+SR, Gladish,N., 
+Gesbrocht, 
+GF, Dewey, 
+D., 
+Konwar, 
+C., Maclssac, 
+J. L., Kobor, M. 
+S., 
+& Letourneau, 
+N. 
+L. 
+(2021). 
+Patemal 
+adverse 
+childhood 
+experiences: 
+Associations 
+with 
+infant 
+DNA 
+methylation, Developmental 
+Psychobiology, 63(6), 
+·22174. 
+ddev.22174 
+Mersky,J.P., 
+Janczewski 
+C.E., 
+& Topitzes, J. 
+(2017). Rethinking 
+the 
+measurement 
+of adversity: Moving toward 
+second-gen- 
+research 
+on 
+adverse 
+childhood 
+experiences. 
+Child 
+·Maltreatment, 
+22(1), 
+$8-68. 
+10 
+77559516679513 
+Mersky, J. & Phummer Lee, 
+C. 
+(2019), Adverse 
+childhood 
+expe- 
+riences 
+and poor 
+birth 
+outcomes in 
+a diverse, 
+low-income 
+sam- 
+ple. BMC 
+Pregnancy and Childbirth, 
+19(1), 387. 
+Mersky, 
+J.P. Topitzes, 
+J, Langlie, J, & Dodge, 
+K. A. (2021), 
+Increasing mental 
+heath 
+access 
+and equity 
+Urough 
+trauma-responsive care. 
+American 
+Journal of 
+Ordhopsyehianry, 
+703-713. 
+Mersky, 
+J.P., Choi, 
+C., Langlied, J, 
+Lee, C. 
+P., & Chang, P. 
+(202) Increasing 
+equitable 
+access 
+tohome 
+visiting: 
+An inde- 
+Pendent implementation study of family connects. 
+Jounal 
+Of the Society for 
+Social 
+Work 
+and 
+Research. 
+org/10.1086771936 
+Merrick, 
+M.T, 
+Ford, D. 
+C, Ports, K. 
+A. & 
+Guinn, A. S. 
+2018), 
+Prevalence 
+of 
+adverse 
+childhood 
+experiences 
+from 
+the 
+2011-2014 
+behavioral 
+risk 
+factor 
+surveillance 
+system 
+ia 23 
+States. 
+JAMA 
+Pediatrics, 
+172(11), 
+1038-1044, 
+·org/10.1001jamapediatrics.2018.2537 
+Miccoli, A., 
+Song, 
+J, 
+Romanowiee, M., 
+Howie, F, 
+Sima, 
+& 
+Lynch, B. 
+A. (2022). Impact of 
+parental Adverse 
+Childhood 
+Experiences on 
+offspring development in Early Head 
+Start 
+Parental 
+adversity and offspring development. Journal 
+of 
+Primary 
+Care 
+& Community 
+Health, 13, 
+Michelson, D., 
+Davenport, C., 
+Dretke, J, 
+Barlow, J, & Day, 
+C 
+(2013). Do 
+evidence-based 
+interventions 
+work 
+when 
+tested 
+in 
+the ·real 
+world?· 
+A systematic 
+review 
+and meta-analy- 
+sis of 
+parent 
+management training 
+for the treatment 
+of child 
+disruptive behavior. 
+Clinical 
+Child 
+and 
+Family 
+Psychology 
+Review, 
+16(1), 18-34. 
+0128.0 
+Min, 
+M. 
+O., Singer, 
+Minnes, S., 
+Kim, 
+H., & 
+Shor, 
+E 
+Mediating 
+links 
+between 
+maternal 
+childhood 
+trauma 
+and preadolescent behavioral 
+adjustment, Journal 
+of 
+Interpersonal Violence, 
+28(4), 
+831-851. 
+1177/0886260512455868 
+Moon, 
+D. S., Bong, S. J, Kim, 
+B. N., 
+& Kang, N. 
+R. (2021), 
+·Association 
+between 
+matemal 
+adverse 
+childhood 
+experiences 
+and attetion-deticivhypersctvity 
+disorder 
+in 
+the offspring: 
+the mediating role of antepartum 
+health 
+risks. Journal 
+of the 
+Korean 
+Academy of 
+Child and Adolescent 
+Psychiatry, 321), 
+28-34. 
+itps:/doiorg/10.5765jjkacap 
+200081 
+Ki, 
+Park, JH, 
+Jung, Y. E., 
+Moon, D.S., 
+Yang, 
+14, Kim, 
+B.N., & 
+Kang, N·R. 
+2021), 
+Association 
+between 
+·maternal 
+adverse childhood 
+experiences 
+and risk of post-trau- 
+stress 
+disorder 
+in 
+the offspring. Journal 
+of the Korean 
+Academy of Child and Adolescent Peyehiatry, 
+322), 
+63-70. 
+jkacap. 200045 
+Narayan, A. J, Kalstabokken, 
+A. W., Labella, M. HL, Nerenberg, 
+L.S., 
+Monn, A. R., 
+& Masten, A. 
+2017), Intergenerational 
+continuity 
+of adverse childhood 
+experiences 
+in 
+homeless 
+fami- 
+lies: Unpacking exposure 
+to maltreatment 
+versus 
+family dys- 
+function, 
+American 
+Journal of 
+Orthopsychiatry, 871), 
+3-14 
+National 
+Scientific 
+Council 
+on 
+the Developing Child. 
+(2015). 
+·Supportive Relationships and Active 
+Skill-Buildin
+Strengthen 
+the Foundations 
+of Resilience: Working Paper No, 
+13. www 
+harvard 
+ed 
+S. (2020), Expanding our 
+understanding of 
+intergen- 
+·rational 
+exposure 
+to adversity. 
+Children 
+and 
+Youth Services 
+Review, 
+118, 
+105369. 
+2020,108369 
+·Nowak, 
+(2008). comprehens
+meta-a
+of Triple P-Postve 
+Parenting Program using hicrarchicl 
+line 
+tar modeling 
+Effectiveness 
+and moderating variables. 
+Clinica! 
+(Child 
+and Family 
+Psychology Review, 11), 
+114148. 
+ps! 
+dong 
+J.C, Van 
+Det 
+Laan, 
+Kogt,K, 
+Eskom 
+B, Holland, 
+N, 
+& Cardenas, 
+(2021) 
+adver 
+childhood 
+before 
+pepmane
+with 
+epigenetic aging changss in 
+thcichiren. 
+aging (any 
+AY), 190, 
+do 
+1018632/aging 203776 
+Ochoa 
+Femandce, A, Les, 
+T. 
+K., 
+Estrada, 
+& Prado, G 
+(2022). 
+The mergencrational impact of Adverse 
+Childhood 
+cn 
+Hispanic fier: 
+The 
+roles 
+of 
+arena 
+depression and parent-adleseont 
+communication 
+Family 
+Process, 
+61(1, 
+422-435. 
+bps/do.ng/0.1111 
+fap 
+12682 
+Pawson, R. 2002), 
+Evidence-based 
+policy In serch 
+of a 
+method 
+157-181. 
+Pickering JA. 
+& Sanders, 
+M.R. (2016), Reducing child 
+males 
+·nent 
+by making parenting programs 
+availabe 
+to al parents: 
+A 
+aoe 
+exile 
+sig 
+te 
+Triple P-Posiive 
+Progr 
+Traum, 
+Violence, 
+& Abuse, 7, 
+398-407, 
+ps 
+6658876 
+Pinto, 
+Corea 
+& Maia, A. 
+2014), Assessing the 
+reliability of 
+reports 
+of adverse 
+childhood 
+experiences 
+anions 
+wth 
+documented 
+childhood 

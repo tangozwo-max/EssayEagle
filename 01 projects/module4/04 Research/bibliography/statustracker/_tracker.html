@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Bibliothek – Download-Tracker</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f0f2f5;color:#1a1a2e;font-size:14px}
+header{background:#1a1a2e;color:#fff;padding:16px 24px;position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header h1{font-size:16px;font-weight:600;white-space:nowrap}
+.progress-wrap{flex:1;background:rgba(255,255,255,.2);border-radius:6px;height:8px;min-width:80px}
+.progress-fill{background:#4ade80;height:8px;border-radius:6px;transition:width .4s}
+.stats{display:flex;gap:6px;font-size:12px;flex-wrap:wrap}
+.badge{padding:3px 9px;border-radius:12px;font-weight:600;white-space:nowrap}
+.b-pdf{background:#dcfce7;color:#15803d}
+.b-html{background:#ede9fe;color:#6d28d9}
+.b-no{background:#fef3c7;color:#92400e}
+.b-err{background:#fee2e2;color:#b91c1c}
+.b-pend{background:rgba(255,255,255,.15);color:#fff}
+.container{max-width:1100px;margin:0 auto;padding:16px}
+.toolbar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.toolbar input{padding:7px 11px;border:1px solid #d1d5db;border-radius:6px;font-size:13px;width:220px}
+.toolbar select{padding:7px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:13px}
+.btn{padding:7px 14px;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500}
+.btn-exp{background:#22c55e;color:#fff}.btn-exp:hover{background:#16a34a}
+.count-lbl{font-size:12px;color:#6b7280;margin-left:4px}
+.card{background:#fff;border-radius:10px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.card-head{display:flex;gap:10px;padding:11px 14px;align-items:flex-start;cursor:pointer;user-select:none}
+.card-num{font-size:11px;color:#9ca3af;min-width:24px;padding-top:2px;text-align:right}
+.card-main{flex:1;min-width:0}
+.card-title{font-weight:600;font-size:13px;line-height:1.4;margin-bottom:2px}
+.card-meta{font-size:11px;color:#6b7280;margin-bottom:4px}
+.card-links{display:flex;gap:6px;flex-wrap:wrap}
+.lnk{font-size:11px;padding:2px 7px;border-radius:4px;text-decoration:none;font-weight:500;border:1px solid}
+.lnk-u{color:#2563eb;border-color:#bfdbfe;background:#eff6ff}
+.lnk-d{color:#059669;border-color:#a7f3d0;background:#f0fdf4}
+.lnk-p{color:#7c3aed;border-color:#ddd6fe;background:#f5f3ff}
+.card-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0}
+.sdot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:4px}
+.s-pending{background:#d1d5db}.s-pdf{background:#22c55e}.s-html{background:#8b5cf6}
+.s-noaccess{background:#f59e0b}.s-problem{background:#ef4444}
+.slbl{font-size:11px;color:#6b7280;white-space:nowrap}
+.card-body{padding:10px 14px 14px 48px;border-top:1px solid #f3f4f6;display:none}
+.card-body.open{display:block}
+.hvbox{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:8px 10px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.hvlbl{font-size:11px;color:#64748b;flex-shrink:0}
+.hvname{font-family:'Courier New',monospace;font-size:11.5px;color:#1e293b;word-break:break-all;flex:1}
+.copybtn{font-size:11px;padding:3px 9px;background:#e2e8f0;border:none;border-radius:4px;cursor:pointer;flex-shrink:0}
+.copybtn:hover{background:#cbd5e1}
+.copybtn.ok{background:#dcfce7;color:#15803d}
+.frow{display:flex;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.fg{display:flex;flex-direction:column;gap:3px;flex:1;min-width:150px}
+.fg label{font-size:11px;color:#64748b;font-weight:500}
+.fg input,.fg select,.fg textarea{padding:6px 8px;border:1px solid #cbd5e1;border-radius:5px;font-size:12px;font-family:inherit;background:#fff}
+.fg textarea{resize:vertical;min-height:48px}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:2px solid #3b82f6;border-color:transparent}
+.savedlbl{font-size:11px;color:#22c55e;opacity:0;transition:opacity .3s;margin-top:2px}
+.savedlbl.show{opacity:1}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;display:flex;align-items:center;justify-content:center}
+.modal-bg.hidden{display:none}
+.modal{background:#fff;border-radius:12px;padding:22px;max-width:680px;width:92%;max-height:82vh;overflow:auto}
+.modal h2{font-size:15px;margin-bottom:8px}
+.modal p{font-size:12px;color:#6b7280;margin-bottom:10px}
+.modal pre{font-size:11px;background:#f8fafc;padding:10px;border-radius:6px;overflow:auto;max-height:380px;white-space:pre-wrap;border:1px solid #e2e8f0}
+.modal-close{float:right;background:none;border:none;font-size:20px;cursor:pointer;color:#94a3b8;line-height:1}
+.modal-close:hover{color:#334155}
+.mbtns{display:flex;gap:8px;margin-top:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📚 Bibliothek · Download-Tracker</h1>
+  <div class="progress-wrap"><div class="progress-fill" id="pFill" style="width:0%"></div></div>
+  <div class="stats" id="statsBar"></div>
+</header>
+
+<div class="container">
+  <div class="toolbar">
+    <input id="qBox" type="text" placeholder="🔍 Titel, Autor suchen…" oninput="filter()">
+    <select id="sfilt" onchange="filter()">
+      <option value="">Alle Status</option>
+      <option value="pending">⏳ Ausstehend</option>
+      <option value="pdf">✅ PDF</option>
+      <option value="html">📄 HTML</option>
+      <option value="noaccess">🔒 Kein Zugriff</option>
+      <option value="problem">❌ Problem</option>
+    </select>
+    <button class="btn btn-exp" onclick="openExport()">📋 Export Rename-Liste</button>
+    <span class="count-lbl" id="cntLbl"></span>
+  </div>
+  <div id="list"></div>
+</div>
+
+<div class="modal-bg hidden" id="expModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeExport()">×</button>
+    <h2>📋 Rename-Mapping – Harvard-Format</h2>
+    <p>Nur Einträge mit gespeichertem Dateinamen. Übergib diese Liste an Claude zum automatischen Umbenennen.</p>
+    <pre id="expPre"></pre>
+    <div class="mbtns">
+      <button class="btn" style="background:#1a1a2e;color:#fff" onclick="copyExp()">Kopieren</button>
+      <button class="btn" style="background:#e2e8f0" onclick="dlExp()">⬇ JSON Download</button>
+      <button class="btn" style="background:#e2e8f0" onclick="closeExport()">Schließen</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA=[{"idx":0,"title":"Socioeconomic inequalities and mental health problems in children and adolescents: A systematic review","authors":"Reiss","year":"2013","journal":"Social Science & Medicine","url":"https://linkinghub.elsevier.com/retrieve/pii/S0277953613002608","pdf_url":"","doi":"10.1016/j.socscimed.2013.04.026","harvard":"Reiss_2013_Socioeconomic_inequalities_and_mental_health_probl"},
+{"idx":1,"title":"Resilience and mental health: how multisystemic processes contribute to positive outcomes","authors":"Ungar, Theron","year":"2020","journal":"The Lancet Psychiatry","url":"https://linkinghub.elsevier.com/retrieve/pii/S2215036619304341","pdf_url":"","doi":"10.1016/S2215-0366(19)30434-1","harvard":"Ungar_Theron_2020_Resilience_and_mental_health_how_multisystemic_pr"},
+{"idx":2,"title":"Double jeopardy: implications of neurodevelopmental conditions and adverse childhood experiences for child health","authors":"Gajwani, Minnis","year":"2023","journal":"European Child & Adolescent Psychiatry","url":"https://link.springer.com/10.1007/s00787-022-02081-9","pdf_url":"https://link.springer.com/content/pdf/10.1007/s00787-022-02081-9.pdf","doi":"10.1007/s00787-022-02081-9","harvard":"Gajwani_Minnis_2023_Double_jeopardy_implications_of_neurodevelopmenta"},
+{"idx":3,"title":"Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice","authors":"Macneil et al.","year":"2012","journal":"BMC Medicine","url":"http://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-10-111","pdf_url":"https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/1741-7015-10-111","doi":"10.1186/1741-7015-10-111","harvard":"Macneil_et_al_2012_Is_diagnosis_enough_to_guide_interventions_in_ment"},
+{"idx":4,"title":"Internalizing–Externalizing Comorbidity and Impaired Functioning in Children","authors":"Dol et al.","year":"2022","journal":"Children","url":"https://www.mdpi.com/2227-9067/9/10/1547","pdf_url":"","doi":"10.3390/children9101547","harvard":"Dol_et_al_2022_Internalizing_Externalizing_Comorbidity_and_Impair"},
+{"idx":5,"title":"Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults","authors":"Felitti et al.","year":"1998","journal":"American Journal of Preventive Medicine","url":"https://linkinghub.elsevier.com/retrieve/pii/S0749379798000178","pdf_url":"","doi":"10.1016/S0749-3797(98)00017-8","harvard":"Felitti_et_al_1998_Relationship_of_Childhood_Abuse_and_Household_Dysf"},
+{"idx":6,"title":"Adverse Childhood Experiences and Executive Function Difficulties in Children: A Systematic Review","authors":"Lund et al.","year":"2020","journal":"Child Abuse & Neglect","url":"https://linkinghub.elsevier.com/retrieve/pii/S014521342030140X","pdf_url":"","doi":"10.1016/j.chiabu.2020.104485","harvard":"Lund_et_al_2020_Adverse_Childhood_Experiences_and_Executive_Functi"},
+{"idx":7,"title":"Acute stress impairs children's sustained attention with increased vulnerability for children of mothers reporting higher parenting stress","authors":"Roos et al.","year":"2020","journal":"Developmental Psychobiology","url":"https://onlinelibrary.wiley.com/doi/10.1002/dev.21915","pdf_url":"","doi":"10.1002/dev.21915","harvard":"Roos_et_al_2020_Acute_stress_impairs_children_s_sustained_attentio"},
+{"idx":8,"title":"Disorganized attachment in infancy: a review of the phenomenon and its implications for clinicians and policy-makers","authors":"Granqvist et al.","year":"2017","journal":"Attachment & Human Development","url":"https://www.tandfonline.com/doi/full/10.1080/14616734.2017.1354040","pdf_url":"https://www.tandfonline.com/doi/pdf/10.1080/14616734.2017.1354040?needAccess=true","doi":"10.1080/14616734.2017.1354040","harvard":"Granqvist_et_al_2017_Disorganized_attachment_in_infancy_a_review_of_th"},
+{"idx":9,"title":"Delayed Diagnosis and Treatment Among Children with Autism Who Experience Adversity","authors":"Berg et al.","year":"2018","journal":"Journal of Autism and Developmental Disorders","url":"http://link.springer.com/10.1007/s10803-017-3294-y","pdf_url":"","doi":"10.1007/s10803-017-3294-y","harvard":"Berg_et_al_2018_Delayed_Diagnosis_and_Treatment_Among_Children_wit"},
+{"idx":10,"title":"Review on the role of socioeconomic status in child health and development","authors":"Poulain et al.","year":"2020","journal":"Current Opinion in Pediatrics","url":"https://journals.lww.com/10.1097/MOP.0000000000000876","pdf_url":"","doi":"10.1097/MOP.0000000000000876","harvard":"Poulain_et_al_2020_Review_on_the_role_of_socioeconomic_status_in_chil"},
+{"idx":11,"title":"Trajectories of mental health across the primary to secondary school transition","authors":"Donaldson et al.","year":"2025","journal":"JCPP Advances","url":"https://acamh.onlinelibrary.wiley.com/doi/10.1002/jcv2.12244","pdf_url":"","doi":"10.1002/jcv2.12244","harvard":"Donaldson_et_al_2025_Trajectories_of_mental_health_across_the_primary_t"},
+{"idx":12,"title":"Safe, Stable, and Nurtured: Protective Factors against Poor Physical and Mental Health Outcomes Following Exposure to Adverse Childhood Experiences (ACEs)","authors":"Crouch et al.","year":"2019","journal":"Journal of Child & Adolescent Trauma","url":"http://link.springer.com/10.1007/s40653-018-0217-9","pdf_url":"","doi":"10.1007/s40653-018-0217-9","harvard":"Crouch_et_al_2019_Safe_Stable_and_Nurtured_Protective_Factors_aga"},
+{"idx":13,"title":"Ordinary magic: Resilience processes in development.","authors":"Masten","year":"2001","journal":"American Psychologist","url":"https://doi.apa.org/doi/10.1037/0003-066X.56.3.227","pdf_url":"","doi":"10.1037/0003-066X.56.3.227","harvard":"Masten_2001_Ordinary_magic_Resilience_processes_in_developmen"},
+{"idx":14,"title":"The connecting brain in context: How adolescent plasticity supports learning and development","authors":"Baker et al.","year":"2025","journal":"Developmental Cognitive Neuroscience","url":"https://linkinghub.elsevier.com/retrieve/pii/S1878929324001476","pdf_url":"","doi":"10.1016/j.dcn.2024.101486","harvard":"Baker_et_al_2025_The_connecting_brain_in_context_How_adolescent_pl"},
+{"idx":15,"title":"Proactive and reactive aggression in childhood and adolescence: A meta-analysis of differential relations with psychosocial adjustment","authors":"Card, Little","year":"2006","journal":"International Journal of Behavioral Development","url":"https://journals.sagepub.com/doi/10.1177/0165025406071904","pdf_url":"","doi":"10.1177/0165025406071904","harvard":"Card_Little_2006_Proactive_and_reactive_aggression_in_childhood_and"},
+{"idx":16,"title":"Formulation: A Multiperspective Model","authors":"Weerasekera","year":"1993","journal":"The Canadian Journal of Psychiatry","url":"https://journals.sagepub.com/doi/10.1177/070674379303800513","pdf_url":"","doi":"10.1177/070674379303800513","harvard":"Weerasekera_1993_Formulation_A_Multiperspective_Model"},
+{"idx":17,"title":"Social Conditions As Fundamental Causes of Disease","authors":"Link, Phelan","year":"1995","journal":"Journal of Health and Social Behavior","url":"http://www.jstor.org/stable/2626958?origin=crossref","pdf_url":"","doi":"10.2307/2626958","harvard":"Link_Phelan_1995_Social_Conditions_As_Fundamental_Causes_of_Disease"},
+{"idx":18,"title":"Intergenerational Transmission of Parental Adverse Childhood Experiences and Children's Outcomes: A Scoping Review","authors":"Zhang et al.","year":"2023","journal":"Trauma, Violence, & Abuse","url":"https://journals.sagepub.com/doi/10.1177/15248380221126186","pdf_url":"","doi":"10.1177/15248380221126186","harvard":"Zhang_et_al_2023_Intergenerational_Transmission_of_Parental_Adverse"},
+{"idx":19,"title":"Intergenerational transmission and prevention of adverse childhood experiences (ACEs)","authors":"Narayan et al.","year":"2021","journal":"Clinical Psychology Review","url":"https://linkinghub.elsevier.com/retrieve/pii/S0272735821000404","pdf_url":"","doi":"10.1016/j.cpr.2021.101997","harvard":"Narayan_et_al_2021_Intergenerational_transmission_and_prevention_of_a"},
+{"idx":20,"title":"Shamed into anger? The relation of shame and guilt to anger and self-reported aggression.","authors":"Tangney et al.","year":"1992","journal":"Journal of Personality and Social Psychology","url":"https://doi.apa.org/doi/10.1037/0022-3514.62.4.669","pdf_url":"","doi":"10.1037/0022-3514.62.4.669","harvard":"Tangney_et_al_1992_Shamed_into_anger_The_relation_of_shame_and_guilt"},
+{"idx":21,"title":"The neurobiological consequences of early stress and childhood maltreatment","authors":"Teicher et al.","year":"2003","journal":"Neuroscience & Biobehavioral Reviews","url":"https://linkinghub.elsevier.com/retrieve/pii/S0149763403000071","pdf_url":"","doi":"10.1016/S0149-7634(03)00007-1","harvard":"Teicher_et_al_2003_The_neurobiological_consequences_of_early_stress_a"},
+{"idx":22,"title":"Prenatal Stress and Its Effects on the Fetus and the Child: Possible Underlying Biological Mechanisms","authors":"Glover","year":"2015","journal":"Perinatal Programming of Neurodevelopment","url":"https://link.springer.com/10.1007/978-1-4939-1372-5_13","pdf_url":"","doi":"10.1007/978-1-4939-1372-5_13","harvard":"Glover_2015_Prenatal_Stress_and_Its_Effects_on_the_Fetus_and_t"},
+{"idx":23,"title":"Childhood Adversity and Neural Development: A Systematic Review","authors":"McLaughlin et al.","year":"2019","journal":"Annual Review of Developmental Psychology","url":"https://www.annualreviews.org/doi/10.1146/annurev-devpsych-121318-084950","pdf_url":"","doi":"10.1146/annurev-devpsych-121318-084950","harvard":"McLaughlin_et_al_2019_Childhood_Adversity_and_Neural_Development_A_Syst"},
+{"idx":24,"title":"Preterm birth and neurodevelopmental outcome: a review","authors":"Arpino et al.","year":"2010","journal":"Child's Nervous System","url":"http://link.springer.com/10.1007/s00381-010-1125-y","pdf_url":"","doi":"10.1007/s00381-010-1125-y","harvard":"Arpino_et_al_2010_Preterm_birth_and_neurodevelopmental_outcome_a_re"},
+{"idx":25,"title":"The theory of latent vulnerability: Reconceptualizing the link between childhood maltreatment and psychiatric disorder","authors":"McCrory, Viding","year":"2015","journal":"Development and Psychopathology","url":"https://www.cambridge.org/core/product/identifier/S0954579415000115/type/journal_article","pdf_url":"","doi":"10.1017/S0954579415000115","harvard":"McCrory_Viding_2015_The_theory_of_latent_vulnerability_Reconceptualiz"},
+{"idx":26,"title":"Preventing Childhood Toxic Stress: Partnering With Families and Communities to Promote Relational Health","authors":"Garner, Yogman","year":"2021","journal":"Pediatrics","url":"https://publications.aap.org/pediatrics/article/148/2/e2021052582/179805/Preventing-Childhood-Toxic-Stress-Partnering-With","pdf_url":"https://publications.aap.org/pediatrics/article-pdf/148/2/e2021052582/1440326/peds_2021052582.pdf","doi":"10.1542/peds.2021-052582","harvard":"Garner_Yogman_2021_Preventing_Childhood_Toxic_Stress_Partnering_With"},
+{"idx":27,"title":"Development of the adolescent brain: implications for executive function and social cognition","authors":"Blakemore, Choudhury","year":"2006","journal":"Journal of Child Psychology and Psychiatry","url":"https://acamh.onlinelibrary.wiley.com/doi/10.1111/j.1469-7610.2006.01611.x","pdf_url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1469-7610.2006.01611.x","doi":"10.1111/j.1469-7610.2006.01611.x","harvard":"Blakemore_Choudhury_2006_Development_of_the_adolescent_brain_implications"},
+{"idx":28,"title":"Cognition, Emotion, and Neurobiological Development: Mediating the Relation Between Maltreatment and Aggression","authors":"Lee, Hoaken","year":"2007","journal":"Child Maltreatment","url":"https://journals.sagepub.com/doi/10.1177/1077559507303778","pdf_url":"","doi":"10.1177/1077559507303778","harvard":"Lee_Hoaken_2007_Cognition_Emotion_and_Neurobiological_Developmen"},
+{"idx":29,"title":"Nutrition and brain development in early life","authors":"Prado, Dewey","year":"2014","journal":"Nutrition Reviews","url":"https://academic.oup.com/nutritionreviews/article-lookup/doi/10.1111/nure.12102","pdf_url":"https://academic.oup.com/nutritionreviews/article-pdf/72/4/267/24104089/nutritionreviews72-0267.pdf","doi":"10.1111/nure.12102","harvard":"Prado_Dewey_2014_Nutrition_and_brain_development_in_early_life"},
+{"idx":30,"title":"Misdiagnosis and Missed Diagnoses in Foster and Adopted Children With Prenatal Alcohol Exposure","authors":"Chasnoff et al.","year":"2015","journal":"Pediatrics","url":"https://publications.aap.org/pediatrics/article/135/2/264/33477/Misdiagnosis-and-Missed-Diagnoses-in-Foster-and","pdf_url":"","doi":"10.1542/peds.2014-2171","harvard":"Chasnoff_et_al_2015_Misdiagnosis_and_Missed_Diagnoses_in_Foster_and_Ad"},
+{"idx":31,"title":"Autonomic dysregulation and the Window of Tolerance model of the effects of complex emotional trauma","authors":"Corrigan et al.","year":"2011","journal":"Journal of Psychopharmacology","url":"https://journals.sagepub.com/doi/10.1177/0269881109354930","pdf_url":"","doi":"10.1177/0269881109354930","harvard":"Corrigan_et_al_2011_Autonomic_dysregulation_and_the_Window_of_Toleranc"},
+{"idx":32,"title":"Subjective responses to emotional stimuli during labeling, reappraisal, and distraction.","authors":"Lieberman et al.","year":"2011","journal":"Emotion","url":"https://doi.apa.org/doi/10.1037/a0023503","pdf_url":"https://escholarship.org/content/qt6n48b650/qt6n48b650.pdf","doi":"10.1037/a0023503","harvard":"Lieberman_et_al_2011_Subjective_responses_to_emotional_stimuli_during_l"},
+{"idx":33,"title":"Comprehensive Review of the Impact of Maternal Stress on Fetal Development","authors":"Tadanki et al.","year":"2025","journal":"Pediatric Discovery","url":"https://onlinelibrary.wiley.com/doi/10.1002/pdi3.70004","pdf_url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pdi3.70004","doi":"10.1002/pdi3.70004","harvard":"Tadanki_et_al_2025_Comprehensive_Review_of_the_Impact_of_Maternal_Str"},
+{"idx":34,"title":"Socioeconomic status, stressful life situations and mental health problems in children and adolescents: Results of the German BELLA cohort-study","authors":"Reiss et al.","year":"2019","journal":"Robert Koch-Institut","url":"https://edoc.rki.de/handle/176904/6153","pdf_url":"","doi":"10.25646/6125","harvard":"Reiss_et_al_2019_Socioeconomic_status_stressful_life_situations_an"},
+{"idx":35,"title":"Parent-Based Treatment as Efficacious as Cognitive Behavioral Therapy for Childhood Anxiety","authors":"Lebowitz et al.","year":"2019","journal":"J Am Acad Child Adolesc Psychiatry","url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6732048","pdf_url":"","doi":"10.1016/j.jaac.2019.02.014","harvard":"Lebowitz_et_al_2019_Parent_Based_Treatment_as_Efficacious_as_Cognitive"},
+{"idx":36,"title":"The Feasibility of a Parent Group Treatment for Youth with Anxiety Disorders and Obsessive Compulsive Disorder","authors":"Dekel et al.","year":"2020","journal":"Child Psychiatry and Human Development","url":"https://www.semanticscholar.org/paper/d004d6911eee40a93772bf36842c84bf5cba1759","pdf_url":"","doi":"10.1007/s10578-020-01082-6","harvard":"Dekel_et_al_2020_The_Feasibility_of_a_Parent_Group_Treatment_for_Yo"},
+{"idx":37,"title":"Comparison of Stepped Care Delivery Against a Single, Empirically Validated CBT Program for Youth With Anxiety","authors":"Rapee et al.","year":"2017","journal":"J Am Acad Child Adolesc Psychiatry","url":"https://www.semanticscholar.org/paper/7749a9263acb27ee55c602a4654784ab5b44b226","pdf_url":"","doi":"10.1016/j.jaac.2017.08.001","harvard":"Rapee_et_al_2017_Comparison_of_Stepped_Care_Delivery_Against_a_Sing"},
+{"idx":38,"title":"Psychological stepped care for anxious adolescents in community mental health services: A pilot effectiveness trial","authors":"Wuthrich et al.","year":"2021","journal":"Psychiatry Research","url":"https://www.semanticscholar.org/paper/e8b04d4fb3707ec7c1f40cbe66cd3fd6f85f53fe","pdf_url":"","doi":"10.1016/j.psychres.2021.114066","harvard":"Wuthrich_et_al_2021_Psychological_stepped_care_for_anxious_adolescents"},
+{"idx":39,"title":"Stepped-care versus therapist-guided, internet-based CBT for childhood and adolescent anxiety: A non-inferiority trial","authors":"March et al.","year":"2023","journal":"Internet Interventions","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10539664/pdf/main.pdf","pdf_url":"","doi":"10.1016/j.invent.2023.100675","harvard":"March_et_al_2023_Stepped_care_versus_therapist_guided_internet_bas"},
+{"idx":40,"title":"Stepped Care Versus Stratified Care for Youth with Anxiety Disorders: a Pilot Randomized Controlled Trial","authors":"Olsson et al.","year":"2025","journal":"Child Psychiatry and Human Development","url":"https://link.springer.com/content/pdf/10.1007/s10578-025-01908-1.pdf","pdf_url":"","doi":"10.1007/s10578-025-01908-1","harvard":"Olsson_et_al_2025_Stepped_Care_Versus_Stratified_Care_for_Youth_with"},
+{"idx":41,"title":"The Efficacy and Cost-Effectiveness of Stepped Care Prevention and Treatment for Depressive and/or Anxiety Disorders","authors":"Ho et al.","year":"2016","journal":"Scientific Reports","url":"https://www.nature.com/articles/srep29281","pdf_url":"","doi":"10.1038/srep29281","harvard":"Ho_et_al_2016_The_Efficacy_and_Cost_Effectiveness_of_Stepped_Car"},
+{"idx":42,"title":"Child & adolescent anxiety and family accommodation: exploring the role of cognitive coping","authors":"Morris","year":"2019","journal":"","url":"https://www.semanticscholar.org/paper/0e8d0dc961d0596f1f821d12dd3a0a3a7e2c86e6","pdf_url":"","doi":"10.26153/TSW/5835","harvard":"Morris_2019_Child_adolescent_anxiety_and_family_accommodatio"},
+{"idx":43,"title":"Cross-sectional and longitudinal associations of screen time with adolescent depression and anxiety","authors":"Li et al.","year":"2025","journal":"British Journal of Clinical Psychology","url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjc.12547","pdf_url":"","doi":"10.1111/bjc.12547","harvard":"Li_et_al_2025_Cross_sectional_and_longitudinal_associations_of_s"},
+{"idx":44,"title":"Phenomenology and clinical correlates of family accommodation in pediatric anxiety disorders.","authors":"Storch et al.","year":"2015","journal":"Journal of Anxiety Disorders","url":"https://www.semanticscholar.org/paper/ec57a7448eebadf9012a9d56801b346de263fc83","pdf_url":"","doi":"10.1016/j.janxdis.2015.09.001","harvard":"Storch_et_al_2015_Phenomenology_and_clinical_correlates_of_family_ac"},
+{"idx":45,"title":"Youth Anxiety: The Moderating Effects of Accommodation and Emotional Warmth","authors":"Gladstone et al.","year":"2023","journal":"Child Psychiatry and Human Development","url":"https://www.semanticscholar.org/paper/567f976f0dd158e6237a9f13e625bc15174f6221","pdf_url":"","doi":"10.1007/s10578-023-01544-7","harvard":"Gladstone_et_al_2023_Youth_Anxiety_The_Moderating_Effects_of_Accommoda"},
+{"idx":46,"title":"The Relationship of Family Accommodation with Pediatric Anxiety Severity","authors":"Iniesta-Sepulveda et al.","year":"2020","journal":"Child Psychiatry and Human Development","url":"https://www.semanticscholar.org/paper/dc940b88545f4fa0e20c2a954d440a9df92bbaf7","pdf_url":"","doi":"10.1007/s10578-020-00987-6","harvard":"Iniesta_Sepulveda_et_al_2020_The_Relationship_of_Family_Accommodation_with_Pedi"},
+{"idx":47,"title":"Family accommodation in obsessive-compulsive disorder: An updated systematic review and meta-analysis","authors":"Hermida-Barros et al.","year":"2024","journal":"Neuroscience and Biobehavioral Reviews","url":"https://www.semanticscholar.org/paper/f3f12668788705ff16eb17dbce737c48caf9fadb","pdf_url":"","doi":"10.1016/j.neubiorev.2024.105678","harvard":"Hermida_Barros_et_al_2024_Family_accommodation_in_obsessive_compulsive_disor"},
+{"idx":48,"title":"Cognitive-behavioral high parental involvement treatments for pediatric OCD: A meta-analysis","authors":"Iniesta-Sepulveda et al.","year":"2017","journal":"Journal of Anxiety Disorders","url":"https://www.semanticscholar.org/paper/fe0ef8af1d23a09e3f3827be105d428ee2b9a633","pdf_url":"","doi":"10.1016/j.janxdis.2017.03.010","harvard":"Iniesta_Sepulveda_et_al_2017_Cognitive_behavioral_high_parental_involvement_tre"},
+{"idx":49,"title":"A Systematic Review of Family Accommodation in Autistic Youth","authors":"Brennan et al.","year":"2025","journal":"Journal of Autism and Developmental Disorders","url":"https://www.semanticscholar.org/paper/339d7d811707515c092797a7dfdb41ded2f7b7d5","pdf_url":"","doi":"10.1007/s10803-025-06750-x","harvard":"Brennan_et_al_2025_A_Systematic_Review_of_Family_Accommodation_in_Aut"},
+{"idx":50,"title":"Family Factors in the Development and Management of Anxiety Disorders","authors":"Treadwell","year":"2024","journal":"Psychiatric Clinics of North America","url":"https://www.semanticscholar.org/paper/cc22771c3ee401d0318ad189f258251002faab61","pdf_url":"","doi":"10.1016/j.psc.2024.04.018","harvard":"Treadwell_2024_Family_Factors_in_the_Development_and_Management_o"},
+{"idx":51,"title":"Family-Based Psychological Treatment for OCD in Children and Adolescents: A Meta-analysis and Systematic Review","authors":"McGrath, Abbott","year":"2019","journal":"Clinical Child and Family Psychology Review","url":"https://www.semanticscholar.org/paper/5ccaa9eabc04d2072d1b5f011fa981fe142fb2bc","pdf_url":"","doi":"10.1007/s10567-019-00296-y","harvard":"McGrath_Abbott_2019_Family_Based_Psychological_Treatment_for_Obsessive"},
+{"idx":52,"title":"Ouders ondersteunen om angst bij kinderen te verminderen","authors":"Rienks et al.","year":"2026","journal":"Gedragstherapie","url":"https://www.semanticscholar.org/paper/03c286a50a394d7b420440b131921b8ae3a39093","pdf_url":"","doi":"10.5553/tg/016774542026059001003","harvard":"Rienks_et_al_2026_Ouders_ondersteunen_om_angst_bij_kinderen_te_vermi"},
+{"idx":53,"title":"Supporting parents to reduce children's anxiety: A meta-analysis of interventions and their theoretical components","authors":"Rienks et al.","year":"2025","journal":"Behaviour Research and Therapy","url":"https://doi.org/10.1016/j.brat.2025.104692","pdf_url":"","doi":"10.1016/j.brat.2025.104692","harvard":"Rienks_et_al_2025_Supporting_parents_to_reduce_children_s_anxiety_A"},
+{"idx":54,"title":"Effectiveness of CBT for child and adolescent anxiety disorders across different CBT modalities and comparisons","authors":"Sigurvinsdottir et al.","year":"2019","journal":"Nordic Journal of Psychiatry","url":"https://skemman.is/bitstream/1946/30599/1/MS_ritger%c3%b0_kl%c3%adn%c3%adsk-s%c3%a1lfr%c3%b6%c3%b0i_Anna%20Lilja%20Sigurvinsd%c3%b3ttir.pdf","pdf_url":"","doi":"10.1080/08039488.2019.1686653","harvard":"Sigurvinsdottir_et_al_2019_Effectiveness_of_CBT_for_child_and_adolescent_anxie"},
+{"idx":55,"title":"Family Intervention for Child and Adolescent Anxiety: A Meta-analytic Review","authors":"Peris et al.","year":"2021","journal":"Journal of Affective Disorders","url":"https://www.semanticscholar.org/paper/ba610f0b58ad76d84458d7d0210636638f78ea6b","pdf_url":"","doi":"10.1016/j.jad.2021.02.053","harvard":"Peris_et_al_2021_Family_Intervention_for_Child_and_Adolescent_Anxie"},
+{"idx":56,"title":"Moderators of cognitive and behaviour therapies for prevention and treatment of anxiety disorders in children and adolescents","authors":"Zhou et al.","year":"2025","journal":"Clinical Psychology Review","url":"https://www.semanticscholar.org/paper/891abe09ce3c04e354c005eb42fc6700617199b8","pdf_url":"","doi":"10.1016/j.cpr.2025.102548","harvard":"Zhou_et_al_2025_Moderators_of_cognitive_and_behaviour_therapies_fo"},
+{"idx":57,"title":"The impact of parent-only interventions on child anxiety: A systematic review and meta-analysis","authors":"Jewell et al.","year":"2022","journal":"Journal of Affective Disorders","url":"https://doi.org/10.1016/j.jad.2022.04.082","pdf_url":"","doi":"10.1016/j.jad.2022.04.082","harvard":"Jewell_et_al_2022_The_impact_of_parent_only_interventions_on_child_a"},
+{"idx":58,"title":"Digitally augmented, parent-led CBT versus treatment as usual for child anxiety problems","authors":"Creswell et al.","year":"2024","journal":"Lancet Psychiatry","url":"http://www.thelancet.com/article/S2215036623004297/pdf","pdf_url":"","doi":"10.1016/S2215-0366(23)00429-7","harvard":"Creswell_et_al_2024_Digitally_augmented_parent_led_CBT_versus_treatme"},
+{"idx":59,"title":"Is parental anxiety related to child anxiety? Insights from a four-wave longitudinal study in a Chinese context","authors":"Shek et al.","year":"2025","journal":"Frontiers in Psychiatry","url":"https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1570652/pdf","pdf_url":"","doi":"10.3389/fpsyt.2025.1570652","harvard":"Shek_et_al_2025_Is_parental_anxiety_related_to_child_anxiety_Insi"},
+{"idx":60,"title":"Effectiveness of an unguided modular online intervention for highly anxious parents in preventing anxiety in their children","authors":"Dunn et al.","year":"2024","journal":"Lancet Regional Health - Europe","url":"https://www.thelancet.com/pdfs/journals/lanepe/PIIS2666-7762(24)00205-9.pdf","pdf_url":"","doi":"10.1016/j.lanepe.2024.101038","harvard":"Dunn_et_al_2024_Effectiveness_of_an_unguided_modular_online_interv"},
+{"idx":61,"title":"Parental emotion socialization and internalizing problems in childhood and adolescence: A meta-analytic review","authors":"Brumariu et al.","year":"2025","journal":"Development and Psychopathology","url":"https://www.semanticscholar.org/paper/60d9fc06d869e4341c7211760e7303342e3e91b5","pdf_url":"","doi":"10.1017/S095457942510059X","harvard":"Brumariu_et_al_2025_Parental_emotion_socialization_and_internalizing_p"},
+{"idx":62,"title":"Mothers' symptoms of anxiety and depression and the development of child temperament","authors":"Ahmadzadeh et al.","year":"2023","journal":"JCPP Advances","url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcv2.12171","pdf_url":"","doi":"10.1002/jcv2.12171","harvard":"Ahmadzadeh_et_al_2023_Mothers_symptoms_of_anxiety_and_depression_and_th"},
+{"idx":63,"title":"Evaluating a program to prevent anxiety in children of anxious parents: a randomized controlled trial","authors":"Elfstrom et al.","year":"2025","journal":"Journal of Child Psychology and Psychiatry","url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jcpp.14151","pdf_url":"","doi":"10.1111/jcpp.14151","harvard":"Elfstrom_et_al_2025_Evaluating_a_program_to_prevent_anxiety_in_childre"},
+{"idx":64,"title":"Intergenerational transmission of parental neuroticism to emotional problems in 8-year-old children","authors":"Ask et al.","year":"2021","journal":"JCPP Advances","url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcv2.12054","pdf_url":"","doi":"10.1002/jcv2.12054","harvard":"Ask_et_al_2021_Intergenerational_transmission_of_parental_neuroti"},
+{"idx":65,"title":"Family Processes in Child Anxiety: the Long-Term Impact of Fathers and Mothers","authors":"Parrigon, Kerns","year":"2016","journal":"Journal of Abnormal Child Psychology","url":"https://www.semanticscholar.org/paper/dc44837ab634e0572fa7d34058849c6351ba37be","pdf_url":"","doi":"10.1007/s10802-015-0118-4","harvard":"Parrigon_Kerns_2016_Family_Processes_in_Child_Anxiety_the_Long_Term_I"},
+{"idx":66,"title":"Problematic Social Media Use in Adolescents and Young Adults: Systematic Review and Meta-analysis","authors":"Shannon et al.","year":"2022","journal":"JMIR Mental Health","url":"https://mental.jmir.org/2022/4/e33450/","pdf_url":"","doi":"10.2196/33450","harvard":"Shannon_et_al_2022_Problematic_Social_Media_Use_in_Adolescents_and_Yo"},
+{"idx":67,"title":"Social Media Use and Internalizing Symptoms in Clinical and Community Adolescent Samples","authors":"Fassi et al.","year":"2024","journal":"JAMA Pediatrics","url":"https://www.semanticscholar.org/paper/f8cef63813d5efdea56df3fb4f4200c10b93674a","pdf_url":"","doi":"10.1001/jamapediatrics.2024.2078","harvard":"Fassi_et_al_2024_Social_Media_Use_and_Internalizing_Symptoms_in_Cli"},
+{"idx":68,"title":"Is Social Media Use Related to Social Anxiety? A Meta-Analysis","authors":"Nan et al.","year":"2024","journal":"Mass Communication & Society","url":"https://www.semanticscholar.org/paper/b04876e4894b29e6123ae33494ce5c9777b98fd5","pdf_url":"","doi":"10.1080/15205436.2024.2321533","harvard":"Nan_et_al_2024_Is_Social_Media_Use_Related_to_Social_Anxiety_A_M"},
+{"idx":69,"title":"The Impact of Social Media on Adolescent Mental Health: A Meta-Analysis","authors":"Gabrielle et al.","year":"2024","journal":"Scientia Psychiatrica","url":"https://scientiapsychiatrica.com/index.php/SciPsy/article/download/175/258","pdf_url":"","doi":"10.37275/scipsy.v5i3.175","harvard":"Gabrielle_et_al_2024_The_Impact_of_Social_Media_on_Adolescent_Mental_He"},
+{"idx":70,"title":"Screen Time, Child Depression, and Anxiety During the COVID-19 Pandemic: Systematic Review and Meta-Analysis","authors":"Yoshizawa et al.","year":"2025","journal":"JMIR Pediatrics and Parenting","url":"https://www.semanticscholar.org/paper/26c986975b71f51277ef41153142939312ac2329","pdf_url":"","doi":"10.2196/83228","harvard":"Yoshizawa_et_al_2025_Screen_Time_Child_Depression_and_Anxiety_During"},
+{"idx":71,"title":"Associations Between Social Media Use and Anxiety Among Adolescents: A Systematic Review Study","authors":"Kerr et al.","year":"2024","journal":"Journal of Adolescent Health","url":"https://www.semanticscholar.org/paper/f214ec4d11f9d1e02e2df12122f1e789cfce0392","pdf_url":"","doi":"10.1016/j.jadohealth.2024.09.003","harvard":"Kerr_et_al_2024_Associations_Between_Social_Media_Use_and_Anxiety"},
+{"idx":72,"title":"Cross-sectional and longitudinal associations of screen time with adolescent depression and anxiety","authors":"Li et al.","year":"2025","journal":"British Journal of Clinical Psychology","url":"https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjc.12547","pdf_url":"","doi":"10.1111/bjc.12547","harvard":"Li_et_al_2025_Cross_sectional_and_longitudinal_associations_of_s2"},
+{"idx":73,"title":"The relationship between screen time and mental health in young people: A systematic review of longitudinal studies","authors":"Tang et al.","year":"2021","journal":"Clinical Psychology Review","url":"https://doi.org/10.1016/j.cpr.2021.102021","pdf_url":"","doi":"10.1016/j.cpr.2021.102021","harvard":"Tang_et_al_2021_The_relationship_between_screen_time_and_mental_he"}];
+
+const SK='bib_v3';
+function load(){try{return JSON.parse(localStorage.getItem(SK))||{};}catch(e){return {};}}
+function save(s){localStorage.setItem(SK,JSON.stringify(s));}
+let ST=load();
+
+const SLABELS={pending:'⏳ Ausstehend',pdf:'✅ PDF',html:'📄 HTML',noaccess:'🔒 Kein Zugriff',problem:'❌ Problem'};
+const SDOTS={pending:'s-pending',pdf:'s-pdf',html:'s-html',noaccess:'s-noaccess',problem:'s-problem'};
+
+function es(idx){return ST[idx]||{status:'pending',filename:'',notes:''};}
+
+function card(e){
+  const s=es(e.idx);
+  const lk=[];
+  if(e.url) lk.push(`<a class="lnk lnk-u" href="${e.url}" target="_blank">🔗 URL</a>`);
+  if(e.doi) lk.push(`<a class="lnk lnk-d" href="https://doi.org/${e.doi}" target="_blank">DOI</a>`);
+  if(e.pdf_url) lk.push(`<a class="lnk lnk-p" href="${e.pdf_url}" target="_blank">📥 PDF</a>`);
+  return `<div class="card" id="c${e.idx}" data-idx="${e.idx}" data-st="${s.status}" data-q="${(e.title+' '+e.authors).toLowerCase()}">
+  <div class="card-head" onclick="tog(${e.idx})">
+    <div class="card-num">${e.idx+1}</div>
+    <div class="card-main">
+      <div class="card-title">${e.title}</div>
+      <div class="card-meta">${e.authors} (${e.year})${e.journal?' · <em>'+e.journal+'</em>':''}</div>
+      <div class="card-links">${lk.join('')}</div>
+    </div>
+    <div class="card-right">
+      <span class="slbl"><span class="sdot ${SDOTS[s.status]}" id="dot${e.idx}"></span><span id="sl${e.idx}">${SLABELS[s.status]}</span></span>
+      ${s.filename?`<span style="font-size:10px;color:#94a3b8;font-family:monospace">${s.filename}</span>`:''}
+    </div>
+  </div>
+  <div class="card-body" id="b${e.idx}">
+    <div class="hvbox">
+      <span class="hvlbl">Harvard-Name:</span>
+      <span class="hvname">${e.harvard}</span>
+      <button class="copybtn" id="cb${e.idx}" onclick="cpHv(${e.idx},event)">📋 Kopieren</button>
+    </div>
+    <div class="frow">
+      <div class="fg" style="flex:2">
+        <label>Gespeicherter Dateiname (mit Endung .pdf / .html)</label>
+        <input type="text" id="fn${e.idx}" value="${(s.filename||'').replace(/"/g,'&quot;')}" placeholder="z.B. reiss_2013_artikel.pdf" oninput="upd(${e.idx})">
+      </div>
+      <div class="fg">
+        <label>Status</label>
+        <select id="st${e.idx}" onchange="upd(${e.idx})">
+          ${Object.entries(SLABELS).map(([v,l])=>`<option value="${v}"${s.status===v?' selected':''}>${l}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fg">
+        <label>Notizen (optional)</label>
+        <textarea id="nt${e.idx}" oninput="upd(${e.idx})">${s.notes||''}</textarea>
+      </div>
+    </div>
+    <span class="savedlbl" id="sv${e.idx}">✓ Gespeichert</span>
+  </div>
+</div>`;
+}
+
+function tog(idx){document.getElementById('b'+idx).classList.toggle('open');}
+
+function upd(idx){
+  const fn=document.getElementById('fn'+idx).value.trim();
+  const st=document.getElementById('st'+idx).value;
+  const nt=document.getElementById('nt'+idx).value;
+  ST[idx]={status:st,filename:fn,notes:nt};
+  save(ST);
+  const card=document.getElementById('c'+idx);
+  card.dataset.st=st;
+  document.getElementById('dot'+idx).className='sdot '+SDOTS[st];
+  document.getElementById('sl'+idx).textContent=SLABELS[st];
+  const sv=document.getElementById('sv'+idx);
+  sv.classList.add('show');
+  setTimeout(()=>sv.classList.remove('show'),1500);
+  updateStats();
+}
+
+function cpHv(idx,ev){
+  ev.stopPropagation();
+  const e=DATA[idx];
+  const fn=document.getElementById('fn'+idx).value.trim();
+  const ext=fn&&fn.includes('.')?'.'+fn.split('.').pop():'';
+  navigator.clipboard.writeText(e.harvard+ext);
+  const b=document.getElementById('cb'+idx);
+  b.textContent='✓ Kopiert!';b.classList.add('ok');
+  setTimeout(()=>{b.textContent='📋 Kopieren';b.classList.remove('ok');},2000);
+}
+
+function filter(){
+  const q=document.getElementById('qBox').value.toLowerCase();
+  const sf=document.getElementById('sfilt').value;
+  let n=0;
+  document.querySelectorAll('.card').forEach(c=>{
+    const show=(!q||c.dataset.q.includes(q))&&(!sf||c.dataset.st===sf);
+    c.style.display=show?'':'none';
+    if(show)n++;
+  });
+  document.getElementById('cntLbl').textContent=n<DATA.length?n+' angezeigt':'';
+}
+
+function updateStats(){
+  const c={pending:0,pdf:0,html:0,noaccess:0,problem:0};
+  DATA.forEach(e=>{c[(ST[e.idx]||{}).status||'pending']++;});
+  const done=c.pdf+c.html+c.noaccess+c.problem;
+  const tot=DATA.length;
+  document.getElementById('pFill').style.width=(done/tot*100)+'%';
+  document.getElementById('statsBar').innerHTML=
+    `<span class="badge b-pdf">✅ PDF: ${c.pdf}</span>`+
+    `<span class="badge b-html">📄 HTML: ${c.html}</span>`+
+    `<span class="badge b-no">🔒 Kein Zugriff: ${c.noaccess}</span>`+
+    `<span class="badge b-err">❌ Fehler: ${c.problem}</span>`+
+    `<span class="badge b-pend">⏳ Offen: ${c.pending}</span>`+
+    `<span style="color:rgba(255,255,255,.55);font-size:11px;margin-left:4px">${done}/${tot}</span>`;
+}
+
+function openExport(){
+  const lines=[],json=[];
+  DATA.forEach(e=>{
+    const s=ST[e.idx]||{};
+    if(s.filename){
+      const ext=s.filename.includes('.')?'.'+s.filename.split('.').pop():'';
+      const nname=e.harvard+ext;
+      lines.push(`${s.filename}  →  ${nname}`);
+      json.push({original:s.filename,harvard:nname,status:s.status,doi:e.doi,title:e.title,authors:e.authors,year:e.year});
+    }
+  });
+  document.getElementById('expPre').textContent=lines.length?lines.join('\n'):'(Noch keine Dateinamen eingetragen — öffne Einträge und trage den gespeicherten Dateinamen ein.)';
+  document.getElementById('expModal')._j=json;
+  document.getElementById('expModal').classList.remove('hidden');
+}
+function closeExport(){document.getElementById('expModal').classList.add('hidden');}
+function copyExp(){navigator.clipboard.writeText(document.getElementById('expPre').textContent);}
+function dlExp(){
+  const blob=new Blob([JSON.stringify(document.getElementById('expModal')._j||[],null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='rename_mapping.json';a.click();
+}
+
+// Init
+document.getElementById('list').innerHTML=DATA.map(card).join('');
+updateStats();
+
+// ── Auto-show noaccess export on load ──────────────────────────
+(function(){
+  const noac = DATA.filter(e=>(ST[e.idx]||{}).status==='noaccess');
+  if(!noac.length) return;
+  const lines = noac.map(e=>{
+    const fn=(ST[e.idx]||{}).filename||'(kein Dateiname)';
+    return `${String(e.idx+1).padStart(2,'0')}  ${e.harvard}.pdf  ← gespeichert als: ${fn}`;
+  }).join('\n');
+  const box=document.createElement('div');
+  box.style='position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#f1f5f9;padding:14px 20px;z-index:300;font-family:monospace;font-size:12px;border-top:3px solid #f59e0b';
+  box.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+    <strong style="color:#fbbf24">🔒 Kein-Zugriff-Einträge (${noac.length}) — für Claude Code kopieren:</strong>
+    <button onclick="navigator.clipboard.writeText(this.closest('div').nextElementSibling.value);this.textContent='✓ Kopiert!';setTimeout(()=>this.textContent='📋 Kopieren',2000)" style="padding:4px 12px;background:#f59e0b;color:#1e293b;border:none;border-radius:4px;cursor:pointer;font-weight:600">📋 Kopieren</button>
+    <button onclick="this.closest('div').parentElement.remove()" style="padding:4px 10px;background:#334155;color:#94a3b8;border:none;border-radius:4px;cursor:pointer;margin-left:6px">✕</button>
+  </div>
+  <textarea readonly style="width:100%;height:80px;background:#0f172a;color:#4ade80;border:none;padding:8px;font-family:monospace;font-size:11px;border-radius:4px;resize:none">${lines}</textarea>`;
+  document.body.appendChild(box);
+})();
+</script>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-04 16:10 &middot; Essay Fabrik</div></body>
+</html>

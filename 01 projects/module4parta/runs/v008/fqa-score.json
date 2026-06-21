@@ -1,0 +1,53 @@
+{
+  "version": "v008",
+  "label": "presentation (footnote-numbered)",
+  "date": "2026-06-13",
+  "loopCount": 7,
+  "passThreshold": 85,
+  "projectMinThreshold": 83,
+  "targetGrade": "A-",
+  "fqaScore": 88,
+  "accepted": true,
+  "gate": "passed",
+  "criteria": {
+    "KU": { "raw": 90, "ptsMax": 60, "pts": 54, "weight": 0.30, "weighted": 27.0, "band": "Distinction A+" },
+    "AE": { "raw": 89, "ptsMax": 100, "pts": 89, "weight": 0.50, "weighted": 44.5, "band": "Distinction A+" },
+    "CR": { "raw": 84, "ptsMax": 40, "pts": 34, "weight": 0.20, "weighted": 16.8, "band": "Merit B+" }
+  },
+  "warwickPtsEstimate": { "total": 177, "outOf": 200 },
+  "delta": { "vs": "v006", "prevScore": 88, "delta": 0 },
+  "referenceCheck": {
+    "system": "superscript-numbered footnotes (author-year) -> bibliography",
+    "contentSlides": 5,
+    "superscriptToFootnote": "CLEAN — every body superscript on S3-S7 maps to a footnote on the same slide",
+    "footnoteToBibliography": "CLEAN — all 44 distinct footnote sources present in bibliography (S8-S11)",
+    "bibliographyToCited": "CLEAN — 44 bib entries, 44 cited, 1:1, zero orphans",
+    "mismatches": 0,
+    "orphans": 0,
+    "ghostOrCurriculumRefs": 0,
+    "newSourceVsV006": "Ecclestone & Hayes (2019)"
+  },
+  "openP1": null,
+  "openP2": [],
+  "openP3": [],
+  "resolved": [
+    "Cover 'Date Submitted' now 2026-06-15 (v006 P3) — RESOLVED",
+    "Full reference integrity verified: superscripts -> footnotes -> bibliography all reconcile (44/44)"
+  ],
+  "openOptional": [
+    "S5 footnote strip: 3 entries run together without a separator (6)+7), 9)+10), 14)+15)) — cosmetic",
+    "S4 footnote: '(Felitti et al, 1998)' missing full stop after 'al'",
+    "S6 helper text: stray 'cc' after second NDC definition; NDC defined twice",
+    "S6 body: 'overmedicalization ofchildhood' missing space",
+    "Footnote author connectors mix '&' / 'and' (Achenbach & vs Card and vs Shonkoff and)",
+    "Mixed US/UK spelling (Externalizing/overmedicalization vs Behaviour)",
+    "Bowlby (1997) bibliography still carries an online/URL tag (Harvard-WMS does not require it for a book)"
+  ],
+  "note": "v008 is the accepted v006 argument re-verified after the cover-date fix and one added critical source. Reference system is fully reconciled at all three levels (44/44). fqaScore holds at 88: AE +1 for the Ecclestone & Hayes overmedicalisation counter-point (slide 6), CR +1 for a now submission-clean cover sheet and verified-clean referencing, KU unchanged. All residual items are P3/cosmetic and do not affect the grade.",
+  "source": {
+    "draft": "runs/v008/presentation.pptx",
+    "prevVersion": "v006",
+    "fqaReport": "runs/v008/fqa-report.html",
+    "referenceCheck": "runs/v008/reference-check.html"
+  }
+}

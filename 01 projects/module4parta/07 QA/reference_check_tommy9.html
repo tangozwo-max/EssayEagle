@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reference Check — tommy9 — Module 4 Part A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f5f9; color: #1a1f2e; line-height: 1.55; padding: 32px 20px 80px; font-size: 14px; }
+  .page { max-width: 1080px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #4a148c 0%, #880e4f 100%); color: white; border-radius: 10px; padding: 28px 34px; margin-bottom: 22px; }
+  .header h1 { font-size: 1.5rem; font-weight: 800; }
+  .header .sub { opacity: 0.85; font-size: 0.95rem; margin-top: 4px; }
+  .header .meta { font-size: 0.8rem; opacity: 0.8; margin-top: 10px; display:flex; gap:16px; flex-wrap:wrap;}
+  .nav { background: white; border-radius: 8px; padding: 12px 16px; margin-bottom: 22px; display: flex; gap: 8px; flex-wrap: wrap; border: 1px solid #dde3ee; }
+  .nav a { padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 700; background: #f0f3f9; color: #1a1f2e; }
+  .nav a:hover { background: #4a148c; color: #fff; }
+  .card { background: white; border-radius: 10px; padding: 22px 24px; margin-bottom: 22px; border: 1px solid #dde3ee; }
+  .card h2 { font-size: 1.05rem; color: #4a148c; margin-bottom: 14px; border-bottom: 2px solid #f0f3f9; padding-bottom: 8px; }
+  .card h3 { font-size: 0.92rem; color: #0d2240; margin: 16px 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin: 10px 0; }
+  th { background: #ede7f6; color: #4a148c; padding: 8px 10px; text-align: left; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  td { padding: 8px 10px; border-bottom: 1px solid #f0f3f9; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafbfd; }
+  .pill { display:inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+  .v-verified { background: #e8f5e9; color: #2e7d32; }
+  .v-invisible { background: #fff9c4; color: #9e6c00; }
+  .v-mismatch { background: #ffe0b2; color: #bf360c; }
+  .v-uncited { background: #e3f2fd; color: #0d47a1; }
+  .v-dup { background: #ffcdd2; color: #b71c1c; }
+  .v-new { background: #f3e5f5; color: #4a148c; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.8rem; margin: 6px 0 0; }
+  .legend span { display: flex; align-items: center; gap: 5px; }
+  .summary-grid { display:grid; grid-template-columns: repeat(5,1fr); gap:12px; margin: 6px 0 4px;}
+  .sum { text-align:center; border-radius:8px; padding:12px 6px; border:1.5px solid #ddd;}
+  .sum .n { font-size:1.6rem; font-weight:900;}
+  .sum .l { font-size:0.7rem; font-weight:700; text-transform:uppercase; color:#666;}
+  .s-ok{background:#e8f5e9;border-color:#43a047;} .s-ok .n{color:#2e7d32;}
+  .s-inv{background:#fff9c4;border-color:#fbc02d;} .s-inv .n{color:#9e6c00;}
+  .s-mis{background:#ffe0b2;border-color:#fb8c00;} .s-mis .n{color:#bf360c;}
+  .s-dup{background:#ffcdd2;border-color:#e53935;} .s-dup .n{color:#b71c1c;}
+  .s-unc{background:#e3f2fd;border-color:#1e88e5;} .s-unc .n{color:#0d47a1;}
+  code { background: #f0f3f9; padding: 1px 5px; border-radius: 3px; font-size: 0.82em; font-family: 'Courier New', monospace; color: #4a148c; }
+  .note { background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:0.84rem;margin:10px 0;}
+  .paste { background:#0d2240; color:#e8eef7; border-radius:8px; padding:16px 18px; font-size:0.8rem; line-height:1.7; margin:10px 0; }
+  .paste b { color:#ffd54f; }
+  .footer { text-align:center; font-size:0.78rem; color:#888; margin-top:30px; padding-top:14px; border-top:1px solid #dde3ee;}
+  a.doi { color:#6a1b9a; font-weight:700; text-decoration:none; }
+  a.doi:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Reference Check — tommy9</h1>
+    <div class="sub">Case "Tommy": A Developmental Formulation — Module 4 Part A</div>
+    <div class="meta"><span>Student 5779906</span><span>tommy9.pdf / tommy9.pptx</span><span>3 June 2026</span><span>Auditor: Jackie</span></div>
+  </div>
+
+  <div class="nav">
+    <a href="#summary">Summary</a>
+    <a href="#crossmap">Cited → Bibliography map</a>
+    <a href="#invisible">Invisible (P1)</a>
+    <a href="#mismatch">Mismatches</a>
+    <a href="#bibaudit">Bibliography audit</a>
+    <a href="#newverify">New-source verification</a>
+    <a href="#rebuild">Paste-ready rebuild list</a>
+  </div>
+
+  <div id="summary" class="card">
+    <h2>Summary</h2>
+    <p style="font-size:0.9rem;color:#444;margin-bottom:12px;">tommy9 cites <strong>35 unique sources</strong> across slides S1–S5. The three reference slides (PDF p.8–10) contain <strong>~40 entries</strong>. The two lists do not correspond. Counts below.</p>
+    <div class="summary-grid">
+      <div class="sum s-ok"><div class="n">18</div><div class="l">Cited &amp; in bib (matched)</div></div>
+      <div class="sum s-inv"><div class="n">16</div><div class="l">Cited but INVISIBLE</div></div>
+      <div class="sum s-mis"><div class="n">2</div><div class="l">Year/author mismatch</div></div>
+      <div class="sum s-dup"><div class="n">3</div><div class="l">Duplicate entries</div></div>
+      <div class="sum s-unc"><div class="n">~20</div><div class="l">In bib, never cited</div></div>
+    </div>
+    <div class="legend" style="margin-top:14px;">
+      <span><span class="pill v-verified">Matched</span> cited on slide &amp; present in bibliography</span>
+      <span><span class="pill v-invisible">Invisible</span> cited on slide, absent from bibliography</span>
+      <span><span class="pill v-mismatch">Mismatch</span> cited &amp; listed but year/author differ</span>
+      <span><span class="pill v-uncited">Uncited</span> in bibliography, on no slide</span>
+      <span><span class="pill v-dup">Duplicate</span> listed twice</span>
+    </div>
+  </div>
+
+  <!-- CROSS MAP -->
+  <div id="crossmap" class="card">
+    <h2>Cited sources → Bibliography cross-map (all 35)</h2>
+    <p style="font-size:0.82rem;color:#666;margin-bottom:6px;">Footnote numbers are per-slide. "In bib?" checks PDF p.8–10.</p>
+    <table>
+      <tr><th>#</th><th>Slide / fn</th><th>Cited source</th><th>Claim it supports</th><th>In bib?</th><th>Status</th></tr>
+
+      <tr><td>1</td><td>S1 ¹</td><td>Achenbach &amp; Rescorla (2001)</td><td>Internalizing / externalizing iceberg</td><td>No</td><td><span class="pill v-invisible">Invisible ★</span></td></tr>
+      <tr><td>2</td><td>S1 ²</td><td>Card &amp; Little (2006)</td><td>Proactive/reactive aggression</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>3</td><td>S1 ³</td><td>Tangney et al. (1992)</td><td>Shame items</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>4</td><td>S1 ⁴</td><td>Bongers et al. (2004)</td><td>Developmental trajectories</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>5</td><td>S1 ⁵</td><td>van der Kolk (2014)</td><td>Adapted survival strategy</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>6</td><td>S1 ⁶</td><td>Macneil et al. (2012)</td><td>Case formulation</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>7</td><td>S1 ⁷ / S4 ¹</td><td>Weerasekera (1996)</td><td>5P framework</td><td>1993 only</td><td><span class="pill v-mismatch">Mismatch</span></td></tr>
+      <tr><td>8</td><td>S1 ⁸</td><td>Dol, Reed &amp; Ferro (2022)</td><td>Internalizing–externalizing comorbidity</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+
+      <tr><td>9</td><td>S2 ¹</td><td>Felitti et al. (1998)</td><td>ACEs, dose-response</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>10</td><td>S2 ²</td><td>Bronfenbrenner (1979)</td><td>Ecological model (whole-slide frame)</td><td>No</td><td><span class="pill v-invisible">Invisible ★</span></td></tr>
+      <tr><td>11</td><td>S2 ³</td><td>Link &amp; Phelan (1995)</td><td>Social causation</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>12</td><td>S2 ⁴</td><td>Shonkoff &amp; Phillips (2000)</td><td>Critical windows of neuroplasticity</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>13</td><td>S2 ⁵</td><td>Zhang et al. (2023)</td><td>Intergenerational transmission</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>14</td><td>S2 ⁶</td><td>Narayan et al. (2021)</td><td>Intergenerational ACEs</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>15</td><td>S2 ⁷</td><td>Tadanki et al. (2025)</td><td>Prenatal maternal stress</td><td>No</td><td><span class="pill v-invisible">Invisible</span> <span class="pill v-new">Verified real</span></td></tr>
+      <tr><td>16</td><td>S2 ⁸</td><td>Reiss <em>et al.</em> (2019)</td><td>Low SES → child MH</td><td>2013 (F.) only</td><td><span class="pill v-mismatch">Mismatch</span></td></tr>
+
+      <tr><td>17</td><td>S3 ¹</td><td>Garner &amp; Yogman (2021)</td><td>Toxic stress / relational health</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>18</td><td>S3 ²</td><td>Glover (2015)</td><td>Prenatal stress biology</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>19</td><td>S3 ³</td><td>Teicher et al. (2003)</td><td>Amygdala/PFC, neurobiology of maltreatment</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>20</td><td>S3 ⁴</td><td>Lee &amp; Hoaken (2007)</td><td>Hostile attribution bias</td><td>No</td><td><span class="pill v-invisible">Invisible</span> <span class="pill v-new">Verified real</span></td></tr>
+      <tr><td>21</td><td>S3 ⁵</td><td>McCrory &amp; Viding (2015)</td><td>Latent vulnerability</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>22</td><td>S3 ⁶</td><td>McLaughlin et al. (2019)</td><td>ACE → neural development</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>23</td><td>S3 ⁷</td><td>SIGN (2019)</td><td>FASD guidance</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>24</td><td>S3 ⁸</td><td>Arpino et al. (2010)</td><td>Preterm birth neurodevelopment</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>25</td><td>S3 ⁹</td><td>Prado &amp; Dewey (2014)</td><td>Malnutrition → brain development</td><td>No</td><td><span class="pill v-invisible">Invisible</span> <span class="pill v-new">Verified real</span></td></tr>
+      <tr><td>26</td><td>S3 ¹⁰</td><td>Main &amp; Hesse (1990)</td><td>Disorganised attachment</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>27</td><td>S3 ¹¹</td><td>Center on the Developing Child (2007)</td><td>Serve &amp; return</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>28</td><td>S3 ¹²</td><td>Bowlby (1969)</td><td>Internal working model</td><td>No</td><td><span class="pill v-invisible">Invisible ★</span></td></tr>
+
+      <tr><td>29</td><td>S4 ²</td><td>McCrory &amp; Viding (2015)</td><td>LTP / reinforcement of neural patterns</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>30</td><td>S4 ³</td><td>Berg et al. (2018)</td><td>Delayed diagnosis under adversity</td><td>Yes (dup)</td><td><span class="pill v-verified">Matched</span> <span class="pill v-dup">Dup</span></td></tr>
+      <tr><td>31</td><td>S4 ⁴</td><td>Chasnoff et al. (2015)</td><td>Missed FASD / overshadowing</td><td>No</td><td><span class="pill v-invisible">Invisible</span> <span class="pill v-new">Verified real</span></td></tr>
+      <tr><td>32</td><td>S4 ⁵</td><td>Gajwani &amp; Minnis (2023)</td><td>ACE + NDC "double jeopardy"</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+
+      <tr><td>33</td><td>S5 ¹</td><td>Corrigan et al. (2011)</td><td>Felt safety / window of tolerance</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>34</td><td>S5 ²</td><td>Lieberman et al. (2011)</td><td>Emotion-naming / affect labelling</td><td>No</td><td><span class="pill v-invisible">Invisible</span></td></tr>
+      <tr><td>35</td><td>S5 ³</td><td>Masten (2001)</td><td>"Ordinary magic" resilience</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+      <tr><td>—</td><td>S5 ⁴</td><td>Blakemore &amp; Choudhury (2006)</td><td>Adolescent neuroplasticity</td><td>Yes</td><td><span class="pill v-verified">Matched</span></td></tr>
+    </table>
+    <p style="font-size:0.78rem;color:#888;">★ = foundational source whose absence is most damaging in a citation check.</p>
+  </div>
+
+  <!-- INVISIBLE -->
+  <div id="invisible" class="card">
+    <h2>P1 — The 16 invisible citations (cited, but not in the bibliography)</h2>
+    <p style="font-size:0.86rem;color:#444;">Each of these is referenced by a superscript on a slide, but a marker who turns to the reference slides will not find it. The three marked ★ are the most serious because the slide's core argument rests on them.</p>
+    <table>
+      <tr><th>Source</th><th>Where cited</th><th>Why it matters</th></tr>
+      <tr><td><strong>Achenbach &amp; Rescorla (2001)</strong> ★</td><td>S1 ¹</td><td>The entire S1 iceberg (internalizing vs externalizing) is built on this taxonomy. Already verified (NCTSN/academic DBs).</td></tr>
+      <tr><td><strong>Bronfenbrenner (1979)</strong> ★</td><td>S2 ²</td><td>S2's whole structure (Individual → Micro/Meso → Macro/Exo → Chrono) is his ecological model.</td></tr>
+      <tr><td><strong>Bowlby (1969)</strong> ★</td><td>S3 ¹²</td><td>Internal working model / attachment — core M4 W1 concept.</td></tr>
+      <tr><td>Bongers et al. (2004)</td><td>S1 ⁴</td><td>Developmental trajectories of externalizing behaviour. PMID 15369529.</td></tr>
+      <tr><td>van der Kolk (2014)</td><td>S1 ⁵</td><td>Behaviour as adapted survival strategy.</td></tr>
+      <tr><td>Shonkoff &amp; Phillips (2000)</td><td>S2 ⁴</td><td>Critical windows of neuroplasticity.</td></tr>
+      <tr><td>Tadanki et al. (2025)</td><td>S2 ⁷</td><td>Prenatal maternal stress. Verified real (PubMed) — see below.</td></tr>
+      <tr><td>Lee &amp; Hoaken (2007)</td><td>S3 ⁴</td><td>Hostile attribution bias. Verified real (PubMed).</td></tr>
+      <tr><td>SIGN (2019)</td><td>S3 ⁷</td><td>FASD clinical guidance (SIGN 156).</td></tr>
+      <tr><td>Prado &amp; Dewey (2014)</td><td>S3 ⁹</td><td>Malnutrition → brain development. Verified real (PubMed).</td></tr>
+      <tr><td>Main &amp; Hesse (1990)</td><td>S3 ¹⁰</td><td>Disorganised attachment.</td></tr>
+      <tr><td>Center on the Developing Child (2007)</td><td>S3 ¹¹</td><td>Serve &amp; return.</td></tr>
+      <tr><td>Chasnoff et al. (2015)</td><td>S4 ⁴</td><td>Missed FASD diagnosis. Verified real (PubMed).</td></tr>
+      <tr><td>Corrigan et al. (2011)</td><td>S5 ¹</td><td>Felt safety / window of tolerance.</td></tr>
+      <tr><td>Lieberman et al. (2011)</td><td>S5 ²</td><td>Affect labelling / emotion-naming.</td></tr>
+    </table>
+    <div class="note">All bibliographic details for these are known/verified — the rebuild list at the bottom of this page is ready to paste. No new research required.</div>
+  </div>
+
+  <!-- MISMATCH -->
+  <div id="mismatch" class="card">
+    <h2>Year / author mismatches</h2>
+    <table>
+      <tr><th>Cited on slide</th><th>Listed in bibliography</th><th>Resolution</th></tr>
+      <tr><td>Weerasekera (1996) — S1 ⁷, S4 ¹<br><span style="font-size:0.78rem;color:#777;">"Formulation: A Multiperspective Model" book</span></td><td>Weerasekera, P. (1993) — <em>Can J Psychiatry</em> 38(5):351–358</td><td>Pick one. The <strong>1993 journal article</strong> is PubMed-verifiable (PMID 8348476) and is what's already in the bib — simplest is to change the in-text superscripts to <strong>1993</strong>. (If the 1996 book is genuinely the source consulted, add the book entry and keep 1996.)</td></tr>
+      <tr><td>Reiss <em>et al.</em> (2019) — S2 ⁸</td><td>Reiss, F. (2013) — <em>Soc Sci Med</em> 90:24–31</td><td>The bib entry (Reiss 2013, single author, "Socioeconomic inequalities and mental health problems in children and adolescents") is the standard SES→child-MH review. Change the in-text to <strong>Reiss (2013)</strong> unless a specific 2019 multi-author paper was intended.</td></tr>
+    </table>
+  </div>
+
+  <!-- BIB AUDIT -->
+  <div id="bibaudit" class="card">
+    <h2>Bibliography audit (PDF p.8–10, as printed)</h2>
+    <h3>Duplicates to remove</h3>
+    <table>
+      <tr><th>Entry</th><th>Appears</th></tr>
+      <tr><td>Donaldson, C., Hawkins, J., Rice, F. &amp; Moore, G. (2025)</td><td><span class="pill v-dup">×2</span> last line of Refs 1/3 <em>and</em> first line of Refs 2/3</td></tr>
+      <tr><td>Berg, K.L. et al. (2018a) / (2018b)</td><td><span class="pill v-dup">×2</span> identical paper, two letters</td></tr>
+      <tr><td>Dinkler, L. et al. (2017a) / (2017b)</td><td><span class="pill v-dup">×2</span> identical paper, two letters</td></tr>
+    </table>
+    <h3>Listed but cited on no slide (~20) — remove during rebuild</h3>
+    <p style="font-size:0.84rem;color:#444;">Baker (2025), Bøe (2014), Cross (2017), Crouch (2019), Dinkler (2017) [also dup], Donaldson (2025) [also dup], Granqvist (2017), Hostinar (2012), Kieling (2011), Lund (2020), Poulain (2020), Reiss (2013) [keep only if used to resolve the Reiss mismatch], Roos (2020), Shakiba (2023), Siegel (2012), Tottenham &amp; Galván (2016), Ungar &amp; Theron (2020), Valrie (2025).</p>
+    <div class="note">Note: <strong>Siegel (2012)</strong> and <strong>Ungar &amp; Theron (2020)</strong> are good curriculum sources — if you want to keep them, add a matching in-text citation on S5 (felt safety → Siegel; resilience-as-environmental → Ungar &amp; Theron). Otherwise drop them. Don't leave them uncited.</div>
+  </div>
+
+  <!-- NEW VERIFY -->
+  <div id="newverify" class="card">
+    <h2>New-source verification (introduced in tommy9)</h2>
+    <p style="font-size:0.84rem;color:#444;margin-bottom:6px;">According to PubMed, the four sources new to this version are all genuine and appropriately matched to their claims:</p>
+    <table>
+      <tr><th>Source</th><th>PubMed record</th><th>Fit</th></tr>
+      <tr>
+        <td><strong>Lee &amp; Hoaken (2007)</strong></td>
+        <td><em>Cognition, emotion, and neurobiological development: mediating the relation between maltreatment and aggression.</em> Child Maltreat 12(3):281–98. PMID 17631627. <a class="doi" href="https://doi.org/10.1177/1077559507303778">DOI</a></td>
+        <td><span class="pill v-verified">Strong</span> Abstract explicitly: physical abuse → "hypervigilance to threat and a hostile attributional bias". Verifiable replacement for the old unverifiable Dodge (2006).</td>
+      </tr>
+      <tr>
+        <td><strong>Chasnoff et al. (2015)</strong></td>
+        <td><em>Misdiagnosis and missed diagnoses in foster and adopted children with prenatal alcohol exposure.</em> Pediatrics 135(2):264–70. PMID 25583914. <a class="doi" href="https://doi.org/10.1542/peds.2014-2171">DOI</a></td>
+        <td><span class="pill v-verified">Strong</span> 80.1% missed-diagnosis rate for FASD — directly supports S4 diagnostic overshadowing.</td>
+      </tr>
+      <tr>
+        <td><strong>Prado &amp; Dewey (2014)</strong></td>
+        <td><em>Nutrition and brain development in early life.</em> Nutr Rev 72(4):267–84. PMID 24684384. <a class="doi" href="https://doi.org/10.1111/nure.12102">DOI</a></td>
+        <td><span class="pill v-verified">Good</span> Nutrient deficiency &amp; neurodevelopment review — supports S3 malnutrition bullet.</td>
+      </tr>
+      <tr>
+        <td><strong>Tadanki et al. (2025)</strong></td>
+        <td><em>Comprehensive Review of the Impact of Maternal Stress on Fetal Development.</em> Pediatr Discov 3(3):e70004. PMID 41036306. <a class="doi" href="https://doi.org/10.1002/pdi3.70004">DOI</a></td>
+        <td><span class="pill v-new">Acceptable</span> Real 2025 review (Georgia Tech). Newer/low-impact journal, student authors. Covers "maternal stress" well; substances/nutrition only partial. Fine as support, not an anchor.</td>
+      </tr>
+    </table>
+    <p style="font-size:0.78rem;color:#888;margin-top:8px;">Source verification via PubMed. Always cite PubMed and include the DOI links above when reusing these confirmations.</p>
+  </div>
+
+  <!-- REBUILD -->
+  <div id="rebuild" class="card">
+    <h2>Paste-ready rebuild — the 35 sources actually cited</h2>
+    <p style="font-size:0.84rem;color:#444;">Use this as the complete reference list (alphabetical). It includes every cited source and excludes the padding. Confirm each formatted Harvard entry against your library before pasting; the new/invisible ones are flagged.</p>
+    <div class="paste">
+      <b>Achenbach, T.M. &amp; Rescorla, L.A. (2001)</b> <i>Manual for the ASEBA School-Age Forms &amp; Profiles.</i> Burlington, VT: University of Vermont. &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Arpino, C. et al. (2010)</b> Preterm birth and neurodevelopmental outcome: a review. <i>Child's Nervous System</i> 26(9):1139–1149.<br>
+      <b>Berg, K.L. et al. (2018)</b> Delayed Diagnosis and Treatment Among Children with Autism Who Experience Adversity. <i>J Autism Dev Disord</i> 48(1):45–54. &nbsp;<b>[de-duplicate 2018a/b]</b><br>
+      <b>Blakemore, S. &amp; Choudhury, S. (2006)</b> Development of the adolescent brain. <i>J Child Psychol Psychiatry</i> 47(3–4):296–312.<br>
+      <b>Bongers, I.L. et al. (2004)</b> Developmental trajectories of externalizing behaviors in childhood and adolescence. <i>Child Development</i> 75(5). &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Bowlby, J. (1969)</b> <i>Attachment and Loss, Vol. 1: Attachment.</i> London: Hogarth Press. &nbsp;<b>[ADD — invisible ★]</b><br>
+      <b>Bronfenbrenner, U. (1979)</b> <i>The Ecology of Human Development.</i> Cambridge, MA: Harvard University Press. &nbsp;<b>[ADD — invisible ★]</b><br>
+      <b>Card, N.A. &amp; Little, T.D. (2006)</b> Proactive and reactive aggression in childhood and adolescence. <i>Int J Behav Dev</i> 30(5):466–480.<br>
+      <b>Center on the Developing Child (2007)</b> <i>The Science of Early Childhood Development.</i> Harvard University. &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Chasnoff, I.J. et al. (2015)</b> Misdiagnosis and missed diagnoses in foster and adopted children with prenatal alcohol exposure. <i>Pediatrics</i> 135(2):264–270. &nbsp;<b>[ADD — invisible, verified]</b><br>
+      <b>Corrigan, F.M. et al. (2011)</b> Autonomic dysregulation and the window of tolerance. <i>J Psychopharmacol</i> 25(1):17–25. &nbsp;<b>[ADD — invisible; confirm exact ref]</b><br>
+      <b>Dol, M., Reed, M. &amp; Ferro, M.A. (2022)</b> Internalizing–Externalizing Comorbidity and Impaired Functioning in Children. <i>Children</i> 9(10):1547.<br>
+      <b>Felitti, V.J. et al. (1998)</b> Relationship of Childhood Abuse and Household Dysfunction... (ACE Study). <i>Am J Prev Med</i> 14(4):245–258.<br>
+      <b>Gajwani, R. &amp; Minnis, H. (2023)</b> Double jeopardy: neurodevelopmental conditions and adverse childhood experiences. <i>Eur Child Adolesc Psychiatry</i> 32(1):1–4.<br>
+      <b>Garner, A. &amp; Yogman, M. (2021)</b> Preventing Childhood Toxic Stress. <i>Pediatrics</i> 148(2):e2021052582.<br>
+      <b>Glover, V. (2015)</b> Prenatal Stress and Its Effects on the Fetus and the Child. <i>Adv Neurobiol</i> 10:269–283.<br>
+      <b>Lee, V. &amp; Hoaken, P.N.S. (2007)</b> Cognition, emotion, and neurobiological development: mediating the relation between maltreatment and aggression. <i>Child Maltreat</i> 12(3):281–298. &nbsp;<b>[ADD — invisible, verified]</b><br>
+      <b>Lieberman, M.D. et al. (2011)</b> Putting feelings into words / affect labeling. <i>Psychol Sci</i>. &nbsp;<b>[ADD — invisible; confirm exact ref]</b><br>
+      <b>Link, B.G. &amp; Phelan, J. (1995)</b> Social Conditions As Fundamental Causes of Disease. <i>J Health Soc Behav</i> (Spec No):80.<br>
+      <b>Macneil, C.A. et al. (2012)</b> Is diagnosis enough to guide interventions in mental health? Using case formulation. <i>BMC Medicine</i> 10(1):111.<br>
+      <b>Main, M. &amp; Hesse, E. (1990)</b> Parents' unresolved traumatic experiences... disorganized attachment. In <i>Attachment in the Preschool Years.</i> &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Masten, A.S. (2001)</b> Ordinary magic: Resilience processes in development. <i>Am Psychol</i> 56(3):227–238.<br>
+      <b>McCrory, E.J. &amp; Viding, E. (2015)</b> The theory of latent vulnerability. <i>Dev Psychopathol</i> 27(2):493–505.<br>
+      <b>McLaughlin, K.A., Weissman, D. &amp; Bitrán, D. (2019)</b> Childhood Adversity and Neural Development. <i>Annu Rev Dev Psychol</i> 1(1):277–312.<br>
+      <b>Narayan, A.J., Lieberman, A.F. &amp; Masten, A.S. (2021)</b> Intergenerational transmission and prevention of ACEs. <i>Clin Psychol Rev</i> 85:101997.<br>
+      <b>Prado, E.L. &amp; Dewey, K.G. (2014)</b> Nutrition and brain development in early life. <i>Nutr Rev</i> 72(4):267–284. &nbsp;<b>[ADD — invisible, verified]</b><br>
+      <b>Reiss, F. (2013)</b> Socioeconomic inequalities and mental health problems in children and adolescents. <i>Soc Sci Med</i> 90:24–31. &nbsp;<b>[resolve in-text from "2019" → 2013]</b><br>
+      <b>Shonkoff, J.P. &amp; Phillips, D.A. (2000)</b> <i>From Neurons to Neighborhoods.</i> Washington, DC: National Academy Press. &nbsp;<b>[ADD — invisible]</b><br>
+      <b>SIGN (2019)</b> <i>Children and young people exposed prenatally to alcohol (SIGN 156).</i> Scottish Intercollegiate Guidelines Network. &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Tadanki, D. et al. (2025)</b> Comprehensive Review of the Impact of Maternal Stress on Fetal Development. <i>Pediatr Discov</i> 3(3):e70004. &nbsp;<b>[ADD — invisible, verified]</b><br>
+      <b>Tangney, J.P. et al. (1992)</b> Shamed into anger? <i>J Pers Soc Psychol</i> 62(4):669–675.<br>
+      <b>Teicher, M.H. et al. (2003)</b> The neurobiological consequences of early stress and childhood maltreatment. <i>Neurosci Biobehav Rev</i> 27(1–2):33–44.<br>
+      <b>van der Kolk, B. (2014)</b> <i>The Body Keeps the Score.</i> New York: Viking. &nbsp;<b>[ADD — invisible]</b><br>
+      <b>Weerasekera, P. (1993)</b> Formulation: A Multiperspective Model. <i>Can J Psychiatry</i> 38(5):351–358. &nbsp;<b>[resolve in-text 1996 → 1993, or add the 1996 book]</b><br>
+      <b>Zhang, L. et al. (2023)</b> Intergenerational Transmission of Parental ACEs and Children's Outcomes. <i>Trauma Violence Abuse</i> 24(5):3251–3264.<br>
+    </div>
+    <p style="font-size:0.78rem;color:#888;">★ foundational. "Confirm exact ref" = bibliographic detail inferred from claim; check the student's source before finalising. Drop from the printed slides anything not in this list.</p>
+  </div>
+
+  <div class="footer">
+    Essay Fabrik — Reference Check — tommy9 — Module 4 Part A — 3 June 2026 · Jackie (evidence audit) · new-source verification via PubMed
+  </div>
+
+</div>
+<div style="margin-top:40px;border-top:1px solid #dde3ee;padding:9px 20px 7px;font-size:10.5px;color:#aaa;text-align:right;font-family:sans-serif;">Generated: 2026-06-03 10:06 &middot; Essay Fabrik</div></body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide 1 Reference Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe2ea;
+      --accent: #0f766e;
+      --accent-soft: #dff6f3;
+      --warn: #92400e;
+      --warn-soft: #fef3c7;
+      --ok: #166534;
+      --ok-soft: #dcfce7;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef4f8 0%, var(--bg) 100%);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f766e 0%, #164e63 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+    h1, h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.15;
+    }
+    h1 {
+      font-family: Merriweather, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+    h2 {
+      font-size: 1.35rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+    }
+    .lead {
+      max-width: 90ch;
+      font-size: 1rem;
+      opacity: 0.96;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+    .card {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .half { grid-column: span 6; }
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .note-ok, .note-caution {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    .note-ok {
+      background: var(--ok-soft);
+      color: var(--ok);
+    }
+    .note-caution {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 10px;
+      border-top: 1px solid var(--line);
+    }
+    th {
+      width: 22%;
+      color: var(--muted);
+      font-weight: 700;
+      background: #fbfcfe;
+    }
+    .statement {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+    li + li { margin-top: 8px; }
+    .small {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .refs li {
+      word-break: break-word;
+    }
+    @media (max-width: 860px) {
+      .half { grid-column: span 12; }
+      th, td { display: block; width: 100%; }
+      th { border-top: none; padding-bottom: 4px; }
+      td { padding-top: 4px; }
+      tr { display: block; border-top: 1px solid var(--line); padding: 8px 0; }
+      table { border-top: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Presentation evidence tracker</div>
+      <h1>Slide 1 — Tommy presenting issues and formulation</h1>
+      <p class="lead">Working slide logic: Tommy’s school presentation can be framed through an internalizing–externalizing lens, then understood more clinically through formulation rather than simple misconduct language.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="pill">Current slide argument</div>
+        <p class="statement">Tommy’s aggression, impulsivity and relational strain may coexist with fear, uncertainty and emotional distress; formulation helps explain this pattern in context.</p>
+        <ul>
+          <li>Visible school behaviour: aggression, impulsivity, struggles with interaction.</li>
+          <li>Possible internalizing states: fear, uncertainty, dysregulation, distress.</li>
+          <li>Clinical bridge: move from “what is wrong with this child?” to “what happened to this child?”</li>
+          <li>Frameworks used: internalizing/externalizing + 5Ps formulation.</li>
+        </ul>
+      </article>
+
+      <article class="card half">
+        <div class="pill">Speaker direction</div>
+        <ul>
+          <li>Open with what school may see first: behaviour and peer difficulty.</li>
+          <li>Then show that outward behaviour can coexist with hidden inward distress.</li>
+          <li>State that co-occurring internalizing and externalizing symptoms usually indicate a more complex and impairing presentation.</li>
+          <li>End by introducing the 5Ps as the structure for understanding Tommy’s whole story.</li>
+        </ul>
+        <div class="note-caution">Use “greater psychiatric vulnerability” rather than a direct claim that this slide alone proves later depression.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 1</div>
+        <p class="statement">Internalizing and externalizing are a useful structure for children’s presenting issues.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source that explicitly describes internalizing and externalizing as broad domains of child mental health presentation.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Dol, M., Reed, M. and Ferro, M.A. (2022) ‘Internalizing–Externalizing Comorbidity and Impaired Functioning in Children’, <em>Children</em>, 9(10), p. 1547.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The paper states that child mental disorders are commonly categorized into internalizing and externalizing groups, and it defines internalizing as inward distress such as mood and anxiety symptoms and externalizing as symptoms directed outward, including ADHD, oppositional defiant disorder and conduct problems.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Background, opening paragraph beginning “Mental disorders are commonly categorized into two distinct groups...”</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Dol, Reed and Ferro, 2022)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td><a href="https://doi.org/10.3390/children9101547" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/children9101547</a></td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 2</div>
+        <p class="statement">When internalizing and externalizing co-occur, the child is more likely to show a more impairing and clinically complex profile.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source showing that comorbidity across both domains is associated with poorer functioning or worse outcomes than one domain alone.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Dol, M., Reed, M. and Ferro, M.A. (2022) ‘Internalizing–Externalizing Comorbidity and Impaired Functioning in Children’, <em>Children</em>, 9(10), p. 1547.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The paper reports that children with internalizing–externalizing comorbidity experience worse functioning than children with a single diagnosis and discusses earlier onset, greater service use and worse functional outcomes.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Abstract Results and Conclusions; also Background section on comorbidity.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Dol, Reed and Ferro, 2022)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td><a href="https://doi.org/10.3390/children9101547" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/children9101547</a></td>
+          </tr>
+        </table>
+        <div class="note-ok">Best wording on slide: “This pattern suggests greater impairment and psychiatric vulnerability.”</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 3</div>
+        <p class="statement">Aggressive behaviour can be reactive and linked to internal distress rather than purely oppositional intent.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A strong source showing that reactive aggression is associated with internalizing problems or emotional dysregulation.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Card, N.A. and Little, T.D. (2006) ‘Proactive and Reactive Aggression in Childhood and Adolescence: A Meta-Analysis of Differential Relations with Psychosocial Adjustment’, <em>International Journal of Behavioral Development</em>, 30(5), pp. 466–480.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The meta-analysis indicates that reactive aggression is more strongly related than proactive aggression to internalizing problems and emotional dysregulation, which supports the idea that some outward aggression reflects an underlying distressed state.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Not inserted yet. Keep as general support unless the full article is checked line by line.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Card and Little, 2006)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td>Add after final full-text verification.</td>
+          </tr>
+        </table>
+        <div class="note-caution">Safer wording: link aggression to fear, anxiety, or emotional dysregulation. Do not claim “shame” specifically unless a shame-focused paper is added later.</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 4</div>
+        <p class="statement">Behaviour should not be reduced to misconduct; a formulation approach asks what has happened to the child and what factors shape the presentation.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source supporting formulation as more useful than diagnosis alone for understanding context, causes and intervention planning.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Macneil, C.A., Hasty, M.K., Conus, P. and Berk, M. (2012) ‘Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice’, <em>BMC Medicine</em>, 10, p. 111.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The paper argues that diagnosis alone gives limited information about why a person presents as they do, while formulation helps integrate trauma, early experience, family, social and lifestyle factors to guide intervention.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Abstract and the section “The clinical utility of diagnosis and formulation”.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Macneil et al., 2012)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td><a href="https://doi.org/10.1186/1741-7015-10-111" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/1741-7015-10-111</a></td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 5</div>
+        <p class="statement">The 5Ps offer a practical structure for presenting issues and formulation.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source explicitly setting out presenting, predisposing, precipitating, perpetuating and protective factors as a formulation structure.</td>
+          </tr>
+          <tr>
+            <th>Best-fit source</th>
+            <td>Macneil, C.A., Hasty, M.K., Conus, P. and Berk, M. (2012) ‘Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice’, <em>BMC Medicine</em>, 10, p. 111.</td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The paper sets out the Five Ps approach and explains how it can structure a formulation by identifying current problems, historical vulnerability, triggers, maintaining factors and strengths or supports.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Section “What should a formulation comprise? The ‘Five P’s’ approach to formulation”.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Macneil et al., 2012)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td><a href="https://doi.org/10.1186/1741-7015-10-111" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/1741-7015-10-111</a></td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="pill">Evidence table 6</div>
+        <p class="statement">Formulation means understanding the whole story of the child, including developmental, family, social and community context.</p>
+        <table>
+          <tr>
+            <th>Evidence needed</th>
+            <td>A source describing formulation as a holistic account of the child’s difficulties in context.</td>
+          </tr>
+          <tr>
+            <th>Best-fit sources</th>
+            <td>
+              <strong>Course framing:</strong> Module 4 Week 4 material on child and adolescent formulation.<br>
+              <strong>Peer-reviewed support:</strong> Macneil et al. (2012).
+            </td>
+          </tr>
+          <tr>
+            <th>Why it fits</th>
+            <td>The module describes formulation as making sense of the young person’s experience holistically, including family dynamics, social environment and developmental history. Macneil et al. support this by describing formulation as an individualized bridge between assessment and treatment.</td>
+          </tr>
+          <tr>
+            <th>Secure citation point</th>
+            <td>Module section “A formulation-based approach to mental health”; Macneil abstract/background.</td>
+          </tr>
+          <tr>
+            <th>Harvard in-text</th>
+            <td>(Macneil et al., 2012)</td>
+          </tr>
+          <tr>
+            <th>DOI / link</th>
+            <td><a href="https://doi.org/10.1186/1741-7015-10-111" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/1741-7015-10-111</a></td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="pill">Suggested final slide wording</div>
+        <p class="statement">Tommy’s presenting issues can be understood through an internalizing–externalizing lens.</p>
+        <ul>
+          <li>Outward difficulties such as aggression, impulsivity and peer strain may coexist with inward distress such as fear, uncertainty and dysregulation.</li>
+          <li>When both patterns co-occur, this suggests a more impaired and clinically complex presentation.</li>
+          <li>A formulation approach helps move beyond judging behaviour as simple misconduct by asking how Tommy’s developmental history, caregiving experiences and wider context may have shaped his presentation.</li>
+          <li>The 5Ps structure this understanding into presenting, predisposing, precipitating, perpetuating and protective factors.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="pill">Reference list for this slide</div>
+        <ul class="refs">
+          <li>Card, N.A. and Little, T.D. (2006) ‘Proactive and Reactive Aggression in Childhood and Adolescence: A Meta-Analysis of Differential Relations with Psychosocial Adjustment’, <em>International Journal of Behavioral Development</em>, 30(5), pp. 466–480.</li>
+          <li>Dol, M., Reed, M. and Ferro, M.A. (2022) ‘Internalizing–Externalizing Comorbidity and Impaired Functioning in Children’, <em>Children</em>, 9(10), p. 1547. Available at: <a href="https://doi.org/10.3390/children9101547" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/children9101547</a>.</li>
+          <li>Macneil, C.A., Hasty, M.K., Conus, P. and Berk, M. (2012) ‘Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice’, <em>BMC Medicine</em>, 10, p. 111. Available at: <a href="https://doi.org/10.1186/1741-7015-10-111" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/1741-7015-10-111</a>.</li>
+        </ul>
+        <p class="small">This file is designed as a working evidence tracker, not as the final slide design.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide 3 Reference Tracker</title>
+  <style>
+    :root {
+      --bg:#f7f6f2; --surface:#ffffff; --surface-2:#f1efe8; --text:#1f2937; --muted:#5b6472;
+      --border:#d8d3c8; --accent:#0f766e; --accent-2:#b45309; --good:#166534; --warn:#92400e;
+      --shadow:0 10px 30px rgba(0,0,0,.08); --radius:18px;
+    }
+    [data-theme="dark"] {
+      --bg:#121212; --surface:#1c1c1c; --surface-2:#232323; --text:#ece8df; --muted:#b8b1a6;
+      --border:#353535; --accent:#5eead4; --accent-2:#fbbf24; --good:#86efac; --warn:#fcd34d;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 Inter,Segoe UI,Roboto,Arial,sans-serif}
+    body{padding:28px}
+    .wrap{max-width:1280px;margin:0 auto}
+    .top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:24px}
+    h1{margin:0 0 8px;font-size:clamp(2rem,3vw,3rem);line-height:1.1}
+    .lede{max-width:90ch;color:var(--muted);margin:0}
+    .toggle{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:10px 14px;border-radius:999px;cursor:pointer;box-shadow:var(--shadow)}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin:18px 0}
+    .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
+    .pill{display:inline-block;background:var(--surface-2);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.92rem;margin:4px 8px 0 0}
+    h2{font-size:1.65rem;margin:0 0 10px}
+    h3{font-size:1.15rem;margin:0 0 10px}
+    p{margin:8px 0}
+    ul{margin:8px 0 0 20px;padding:0}
+    li{margin:6px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:1080px){.grid{grid-template-columns:1fr 1fr}}
+    .section-label{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-bottom:10px}
+    .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:16px}
+    table{width:100%;border-collapse:collapse;min-width:980px;background:var(--surface)}
+    th,td{padding:14px 12px;vertical-align:top;border-bottom:1px solid var(--border);text-align:left}
+    th{background:var(--surface-2);font-size:.92rem}
+    tr:last-child td{border-bottom:none}
+    .fit-direct{color:var(--good);font-weight:700}
+    .fit-partial{color:var(--warn);font-weight:700}
+    .callout{border-left:4px solid var(--accent);padding-left:14px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .small{font-size:.94rem;color:var(--muted)}
+    .checklist li{margin:10px 0}
+    .footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    mark{background:#fef3c7;color:inherit;padding:0 .25em;border-radius:.25em}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Slide 3 Reference Tracker</h1>
+        <p class="lede">Working sheet for the Tommy presentation: attention and learning, trust/relationships, hostile interpretations, internal working models, and attachment. Each block separates your current idea, a tighter academic statement, and the evidence fit so you can decide what belongs on the slide versus in the speaker notes.</p>
+      </div>
+      <button class="toggle" id="themeToggle" aria-label="Toggle theme">Toggle theme</button>
+    </div>
+
+    <section class="card">
+      <div class="section-label">Slide focus</div>
+      <h2>Developmental impact on attention, learning, and relationships</h2>
+      <p class="callout"><strong>Suggested core argument:</strong> Tommy’s early adversity can be linked to later difficulties in executive functioning, sustained attention, learning, trust in relationships, and attachment organization; these difficulties are best framed as stress-related developmental adaptations rather than simply “bad behaviour.”</p>
+      <div class="meta">
+        <div><span class="pill">Slide 3A: Attention and learning</span><span class="pill">Slide 3B: Trusting relationships</span></div>
+        <div><span class="pill">Use on slide: short claims</span><span class="pill">Use in notes: mechanism + nuance</span></div>
+        <div><span class="pill">Best frame: cautious, evidence-based</span><span class="pill">Avoid overclaiming diagnosis</span></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="section-label">Content block 1</div>
+        <h3>Executive function difficulties</h3>
+        <p><strong>Your current idea:</strong> If executive function is affected, Tommy may struggle with emotional regulation, impulsivity, and concentration.</p>
+        <p><strong>Tighter academic statement:</strong> Early adversity is associated with poorer executive functioning, including inhibitory control, working memory, and cognitive flexibility; chronic stress may disrupt prefrontal systems that support regulation of behaviour, emotion, and attention.</p>
+        <p><strong>How it fits Tommy:</strong> This supports linking impulsivity, concentration problems, and reactive behaviour to stress-related executive-function vulnerability rather than deliberate non-compliance.</p>
+        <p><strong>Best use in presentation:</strong> Keep the statement concise on the slide; explain the prefrontal/executive-function link in your narration.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-label">Content block 2</div>
+        <h3>Low sustained attention under stress</h3>
+        <p><strong>Your current idea:</strong> Constant stress keeps threat systems activated, making it harder to focus and learn.</p>
+        <p><strong>Tighter academic statement:</strong> Persistent stress can impair sustained attention in children, and stress-related changes in amygdala–prefrontal circuitry are one plausible mechanism through which concentration and learning are disrupted.</p>
+        <p><strong>How it fits Tommy:</strong> This supports a formulation in which hypervigilance and poor concentration interfere with classroom learning and emotional self-regulation.</p>
+        <p><strong>Best use in presentation:</strong> Avoid saying the amygdala is “constantly firing”; say stress may bias attention toward threat and away from learning tasks.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-label">Content block 3</div>
+        <h3>Impaired mentalizing and reduced trust</h3>
+        <p><strong>Your current idea:</strong> Tommy may struggle to read others’ mental states and therefore misread interactions.</p>
+        <p><strong>Tighter academic statement:</strong> Mentalizing refers to understanding behaviour in terms of underlying thoughts, feelings, wishes, and intentions; where early relationships are unsafe or inconsistent, children may show reduced capacity to interpret others’ mental states accurately, especially under stress.</p>
+        <p><strong>How it fits Tommy:</strong> This gives a bridge between relational trauma and later interpersonal misunderstandings, social defensiveness, or rapid escalation with adults and peers.</p>
+        <p><strong>Best use in presentation:</strong> Keep this as a brief explanatory sub-point unless you have a strong direct source from Fonagy or later review literature in your reference list.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-label">Content block 4</div>
+        <h3>Internal working models</h3>
+        <p><strong>Your current idea:</strong> Adults become experienced as unpredictable and safety as fragile.</p>
+        <p><strong>Tighter academic statement:</strong> Early attachment experiences help shape internal working models of self and others, including expectations about whether caregivers are responsive, comforting, and safe.</p>
+        <p><strong>How it fits Tommy:</strong> This supports interpreting distrust, guardedness, or expectation of inconsistency as learned relational expectations rather than isolated symptoms.</p>
+        <p><strong>Best use in presentation:</strong> This is a good theory sentence for your narration; use Tommy’s vignette examples to make it concrete.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-label">Content block 5</div>
+        <h3>Hostile attribution bias</h3>
+        <p><strong>Your current idea:</strong> Tommy may read neutral interactions as hostile.</p>
+        <p><strong>Tighter academic statement:</strong> Children exposed to harsh, threatening, or inconsistent environments may be more likely to interpret ambiguous social cues as hostile, which can increase aggressive or defensive responding.</p>
+        <p><strong>How it fits Tommy:</strong> This gives a direct explanation for overreacting to peers or adults when social cues are unclear.</p>
+        <p><strong>Best use in presentation:</strong> Use one short phrase on the slide, then explain that hostile attribution is a bias in interpreting ambiguous intent.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-label">Content block 6</div>
+        <h3>Serve-and-return and disorganized attachment</h3>
+        <p><strong>Your current idea:</strong> Missing serve-and-return may contribute to attachment problems; ideally connect this to disorganized attachment.</p>
+        <p><strong>Tighter academic statement:</strong> Responsive serve-and-return interactions are important for early brain development, while disorganized attachment is more specifically linked to frightened, frightening, highly dysregulated, or otherwise alarming caregiving and breakdowns in the child’s strategy for seeking safety.</p>
+        <p><strong>How it fits Tommy:</strong> This allows you to distinguish between general non-responsive caregiving and the stronger claim that disorganized attachment is associated with fear, alarm, or contradiction in the caregiving relationship.</p>
+        <p><strong>Best use in presentation:</strong> Treat these as related but not identical. Only merge them into one sentence if your final source explicitly does so.</p>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="section-label">Evidence map</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Subtopic</th>
+              <th>Recommended source</th>
+              <th>What the source covers</th>
+              <th>Best citation point</th>
+              <th>Fit</th>
+              <th>Decision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Executive function</td>
+              <td>Hostinar et al. (2012), PMC paper on early life adversity and executive function<br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3477377/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+              <td>Directly supports the claim that early life adversity is associated with reduced executive-function performance.</td>
+              <td>Abstract; section on animal models/effects of early adversity on cognition; Discussion.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Keep as one of the anchor sources for attention/learning.</td>
+            </tr>
+            <tr>
+              <td>Executive function review</td>
+              <td>2020 systematic review, <em>Adverse Childhood Experiences and Executive Function…</em><br><span class="small"><a href="https://www.sciencedirect.com/science/article/abs/pii/S014521342030140X" target="_blank" rel="noopener noreferrer">Abstract page</a></span></td>
+              <td>Supports broader review-level claim that ACEs/maltreatment are associated with executive-function difficulties in children.</td>
+              <td>Abstract and Results/Discussion.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Use as your review source if you want stronger evidence hierarchy.</td>
+            </tr>
+            <tr>
+              <td>Sustained attention under stress</td>
+              <td>Roos et al. (paper title returned: <em>Acute stress impairs children’s sustained attention…</em>)<br><span class="small"><a href="https://sanlab.uoregon.edu/files/2020/04/Roos-et-al-2020.pdf" target="_blank" rel="noopener noreferrer">PDF link</a></span></td>
+              <td>Directly supports that stress can impair children’s sustained attention.</td>
+              <td>Title, Abstract, Results.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Good for your concentration/learning sentence.</td>
+            </tr>
+            <tr>
+              <td>Amygdala–prefrontal explanation</td>
+              <td><em>Stress and the Adolescent Brain: Amygdala-Prefrontal Cortex Development…</em><br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5074883/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+              <td>Supports the mechanism-level explanation that stress exposure relates to developmental changes in amygdala and prefrontal systems relevant to emotion and cognition.</td>
+              <td>Abstract and Introduction.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Use in narration rather than as a long slide citation.</td>
+            </tr>
+            <tr>
+              <td>Internal working models</td>
+              <td>Ainsworth et al. (1978) / Bowlby (classic attachment theory); plus Granqvist et al. review for summary framing<br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5600694/" target="_blank" rel="noopener noreferrer">Review source</a></span></td>
+              <td>Supports the general theory that attachment experiences shape expectations of caregiver responsiveness and safety.</td>
+              <td>Granqvist review summary of attachment/secure base concepts; classic original texts for full theory citation if available in your library.</td>
+              <td class="fit-partial">Indirect-direct</td>
+              <td>Keep, but phrase as theory-informed rather than as a causal claim about Tommy.</td>
+            </tr>
+            <tr>
+              <td>Disorganized attachment</td>
+              <td>Granqvist et al. (2017), review of disorganized attachment in infancy<br><span class="small"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5600694/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+              <td>Supports that disorganized attachment is linked to frightened/frightening, dysregulated, or alarming caregiving and later clinical concern.</td>
+              <td>Summary topics 3–4; section on psychological processes behind disorganized attachment.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Best current source for the disorganization subsection.</td>
+            </tr>
+            <tr>
+              <td>Serve and return</td>
+              <td>Harvard Center on the Developing Child, serve-and-return key concept<br><span class="small"><a href="https://developingchild.harvard.edu/key-concept/serve-and-return/" target="_blank" rel="noopener noreferrer">Open source</a></span></td>
+              <td>Supports the importance of responsive back-and-forth caregiving for early brain architecture.</td>
+              <td>Opening definition and explanatory sections.</td>
+              <td class="fit-partial">Background</td>
+              <td>Use for developmental explanation, but do not overstate it as proof of disorganized attachment by itself.</td>
+            </tr>
+            <tr>
+              <td>Hostile attribution bias</td>
+              <td>Dodge (1980/2006) and related social-information-processing literature</td>
+              <td>Supports the idea that ambiguous social cues can be interpreted as hostile, especially in aggressive or threat-exposed children.</td>
+              <td>Need the exact edition/article you will cite from your library or existing reference list.</td>
+              <td class="fit-direct">Direct</td>
+              <td>Keep, but verify the exact paper details before final submission.</td>
+            </tr>
+            <tr>
+              <td>Mentalizing</td>
+              <td>Fonagy et al. / later mentalizing review</td>
+              <td>Potentially supports the trust-and-relationship subsection, but needs exact source checking for the specific wording you want.</td>
+              <td>Locate definition section plus any discussion of trauma, attachment, and misreading of intentions.</td>
+              <td class="fit-partial">Needs checking</td>
+              <td>Keep as optional unless you confirm the exact quotation point.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-label">Suggested slide wording</div>
+      <ul class="checklist">
+        <li><strong>Attention and learning:</strong> Early adversity is associated with poorer executive function and sustained attention, which may contribute to Tommy’s impulsivity, concentration problems, and difficulties learning in stressful environments.</li>
+        <li><strong>Trusting relationships:</strong> Inconsistent or frightening caregiving may shape internal working models in which adults are experienced as unpredictable and safety as fragile.</li>
+        <li><strong>Social interpretation:</strong> Tommy may be more likely to misread ambiguous interactions as threatening, increasing defensive or aggressive responses.</li>
+        <li><strong>Attachment:</strong> Limited responsive caregiving may reduce opportunities for serve-and-return development, while frightening or contradictory caregiving may increase risk for disorganized attachment-related behaviours.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="section-label">Task list</div>
+      <ul class="checklist">
+        <li>Check your current Shonkoff, McCrory, Teicher, Dodge, Main &amp; Hesse, Bowlby, and Ainsworth references against the exact editions or articles you can actually access.</li>
+        <li>Add one review-level source and one more direct empirical source to the final slide reference list rather than citing only classic texts.</li>
+        <li>Keep causal language cautious: use “associated with,” “may contribute to,” “is consistent with,” and “plausibly linked to.”</li>
+        <li>If space is tight, keep only two in-slide citations on the visual slide and place the fuller evidence trail in your speaker notes or reference slide.</li>
+        <li>Do not claim that missing serve-and-return alone proves disorganized attachment unless your final source explicitly states that link.</li>
+      </ul>
+    </section>
+
+    <p class="footer">Built as a working reference tracker for Slide 3 only. The HTML is intended as a drafting tool you can revise while narrowing what stays on-slide and what moves to speaker notes.</p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      const html = document.documentElement;
+      html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>

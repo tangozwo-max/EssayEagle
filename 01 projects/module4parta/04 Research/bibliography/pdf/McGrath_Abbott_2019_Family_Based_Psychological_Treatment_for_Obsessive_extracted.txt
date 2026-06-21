@@ -1,0 +1,3805 @@
+Clinical Child and Family 
+Psychology 
+Review (2019) 2478-501 
+® 
+Family-Based Psychological Treatment 
+for Obsessive Compulsive 
+Disorder 
+in Children 
+and Adolescents: 
+A Meta-analysis and Systematic 
+Review 
+Chloé 
+A. McGrath'® - 
+Maree J. Abbott" 
+Published onine:25 
+une 
+2019 
+© 
+Springer Science 
+Business 
+Media, 
+LL, part of 
+Springer 
+Nature 
+2019 
+Abstract 
+A significant number 
+of children 
+and adolescents with 
+obsessive 
+compulsive disorder 
+(OCD) demonstrate 
+poor response 
+to the current 
+gold standard 
+treatment, 
+cognitive 
+behaviour 
+therapy (CBT) with 
+exposure 
+and response 
+prevention 
+(ERP). 
+Recent 
+findings suggest that family variables 
+affect treatment 
+response highlighting the need for a meta-analytic review 
+of the 
+precise impact of 
+family 
+variables 
+on OCD-related 
+symptoms and processes. The current 
+review 
+and meta-analysis examined 
+the effect 
+of family-based 
+interventions 
+on 
+OCD 
+symptom 
+and family factor 
+outcomes 
+for 
+children and adolescents 
+with 
+OCD. 
+The moderating effects 
+of the degree of parental involvement 
+and number 
+of family factors targeted in treatment 
+were 
+investigated. An 
+extensive 
+literature 
+search 
+identified 
+37 eligible studies 
+(1727 OCD participants). Large significant pooled 
+·mean 
+effect 
+sizes 
+for OCD 
+symptoms 
+and Family Accommodation 
+(FA), respectively, were 
+obtained 
+at posttest ( 
+1.00) and follow-up (g= 
+1,69; ¢= 
+1.98). Moderator 
+analyses 
+indicated 
+that 
+the number 
+of family factors targeted in 
+teat- 
+·ment significantly moderated 
+outcomes 
+on 
+measures of 
+FA 
+(2=2.21, 
+p=0.03), 
+but not 
+on Children·/Yale-Brown 
+Obsessive 
+Compulsive Scale (C/Y-BOCS) 
+outcomes. 
+FA has been significantly correlated 
+with 
+OCD symptom 
+severity and poorer 
+treatment 
+outcomes, and 
+there 
+is data 
+to suggest 
+that 
+FA 
+may mediate 
+OCD symptom 
+outcomes 
+(e.g., Piacentini 
+etal. in 
+J Am 
+Acad 
+Child 
+Adolese 
+Psychiatry 50:1149-1161, 
+2011). Findings show 
+that 
+the greater 
+the number of 
+family factors 
+targeted, the greater the reduction 
+in 
+FA at post, highlighting the importance 
+of addressing a range of family factors 
+in child 
+OCD treatment 
+to optimise 
+outcomes. 
+Keywords Obsessive 
+compulsive 
+disorder 
+- Treatment - Child 
+- Family 
+» 
+Meta-analysis Systematic 
+review 
+Introduction 
+(e.g. hand washing) 
+or 
+mental 
+acts 
+(¢.g., counting) 
+that 
+an 
+individual 
+feels compelled to perform in 
+response 
+to 
+Obsessive 
+compulsive disorder 
+(OCD) 
+affects 
+of 
+obsessions 
+or according 
+to rigid 
+rules (American 
+Psychi- 
+children 
+and adolescents 
+(Heyman et al. 2003; 
+Rapoport 
+atric 
+Association 
+2013). Obsessions 
+and compulsions 
+are 
+tal, 
+2000; Valleni-Basile 
+etal. 
+1995; Zohar 
+1999) and 
+is 
+consuming 
+and commonly 
+cause 
+significant 
+impai 
+characterised 
+by obsessions and/or 
+compulsions. 
+Obses- 
+ment 
+in funetioning across 
+areas 
+of 
+Tie, including 
+social, 
+sions 
+include 
+recurrent 
+and unwanted intrusive 
+thoughts, 
+al, academic, 
+and occupational domains 
+(American 
+mages, or 
+impulses that 
+typically evoke 
+significant anxiety 
+Psychiatric Association 
+2013; 
+Piacentini etal. 
+2003; 
+Storch 
+·or 
+distress. 
+Attempts are 
+made 
+to ignore 
+oF suppress 
+these 
+et al. 2010a), 
+OCD in 
+children 
+and adolescents 
+is thought 
+intrusions, 
+or compulsions 
+are performed to neutralise 
+the 
+to be similar 
+to adult OCD 
+in 
+both 
+prevalence and 
+cl 
+obsessions and 
+related 
+distress 
+(Americ 
+presentation, 
+However, 
+diagnostic criteria 
+specify 
+that young 
+ition 
+2013). Compulsions involve 
+repetitive 
+behaviours 
+persons 
+are 
+not required to have 
+insight 
+into 
+their symptoms, 
+such 
+as their 
+excessive 
+or 
+unreasonable 
+nature 
+(American 
+Psychiatrie Association 
+2013). In addition, 
+young 
+people 
+© 
+Mae 3 
+Abbot 
+with 
+OCD 
+may present with compulsions without 
+distinct 
+abbott @ 
+or clearly defined 
+obsessions 
+(Geller and March 
+2012). In 
+Clinical Psychology 
+Unit, 
+Schoo 
+of Pychology 
+youth, the disorder 
+typically has a chronic, 
+yet fluctuating, 
+·The University of Sydney, Sydney, NSW 
+2006, 
+Australia 
+Course 
+and can 
+significantly disrupt development that occurs 
+Clinical child and Family Psychology Review (2019) 
+a9 
+during childhood 
+and adolescence 
+(Piacentini etal. 
+2003; 
+Storch et al. 
+2010a). 
+Cognitive-behavioural therapy (CBT) that includes 
+expo- 
+sure 
+and response 
+prevention 
+(ERP) has been established 
+as the psychological treatment 
+of choice 
+for children 
+and 
+adolescents 
+with 
+OCD (Brauer et al. 2011; 
+Freeman 
+et al 
+2018; 
+Rosa-Alcézar 
+et al. 2015). ERP involves 
+prolonged 
+and repeated exposure 
+to feared 
+obsessional 
+stimuli 
+(e-g., 
+dirt; thoughts about death of a parent), while refraining from 
+·engaging 
+in compulsions (e.g., hand washing; checking on 
+a 
+parent). As distress 
+reduces 
+with repeated exposure 
+and by 
+refraining from performing rituals, the individual 
+learns that 
+·compulsions are 
+not 
+necessary 
+to manage 
+distress 
+orto 
+pre- 
+vent 
+the occurrence 
+of feared 
+events. 
+However, 
+a significant 
+·number of young people with 
+OCD 
+either 
+fail 
+to respond to 
+ERP-based 
+CBT 
+or 
+demonstrate 
+only partial response. 
+In 
+the largest RCT to date examining 
+treatment 
+outcomes for 
+children 
+and adolescents 
+with 
+OCD, 60% of ps 
+the ERP-based 
+CBT 
+condition 
+failed 
+to demonstra 
+remission 
+(POTS 
+Paediatric 
+OCD Treatment 
+Study (POTS) 
+·Team 2004). Recent 
+findings have 
+identified 
+that the family 
+·environment 
+can 
+affect 
+treatment 
+response. 
+Family accommodation 
+(FA) has 
+been 
+the focus of much 
+of the 
+recent 
+research 
+examining 
+family environment 
+fac- 
+tors 
+in 
+child/adolescent 
+OCD. 
+FA 
+is the process whereby 
+other family members 
+participate 
+in 
+or 
+assist 
+with a 
+child's 
+OCD symptoms. 
+FA 
+can 
+range from 
+active 
+participation 
+in 
+symptoms (e.g., answering 
+a child's 
+repetitive 
+questions 
+in 
+·an 
+attempt to reduce their distress) to 
+family members 
+assist- 
+ing with 
+the avoidance 
+of anxiety-provoking situations 
+and/ 
+cor modifying daily routines 
+to assist 
+with 
+OCD 
+(Lebowitz 
+ct al. 2012). The most 
+common 
+types of FA involve provid- 
+ing 
+reassurance 
+and waiting 
+for the completion of rituals 
+(Lebowitz 
+et al. 2012). Rates of FA 
+are remarkably high in 
+families 
+with 
+a child 
+with 
+OCD, with 
+the majority 
+of fami- 
+lies involved 
+in frequent accommodation 
+of OCD symptoms. 
+Flessner 
+et al. (2011) found 
+that 99% of parents reported 
+participating 
+in 
+at least 
+one 
+type of 
+accommodation 
+behav- 
+iour 
+and 77.1% reported daily FA. 
+FA 
+can 
+be negatively 
+reinforcing for parents by temporarily reducing both child 
+distress 
+and parental distress 
+associated 
+with 
+managing 
+a 
+child 
+with 
+OCD 
+symptoms 
+(Kagan et al. 2017; Lebowitz 
+et al. 2014), Although generally well 
+intentioned, 
+FA 
+rein- 
+forces child avoidance 
+behaviours 
+(contradictory tothe goals 
+of ERP) and maintains 
+OCD symptoms 
+and anxiety (Kagan 
+et al. 2017; Wu et al. 2016). FA has been strongly associated 
+with 
+OCD 
+symptom 
+severity (e.g., Lebowitz 
+et al. 2012; 
+Strauss 
+et al. 2015; 
+Wu 
+et al. 2016) 
+and child 
+functional 
+impairment 
+(e.g., Bipeta et 
+al. 2013; Caporino et al. 2012), 
+FA has also been linked 
+to significantly reduced 
+treatment 
+outcomes 
+(e-g., Garcia 
+et al. 2010; Gorenstein 
+et al. 2015; 
+Peris 
+etal. 
+2017; Piacentini 
+et al. 2011). In atrial 
+by Gore- 
+et al. (2015), young 
+people with 
+higher FA 
+scores 
+at pre-treatment 
+showed 
+poorer 
+OCD 
+symptom 
+outcomes. 
+Garcia 
+et al. (2010) found 
+that FA significantly predicted 
+treatment 
+outcomes 
+for young people with OCD: 
+Youth with 
+ower 
+levels of 
+FA demonstrated 
+greater symptom 
+improve- 
+·ment 
+across 
+treatment 
+conditions. 
+FA accounted 
+for changes. 
+in clinical 
+symptoms 
+in 
+a study by Peris 
+et al. (2017). Fur- 
+thermore, 
+in 
+a trial by Piacentini 
+etal. (2011), FA mediated 
+OCD 
+symptom 
+outcomes 
+and a reduction 
+in 
+FA 
+was 
+found 
+to temporally precede OCD 
+symptom change, 
+Recent findings suggest that other family variables 
+may 
+also affect 
+treatment 
+response. 
+Peris 
+et al. (2012a) found 
+that families 
+demonstrating higher levels 
+of cohesion 
+and 
+lower 
+levels of family conflict 
+and blame of the young 
+per- 
+son 
+prior 
+to treatment 
+were 
+more 
+likely to have 
+a child 
+who 
+responded to CBT. 
+Families 
+that exhibited 
+higher function- 
+ing in all three aforementioned 
+domains 
+had a 
+93% response 
+{o treatment 
+compared to a 
+10% treatment 
+response 
+for fami- 
+ies 
+with 
+poorer Functioning in 
+these 
+three 
+domains. 
+High 
+·maternal 
+expressed 
+emotion 
+(ie, 
+criticism 
+and/or 
+emotional 
+overinvolverment) has been identified 
+as 
+a predictor of poor 
+treatment 
+response 
+for young people with OCD 
+(Peris etal. 
+2012b). Other family factors 
+associated 
+with 
+the develop- 
+·ment 
+and maintenance 
+of 
+child/adolescent 
+OCD, and there- 
+fore relevant 
+to 
+treatment 
+outcome, 
+include 
+over-responsi- 
+bility placed on 
+children 
+(Farrell et al. 2013; Mathieu 
+et al 
+2015; 
+Pietrefesa 
+et al. 2010), poor family problem-solving 
+skills 
+(Barrett 
+et al. 2002), and high parental control 
+of 
+child behaviour, 
+such 
+as overprotection 
+(Haciomeroglu and 
+Karanci 
+2013; 
+Timpano et al. 2010). 
+Practise 
+guidelines and 
+reviews 
+of the child 
+and adoles- 
+cent 
+OCD 
+literature 
+commonly highlight the importance 
+of 
+involving family 
+members 
+in 
+treatment 
+to optimise 
+treatment 
+response (e.g., 
+Brauer 
+et al. 
+2011; Freeman 
+et al. 
+2018; Gel- 
+ler and March 
+2012). However, 
+the degree to which family 
+members 
+are 
+included 
+in 
+treatment 
+and the nature 
+of their 
+involvement 
+vary significantly across 
+studies 
+and treatment 
+programs. 
+Interventions 
+that involve 
+family members 
+typi- 
+cally fall into 
+two 
+broad categories: (1) Intervention
+where
+family member(s) attend 
+treatment 
+sessions 
+to 
+some 
+extent, 
+however family factors 
+are 
+not specifically targeted; and (2) 
+Interventions 
+that involve 
+family member(s) and actively 
+target family factors. 
+Category 1 acts 
+as 
+a useful 
+control 
+with 
+which 
+to compare 
+interventions 
+that directly address 
+family factors. 
+In the only RCT 
+to date to compare 
+Category 1 and Cat- 
+egory 
+2 interventions 
+for young people with 
+OCD, Reyn- 
+olds 
+etal. (2013) investigated low and high levels 
+of family 
+involvement 
+(FI) in 
+a CBT 
+intervention. 
+Low 
+FI was 
+char- 
+acterised 
+by parents attending 3 of the 
+14 sessions 
+and no. 
+family factors 
+were 
+directly addressed (Category 1), whereas 
+high FI comprised parents attending all 
+sessions 
+and FA 
+was 
+targeted (Category 2). Low 
+Fl and High FI groups 
+both 
+demonstrated 
+large positive 
+effect 
+sizes at 
+posttest (d= 1.45; 
+© Springer 
+heehee 
+ale 
+Aaa 
+1.27) and follow-up 
+50), with 
+no signiti- 
+·cant differences found between 
+groups. However, the 
+authors 
+acknowledged that 
+the sample size 
+was 
+small 
+and 
+the study 
+underpowered. 
+Further 
+investigation into 
+Category 1 and 
+2 studies 
+is necessary 
+to better 
+understand 
+optimal family 
+involvement. 
+Recent 
+treatment 
+programs 
+have 
+been 
+extended 
+to 
+directly target some 
+of the family factors 
+identified 
+to date 
+in 
+the child 
+and adolescent 
+OCD 
+literature. 
+Barrett 
+et al 
+(2004) added 
+30 minutes of 
+parent skills 
+training (targeting 
+problem-solving and FA) to one-hour 
+child-focused 
+CBT 
+sessions. 
+Similarly, Piacentini 
+et al. (2011) supplemented 
+child-focused sessions 
+with 30-min 
+family sessions 
+address- 
+ing parental blame of 
+the young 
+person, 
+FA, and unhelpful 
+patterns of family interaction. 
+One-h family sessions 
+were 
+added to child-focused 
+sessions 
+every second week 
+in studies 
+by Peris and 
+Piacentini (2013) 
+and Peris 
+etal. 
+(2017), target- 
+ing FA, family conflict, 
+and blame, 
+and enhancing cohesion 
+and problem-solving skills. 
+Excellent 
+treatment 
+outcomes 
+have 
+been reported where 
+a number 
+of family faciors 
+have 
+been addressed, as evidenced 
+by large effect 
+sizes 
+(d=2.65, 
+Barrett 
+etal. 
+2004; 
+d=2.37, 
+Piacentini 
+et al. 2011;d=2.59, 
+Peris 
+and Piacentini 
+2013; 
+d=2.07, 
+Peris 
+et al. 2017). 
+A 
+better 
+understanding is required of the key family factors 
+to target in OCD 
+interventions 
+for young people to enhance 
+treatment 
+response. 
+Previous 
+Meta-analyses and Systematic Reviews 
+·The effectiveness 
+of CBT 
+in 
+the 
+treatment 
+of child/adotes- 
+·cent 
+OCD has been well 
+established 
+(Freeman 
+et al. 2018). 
+·Some 
+initial 
+meta-analytic 
+support has 
+been 
+provided for 
+the 
+effectiveness 
+of family-based CBT 
+for young 
+people with 
+OCD 
+et al. 2017; 
+Thompson-Hollands 
+et al. 2014). Very few studies 
+have considered 
+the effec- 
+tiveness 
+of these 
+interventions 
+regarding 
+family 
+factor out- 
+·comes, 
+such 
+as FA. Importantly, meta-analytic studies have 
+not 
+yet identified 
+many 
+within-group treatment 
+modera- 
+tors 
+systematically affecting response 
+to treatment. 
+Neither 
+·mode of treatment 
+(¢.g., individual 
+vs group) nor 
+therapeu- 
+tic components (¢.2., 
+psychoeducation, 
+cognitive 
+training, 
+·contingency 
+management) has been found to significantly 
+and consistently affect treatment 
+outcomes 
+at a meta-ana- 
+Iytic level (¢.g., 
+Olatunji et 
+al. 2013). Very few studies have 
+explored the effect of 
+family-related 
+within-group 
+treatment 
+moderators. 
+etal. 
+(2015) investigated the mod- 
+·erating effect 
+of level 
+of parental involvement 
+on 
+treatment 
+outcomes 
+and found 
+that parental involvement 
+(low, moder- 
+ate, high) had a significant relationship (p=.002) with 
+OCD 
+symptom 
+outcomes, 
+explaining 34% of 
+variance. 
+Iniesta- 
+Sepilveda et al. (2017) examined 
+various 
+techniques used 
+in parenting 
+components 
+of interventions 
+(i.e., FA; expo- 
+sure 
+assistance 
+training; 
+contingency 
+management training 
+®Springer 
+and 
+problem-solving) 
+with 
+results 
+indicating nil 
+significant 
+{reatment-moderating 
+effects. Importantly, 
+the number 
+of 
+family factors addressed 
+in treatment 
+has yet to be explored 
+asa 
+potential treatment 
+moderator. 
+·Aims and Objectives 
+·The current study 
+aims 
+to evaluate 
+the effectiveness 
+of fam- 
+ily-based interventions 
+for children 
+and 
+adolescents 
+with 
+OCD 
+using 
+both meta-analytic and systematic review 
+tech- 
+niques. 
+A family-based intervention 
+was 
+broadly defined 
+as 
+an 
+intervention 
+that included 
+a parent to 
+some 
+extent, 
+regard- 
+less of whether 
+or 
+not family factors 
+were 
+specifically tar- 
+geted. This study, therefore, 
+includes 
+two broad 
+categor
+of, 
+family-based interventions: 
+(1) parental involvement witho
+addressing family factors directly and (2) parental involve- 
+·ment 
+with 
+the direct 
+targeting 
+of family factors. 
+The effect 
+of Category | and Category 2 family-based treatments 
+on 
+OCD symptoms 
+as well 
+as 
+on 
+FA, the primary 
+family factor 
+assessed by included 
+studies, is 
+investigated. In addition, 
+the 
+effect 
+of family-based treatments 
+on 
+a range of other family 
+variables, 
+including blame, cohesion, 
+conflict, 
+and general 
+family functioning, is calculated 
+in the systematic 
+review. 
+This is 
+the first study to consider 
+the relative 
+effectiveness. 
+of CBT 
+with, 
+versus 
+without, 
+the direct 
+targeting 
+of family 
+factors, 
+·The 
+current 
+meta-analysis examines 
+the moderating 
+effects of 
+family-related 
+treatment 
+variables 
+on OCD symp- 
+tom 
+and 
+FA 
+outcomes 
+for young 
+people with 
+OCD. 
+This 
+is the 
+first meta-analytic study to 
+examine 
+the 
+number 
+of 
+family factors 
+addressed 
+in 
+treatment 
+as 
+a potential treat- 
+·ment 
+moderator. 
+The effects 
+on 
+treatment 
+outcomes 
+of 
+a 
+large number 
+of family factors 
+is 
+examined, 
+including FA, 
+problem-solving 
+skills, conflict, Blame/criticism, 
+and com- 
+·munication, 
+In addition, 
+this study explores the moderating 
+effects 
+of the 
+type and degree of parental/family involve- 
+·ment 
+in 
+treatment. 
+Rather 
+than code 
+for parental/family 
+involvement 
+using 
+broad 
+categories 
+or rating 
+scales (e. 
+ow, 
+moderate, 
+high), a more 
+precise 
+method 
+was 
+used: The 
+proportion 
+of the total treatment 
+time 
+that parents were 
+seet 
+alone, as well 
+as when participating 
+in family se 
+calculated. 
+Quantifying parental/family involven 
+for 
+a 
+more 
+objective 
+examination 
+of the 
+number 
+of fam- 
+ily factors targeted in 
+treatment. 
+The 
+current 
+study aims 
+to 
+illuminate 
+family-related treatment 
+factors 
+associated 
+with 
+improved outcomes, 
+·The systematic 
+review 
+component 
+of the 
+current 
+study 
+analyses eligible 
+studies according 
+to seven 
+main 
+categories: 
+Study design, participants, 
+assessment, 
+treatment, 
+outcome 
+·measures, 
+and symptom 
+and family factor 
+outcomes. 
+Stud- 
+ies 
+are 
+also assessed 
+for risk of bias according to domains 
+defined 
+by the Cochrane 
+Handbook 
+for Systematic Reviews 
+of Interventions 
+(Higgins and Green 201 1). Thus, the 
+qualit
+Clinical child and Family Psychology Review (2019) 
+481 
+and reliability 
+of the research 
+and findings are 
+evaluated 
+for 
+all included 
+studies. 
+The preferred reporting 
+items 
+for sys- 
+tematic 
+reviews 
+and Meta-Analyses (PRISMA) 
+guidelines 
+inform 
+the summarising 
+of information 
+and reporting 
+of 
+results, and meta-analytie guidelines for conducting statistics 
+are 
+used (Liberati et al. 2009). The meta-analysis synthesises 
+the results 
+of eligible studies 
+and examines 
+the moderating 
+cffects of 
+family-related 
+treatment 
+factors, including number 
+of family factors targeted in 
+treatment, 
+total 
+parent hours, 
+and total family hours, 
+on 
+treatment 
+outcomes 
+(both OCD 
+symptom 
+and FA outcomes). 
+An 
+extensive 
+literature 
+search 
+was 
+conducted 
+using the 
+databases: 
+PsychInfo, Medline, Cochrane 
+Central Register 
+of Controlled 
+Trials, and PubMed 
+to identify published treat- 
+·ment 
+studies 
+that included 
+family-based treatment 
+interven- 
+tions 
+for children 
+and adolescents 
+with OCD. 
+The key search 
+terms 
+employed included: 
+(obsessive compulsive disorder 
+or 
+OCD 
+or ·obsessive/compulsive 
+neurosis) 
+AND 
+(interven 
+tion 
+or therapy ot 
+trial or 
+manual 
+ot 
+treatment 
+or 
+cognitive 
+behavio(w)r 
+therapy, ot CBT 
+or exposure 
+and response 
+pre- 
+vention 
+or 
+ERP 
+ot psychotherapy or program) 
+AND 
+(child 
+ot 
+p(ajediatric 
+or 
+adolescent 
+or 
+teen 
+ot 
+schoolchild 
+or boy 
+or girl or preschool or youth 
+or 
+young 
+person/people) AND 
+(family 
+ot parent 
+oF mother 
+ot father 
+ot 
+home 
+or primary 
+carer/caregiver 
+ot 
+attachment 
+or paternal 
+or 
+maternal), 
+Limits 
+were 
+set 
+to include 
+only peer-reviewed journal arti- 
+cles 
+written 
+in English. No 
+limits 
+were 
+placed on publication 
+date, Reference 
+lists of 
+relevant articles 
+were 
+also examined 
+to identify any additional 
+studies 
+relevant 
+to the review. 
+The 
+final search 
+was 
+conducted 
+on 
+16 May 2018. 
+Selection and Exclusion 
+Titles, 
+abstracts, and full 
+texts 
+were 
+systematically reviewed 
+to 
+eliminate 
+studies 
+that 
+did 
+not 
+meet 
+inclusion 
+criteria 
+for the 
+review. 
+Refer 
+to Fig. | for 
+a PRISMA 
+flowchart 
+of 
+the selection 
+process. 
+Studies 
+retained 
+for further 
+review 
+were 
+treatment 
+trials 
+involving children 
+and adolescents 
+(0-18 years old) with 
+a principal diagnosis of OCD. 
+Stud- 
+ies 
+were 
+only included 
+if the OCD 
+intervention 
+involved 
+a 
+family member 
+to 
+some 
+extent 
+for 
+all 
+cases. 
+Studies (e-z., 
+·case 
+studies 
+and 
+case 
+series) that did not 
+include 
+sufficient 
+·quantitative 
+statistics 
+to calculate 
+effect 
+sizes 
+(e.g., overall 
+Current 
+and past conceptualisations of OCD 
+were 
+used to 
+broaden 
+·the literature 
+search 
+and 
+enhance 
+identification 
+of all potentially 
+ee 
+·evant 
+esearch 
+articles, 
+·means 
+and standard deviations) were 
+excluded. 
+In addition, 
+studies with a 
+very small sample size 
+(n <5) were 
+excluded. 
+·Where studies included 
+several diagnostic groups, 
+the results 
+for OCD participants 
+were 
+required to be reported separately 
+to be eligible for inclusion, 
+Finally, studies 
+with non-Eng- 
+lish-speaking populations were 
+excluded. 
+All abstracts 
+were 
+reviewed 
+by a second 
+rater 
+and a 97% agreement 
+rate 
+was 
+obtained. 
+Differences 
+in ratings 
+were 
+discussed 
+and 
+100% 
+agreement 
+was 
+reached 
+on 
+abstracts 
+to be retained 
+for the 
+full 
+text 
+review. 
+Full 
+text 
+articles 
+were 
+reviewed 
+and dis- 
+cussed with 
+the second 
+rater 
+prior to 
+inclusion 
+in the review 
+and 100% agreement 
+was 
+reached 
+on 
+papers 
+meeting 
+the 
+selection 
+criteria. 
+Out of 
+the 
+872 articles 
+screened, 
+a total of 
+37 studies 
+were 
+eligible for inclusion 
+in the current 
+review. 
+Publication 
+dates ranged from 
+1994 to 2018. 
+Data Analysis 
+·The 37 eligible research 
+articles 
+were 
+reviewed 
+to 
+extract 
+relevant 
+data, including study design, participant 
+character- 
+istics, 
+diagnostic and outcome 
+measures, 
+intervention 
+type 
+and characteristics 
+(level of 
+family involvement and 
+whet
+cor not family factors were 
+targeted), 
+and outcomes. 
+Authors 
+were 
+contacted 
+to request 
+any relevant 
+information 
+not 
+included 
+in the published articles 
+and this data 
+were 
+incor- 
+porated where provided. All corresponding authors 
+were 
+furnished 
+with 
+their study·s respective calculations 
+compris- 
+ing Table 
+2 (and used 
+in moderator 
+analyses) and 
+invited 
+to 
+provide any additional 
+information 
+not 
+included 
+in the pub- 
+lished 
+papers. 
+A total of 64% of studies· 
+authors responded, 
+the majority 
+to 
+confirm 
+the data presented to 
+them. 
+To 
+the effectiveness of 
+each study's intervention(s), 
+in 
+particular the degree of symptom 
+and family factor change 
+-follow-up 
+treatment 
+effects 
+were 
+calculated 
+for all 
+relevant 
+outcome 
+measures. 
+Cohen's 
+d within-group 
+effect 
+sizes 
+for control 
+conditions 
+(e.g, 
+are 
+available 
+on 
+request from authors. 
+Risk of bias 
+was 
+evaluated 
+according to domains 
+identi 
+fied inthe 
+Cochrane 
+Collaboration·s 
+Tool for Assessing Risk 
+of 
+Bias (Higgins etal. 2011): Selection 
+bias (random alloca- 
+tion; 
+allocation 
+concealment, 
+performance bias (blinding 
+of participants 
+and personnel), detection 
+bias (blinding of 
+outcome 
+assessment·client 
+report/externally rated, 
+atri- 
+tion 
+bias (incomplete outcome 
+data·post/follow-up) 
+and 
+reporting bias (selective reporting). Risk of bias ratings (low, 
+high, or uncertain) 
+were 
+assigned to studies 
+foreach of 
+the 
+aforementioned 
+categories, 
+where relevant. 
+Risk of bias was 
+assessed by a second 
+rater 
+for 35% of the 
+articles 
+and 
+a 96% 
+agreement 
+rate 
+was 
+obtained 
+·Meta-analytic statistics 
+were 
+employed using 
+the pro- 
+gram Comprehensive Meta-Analysis (CMA; 
+Borenstein 
+et al. 2005). The random 
+effects model rather than the fixed 
+®Springer
+482 
+Clinical Child and Family Psychology Review 
+(2019) 
+22:478-501 
+Fig.1 PRISMA 
+flowchart 
+of 
+study selection 
+process 
+554) 
+Malin 
+(=) 
+ate (n= 
+41), 
+Reference 
+aces 
+combina 
+(r= 
+101) 
+(n= 229) 
+scan 
+on abut 
+291) 
+emer 
+oa 
+cue 
+eee 
+Sine 
+et 
+Non 
+pin 
+Review 
+(r= 96) 
+Dope 
+atl 
+deed 
+ose 
+ple 
+5 
+(n= 37) 
+cffects 
+model, 
+was 
+used for all analyses as 
+the included 
+studies 
+varied 
+somewhat 
+in design 
+and participant 
+tion 
+(Borenstein et al. 2009), Within-group effect sizes and 
+variances 
+were 
+calculated 
+using 
+the Hedge's g 
+to 
+assess 
+pre-post and pre-followup 
+treatment 
+effets 
+for the 
+main 
+OCD symptom 
+and family factor 
+measures. 
+As 
+·ommended 
+by Rosenthal 
+(1993), 
+a conservative 
+estimate 
+(r=0.7) of 
+the correlations 
+between 
+pre-and postreatment 
+measures 
+was 
+used 
+a 
+these 
+were 
+not typically reported in 
+included 
+articles. 
+Within-group pooted mean 
+eflect 
+sizes 
+were 
+also computed. Heterogeneity was 
+assessed 
+using 
+Cochran's 
+Q statistic 
+and 
+p value, and the 
+F statistic. 
+sig- 
+nificant 
+p value 
+forthe 
+Q statistic 
+indicates 
+D Springer 
+(i.e. the true 
+effects vary 
+from 
+study 
+to study). The P statis- 
+tic indicates 
+the degree to which 
+variation 
+between 
+studies 
+is due to heterogeneity and is reported in percentages, 
+where 
+06% reflects 
+no heterogeneity, 25% indicates 
+low heterogene- 
+ity, and 50% and 75% reflect moderate 
+and high heterogene- 
+respectively. Risk of publication bias 
+was 
+determined 
+using Duval 
+and Tweedie·s 
+Trim 
+and Fill Procedure
+(2000
+The pooled effect 
+size is 
+adjusted in order 
+to yield an 
+unbiased 
+estimate 
+of the effect 
+size. In addition, the Classic 
+safe N (Rosenthal 1979) was 
+calculated 
+to identify the 
+·number 
+of missing papers required to reduce 
+a significant 
+pp value 
+to less than alpha (<0.05). Meta-regression analy 
+ses 
+were 
+employed to investigate moderators 
+of treatment 
+Glinical Child and Family Psychology Review (2019) 22:478-501 
+483 
+effects. The variables 
+investigated included 
+Family Hours 
+(the proportion 
+of total 
+treatment 
+time 
+that parents/family 
+·members 
+attended 
+treatment 
+sessions 
+with 
+the young 
+per- 
+son), Parent 
+Hours 
+(the proportion 
+of total 
+treatment 
+time 
+that parents 
+were 
+seen 
+on 
+their 
+own 
+during treatment), 
+and 
+Number 
+of Family Factors 
+(the number 
+of family factors 
+directly targeted in treatment) 
+Results 
+Systematic Review 
+Demographics, Assessment 
+and Outcome 
+Measures 
+Refer 
+to Table 
+| for details. 
+Participant Characteristics 
+A\ total of 1727 participants comprised the 37 studies included 
+in the review. 
+Sample sizes 
+of included 
+studies ranged from 
+6 to 204 participants, 
+with 
+a median 
+sample size 
+of 31 par- 
+ticipants. The mean 
+age of OCD participants ranged from 5.8 
+to 145 
+years (Mdn= 12.8 years). The median 
+percentage of 
+female participants 
+was 
+45%, with 
+a range of 17-67%: 
+Study Design Characteristics 
+·The majority 
+of studies 
+were 
+designed as uncontrolled 
+tri- 
+als (UCT; 51%), followed 
+by randomised 
+controlled 
+trials 
+(RCT; 
+41%) 
+and 
+multiple baseline 
+controlled trials 
+(MBCT; 
+8%). A total 
+of 65% of 
+the 
+studies included 
+a follow-up time 
+point for 
+outcome 
+measures, 
+with 
+a range of 1-18 
+months 
+(Mdn=6 
+months). 
+Assessment Measures 
+·The majority 
+of studies 
+used semi-structured 
+interviews 
+to, 
+·establish 
+clinical 
+diagnoses for participants: 
+65% of stud- 
+ies 
+used the Anxiety 
+Disorders 
+Interview 
+Schedule ~ 
+Child· 
+Parent 
+versions 
+(ADIS-C/P; 
+Silverman et 
+al, 
+11% 
+used the Kiddie 
+Schedule 
+for Affective 
+Disorders 
+and Schiz- 
+ne versions 
+(K-SADS-P/L; 
+Kauf- 
+Outcome 
+Measures 
+The primary 
+outcome 
+measure 
+used to 
+assess 
+OCD 
+symp- 
+toms 
+in 
+the majority 
+(95%) of studies 
+was 
+the Children's 
+Yale-Brown 
+Obsessive 
+Compulsive Seale (CY-BOCS; 
+Sca- 
+hill 
+et al. 1997; 33 
+studies) or the 
+Y-BOCS 
+(Goodman 
+etal 
+1989; 2 studies). A range of 
+other symptom 
+measures 
+were 
+also used, as reported in 
+Table 
+I and Table 
+3, A toal 
+of 32% 
+factors: All 
+12 studies 
+assessed 
+FA, 
+1g the Family Accommodation 
+Scale 
+(FAS; 
+Calvocoressi 
+etal. 
+1995, 1999; FAS-PR; 
+et al. 2009). A second 
+family variable 
+was 
+only assessed 
+pre- 
+and post-treatment 
+in 
+11% of studies (n=4) 
+using 
+a range of 
+·measures 
+reported in Table 
+| and 
+Table 3. Behavioural 
+tasks 
+Treatment 
+Program Characteristics 
+All studies used 
+a CBT 
+with 
+ERP 
+intervention. 
+The majority 
+of studies (76%; n=28) 
+delivered 
+treatment 
+in 
+an 
+individual 
+face-to-face 
+format 
+(I), 
+followed by group 
+(G: 
+24%; 
+n=9) 
+and 
+individual 
+remote 
+(R; audio/video calls; 16%; n=6) 
+formats. 
+A total of 32% of 
+studies reported that treatment 
+was 
+based on 
+March 
+and Mulle·s 
+(1998) CBT 
+manual. 
+The remaining 
+stud- 
+ies 
+used 
+a range of other CBT 
+treatment 
+programs 
+outlined 
+in Table 2. 
+·The total 
+number 
+of 
+treatment 
+hours provided across 
+studies 
+ranged from 
+8 to 
+33 h over 
+a range of 3-18 
+weeks 
+(Mdn=17 
+1/13 weeks). Programs included 
+time 
+with 
+par- 
+ents 
+without 
+the young 
+person present in 49% of 
+studies 
+for a 
+median 
+of 
+5.5 h (range=0.5-13.5 h), The number of 
+family 
+provided, where family members 
+(usually parent/s) were 
+included 
+in 
+sessions 
+with 
+the young 
+person, ranged from 0 h 
+(021 
+hacross 
+studies, with 
+a median 
+of 
+6h. 
+A total 
+of 14% (n=5) 
+of studies 
+did 
+not directly address 
+family factors during treatment, 
+and therefore, comprise 
+Cat- 
+egory 
+I. The remaining 
+86% 
+(n=32) 
+of studies met criteria 
+for 
+Category 2 by 
+targeting at least one family 
+treatment 
+IFA was 
+the family factor most 
+commonly targeted, in 
+a total of 
+97% (n=31) of 
+Category 2 studies. The majority of 
+Category 
+2 studies (475; 
+n= 
+15) reported addressing a total 
+of one 
+fam- 
+ily factor 
+during 
+treatment, 
+either 
+FA (93%; n= 
+14), or 
+conflict 
+(1%; n= 
+1). Fewer studies addressed a 
+second (28%; n=9)
+or 
+third (19%; n=6) family factor. Only 2 studies (6%) reported 
+targeting more 
+than three family factors 
+in 
+treatment: 
+Peris and 
+Piacentini 
+(2013) and Peris 
+et al. (2017) addressed a 
+total of| 
+five family factors 
+in their 
+interventions. 
+Overall Treatment 
+Effects for Symptom and Family Factor 
+Measures 
+As detailed 
+in Table 3, all studies demonstrated 
+a large positive 
+·within-group effect for 
+pre-to posttreatment 
+and pre-treatment 
+to follow-up time 
+points for the main 
+OCD symptom 
+measure 
+used, the C/Y-BOCS. 
+Cohen's d 
+effect 
+sizes for 
+the 
+C/Y-BOCS 
+ranged from 
+d=0.79 
+to d=3.61 
+(Man d= 
+1.88) 
+for Pre-Post, 
+and d= 1.31 to 
+d=3.34 
+(Mdn 
+d=2.01) for 
+Pre-Follow-up. The 
+springer 
+first follow-up time point was used in calculations 
+where stud 
+ies reported multiple follow-up time 
+points. 
+All 
+studies indicated 
+positive 
+treatment 
+effects 
+on 
+measures 
+of FA: 
+10 studies demonstrated 
+large effects and 1 study a 
+·medium effect at posttest, and at follow-up 5 studies showed a 
+large effect and 1 
+study a small 
+effect. Effect 
+sizes 
+for measures 
+of FA ranged 
+between 
+d=0.52 
+and 
+d=2.04 
+(Man 
+d= 1.04) for 
+Pre-Post 
+and from 
+d=0.32 
+to d= 
+1.77 (Mdn d= 
+1.29) for Pre- 
+Follow-up. An extended 
+table with Cohen's 
+d within-group, 
+effect 
+sizes 
+for anxiety, 
+depression, behaviour, 
+and parent 
+symptom 
+measures 
+is available 
+on request from 
+authors. 
+Risk of Bias 
+Table 
+4 illustrates 
+that overall 
+a Low 
+risk of bias 
+status 
+was, 
+identified 
+for studies in 
+the categories: Blinding of outcome 
+assessment 
+(client report), Incomplete outcome 
+data·Post, 
+and Follow-up (where relevant) and Selective reporting, with 
+the majority 
+of studies receiving 
+a Low risk rating. The catego- 
+ries 
+comprising 
+Selection 
+bias, namely Random 
+sequence 
+gen- 
+eration and Allocation 
+concealment, 
+were 
+not relevant 
+to the 
+designs of 
+a large percentage (51%) of included studies. Where 
+relevant, 
+the majority 
+of studies 
+(30%) received 
+an 
+Unclear 
+risk 
+of bias rating 
+as insufficient 
+information 
+was 
+provided 
+in 
+the aforementioned 
+two categories to assist with making. 
+clear decisions regarding how well studies complied
+with best 
+practise. 
+The majority 
+(86%) of 
+the remaining 
+seven 
+studies 
+·were 
+evaluated 
+to be at Low risk of bias 
+in both categories. The 
+category of 
+Blinding of participants/personal 
+comprising Per 
+formance 
+bias was 
+not applicable to the design of 86% of the 
+studies. 
+Where applicable, most 
+ofthe studies 
+(80%) received 
+an Unclear 
+rating. The Blinding of 
+outcome 
+assessment 
+(exter- 
+nally rated) category predominately received 
+Low risk of bias
+ratings (57%), however, 
+a large percentage of studies (38%) 
+received 
+Unclear 
+ratings. Overall, 
+the studies 
+included 
+in this. 
+review 
+were 
+evaluated 
+as meeting 
+criteria 
+for low risk of bias, 
+generally indicating research 
+of sound quality. However, more 
+detailed 
+information 
+provided in published papers related 
+to 
+randomisation 
+(where relevant) 
+and assessment 
+procedures. 
+·would 
+enhance 
+appraisal of the quality of research and reli- 
+ability of findings. 
+Meta-analysis 
+Within-Group Effects 
+Hedges's ¢ within-group effect 
+sizes 
+were 
+generated for the 
+30 
+studies (N= 
+1227) assessing 
+OCD symptoms 
+at pre- and 
+post-treatment 
+using the C/Y-BOCS 
+(see Fig. 2a). All studies 
+indicated 
+a significant positive 
+effect: 
+two 
+studies 
+showed 
+a 
+·medium effect according to Cohen's 
+(1988) rule of thumb: 
+and the remaining 
+32 studies 
+demonstrated 
+a large effect. 
+The pooled mean 
+effect 
+size 
+was 
+g=1.56, 
+95% 
+CI [1.42, 
+springer 
+1.7], p=0.000, 
+indicating a large, significant effect. Tests, 
+of heterogeneity demonstrated 
+the presence 
+of high-mod- 
+erate 
+significant heterogeneity, Q (33) = 
+125.28, 
+73.66%. Hedges·s 
+g within-group 
+effect 
+sizes 
+were 
+gen- 
+erated for the 20 studies (n=575) reporting pre- ard follow- 
+up scores 
+for the C/Y-BOCS 
+(see Fig. 2b). The pooled mean. 
+effect 
+size 
+was 
+= 
+1.69, 95% CI [1.53, 1.85], 
+indicating a large, significant effect. Tests of heterogeneity 
+showed significant moderate heterogeneity, Q (23) 
+p=0.000, 
+The difference 
+between 
+the pooled 
+·mean effect 
+size 
+generated for pre-post and for pre-follow-up 
+ne points was 
+not significant (p=0.22), 
+FAWithin-Group Effects 
+Hedges's g within-group effect 
+sizes 
+were 
+computed for the 
+nine studies 
+(n=274) assessing FA 
+at pre- 
+and post-treat- 
+·ment (the 11 values are detailed 
+in Fig. 
+3a) All studies indi- 
+cated 
+a significant positive 
+effect: eight values 
+demonstrated 
+large effect, and two 
+values 
+a medium 
+effect. 
+A significant 
+large pooled mean 
+effect 
+size 
+of 1.00, 95% CI (0.8, 1.21], 
+P=0.000, 
+was 
+calculated, 
+Significant moderate 
+neteroge- 
+neity 
+was 
+indicated, Q (10)=29.7, 
+p=0.001, 
+P:=66.33% 
+Hedge's g within-group effect 
+sizes 
+were 
+calculated 
+for the 
+six 
+studies 
+assessing 
+FA at pre-treatment and fol- 
+Jow-up time 
+points, outlined in 
+Fig. 3b. A significant, large 
+pooled mean 
+effect 
+size 
+of 
+g= 1.98, 95% 
+CI [0.83, 1.53], 
+p=0.000, 
+was 
+computed. Significant, high heterogeneity 
+·was 
+indicated, 
+Q (7)=36.38, 
+p=0.000, 
+F 
+=80.76%. The dif- 
+ference between the pooled mean 
+effect 
+size 
+for pre-post and. 
+for pre-follow-up time 
+points 
+was 
+not significant (p=0.75). 
+Publication 
+Bi 
+Duval 
+and Tweedie·s 
+Trim 
+and Fill 
+Procedure 
+(2000a, 6) 
+was 
+employed to provide an adjusted pooled mean 
+effect 
+size 
+for the C/Y-BOCS, 
+taking into 
+account 
+any publica- 
+tion 
+bias identified 
+in the funnel plot (see Fig. 4). The 
+me 
+effect 
+size 
+was 
+reduced from ¢ 
+A2(n=8 
+val- 
+tues 
+removed), 
+to yield an 
+estimate 
+of the unbiased pooled 
+effect 
+size. 
+An adjusted mean 
+effect 
+size 
+for 
+FA 
+was 
+also 
+computed: The pooled mean 
+effect 
+size 
+was 
+reduced 
+from 
+¢=0.9 
+(n=2 
+values removed). 
+Publication 
+bias 
+was 
+also assessed using 
+the Classic fail- 
+safe N calculation 
+(Rosenthal 1979). The number 
+of 
+miss- 
+ing papers 
+needed 
+to reduce 
+the p value 
+to less than alpha 
+(<0.05) 
+was 
+calculated 
+as 6152 papers. 
+As the total 
+num- 
+ber of studies 
+meeting 
+inclusion 
+criteria 
+for this 
+review 
+was. 
+37, itis 
+highly unlikely that 6152 
+papers 
+were 
+missed. 
+This 
+suggests that publication bias does not affect the significant 
+relationship found between family-based interventions 
+for 
+children 
+and adolescents 
+with 
+OCD and OCD symptom 
+out- 
+come 
+measured 
+by the C/Y-BOCS. 
+Exploration of 
+Within-Group Effects Moderators 
+The 
+continuous 
+variables 
+of family hours, parent hours, 
+and. 
+·number 
+of family factors 
+were 
+employed in meta-regression 
+analyses for OCD symptom and FA outcomes 
+using the ran- 
+dom effects 
+model. The 
+number 
+of family factors targeted in 
+treatment 
+was 
+found 
+to significantly moderate 
+outcome 
+on 
+measures 
+of FA 
+p=0.03). 
+The greater the number 
+of family factors targeted in 
+treatment, 
+the larger 
+the 
+effect. 
+size 
+for 
+FA and therefore 
+the greater 
+the reduction 
+in 
+FA. 
+from 
+pre- 
+to post-treatment. 
+Considering the variables 
+of 
+Parent 
+Hours 
+and Family Hours 
+for the 
+nine 
+studies 
+that 
+assessed FA at pre-and post-treatment, 
+67% yielded an 
+identical 
+score 
+for both 
+Parent 
+Hours 
+(Mdn=0) 
+and Family 
+Hours 
+(Mdn= 
+1). Due 
+to 
+the low variability 
+in 
+scores 
+evi- 
+dent for parent hours 
+and family hours for the small number 
+of studies 
+assessing 
+FA, 
+no 
+further 
+analyses for FA 
+were 
+undertaken 
+using 
+these two 
+variables. 
+Neither family hours. 
+p=0.94), 
+parent hours 
+(:=~0.17, 
+p=0.86), 
+nor 
+number 
+of family factors 
+(2 
+=-0.72, p=0.47) yielded sig- 
+nificant 
+point 
+estimates 
+of the slope for the symptom out- 
+come 
+measure, 
+the C/Y-BOCS, 
+including when combined. 
+·The categorical variable 
+of Category 
+2 studies 
+·was 
+investigated as 
+a potential moderator 
+of OCD 
+symptom. 
+and FA outcomes. 
+Category of study was 
+not found to be a 
+significant moderator 
+of OCD 
+(2: 
+19) nor 
+FA 
+0.19, 
+p=0.85) 
+outcomes. 
+Discussion 
+·The current 
+meta-analysis and systematic 
+review 
+examined, 
+the effect of family-based interventions 
+on 
+OCD symptom. 
+·outcomes 
+as well 
+as 
+on 
+a range 
+of family factor 
+outcomes. 
+(including FA, blame, cohesion, 
+conflict, 
+and general fam- 
+ily functioning) 
+for children 
+and 
+adolescents 
+with 
+OCD. 
+The broad 
+inclusion 
+criteria 
+encompassed controlled 
+and. 
+uncontrolled 
+studies 
+with 
+a wide 
+range of parental involve- 
+·ment 
+in treatment, 
+including interventions 
+that directly 
+sought to 
+address 
+family factors 
+(Category 2) as well 
+as 
+those 
+that 
+did 
+not 
+target family factors 
+(Category 1). The 
+current 
+meta-analysis aimed 
+to 
+illuminate 
+family-related 
+treatment 
+factors associated 
+with improved outcomes 
+and. 
+uniquely considered 
+the relative 
+impact 
+on 
+treatment 
+out- 
+comes 
+of CBT 
+with, 
+versus 
+without, 
+the direct 
+targeting 
+of 
+family factors for young 
+people with 
+OCD. 
+This 
+is the first 
+·meta-analytic study to consider 
+the moderating effects of 
+the number 
+of family factors 
+targeted in 
+treatment 
+on 
+OCD. 
+symptoms 
+and 
+FA 
+outcomes, 
+including 
+precise 
+caleula- 
+tions 
+of the proportion 
+of total 
+treatment 
+time 
+that parents, 
+were 
+seen 
+alone, and when involved 
+in family sessions. 
+Overall, 
+family-based 
+interventions 
+were 
+found 
+to 
+be 
+effective 
+for children 
+and adolescents 
+with 
+OCD. 
+All studies 
+springer 
+evaluated 
+demonstrated a 
+significant positive 
+treatment 
+effect 
+for both 
+OCD 
+symptoms 
+and FA, 
+at posttest and follow-up, 
+regardless of whether family factors 
+were 
+directly targeted 
+(ie., Category 
+1 and Category 2 interventions), 
+The pooled 
+·mean 
+effect 
+size 
+for the C/Y-BOCS 
+was 
+large and significant 
+for both pre-post and pre-follow-up comparisons. 
+Large, sig 
+nificant 
+treatment 
+effects 
+were 
+also demonstrated 
+for FA at 
+both time 
+points. The large treatment 
+effects obtained 
+for 
+OCD 
+symptoms 
+and FA 
+are 
+consistent 
+with findings of pre- 
+vious 
+meta-analyses (¢.g., Iniesta-Sepiilveda et al. 2017), 
+lending further support for the effectiveness 
+of family-based 
+interventions 
+in reducing OCD symptoms, as well 
+as FA, in 
+young 
+people with 
+OCD. 
+One 
+of the primary 
+findings of this study was 
+that 
+the 
+number 
+of family factors targeted in treatment 
+significantly 
+·moderated 
+treatment 
+outcomes 
+on 
+measures 
+of FA. Thus, 
+the greater the number 
+of family factors 
+targeted in 
+treat- 
+·ment, 
+the greater the reduction 
+in FA, 
+an unhelpful 
+fam- 
+ily response, 
+from pre- to post-treatment. 
+FA scores 
+have 
+been significantly correlated 
+with 
+OCD 
+symptom 
+severity. 
+in 
+previous 
+meta-analyses (¢.g., Strauss 
+et al. 2015; Wu 
+et al. 2016), Treatment 
+trials have demonstrated 
+the asso- 
+ciation 
+between 
+FA and poorer 
+treatment 
+outcomes 
+(e.2., 
+Garcia 
+et al. 2010; Merlo 
+et al. 2009; Storch 
+et al. 2008). 
+Peris 
+et 
+al. (2017) 
+found 
+that changes in 
+FA 
+accounted 
+for changes in clinical 
+symptoms, 
+and therefore 
+clinical 
+improvement, 
+for young 
+people with 
+OCD. 
+The authors. 
+identified 
+FA 
+as 
+a potential mechanism 
+for change in 
+the 
+treatment 
+of youth with 
+OCD, contributing 
+to 
+previous 
+findings by Piacentini 
+etal. 
+(201 1), 
+Piacentini 
+et al. 
+(2011) 
+springer 
+Fig.3 
+a Forest plot of Hedges· ¢ indices 
+for f 
+secommodation 
+measures 
+pre-follow-up 
+demonstrated 
+that FA-mediated 
+OCD symptom 
+outcomes 
+and found 
+that changes in FA preceded OCD 
+symptom. 
+change. The findings of the 
+current 
+study highlight 
+the 
+importance 
+of reducing family-related maintaining 
+factors, 
+such 
+as FA, by specifically targeting 
+these 
+family 
+f 
+in OCD 
+interventions 
+for young people to optimise 
+treat- 
+ment 
+response. 
+The current 
+findings indicate 
+that FA is 
+not 
+the only critical 
+family variable 
+to target 
+in 
+treatment 
+to enhance 
+outcomes. 
+In fact, the 
+more 
+family factors 
+tar- 
+the greater 
+are 
+these 
+outcomes. 
+This study's findings 
+add further 
+support to preliminary results presented in the 
+treatment 
+literature 
+that specific family factors, 
+such 
+as 
+family cohesion, conflict, 
+and parental blame 
+of the young, 
+person, 
+can 
+affect 
+response 
+to 
+treatment 
+for young 
+people 
+with 
+OCD (Peris et al. 2012, 
+Peris 
+et al. 2017). 
+measures 
+pre-pos 
+treatment. 
+b Forest plot of Hedges's¢ 
+indices 
+for family 
+The 
+number 
+of family factors 
+targeted in 
+treatment 
+did 
+not significantly 
+moderate 
+OCD 
+symptom 
+outcomes. 
+as 
+measured 
+by the C/Y-BOCS. 
+It may 
+be that 
+measures. 
+of FA better 
+assess 
+behaviour 
+associated 
+with 
+unhelpful 
+family factors 
+than 
+a 
+measure 
+assessing 
+OCD 
+symptom 
+severity, Mounting evidence 
+suggests that changes in 
+FA. 
+may 
+moderate 
+or 
+even 
+mediate 
+OCD 
+symptom change 
+(Peris et 
+al. 2017; 
+Piacentini 
+et 
+al. 2011). Although this 
+relationship 
+was 
+not 
+significant 
+in 
+the 
+current 
+study, this 
+may 
+be due 
+to the small 
+number 
+of studies 
+assessing 
+FA. 
+at pre- and post-treatment. 
+Despite the limited 
+measure- 
+·ment 
+of FA outcomes, 
+a small correlation 
+of 
+r=0.35 
+was. 
+still 
+identified 
+in 
+the 
+current 
+study between 
+change in 
+FA. 
+scores 
+and change in 
+OCD 
+symptom 
+scores 
+(C/Y-BOCS) 
+scores 
+pre- 
+to post-treatment. 
+Nil significant moderating 
+D springer 
+effects 
+were 
+found 
+for Category I versus 
+Category 2 stud- 
+ies 
+on 
+OCD 
+symptom 
+and FA 
+outcomes. 
+As the 
+continu- 
+ous 
+variable, 
+Number 
+of Family Factors, 
+is 
+a more 
+precise 
+operationalisation of the family factors targeted in 
+treat- 
+ment compared to the aforementioned 
+categorical variable 
+that uses 
+only two 
+broad categories 
+(family factors 
+vs 
+no 
+family factors), 
+the former 
+variable 
+likely better 
+identified 
+the moderating effects 
+of family factors 
+on 
+FA 
+outcomes. 
+·The current 
+study found that the amount 
+of time 
+parents 
+spent in family sessions 
+and/or alone with 
+the therapist did 
+not significantly moderate 
+OCD 
+symptom 
+outcomes. 
+The 
+impact 
+of Parent 
+Hours 
+and Family Hours 
+on 
+FA 
+outcome 
+·was 
+not analysed due to low variability in 
+scores 
+for the few 
+cligible studies 
+that 
+measured 
+FA. Nonetheless, 
+the current 
+findings possibly suggest that the amount 
+of family/parent 
+time 
+may be of less importance 
+than the number of 
+family 
+factors 
+addressed 
+during this time. 
+A previous 
+meta-analysis 
+by Rosa-Aleazar 
+and colleagues 
+et 
+al. 2015) 
+found 
+that parents· active 
+participation 
+in 
+treatment, 
+such 
+as when 
+parents 
+were 
+trained 
+to assist 
+their children 
+as ERP 
+·coaches, had a significant positive association 
+with the effect 
+size 
+for OCD 
+symptoms. 
+This 
+may 
+be the 
+case 
+for family 
+factors, 
+such that 
+time 
+spent by parents actively participat- 
+ing 
+in 
+treatment 
+to address 
+family maintaining 
+factors 
+may 
+have 
+more 
+of 
+an impact on 
+OCD 
+symptoms than merely 
+the 
+amount of 
+time 
+spent by parents attending treatment 
+Limitations 
+and Future Directions 
+Limitations 
+of the current 
+study include 
+that family factors 
+may 
+have 
+been indirectly targeted in Category 1 studies 
+·when parents were 
+present in treatment 
+sessions, 
+even 
+when 
+not 
+part of the treatment 
+protocol, particularly if these 
+fac- 
+tors 
+were 
+interfering with 
+treatment 
+progress. 
+Alternatively, 
+2 springer 
+family factors 
+may have been targeted directly as part of 
+a 
+study's standard 
+treatment 
+protocol without 
+authors 
+includ- 
+ing this information 
+in their 
+written 
+description of 
+treatment. 
+In 
+an effort 
+to 
+overcome 
+the latter 
+limitation, 
+authors 
+of all, 
+studies were 
+contacted 
+to confirm 
+the specific family factors 
+addressed 
+in each treatment 
+trial. 
+The majority 
+of authors. 
+responded and verified 
+the family factors 
+collated 
+by the 
+current 
+study. 
+Only 32% of included 
+studies 
+assessed 
+at least 
+one 
+family 
+factor both pre-and post-treatment, All 12 studies measured 
+FA and only four studies assessed a family factor other than 
+FA. 
+Due 
+to the small 
+number 
+of studies 
+assessing 
+FA and 
+the limited 
+variability in 
+scores 
+for Parent 
+Hours 
+and Family 
+Hours 
+for these studies, moderator 
+analyses for FA could 
+not be performed for the two 
+aforementioned 
+variables. 
+The 
+impact of potential moderators 
+on 
+other family factors, such 
+as blame, 
+criticism, 
+cohesion, 
+could 
+not 
+be explored due 
+to 
+the extremely small 
+number 
+of studies 
+measuring 
+these 
+additional 
+family factors. 
+While 
+all Category 2 studies 
+addressed 
+family factors, 
+predominately FA, there 
+is likely to have been variation 
+across 
+studies 
+in 
+how family factors 
+were 
+addressed. 
+Dif- 
+ferences 
+in therapist level 
+of training, 
+therapist style, and 
+content 
+of the treatment 
+programs 
+addressing family fac- 
+tors 
+could have affected 
+treatment 
+outcomes. 
+In particular, 
+some 
+programs 
+may 
+have 
+addressed 
+family factors 
+in 
+the 
+context 
+of psychoeducation, whereas 
+other 
+programs 
+may 
+have 
+included 
+a 
+more 
+practical skills-training 
+approach. 
+In addition, 
+more 
+experienced therapists may be adept at 
+experientially 
+addressing a range 
+of family factors, 
+and 
+understanding the function 
+of these 
+factors 
+for individual 
+families 
+in 
+the maintenance 
+of OCD symptoms. The quality 
+of the approach employed to address family factors and the 
+nature 
+of the potential differences 
+between 
+studies 
+would 
+only be quantifiable through observation 
+of sessions, 
+such 
+Clinical Child 
+and Family Psychology Review 
+(2019) 2:478-501 
+497 
+as the coding of treatment 
+session 
+recordings. As such, this, 
+remains 
+a focus area 
+for future research, however, relies 
+on 
+the availability of recordings (or transcripts 
+thereof) and/or 
+publicly available 
+data. 
+Moving forward, relatively little 
+is still 
+known 
+about 
+the 
+·components of family-based interventions 
+that 
+enhance 
+treatment 
+response 
+for young 
+people with OCD, including 
+optimal family-related treatment 
+content 
+as well 
+as the dose 
+and 
+nature 
+of family involvement. 
+Future 
+meta-analyses 
+would 
+advance 
+the literature 
+and build 
+on 
+current 
+findings. 
+by focusing further 
+on family-related treatment 
+moderators, 
+for young 
+people 
+with OCD, particularly as additional 
+data 
+becomes 
+available. 
+Findings from 
+the current 
+study's exami- 
+nation 
+of treatment 
+moderators 
+emphasise the importance 
+of addressing a number 
+of family factors (e.g... FA, conflict, 
+blame/criticism, 
+problem-solving, and communication) 
+future 
+interventions 
+for young 
+people with 
+OCD. 
+Further 
+research 
+is needed 
+to better understand 
+the most 
+effective 
+way of addressing these family factors. 
+Questions for further 
+exploration include 
+whether 
+family factors 
+need 
+to be exten- 
+sively addressed 
+and the relevant 
+skills practised by fami 
+·or whether 
+merely educating families 
+about the unhelpful 
+nature 
+of these 
+factors 
+and the role they play in 
+maintain- 
+ing OCD 
+is sufficient. 
+In addition, 
+whether 
+particular fam- 
+ily factors play more 
+of a maintaining role 
+in 
+the disorder 
+and, therefore, need greater 
+attention 
+in treatment 
+to bolster 
+symptom 
+improvement 
+remains 
+unclear. 
+Improved 
+reporting 
+of 
+the 
+specific 
+family 
+factors 
+addressed 
+in 
+treatment 
+will 
+assist 
+in identifying those 
+asso- 
+ciated with enhanced 
+outcomes: 
+Authors 
+are encouraged to 
+provide this information 
+in the method 
+section 
+of forthcom- 
+ing 
+research 
+papers. 
+More 
+frequent assessment 
+of family 
+variables 
+both pre-and post-treatment 
+using 
+standardised 
+measures 
+is necessary 
+to assist 
+with 
+of these 
+core 
+family maintaining 
+factors. 
+It 
+is suggested that 
+the 
+effects 
+on 
+FA 
+outcomes 
+of parent and family time 
+(in addi- 
+tion 
+to other potential family-related treatment 
+moderators) 
+be 
+re-examined 
+once 
+a larger number 
+of studies 
+have 
+meas- 
+ured 
+FA. 
+Future 
+research 
+would 
+further 
+assist 
+by focusing 
+on 
+the development and validation 
+of 
+measures 
+assessing, 
+a broader 
+range 
+of family factors, 
+as 
+current 
+measures 
+are 
+limited. 
+Measures 
+created 
+for multiple responders, such 
+as 
+parent, child, and clinician 
+(where possible), would 
+further 
+enrich 
+findings. A range 
+of assessment 
+modes 
+would 
+assist 
+to capture family factor 
+change from 
+pre to post treatment, 
+including behavioural 
+tasks such 
+as parent-child discussion 
+or 
+interaction 
+tasks. 
+Empirical research 
+comparing 
+interventions 
+that include 
+ni/minimal 
+family involvement 
+with 
+those 
+with high levels 
+of involvement 
+may provide a better 
+understanding of the 
+relative impact of degree of family participation. 
+This could 
+involve 
+further 
+comparing 
+interventions 
+where 
+family fac~ 
+tors 
+are directly targeted with 
+those 
+where family factors 
+are 
+not addressed (Category 1 vs. Category 2). Studies 
+ing 
+interventions 
+that target different 
+types of family fac- 
+tors 
+would 
+significantly 
+assist 
+to identify key family fac- 
+tors 
+affecting treatment 
+response. 
+The relationship between 
+family 
+factors addressed 
+in 
+treatment, 
+FA change, 
+and OCD. 
+symptom change pre- to post-treatment needs further 
+inves- 
+tigation, 
+including the mediatory relationship between 
+FA 
+and OCD 
+symptom 
+change proposed by previous 
+research 
+Piacentini 
+etal. 
+2011), 
+This systematic 
+review 
+and meta-analysis highlights the 
+importance 
+of addressing a range of family factors 
+in the 
+treatment 
+of child/adolescent 
+OCD 
+in order to enhance out- 
+comes 
+for young people and their 
+families. 
+Further 
+research 
+is warranted 
+to 
+improve 
+theoretical 
+models 
+and explain the 
+impact of parental involvement 
+in 
+treatment 
+and the direct. 
+targeting 
+of family factors 
+on family factor outcomes 
+imp 
+cated 
+in 
+the 
+maintenance 
+of OCD. 
+Compliance with 
+Ethical 
+Standards 
+Conflict of 
+interest 
+·The authors 
+declare 
+that they have 
+no 
+of 
+imerest. 
+Ethical Approval This 
+article 
+does not 
+contain 
+any studies 
+with 
+hu 
+participants 
+or animals 
+performed by 
+any of 
+the 
+authors. 
+References 
+American 
+Psychiatric Association, 
+(2013). Diagnostic and statistical 
+·manual of mental disorders 
+(Sth ed.). Arlington: American 
+Psy- 
+chiatric 
+Publishing. 
+Barret, P, 
+Farell, L., Dadds, 
+M., 
+& Boulter, N. 
+(2005), Cognitive- 
+family treatment 
+of childhood 
+obsessive-compulsive 
+disorder: Long-term follow 
+up and predictors of outcome. 
+Journal 
+ofthe American 
+Academy 
+of Child and Adolescent 
+Psychiatry, 44 
+1003-1014. 
+ips/doiorg/10. 
+1097/01 
+.chi.0000172855.26349.94, 
+Barrett, 
+P. M., 
+Farrell, L, Pina, 
+A. 
+A., 
+Peris, 
+T. 
+S., & Piacentini, J 
+(2008). 
+Evidence-based 
+psychosocial 
+treatments 
+for 
+child 
+and 
+adolescent 
+obsessive-compulsive 
+disorder. 
+Journal 
+of Clini- 
+cal 
+Child 
+and Adolescent Psychology, 
+37, 131-155. 
+Barret P., 
+Healy-Farrell L., & March, 
+J.S. (2003). Behavioral 
+aoid- 
+tance 
+test 
+for childhood 
+disorder: 
+A 
+based 
+observation. 
+American 
+Journal 
+of Psychotherapy, 57, 
+'80-99, htps//doi.org/10.1176/appi-psychotherapy.2013.57.1.80 
+Barrett, 
+P, Healy-Farrell, L., 
+& March, 
+J. S. (2004). Cognitive 
+behavioral 
+family treatment 
+of childhood 
+obsessive-compulsive 
+disorder: 
+A controlled 
+trial. Journal 
+of the American
+Academy 
+of Child 
+and 
+Adolescent 
+Psychiatry, 
+43, 46-62. 
+·rg/10.1097/00004583-200401000-00014. 
+Barrett, P, Shortt, 
+A., 
+& Healy, L. 
+(2002). 
+Do parent 
+and 
+child 
+differentiate 
+families 
+whose 
+children 
+have obsessive- 
+·compulsive disorder 
+from other 
+clinic 
+and non-clinic 
+families? 
+Journal 
+of Child Psychology and Psychiatry, 
+43, 397-607. 
+bps 
+org/10.1111/1469-7610.00049. 
+Benazon, 
+N.R., 
+Ager, J., & 
+Rosenberg, D. 
+R, (2002). Cognitive 
+therapy in 
+treatment-naive 
+children 
+and adolescents 
+springer 
