@@ -37,12 +37,46 @@ interface UploadProp {
   onPick: (file: File) => void;
 }
 
+function UploadButton({
+  label, accept, multiple, directory, busy, onFiles,
+}: {
+  label: string; accept?: string; multiple?: boolean; directory?: boolean;
+  busy: boolean; onFiles: (files: File[]) => void;
+}) {
+  const ref = useRef<HTMLInputElement>(null);
+  return (
+    <>
+      <input
+        ref={ref}
+        type="file"
+        accept={accept}
+        multiple={multiple}
+        {...(directory ? ({ webkitdirectory: "", directory: "" } as Record<string, string>) : {})}
+        className="hidden"
+        onChange={e => {
+          const files = Array.from(e.target.files ?? []);
+          if (files.length) onFiles(files);
+          e.target.value = "";
+        }}
+      />
+      <button
+        onClick={() => ref.current?.click()}
+        disabled={busy}
+        className="flex items-center gap-1 px-2 py-1 text-[11px] rounded-md border border-neutral-200 bg-white text-neutral-600 hover:border-blue-400 hover:text-blue-600 transition-colors disabled:opacity-50"
+      >
+        {busy ? <Loader2 size={11} className="animate-spin" /> : <Upload size={11} />}
+        {busy ? "Working…" : label}
+      </button>
+    </>
+  );
+}
+
 function ResourceCard({
-  icon, title, level, sourcePath, content, defaultExpanded, upload,
+  icon, title, level, sourcePath, content, defaultExpanded, upload, actions,
 }: {
   icon: React.ReactNode; title: string; level: StatusLevel;
   sourcePath?: string | null; content?: string | null; defaultExpanded?: boolean;
-  upload?: UploadProp;
+  upload?: UploadProp; actions?: React.ReactNode;
 }) {
   const [open, setOpen] = useState(defaultExpanded ?? false);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -94,6 +128,7 @@ function ResourceCard({
               </button>
             </>
           )}
+          {actions}
           <StatusIcon level={level} />
           {hasDetails && (
             <button onClick={() => setOpen(o => !o)} className="cursor-pointer">
@@ -166,6 +201,53 @@ export default function StartupDept({
       } else {
         const typeMsg = json.assignmentType ? ` — detected ${json.assignmentType}` : "";
         setNotice({ ok: true, msg: `${file.name} ingested${typeMsg}.` });
+        await loadStartup();
+      }
+    } catch (e) {
+      setNotice({ ok: false, msg: String(e) });
+    } finally {
+      setUploadingKind(null);
+    }
+  };
+
+  const handlePrevious = async (files: File[]) => {
+    setUploadingKind("previous");
+    setNotice(null);
+    try {
+      const fd = new FormData();
+      fd.append("kind", "previous");
+      files.forEach(f => fd.append("file", f));
+      const res = await fetch(`/api/projects/${projectId}/setup/ingest`, { method: "POST", body: fd });
+      const json = await res.json();
+      if (!res.ok) setNotice({ ok: false, msg: json.error ?? "Upload failed" });
+      else {
+        const skipped = (json.results ?? []).filter((r: { extracted: boolean }) => !r.extracted).length;
+        setNotice({ ok: true, msg: `${json.count} file(s) added${skipped ? ` (${skipped} need .docx support)` : ""}.` });
+        await loadStartup();
+      }
+    } catch (e) {
+      setNotice({ ok: false, msg: String(e) });
+    } finally {
+      setUploadingKind(null);
+    }
+  };
+
+  const handleCurriculum = async (subdir: "current" | "wiki", files: File[]) => {
+    setUploadingKind(`curriculum-${subdir}`);
+    setNotice(null);
+    try {
+      const fd = new FormData();
+      fd.append("kind", "curriculum");
+      fd.append("subdir", subdir);
+      files.forEach(f => {
+        fd.append("file", f);
+        fd.append("path", (f as File & { webkitRelativePath?: string }).webkitRelativePath || f.name);
+      });
+      const res = await fetch(`/api/projects/${projectId}/setup/ingest`, { method: "POST", body: fd });
+      const json = await res.json();
+      if (!res.ok) setNotice({ ok: false, msg: json.error ?? "Upload failed" });
+      else {
+        setNotice({ ok: true, msg: `Curriculum (${subdir}): ${json.copied} file(s) copied.` });
         await loadStartup();
       }
     } catch (e) {
@@ -322,6 +404,15 @@ export default function StartupDept({
           level={prevLevel}
           sourcePath={null}
           content={data?.previousAssignments.indexContent}
+          actions={
+            <UploadButton
+              label={prevCount > 0 ? "Add files" : "Pick files"}
+              accept=".pdf,.md,.txt"
+              multiple
+              busy={uploadingKind === "previous"}
+              onFiles={handlePrevious}
+            />
+          }
         />
 
         <ResourceCard
@@ -330,12 +421,29 @@ export default function StartupDept({
           level={curriculumLevel}
           sourcePath={null}
           content={data?.curriculum.content}
+          actions={
+            <>
+              <UploadButton
+                label="Current ▸ folder"
+                directory
+                busy={uploadingKind === "curriculum-current"}
+                onFiles={f => handleCurriculum("current", f)}
+              />
+              <UploadButton
+                label="Wiki ▸ folder"
+                directory
+                busy={uploadingKind === "curriculum-wiki"}
+                onFiles={f => handleCurriculum("wiki", f)}
+              />
+            </>
+          }
         />
       </div>
 
       <p className="text-[11px] text-neutral-400">
-        Previous Assignments and Curriculum pickers come next. Ingestion writes to your local
-        project folder and calls Claude — run the app locally (<code>npm run dev</code>).
+        Ingestion writes to your local project folder and calls Claude — run the app locally
+        (<code>npm run dev</code>). PDFs convert natively; <code>.docx</code> support is pending a
+        dependency install. Curriculum pickers grab a whole folder (current + wiki).
       </p>
     </div>
   );

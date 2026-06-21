@@ -1,8 +1,9 @@
-// Setup ingestion: receive an uploaded input file, copy the original into the
-// project's 00 Input/, and (for the assessment brief) use Claude to produce a
-// structured Markdown summary of what the assignment actually requires AND detect
-// whether it is an essay or a presentation. The detected type is written into
-// project-state.json (project.assignmentType).
+// Setup ingestion. Receives uploaded input files, copies originals into the
+// project's 00 Input/, and produces the Markdown the pipeline reads:
+//   brief / rubric / referencing -> a structured "what is required" summary (Claude);
+//                                    the brief also detects essay vs presentation.
+//   previous   -> verbatim Markdown extraction of each prior work (Alex's style source).
+//   curriculum -> copy a picked folder (current / wiki) in + a generated index.
 //
 // Local-only: writes to the 01 projects/ folder + calls the Anthropic API. The
 // deployed (read-only) app cannot use this route.
@@ -13,13 +14,15 @@ import fs from "fs/promises";
 
 const PROJECTS_DIR = path.resolve(process.cwd(), "..", "01 projects");
 
-// Canonical raw + markdown filenames per input kind (live under 00 Input/).
+// Single-file "understand the requirements" inputs -> canonical raw + md filenames.
 const KIND = {
   brief: { raw: "assessment_brief", md: "assessment_brief.md" },
   rubric: { raw: "grading_rubric", md: "grading_rubric.md" },
   referencing: { raw: "referencing_style_guide", md: "referencing_style_guide.md" },
 } as const;
-type Kind = keyof typeof KIND;
+type ConvertKind = keyof typeof KIND;
+
+const DOC_EXTS = [".pdf", ".md", ".txt"]; // .docx deferred until the converter is installed
 
 const BRIEF_PROMPT = `You are Christoph, the strict compliance lead at Essay Fabrik.
 You are given a university ASSESSMENT BRIEF. Produce a structured Markdown summary that an
@@ -64,111 +67,197 @@ const REF_PROMPT = `You are Christoph at Essay Fabrik. You are given a REFERENCI
 Summarise, in Markdown, the citation rules the writer must follow (in-text format, reference-list
 format, common pitfalls). Keep it practical and short.`;
 
-function promptFor(kind: Kind): string {
+const TRANSCRIBE_PROMPT = `Transcribe the attached document to clean Markdown. Preserve the
+author's EXACT wording, paragraph structure, and headings. Do NOT summarise, correct, or
+re-style — this is a faithful transcription used to learn the student's personal writing voice.
+Output only the transcription.`;
+
+function convertPrompt(kind: ConvertKind): string {
   if (kind === "brief") return BRIEF_PROMPT;
   if (kind === "rubric") return RUBRIC_PROMPT;
   return REF_PROMPT;
 }
 
-/** Build the user content block for Claude from the uploaded file. */
-function buildContent(buffer: Buffer, ext: string): Anthropic.ContentBlockParam[] {
+/** A Claude user content block from an uploaded file buffer. */
+function contentBlocks(buffer: Buffer, ext: string, instruction: string): Anthropic.ContentBlockParam[] {
   if (ext === ".pdf") {
     return [
       { type: "document", source: { type: "base64", media_type: "application/pdf", data: buffer.toString("base64") } },
-      { type: "text", text: "Process the attached document per your instructions." },
+      { type: "text", text: instruction },
     ];
   }
-  // md / txt — send as text
-  return [{ type: "text", text: buffer.toString("utf-8") }];
+  return [{ type: "text", text: `${instruction}\n\n${buffer.toString("utf-8")}` }];
 }
 
-function parseAssignmentType(markdown: string): "essay" | "presentation" | null {
-  const m = markdown.match(/assignmentType:\s*([a-zA-Z]+)/);
+async function runClaude(
+  client: Anthropic, system: string, blocks: Anthropic.ContentBlockParam[], maxTokens = 2048
+): Promise<string> {
+  const resp = await client.messages.create({
+    model: "claude-sonnet-4-6",
+    max_tokens: maxTokens,
+    system,
+    messages: [{ role: "user", content: blocks }],
+  });
+  return resp.content
+    .filter((b): b is Anthropic.TextBlock => b.type === "text")
+    .map((b) => b.text)
+    .join("\n")
+    .trim();
+}
+
+function parseAssignmentType(md: string): "essay" | "presentation" | null {
+  const m = md.match(/assignmentType:\s*([a-zA-Z]+)/);
   if (!m) return null;
   const v = m[1].toLowerCase();
   return v === "presentation" ? "presentation" : v === "essay" ? "essay" : null;
 }
+
+const safeName = (n: string) => n.replace(/[^a-zA-Z0-9._ -]/g, "_");
+const baseNoExt = (n: string) => n.replace(/\.[^.]+$/, "");
 
 export async function POST(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey || apiKey === "your-key-here") {
-    return NextResponse.json({ error: "ANTHROPIC_API_KEY not set in gui/.env.local" }, { status: 503 });
-  }
-
   const { id } = await params;
   const projectDir = path.join(PROJECTS_DIR, id);
+  const inputDir = path.join(projectDir, "00 Input");
 
   try {
     const formData = await request.formData();
-    const file = formData.get("file") as File | null;
-    const kind = (formData.get("kind") as string | null) as Kind | null;
+    const kind = formData.get("kind") as string | null;
+    if (!kind) return NextResponse.json({ error: "Missing kind" }, { status: 400 });
 
-    if (!file) return NextResponse.json({ error: "No file provided" }, { status: 400 });
-    if (!kind || !(kind in KIND)) {
-      return NextResponse.json({ error: `Unknown kind "${kind}"` }, { status: 400 });
+    const needsAI = kind === "brief" || kind === "rubric" || kind === "referencing" || kind === "previous";
+    if (needsAI && (!apiKey || apiKey === "your-key-here")) {
+      return NextResponse.json({ error: "ANTHROPIC_API_KEY not set in gui/.env.local" }, { status: 503 });
     }
+    const client = needsAI ? new Anthropic({ apiKey: apiKey! }) : null;
 
-    const ext = path.extname(file.name).toLowerCase();
-    if (![".pdf", ".md", ".txt"].includes(ext)) {
-      return NextResponse.json(
-        { error: `Unsupported file type "${ext}". Use PDF (or .md/.txt) for now — .docx support is coming next.` },
-        { status: 415 }
-      );
-    }
+    // ── Single-file requirement inputs: copy + convert to a structured summary ──
+    if (kind in KIND) {
+      const file = formData.get("file") as File | null;
+      if (!file) return NextResponse.json({ error: "No file provided" }, { status: 400 });
+      const ext = path.extname(file.name).toLowerCase();
+      if (!DOC_EXTS.includes(ext)) {
+        return NextResponse.json({ error: `Unsupported "${ext}". Use PDF/.md/.txt — .docx support is coming.` }, { status: 415 });
+      }
+      await fs.mkdir(inputDir, { recursive: true });
+      const buffer = Buffer.from(await file.arrayBuffer());
+      const ck = kind as ConvertKind;
+      const rawPath = path.join(inputDir, `${KIND[ck].raw}${ext}`);
+      await fs.writeFile(rawPath, buffer);
 
-    const inputDir = path.join(projectDir, "00 Input");
-    await fs.mkdir(inputDir, { recursive: true });
+      const md = await runClaude(client!, convertPrompt(ck), contentBlocks(buffer, ext, "Process the attached document per your instructions."));
+      const mdWithSource = `<!-- generated from ${file.name} on ingest -->\n\n\`\`\`\n${rawPath}\n\`\`\`\n\n${md}\n`;
+      await fs.writeFile(path.join(inputDir, KIND[ck].md), mdWithSource, "utf-8");
 
-    // 1. Copy the original in (kept local — gitignored for PDFs).
-    const buffer = Buffer.from(await file.arrayBuffer());
-    const rawPath = path.join(inputDir, `${KIND[kind].raw}${ext}`);
-    await fs.writeFile(rawPath, buffer);
-
-    // 2. Convert to a structured Markdown summary via Claude.
-    const client = new Anthropic({ apiKey });
-    const resp = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 2048,
-      system: promptFor(kind),
-      messages: [{ role: "user", content: buildContent(buffer, ext) }],
-    });
-    const markdown = resp.content
-      .filter((b): b is Anthropic.TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("\n")
-      .trim();
-
-    // Prepend a provenance line so the readiness check can resolve the original.
-    const mdWithSource = `<!-- generated from ${file.name} on ingest -->\n\n\`\`\`\n${rawPath}\n\`\`\`\n\n${markdown}\n`;
-    await fs.writeFile(path.join(inputDir, KIND[kind].md), mdWithSource, "utf-8");
-
-    // 3. For the brief, record the detected assignment type in project-state.json.
-    let assignmentType: "essay" | "presentation" | null = null;
-    if (kind === "brief") {
-      assignmentType = parseAssignmentType(markdown);
-      if (assignmentType) {
-        const statePath = path.join(projectDir, "project-state.json");
-        try {
-          const state = JSON.parse(await fs.readFile(statePath, "utf-8"));
-          state.project = state.project ?? {};
-          state.project.assignmentType = assignmentType;
-          await fs.writeFile(statePath, JSON.stringify(state, null, 2) + "\n", "utf-8");
-        } catch {
-          /* state file missing — skip, the .md still holds the type */
+      let assignmentType: "essay" | "presentation" | null = null;
+      if (ck === "brief") {
+        assignmentType = parseAssignmentType(md);
+        if (assignmentType) {
+          try {
+            const statePath = path.join(projectDir, "project-state.json");
+            const state = JSON.parse(await fs.readFile(statePath, "utf-8"));
+            state.project = state.project ?? {};
+            state.project.assignmentType = assignmentType;
+            await fs.writeFile(statePath, JSON.stringify(state, null, 2) + "\n", "utf-8");
+          } catch { /* state missing — md still holds the type */ }
         }
       }
+      return NextResponse.json({ success: true, kind, original: file.name, assignmentType, markdown: md });
     }
 
-    return NextResponse.json({
-      success: true,
-      kind,
-      original: file.name,
-      assignmentType,
-      markdown,
-    });
+    // ── Previous assignments: copy originals + verbatim Markdown extraction ──
+    if (kind === "previous") {
+      const files = formData.getAll("file").filter((f): f is File => f instanceof File);
+      if (files.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
+      const prevDir = path.join(inputDir, "previous_assignments");
+      await fs.mkdir(prevDir, { recursive: true });
+
+      const results: { name: string; extracted: boolean; note?: string }[] = [];
+      for (const file of files) {
+        const ext = path.extname(file.name).toLowerCase();
+        const buffer = Buffer.from(await file.arrayBuffer());
+        const clean = safeName(file.name);
+        await fs.writeFile(path.join(prevDir, clean), buffer); // original (gitignored if pdf/docx)
+
+        if (ext === ".md" || ext === ".txt") {
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), buffer.toString("utf-8"), "utf-8");
+          results.push({ name: file.name, extracted: true });
+        } else if (ext === ".pdf") {
+          const md = await runClaude(client!, TRANSCRIBE_PROMPT, contentBlocks(buffer, ext, "Transcribe the attached document."), 8192);
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), `<!-- verbatim extraction of ${file.name} -->\n\n${md}\n`, "utf-8");
+          results.push({ name: file.name, extracted: true });
+        } else {
+          results.push({ name: file.name, extracted: false, note: `${ext} kept local; text extraction pending docx support` });
+        }
+      }
+
+      // Rebuild index.md from what's on disk.
+      const entries = (await fs.readdir(prevDir)).filter((f) => !f.startsWith(".") && f !== "index.md");
+      const originals = entries.filter((f) => !f.endsWith(".md") || !entries.includes(f.replace(/\.md$/, "") + path.extname(f)));
+      const rows = entries.filter((f) => !f.endsWith(".md")).map((orig) => {
+        const md = `${baseNoExt(orig)}.md`;
+        return `| ${orig} | ${entries.includes(md) ? md : "—"} |`;
+      });
+      const index = `# Previous Assignments\n\nPrior works by the student — Alex matches the essay's voice to these.\nOriginals kept local; \`.md\` extractions are committed.\n\n| Original | Text extraction |\n|---|---|\n${rows.join("\n")}\n`;
+      await fs.writeFile(path.join(prevDir, "index.md"), index, "utf-8");
+
+      return NextResponse.json({ success: true, kind, count: files.length, results, totalOnDisk: originals.length });
+    }
+
+    // ── Curriculum: copy a picked folder (current / wiki) in + rebuild the index ──
+    if (kind === "curriculum") {
+      const subdirRaw = (formData.get("subdir") as string | null) ?? "current";
+      const subdir = subdirRaw === "wiki" ? "wiki" : "current";
+      const files = formData.getAll("file").filter((f): f is File => f instanceof File);
+      const relPaths = formData.getAll("path").map(String);
+      if (files.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
+
+      const curDir = path.join(inputDir, "curriculum");
+      const destRoot = path.join(curDir, subdir);
+      await fs.mkdir(destRoot, { recursive: true });
+
+      let copied = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        // Strip the chosen top folder from the relative path so we don't nest it twice.
+        const rel = (relPaths[i] || file.name).split("/").slice(1).join("/") || safeName(file.name);
+        const dest = path.join(destRoot, rel);
+        await fs.mkdir(path.dirname(dest), { recursive: true });
+        await fs.writeFile(dest, Buffer.from(await file.arrayBuffer()));
+        copied++;
+      }
+
+      // Rebuild curriculum/README.md from both subdirs.
+      async function listDir(sub: string): Promise<string[]> {
+        const out: string[] = [];
+        async function walk(d: string, base: string) {
+          let ents: import("fs").Dirent[] = [];
+          try { ents = await fs.readdir(d, { withFileTypes: true }); } catch { return; }
+          for (const e of ents) {
+            if (e.name.startsWith(".")) continue;
+            const rel = path.join(base, e.name).replace(/\\/g, "/");
+            if (e.isDirectory()) await walk(path.join(d, e.name), rel);
+            else out.push(rel);
+          }
+        }
+        await walk(path.join(curDir, sub), "");
+        return out;
+      }
+      const cur = await listDir("current");
+      const wiki = await listDir("wiki");
+      const sec = (title: string, files: string[]) =>
+        `## ${title}\n${files.length ? files.map((f) => `- ${f}`).join("\n") : "_(empty)_"}\n`;
+      const readme = `# Curriculum\n\nModule materials copied into this project. Markdown is committed; heavy files stay local.\n\n${sec("current/", cur)}\n${sec("wiki/", wiki)}`;
+      await fs.writeFile(path.join(curDir, "README.md"), readme, "utf-8");
+
+      return NextResponse.json({ success: true, kind, subdir, copied });
+    }
+
+    return NextResponse.json({ error: `Unknown kind "${kind}"` }, { status: 400 });
   } catch (err) {
     return NextResponse.json({ error: String(err) }, { status: 500 });
   }
