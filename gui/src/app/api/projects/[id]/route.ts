@@ -1,15 +1,13 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs";
-
-const PROJECTS_DIR = path.join(process.cwd(), "..", "01 projects");
+import { getProjectState, fsAvailable, PROJECTS_DIR } from "@/lib/projects-store";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   try {
-    const stateFile = path.join(PROJECTS_DIR, id, "project-state.json");
-    if (!fs.existsSync(stateFile)) return NextResponse.json({ error: "Not found" }, { status: 404 });
-    const state = JSON.parse(fs.readFileSync(stateFile, "utf-8"));
+    const state = getProjectState(id);
+    if (!state) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(state);
   } catch (e: unknown) {
     return NextResponse.json({ error: String(e) }, { status: 500 });
@@ -18,6 +16,13 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
 
 export async function PATCH(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  // Saving changes writes to disk — local/offline only. Online is read-only.
+  if (!fsAvailable()) {
+    return NextResponse.json(
+      { error: "Read-only online: edit projects in the local app." },
+      { status: 501 }
+    );
+  }
   try {
     const stateFile = path.join(PROJECTS_DIR, id, "project-state.json");
     if (!fs.existsSync(stateFile)) return NextResponse.json({ error: "Not found" }, { status: 404 });

@@ -1,9 +1,6 @@
-﻿import { NextResponse } from "next/server";
-import path from "path";
-import fs from "fs";
+import { NextResponse } from "next/server";
 import { canonicalId } from "@/lib/workflow-map";
-
-const PROJECTS_DIR = path.join(process.cwd(), "..", "01 projects");
+import { readProjectFile } from "@/lib/projects-store";
 
 // Keyed by canonical workflow id (see lib/workflow-map.ts). Extra legacy filenames
 // kept as fallbacks. Incoming phase params are resolved through canonicalId() so old
@@ -25,13 +22,8 @@ export async function GET(req: Request, { params }: { params: Promise<{ id: stri
   const url = new URL(req.url);
   const phase = canonicalId(url.searchParams.get("phase") ?? "brainstorming");
   const candidates = PHASE_FILES[phase] ?? [];
-  const base = path.join(PROJECTS_DIR, id);
-  for (const rel of candidates) {
-    const fp = path.join(base, rel);
-    if (fs.existsSync(fp)) {
-      const content = fs.readFileSync(fp, "utf-8");
-      return NextResponse.json({ phase, file: rel, content });
-    }
-  }
+  // Live filesystem first, bundled snapshot online (see projects-store).
+  const found = readProjectFile(id, candidates);
+  if (found) return NextResponse.json({ phase, file: found.rel, content: found.content });
   return NextResponse.json({ phase, file: null, content: null });
 }
