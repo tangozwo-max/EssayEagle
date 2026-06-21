@@ -28,6 +28,24 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Project already exists" }, { status: 409 });
     }
     fs.mkdirSync(dir, { recursive: true });
+
+    // Canonical 00 Input/ drop-folders so the user can move source files in by hand.
+    const INPUT_FOLDERS: [string, string, string][] = [
+      ["assignment_brief", "Assignment Brief", "the assignment brief / task description"],
+      ["grading_rubric", "Grading Rubric", "the grading rubric / marking criteria"],
+      ["referencing_guide", "Referencing Guide", "the referencing style guide"],
+      ["previous_assignments", "Previous Assignments", "the student's previous works (style reference)"],
+      ["curriculum", "Curriculum", "the module curriculum materials (use current/ and wiki/ subfolders)"],
+    ];
+    for (const [folder, title, note] of INPUT_FOLDERS) {
+      const fdir = path.join(dir, "00 Input", folder);
+      fs.mkdirSync(fdir, { recursive: true });
+      fs.writeFileSync(
+        path.join(fdir, "README.md"),
+        `# ${title}\n\nDrop ${note} here — PDF, .docx, .md, or .txt. Then open Setup and click Convert.\n`
+      );
+    }
+
     const state = {
       project: { id, name: body.name, module: body.module ?? "", status: "active" },
       currentPhase: "setup",

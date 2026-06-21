@@ -1,12 +1,14 @@
-// Setup ingestion. Receives uploaded input files, copies originals into the
-// project's 00 Input/, and produces the Markdown the pipeline reads:
-//   brief / rubric / referencing -> a structured "what is required" summary (Claude);
-//                                    the brief also detects essay vs presentation.
+// Setup ingestion / conversion. Two source modes, same conversion logic:
+//   - fromFolder=true : convert the file(s) the user already dropped into the canonical
+//                       00 Input/<type>/ folder (the primary, read-only-FS-friendly flow);
+//   - upload          : convert an uploaded file and copy it into that folder.
+// Outputs the Markdown the pipeline reads:
+//   brief/rubric/referencing -> a structured "what is required" summary (Claude); brief
+//                               also detects essay vs presentation -> project.assignmentType.
 //   previous   -> verbatim Markdown extraction of each prior work (Alex's style source).
-//   curriculum -> copy a picked folder (current / wiki) in + a generated index.
+//   curriculum -> an index of the copied current/ + wiki/ trees.
 //
-// Local-only: writes to the 01 projects/ folder + calls the Anthropic API. The
-// deployed (read-only) app cannot use this route.
+// Writes files + calls the Anthropic API, so it only works locally (read-only on Vercel).
 import { NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import mammoth from "mammoth";
@@ -15,11 +17,11 @@ import fs from "fs/promises";
 
 const PROJECTS_DIR = path.resolve(process.cwd(), "..", "01 projects");
 
-// Single-file "understand the requirements" inputs -> canonical raw + md filenames.
+// brief/rubric/referencing: a drop-folder + a canonical generated-markdown path.
 const KIND = {
-  brief: { raw: "assessment_brief", md: "assessment_brief.md" },
-  rubric: { raw: "grading_rubric", md: "grading_rubric.md" },
-  referencing: { raw: "referencing_style_guide", md: "referencing_style_guide.md" },
+  brief: { folder: "assignment_brief", md: "assessment_brief.md" },
+  rubric: { folder: "grading_rubric", md: "grading_rubric.md" },
+  referencing: { folder: "referencing_guide", md: "referencing_style_guide.md" },
 } as const;
 type ConvertKind = keyof typeof KIND;
 
@@ -84,7 +86,6 @@ async function docxToText(buffer: Buffer): Promise<string> {
   return result.value;
 }
 
-/** A Claude user content block from an uploaded file buffer (PDF native; docx/text inlined). */
 async function buildBlocks(buffer: Buffer, ext: string, instruction: string): Promise<Anthropic.ContentBlockParam[]> {
   if (ext === ".pdf") {
     return [
@@ -96,20 +97,9 @@ async function buildBlocks(buffer: Buffer, ext: string, instruction: string): Pr
   return [{ type: "text", text: `${instruction}\n\n${text}` }];
 }
 
-async function runClaude(
-  client: Anthropic, system: string, blocks: Anthropic.ContentBlockParam[], maxTokens = 2048
-): Promise<string> {
-  const resp = await client.messages.create({
-    model: "claude-sonnet-4-6",
-    max_tokens: maxTokens,
-    system,
-    messages: [{ role: "user", content: blocks }],
-  });
-  return resp.content
-    .filter((b): b is Anthropic.TextBlock => b.type === "text")
-    .map((b) => b.text)
-    .join("\n")
-    .trim();
+async function runClaude(client: Anthropic, system: string, blocks: Anthropic.ContentBlockParam[], maxTokens = 2048): Promise<string> {
+  const resp = await client.messages.create({ model: "claude-sonnet-4-6", max_tokens: maxTokens, system, messages: [{ role: "user", content: blocks }] });
+  return resp.content.filter((b): b is Anthropic.TextBlock => b.type === "text").map((b) => b.text).join("\n").trim();
 }
 
 function parseAssignmentType(md: string): "essay" | "presentation" | null {
@@ -122,19 +112,18 @@ function parseAssignmentType(md: string): "essay" | "presentation" | null {
 const safeName = (n: string) => n.replace(/[^a-zA-Z0-9._ -]/g, "_");
 const baseNoExt = (n: string) => n.replace(/\.[^.]+$/, "");
 
-export async function POST(
-  request: Request,
-  { params }: { params: Promise<{ id: string }> }
-) {
-  // Serverless (Vercel/Lambda) has a read-only filesystem — ingestion writes files,
-  // so it only works when the app runs locally. Fail clearly instead of EROFS.
+/** Source files a user dropped in a folder (excludes README/index/dotfiles). */
+async function listSources(dir: string): Promise<string[]> {
+  try {
+    const ents = await fs.readdir(dir, { withFileTypes: true });
+    return ents.filter((e) => e.isFile() && !e.name.startsWith(".") && e.name !== "README.md" && e.name !== "index.md").map((e) => e.name);
+  } catch { return []; }
+}
+
+export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
     return NextResponse.json(
-      {
-        error:
-          "Setup ingestion writes files into your project folder, which only works when the app runs locally (pnpm dev). The deployed app is read-only — run setup locally, commit & push, and it will appear here.",
-        readOnly: true,
-      },
+      { error: "Conversion writes files and only works locally (pnpm dev). The deployed app is read-only — convert locally, commit & push.", readOnly: true },
       { status: 501 }
     );
   }
@@ -147,6 +136,7 @@ export async function POST(
   try {
     const formData = await request.formData();
     const kind = formData.get("kind") as string | null;
+    const fromFolder = formData.get("fromFolder") === "true";
     if (!kind) return NextResponse.json({ error: "Missing kind" }, { status: 400 });
 
     const needsAI = kind === "brief" || kind === "rubric" || kind === "referencing" || kind === "previous";
@@ -155,22 +145,33 @@ export async function POST(
     }
     const client = needsAI ? new Anthropic({ apiKey: apiKey! }) : null;
 
-    // ── Single-file requirement inputs: copy + convert to a structured summary ──
+    // ── brief / rubric / referencing: one source -> structured markdown ──
     if (kind in KIND) {
-      const file = formData.get("file") as File | null;
-      if (!file) return NextResponse.json({ error: "No file provided" }, { status: 400 });
-      const ext = path.extname(file.name).toLowerCase();
-      if (!DOC_EXTS.includes(ext)) {
-        return NextResponse.json({ error: `Unsupported "${ext}". Use PDF, .docx, .md, or .txt.` }, { status: 415 });
-      }
-      await fs.mkdir(inputDir, { recursive: true });
-      const buffer = Buffer.from(await file.arrayBuffer());
       const ck = kind as ConvertKind;
-      const rawPath = path.join(inputDir, `${KIND[ck].raw}${ext}`);
-      await fs.writeFile(rawPath, buffer);
+      const folderDir = path.join(inputDir, KIND[ck].folder);
+      await fs.mkdir(folderDir, { recursive: true });
+
+      let name: string, ext: string, buffer: Buffer;
+      if (fromFolder) {
+        const sources = (await listSources(folderDir)).filter((n) => DOC_EXTS.includes(path.extname(n).toLowerCase()));
+        if (sources.length === 0) {
+          return NextResponse.json({ error: `No source file in 00 Input/${KIND[ck].folder}/. Drop your file there first.` }, { status: 404 });
+        }
+        name = sources[0];
+        ext = path.extname(name).toLowerCase();
+        buffer = await fs.readFile(path.join(folderDir, name));
+      } else {
+        const file = formData.get("file") as File | null;
+        if (!file) return NextResponse.json({ error: "No file provided" }, { status: 400 });
+        ext = path.extname(file.name).toLowerCase();
+        if (!DOC_EXTS.includes(ext)) return NextResponse.json({ error: `Unsupported "${ext}". Use PDF, .docx, .md, or .txt.` }, { status: 415 });
+        name = safeName(file.name);
+        buffer = Buffer.from(await file.arrayBuffer());
+        await fs.writeFile(path.join(folderDir, name), buffer); // copy into the drop folder
+      }
 
       const md = await runClaude(client!, convertPrompt(ck), await buildBlocks(buffer, ext, "Process the attached document per your instructions."));
-      const mdWithSource = `<!-- generated from ${file.name} on ingest -->\n\n\`\`\`\n${rawPath}\n\`\`\`\n\n${md}\n`;
+      const mdWithSource = `<!-- generated from 00 Input/${KIND[ck].folder}/${name} -->\n\n${md}\n`;
       await fs.writeFile(path.join(inputDir, KIND[ck].md), mdWithSource, "utf-8");
 
       let assignmentType: "essay" | "presentation" | null = null;
@@ -183,80 +184,82 @@ export async function POST(
             state.project = state.project ?? {};
             state.project.assignmentType = assignmentType;
             await fs.writeFile(statePath, JSON.stringify(state, null, 2) + "\n", "utf-8");
-          } catch { /* state missing — md still holds the type */ }
+          } catch { /* state missing */ }
         }
       }
-      return NextResponse.json({ success: true, kind, original: file.name, assignmentType, markdown: md });
+      return NextResponse.json({ success: true, kind, original: name, assignmentType, markdown: md });
     }
 
-    // ── Previous assignments: copy originals + verbatim Markdown extraction ──
+    // ── previous assignments: copy + verbatim markdown extraction per file ──
     if (kind === "previous") {
-      const files = formData.getAll("file").filter((f): f is File => f instanceof File);
-      if (files.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
       const prevDir = path.join(inputDir, "previous_assignments");
       await fs.mkdir(prevDir, { recursive: true });
 
-      const results: { name: string; extracted: boolean; note?: string }[] = [];
-      for (const file of files) {
-        const ext = path.extname(file.name).toLowerCase();
-        const buffer = Buffer.from(await file.arrayBuffer());
-        const clean = safeName(file.name);
-        await fs.writeFile(path.join(prevDir, clean), buffer); // original (gitignored if pdf/docx)
-
-        if (ext === ".md" || ext === ".txt") {
-          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), buffer.toString("utf-8"), "utf-8");
-          results.push({ name: file.name, extracted: true });
-        } else if (ext === ".docx") {
-          const text = await docxToText(buffer);
-          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), `<!-- verbatim extraction of ${file.name} -->\n\n${text}\n`, "utf-8");
-          results.push({ name: file.name, extracted: true });
-        } else if (ext === ".pdf") {
-          const md = await runClaude(client!, TRANSCRIBE_PROMPT, await buildBlocks(buffer, ext, "Transcribe the attached document."), 8192);
-          await fs.writeFile(path.join(prevDir, `${baseNoExt(clean)}.md`), `<!-- verbatim extraction of ${file.name} -->\n\n${md}\n`, "utf-8");
-          results.push({ name: file.name, extracted: true });
-        } else {
-          results.push({ name: file.name, extracted: false, note: `${ext} kept local; no text extractor` });
+      // Gather sources: either already-dropped files, or uploads we copy in.
+      let sourceNames: string[];
+      if (fromFolder) {
+        sourceNames = await listSources(prevDir);
+      } else {
+        const uploads = formData.getAll("file").filter((f): f is File => f instanceof File);
+        if (uploads.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
+        sourceNames = [];
+        for (const file of uploads) {
+          const clean = safeName(file.name);
+          await fs.writeFile(path.join(prevDir, clean), Buffer.from(await file.arrayBuffer()));
+          sourceNames.push(clean);
         }
       }
 
-      // Rebuild index.md from what's on disk.
-      const entries = (await fs.readdir(prevDir)).filter((f) => !f.startsWith(".") && f !== "index.md");
-      const originals = entries.filter((f) => !f.endsWith(".md") || !entries.includes(f.replace(/\.md$/, "") + path.extname(f)));
+      const results: { name: string; extracted: boolean }[] = [];
+      for (const fname of sourceNames) {
+        const ext = path.extname(fname).toLowerCase();
+        if (ext === ".md") { results.push({ name: fname, extracted: true }); continue; } // already markdown
+        const buffer = await fs.readFile(path.join(prevDir, fname));
+        if (ext === ".txt") {
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(fname)}.md`), buffer.toString("utf-8"), "utf-8");
+          results.push({ name: fname, extracted: true });
+        } else if (ext === ".docx") {
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(fname)}.md`), `<!-- verbatim extraction of ${fname} -->\n\n${await docxToText(buffer)}\n`, "utf-8");
+          results.push({ name: fname, extracted: true });
+        } else if (ext === ".pdf") {
+          const md = await runClaude(client!, TRANSCRIBE_PROMPT, await buildBlocks(buffer, ext, "Transcribe the attached document."), 8192);
+          await fs.writeFile(path.join(prevDir, `${baseNoExt(fname)}.md`), `<!-- verbatim extraction of ${fname} -->\n\n${md}\n`, "utf-8");
+          results.push({ name: fname, extracted: true });
+        } else {
+          results.push({ name: fname, extracted: false });
+        }
+      }
+
+      const entries = (await fs.readdir(prevDir)).filter((f) => !f.startsWith(".") && f !== "index.md" && f !== "README.md");
       const rows = entries.filter((f) => !f.endsWith(".md")).map((orig) => {
         const md = `${baseNoExt(orig)}.md`;
         return `| ${orig} | ${entries.includes(md) ? md : "—"} |`;
       });
       const index = `# Previous Assignments\n\nPrior works by the student — Alex matches the essay's voice to these.\nOriginals kept local; \`.md\` extractions are committed.\n\n| Original | Text extraction |\n|---|---|\n${rows.join("\n")}\n`;
       await fs.writeFile(path.join(prevDir, "index.md"), index, "utf-8");
-
-      return NextResponse.json({ success: true, kind, count: files.length, results, totalOnDisk: originals.length });
+      return NextResponse.json({ success: true, kind, count: sourceNames.length, results });
     }
 
-    // ── Curriculum: copy a picked folder (current / wiki) in + rebuild the index ──
+    // ── curriculum: (optionally copy an uploaded folder) + rebuild index.md ──
     if (kind === "curriculum") {
-      const subdirRaw = (formData.get("subdir") as string | null) ?? "current";
-      const subdir = subdirRaw === "wiki" ? "wiki" : "current";
-      const files = formData.getAll("file").filter((f): f is File => f instanceof File);
-      const relPaths = formData.getAll("path").map(String);
-      if (files.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
-
       const curDir = path.join(inputDir, "curriculum");
-      const destRoot = path.join(curDir, subdir);
-      await fs.mkdir(destRoot, { recursive: true });
+      await fs.mkdir(curDir, { recursive: true });
 
-      let copied = 0;
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        // Strip the chosen top folder from the relative path so we don't nest it twice.
-        const rel = (relPaths[i] || file.name).split("/").slice(1).join("/") || safeName(file.name);
-        const dest = path.join(destRoot, rel);
-        await fs.mkdir(path.dirname(dest), { recursive: true });
-        await fs.writeFile(dest, Buffer.from(await file.arrayBuffer()));
-        copied++;
+      if (!fromFolder) {
+        const subdir = (formData.get("subdir") as string | null) === "wiki" ? "wiki" : "current";
+        const files = formData.getAll("file").filter((f): f is File => f instanceof File);
+        const relPaths = formData.getAll("path").map(String);
+        if (files.length === 0) return NextResponse.json({ error: "No files provided" }, { status: 400 });
+        const destRoot = path.join(curDir, subdir);
+        for (let i = 0; i < files.length; i++) {
+          const rel = (relPaths[i] || files[i].name).split("/").slice(1).join("/") || safeName(files[i].name);
+          const dest = path.join(destRoot, rel);
+          await fs.mkdir(path.dirname(dest), { recursive: true });
+          await fs.writeFile(dest, Buffer.from(await files[i].arrayBuffer()));
+        }
       }
 
-      // Rebuild curriculum/README.md from both subdirs.
-      async function listDir(sub: string): Promise<string[]> {
+      async function listTree(sub: string): Promise<string[]> {
         const out: string[] = [];
         async function walk(d: string, base: string) {
           let ents: import("fs").Dirent[] = [];
@@ -265,30 +268,24 @@ export async function POST(
             if (e.name.startsWith(".")) continue;
             const rel = path.join(base, e.name).replace(/\\/g, "/");
             if (e.isDirectory()) await walk(path.join(d, e.name), rel);
-            else out.push(rel);
+            else if (e.name !== "index.md" && e.name !== "README.md") out.push(rel);
           }
         }
         await walk(path.join(curDir, sub), "");
         return out;
       }
-      const cur = await listDir("current");
-      const wiki = await listDir("wiki");
-      const sec = (title: string, files: string[]) =>
-        `## ${title}\n${files.length ? files.map((f) => `- ${f}`).join("\n") : "_(empty)_"}\n`;
-      const readme = `# Curriculum\n\nModule materials copied into this project. Markdown is committed; heavy files stay local.\n\n${sec("current/", cur)}\n${sec("wiki/", wiki)}`;
-      await fs.writeFile(path.join(curDir, "README.md"), readme, "utf-8");
-
-      return NextResponse.json({ success: true, kind, subdir, copied });
+      const cur = await listTree("current");
+      const wiki = await listTree("wiki");
+      const sec = (title: string, files: string[]) => `## ${title}\n${files.length ? files.map((f) => `- ${f}`).join("\n") : "_(empty)_"}\n`;
+      await fs.writeFile(path.join(curDir, "index.md"), `# Curriculum\n\nModule materials in this project. Markdown is committed; heavy files stay local.\n\n${sec("current/", cur)}\n${sec("wiki/", wiki)}`, "utf-8");
+      return NextResponse.json({ success: true, kind, copied: cur.length + wiki.length });
     }
 
     return NextResponse.json({ error: `Unknown kind "${kind}"` }, { status: 400 });
   } catch (err) {
     const msg = String(err);
     if (msg.includes("EROFS") || msg.includes("read-only")) {
-      return NextResponse.json(
-        { error: "This environment's filesystem is read-only — Setup ingestion only works locally (pnpm dev).", readOnly: true },
-        { status: 501 }
-      );
+      return NextResponse.json({ error: "Filesystem is read-only — conversion only works locally (pnpm dev).", readOnly: true }, { status: 501 });
     }
     return NextResponse.json({ error: msg }, { status: 500 });
   }
