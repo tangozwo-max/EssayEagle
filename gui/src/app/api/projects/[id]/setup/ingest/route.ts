@@ -126,6 +126,19 @@ export async function POST(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  // Serverless (Vercel/Lambda) has a read-only filesystem — ingestion writes files,
+  // so it only works when the app runs locally. Fail clearly instead of EROFS.
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    return NextResponse.json(
+      {
+        error:
+          "Setup ingestion writes files into your project folder, which only works when the app runs locally (pnpm dev). The deployed app is read-only — run setup locally, commit & push, and it will appear here.",
+        readOnly: true,
+      },
+      { status: 501 }
+    );
+  }
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   const { id } = await params;
   const projectDir = path.join(PROJECTS_DIR, id);
@@ -270,6 +283,13 @@ export async function POST(
 
     return NextResponse.json({ error: `Unknown kind "${kind}"` }, { status: 400 });
   } catch (err) {
-    return NextResponse.json({ error: String(err) }, { status: 500 });
+    const msg = String(err);
+    if (msg.includes("EROFS") || msg.includes("read-only")) {
+      return NextResponse.json(
+        { error: "This environment's filesystem is read-only — Setup ingestion only works locally (pnpm dev).", readOnly: true },
+        { status: 501 }
+      );
+    }
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
