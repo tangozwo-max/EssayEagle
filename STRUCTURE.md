@@ -119,16 +119,25 @@ That's it. The project now shows up and has its full phase skeleton.
 
 ---
 
-## Known gaps (follow-up, not done in this pass)
+## Online use
 
-This pass established the **structure layer** (this guide + the canonical map + templates +
-the project scaffold). The **app code is not yet aligned** to it:
+Two ways to work online:
 
-1. **Three id schemes disagree.** `gui/src/lib/types.ts` (`curriculum-mapping`,
-   `quality-assessment`, `finalisation`), `gui/src/lib/team.ts` (`curriculum`, `fqa`, `final`),
-   and `gui/src/app/api/projects/[id]/phase-result/route.ts` (`curriculum`, `qa`, `final`).
-   The canonical ids are in `workflow-map.json` with `aliases` to map the rest. Recommend
-   refactoring all three to read from the map.
-2. **No project on disk has `project-state.json` yet**, so the project-list API returns nothing.
-   The `_template` now ships one; existing modules (`module4`, `module4parta`, …) need one added.
-3. **Two source trees** (`gui/src/` active, `gui/src_v1/` old snapshot) — consider removing `src_v1`.
+1. **Claude Code with repo access (primary).** Edit the project markdown directly to drive the
+   assignment forward, review, and leave feedback. See the runbook in
+   [`AGENTS.md`](AGENTS.md) → *Driving a project online*. The repo is the source of truth.
+2. **The Vercel app (read-only dashboard).** Lists projects, statuses, and handover/result
+   docs. It reads a build-time snapshot (`gui/src/data/projects-snapshot.json`), so after
+   changing project markdown run `cd gui && pnpm snapshot` and commit it. Creating/editing in
+   the deployed app is disabled (`501`) — all editing happens in the repo.
+
+## Status of this work
+
+- ✅ Structure layer: this guide, the canonical map, templates, project scaffold.
+- ✅ App aligned to the single source of truth (`gui/src/lib/workflow-map.ts`); the old
+  conflicting ids (`curriculum-mapping`, `fqa`, `final`) now resolve via `aliases`.
+- ✅ All modules have a `project-state.json` (statuses are **provisional** — verify them).
+- ✅ Read-only online dashboard via the snapshot fallback.
+
+Remaining clean-ups (optional): remove the stale `gui/src_v1/` duplicate; unify the two
+mirrored maps (`structure/workflow-map.json` ↔ `gui/src/lib/workflow-map.ts`) via a generator.
