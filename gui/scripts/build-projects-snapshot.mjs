@@ -100,7 +100,13 @@ function build() {
     }
     const files = {};
     walkMd(projDir, projDir, files);
-    snapshot.projects[e.name] = { state, files, inputs: listInputs(projDir) };
+    // Curriculum notes (user's parked thoughts) so the online dashboard can show them.
+    let notes = [];
+    try {
+      const np = path.join(projDir, "03 Curriculum", "notes.json");
+      if (fs.existsSync(np)) notes = JSON.parse(fs.readFileSync(np, "utf-8")).notes ?? [];
+    } catch { /* ignore */ }
+    snapshot.projects[e.name] = { state, files, inputs: listInputs(projDir), notes };
   }
 
   fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
